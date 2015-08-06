@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list" type="listType"/>
+	<xs:complexType name="hennaType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="class_id" use="optional"/>
+				<xs:attribute type="xs:string" name="symbol_id" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="listType">
+		<xs:sequence>
+			<xs:element type="hennaType" name="henna" maxOccurs="unbounded" minOccurs="0">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

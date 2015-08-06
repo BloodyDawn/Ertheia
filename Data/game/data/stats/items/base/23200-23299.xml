@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="23234" name="Камень Обработки Купальника Очарования" type="EtcItem">
+		<set name="icon" val="BranchSys3.lcon.g_scrl_change_co_swimsuit_01"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23235" name="Камень Обработки Купальника Соблазна " type="EtcItem">
+		<set name="icon" val="BranchSys3.lcon.g_scrl_change_co_swimsuit_01"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23202" name="Блестящая Маска Инопланетянина X235" type="Armor">
+		<set name="icon" val="icon.ev_shiny_alien_mask_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="23203" name="Блестящая Маска Гиганта" type="Armor">
+		<set name="icon" val="icon.ev_shiny_frankenstein_mask_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="23204" name="Блестящая Маска Беззвучного Крика" type="Armor">
+		<set name="icon" val="icon.ev_shiny_scream_mask_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="23205" name="Блестящая Маска Взбешенного Духа" type="Armor">
+		<set name="icon" val="icon.ev_shiny_doccabi_mask_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="23206" name="Блестящая Маска Нетленного Трупа" type="Armor">
+		<set name="icon" val="icon.ev_shiny_mummy_mask_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="23226" name="Купальник Соблазна" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_swimsuit_event_03"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="cloth"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+	</item>
+	<item id="23231" name="Шлем Воина Арии" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_close_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="wood"/>
+	</item>
+	<item id="23237" name="Браслет Печати Агатиона - Капитан Пиратов Утанка" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_uthanka_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+	</item>
+	<item id="23240" name="Футболка Паагрио" type="Armor">
+		<set name="icon" val="icon.pi_shirt_of_wolf_2nd_fire"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="underwear"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="130"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<enchant_options>
+			<level val="1">
+				<option id="30228"/>
+				<!--Маг. Атк. +9.0-->
+			</level>
+			<level val="2">
+				<option id="30229"/>
+				<!--Маг. Атк. +10.0-->
+			</level>
+			<level val="3">
+				<option id="30247"/>
+				<!--Огонь +5-->
+				<option id="30230"/>
+				<!--Маг. Атк. +11.0-->
+			</level>
+			<level val="4">
+				<option id="30248"/>
+				<!--Огонь +10-->
+				<option id="30231"/>
+				<!--Маг. Атк. +12.0,Скорость +7,ВЫН +2, ДУХ +1-->
+			</level>
+			<level val="5">
+				<option id="30249"/>
+				<!--Огонь +15-->
+				<option id="30232"/>
+				<!--Маг. Атк. +13.0,Скорость +7,Макс. HP +200, Макс. MP +200,СИЛ +1, ВЫН +2, ИНТ +1, ДУХ +2-->
+			</level>
+			<level val="6">
+				<option id="30233"/>
+				<!--Маг. Атк. +14.0,Скорость +7,Макс. HP +200, Макс. MP +200, Расход MP -3%,Сопротивление воде, огню, ветру, земле +20., СИЛ+2, ЛВК +1, ВЫН +2, ИНТ +2, МДР +1, ДУХ +2-->
+			</level>
+			<level val="7">
+				<option id="30234"/>
+				<!--Маг. Атк. +15.0,Скорость +7,Макс. HP +200. Макс. MP +200. Расход MP -3%,Сопротивление воде, огню, ветру, земле +20. Сопротивление отражению урона. СИЛ+2, ЛВК +1, ВЫН +2, ИНТ +2, МДР +1, ДУХ +2-->
+				<option id="30238"/>
+				<!--Активное: Поддержка Паагрио-->
+			</level>
+			<level val="8">
+				<option id="30235"/>
+				<!--Маг. Атк. +16.0,Скорость +7,Макс. HP +200. Макс. MP +200. Расход MP -3%,Сопротивление воде, огню, ветру, земле +20. Сопротивление отражению урона. Уменьшает время перезарядки Физ. И Маг. умений. Увеличивает сопротивление внезапной смерти, смертельному и полусмертельному удару.. СИЛ+2, ЛВК +2, ВЫН +3, ИНТ +2, МДР +2, ДУХ +2-->
+				<option id="30238"/>
+				<!--Активное: Поддержка Паагрио-->
+			</level>
+			<level val="9">
+				<option id="30236"/>
+				<!--Маг. Атк. +17.0,Скорость +7,Макс. HP +200. Макс. MP +200. Расход \\nMP -3%\0	u,Сопротивление воде, огню, ветру, земле +20. Сопрот\\nивление отражению урона. Уменьшает время перезаряд\\nки Физ. И Маг. умений. Увеличивает сопротивление в\\nнезапной смерти, смертельному и полусмертельному у\\nдару.. СИЛ+2, ЛВК +2, ВЫН +3, ИНТ +2, МДР +2, ДУХ \\n+3\0-->
+				<option id="30238"/>
+				<!--Активное: Поддержка Паагрио-->
+			</level>
+			<level val="10">
+				<option id="30237"/>
+				<!--Маг. Атк. +18.0,Скорость +7,Макс. HP +200. Макс. MP +200. Расход \\nMP -3%\0	u,Сопротивление воде, огню, ветру, земле +20. Сопрот\\nивление отражению урона. Уменьшает время перезаряд\\nки Физ. И Маг. умений. Увеличивает сопротивление в\\nнезапной смерти, смертельному и полусмертельному у\\nдару.. СИЛ+3, ЛВК +3, ВЫН +3, ИНТ +3, МДР +3, ДУХ \\n+3\0-->
+				<option id="30238"/>
+				<!--Активное: Поддержка Паагрио-->
+			</level>
+		</enchant_options>
+		<for>
+			<add order="0x10" stat="pDef" val="9"/>
+			<add order="0x10" stat="mDef" val="29"/>
+		</for>
+	</item>
+	<item id="23200" name="Упаковка: Камень Обработки Национального Тайваньского Костюма" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23201" name="Коробка Аксессуаров Тьмы - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23207" name="Коробка Шутливых Головных Уборов" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23208" name="Красное Зелье Жизни" type="EtcItem">
+		<set name="icon" val="BranchSys2.br_essence_rose_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23209" name="Синее Зелье Восстановления" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_vitality_potion_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23210" name="Свиток Трансформации в Зомби" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23211" name="Камень Обработки Булавы Дрейка" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_twohand_blunt"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23212" name="Камень Обработки Посоха Фреи" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_twohand_blunt"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23213" name="Камень Обработки Когтя Спасии" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dualfist"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23214" name="Камень Обработки Буревестника Меллисы" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_pole"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23215" name="Камень Обработки Кинжала Стерегоса" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dagger"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23216" name="Камень Обработки Парных Дубин Фрона" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dualblunt"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23217" name="Камень Обработки Цветного Вольга Дариона" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sword"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23218" name="Кухонный Нож Куклы" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dualdagger"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23219" name="Камень Обработки Тиатенона Тиады" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_blunt"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23220" name="Камень Обработки Астарты Аэнкинель" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dual"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23221" name="Камень Обработки Тирбинга Йохана Кланикуса" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_twohand_sword"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23222" name="Камень Обработки Ветра Мардилла" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sword"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23223" name="Сундук Камней Обработки Оружия Монстра A" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23224" name="Сундук Камней Обработки Оружия Монстра B" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23225" name="Гигантское Золотое Семя Духовного Аватара" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_shield_bread_i01"/>
+		<set name="material" val="gold"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23242" name="Ящик с Оружием Благословения Света - Ранг D" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23243" name="Ящик с Оружием Благословения Света - Ранг C" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23244" name="Ящик с Оружием Благословения Света - Ранг B" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23245" name="Ящик с Оружием Благословения Света - Ранг A" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23246" name="Ящик с Оружием Благословения Света - Ранг S" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23247" name="Ящик с Доспехами Благословения Света - Ранг D" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23248" name="Ящик с Доспехами Благословения Света - Ранг C" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23249" name="Ящик с Доспехами Благословения Света - Ранг B" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23250" name="Ящик с Доспехами Благословения Света - Ранг A" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23251" name="Ящик с Доспехами Благословения Света - Ранг S" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23252" name="Знак Обязательства" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_black_i00"/>
+		<set name="material" val="crystal"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23227" name="Свежесть Яблока" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_apfelschorle_germany"/>
+		<set name="material" val="liquid"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23228" name="Сосиска на Гриле" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_bratwurst_germany"/>
+		<set name="material" val="liquid"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23229" name="Крендель" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_brezel_germany"/>
+		<set name="material" val="liquid"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23230" name="Закуска Ассорти" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_studentenfutter_germany"/>
+		<set name="material" val="liquid"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23232" name="След Древнего Лабиринта Картии" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_ev_magic_powder"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23233" name="След Древнего Лабиринта Картии - (Ивент)" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_ev_magic_powder"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23236" name="Свиток Телепорта к Надробию Капитана Пиратов Утанки" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i00"/>
+		<set name="material" val="paper"/>
+	</item>
+	<item id="23238" name="Коробка со Свитком Эйнхасад: Модифицировать Футболку" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23239" name="Упаковка: Улучшенная Футболка Паагрио" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23241" name="Коробка со Свитком Эйнхасад: Модифицировать Футболку" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.etc_scroll_of_enchant_shirt_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23253" name="Руна Опыта 50% - (30 дней)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23254" name="Руна Опыта 100% - (1 час)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23255" name="Руна Опыта 100% - (7 дней)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="10080"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23256" name="Руна Опыта 100% - (30 дней)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23257" name="Руна Опыта 200% - (1 час)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23258" name="Руна Опыта 200% - (7 дней)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="10080"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23259" name="Руна Опыта 200% - (30 дней)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23260" name="Руна SP 50% - (30 дней)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_sp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23261" name="Руна SP 100% - (1 час)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_sp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23262" name="Руна SP 100% - (7 дней)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_sp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="10080"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23263" name="Руна SP 100% - (30 дней)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_sp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23264" name="Руна SP 200% - (1 час)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_sp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23265" name="Руна SP 200% - (7 дней)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_sp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="10080"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23266" name="Руна SP 200% - (30 дней)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_sp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23267" name="Руна Евы - (1 час)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_rune_of_eva_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23268" name="Руна Евы - (7 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_rune_of_eva_i00"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="10080"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23269" name="Руна Евы - (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_rune_of_eva_i00"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23270" name="Руна Мафр 50% - (1 час)" type="EtcItem">
+		<set name="icon" val="BranchSys3.lcon.g_rune_itemdrop_up"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23271" name="Руна Мафр 100% - (1 час)" type="EtcItem">
+		<set name="icon" val="BranchSys3.lcon.g_rune_itemdrop_up"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23272" name="Руна Мафр 200% - (1 час)" type="EtcItem">
+		<set name="icon" val="BranchSys3.lcon.g_rune_itemdrop_up"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23273" name="Руна Мафр 50% - (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys3.lcon.g_rune_itemdrop_up"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23274" name="Руна Мафр 100% - (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys3.lcon.g_rune_itemdrop_up"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23275" name="Руна Мафр 200% - (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys3.lcon.g_rune_itemdrop_up"/>
+		<set name="material" val="paper"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="23276" name="Упаковка: Руна Опыта 50% (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23277" name="Упаковка: Руна Опыта 100% (1 час)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23278" name="Упаковка: Руна Опыта 100% (7 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23279" name="Упаковка: Руна Опыта 100% (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23280" name="Упаковка: Руна Опыта 200% (1 час)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23281" name="Упаковка: Руна Опыта 200% (7 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23282" name="Упаковка: Руна Опыта 200% (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23283" name="Упаковка: Руна SP 50% (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23284" name="Упаковка: Руна SP 100% (1 час)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23285" name="Упаковка: Руна SP 100% (7 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23286" name="Упаковка: Руна SP 100% (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23287" name="Упаковка: Руна SP 200% (1 час)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23288" name="Упаковка: Руна SP 200% (7 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23289" name="Упаковка: Руна SP 200% (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23290" name="Упаковка: Руна Евы (1 час)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23291" name="Упаковка: Руна Евы (7 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23292" name="Упаковка: Руна Евы (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23293" name="Упаковка: Руна Мафр 50% (1 час)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23294" name="Упаковка: Руна Мафр 100% (1 час)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23295" name="Упаковка: Руна Мафр 200% (1 час)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23296" name="Упаковка: Руна Мафр 50% (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23297" name="Упаковка: Руна Мафр 100% (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23298" name="Упаковка: Руна Мафр 200% (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23299" name="Коробка со Свитком Эйнхасад: Модифицировать Футболку" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+</list>

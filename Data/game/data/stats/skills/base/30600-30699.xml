@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="30602" levels="1" name="Аура Заступника">
+        <set name="reuseDelay" val="5000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE_TOGGLE"/>
+        <set name="skillToCast" val="30603"/>
+        <set name="skillToCastLevel" val="1"/>
+        <set name="skillRadius" val="400"/>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="6" abnormalType="advocate_self_power" count="0x7fffffff" name="MpDamOverTime" val="0"/>
+        </for>
+    </skill>
+    <skill id="30603" levels="1" name="Сила Заступника">
+        <set name="reuseDelay" val="5000"/>
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="hideExitStatus" val="true"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillRadius" val="850"/>
+        <set name="aggroPoints" val="495"/>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="6" abnormalType="advocate_power" name="AwakenForce" val="0">
+                <add order="0x30" stat="pCritRate" val="1.01">
+                    <using kind="Fist, Dual Fist"/>
+                </add>
+            </effect>
+        </for>
+    </skill>
+
+    <skill id="30605" levels="1" name="Аура Заступника">
+        <set name="reuseDelay" val="5000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE_TOGGLE"/>
+        <set name="skillToCast" val="30606"/>
+        <set name="skillToCastLevel" val="1"/>
+        <set name="skillRadius" val="400"/>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="6" abnormalType="advocate_self_power" count="0x7fffffff" name="MpDamOverTime" val="0"/>
+        </for>
+    </skill>
+    <skill id="30606" levels="1" name="Сила Заступника">
+        <set name="reuseDelay" val="5000"/>
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="hideExitStatus" val="true"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillRadius" val="850"/>
+        <set name="aggroPoints" val="495"/>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="6" abnormalType="advocate_power" name="AwakenForce" val="0">
+                <add order="0x30" stat="mCritRate" val="1.01"/>
+            </effect>
+        </for>
+    </skill>
+</list>

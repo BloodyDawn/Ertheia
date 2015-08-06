@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+		   xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list" type="listType"/>
+	<xs:complexType name="configType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="var"/>
+				<xs:attribute type="xs:string" name="val"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="buttonType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="id" use="optional"/>
+				<xs:attribute type="xs:string" name="type" use="optional"/>
+				<xs:attribute type="xs:string" name="link" use="optional"/>
+				<xs:attribute type="xs:string" name="name_en" use="optional"/>
+				<xs:attribute type="xs:string" name="name_ru" use="optional"/>
+				<xs:attribute type="xs:string" name="loc" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="listType">
+		<xs:sequence>
+			<xs:element type="configType" name="config"/>
+			<xs:element type="pointType" name="point" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="pointType">
+		<xs:sequence>
+			<xs:element type="buttonType" name="button" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute type="xs:string" name="id" use="optional"/>
+		<xs:attribute type="xs:string" name="name_en" use="optional"/>
+		<xs:attribute type="xs:string" name="name_ru" use="optional"/>
+	</xs:complexType>
+</xs:schema>

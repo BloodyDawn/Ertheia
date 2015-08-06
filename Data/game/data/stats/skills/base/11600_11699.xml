@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="11600" levels="1" name="Клятва Сонаты Битвы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_CLAN"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="mpConsume" val="140"/>
+        <set name="hitTime" val="700"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="effectRange" val="1200"/>
+        <set name="castRange" val="900"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="420" abnormalType="battle_sonata" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.15"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.30"/>
+                <mul order="0x30" stat="maxHp" val="1.30"/>
+                <mul order="0x30" stat="regMp" val="1.20"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.9"/>
+                <mul order="0x30" stat="magicFailureRate" val="0.80"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="11601" levels="1" name="Клятва Сонаты Движения">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_CLAN"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="mpConsume" val="140"/>
+        <set name="hitTime" val="700"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="effectRange" val="1200"/>
+        <set name="castRange" val="900"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="420" abnormalType="movement_sonata" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.08"/>
+                <mul order="0x30" stat="mAtk" val="1.16"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="pDef" val="0.97"/>
+                <mul order="0x30" stat="mDef" val="0.89"/>
+                <sub order="0x40" stat="ratePhysicalEvas" val="4"/>
+                <add order="0x40" stat="absorbDam" val="8"/>
+                <add order="0x40" stat="reflectDam" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="11602" levels="1" name="Клятва Сонаты Расслабления">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_CLAN"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="mpConsume" val="140"/>
+        <set name="hitTime" val="700"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="effectRange" val="1200"/>
+        <set name="castRange" val="900"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="420" abnormalType="meditation_sonata" name="Buff" val="0">
+                <mul order="0x30" stat="regHp" val="1.20"/>
+                <add order="0x40" stat="accPhysical" val="4"/>
+                <add order="0x40" stat="ratePhysicalEvas" val="3"/>
+                <add order="0x40" stat="runSpd" val="20"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.8"/>
+                <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.8"/>
+                <mul order="0x30" stat="mReuse" val="0.9"/>
+                <mul order="0x30" stat="pReuse" val="0.9"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="11603" levels="4" name="Предел - Массовое">
+        <table name="#power">75 80 85 90</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#mpConsume">252 278 306 332</table>
+        <table name="#abnormalLvl">1 2 3 4</table>
+        <set name="power" val="#power"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="hitTime" val="2110"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="castRange" val="900"/>
+        <set name="skillRadius" val="250"/>
+        <set name="isDebuff" val="true"/>
+        <cond>
+            <target playable="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="#abnormalLvl" abnormalTime="30" name="Debuff" val="0">
+                <mul order="0x30" stat="regHp" val="0.7"/>
+                <mul order="0x30" stat="regMp" val="0.7"/>
+                <mul order="0x30" stat="regCp" val="0.7"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="11604" levels="4" name="Печать Непобедимости">
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#mpConsume">252 278 306 332</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="isDebuff" val="true"/>
+        <set name="skillType" val="CANCEL_CELESTIAL"/>
+        <set name="hitTime" val="2110"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="900"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="skillRadius" val="250"/>
+        <cond>
+            <target playable="true"/>
+        </cond>
+    </skill>
+    <skill id="11605" levels="1" name="Песня Щита">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="mpConsume" val="83"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castRange" val="900"/>
+        <set name="skillRadius" val="250"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="song_of_shield" name="Buff" val="0">
+                <mul order="0x30" stat="pDef" val="1.1"/>
+                <add order="0x40" stat="fireRes" val="20"/>
+                <add order="0x40" stat="waterRes" val="20"/>
+                <add order="0x40" stat="windRes" val="20"/>
+                <add order="0x40" stat="earthRes" val="20"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+                <add order="0x40" stat="holyRes" val="20"/>
+                <mul order="0x30" stat="bowWpnVuln" val="0.9"/>
+                <mul order="0x30" stat="crossbowWpnVuln" val="0.9"/>
+                <mul order="0x30" stat="debuffVuln" val="1.1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="11606" levels="1" name="Пляски Могущества">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="mpConsume" val="83"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castRange" val="900"/>
+        <set name="skillRadius" val="250"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="dance_of_power" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.05"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.05"/>
+                <mul order="0x30" stat="pCritRate" val="1.1"/>
+                <add order="0x40" stat="runSpd" val="10"/>
+            </effect>
+        </for>
+    </skill>
+
+    <skill id="11615" levels="1" name="Мелодия Битвы">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="STR" val="2"/>
+            <sub order="0x40" stat="rootVuln" val="30"/>
+            <sub order="0x40" stat="sleepVuln" val="30"/>
+            <sub order="0x40" stat="bleedVuln" val="30"/>
+            <sub order="0x40" stat="poisonVuln" val="30"/>
+            <sub order="0x40" stat="derangementVuln" val="30"/>
+        </for>
+    </skill>
+    <skill id="11616" levels="1" name="Мелодия Защиты">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="STR" val="2"/>
+            <sub order="0x40" stat="rootVuln" val="30"/>
+            <sub order="0x40" stat="sleepVuln" val="30"/>
+            <sub order="0x40" stat="bleedVuln" val="30"/>
+            <sub order="0x40" stat="poisonVuln" val="30"/>
+            <sub order="0x40" stat="derangementVuln" val="30"/>
+        </for>
+    </skill>
+    <skill id="11617" levels="1" name="Мелодия Клятвенной Битвы">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="STR" val="2"/>
+            <sub order="0x40" stat="rootVuln" val="30"/>
+            <sub order="0x40" stat="sleepVuln" val="30"/>
+            <sub order="0x40" stat="bleedVuln" val="30"/>
+            <sub order="0x40" stat="poisonVuln" val="30"/>
+            <sub order="0x40" stat="derangementVuln" val="30"/>
+        </for>
+    </skill>
+    <skill id="11618" levels="1" name="Мелодия Клятвенной Защиты">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="STR" val="2"/>
+            <sub order="0x40" stat="rootVuln" val="30"/>
+            <sub order="0x40" stat="sleepVuln" val="30"/>
+            <sub order="0x40" stat="bleedVuln" val="30"/>
+            <sub order="0x40" stat="poisonVuln" val="30"/>
+            <sub order="0x40" stat="derangementVuln" val="30"/>
+        </for>
+    </skill>
+    <skill id="11618" levels="3" name="Черный Вампир">
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#mpConsume">252 278 306 332</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="isDebuff" val="true"/>
+        <set name="skillType" val="CANCEL_CELESTIAL"/>
+        <set name="hitTime" val="2110"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="900"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="skillRadius" val="250"/>
+        <cond>
+            <target playable="true"/>
+        </cond>
+    </skill>
+
+</list>

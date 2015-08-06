@@ -1,0 +1,1318 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="2500" levels="1" name="Компактная Упаковка: Заряды Души Зверя">
+        <set name="create_item_count" val="500"/>
+        <set name="create_item_id" val="6645"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2501" levels="1" name="Компактная Упаковка: Заряды Духа Зверя">
+        <set name="create_item_count" val="500"/>
+        <set name="create_item_id" val="6646"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2502" levels="1" name="Компактная Упаковка: Благословенные Заряды Духа Зверя">
+        <set name="create_item_count" val="500"/>
+        <set name="create_item_id" val="6647"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2504" levels="1" name="Старый Агатион">
+        <table name="#extractableItems">6471,20,5094,40,9814,3,9816,4,9817,4,9815,2,57,6000000,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2505" levels="1" name="Напев Сражения">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="1517"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="1517"/>
+                </not>
+                <player class_id_restriction="52, 116"/>
+                <player level="70"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2506" levels="1" name="Напев Критической Атаки">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="1518"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="1518"/>
+                </not>
+                <player class_id_restriction="52, 116"/>
+                <player level="72"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2507" levels="1" name="Напев Пробуждения Крови">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="1519"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="1519"/>
+                </not>
+                <player class_id_restriction="52, 116"/>
+                <player level="74"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2508" levels="1" name="Семечко Клонированной Тыквы">
+        <set name="despawnDelay" val="180000"/>
+        <set name="hitTime" val="1500"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="magicLvl" val="1"/>
+        <set name="npcId" val="12774"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="SPAWN"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="2509" levels="1" name="Семечко Большой Клонированной Тыквы">
+        <set name="despawnDelay" val="180000"/>
+        <set name="hitTime" val="1500"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="magicLvl" val="1"/>
+        <set name="npcId" val="12777"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="SPAWN"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="2510" levels="1" name="Загадочный Куб">
+        <table name="#extractableItems">10633,1,35;10642,1,25;10634,1,20;10643,1,10;10635,1,4;10644,1,3;10636,1,1.2;10645,1,0.8;10637,1,0.6;10646,1,0.4</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2511" levels="1" name="Свиток Превращения - Хранитель Портала">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="transformId" val="107"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2512" levels="1" name="Настойка Поглощения Жизни">
+        <set name="buffDuration" val="300000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="isHerbEffect" val="true"/>
+        <set name="magicLvl" val="40"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond addName="1" msgId="113">
+            <player flyMounted="False"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="4" abnormalTime="300" abnormalType="vampiric_attack" name="Buff" val="0">
+                <add order="0x40" stat="absorbDam" val="9"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="2513" levels="1" name="Настойка Сомнения">
+        <set name="buffDuration" val="300000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="isHerbEffect" val="true"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="trait" val="ETC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <player flyMounted="False"/>
+                <not>
+                    <player transformationId="103"/>
+                </not>
+            </and>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="big_head" abnormalVisualEffect="bighead" name="BigHead" val="0">
+                <mul order="0x30" stat="regHp" val="2"/>
+                <mul order="0x30" stat="regMp" val="2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="2514" levels="1" name="Настойка Крит. Атк. - Урон">
+        <set name="buffDuration" val="300000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="isHerbEffect" val="true"/>
+        <set name="magicLvl" val="40"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond addName="1" msgId="113">
+            <player flyMounted="False"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="300" abnormalType="critical_dmg_up" name="Buff" val="0">
+                <mul order="0x30" stat="cAtk" val="1.35"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="2515" levels="1" name="Счастливый Клевер: D-Ранг">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2516" levels="1" name="Счастливый Клевер: C-Ранг">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2517" levels="1" name="Счастливый Клевер: B-Ранг">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2518" levels="1" name="Счастливый Клевер: A-Ранг">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2519" levels="1" name="Счастливый Клевер: S-Ранг">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2520" levels="1" name="Счастливый Клевер: D-Ранг">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2521" levels="1" name="Счастливый Клевер: C-Ранг">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2522" levels="1" name="Счастливый Клевер: B-Ранг">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2523" levels="1" name="Счастливый Клевер: A-Ранг">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2524" levels="1" name="Счастливый Клевер: S-Ранг">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2525" levels="1" name="Свиток Телепорта: Деревня Камаэль">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="10000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="skillType" val="TELEPORT"/>
+        <set name="teleCoords" val="-120050,44500,360"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="2526" levels="1" name="Счетчик Уклонения">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="818"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="818"/>
+                </not>
+                <player class_id_restriction="36, 108"/>
+                <player level="74"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2527" levels="1" name="Шанс Уклонения">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="819"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="819"/>
+                </not>
+                <player class_id_restriction="23, 101"/>
+                <player level="74"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2528" levels="1" name="Скорость Уклонения">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="820"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="820"/>
+                </not>
+                <player class_id_restriction="8, 93"/>
+                <player level="74"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2529" levels="1" name="Шаг из Тени">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="821"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="821"/>
+                </not>
+                <player class_id_restriction="8, 93, 23, 101, 36, 108"/>
+                <player level="72"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2530" levels="1" name="Боевой Восстанавливающий Предмет">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2531" levels="1" name="Свиток Телепорта Путешественника">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="20000"/>
+        <set name="skillType" val="RECALL"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="2532" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,4,1463,50,2510,50,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2533" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,4,1463,100,2510,100,956,1,8623,3,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2534" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,4,1463,100,2510,100,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2535" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,2,1463,150,2510,150,956,1,8623,3,8629,2,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2536" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,5,1463,210,2510,210,956,1,8623,3,8629,3,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2537" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,7,1463,300,2510,300,956,1,955,1,8623,7,8629,7,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2538" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,5,1463,140,2510,140,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2539" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,7,1463,250,2510,250,956,1,8623,5,8629,4,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2540" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,6,1463,200,2510,200,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2541" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,11,1463,500,2510,500,956,1,955,1,8623,10,8629,10,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2542" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,7,1463,400,2510,400,956,1,8623,6,8629,6,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2543" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,9,1463,400,2510,400,956,1,8623,9,8629,8,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2544" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,10,1463,500,2510,500,956,2,955,1,8623,15,8629,15,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2545" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,7,1464,150,2511,150,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2546" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,5,1464,120,2511,120,952,1,8624,5,8630,4,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2547" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,11,1464,150,2511,150,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2548" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,7,1464,300,2511,300,952,1,951,1,8624,7,8630,7,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2549" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,6,1464,200,2511,200,8624,7,8630,6,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2550" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,10,1464,250,2511,250,952,1,8624,8,8630,7,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2551" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,10,1464,350,2511,350,952,2,951,1,8624,10,8630,10,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2552" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,6,1465,100,2512,100,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2553" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,10,1465,200,2512,200,8625,7,8631,7,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2554" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,8,1465,120,2512,120,8625,7,8631,7,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2555" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,15,1464,300,2511,300,952,2,951,1,8624,15,8630,14,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2556" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,4,1465,200,2512,200,948,1,8625,5,8631,5,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2557" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,10,1465,250,2512,250,948,1,8625,6,8631,6,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2558" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,15,1465,380,2512,380,948,2,8625,12,8631,12,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2559" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,5,1466,120,2513,120,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2560" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,10,1466,250,2513,250,8626,9,8632,9,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2561" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,5,1466,150,2513,150,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2562" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,4,1465,100,2512,100,947,1,8625,3,8631,3,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2563" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,10,1466,300,2513,300,8626,10,8632,10,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2564" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,3,1466,140,2513,140,730,1,8626,5,8632,5,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2565" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,6,1466,250,2513,250,730,2,8626,6,8632,6,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2566" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,9,1467,130,2514,130,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2567" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,10,1467,350,2514,350,8627,12,8633,11,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2568" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,10,1466,350,2513,350,730,2,8626,10,8632,10,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2569" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,12,1467,360,2514,360,8627,12,8633,12,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2570" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,6,1467,140,2514,140,960,1,8627,4,8633,3,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2571" levels="1" name="Снаряжение Следопыта">
+        <table name="#extractableItems">1539,15,1467,360,2514,360,960,1,8627,11,8633,11,100</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2572" levels="1" name="Награда Следопыта">
+        <table name="#extractableItems">947,1,3.2</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2573" levels="1" name="Награда Следопыта">
+        <table name="#extractableItems">729,1,1.6111</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2574" levels="1" name="Награда Следопыта">
+        <table name="#extractableItems">959,1,1.14</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2575" levels="1" name="Награда Следопыта">
+        <table name="#extractableItems">9546,1,19.8;9548,1,19.8;9550,1,19.8;959,1,1.98;9442,1,0.1;9443,1,0.1;9444,1,0.1;9445,1,0.1;9446,1,0.1;9447,1,0.1;9448,1,0.1;9449,1,0.1;9450,1,0.1;10252,1,0.1;10253,1,0.1;9532,1,1;9537,1,1;9542,1,1</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2576" levels="1" name="Награда Следопыта">
+        <table name="#extractableItems">9546,1,26.4;9548,1,26.4;9550,1,26.4;959,1,3.84;10215,1,0.13;10216,1,0.13;10217,1,0.13;10218,1,0.13;10219,1,0.13;10220,1,0.13;10221,1,0.13;10222,1,0.13;10223,1,0.13</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="2577" levels="1" name="Мгновенная Защита">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="buffDuration" val="5000"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="5" abnormalType="invincibility" abnormalVisualEffect="invincible" name="Invincible" val="0"/>
+        </for>
+    </skill>
+    <skill id="2578" levels="1" name="Избавление от Яда и Паралича">
+        <set name="castMagic" val="MAGIC"/>
+        <set name="magicLvl" val="1"/>
+        <set name="negateAbnormals" val="poison,9"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="NEGATE"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="2579" levels="1" name="Излечение Часов Смерти">
+        <set name="castMagic" val="MAGIC"/>
+        <set name="magicLvl" val="1"/>
+        <set name="negateAbnormals" val="death_clack,1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="NEGATE"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="2580" levels="1" name="Трава Всплеска Энергии - Трансформация Гризли">
+        <set name="hitTime" val="100"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="buffDuration" val="300000"/>
+        <set name="isVitalityItemSkill" val="true"/>
+        <cond addName="1" msgId="113">
+            <player flyMounted="False"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="vp_up" abnormalVisualEffect="vitality" name="Buff" val="0">
+                <sub order="0x40" stat="vitalityConsumeRate" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="2581" levels="1" name="Настойка Восполнения Энергии - Трансформация Тимитран">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2582" levels="1" name="Настойка Восполнения Энергии - Трансформация Голема из Лавы">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2583" levels="1" name="Настойка Восполнения Энергии - Трансформация Йети">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2584" levels="1" name="Предмет - Кристалл Особых Звуков">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="2585" levels="1" name="Предмет - Кристалл Особых Звуков">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="2586" levels="2" name="Зелье Всплеска Энергии">
+        <set name="reuseDelay" val="3600000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2587" levels="1" name="Доп. Ячейки для Возврата к Флагу">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2588" levels="1" name="Возврат к Флагу">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="hitTime" val="20000"/>
+    </skill>
+    <skill id="2589" levels="1" name="Билет в Камалоку (Зал Бездны)">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2590" levels="1" name="Билет в Земли Камалоки">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2591" levels="1" name="Билет в Камалоку (Лабиринт Бездны)">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="2592" levels="1" name="Быстродействующее Зелье Исцеления">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="HEAL"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect name="HpCpStaticHeal" noicon="1" val="5000"/>
+        </for>
+    </skill>
+    <skill id="2593" levels="1" name="Зелье Устойчивости к Атакам Лука/Арбалета">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="buffDuration" val="60000"/>
+        <cond addName="1" msgId="113">
+            <player flyMounted="False"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="4" abnormalTime="60" abnormalType="pd_up_bow" name="Buff" val="0">
+                <mul order="0x30" stat="bowWpnVuln" val="0.8"/>
+                <mul order="0x30" stat="crossbowWpnVuln" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="2594" levels="1" name="Свиток Телепорта Пайлаки">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="20000"/>
+        <set name="skillType" val="RECALL"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="2595" levels="1" name="Свиток Благ. Телепорта Гран Каина">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="200"/>
+        <set name="skillType" val="RECALL"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="2596" levels="1" name="Свиток Благ. Воскрешения Гран Каина">
+        <set name="power" val="100"/>
+        <set name="target" val="TARGET_CORPSE_PLAYER"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="skillType" val="RESURRECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="effectRange" val="600"/>
+    </skill>
+    <skill id="2597" levels="1" name="Кристалл Гран Каина — тема путешествия">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="2598" levels="1" name="Кристалл Гран Каина — тема колониста">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="2599" levels="1" name="Кристалл Гран Каина — тема любви">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+</list>

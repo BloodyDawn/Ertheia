@@ -1,0 +1,1569 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="33424" name="Щит Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.weapon_vesper_verteidiger_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="weight" val="113"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="damascus"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="371"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="33441" name="Щит Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.weapon_vesper_verteidiger_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="damascus"/>
+		<set name="weight" val="113"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="371"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="33470" name="Особый Талисман Маг. Защ. {Активный}" type="Armor">
+		<set name="icon" val="icon.r_talisman_mm_up_active"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="13337-1"/>
+		<set name="duration" val="60"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="33471" name="Особый Талисман Сопротивления Дистанционным Атакам {Активный}" type="Armor">
+		<set name="icon" val="icon.r85_sp_talisman_ad_ex_passive"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="13338-1"/>
+		<set name="duration" val="60"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="33472" name="Особый Талисман Магической Защиты" type="Armor">
+		<set name="icon" val="icon.r_talisman_mm_up_active"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="13337-1"/>
+		<set name="duration" val="600"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="33473" name="Особый Талисман Сопротивления Дистанционным Атакам" type="Armor">
+		<set name="icon" val="icon.r85_sp_talisman_ad_ex_passive"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="13338-1"/>
+		<set name="duration" val="600"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="33465" name="Сундук Удачи Гигантов" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+		<set name="default_action" val="capsule"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="30297,1,1,15.38;30300,1,1,11.53;30299,1,1,1.92;30298,1,1,1.92"/>
+	</item>
+	<item id="33468" name="Сундук Поддержки Героя" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="false"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="57,1300000000,1300000000,100;10650,10,10,100;6645,5000,5000,100;7117,10,10,100;17526,3,3,100;17527,33,33,100;30275,20,20,100;30276,1,1,100;30280,1,1,100;32255,1,1,100;32262,1,1,100;32316,50,50,100;33493,1,1,100;33495,1,1,100;33496,1,1,100;33497,1,1,100;33498,1,1,100;33499,1,1,100"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="33474" name="Знаменитые Печенья Говорящего Острова" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_valentine_cookie_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="12870-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="33475" name="Амулет Мужества (R)" type="EtcItem">
+		<set name="icon" val="icon.etc_charm_of_courage_i05"/>
+		<set name="default_action" val="keep_exp"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="price" val="100000"/>
+		<set name="reuse_delay" val="1200000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="5041-1"/>
+	</item>
+	<item id="33477" name="Сундук с Сокровищами Героя" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9346-1"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="33478" name="Свиток Разрушения: Модифицировать Оружие (R)" type="EtcItem">
+		<set name="icon" val="icon.scroll_of_enchant_weapon_i06"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_wp"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="EnchantScrolls"/>
+		<set name="item_skill" val="12872-1"/>
+	</item>
+	<item id="33479" name="Свиток Разрушения: Модифицировать Доспех (R)" type="EtcItem">
+		<set name="icon" val="icon.scroll_of_enchant_armor_i06"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_am"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="EnchantScrolls"/>
+		<set name="item_skill" val="12873-1"/>
+	</item>
+	<item id="33481" name="Руда Огня - Super" type="EtcItem">
+		<set name="icon" val="icon.etc_fire_stone_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_attr"/>
+		<set name="handler" val="EnchantAttribute"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="9325-1"/>
+	</item>
+	<item id="33482" name="Руда Воды - Super" type="EtcItem">
+		<set name="icon" val="icon.etc_water_stone_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_attr"/>
+		<set name="handler" val="EnchantAttribute"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="9326-1"/>
+	</item>
+	<item id="33483" name="Руда Земли - Super" type="EtcItem">
+		<set name="icon" val="icon.etc_earth_stone_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_attr"/>
+		<set name="handler" val="EnchantAttribute"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="9328-1"/>
+	</item>
+	<item id="33484" name="Руда Ветра - Super" type="EtcItem">
+		<set name="icon" val="icon.etc_wind_stone_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_attr"/>
+		<set name="handler" val="EnchantAttribute"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="9327-1"/>
+	</item>
+	<item id="33485" name="Руда Тьмы - Super" type="EtcItem">
+		<set name="icon" val="icon.etc_unholy_stone_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_attr"/>
+		<set name="handler" val="EnchantAttribute"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="9330-1"/>
+	</item>
+	<item id="33486" name="Руда Святости - Super" type="EtcItem">
+		<set name="icon" val="icon.etc_holy_stone_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_attr"/>
+		<set name="handler" val="EnchantAttribute"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="9329-1"/>
+	</item>
+	<item id="33487" name="Кристалл Огня - Super" type="EtcItem">
+		<set name="icon" val="icon.etc_fire_crystal_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_attr"/>
+		<set name="handler" val="EnchantAttribute"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="9325-2"/>
+	</item>
+	<item id="33488" name="Кристалл Воды - Super" type="EtcItem">
+		<set name="icon" val="icon.etc_water_crystal_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_attr"/>
+		<set name="handler" val="EnchantAttribute"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="9326-2"/>
+	</item>
+	<item id="33489" name="Кристалл Земли - Super" type="EtcItem">
+		<set name="icon" val="icon.etc_earth_crystal_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_attr"/>
+		<set name="handler" val="EnchantAttribute"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="9328-2"/>
+	</item>
+	<item id="33490" name="Кристалл Ветра - Super" type="EtcItem">
+		<set name="icon" val="icon.etc_wind_crystal_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_attr"/>
+		<set name="handler" val="EnchantAttribute"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="9327-2"/>
+	</item>
+	<item id="33491" name="Кристалл Тьмы - Super" type="EtcItem">
+		<set name="icon" val="icon.etc_unholy_crystal_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_attr"/>
+		<set name="handler" val="EnchantAttribute"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="9330-2"/>
+	</item>
+	<item id="33492" name="Кристалл Святости - Super" type="EtcItem">
+		<set name="icon" val="icon.etc_holy_crystal_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_attr"/>
+		<set name="handler" val="EnchantAttribute"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="9329-2"/>
+	</item>
+	<item id="33493" name="Ящик Поддержки Усиления Стихий" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="false"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="33481,12,12,100;33482,12,12,100;33483,12,12,100;33484,12,12,100;33485,12,12,100;33486,12,12,100;33487,12,12,100;33488,12,12,100;33489,12,12,100;33490,12,12,100;33491,12,12,100;33492,12,12,100"/>
+	</item>
+	<item id="33494" name="Знаменитые Печенья Говорящего Острова - (Ивент)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_valentine_cookie_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="true"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22416-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="33495" name="Сундук Оружия Реквиема - Обычный" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="false"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="17290,1,1,100;17291,1,1,100;17292,1,1,100;17293,1,1,100;17294,1,1,100;17295,1,1,100;17296,1,1,100;17297,1,1,100;17298,1,1,100;17299,1,1,100;17300,1,1,100;17301,1,1,100;17302,1,1,100;17303,1,1,100"/>
+	</item>
+	<item id="33496" name="Сундук Тяжелых Доспехов Бессмертия - Обычный" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="false"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="17304,1,1,100;17305,1,1,100;17306,1,1,100;17307,1,1,100;17308,1,1,100;17309,1,1,100"/>
+	</item>
+	<item id="33497" name="Сундук Легких Доспехов Бессмертия - Обычный" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="false"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="17310,1,1,100;17311,1,1,100;17312,1,1,100;17313,1,1,100;17314,1,1,100"/>
+	</item>
+	<item id="33498" name="Сундук Магических Доспехов Бессмертия - Обычный" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="false"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="17315,1,1,100;17316,1,1,100;17317,1,1,100;17318,1,1,100;17319,1,1,100;17320,1,1,100"/>
+	</item>
+	<item id="33499" name="Сундук Аксессуаров Бессмертия - Обычный" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="false"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="17321,1,1,100;17322,1,1,100;17322,1,1,100;17323,1,1,100;17323,1,1,100"/>
+	</item>
+	<item id="33421" name="Шлем Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="53"/>
+		<for>
+			<add order="0x10" stat="pDef" val="101"/>
+		</for>
+	</item>
+	<item id="33422" name="Кираса Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t94_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="752"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="250"/>
+		</for>
+	</item>
+	<item id="33423" name="Набедренники Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t94_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="scale_of_dragon"/>
+		<set name="weight" val="317"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="156"/>
+		</for>
+	</item>
+	<item id="33425" name="Рукавицы Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t94_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="51"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+		</for>
+	</item>
+	<item id="33426" name="Сапоги Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t94_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="107"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+		</for>
+	</item>
+	<item id="33427" name="Кожаный Шлем Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="53"/>
+		<for>
+			<add order="0x10" stat="pDef" val="101"/>
+		</for>
+	</item>
+	<item id="33428" name="Кожаная Кираса Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t95_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="414"/>
+		<for>
+			<add order="0x10" stat="pDef" val="187"/>
+		</for>
+	</item>
+	<item id="33429" name="Кожаные Брюки Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t95_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="scale_of_dragon"/>
+		<set name="weight" val="132"/>
+		<for>
+			<add order="0x10" stat="pDef" val="117"/>
+		</for>
+	</item>
+	<item id="33430" name="Кожаные Перчатки Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t95_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="51"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+		</for>
+	</item>
+	<item id="33431" name="Кожаные Сапоги Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t95_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="107"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+		</for>
+	</item>
+	<item id="33432" name="Диадема Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="53"/>
+		<for>
+			<add order="0x10" stat="pDef" val="101"/>
+		</for>
+	</item>
+	<item id="33433" name="Туника Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t96_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="175"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="125"/>
+			<add order="0x40" stat="maxMp" val="637"/>
+		</for>
+	</item>
+	<item id="33434" name="Штаны Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t96_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="scale_of_dragon"/>
+		<set name="weight" val="85"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="78"/>
+			<add order="0x40" stat="maxMp" val="415"/>
+		</for>
+	</item>
+	<item id="33435" name="Перчатки Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t96_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="51"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+		</for>
+	</item>
+	<item id="33436" name="Ботинки Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t96_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="107"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+		</for>
+	</item>
+	<item id="33437" name="Символ Венеры - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.verper_sigil_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="sigil"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="92"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="17"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="33438" name="Шлем Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="53"/>
+		<for>
+			<add order="0x10" stat="pDef" val="101"/>
+		</for>
+	</item>
+	<item id="33439" name="Кираса Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t94_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="752"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="250"/>
+		</for>
+	</item>
+	<item id="33440" name="Набедренники Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t94_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="scale_of_dragon"/>
+		<set name="weight" val="317"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="156"/>
+		</for>
+	</item>
+	<item id="33442" name="Рукавицы Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t94_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="51"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+		</for>
+	</item>
+	<item id="33443" name="Сапоги Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t94_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="107"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+		</for>
+	</item>
+	<item id="33444" name="Кожаный Шлем Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="53"/>
+		<for>
+			<add order="0x10" stat="pDef" val="101"/>
+		</for>
+	</item>
+	<item id="33445" name="Кожаная Кираса Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t95_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="414"/>
+		<for>
+			<add order="0x10" stat="pDef" val="187"/>
+		</for>
+	</item>
+	<item id="33446" name="Кожаные Брюки Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t95_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="scale_of_dragon"/>
+		<set name="weight" val="132"/>
+		<for>
+			<add order="0x10" stat="pDef" val="117"/>
+		</for>
+	</item>
+	<item id="33447" name="Кожаные Перчатки Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t95_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="51"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+		</for>
+	</item>
+	<item id="33448" name="Кожаные Сапоги Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t95_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="107"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+		</for>
+	</item>
+	<item id="33449" name="Диадема Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="53"/>
+		<for>
+			<add order="0x10" stat="pDef" val="101"/>
+		</for>
+	</item>
+	<item id="33450" name="Туника Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t96_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="175"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="125"/>
+			<add order="0x40" stat="maxMp" val="637"/>
+		</for>
+	</item>
+	<item id="33451" name="Штаны Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t96_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="scale_of_dragon"/>
+		<set name="weight" val="85"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="78"/>
+			<add order="0x40" stat="maxMp" val="415"/>
+		</for>
+	</item>
+	<item id="33452" name="Перчатки Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t96_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="51"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+		</for>
+	</item>
+	<item id="33453" name="Ботинки Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t96_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="107"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+		</for>
+	</item>
+	<item id="33454" name="Символ Венеры - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.verper_sigil_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="sigil"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="92"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="17"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="33480" name="Шлем Вай-Фай" type="Armor">
+		<set name="icon" val="icon.wifi_event_goggle_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="33455" name="Свиток: Модифицировать Оружие (D) - Артефакт Судьбы " type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i01"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33456" name="Свиток: Модифицировать Оружие (C) - Артефакт Судьбы " type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i02"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33457" name="Свиток: Модифицировать Оружие (B) - Артефакт Судьбы " type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i03"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33458" name="Свиток: Модифицировать Оружие (A) - Артефакт Судьбы " type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i04"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33459" name="Свиток: Модифицировать Оружие (S) - Артефакт Судьбы " type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i05"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33460" name="Свиток: Модифицировать Доспех (D) - Артефакт Судьбы " type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i01"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33461" name="Свиток: Модифицировать Доспех (C) - Артефакт Судьбы " type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i02"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33462" name="Свиток: Модифицировать Доспех (B) - Артефакт Судьбы " type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i03"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33463" name="Свиток: Модифицировать Доспех (A) - Артефакт Судьбы " type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i04"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33464" name="Свиток: Модифицировать Доспех (S) - Артефакт Судьбы " type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i05"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33466" name="Мешочек с Оружием - R2" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_gold_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33467" name="Мешочек с Доспехом - R2" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_gold_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="price" val="8927500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33469" name="Ящик Поддержки Перерождения" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33476" name="Руна Судьбы" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="33400" name="Возмездие Венеры - Артефакт Судьбы (Святость) - (Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_retributer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="174"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3013-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="482"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="33401" name="Певец Венеры - Артефакт Судьбы (Святость) - (Воодушевление)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_singer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="108"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3575-2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="386"/>
+			<set order="0x08" stat="mAtk" val="257"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="33402" name="Буревестник Венеры - Артефакт Судьбы (Святость) - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_stormer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="201"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3564-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="396"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="33403" name="Воитель Венеры - Артефакт Судьбы (Святость) - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_fighter_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="155"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3565-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="482"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="33404" name="Парные Мечи Венеры - Артефакт Судьбы (Святость)" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="152"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3552-1"/>
+		<set name="enchant_skill" val="4,3411-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="482"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="33405" name="Острие Венеры - Артефакт Судьбы (Тьма) - (Крит. Урон)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_shaper_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="152"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3572-2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="346"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="33406" name="Парные Кинжалы Венеры - Артефакт Судьбы (Тьма)" type="Weapon">
+		<set name="icon" val="icon.dual_dagger_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="205"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="enchant_skill" val="4,3411-1"/>
+		<set name="item_skill" val="3552-1"/>
+		<cond msgId="1518">
+			<and>
+				<player level="81"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="360"/>
+			<set order="0x08" stat="mAtk" val="181"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="33407" name="Резак Венеры - Артефакт Судьбы (Тьма) - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_cutter_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="152"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3566-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="396"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="33408" name="Расчленитель Венеры - Артефакт Судьбы (Тьма) - (Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_burster_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="152"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3047-3"/>
+		<set name="change_weaponId" val="33409"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="317"/>
+			<set order="0x08" stat="mAtk" val="234"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="33409" name="Клещи Венеры - Артефакт Судьбы (Тьма) - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_pincer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="128"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="enchant_skill" val="4,3426-1"/>
+		<set name="item_skill" val="3566-3"/>
+		<set name="change_weaponId" val="33408"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="359"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="33410" name="Эспадон Венеры - Артефакт Судьбы (Тьма) - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_slasher_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="174"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3566-3"/>
+		<set name="change_weaponId" val="33411"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="482"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="33411" name="Оскал Венеры - Артефакт Судьбы (Тьма) - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_nagen_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="180"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3566-3"/>
+		<set name="change_weaponId" val="33410"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="429"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="33412" name="Бросок Венеры - Артефакт Судьбы (Тьма) - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_thrower_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="152"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3566-3"/>
+		<set name="change_weaponId" val="33413"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="724"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="33413" name="Страж Венеры - Артефакт Судьбы (Тьма) - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_schutze_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="158"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3566-3"/>
+		<set name="change_weaponId" val="33412"/>
+		<set name="reuse_delay" val="400"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="444"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+		</for>
+	</item>
+	<item id="33414" name="Мститель Венеры - Артефакт Судьбы (Тьма) - (Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_avenger_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="174"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3013-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="396"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="33415" name="Заклинатель Венеры - Артефакт Судьбы (Тьма) - (Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_caster_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="108"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3047-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="317"/>
+			<set order="0x08" stat="mAtk" val="234"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="33416" name="Возмездие Венеры - Артефакт Судьбы (Тьма) - (Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_retributer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="174"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3013-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="482"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="33417" name="Певец Венеры - Артефакт Судьбы (Тьма) - (Воодушевление)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_singer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="108"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3575-2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="386"/>
+			<set order="0x08" stat="mAtk" val="257"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="33418" name="Буревестник Венеры - Артефакт Судьбы (Тьма) - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_stormer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="201"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3564-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="396"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="33419" name="Воитель Венеры - Артефакт Судьбы (Тьма) - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_fighter_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="155"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3565-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="482"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="33420" name="Парные Мечи Венеры - Артефакт Судьбы (Тьма)" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="152"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3552-1"/>
+		<set name="enchant_skill" val="4,3411-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="482"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+</list>

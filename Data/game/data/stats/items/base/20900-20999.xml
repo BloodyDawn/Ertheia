@@ -1,0 +1,1519 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="20900" name="Шапка Седобородого Деда Мороза - (14 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_xmas_gawibawibo_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="time" val="20160"/>
+	</item>
+	<item id="20901" name="Комплект Седобородого Деда Мороза" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="capsuled_items" val="20900,1,1,100;14611,1,1,100"/>
+	</item>
+	<item id="20902" name="Упаковка: Кольцо Королевы Муравьев (7 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20205,1,1,100"/>
+	</item>
+	<item id="20903" name="Настойка Красной Розы" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_herb_of_baguette_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="ex_immediate_effect" val="true"/>
+		<set name="material" val="paper"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22158-1"/>
+	</item>
+	<item id="20904" name="Эссенция Розы" type="EtcItem">
+		<set name="icon" val="BranchSys2.br_essence_rose_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="2"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="20905" name="Красная Роза" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_rosalia_rose_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="500"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="20906" name="Синяя Роза" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_rosalia_rose_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="500"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="20907" name="Белая Роза" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_rosalia_rose_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="500"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="20908" name="Ожерелье Розы Дзеллофа: Ивент - (Время призыва: 3 ч.)" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_event"/>
+		<set name="default_action" val="skill_maintain"/>
+		<set name="etcitem_type" val="pet_collar"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="SummonItems"/>
+		<set name="item_skill" val="2046-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="20909" name="Ожерелье Розы Хьюма: Ивент - (Время призыва: 3 ч.)" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_event"/>
+		<set name="default_action" val="skill_maintain"/>
+		<set name="etcitem_type" val="pet_collar"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="SummonItems"/>
+		<set name="item_skill" val="2046-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="20910" name="Ожерелье Розы Леканга: Ивент - (Время призыва: 3 ч.)" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_event"/>
+		<set name="default_action" val="skill_maintain"/>
+		<set name="etcitem_type" val="pet_collar"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="SummonItems"/>
+		<set name="item_skill" val="2046-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="20911" name="Ожерелье Розы Лилиат: Ивент - (Время призыва: 3 ч.)" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_event"/>
+		<set name="default_action" val="skill_maintain"/>
+		<set name="etcitem_type" val="pet_collar"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="SummonItems"/>
+		<set name="item_skill" val="2046-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="20912" name="Ожерелье Розы Лафам: Ивент - (Время призыва: 3 ч.)" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_event"/>
+		<set name="default_action" val="skill_maintain"/>
+		<set name="etcitem_type" val="pet_collar"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="SummonItems"/>
+		<set name="item_skill" val="2046-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="20913" name="Ожерелье Розы Мафюм: Ивент - (Время призыва: 3 ч.)" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_event"/>
+		<set name="default_action" val="skill_maintain"/>
+		<set name="etcitem_type" val="pet_collar"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="SummonItems"/>
+		<set name="item_skill" val="2046-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="20914" name="Купон Обмена Улучшенного Духа Розы - 5 ч." type="EtcItem">
+		<set name="icon" val="icon.etc_ticket_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20915" name="Улучшенное Ожерелье Розы Дзеллофа: Ивент - (Время призыва: 5 ч.)" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_i00"/>
+		<set name="default_action" val="skill_maintain"/>
+		<set name="etcitem_type" val="pet_collar"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="SummonItems"/>
+		<set name="item_skill" val="2046-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="20916" name="Улучшенное Ожерелье Розы Хьюма: Ивент - (Время призыва: 5 ч.)" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_i00"/>
+		<set name="default_action" val="skill_maintain"/>
+		<set name="etcitem_type" val="pet_collar"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="SummonItems"/>
+		<set name="item_skill" val="2046-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="20917" name="Улучшенное Ожерелье Розы Леканга: Ивент - (Время призыва: 5 ч.)" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_i00"/>
+		<set name="default_action" val="skill_maintain"/>
+		<set name="etcitem_type" val="pet_collar"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="SummonItems"/>
+		<set name="item_skill" val="2046-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="20918" name="Улучшенное Ожерелье Розы Лилиат: Ивент - (Время призыва: 5 ч.)" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_i00"/>
+		<set name="default_action" val="skill_maintain"/>
+		<set name="etcitem_type" val="pet_collar"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="SummonItems"/>
+		<set name="item_skill" val="2046-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="20919" name="Улучшенное Ожерелье Розы Лафам: Ивент - (Время призыва: 5 ч.)" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_i00"/>
+		<set name="default_action" val="skill_maintain"/>
+		<set name="etcitem_type" val="pet_collar"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="SummonItems"/>
+		<set name="item_skill" val="2046-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="20920" name="Улучшенное Ожерелье Розы Мафюм: Ивент - (Время призыва: 5 ч.)" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_i00"/>
+		<set name="default_action" val="skill_maintain"/>
+		<set name="etcitem_type" val="pet_collar"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="SummonItems"/>
+		<set name="item_skill" val="2046-1"/>
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="20921" name="Записи Опытов Духа Розы - (24 часа)" type="EtcItem">
+		<set name="icon" val="icon.etc_royal_membership_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_questitem" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="time" val="1440"/>
+	</item>
+	<item id="20922" name="Шляпа Исследователя" type="Armor">
+		<set name="icon" val="icon.accessory_explorer_hat_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+	</item>
+	<item id="20923" name="Эспадон Венеры" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_royal_crown_of_vesper_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="ex_immediate_effect" val="true"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22159-1"/>
+	</item>
+	<item id="20924" name="Заклинатель Венеры" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_royal_circlet_of_vesper_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="ex_immediate_effect" val="true"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22160-1"/>
+	</item>
+	<item id="20925" name="Парные Мечи Венеры" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_noblesse_oblige_of_vesper_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="ex_immediate_effect" val="true"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22161-1"/>
+	</item>
+	<item id="20926" name="Настойка Горы Фудзи" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_fuji_herb_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="ex_immediate_effect" val="true"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22162-1"/>
+	</item>
+	<item id="20927" name="Настойка Ястреба" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_hawk_herb_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="ex_immediate_effect" val="true"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22163-1"/>
+	</item>
+	<item id="20928" name="Баклажановая Настойка" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_eggplant_herb_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="ex_immediate_effect" val="true"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22164-1"/>
+	</item>
+	<item id="20929" name="Королевская Корона Венеры" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_royal_crown_of_vesper_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20930" name="Королевская Диадема Венеры" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_royal_circlet_of_vesper_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20931" name="Диадема Дворянина" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_noblesse_oblige_of_vesper_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20932" name="Королевская Корона Венеры - (30 дней)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_royal_crown_of_vesper_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="time" val="43200"/>
+	</item>
+	<item id="20933" name="Королевская Диадема Венеры - (30 дней)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_royal_circlet_of_vesper_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="time" val="43200"/>
+	</item>
+	<item id="20934" name="Диадема Дворянина - (30 дней)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_noblesse_oblige_of_vesper_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="time" val="43200"/>
+	</item>
+	<item id="20935" name="Королевская Корона Венеры" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_royal_crown_of_vesper_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="10"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20936" name="Королевская Диадема Венеры" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_royal_circlet_of_vesper_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="10"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20937" name="Диадема Дворянина" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_noblesse_oblige_of_vesper_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="10"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20938" name="Браслет Реактивного Мотоцикла - (7 дней)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_z_bike_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="619-1"/>
+		<set name="item_skill" val="21171-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20939" name="Браслет Реактивного Мотоцикла - (30 дней)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_z_bike_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="619-1"/>
+		<set name="item_skill" val="21171-1"/>
+		<set name="time" val="43200"/>
+	</item>
+	<item id="20940" name="Браслет Печати Агатиона - Феникс - (Нирвана - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_china_phoenix_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21191-1;23171-1;23172-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20941" name="Браслет Печати Агатиона - Феникс - (Очищение Феникса - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_china_phoenix_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21191-1;23171-1;23173-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20942" name="Маска Лисы" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_fox_japan_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20943" name="Маска Лисы - (Тихие Шаги - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_fox_japan_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21192-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20944" name="Шляпа Пайван" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_paiwan_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20945" name="Шляпа Пайван - (Сила Богов - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_paiwan_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21193-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20946" name="Упаковка: Реактивный Мотоцикл - 7 дн." type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="20938,1,1,100"/>
+	</item>
+	<item id="20947" name="Упаковка: Реактивный Мотоцикл - 30 дн." type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="20939,1,1,100"/>
+	</item>
+	<item id="20948" name="Упаковка: Агатион Феникс - 7 дн. - (Нирвана)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="20940,1,1,100"/>
+	</item>
+	<item id="20949" name="Упаковка: Агатион Феникс - 7 дн. - (Очищение Феникса)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="20941,1,1,100"/>
+	</item>
+	<item id="20950" name="Упаковка: Маска Лисы" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20942,1,1,100"/>
+	</item>
+	<item id="20951" name="Упаковка: Маска Лисы - 7 дн. - (Тихие Шаги)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20943,1,1,100"/>
+	</item>
+	<item id="20952" name="Упаковка: Шляпа Пайван" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20944,1,1,100"/>
+	</item>
+	<item id="20953" name="Упаковка: Шляпа Пайван - 7 дн. - (Сила Богов)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20945,1,1,100"/>
+	</item>
+	<item id="20954" name="Маленькое Золотое Семя" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_shield_bread_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="gold"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22165-1"/>
+	</item>
+	<item id="20955" name="Среднее Золотое Семя" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_shield_bread_i01"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="gold"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22166-1"/>
+	</item>
+	<item id="20956" name="Браслет Печати Агатиона - Мертвец - (Прозрачность Души - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_gangsi_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21133-1;23117-1;23175-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20957" name="Упаковка: Агатион Мертвец - 7 дн. - (Прозрачность Души)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20956,1,1,100"/>
+	</item>
+	<item id="20958" name="Особый Подарок Дня Смеха - Ивент" type="EtcItem">
+		<set name="icon" val="icon.lucky_bag_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22167-1"/>
+	</item>
+	<item id="20959" name="Упаковка: Королевская Корона Венеры" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20929,1,1,100"/>
+	</item>
+	<item id="20960" name="Упаковка: Королевская Диадема Венеры" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20930,1,1,100"/>
+	</item>
+	<item id="20961" name="Упаковка: Диадема Дворянина" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20931,1,1,100"/>
+	</item>
+	<item id="20962" name="Упаковка: Королевская Корона Венеры (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20932,1,1,100"/>
+	</item>
+	<item id="20963" name="Упаковка: Королевская Диадема Венеры (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20933,1,1,100"/>
+	</item>
+	<item id="20964" name="Упаковка: Диадема Дворянина (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20934,1,1,100"/>
+	</item>
+	<item id="20965" name="Упаковка: Королевская Корона Венеры" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20935,1,1,100"/>
+	</item>
+	<item id="20966" name="Упаковка: Королевская Диадема Венеры" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20936,1,1,100"/>
+	</item>
+	<item id="20967" name="Упаковка с Диадемой Дворянина" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20937,1,1,100"/>
+	</item>
+	<item id="20968" name="Браслет Печати Агатиона - Бог Войны" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_warriorgod_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="is_freightable" val="true"/>
+		<set name="item_skill" val="3267-1;21142-1;23123-1"/>
+	</item>
+	<item id="20969" name="Упаковка: Агатион Бог Войны" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20968,1,1,100"/>
+	</item>
+	<item id="20970" name="Браслет Печати Агатиона - Змей Горыныч - (Легкая Походка)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_threehead_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21194-1;23181-1;23182-1"/>
+	</item>
+	<item id="20971" name="Жезл Трансформации в Трежера - (Перевоплощение в Благословенного Тайского Мальчика)" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_blessed_taiboy_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="839-1"/>
+		<set name="item_skill" val="21195-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1"/>
+			<set order="0x08" stat="mAtk" val="1"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20972" name="Жезл Трансформации в Суджин - (Перевоплощение в Благословенную Тайскую Девочку)" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_blessed_taigirl_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="839-1"/>
+		<set name="item_skill" val="21196-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1"/>
+			<set order="0x08" stat="mAtk" val="1"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20973" name="Маска Пекинской Оперы - Юэ Фэй - (Эффект Добродетели, Дух Трех Государств)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_mask_a_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="item_skill" val="21197-1;21200-1"/>
+	</item>
+	<item id="20974" name="Маска Пекинской Оперы - Гуань Юй - (Безмолвие Преданности, Дух Трех Государств)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_mask_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="item_skill" val="21198-1;21200-1"/>
+	</item>
+	<item id="20975" name="Маска Пекинской Оперы - Джань Фэй - (Энергия Алмаза, Дух Трех Государств)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_mask_c_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="item_skill" val="21199-1;21200-1"/>
+	</item>
+	<item id="20976" name="Знак Смельчака - (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_symbol_a_i00"/>
+		<set name="material" val="gold"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="time" val="43200"/>
+	</item>
+	<item id="20977" name="Знак Братства" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_symbol_b_i00"/>
+		<set name="material" val="gold"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20978" name="Цзунцзы - ранг В" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_taiwan_riceball_a_i00"/>
+		<set name="etcitem_type" val="scrl_inc_enchant_prop_wp"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2517-1"/>
+	</item>
+	<item id="20979" name="Цзунцзы - ранг A" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_taiwan_riceball_b_i00"/>
+		<set name="etcitem_type" val="scrl_inc_enchant_prop_wp"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2518-1"/>
+	</item>
+	<item id="20980" name="Цзунцзы - ранг S" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_taiwan_riceball_c_i00"/>
+		<set name="etcitem_type" val="scrl_inc_enchant_prop_wp"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2519-1"/>
+	</item>
+	<item id="20981" name="Шапка Дракона" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_dragonboat_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20982" name="Шапка Дракона - (Ускорение - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_dragonboat_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21201-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20983" name="Браслет Печати Агатиона - Ловец Мячей Гносиан - (Мяч Поддержки, Поддерживающий Эффект)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_ball_male_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21202-1;23201-1;23183-1;23184-1"/>
+	</item>
+	<item id="20984" name="Браслет Печати Агатиона - Ловец Мячей Ородриэль - (Мяч Поддержки, Поддерживающий Эффект)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_ball_female_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21203-1;23202-1;23185-1;23186-1"/>
+	</item>
+	<item id="20985" name="Браслет Печати Агатиона - Штрафной Удар - (Мяч Поддержки, Поддерживающий Эффект)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_ball_kick_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21204-1;23203-1;23187-1;23188-1"/>
+	</item>
+	<item id="20986" name="Браслет Печати Агатиона - Ловец Мячей Гносиан - (Мяч Поддержки, Поддерживающий Эффект)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_jball_male_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21205-1;23204-1;23189-1;23190-1"/>
+	</item>
+	<item id="20987" name="Браслет Печати Агатиона - Ловец Мячей Ородриэль - (Мяч Поддержки, Поддерживающий Эффект)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_jball_female_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21206-1;23205-1;23191-1;23192-1"/>
+	</item>
+	<item id="20988" name="Браслет Печати Агатиона - Штрафной Удар - (Мяч Поддержки, Поддерживающий Эффект)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_jball_kick_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21207-1;23206-1;23193-1;23194-1"/>
+	</item>
+	<item id="20989" name="Браслет Печати Агатиона - Ловец Мячей Гносиан - (Мяч Поддержки, Поддерживающий Эффект)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_kball_male_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21208-1;23207-1;23195-1;23196-1"/>
+	</item>
+	<item id="20990" name="Браслет Печати Агатиона - Ловец Мячей Ородриэль - (Мяч Поддержки, Поддерживающий Эффект)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_kball_female_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21209-1;23208-1;23197-1;23198-1"/>
+	</item>
+	<item id="20991" name="Браслет Печати Агатиона - Штрафной Удар - (Мяч Поддержки, Поддерживающий Эффект)" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_kball_kick_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21210-1;23209-1;23199-1;23200-1"/>
+	</item>
+	<item id="20992" name="Напиток Утоления Жажды Победы" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_victory_potion_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="gold"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22168-1"/>
+	</item>
+	<item id="20993" name="Вспомогательный Мяч" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_soccer_ball_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22169-1"/>
+	</item>
+	<item id="20994" name="Упаковка: Агатион Змей Горыныч - (Легкая Походка)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="20970,1,1,100"/>
+	</item>
+	<item id="20995" name="Упаковка: Маска Пекинской Оперы (Юэ Фэй) - (Эффект Добродетели, Дух Трех Государств)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20973,1,1,100"/>
+	</item>
+	<item id="20996" name="Упаковка: Маска Пекинской Оперы (Гуань Юй) - (Безмолвие Преданности, Дух Трех Государств)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20974,1,1,100"/>
+	</item>
+	<item id="20997" name="Упаковка: Маска Пекинской Оперы (Джань Фэй) - (Энергия Алмаза, Дух Трех Государств)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20975,1,1,100"/>
+	</item>
+	<item id="20998" name="Упаковка: Шапка Дракона" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20981,1,1,100"/>
+	</item>
+	<item id="20999" name="Упаковка: Шапка Дракона (7 дн.) - (Ускорение)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20982,1,1,100"/>
+	</item>
+</list>

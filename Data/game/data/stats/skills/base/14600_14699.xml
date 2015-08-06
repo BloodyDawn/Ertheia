@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="14624" levels="1" name="Темное Пространство Афроса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="1000"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="1" abnormalVisualEffect="poison" count="5" name="HpDamOverTime" val="810">
+                <mul order="0x30" stat="pAtkSpd" val="0.90"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14625" levels="1" name="Освобождение Силы">
+        <set name="reuseDelay" val="30000"/>
+        <set name="hitTime" val="10000"/>
+        <set name="castRange" val="900"/>
+        <set name="power" val="1428"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="100" name="HpHealPercent" val="564"/>
+        </for>
+    </skill>
+    <skill id="14650" levels="1" name="Удар мертвеца">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="50937"/>
+    </skill>
+    <skill id="14652" levels="1" name="Поглощение крови">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="vampiric" name="Buff" val="0">
+                <add order="0x40" stat="absorbDam" val="100"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14654" levels="1" name="Поглощение сумерек">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="castRange" val="600"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="HEAL"/>
+        <for>
+            <effect name="HpHeal" noicon="1" val="1024"/>
+        </for>
+    </skill>
+    <skill id="14655" levels="1" name="Отражение">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="dmg_shield" name="Buff" val="0">
+                <add order="0x40" stat="reflectDam" val="50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14656" levels="1" name="Ярость мертвеца">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="ultimate_buff" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="2"/>
+                <mul order="0x30" stat="pAtkSpd" val="2"/>
+                <mul order="0x30" stat="cAtk" val="2"/>
+                <mul order="0x30" stat="pCritRate" val="2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14658" levels="1" name="Вихрь">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="36675"/>
+    </skill>
+    <skill id="14660" levels="1" name="Удар крови">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14661" levels="1" name="Колебания Тьмы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="castRange" val="900"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="49414"/>
+    </skill>
+    <skill id="14662" levels="1" name="Ужас Тьмы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3500"/>
+        <set name="castRange" val="900"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="50937"/>
+    </skill>
+    <skill id="14663" levels="1" name="Удар Хранителя">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="45844"/>
+    </skill>
+    <skill id="14664" levels="1" name="Разрушительный Удар">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="50937"/>
+    </skill>
+    <skill id="14666" levels="1" name="Удар напролом">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3500"/>
+        <set name="castRange" val="900"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="50937"/>
+    </skill>
+    <skill id="14677" levels="1" name="Крик Судьбы - Удар Гиганта">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="300"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="flyType" val="CHARGE"/>
+        <set name="flyRadius" val="55"/>
+        <set name="element" val="3"/>
+        <set name="elementPower" val="30"/>
+        <set name="isDebuff" val="true"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="trait" val="KNOCKDOWN"/>
+        <set name="weaponsAllowed" val="Pole, Dual Sword, Big Sword, Dual Fist, Dual Blunt"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3" abnormalVisualEffect="sknockdown" effectPower="75" effectType="KNOCK_DOWN" name="KnockDown" val="0"/>
+        </for>
+    </skill>
+    <skill id="14689" levels="2" name="Крик Судьбы - Клеймо Чумы">
+        <table name="#dot">70 80</table>
+        <table name="#abnormalLvl">1 2</table>
+        <table name="#gainHp">0.95 0.90</table>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="effectRange" val="800"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="trait" val="POISON"/>
+        <set name="isDebuff" val="true"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="skillType" val="DEBUFF"/>
+        <for>
+            <effect abnormalLvl="#abnormalLvl" abnormalType="mark_disease" abnormalVisualEffect="poison" count="15" name="HpDamOverTime" val="#dot">
+                <mul order="0x30" stat="gainHp" val="#gainHp"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14697" levels="1" name="Адские Оковы Призрака">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="900"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillRadius" val="300"/>
+        <set name="skillType" val="FLY_UP"/>
+        <set name="trait" val="FLYUP"/>
+        <set name="isDebuff" val="true"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="magicLevel" val="85"/>
+        <set name="power" val="50"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="20" abnormalVisualEffect="sflyup" name="FlyUp" val="0"/>
+        </for>
+    </skill>
+    <skill id="14698" levels="1" name="Электрическое оглушение">
+        <set name="magicLevel" val="20"/>
+        <set name="hitTime" val="1000"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="power" val="1000"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="skillRadius" val="500"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3" count="2" abnormalType="electricity" name="HpDamOverTime" val="67"/>
+        </for>
+    </skill>
+    <skill id="14600" levels="1" name="Цепное Умение">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14601" levels="1" name="Крик Судьбы - Клеймо Слабости">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14602" levels="1" name="Крик Судьбы - Клеймо Чумы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14603" levels="1" name="Крик Судьбы - Изгнание">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14604" levels="1" name="Цепное Умение">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14605" levels="1" name="Крик Судьбы - Атака Штурмом">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="910"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14606" levels="1" name="Крик Судьбы - Смертельный Удар">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1410"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14607" levels="1" name="Крик Судьбы - Поэма Органа">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="700"/>
+        <set name="coolTime" val="300"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14608" levels="1" name="Цепное Умение">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14609" levels="1" name="Крик Судьбы - Темный Порыв">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14610" levels="1" name="Крик Судьбы - Свет Исцеления">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="coolTime" val="500"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14611" levels="1" name="Крик Судьбы - Темные Силы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="mpConsume" val="43"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14612" levels="1" name="Нажмите на ярлык и атакуйте Цепной Атакой">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14613" levels="1" name="Нажмите на ярлык и атакуйте Цепной Атакой">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14614" levels="1" name="Нажмите на ярлык и атакуйте Цепной Атакой">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14615" levels="1" name="Укус Траджана">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castRange" val="150"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14616" levels="1" name="Состояние Вампиризма">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="500"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14617" levels="1" name="Устойчивость к Нокдаунам">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14618" levels="1" name="Устойчивость к отталкиваниям">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14619" levels="1" name="Устойчивость к обезоруживанию">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14620" levels="1" name="Устойчивость к Воздушным Оковам 1">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14621" levels="1" name="Устойчивость к притягиванию">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14622" levels="1" name="Устойчивость к изгнанию">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14623" levels="1" name="Устойчивость к мутации">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14626" levels="1" name="Устойчивость к метальным атакам">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14627" levels="1" name="Смердящий Прах">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="castRange" val="300"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14628" levels="1" name="Выброс желудочного сока">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="castRange" val="300"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14629" levels="1" name="Разрезание трупа">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="castRange" val="100"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14630" levels="1" name="Уборка гнили">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="castRange" val="150"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14631" levels="1" name="Смердящие останки">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14632" levels="1" name="Ужасающий танец Ножа">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="7000"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14633" levels="1" name="Ампутация Лодыжки">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="castRange" val="100"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14634" levels="1" name="Отчаянный Заклейменный">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="7000"/>
+        <set name="castRange" val="300"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14635" levels="1" name="Взрыв трупа">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="5000"/>
+        <set name="castRange" val="100"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14636" levels="1" name="Безжалостная хватка">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="castRange" val="150"/>
+        <set name="reuseDelay" val="60000"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14637" levels="1" name="Молниеносный Туман">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="5000"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14638" levels="1" name="Ногти- лезвие">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="castRange" val="100"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14639" levels="1" name="Смешанные токсические вещества">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castRange" val="200"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14640" levels="1" name="Передвижение">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14641" levels="1" name="Землетрясение">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="castRange" val="500"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14642" levels="1" name="Ампутация">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="castRange" val="100"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14643" levels="1" name="Призыв">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="castRange" val="600"/>
+        <set name="reuseDelay" val="20000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14644" levels="1" name="Клык">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="castRange" val="80"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14645" levels="1" name="Стрела Тьмы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="castRange" val="500"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14646" levels="1" name="Раскол">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="5000"/>
+        <set name="castRange" val="300"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14647" levels="1" name="Раскол">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="300"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14648" levels="1" name="Неистовство">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14649" levels="1" name="Скачок">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14651" levels="1" name="Взрыв">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14653" levels="1" name="Омертвение">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14657" levels="1" name="Отражение ярости">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14659" levels="1" name="Взрыв">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14665" levels="1" name="Яростное нападение">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="coolTime" val="200"/>
+        <set name="castRange" val="400"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14667" levels="1" name="Искры приговора">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="4000"/>
+        <set name="castRange" val="900"/>
+        <set name="reuseDelay" val="1200"/>
+        <set name="mpConsume" val="2"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14668" levels="1" name="Наказание падения">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="4000"/>
+        <set name="castRange" val="500"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="mpConsume" val="2"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14669" levels="1" name="Удар Щупальцем Подземного Червя">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="2000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14670" levels="1" name="Удар Щупальцем Подземного Червя">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14671" levels="1" name="Удар Щупальцем Подземного Червя">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14672" levels="1" name="Скачок">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="600"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14673" levels="1" name="Крик Судьбы - Заряд Щита">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="800"/>
+        <set name="coolTime" val="570"/>
+        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14674" levels="1" name="Крик Судьбы - Цепной Удар">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="coolTime" val="1000"/>
+        <set name="castRange" val="600"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14675" levels="1" name="Крик Судьбы - Страшный Суд">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="470"/>
+        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14676" levels="1" name="Крик Судьбы - Разрушение Брони">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1090"/>
+        <set name="coolTime" val="200"/>
+        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14678" levels="1" name="Крик Судьбы - Мощный Взрыв">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1490"/>
+        <set name="coolTime" val="200"/>
+        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14679" levels="1" name="Крик Судьбы - Разбивание Сердца">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="830"/>
+        <set name="coolTime" val="700"/>
+        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14680" levels="1" name="Крик Судьбы - Темный Паралич">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14681" levels="1" name="Крик Судьбы - Метательный Песок">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="800"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14682" levels="1" name="Крик Судьбы - Точечный Удар">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="coolTime" val="850"/>
+        <set name="castRange" val="700"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14683" levels="1" name="Крик Судьбы - Молниеносный выстрел">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="800"/>
+        <set name="coolTime" val="200"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14684" levels="1" name="Крик Судьбы - Отбрасывающий Выстрел">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="coolTime" val="450"/>
+        <set name="castRange" val="900"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14685" levels="1" name="Крик Судьбы - Шип Стихии">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2280"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="550"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14686" levels="1" name="Крик Судьбы - Стихийное Разрушение">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2780"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="600"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14687" levels="1" name="Крик Судьбы - Адские Оковы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="900"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14688" levels="2" name="Крик Судьбы - Клеймо Слабости">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14690" levels="1" name="Крик Судьбы - Изгнание">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14691" levels="1" name="Крик Судьбы - Атака Штурмом">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="910"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14692" levels="1" name="Крик Судьбы - Смертельный Удар">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1410"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14693" levels="1" name="Крик Судьбы - Поэма Органа">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="700"/>
+        <set name="coolTime" val="300"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14694" levels="1" name="Крик Судьбы - Темный Порыв">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14695" levels="1" name="Крик Судьбы - Свет Исцеления">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="coolTime" val="500"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14696" levels="1" name="Крик Судьбы - Темная Сила">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="mpConsume" val="43"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="14699" levels="1" name="Приветствие боли">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="reuseDelay" val="4000"/>
+        <set name="mpConsume" val="34"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+</list>

@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="22100" levels="1" name="Благовоние">
+        <set name="castRange" val="400"/>
+        <set name="effectRange" val="900"/>
+        <set name="hitTime" val="1500"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="skillType" val="DRAIN"/>
+        <set name="target" val="TARGET_CORPSE_MOB"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="br_event_buf6" name="Buff" self="1" val="0">
+                <mul order="0x30" stat="maxHp" val="1.4"/>
+                <mul order="0x30" stat="maxMp" val="1.4"/>
+                <mul order="0x30" stat="maxCp" val="1.4"/>
+                <mul order="0x30" stat="pDef" val="1.3"/>
+                <mul order="0x30" stat="mDef" val="1.3"/>
+                <add order="0x40" stat="runSpd" val="20"/>
+                <mul order="0x30" stat="mAtk" val="1.45"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.9"/>
+                <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.9"/>
+                <mul order="0x30" stat="DanceMpConsumeRate" val="0.9"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22101" levels="1" name="Сундук Любви">
+        <table name="#extractableItems">20590,1,40;9207,1,60</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="22102" levels="1" name="Сундук Магической Души">
+        <set name="coolTime" val="1000"/>
+        <set name="create_item_count" val="1"/>
+        <set name="create_item_id" val="20623"/>
+        <set name="hitTime" val="2700"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="86400000"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="22103" levels="1" name="Свиток Благ. Телепорта - Ивент">
+        <set name="hitTime" val="200"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="itemConsumeId" val="20583"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="RECALL"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="22104" levels="1" name="Свиток Благ. Воскрешения - Ивент">
+        <set name="castRange" val="400"/>
+        <set name="effectRange" val="600"/>
+        <set name="hitTime" val="3000"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="itemConsumeId" val="20584"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="100"/>
+        <set name="skillType" val="RESURRECT"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="target" val="TARGET_CORPSE_PLAYER"/>
+    </skill>
+    <skill id="22105" levels="1" name="Свиток Призыва Ульди - Ивент">
+        <set name="hitTime" val="3000"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="itemConsumeId" val="20707"/>
+        <set name="magicLvl" val="1"/>
+        <set name="npcDistance" val="40"/>
+        <set name="npcId" val="20"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="12000"/>
+        <set name="skillType" val="SUMMON"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond addName="1" msgId="113">
+            <player active_skill_id="21120"/>
+        </cond>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="22106" levels="1" name="Свиток Призыва Верданди - Ивент">
+        <set name="hitTime" val="3000"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="itemConsumeId" val="20707"/>
+        <set name="magicLvl" val="1"/>
+        <set name="npcDistance" val="40"/>
+        <set name="npcId" val="21"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="12000"/>
+        <set name="skillType" val="SUMMON"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond addName="1" msgId="113">
+            <player active_skill_id="21120"/>
+        </cond>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="22107" levels="1" name="Свиток Призыва Скульди - Ивент">
+        <set name="hitTime" val="3000"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="itemConsumeId" val="20707"/>
+        <set name="magicLvl" val="1"/>
+        <set name="npcDistance" val="40"/>
+        <set name="npcId" val="19"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="12000"/>
+        <set name="skillType" val="SUMMON"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond addName="1" msgId="113">
+            <player active_skill_id="21120"/>
+        </cond>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="22108" levels="1" name="Сундук с Игрушками Хеллоуина">
+        <table name="#extractableItems">20712,1,20;20713,1,20;20714,1,20;20715,1,20;20716,1,20</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="22109" levels="1" name="Блестящий Сундук с Игрушками Хеллоуина">
+        <table name="#extractableItems">20718,1,20;20719,1,20;20720,1,20;20721,1,20;20722,1,20</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="22110" levels="1" name="Призыв Небесного Посланника Радости">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22111" levels="1" name="Призыв Небесного Посланника Климата">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22112" levels="1" name="Призыв Небесного Посланника Удачи">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22113" levels="1" name="Призыв Небесного Посланника Спокойствия">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22114" levels="1" name="Сундук со Свитками Перевоплощения">
+        <table name="#extractableItems">20364,1,33;20365,1,33;20366,1,34</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="22115" levels="1" name="Коробка с Купонами на Оружие Седобородого Деда Мороза">
+        <table name="#extractableItems">20755,1,99.99949;20757,1,0.00051</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="22116" levels="1" name="Призыв Коробки с Фейерверками">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22117" levels="1" name="Взрыв Коробки с Фейерверками">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22118" levels="1" name="Тепло Котацу">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillRadius" val="200"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_AURA"/>
+        <for>
+            <effect abnormalLvl="99" abnormalTime="25" abnormalType="hp_regen_up" name="Buff" val="0">
+                <mul order="0x30" stat="regCp" val="1.3"/>
+                <mul order="0x30" stat="regHp" val="1.4"/>
+                <mul order="0x30" stat="regMp" val="1.2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22119" levels="1" name="Блюдо - Поросенок">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="mAtk" val="1.75"/>
+                <add order="0x40" stat="mCritRate" val="2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22120" levels="1" name="Блюдо - Рыба">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="cAtk" val="1.35"/>
+                <mul order="0x30" stat="pCritRate" val="1.3"/>
+                <add order="0x40" stat="accPhysical" val="4"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22121" levels="1" name="Блюдо - Манты">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="mDef" val="1.3"/>
+                <mul order="0x30" stat="pDef" val="1.15"/>
+                <add order="0x40" stat="sDef" val="15"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22122" levels="1" name="Блюдо - Лапша">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="mAtk" val="1.16"/>
+                <mul order="0x30" stat="mDef" val="0.84"/>
+                <mul order="0x30" stat="pAtk" val="1.15"/>
+                <mul order="0x30" stat="pAtk" val="1.08"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="pDef" val="0.92"/>
+                <sub order="0x40" stat="ratePhysicalEvas" val="4"/>
+                <add order="0x40" stat="runSpd" val="8"/>
+                <add order="0x40" stat="absorbDam" val="9"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22123" levels="1" name="Блюдо - Курица">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="DanceMpConsumeRate" val="0.8"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.8"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.3"/>
+                <mul order="0x30" stat="maxHp" val="1.35"/>
+                <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.9"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22124" levels="1" name="Блюдо - Салат">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="multi_buff" name="Buff" val="0">
+                <add order="0x40" stat="weightLimit" val="9000"/>
+                <add order="0x40" stat="pAtkSpd" val="33"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22125" levels="1" name="Железная Печать">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.35"/>
+                <add order="0x40" stat="ratePhysicalEvas" val="4"/>
+                <add order="0x40" stat="runSpd" val="33"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22126" levels="1" name="Умение Кормления">
+        <set name="castRange" val="400"/>
+        <set name="effectRange" val="500"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_ONE"/>
+        <cond msgId="109">
+            <target npcId="1538"/>
+        </cond>
+    </skill>
+    <skill id="22127" levels="1" name="Призыв Теплого Котацу">
+        <set name="despawnDelay" val="7200"/>
+        <!--<set name="isSummonSpawn" val="true"/>-->
+        <set name="itemConsumeCount" val="1"/>
+        <set name="magicLvl" val="1"/>
+        <set name="npcId" val="127"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="SPAWN"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="22128" levels="3" name="Радость Рудольфа">
+        <table name="#abnormalLvl">1 2 3</table>
+        <table name="#AtkSpd">1.1 1.15 1.2</table>
+        <set name="aggroPoints" val="100"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="#abnormalLvl" abnormalTime="300" abnormalType="br_event_buf2" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="#AtkSpd"/>
+                <mul order="0x30" stat="mAtkSpd" val="#AtkSpd"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22129" levels="1" name="Камень Красного Пространства">
+        <set name="hitTime" val="3000"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="18000000"/>
+        <set name="resetQuest" val="128;129;144"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="22130" levels="1" name="Эффект Мистического Корма">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22131" levels="1" name="Красный Фейерверк">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="600" abnormalType="br_event_buf10" name="Buff" val="0">
+                <add order="0x10" stat="STR" val="1"/>
+                <add order="0x40" stat="waterRes" val="30"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22132" levels="1" name="Золотой Фейерверк">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="600" abnormalType="br_event_buf10" name="Buff" val="0">
+                <add order="0x10" stat="CON" val="1"/>
+                <add order="0x40" stat="holyRes" val="30"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22133" levels="1" name="Синий Фейерверк">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="600" abnormalType="br_event_buf10" name="Buff" val="0">
+                <add order="0x10" stat="DEX" val="1"/>
+                <add order="0x40" stat="fireRes" val="30"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22134" levels="1" name="Розовый Фейерверк">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="600" abnormalType="br_event_buf10" name="Buff" val="0">
+                <add order="0x10" stat="MEN" val="1"/>
+                <add order="0x40" stat="earthRes" val="30"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22135" levels="1" name="Белый Фейерверк">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="600" abnormalType="br_event_buf10" name="Buff" val="0">
+                <add order="0x10" stat="WIT" val="1"/>
+                <add order="0x40" stat="windRes" val="30"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22136" levels="1" name="Серебряный Фейерверк">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="600" abnormalType="br_event_buf10" name="Buff" val="0">
+                <add order="0x10" stat="INT" val="1"/>
+                <add order="0x40" stat="darkRes" val="30"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22137" levels="1" name="Звездный Корм">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="20000"/>
+        <set name="skillType" val="GIVE_VITALITY"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="22138" levels="1" name="Манговый Десерт">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="20000"/>
+        <set name="skillType" val="GIVE_VITALITY"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="22139" levels="1" name="Железная Печать - Легкая Походка">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="speed_up" name="Buff" val="0">
+                <add order="0x40" stat="runSpd" val="33"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22140" levels="1" name="Салат - Ускорение">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="attack_time_down" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.33"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22141" levels="1" name="Железная Печать - Проворство">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="avoid_up" name="Buff" val="0">
+                <add order="0x40" stat="ratePhysicalEvas" val="4"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22142" levels="1" name="Манты - Щит">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="pd_up" name="Buff" val="0">
+                <mul order="0x30" stat="pDef" val="1.15"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22143" levels="1" name="Рыба - Смертельный Шепот">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="critical_dmg_up" name="Buff" val="0">
+                <mul order="0x30" stat="pCritRate" val="1.35"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22144" levels="1" name="Рыба - Наведение">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="hit_up" name="Buff" val="0">
+                <add order="0x40" stat="accPhysical" val="4"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22145" levels="1" name="Поросенок - Воодушевление">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="ma_up" name="Buff" val="0">
+                <mul order="0x30" stat="mAtk" val="1.75"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22146" levels="1" name="Курица - Великая Проницательность">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="casting_time_down" name="Buff" val="0">
+                <mul order="0x30" stat="mAtkSpd" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22147" levels="1" name="Лапша - Гнев Вампира">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="vampiric_attack" name="Buff" val="0">
+                <add order="0x40" stat="absorbDam" val="9"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22148" levels="1" name="Железная Печать - Благословение Тела">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="max_hp_up" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.35"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22149" levels="1" name="Лапша - Дух Берсерка">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="berserker" name="Buff" val="0">
+                <mul order="0x30" stat="mAtk" val="1.16"/>
+                <mul order="0x30" stat="mDef" val="0.84"/>
+                <mul order="0x30" stat="pAtk" val="1.08"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="pDef" val="0.92"/>
+                <sub order="0x40" stat="ratePhysicalEvas" val="4"/>
+                <add order="0x40" stat="runSpd" val="8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22150" levels="1" name="Манты - Магический Барьер">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="md_up" name="Buff" val="0">
+                <mul order="0x30" stat="mDef" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22151" levels="1" name="Курица - Благословение Духа">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="max_mp_up" name="Buff" val="0">
+                <mul order="0x30" stat="maxMp" val="1.35"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22152" levels="1" name="Курица - Чистота">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="cheap_magic" name="Buff" val="0">
+                <mul order="0x30" stat="DanceMpConsumeRate" val="0.8"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.9"/>
+                <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22153" levels="1" name="Поросенок - Дикая Магия">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="magic_critical_up" name="Buff" val="0">
+                <add order="0x40" stat="mCritRate" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22154" levels="1" name="Рыба - Фокусировка">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="critical_prob_up" name="Buff" val="0">
+                <mul order="0x30" stat="pCritRate" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22155" levels="1" name="Манты - Благословение Щита">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="shield_prob_up" name="Buff" val="0">
+                <add order="0x40" stat="rShld" val="15"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22156" levels="1" name="Салат - Облегчение">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="decrease_weight_penalty" name="Buff" val="0">
+                <add order="0x40" stat="weightLimit" val="9000"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22157" levels="1" name="Лапша - Могущество">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="pa_up" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.15"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22158" levels="10" name="Настойка Красной Розы">
+        <table name="#abnormalLvl">1 2 3 4 5 6 7 8 9 10</table>
+        <set name="aggroPoints" val="100"/>
+        <set name="hitTime" val="100"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="#abnormalLvl" abnormalTime="300" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="regHp" val="1.2"/>
+                <mul order="0x30" stat="regMp" val="1.2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22159" levels="1" name="Сила Венеры">
+        <set name="hitTime" val="100"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="buffDuration" val="600000"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="600" abnormalType="br_event_buf1" event="vesper1" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.15"/>
+                <mul order="0x30" stat="mAtk" val="1.15"/>
+                <add order="0x40" stat="runSpd" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22160" levels="1" name="Критическая Сила Венеры">
+        <set name="hitTime" val="100"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="buffDuration" val="600000"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="600" abnormalType="br_event_buf1" event="vesper2" name="Buff" val="0">
+                <add order="0x40" stat="pCritRate" val="15"/>
+                <add order="0x40" stat="mCritRate" val="2"/>
+                <add order="0x40" stat="runSpd" val="10"/>
+                <add order="0x40" stat="absorbDam" val="5"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22161" levels="1" name="Неуязвимость Венеры">
+        <set name="hitTime" val="100"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="buffDuration" val="600000"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="600" abnormalType="br_event_buf1" event="vesper3" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.2"/>
+                <add order="0x40" stat="runSpd" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22162" levels="1" name="Настойка Горы Фудзи">
+        <set name="aggroPoints" val="100"/>
+        <set name="hitTime" val="100"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="isVitalityItemSkill" val="true"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="600" abnormalType="vp_up" name="Buff" val="0">
+                <sub order="0x40" stat="vitalityConsumeRate" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22163" levels="1" name="Настойка Ястреба">
+        <set name="aggroPoints" val="100"/>
+        <set name="hitTime" val="100"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="600" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.15"/>
+                <mul order="0x10" stat="pCritRate" val="1.1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22164" levels="1" name="Баклажановая Настойка">
+        <set name="aggroPoints" val="100"/>
+        <set name="hitTime" val="100"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="600" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="mAtkSpd" val="1.1"/>
+                <add order="0x40" stat="mCritRate" val="2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22165" levels="1" name="Восстановление Энергии">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22166" levels="1" name="Восстановление Энергии">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22167" levels="1" name="Подарочное Оружие Венеры на День Смеха">
+        <table name="#extractableItems">13457,1,13.32;13458,1,6.66;13459,1,6.66;13460,1,6.66;13461,1,6.66;13462,1,6.66;13463,1,6.66;13464,1,6.66;13466,1,6.66;13467,1,6.66;13468,1,6.66;13469,1,6.66;13470,1,6.66;13465,1,6.66</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="22168" levels="1" name="Напиток Утоления Жажды">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22169" levels="1" name="Появление Мяча Поддержки">
+        <table name="#extractableItems">6575,2,45;6573,1,30;6571,1,15;6569,1,9.4;6577,1,0.6</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="22170" levels="1" name="Защита Хардина">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="900000"/>
+    </skill>
+    <skill id="22171" levels="1" name="Благословение Хардина">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="900000"/>
+    </skill>
+    <skill id="22172" levels="1" name="Крыло Сильфида">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="900000"/>
+    </skill>
+    <skill id="22173" levels="1" name="Благословение Сильфида">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="900000"/>
+    </skill>
+    <skill id="22174" levels="1" name="Восстановление Ивеина">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="1800000"/>
+    </skill>
+    <skill id="22175" levels="1" name="Оберег Жизни">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond>
+            <player hp="30"/>
+        </cond>
+        <for>
+            <effect abnormalTime="-1" chanceType="ON_START" name="ChanceSkillTrigger" passive="1" triggeredId="23214" triggeredLevel="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="22176" levels="1" name="Оберег Ментальной Силы">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond>
+            <player mp="10"/>
+        </cond>
+        <for>
+            <effect abnormalTime="-1" chanceType="ON_START" name="ChanceSkillTrigger" passive="1" triggeredId="23215" triggeredLevel="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="22177" levels="1" name="Дыхание Воина">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22178" levels="1" name="Зелье Героя">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="HEAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="reuseDelay" val="60000"/>
+        <for>
+            <effect name="HpHeal" noicon="1" val="500"/>
+            <effect name="MpHeal" noicon="1" val="200"/>
+        </for>
+    </skill>
+    <skill id="22179" levels="1" name="Фортуна Хаоса">
+        <table name="#extractableItems">8618,3,13.999;8619,1,26;8620,3,17;8621,1,0.011;14700,25,4;14701,12,4;21038,6,5;9627,1,5;6622,3,19;21030,4,1.5;21031,4,1.5;21032,8,1;21033,8,1;21037,5,1</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="22180" levels="1" name="Чудесный Кубик - одноразовый">
+        <table name="#extractableItems">10633,1,35;10642,1,25;10634,1,20;10643,1,10;10635,1,4;10644,1,3;10636,1,1.2;10645,1,0.8;10637,1,0.6;10646,1,0.4</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="A1"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="22181" levels="1" name="Очищенный Кубик - одноразовый">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22182" levels="1" name="Радость Дня Рождения">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="stayAfterDeath" val="true"/>
+        <set name="stayOnSubclassChange" val="false"/>
+        <set name="canBeDispeled" val="false"/>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="43200" abnormalType="vp_up" name="Buff" val="0">
+                <sub order="0x40" stat="vitalityConsumeRate" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22183" levels="1" name="Свиток Трансформации в Дракона-Мастера Ли">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="transformId" val="20005"/>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="-1" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="22184" levels="1" name="Свиток Трансформации в Дракона-Мастера Карина">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="transformId" val="20006"/>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="-1" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="22185" levels="1" name="Сияние">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22186" levels="1" name="Изменение Голоса - Тема Поздравления">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22187" levels="1" name="Билет на Медовый Месяц - Радость Энергии">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22188" levels="1" name="Изменение Голоса - Тема Поздравления">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22189" levels="1" name="Цветочный Дождь">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22190" levels="1" name="Свиток Трансформации в Синий Кубик">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="transformId" val="127"/>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="22191" levels="1" name="Свиток Трансформации в Ониксового Зверя">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22192" levels="1" name="Свиток Трансформации в Рыцаря Рока">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22193" levels="1" name="Свиток Трансформации в Апостола Грааля">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22194" levels="1" name="Свиток Трансформации в Единорога">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22195" levels="1" name="Свиток Трансформации в Рыцаря Лилим">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22196" levels="1" name="Свиток Трансформации в Голема Стражника">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22197" levels="1" name="Свиток Трансформации в Инфернального Дрейка">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22198" levels="1" name="Свиток Трансформации в Панцирного Дракона">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="22199" levels="1" name="Свиток Трансформации в Вероотступника">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+</list>

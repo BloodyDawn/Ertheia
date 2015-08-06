@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill enchantGroup1="7" enchantGroup2="7" id="10300" levels="3" name="Последняя Атака">
+        <table name="#magicLvl">90 95 99</table>
+        <table name="#mpConsume">92 99 105</table>
+        <table name="#ench1MpConsume">100 96 92 88 84 79 75 71 67 63</table>
+        <table name="#ench2Hp">21 22 23 24 25 26 27 28 29 30</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="weaponsAllowed" val="Big Sword, Sword, Dual Sword, Blunt, Dual Blunt, Pole, Fist, Dual Fist"/>
+        <set name="nextActionAttack" val="false"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="SSBoost" val="1.5"/>
+        <set name="minChance" val="99"/>
+        <set name="hitTime" val="1690"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="40"/>
+        <set name="effectRange" val="400"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <cond addName="1" msgId="113">
+            <target hp="20"/>
+        </cond>
+        <for>
+            <effect count="1" name="HpToOne" val="1"/>
+        </for>
+        <enchant2cond addName="1" msgId="113">
+            <and>
+                <target hp="#ench2Hp"/>
+            </and>
+        </enchant2cond>
+    </skill>
+    <skill id="10301" levels="1" name="Максимальное Владение Силой">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <set order="0x20" stat="energyMastery" val="15"/>
+        </for>
+    </skill>
+    <skill id="10302" levels="4" name="Тройное Звуковое Рассечение">
+        <table name="#power">22531 26017 29503 33377</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#mpConsume">98 105 112 119</table>
+        <set name="power" val="#power"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="baseCritRate" val="10"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="CHARGEDAM"/>
+        <set name="chargesMaxConsume" val="3"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+    </skill>
+    <skill id="10303" levels="4" name="Великий Мастер Битв">
+        <table name="#increase">1.02 1.03 1.04 1.05</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x10" stat="maxHp" val="#increase"/>
+            <mul order="0x10" stat="maxCp" val="#increase"/>
+        </for>
+    </skill>
+    <skill id="10304" levels="4" name="Великое Владение Парными Мечами">
+        <table name="#pAtk">1.02 1.03 1.04 1.05</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pAtk" val="#pAtk">
+                <using kind="Dual Blunt, Dual Sword"/>
+            </mul>
+        </for>
+    </skill>
+    <skill id="10305" levels="4" name="Дикая Провокация">
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#abnormalLvl">1 2 3 4</table>
+        <table name="#mpConsume">62 69 76 83</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="4000"/>
+        <set name="skillRadius" val="450"/>
+        <set name="skillType" val="AGGDAMAGE"/>
+        <set name="isDebuff" val="true"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <for>
+            <effect abnormalLvl="#abnormalLvl" abnormalTime="3" abnormalType="target_lock" name="TargetMe" val="0"/>
+            <effect abnormalLvl="#abnormalLvl" abnormalTime="15" abnormalType="maximum_provocation" name="Debuff" val="0"/>
+        </for>
+    </skill>
+    <skill id="10306" levels="4" name="Великое Владение Древковым Оружием">
+        <table name="#power">1.02 1.03 1.04 1.05</table>
+        <table name="#atkCountMax">5 5 6 6</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pAtk" val="#power">
+                <using kind="Pole"/>
+            </mul>
+            <add order="0x40" stat="atkCountMax" val="#atkCountMax">
+                <using kind="Pole"/>
+            </add>
+        </for>
+    </skill>
+    <skill id="10307" levels="1" name="Мгновенная Ярость Орка">
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <for>
+            <effect abnormalTime="3" count="0x7fffffff" name="HpDamOverTime" val="167">
+                <mul order="0x30" stat="pAtkSpd" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="10308" levels="1" name="Крик Бизона">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLvl" val="85"/>
+        <set name="hitTime" val="2000"/>
+        <set name="reuseDelay" val="600000"/>
+        <set name="mpConsume" val="38"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="60" abnormalType="bizon_roar" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.3"/>
+                <add order="0x40" stat="pCritRate" val="120"/>
+                <mul order="0x30" stat="cAtk" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="10309" levels="4" name="Великое Владение Кастетами">
+        <table name="#pAtk">1.02 1.03 1.05 1.05</table>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pAtk" val="#pAtk">
+                <using kind="Dual Fist"/>
+            </mul>
+        </for>
+    </skill>
+    <skill id="10310" levels="1" name="Первобытный Гнев">
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="1500"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="mpConsume" val="38"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="600" abnormalType="maximum_fury" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.15"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="10311" levels="4" name="Великое Владение Двуручным Оружием">
+        <table name="#pAtk">1.02 1.03 1.04 1.05</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pAtk" val="#pAtk">
+                <using kind="Big Sword, Big Blunt"/>
+            </mul>
+        </for>
+    </skill>
+    <skill id="10312" levels="1" name="Владение Ремеслом">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <set order="0x10" stat="craftMastery" val="1"/>
+        </for>
+    </skill>
+    <skill id="10313" levels="4" name="Стремительный Бросок Вечности">
+        <table name="#mpConsume">92 98 104 110</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_FRONT_AREA"/>
+        <set name="trait" val="SHOCK"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="isDebuff" val="true"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="power" val="-1"/>
+        <set name="flyType" val="CHARGE"/>
+        <set name="hitTime" val="500"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="nextActionAttack" val="true"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="skillRadius" val="600"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <using kind="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+                <target mindistance="200"/>
+            </and>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="9" abnormalType="stun" effectPower="40" effectType="STUN" name="Stun" val="0"/>
+        </for>
+    </skill>
+    <skill id="10314" levels="4" name="Полное Обезоруживание">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="isDebuff" val="true"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="60000"/>
+        <set name="mpConsume" val="38"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="80"/>
+        <set name="skillType" val="DISARM"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillRadius" val="200"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="5" abnormalType="disarm" name="Disarm" val="0">
+                <mul order="0x30" stat="mDef" val="0.6"/>
+                <mul order="0x30" stat="pDef" val="0.6"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="10315" levels="2" name="Великое Владение Древковым Оружием">
+        <table name="#magicLvl">85 90</table>
+        <table name="#pAtk">1.02 1.03</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pAtk" val="#pAtk">
+                <using kind="Pole"/>
+            </mul>
+        </for>
+    </skill>
+    <skill id="10316" levels="1" name="Кровавая Душа">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pvpPhysDmg" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="10317" levels="4" name="Грозовой Резак">
+        <table name="#mpConsume">122 124 129 133</table>
+        <table name="#magicLevel">85 90 95 99</table>
+        <table name="#power">26003 30494 35883 37680</table>
+        <table name="#abnormalLevel">1 2 3 4</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="baseCritRate" val="20"/>
+        <set name="overHit" val="true"/>
+        <set name="power" val="#power"/>
+        <set name="hitTime" val="1390"/>
+        <set name="coolTime" val="200"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="magicLvl" val="#magicLevel"/>
+        <set name="isDebuff" val="true"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="skillRadius" val="150"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="trait" val="SHOCK"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <for>
+            <effect abnormalLvl="#abnormalLevel" abnormalTime="#abnormalLevel" abnormalType="stun" effectPower="80" effectType="STUN" name="Stun" val="0"/>
+        </for>
+    </skill>
+    <skill id="10318" levels="4" name="Звуковой Удар">
+        <table name="#mpConsume">98 105 112 119</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#power">17348 20033 22717 25700</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="skillType" val="CHARGEDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="power" val="#power"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="effectRange" val="650"/>
+        <set name="chargesMaxConsume" val="3"/>
+        <set name="overHit" val="true"/>
+        <set name="baseCritRate" val="10"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <using kind="Sword, Dual Sword, Blunt, Dual Blunt, Dual Fist"/>
+            </and>
+        </cond>
+    </skill>
+
+    <skill id="10319" levels="1" name="Ярость Дуэлиста">
+        <set name="operateType" val="OP_ACTIVE" />
+        <set name="target" val="TARGET_SELF" />
+        <set name="hitTime" val="300" />
+        <set name="reuseDelay" val="300000" />
+        <set name="isMagic" val="4" />
+    </skill>
+    <skill id="10320" levels="1" name="Лицом К Лицу">
+        <set name="operateType" val="OP_ACTIVE" />
+        <set name="target" val="TARGET_SELF" />
+        <set name="mpConsume" val="43" />
+        <set name="castRange" val="600" />
+        <set name="hitTime" val="300" />
+        <set name="reuseDelay" val="600000" />
+        <set name="isDebuff" val="true" />
+    </skill>
+    <skill id="10321" levels="4" name="Копье Грома">
+        <table name="#mpConsume"> 122 124 129 133 </table>
+        <set name="operateType" val="OP_ACTIVE" />
+        <set name="target" val="TARGET_SELF" />
+        <set name="mpConsume" val="#mpConsume" />
+        <set name="castRange" val="900" />
+        <set name="hitTime" val="2500" />
+        <set name="reuseDelay" val="30000" />
+        <set name="isDebuff" val="true" />
+    </skill>
+    <skill id="10322" levels="1" name="Крик Волка">
+        <set name="operateType" val="OP_ACTIVE" />
+        <set name="target" val="TARGET_SELF" />
+        <set name="mpConsume" val="38" />
+        <set name="hitTime" val="2000" />
+        <set name="reuseDelay" val="30000" />
+    </skill>
+    <skill id="10323" levels="1" name="Самолечение - Воин">
+        <set name="operateType" val="OP_ACTIVE" />
+        <set name="target" val="TARGET_SELF" />
+        <set name="mpConsume" val="1" />
+        <set name="reuseDelay" val="5000" />
+    </skill>
+    <skill id="10324" levels="4" name="Повелитель Силы">
+        <table name="#power">22531 26017 29503 33377</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#mpConsume">98 105 112 119</table>
+        <set name="power" val="#power"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="baseCritRate" val="10"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="CHARGEDAM"/>
+        <set name="chargesMaxConsume" val="3"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+    </skill>
+    <skill id="10325" levels="3" name="Дикий Рев">
+        <table name="#mpConsume"> 149 151 154 </table>
+        <set name="operateType" val="OP_ACTIVE" />
+        <set name="target" val="TARGET_SELF" />
+        <set name="mpConsume" val="#mpConsume" />
+        <set name="hitTime" val="1500" />
+        <set name="coolTime" val="500" />
+        <set name="reuseDelay" val="120000" />
+    </skill>
+    <skill id="10326" levels="3" name="Кровавая Ярость">
+        <table name="#mpConsume"> 45 50 55 </table>
+        <set name="operateType" val="OP_ACTIVE" />
+        <set name="target" val="TARGET_SELF" />
+        <set name="mpConsume" val="#mpConsume" />
+        <set name="hitTime" val="2000" />
+        <set name="coolTime" val="200" />
+        <set name="reuseDelay" val="180000" />
+    </skill>
+    <skill id="10327" levels="4" name="Проблеск Силы">
+        <table name="#mpConsumes"> 98 105 112 119 </table>
+        <set name="operateType" val="OP_ACTIVE" />
+        <set name="target" val="TARGET_SELF" />
+        <set name="mpConsume" val="#mpConsumes" />
+        <set name="castRange" val="600" />
+        <set name="hitTime" val="1500" />
+        <set name="coolTime" val="500" />
+        <set name="reuseDelay" val="10000" />
+    </skill>
+    <skill id="10328" levels="3" name="Берсерк Души">
+        <set name="operateType" val="OP_ACTIVE" />
+        <set name="target" val="TARGET_SELF" />
+    </skill>
+    <skill id="10329" levels="1" name="Великое Владение Дробящим Оружием">
+        <set name="operateType" val="OP_ACTIVE" />
+        <set name="target" val="TARGET_SELF" />
+    </skill>
+    <skill id="10330" levels="4" name="Мощный Удар Молотом">
+        <table name="#mpConsume"> 92 96 101 105 </table>
+        <set name="operateType" val="OP_ACTIVE" />
+        <set name="target" val="TARGET_SELF" />
+        <set name="mpConsume" val="#mpConsume" />
+        <set name="castRange" val="40" />
+        <set name="hitTime" val="1500" />
+        <set name="coolTime" val="500" />
+        <set name="reuseDelay" val="7000" />
+        <set name="isDebuff" val="true" />
+    </skill>
+    <skill id="11359" levels="4" name="Призыв Защитного Камня">
+        <table name="#power">22531 26017 29503 33377</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#mpConsume">98 105 112 119</table>
+        <set name="power" val="#power"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="baseCritRate" val="10"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="CHARGEDAM"/>
+        <set name="chargesMaxConsume" val="3"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+    </skill>
+
+</list>

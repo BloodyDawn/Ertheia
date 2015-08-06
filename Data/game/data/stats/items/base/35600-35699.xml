@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="35670" name="Заряд Души Зверя - (Для Призывателя Веньо)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_beast_soul_shot_i00"/>
+		<set name="default_action" val="summon_soulshot"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="0"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="handler" val="BeastSoulShot"/>
+		<set name="item_skill" val="2033-1"/>
+	</item>
+	<item id="35671" name="Благословенный Заряд Духа Зверя - (Для Призывателя Веньо)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_blessed_beast_spirit_shot_i00"/>
+		<set name="default_action" val="summon_blessed_spiritshot"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="0"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="handler" val="BeastSpiritShot"/>
+		<set name="item_skill" val="2009-1"/>
+	</item>
+	<item id="35669" name="Благословение Кота-Ангела" type="EtcItem">
+		<set name="icon" val="icon.skilltransform4"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9438-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="35600" name="Ожерелье Гвардейца: Ветер" type="Armor">
+		<set name="icon" val="icon.accessory_nectklace_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="106"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35601" name="Кольцо Гвардейца: Вода" type="Armor">
+		<set name="icon" val="icon.accessory_ring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="60"/>
+			<add order="0x40" stat="maxMp" val="23"/>
+		</for>
+	</item>
+	<item id="35602" name="Кольцо Гвардейца: Земля" type="Armor">
+		<set name="icon" val="icon.accessory_ring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="60"/>
+			<add order="0x40" stat="maxMp" val="23"/>
+		</for>
+	</item>
+	<item id="35603" name="Кольцо Гвардейца: Огонь" type="Armor">
+		<set name="icon" val="icon.accessory_ring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="60"/>
+			<add order="0x40" stat="maxMp" val="23"/>
+		</for>
+	</item>
+	<item id="35604" name="Кольцо Гвардейца: Святость" type="Armor">
+		<set name="icon" val="icon.accessory_ring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="60"/>
+			<add order="0x40" stat="maxMp" val="23"/>
+		</for>
+	</item>
+	<item id="35605" name="Кольцо Гвардейца: Тьма" type="Armor">
+		<set name="icon" val="icon.accessory_ring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="60"/>
+			<add order="0x40" stat="maxMp" val="23"/>
+		</for>
+	</item>
+	<item id="35606" name="Кольцо Гвардейца: Ветер" type="Armor">
+		<set name="icon" val="icon.accessory_ring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="60"/>
+			<add order="0x40" stat="maxMp" val="23"/>
+		</for>
+	</item>
+	<item id="35607" name="Серьга Хранителя - A" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="63"/>
+			<add order="0x40" stat="maxMp" val="25"/>
+		</for>
+	</item>
+	<item id="35608" name="Серьга Хранителя - B" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="63"/>
+			<add order="0x40" stat="maxMp" val="25"/>
+		</for>
+	</item>
+	<item id="35609" name="Серьга Хранителя - C" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="63"/>
+			<add order="0x40" stat="maxMp" val="25"/>
+		</for>
+	</item>
+	<item id="35610" name="Серьга Хранителя - D" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="63"/>
+			<add order="0x40" stat="maxMp" val="25"/>
+		</for>
+	</item>
+	<item id="35611" name="Серьга Хранителя - E" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="63"/>
+			<add order="0x40" stat="maxMp" val="25"/>
+		</for>
+	</item>
+	<item id="35612" name="Серьга Хранителя - F" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="63"/>
+			<add order="0x40" stat="maxMp" val="25"/>
+		</for>
+	</item>
+	<item id="35613" name="Серьга Хранителя - G" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="63"/>
+			<add order="0x40" stat="maxMp" val="25"/>
+		</for>
+	</item>
+	<item id="35614" name="Серьга Хранителя - H" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="63"/>
+			<add order="0x40" stat="maxMp" val="25"/>
+		</for>
+	</item>
+	<item id="35615" name="Серьга Хранителя - I" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="63"/>
+			<add order="0x40" stat="maxMp" val="25"/>
+		</for>
+	</item>
+	<item id="35616" name="Лучшая Серьга Хранителя - Оглушение" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35617" name="Лучшая Серьга Хранителя - Удержание" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35618" name="Лучшая Серьга Хранителя - Кровопускание" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35619" name="Лучшая Серьга Хранителя - Паралич" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35620" name="Лучшая Серьга Хранителя - Ментальная Атака" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35621" name="Лучшая Серьга Хранителя - Усыпление" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35622" name="Лучшая Серьга Хранителя - Отравление" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35623" name="Лучшая Серьга Хранителя - Отталкивание/Опрокидывание" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35624" name="Лучшая Серьга Хранителя - Воздушные Оковы" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35625" name="Серьга Гвардейца - A" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="35"/>
+		</for>
+	</item>
+	<item id="35626" name="Серьга Гвардейца - B" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="35"/>
+		</for>
+	</item>
+	<item id="35627" name="Серьга Гвардейца - C" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="35"/>
+		</for>
+	</item>
+	<item id="35628" name="Серьга Гвардейца - D" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="35"/>
+		</for>
+	</item>
+	<item id="35629" name="Серьга Гвардейца - E" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="35"/>
+		</for>
+	</item>
+	<item id="35630" name="Серьга Гвардейца - F" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="35"/>
+		</for>
+	</item>
+	<item id="35631" name="Серьга Гвардейца - G" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="35"/>
+		</for>
+	</item>
+	<item id="35632" name="Серьга Гвардейца - H" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="35"/>
+		</for>
+	</item>
+	<item id="35633" name="Серьга Гвардейца - I" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="35"/>
+		</for>
+	</item>
+	<item id="35693" name="Плащ Снегурочки - (1 день (ивент))" type="Armor">
+		<set name="icon" val="BranchSys3.icon.g_christmas_cloak"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="back"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="220"/>
+		<set name="time" val="1440"/>
+		<set name="duration" val="180"/>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+			<add order="0x10" stat="mDef" val="40"/>
+		</for>
+	</item>
+	<item id="35694" name="Плащ Снегурочки - (3 дня (ивент))" type="Armor">
+		<set name="icon" val="BranchSys3.icon.g_christmas_cloak"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="back"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="220"/>
+		<set name="time" val="4320"/>
+		<set name="duration" val="540"/>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+			<add order="0x10" stat="mDef" val="40"/>
+		</for>
+	</item>
+	<item id="35640" name="Ядро Тьмы" type="EtcItem">
+		<set name="icon" val="icon.tiat_seal_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35641" name="Таинственные Припасы - Заклепка: Ранг B, C" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35642" name="Таинственные Припасы - Кошель: Ранг B, C" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35643" name="Таинственные Припасы - Пояс: Ранг B, C" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35644" name="Таинственные Припасы - Заклепка: Ранг S, A" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35645" name="Таинственные Припасы - Кошель: Ранг S, A" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35646" name="Таинственные Припасы - Пояс: Ранг S, A" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35647" name="Таинственные Припасы - Магическая Заколка: Ранг S, A" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35648" name="Таинственные Припасы - Магическое Украшение: Ранг S, A" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35649" name="Запечатанный Талисман Вожделения" type="EtcItem">
+		<set name="icon" val="icon.accessory_longing_talisman_i01"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="weight" val="100"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="34989,1,1,100"/>
+		<cond msgId="113">
+			<player level="85"/>
+		</cond>
+	</item>
+	<item id="35650" name="Свиток Призыва: Ненавистный Демон" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35651" name="Свиток Призыва: Ненавистный Демон" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35652" name="Свиток Призыва: Ненавистный Демон" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35653" name="Свиток Призыва: Ненавистный Демон" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35655" name="Таинственный Мешок" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35656" name="Петра" type="EtcItem">
+		<set name="icon" val="icon.etc_torch_on_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35657" name="Таинственные Семена" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35658" name="Таинственные Семена" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35659" name="Таинственные Семена" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35660" name="Таинственные Семена" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35661" name="Таинственные Семена" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35662" name="Таинственные Семена" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35663" name="Таинственные Семена" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35664" name="Свиток: 10 000 личной репутации" type="EtcItem">
+		<set name="icon" val="icon.etc_pvppoint_scroll1"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35665" name="Свиток: 50 000 личной репутации" type="EtcItem">
+		<set name="icon" val="icon.etc_pvppoint_scroll5"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35666" name="Свиток: 100 000 личной репутации" type="EtcItem">
+		<set name="icon" val="icon.etc_pvppoint_scroll10"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35667" name="Осколок Таути" type="EtcItem">
+		<set name="icon" val="icon.etc_tauti_piece"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35668" name="Вывернутый Кристалл Магии" type="EtcItem">
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i07"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35675" name="Эликсир Жизни Высокого Качества - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i02"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35676" name="Эликсир Ментальной Силы Высокого Качества - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35677" name="Эликсир CP Высокого Качества - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i01"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35695" name="Новогодняя Елка - Звезда - (Ивент)" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon.g_christmas_tree_star"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35696" name="Новогодняя Елка - Шарик - (Ивент)" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon.g_christmas_tree_bead"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35697" name="Новогодняя Елка - Гирлянда - (Ивент)" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon.g_christmas_tree_band"/>
+		<set name="material" val="cloth"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35698" name="Новогодняя Елка - Лента - (Ивент)" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon.g_christmas_tree_ribbon"/>
+		<set name="material" val="cloth"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35699" name="Коробка с Подарками Снегурочки - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35634" name="Меч Защиты" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_blade_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="333"/>
+			<set order="0x08" stat="mAtk" val="151"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="35635" name="Лук Защиты" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="654"/>
+			<set order="0x08" stat="mAtk" val="151"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="35636" name="Магический Меч Защиты" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_magic_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="267"/>
+			<set order="0x08" stat="mAtk" val="202"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="35637" name="Кинжал Защиты" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_dagger_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="291"/>
+			<set order="0x08" stat="mAtk" val="151"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="35638" name="Парные Мечи Защиты" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="405"/>
+			<set order="0x08" stat="mAtk" val="151"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="35639" name="Двуручный Меч Защиты" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_twohand_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="405"/>
+			<set order="0x08" stat="mAtk" val="151"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="35654" name="Парные Кинжалы Хелиоса" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<and>
+				<player level="52"/>
+				<player class_id_restriction="55, 93, 101, 108, 117, 141, 158, 159, 160, 161"/>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="602"/>
+			<set order="0x08" stat="mAtk" val="298"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35672" name="Пата Защиты" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_jamadhr_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="405"/>
+			<set order="0x08" stat="mAtk" val="151"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="35673" name="Рапира Защиты" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="302"/>
+			<set order="0x08" stat="mAtk" val="151"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="35674" name="Булава Защиты" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_hammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="333"/>
+			<set order="0x08" stat="mAtk" val="151"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="35678" name="Тренировочное Острие - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weapon_stanpid_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="527"/>
+			<set order="0x08" stat="mAtk" val="298"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35679" name="Тренировочный Резак - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weapon_plenitas_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="602"/>
+			<set order="0x08" stat="mAtk" val="298"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35680" name="Тренировочный Эспадон - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weapon_bauen_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="733"/>
+			<set order="0x08" stat="mAtk" val="298"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35681" name="Тренировочный Мститель - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weapon_qutram_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="602"/>
+			<set order="0x08" stat="mAtk" val="298"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35682" name="Тренировочный Воитель - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weapon_durga_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1550"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="733"/>
+			<set order="0x08" stat="mAtk" val="298"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35683" name="Тренировочный Буревестник - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weapon_crabel_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="602"/>
+			<set order="0x08" stat="mAtk" val="298"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35684" name="Тренировочный Бросок - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weapon_castron_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1185"/>
+			<set order="0x08" stat="mAtk" val="298"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35685" name="Тренировочный Страж - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weapon_stilla_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1300"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1067"/>
+			<set order="0x08" stat="mAtk" val="298"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35686" name="Тренировочный Расчленитель - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weaon_serapear_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="482"/>
+			<set order="0x08" stat="mAtk" val="350"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35687" name="Тренировочный Заклинатель - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weapon_pilia_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="482"/>
+			<set order="0x08" stat="mAtk" val="350"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35688" name="Тренировочное Возмездие - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weapon_shaelon_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="587"/>
+			<set order="0x08" stat="mAtk" val="385"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35689" name="Тренировочные Парные Мечи - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="733"/>
+			<set order="0x08" stat="mAtk" val="298"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35690" name="Тренировочные Парные Кинжалы - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<and>
+				<player level="99"/>
+				<player class_id_restriction="55, 93, 101, 108, 117, 141, 158, 159, 160, 161"/>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="602"/>
+			<set order="0x08" stat="mAtk" val="298"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35691" name="Тренировочные Парные Дубины - (Тренировочный)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i10"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="733"/>
+			<set order="0x08" stat="mAtk" val="298"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35692" name="Оружие Монстров - (Тренировочный)" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="10"/>
+			<set order="0x08" stat="mAtk" val="10"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+</list>

@@ -1,0 +1,4894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="NpcData.xsd">
+	<npc id="32600" name="Аллегрия" server_name="event_alegria" title="Помощник Дня Рождения">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="160"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="5"/>
+		<set name="collision_height" value="21"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32601" name="Устройство для Телепорта" server_name="enter_seed_controller" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="57"/>
+		<set name="collision_height" value="74"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32602" name="Временный Телепортер" server_name="seed_controller" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="16"/>
+		<set name="collision_height" value="42"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32603" name="Тефиос" server_name="officer_tepios" title="Офицер">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="160"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="11"/>
+		<set name="collision_height" value="25"/>
+		<set name="slot_rhand" value="13524"/>
+		<set name="slot_lhand" value="13525"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32604" name="Контроллер Корабля" server_name="air_manager_undead1" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="19"/>
+		<set name="collision_height" value="28"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32605" name="Контроллер Корабля" server_name="air_manager_destruction1" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="19"/>
+		<set name="collision_height" value="28"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32606" name="Контроллер Корабля" server_name="air_manager_kserth2" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="19"/>
+		<set name="collision_height" value="28"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32607" name="Контроллер Корабля" server_name="air_manager_kserth3" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="19"/>
+		<set name="collision_height" value="28"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32608" name="Контроллер Корабля" server_name="air_manager_kserth4" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="19"/>
+		<set name="collision_height" value="28"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32609" name="Контроллер Корабля" server_name="air_manager_aden1" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="19"/>
+		<set name="collision_height" value="28"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32610" name="Ольф Каноре" server_name="weaver_wolf_kanolre" title="Работник">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="100"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="7"/>
+		<set name="collision_height" value="22.2"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="15"/>
+		</skills>
+	</npc>
+	<npc id="32611" name="Толлонис" server_name="officer_tolonis" title="Управляющий">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="160"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="9.5"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32612" name="Ольф Адамс" server_name="weaver_wolf_adams" title="Работник">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="100"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="7"/>
+		<set name="collision_height" value="22.2"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="15"/>
+		</skills>
+	</npc>
+	<npc id="32613" name="Хенди" server_name="handy_block_guide" title="Управляющий в игре">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="120"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="12"/>
+		<set name="collision_height" value="31"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="8"/>
+		</skills>
+	</npc>
+	<npc id="32614" name="Рамзедас" server_name="gatekeeper_ramsedas" title="Хранитель Портала">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="100"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="13"/>
+		<set name="collision_height" value="23"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32615" name="Ишума" server_name="maestro_ishuma" title="Мастер">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="100"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="16.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="18"/>
+		</skills>
+	</npc>
+	<npc id="32616" name="Мине" server_name="fortune_teller_minne" title="Шаман">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="100"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="23"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="16"/>
+		</skills>
+	</npc>
+	<npc id="32617" name="Джейна" server_name="priest_jeina" title="Жрец">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="100"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32618" name="Сыими" server_name="trader_suimi" title="Торговец">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="100"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="7"/>
+		<set name="collision_height" value="18"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="18"/>
+		</skills>
+	</npc>
+	<npc id="32619" name="" server_name="deco_ksoldier_follow" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="160"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="11"/>
+		<set name="collision_height" value="25"/>
+		<set name="slot_rhand" value="13524"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="corpse"/>
+			<set name="show_name_tag" value="0"/>
+			<set name="targetable" value="0"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32620" name="" server_name="deco_ksoldier_leader1" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="160"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="11"/>
+		<set name="collision_height" value="25"/>
+		<set name="slot_rhand" value="13524"/>
+		<set name="slot_lhand" value="13525"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="show_name_tag" value="0"/>
+			<set name="targetable" value="0"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32621" name="" server_name="deco_ksoldier_leader2" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="160"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="11"/>
+		<set name="collision_height" value="25"/>
+		<set name="slot_rhand" value="13524"/>
+		<set name="slot_lhand" value="13525"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="show_name_tag" value="0"/>
+			<set name="targetable" value="0"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32622" name="Анатоль" server_name="soldier_annatol" title="Солдат">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="160"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="11"/>
+		<set name="collision_height" value="25"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32623" name="Моренки" server_name="soldier_morenchy" title="Солдат">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="100"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="23"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="16"/>
+		</skills>
+	</npc>
+	<npc id="32624" name="Энбрем" server_name="soldier_anbram" title="Солдат">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="160"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="11"/>
+		<set name="collision_height" value="25"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32625" name="Энсиэль" server_name="soldier_enciel" title="Солдат">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="100"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="7"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="15"/>
+		</skills>
+	</npc>
+	<npc id="32626" name="Элитный Страж" server_name="soldier_rguard" title="Солдат">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="160"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="11"/>
+		<set name="collision_height" value="25"/>
+		<set name="slot_rhand" value="13524"/>
+		<set name="slot_lhand" value="13525"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32627" name="Нотингейль" server_name="mage_notingale" title="Чародей">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="100"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8.5"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="15"/>
+		</skills>
+	</npc>
+	<npc id="32628" name="Дозорный Верфи" server_name="guard_of_airharbor1" title="">
+		<set name="type" value="L2Guard"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="24"/>
+		<set name="slot_rhand" value="94"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="clan" value="airport_patrol"/>
+			<set name="clan_range" value="1500"/>
+			<set name="enemy_clan" value="zealot_clan"/>
+			<set name="enemy_range" value="1500"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32629" name="Дозорный Верфи" server_name="guard_of_airharbor2" title="">
+		<set name="type" value="L2Guard"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="24"/>
+		<set name="slot_rhand" value="94"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="clan" value="airport_patrol"/>
+			<set name="clan_range" value="1500"/>
+			<set name="enemy_clan" value="zealot_clan"/>
+			<set name="enemy_range" value="1500"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32630" name="Помощник Сервера Грации" server_name="ex_server_helper" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="160"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="10"/>
+		<set name="collision_height" value="20"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32631" name="Торговец Знаками Сервера Грации" server_name="ex_server_trader" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="160"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="10"/>
+		<set name="collision_height" value="20"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32632" name="Выживший Солдат Грации" server_name="looser_of_gracia" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="160"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="9.5"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32633" name="Новогодний Кот" server_name="cat_of_xmas" title="Счастье">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="140"/>
+		<set name="ground_low" value="25"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="15"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="7"/>
+		</skills>
+	</npc>
+	<npc id="32634" name="Новогодний Кот" server_name="cat_of_xmas1" title="Дарующий Счастье">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="70"/>
+		<set name="org_hp" value="2444"/>
+		<set name="org_mp" value="1345"/>
+		<set name="org_hp_regen" value="7.5"/>
+		<set name="org_mp_regen" value="2.7"/>
+		<set name="base_physical_attack" value="688.86373"/>
+		<set name="base_magic_attack" value="470.40463"/>
+		<set name="base_defend" value="295.91597"/>
+		<set name="base_magic_defend" value="216.53847"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="140"/>
+		<set name="ground_low" value="25"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="15"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="7"/>
+		</skills>
+	</npc>
+	<npc id="32635" name="Мастер Дуги" server_name="event_new_year2009" title="Ивент Восстановления">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="75"/>
+		<set name="org_hp" value="2676"/>
+		<set name="org_mp" value="1507"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="794.70901"/>
+		<set name="base_magic_attack" value="542.68324"/>
+		<set name="base_defend" value="319.24623"/>
+		<set name="base_magic_defend" value="233.61053"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="160"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="9"/>
+		<set name="collision_height" value="16.7"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="6"/>
+		</skills>
+	</npc>
+	<npc id="32636" name="Работник Магической Лаборатории" server_name="event_cow_manager" title="Управляющий ивентами">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="75"/>
+		<set name="org_hp" value="2676"/>
+		<set name="org_mp" value="1507"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="794.70901"/>
+		<set name="base_magic_attack" value="542.68324"/>
+		<set name="base_defend" value="319.24623"/>
+		<set name="base_magic_defend" value="233.61053"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="20"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="17.5"/>
+		<set name="slot_rhand" value="313"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="18"/>
+		</skills>
+	</npc>
+	<npc id="32637" name="Телепортер Литейной" server_name="b_tower_2st_tel_npc" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="etc"/>
+		<set name="level" value="75"/>
+		<set name="org_hp" value="2676"/>
+		<set name="org_mp" value="1507"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="794.70901"/>
+		<set name="base_magic_attack" value="542.68324"/>
+		<set name="base_defend" value="319.24623"/>
+		<set name="base_magic_defend" value="233.61053"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="50"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="9"/>
+		<set name="collision_height" value="33.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="19"/>
+		</skills>
+	</npc>
+	<npc id="32638" name="Кот Рони" server_name="event_pcbang_rimkama" title="Ивент РС-клуба">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="75"/>
+		<set name="org_hp" value="2676"/>
+		<set name="org_mp" value="1507"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="794.70901"/>
+		<set name="base_magic_attack" value="542.68324"/>
+		<set name="base_defend" value="319.24623"/>
+		<set name="base_magic_defend" value="233.61053"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="25"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="15"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="7"/>
+		</skills>
+	</npc>
+	<npc id="32639" name="Пьер Багет" server_name="event_pierre_baguette" title="Ивент День Дурака">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="17"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+			<set name="show_name_tag" value="0"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="18"/>
+		</skills>
+	</npc>
+	<npc id="32640" name="Кинтайджин" server_name="kintaijin" title="Охотник за Наградой">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+			<set name="clan_range" value="300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="17"/>
+		</skills>
+	</npc>
+	<npc id="32641" name="Гака" server_name="gakka" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="7"/>
+		<set name="collision_height" value="16.5"/>
+		<set name="slot_rhand" value="89"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+			<set name="clan_range" value="300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="18"/>
+		</skills>
+	</npc>
+	<npc id="32642" name="Испорченный Передатчик Гельдремов" server_name="bulldozerlm_comunicator" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="etc"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="16"/>
+		<set name="collision_height" value="15.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="19"/>
+		</skills>
+	</npc>
+	<npc id="32643" name="Минер" server_name="minehr" title="Повелитель Духов">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="60"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="22"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+			<set name="clan_range" value="300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="15"/>
+		</skills>
+	</npc>
+	<npc id="32644" name="Пьяцца" server_name="brazier_agitator" title="Призыватель">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+			<set name="clan_range" value="300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="15"/>
+		</skills>
+	</npc>
+	<npc id="32645" name="Чандра" server_name="chandra" title="Грузчик">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="18.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+			<set name="clan_range" value="300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="18"/>
+		</skills>
+	</npc>
+	<npc id="32646" name="Каунт Тэн Саузн" server_name="contract_worker" title="Работник по Договору">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="17"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+			<set name="clan_range" value="300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="18"/>
+		</skills>
+	</npc>
+	<npc id="32647" name="Аут" server_name="pro_agitator" title="Участник Ритуала Поклонения Огню">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="40"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="23"/>
+		<set name="slot_rhand" value="135"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+			<set name="clan_range" value="300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="14"/>
+		</skills>
+	</npc>
+	<npc id="32648" name="Лента Новостей" server_name="update_announcer" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="75"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="5"/>
+		<set name="collision_height" value="12.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="6"/>
+		</skills>
+	</npc>
+	<npc id="32649" name="Двайф" server_name="giant_d_dwarf" title="Гном Путешественник">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="18"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="1"/>
+			<set id="4416" level="18"/>
+		</skills>
+	</npc>
+	<npc id="32650" name="Канемика" server_name="robber_master_kanemika" title="Главарь Грабителей Могил">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="80"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="14"/>
+		<set name="collision_height" value="25"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+			<set name="clan_range" value="300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="6"/>
+		</skills>
+	</npc>
+	<npc id="32651" name="Воин Грабителей Могил" server_name="robber_warrior_normal" title="Квестовый монстр">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="80"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="14"/>
+		<set name="collision_height" value="25"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="clan_range" value="300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="6"/>
+		</skills>
+	</npc>
+	<npc id="32652" name="Кристальный Телепорт" server_name="teleport_crystal_mine" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="etc"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="30"/>
+		<set name="collision_height" value="32.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="19"/>
+		</skills>
+	</npc>
+	<npc id="32653" name="Крун" server_name="kroon" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="19"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+			<set name="clan_range" value="300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="18"/>
+		</skills>
+	</npc>
+	<npc id="32654" name="Тарун" server_name="taroon" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="19"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+			<set name="clan_range" value="300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="18"/>
+		</skills>
+	</npc>
+	<npc id="32655" name="Чайлен" server_name="cheiren" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="8"/>
+		<set name="collision_height" value="28"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+			<set name="clan_range" value="300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="17"/>
+		</skills>
+	</npc>
+	<npc id="32656" name="" server_name="nest_controller" title="">
+		<set name="type" value="L2Monster"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="20"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="75"/>
+		<set name="dex" value="42"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="66"/>
+		<set name="men" value="10"/>
+		<set name="collision_radius" value="0.1"/>
+		<set name="collision_height" value="0.1"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="corpse"/>
+			<set name="maxSkillChance" value="0"/>
+			<set name="can_move" value="false"/>
+			<set name="enemy_clan" value="dummy_enemy"/>
+			<set name="enemy_range" value="1300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32657" name="Привратник Оракула" server_name="ssq_gate_open" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="etc"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="7"/>
+		<set name="collision_height" value="15"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+			<set name="clan_range" value="300"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="19"/>
+		</skills>
+	</npc>
+	<npc id="32658" name="Хранитель Восточной Грани" server_name="enter_mulada" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="etc"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="7"/>
+		<set name="collision_height" value="15"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="19"/>
+		</skills>
+	</npc>
+	<npc id="32659" name="Хранитель Западной Грани" server_name="enter_suvadita" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="etc"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="7"/>
+		<set name="collision_height" value="15"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="19"/>
+		</skills>
+	</npc>
+	<npc id="32660" name="Хранитель Южной Грани" server_name="enter_manipura" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="etc"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="7"/>
+		<set name="collision_height" value="15"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="19"/>
+		</skills>
+	</npc>
+	<npc id="32661" name="Хранитель Северной Грани" server_name="enter_anahata" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="etc"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="7"/>
+		<set name="collision_height" value="15"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="19"/>
+		</skills>
+	</npc>
+	<npc id="32662" name="Хранитель Площади" server_name="enter_vishuda" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="etc"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="7"/>
+		<set name="collision_height" value="15"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="19"/>
+		</skills>
+	</npc>
+	<npc id="32663" name="Хранитель Башни" server_name="enter_ajna" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="etc"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="7"/>
+		<set name="collision_height" value="15"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="19"/>
+		</skills>
+	</npc>
+	<npc id="32664" name="Управляющий Грез" server_name="manager_dream_11" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32665" name="Управляющий Грез" server_name="manager_dream_12" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32666" name="Управляющий Грез" server_name="manager_dream_13" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32667" name="Управляющий Грез" server_name="manager_dream_14" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32668" name="Управляющий Грез" server_name="manager_dream_15" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32669" name="Управляющий Грез" server_name="manager_dream_21" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32670" name="Управляющий Грез" server_name="manager_dream_22" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32671" name="Управляющий Грез" server_name="manager_dream_23" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32672" name="Управляющий Грез" server_name="manager_dream_24" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32673" name="Управляющий Грез" server_name="manager_dream_25" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32674" name="Управляющий Грез" server_name="manager_dream_31" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32675" name="Управляющий Грез" server_name="manager_dream_32" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32676" name="Управляющий Грез" server_name="manager_dream_33" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32677" name="Управляющий Грез" server_name="manager_dream_34" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32678" name="Управляющий Грез" server_name="manager_dream_35" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32679" name="Управляющий Грез" server_name="manager_dream_41" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32680" name="Управляющий Грез" server_name="manager_dream_42" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32681" name="Управляющий Грез" server_name="manager_dream_43" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32682" name="Управляющий Грез" server_name="manager_dream_44" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32683" name="Управляющий Грез" server_name="manager_dream_45" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32684" name="Управляющий Грез" server_name="manager_dream_51" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32685" name="Управляющий Грез" server_name="manager_dream_52" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32686" name="Управляющий Грез" server_name="manager_dream_53" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32687" name="Управляющий Грез" server_name="manager_dream_54" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32688" name="Управляющий Грез" server_name="manager_dream_55" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32689" name="Управляющий Грез" server_name="manager_dream_56" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32690" name="Управляющий Грез" server_name="manager_dream_57" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32691" name="Управляющий Грез" server_name="manager_dream_58" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32692" name="Управляющий Грез" server_name="manager_dream_59" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32693" name="Управляющий Грез" server_name="manager_dream_61" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32694" name="Управляющий Грез" server_name="manager_dream_62" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32695" name="Управляющий Грез" server_name="manager_dream_63" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32696" name="Управляющий Грез" server_name="manager_dream_64" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32697" name="Управляющий Грез" server_name="manager_dream_65" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32698" name="Управляющий Грез" server_name="manager_dream_66" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+	<npc id="32699" name="Управляющий Грез" server_name="manager_dream_67" title="">
+		<set name="type" value="L2Npc"/>
+		<set name="sex" value="female"/>
+		<set name="level" value="80"/>
+		<set name="org_hp" value="3290"/>
+		<set name="org_mp" value="1674"/>
+		<set name="org_hp_regen" value="8.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="970.53755"/>
+		<set name="base_magic_attack" value="662.75133"/>
+		<set name="base_defend" value="341.375"/>
+		<set name="base_magic_defend" value="249.80341"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="1"/>
+		<set name="ground_low" value="1"/>
+		<set name="str" value="89"/>
+		<set name="con" value="82"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="25"/>
+		<set name="collision_height" value="47.5"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="fighter"/>
+			<set name="can_move" value="false"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4390" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="2"/>
+		</skills>
+	</npc>
+</list>

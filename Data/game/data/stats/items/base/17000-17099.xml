@@ -1,0 +1,1478 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="17000" name="Комплект Черного Снаряжения (Ранг B) - Артефакт Дружбы - (90 дней)" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="reuse_delay" val="3000"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="time" val="129600"/>
+		<set name="capsuled_items" val="16858,1,1,100;16857,2,2,100;16859,2,2,100"/>
+	</item>
+	<item id="17001" name="Комплект Печати (Ранг C) - Артефакт Дружбы - (90 дней)" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="reuse_delay" val="3000"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="time" val="129600"/>
+		<set name="capsuled_items" val="16861,1,1,100;16860,2,2,100;16862,2,2,100"/>
+	</item>
+	<item id="17002" name="Комплект Эльфов (Ранг D) - Артефакт Дружбы - (90 дней)" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="reuse_delay" val="3000"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="time" val="129600"/>
+		<set name="capsuled_items" val="16864,1,1,100;16863,2,2,100;16865,2,2,100"/>
+	</item>
+	<item id="17003" name="Подарок Деда Мороза - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.lucky_bag_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9085-1"/>
+	</item>
+	<item id="17004" name="Браслет Печати Агатиона - Малыш Рудольф - (Ивент)" type="Armor">
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="8464-1;3267-1"/>
+	</item>
+	<item id="17005" name="Дед Мороз - Зелье CP - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_cp_potion_i01"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="20"/>
+		<set name="reuse_delay" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9086-1"/>
+	</item>
+	<item id="17006" name="Запечатанная Красивая Кираса Венеры" type="Armor">
+		<set name="icon" val="icon.armor_t94_u_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="chest"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="2240"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="7520"/>
+		<set name="price" val="46668000"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_depositable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="236"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="17007" name="Запечатанная Красивая Кожаная Кираса Венеры" type="Armor">
+		<set name="icon" val="icon.armor_t95_u_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="chest"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1680"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="4140"/>
+		<set name="price" val="35000000"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="177"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="17008" name="Запечатанная Красивая Туника Венеры" type="Armor">
+		<set name="icon" val="icon.armor_t96_u_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1680"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="1750"/>
+		<set name="price" val="35000000"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_depositable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="637"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="17009" name="Запечатанные Красивые Набедренники Венеры" type="Armor">
+		<set name="icon" val="icon.armor_t94_l_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="legs"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1400"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="scale_of_dragon"/>
+		<set name="weight" val="3170"/>
+		<set name="price" val="29168000"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_depositable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="148"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="17010" name="Запечатанные Красивые Рукавицы Венеры" type="Armor">
+		<set name="icon" val="icon.armor_t94_g_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="560"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="510"/>
+		<set name="price" val="11667000"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_depositable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="17011" name="Запечатанные Красивые Сапоги Венеры" type="Armor">
+		<set name="icon" val="icon.armor_t94_b_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="560"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1070"/>
+		<set name="price" val="11667000"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_depositable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="17012" name="Запечатанные Красивые Кожаные Брюки Венеры" type="Armor">
+		<set name="icon" val="icon.armor_t95_l_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="legs"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1050"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="scale_of_dragon"/>
+		<set name="weight" val="1320"/>
+		<set name="price" val="21876000"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="111"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="17013" name="Запечатанные Красивые Кожаные Перчатки Венеры" type="Armor">
+		<set name="icon" val="icon.armor_t95_g_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="560"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="510"/>
+		<set name="price" val="11667000"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="17014" name="Запечатанные Красивые Кожаные Сапоги Венеры" type="Armor">
+		<set name="icon" val="icon.armor_t95_b_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="560"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1070"/>
+		<set name="price" val="11667000"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="17015" name="Запечатанные Красивые Штаны Венеры" type="Armor">
+		<set name="icon" val="icon.armor_t96_l_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1050"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="scale_of_dragon"/>
+		<set name="weight" val="850"/>
+		<set name="price" val="21876000"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_depositable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="74"/>
+			<add order="0x40" stat="maxMp" val="415"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="17016" name="Запечатанные Красивые Перчатки Венеры" type="Armor">
+		<set name="icon" val="icon.armor_t96_g_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="560"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="510"/>
+		<set name="price" val="11667000"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_depositable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="17017" name="Запечатанные Красивые Ботинки Венеры" type="Armor">
+		<set name="icon" val="icon.armor_t96_b_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="560"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1070"/>
+		<set name="price" val="11667000"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_depositable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="68"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="17018" name="Зелье Восстановления Горячих Источников" type="EtcItem">
+		<set name="icon" val="icon.etc_cp_potion_i01"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="20"/>
+		<set name="price" val="2500"/>
+		<set name="reuse_delay" val="3000"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9078-1"/>
+	</item>
+	<item id="17019" name="Упаковка: Браслеты Ездовых Питомцев 3 шт." type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="13121,1,1,100;14231,1,1,100;14232,1,1,100"/>
+	</item>
+	<item id="17020" name="Упаковка: Парное Молоко - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="14739,1,1,100"/>
+	</item>
+	<item id="17021" name="Упаковка: Опыт Витаминов 30 - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i01"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="14239,1,1,100;13082,1,1,100;13085,1,1,100"/>
+	</item>
+	<item id="17022" name="Упаковка: Знак Варка - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i01"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="13234,1,1,100"/>
+	</item>
+	<item id="17023" name="Упаковка: Знак Кетра - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i01"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="13235,1,1,100"/>
+	</item>
+	<item id="17024" name="Упаковка: Зелье Поддержания Энергии - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i01"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="15440,5,5,100"/>
+	</item>
+	<item id="17025" name="Упаковка: Очки ПА (7000) - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i01"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="14559,1,1,100"/>
+	</item>
+	<item id="17026" name="Упаковка: Шляпа Старшего Помощника - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="8919,1,1,100"/>
+	</item>
+	<item id="17027" name="Упаковка: Соломенная Шляпа - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="10616,1,1,100"/>
+	</item>
+	<item id="17028" name="Упаковка: Маска Фантома - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="9208,1,1,100"/>
+	</item>
+	<item id="17029" name="Упаковка: Черная Маска Фантома - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="9409,1,1,100"/>
+	</item>
+	<item id="17030" name="Забытый Свиток: Создать Вещь 10-го Уровня" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_element_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="120000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9087-1"/>
+	</item>
+	<item id="17031" name="Упаковка: Белая Фрея" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="17033,1,1,100;9552,1,1,100;9553,1,1,100;9554,1,1,100;9555,1,1,100;9556,1,1,100;9557,1,1,100;14055,3,3,100"/>
+	</item>
+	<item id="17032" name="Упаковка: Сундук с Сокровищами Героя" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="16852,1,1,100"/>
+	</item>
+	<item id="17033" name="Венец Льда - Ивент - (30 дней)" type="Armor">
+		<set name="icon" val="icon.accessory_ice_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="8497-1"/>
+		<set name="time" val="43200"/>
+	</item>
+	<item id="17034" name="Забытый Свиток: Воля Воина - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9090-1"/>
+	</item>
+	<item id="17035" name="Забытый Свиток: Воля Стрелка - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9091-1"/>
+	</item>
+	<item id="17036" name="Забытый Свиток: Воля Мага - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9092-1"/>
+	</item>
+	<item id="17037" name="Забытый Свиток: Защита Рун - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9093-1"/>
+	</item>
+	<item id="17038" name="Забытый Свиток: Защита Стихий - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9094-1"/>
+	</item>
+	<item id="17039" name="Забытый Свиток: Защита Равновесия - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9095-1"/>
+	</item>
+	<item id="17040" name="Упаковка: Сундук Любви" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_love_pack"/>
+		<set name="default_action" val="peel"/>
+		<set name="material" val="fish"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="17044,1,1,100"/>
+	</item>
+	<item id="17041" name="Упаковка: Сундук Сердцебиения" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_belief_pack"/>
+		<set name="default_action" val="peel"/>
+		<set name="material" val="fish"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="17045,1,1,100"/>
+	</item>
+	<item id="17042" name="Упаковка: Сундук Признания" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_wish_pack"/>
+		<set name="default_action" val="peel"/>
+		<set name="material" val="fish"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="17046,1,1,100"/>
+	</item>
+	<item id="17043" name="Упаковка: Сундук Радости" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_joy_pack"/>
+		<set name="default_action" val="peel"/>
+		<set name="material" val="fish"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="17047,1,1,100"/>
+	</item>
+	<item id="17044" name="Сундук Любви" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_love_pack"/>
+		<set name="default_action" val="peel"/>
+		<set name="material" val="fish"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="17051,1,1,100;17052,1,1,100;17053,1,1,100"/>
+	</item>
+	<item id="17045" name="Сундук Сердцебиения" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_belief_pack"/>
+		<set name="default_action" val="peel"/>
+		<set name="material" val="fish"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="17054,1,1,100;17055,1,1,100;17056,1,1,100"/>
+	</item>
+	<item id="17046" name="Сундук Признания" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_wish_pack"/>
+		<set name="default_action" val="peel"/>
+		<set name="material" val="fish"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="17057,1,1,100;17058,1,1,100;17059,1,1,100;17060,1,1,100"/>
+	</item>
+	<item id="17047" name="Сундук Радости" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_joy_pack"/>
+		<set name="default_action" val="peel"/>
+		<set name="material" val="fish"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="17044,1,1,100;17045,1,1,100;17046,1,1,100;17050,1,1,100;17061,1,1,100"/>
+	</item>
+	<item id="17048" name="Упаковка: Блестящий Браслет" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="material" val="fish"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="17049,1,1,100"/>
+	</item>
+	<item id="17049" name="Блестящий Браслет" type="Armor">
+		<set name="icon" val="icon.accessory_shiny_bracelet"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rbracelet"/>
+		<set name="material" val="gold"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="3324-1"/>
+	</item>
+	<item id="17050" name="Блестящее Обручальное Кольцо" type="Armor">
+		<set name="icon" val="icon.accessory_shiny_couple_ring"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="material" val="gold"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="8510-1"/>
+	</item>
+	<item id="17051" name="Талисман СИЛ" type="Armor">
+		<set name="icon" val="icon.etc_talisman_event_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="8498-1"/>
+		<set name="time" val="10080"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="17052" name="Талисман ЛВК" type="Armor">
+		<set name="icon" val="icon.etc_talisman_event_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="8499-1"/>
+		<set name="time" val="10080"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="17053" name="Талисман ВЫН" type="Armor">
+		<set name="icon" val="icon.etc_talisman_event_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="8500-1"/>
+		<set name="time" val="10080"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="17054" name="Талисман МДР" type="Armor">
+		<set name="icon" val="icon.etc_talisman_event_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="8502-1"/>
+		<set name="time" val="10080"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="17055" name="Талисман ИНТ" type="Armor">
+		<set name="icon" val="icon.etc_talisman_event_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="8501-1"/>
+		<set name="time" val="10080"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="17056" name="Талисман ДУХ" type="Armor">
+		<set name="icon" val="icon.etc_talisman_event_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="8503-1"/>
+		<set name="time" val="10080"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="17057" name="Талисман Сопротивления Оглушению" type="Armor">
+		<set name="icon" val="icon.etc_talisman_event_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="8504-1"/>
+		<set name="time" val="10080"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="17058" name="Талисман Сопротивления Усыплению" type="Armor">
+		<set name="icon" val="icon.etc_talisman_event_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="8505-1"/>
+		<set name="time" val="10080"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="17059" name="Талисман Сопротивления Удержанию" type="Armor">
+		<set name="icon" val="icon.etc_talisman_event_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="8506-1"/>
+		<set name="time" val="10080"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="17060" name="Талисман Сопротивляния Параличу" type="Armor">
+		<set name="icon" val="icon.etc_talisman_event_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="8507-1"/>
+		<set name="time" val="10080"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="17061" name="Талисман - Все Параметры" type="Armor">
+		<set name="icon" val="icon.etc_talisman_event_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="8508-1"/>
+		<set name="time" val="10080"/>
+		<set name="useSkillDisTime" val="6"/>
+	</item>
+	<item id="17062" name="Ивент - Свиток Призыва Белого Тигренка" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_tiger_a"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="reuse_delay" val="10000"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9096-1"/>
+	</item>
+	<item id="17063" name="Ивент - Свиток Призыва Грустного Белого Тигренка" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_tiger_a"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="reuse_delay" val="10000"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9098-1"/>
+	</item>
+	<item id="17064" name="Ивент - Свиток Призыва Белого Тигренка-Вожака" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_tiger_b"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="reuse_delay" val="10000"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9097-1"/>
+	</item>
+	<item id="17065" name="Ивент - Свиток Призыва Грустного Белого Тигренка-Вожака" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_tiger_b"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="reuse_delay" val="10000"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9099-1"/>
+	</item>
+	<item id="17066" name="Ивент - Упаковка: Спаси Белого Тигра" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="17067,60,60,100;17068,15,15,100;17062,1,1,100;17064,1,1,100"/>
+	</item>
+	<item id="17067" name="Ивент - Лекарство Купидона" type="EtcItem">
+		<set name="icon" val="icon.etc_faitgue_relief_of_cupid_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="elixir"/>
+		<set name="material" val="liquid"/>
+		<set name="shared_reuse_group" val="13"/>
+		<set name="reuse_delay" val="2000"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9088-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="17068" name="Ивент - Сильнодействующее Лекарство Купидона" type="EtcItem">
+		<set name="icon" val="icon.etc_nutrients_of_cupid_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="elixir"/>
+		<set name="material" val="liquid"/>
+		<set name="shared_reuse_group" val="14"/>
+		<set name="reuse_delay" val="4000"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9089-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="17069" name="Сундук Оружия Венеры" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9100-1"/>
+	</item>
+	<item id="17070" name="Сундук Оружия Икара" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9101-1"/>
+	</item>
+	<item id="17071" name="Сундук Оружия Династии" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9102-1"/>
+	</item>
+	<item id="17072" name="Сундук Доспехов Венеры" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9103-1"/>
+	</item>
+	<item id="17073" name="Сундук Доспехов Дестино" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9104-1"/>
+	</item>
+	<item id="17074" name="Сундук Доспехов Династии" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9105-1"/>
+	</item>
+	<item id="17075" name="Сундук с Кристаллами Души - Уровень 14" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9106-1"/>
+	</item>
+	<item id="17076" name="Сундук с Кристаллами Души - Уровень 15" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9107-1"/>
+	</item>
+	<item id="17077" name="Сундук с Кристаллами Души - Уровень 16" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9108-1"/>
+	</item>
+	<item id="17078" name="Сундук с Зельем Внешности" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9109-1"/>
+	</item>
+	<item id="17079" name="Сундук с Красящим Зельем" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9110-1"/>
+	</item>
+	<item id="17080" name="Сундук с Зельем Прически" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9111-1"/>
+	</item>
+	<item id="17081" name="Сундук Золотых Апиг" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="1"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9112-1"/>
+	</item>
+	<item id="17082" name="Упаковка: Книга Трансформации в Анаким" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="10296,1,1,100"/>
+	</item>
+	<item id="17083" name="Упаковка: Птичье Гнездо - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="10613,1,1,100"/>
+	</item>
+	<item id="17084" name="Упаковка: Теневой Предмет - Шляпа Чародея - (Телепорт)" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="9187,1,1,100"/>
+	</item>
+	<item id="17085" name="Упаковка: Теневой Предмет - Шляпа Чародея - (Большая Голова)" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="9194,1,1,100"/>
+	</item>
+	<item id="17086" name="Упаковка: Теневой Предмет - Шляпа Чародея - (Фейерверк)" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="capsuled_items" val="9201,1,1,100"/>
+	</item>
+	<item id="17087" name="Семя: Двойная Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_twin_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="1000"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="17088" name="Семя: Новая Двойная Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_twin_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="1000"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="17089" name="Семя: Красная Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_red_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="500"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="17090" name="Семя: Новая Красная Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_red_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="500"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="17091" name="Семя: Золотая Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_golden_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="650"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="17092" name="Семя: Новая Золотая Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_golden_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="650"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="17093" name="Зелье Поддержания Энергии - 10 мин - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_lesser_potion_blue_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="material" val="liquid"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9113-1"/>
+	</item>
+	<item id="17094" name="Голос Невитта" type="EtcItem">
+		<set name="icon" val="icon.etc_fish_scale_i01"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="material" val="liquid"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9114-1"/>
+	</item>
+	<item id="17095" name="Песочные Часы Невитта - 1 час - (1~19)" type="EtcItem">
+		<set name="icon" val="icon.etc_dragons_blood_i03"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="material" val="liquid"/>
+		<set name="shared_reuse_group" val="16"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9115-1"/>
+		<cond msgId="1902">
+			<player levelRange="1;19"/>
+		</cond>
+	</item>
+	<item id="17096" name="Песочные Часы Невитта - 1.5 часа - (1~19)" type="EtcItem">
+		<set name="icon" val="icon.etc_dragons_blood_i03"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="material" val="liquid"/>
+		<set name="shared_reuse_group" val="16"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9116-1"/>
+		<cond msgId="1902">
+			<player levelRange="1;19"/>
+		</cond>
+	</item>
+	<item id="17097" name="Песочные Часы Невитта - 2 часа - (1~19)" type="EtcItem">
+		<set name="icon" val="icon.etc_dragons_blood_i03"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="material" val="liquid"/>
+		<set name="shared_reuse_group" val="16"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9117-1"/>
+		<cond msgId="1902">
+			<player levelRange="1;19"/>
+		</cond>
+	</item>
+	<item id="17098" name="Песочные Часы Невитта - 2.5 часа - (1~19)" type="EtcItem">
+		<set name="icon" val="icon.etc_dragons_blood_i03"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="material" val="liquid"/>
+		<set name="shared_reuse_group" val="16"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9118-1"/>
+		<cond msgId="1902">
+			<player levelRange="1;19"/>
+		</cond>
+	</item>
+	<item id="17099" name="Песочные Часы Невитта - 3 часа - (1~19)" type="EtcItem">
+		<set name="icon" val="icon.etc_dragons_blood_i03"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="material" val="liquid"/>
+		<set name="shared_reuse_group" val="16"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9119-1"/>
+		<cond msgId="1902">
+			<player levelRange="1;19"/>
+		</cond>
+	</item>
+</list>

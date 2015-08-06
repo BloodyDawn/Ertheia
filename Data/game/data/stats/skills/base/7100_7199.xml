@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="7115" levels="1" name="Энергия Хаоса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7116" levels="1" name="Книга Заклинаний - Воздушный Автомобиль">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="19115"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="19115"/>
+                </not>
+                <clan level="5"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="7100" levels="1" name="Оглушение Питомца Клана">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="castRange" val="900"/>
+        <set name="mpConsume" val="5"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7101" levels="1" name="Воздушные Оковы Питомца Клана">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castRange" val="900"/>
+        <set name="mpConsume" val="5"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7102" levels="1" name="Призыв Питомца Клана">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="5000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7103" levels="1" name="Дерева Помощи: Зона восстановления СР">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="300"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7104" levels="1" name="Длань Паагрио">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="100"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7105" levels="1" name="Состояние: Инкубация Яиц">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="100"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7106" levels="1" name="Оптимальная Температура Для Инкубации Яиц">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="coolTime" val="800"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7107" levels="1" name="Инкубация Яиц - Успех">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="coolTime" val="800"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7108" levels="1" name="Инкубация Яиц - Неудача">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="coolTime" val="800"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7109" levels="1" name="Призыв Гадкого Демона">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7110" levels="1" name="Призыв Гадкого Демона">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7111" levels="1" name="Призыв Гадкого Демона">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7112" levels="1" name="Призыв Гадкого Демона">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7113" levels="1" name="Эффект Неуязвимости Питомца">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="mpConsume" val="78"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="7114" levels="1" name="Книга Заклинаний - Флаг Клана">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="15094"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="15094"/>
+                </not>
+                <player level="75"/>
+            </and>
+        </cond>
+    </skill>
+</list>

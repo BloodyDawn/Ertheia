@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list" type="listType"/>
+	<xs:complexType name="monsterType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="levelrange" use="optional"/>
+				<xs:attribute type="xs:string" name="bagId" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="listType">
+		<xs:sequence>
+			<xs:element type="bagsType" name="bags" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="bagsType">
+		<xs:sequence>
+			<xs:element type="monsterType" name="monster" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute type="xs:string" name="type" use="optional"/>
+	</xs:complexType>
+</xs:schema>

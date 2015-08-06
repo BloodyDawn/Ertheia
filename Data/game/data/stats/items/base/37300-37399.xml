@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="37391" name="Сундук Железных Врат с Наградой Низкого Уровня" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9997-1"/>
+	</item>
+	<item id="37392" name="Сундук Железных Врат с Наградой Среднего Уровня" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9998-1"/>
+	</item>
+	<item id="37393" name="Сундук Железных Врат с Наградой Высокого Уровня" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i02"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9999-1"/>
+	</item>
+	<item id="37394" name="Сундук Железных Врат с Наградой Высшего Уровня" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="10000-1"/>
+	</item>
+	<item id="37395" name="Свиток: 100 000 000 SP - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_sp_scroll1_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="2000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="17000-1"/>
+	</item>
+	<item id="37374" name="Благовоние Хаоса" type="EtcItem">
+		<set name="icon" val="icon.etc_saint_pomander_bishop_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="37375" name="Благовоние Хаоса - Двойные Классы" type="EtcItem">
+		<set name="icon" val="icon.etc_saint_pomander_bishop_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="37379" name="Благ. Свиток Обработки Оружия (R) - (30 дней)" type="EtcItem">
+		<set name="icon" val="icon.pr_weapon_change_i06"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37380" name="Благ. Свиток Обработки Оружия (S) - (30 дней)" type="EtcItem">
+		<set name="icon" val="icon.pr_weapon_change_i05"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37381" name="Благ. Свиток Обработки Оружия (A) - (30 дней)" type="EtcItem">
+		<set name="icon" val="icon.pr_weapon_change_i04"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37382" name="Благ. Свиток Обработки Оружия (B) - (30 дней)" type="EtcItem">
+		<set name="icon" val="icon.pr_weapon_change_i03"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37383" name="Благ. Свиток Обработки Оружия (C) - (30 дней)" type="EtcItem">
+		<set name="icon" val="icon.pr_weapon_change_i02"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37384" name="Благ. Свиток Обработки Оружия (D) - (30 дней)" type="EtcItem">
+		<set name="icon" val="icon.pr_weapon_change_i01"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37385" name="Благ. Свиток Обработки Доспехов (R) - (30 дней)" type="EtcItem">
+		<set name="icon" val="icon.pr_armor_change_i06"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37386" name="Благ. Свиток Обработки Доспехов (S) - (30 дней)" type="EtcItem">
+		<set name="icon" val="icon.pr_armor_change_i05"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37387" name="Благ. Свиток Обработки Доспехов (A) - (30 дней)" type="EtcItem">
+		<set name="icon" val="icon.pr_armor_change_i04"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37388" name="Благ. Свиток Обработки Доспехов (B) - (30 дней)" type="EtcItem">
+		<set name="icon" val="icon.pr_armor_change_i03"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37389" name="Благ. Свиток Обработки Доспехов (C) - (30 дней)" type="EtcItem">
+		<set name="icon" val="icon.pr_armor_change_i02"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37390" name="Благ. Свиток Обработки Доспехов (D) - (30 дней)" type="EtcItem">
+		<set name="icon" val="icon.pr_armor_change_i01"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37313" name="Сундук Поддержки Тома" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_2_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37314" name="Сундук Судьбы" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="material" val="fish"/>
+	</item>
+	<item id="37315" name="Сундук Поддержки Судьбы - Ранг C (Снаряжение Воина)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37316" name="Сундук Поддержки Судьбы - Ранг C (Снаряжение Мага)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37317" name="Сундук Поддержки Судьбы - Ранг C (Снаряжение Воителя)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37318" name="Сундук Поддержки Судьбы - Ранг C (Снаряжение Разбойника)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37319" name="Сундук Поддержки Судьбы - Ранг C (Снаряжение Камаэль)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37320" name="Сундук Поддержки Судьбы - Ранг C (Снаряжение Воина Орков)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37321" name="Сундук Поддержки Судьбы - Ранг C (Снаряжение Мага Орков)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37322" name="Сундук Поддержки Судьбы - Ранг B (Снаряжение Воина)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37323" name="Сундук Поддержки Судьбы - Ранг B (Снаряжение Мага)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37324" name="Сундук Поддержки Судьбы - Ранг B (Снаряжение Воителя)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37325" name="Сундук Поддержки Судьбы - Ранг B (Снаряжение Разбойника)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37326" name="Сундук Поддержки Судьбы - Ранг B (Снаряжение Камаэль)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37327" name="Сундук Поддержки Судьбы - Ранг B (Снаряжение Воина Орков)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37328" name="Сундук Поддержки Судьбы - Ранг B (Снаряжение Мага Орков)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37329" name="Сундук Поддержки Судьбы - Ранг A (Снаряжение Воина)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37330" name="Сундук Поддержки Судьбы - Ранг A (Снаряжение Мага)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37331" name="Сундук Поддержки Судьбы - Ранг A (Снаряжение Воителя)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37332" name="Сундук Поддержки Судьбы - Ранг A (Снаряжение Разбойника)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37333" name="Сундук Поддержки Судьбы - Ранг A (Снаряжение Камаэль)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37334" name="Сундук Поддержки Судьбы - Ранг A (Снаряжение Воина Орков)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37335" name="Сундук Поддержки Судьбы - Ранг A (Снаряжение Мага Орков)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37336" name="Сундук Поддержки Судьбы - Ранг S (Снаряжение Воина)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37337" name="Сундук Поддержки Судьбы 1 - Ранг S (Снаряжение Мага)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37338" name="Сундук Поддержки Судьбы 1 - Ранг S (Снаряжение Воителя)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37339" name="Сундук Поддержки Судьбы 1 - Ранг S (Снаряжение Разбойника)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37340" name="Сундук Поддержки Судьбы 1 - Ранг S (Снаряжение Камаэль)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37341" name="Сундук Поддержки Судьбы 1 - Ранг S (Снаряжение Воина Орков)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37342" name="Сундук Поддержки Судьбы 1 - Ранг S (Снаряжение Мага Орков)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37343" name="Сундук Поддержки Судьбы 2 - Ранг S (Снаряжение Воина)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37344" name="Сундук Поддержки Судьбы 2 - Ранг S (Снаряжение Мага)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37345" name="Сундук Поддержки Судьбы 2 - Ранг S (Снаряжение Воителя)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37346" name="Сундук Поддержки Судьбы 2 - Ранг S (Снаряжение Разбойника)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37347" name="Сундук Поддержки Судьбы 2 - Ранг S (Снаряжение Камаэль)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37348" name="Сундук Поддержки Судьбы 2 - Ранг S (Снаряжение Воина Орков)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37349" name="Сундук Поддержки Судьбы 2 - Ранг S (Снаряжение Мага Орков)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37350" name="Сундук Поддержки Судьбы - Ранг R (Снаряжение Рыцаря Сигеля)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37351" name="Сундук Поддержки Судьбы - Ранг R (Снаряжение Воина Тира)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37352" name="Сундук Поддержки Судьбы - Ранг R (Снаряжение Разбойника Одала)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37353" name="Сундук Поддержки Судьбы - Ранг R (Снаряжение Лучника Эура)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37354" name="Сундук Поддержки Судьбы - Ранг R (Снаряжение Волшебника Фео)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37355" name="Сундук Поддержки Судьбы - Ранг R (Снаряжение Призывателя Веньо)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37356" name="Сундук Поддержки Судьбы - Ранг R (Снаряжение Целителя Альгиза)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37357" name="Сундук Поддержки Судьбы - Ранг R (Снаряжение Заклинателя Иса)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37358" name="Знак Поддержки Тестового Сервера" type="EtcItem">
+		<set name="icon" val="icon.etc_coins_black_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37359" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37360" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37361" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37362" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37363" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37364" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37365" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37366" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37367" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37368" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37369" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37370" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37371" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37372" name="Награда для Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37373" name="Осколок Хаоса" type="EtcItem">
+		<set name="icon" val="icon.etc_debris_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37378" name="Камень Обработки Светового Оружия" type="EtcItem">
+		<set name="icon" val="BranchSys.Icon.br_spirit_skill_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37396" name="Сундук Камней Обработки Светового Оружия" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37397" name="Припасы Кайзера" type="EtcItem">
+		<set name="icon" val="Icon.skill1050"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37398" name="Сундук Измерений Черной Наковальни" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i03"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37399" name="Сундук с Припасами Хозяина Измерений" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i01"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37300" name="Железный Заклинатель Реквиема (30%)" type="Weapon">
+		<set name="icon" val="icon.weapon_anatrian_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="360"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="348"/>
+			<set order="0x08" stat="mAtk" val="252"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="37301" name="Железный Расчленитель Реквиема (30%)" type="Weapon">
+		<set name="icon" val="icon.weapon_kaynon_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="510"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="348"/>
+			<set order="0x08" stat="mAtk" val="252"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="37302" name="Железный Буревестник Реквиема (30%)" type="Weapon">
+		<set name="icon" val="icon.weapon_soryu_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="670"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="435"/>
+			<set order="0x08" stat="mAtk" val="189"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="37303" name="Железный Эспадон Реквиема (30%)" type="Weapon">
+		<set name="icon" val="icon.weapon_polion_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="580"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="529"/>
+			<set order="0x08" stat="mAtk" val="189"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="37304" name="Железный Парные Мечи Реквиема (30%)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="510"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="529"/>
+			<set order="0x08" stat="mAtk" val="189"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="37305" name="Железный Воитель Реквиема (30%)" type="Weapon">
+		<set name="icon" val="icon.weapon_fantasma_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="529"/>
+			<set order="0x08" stat="mAtk" val="189"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="37306" name="Железный Парные Дубины Реквиема (30%)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="580"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="529"/>
+			<set order="0x08" stat="mAtk" val="189"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="37307" name="Железный Острие Реквиема (30%)" type="Weapon">
+		<set name="icon" val="icon.weapon_aspeda_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="510"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="380"/>
+			<set order="0x08" stat="mAtk" val="189"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="37308" name="Железный Парные Кинжалы Реквиема (30%)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="680"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<and>
+				<player level="85"/>
+				<player class_id_restriction="55, 93, 101, 108, 117, 141, 158, 159, 160, 161"/>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="435"/>
+			<set order="0x08" stat="mAtk" val="189"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="37309" name="Железный Бросок Реквиема (30%)" type="Weapon">
+		<set name="icon" val="icon.weapon_grabathus_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="510"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="856"/>
+			<set order="0x08" stat="mAtk" val="189"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="37310" name="Железный Страж Реквиема (30%)" type="Weapon">
+		<set name="icon" val="icon.weapon_shyayaka_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="530"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1300"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="771"/>
+			<set order="0x08" stat="mAtk" val="189"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="37311" name="Железный Мститель Реквиема (30%)" type="Weapon">
+		<set name="icon" val="icon.weapon_batista_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="580"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="435"/>
+			<set order="0x08" stat="mAtk" val="189"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="37312" name="Железный Возмездие Реквиема (30%)" type="Weapon">
+		<set name="icon" val="icon.weapon_grangkaz_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="360"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="423"/>
+			<set order="0x08" stat="mAtk" val="278"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="37376" name="Стальной Лук Дракона (60 дней)" type="Weapon">
+		<set name="icon" val="icon.weapon_draconic_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="550"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="581"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="37377" name="Стальной Лук Династии (60дней)" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_bow_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="510"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="654"/>
+			<set order="0x08" stat="mAtk" val="151"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+</list>

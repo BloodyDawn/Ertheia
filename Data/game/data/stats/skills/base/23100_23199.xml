@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="23100" levels="1" name="4-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23101" levels="1" name="5-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23102" levels="1" name="6-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23103" levels="1" name="7-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23104" levels="1" name="8-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23105" levels="1" name="9-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23106" levels="1" name="10-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23107" levels="1" name="11-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23108" levels="1" name="12-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23109" levels="1" name="13-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23110" levels="1" name="14-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23111" levels="1" name="15-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23112" levels="1" name="16-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23113" levels="1" name="17-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23114" levels="1" name="18-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23115" levels="1" name="19-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23116" levels="1" name="20-я Победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23117" levels="1" name="Умение Агатиона - Мертвец">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1535"/>
+        </cond>
+    </skill>
+    <skill id="23118" levels="1" name="Умение Агатиона Мертвеца - Риск для Жизни">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <cond msgId="2292">
+            <player agathionId="1535"/>
+        </cond>
+    </skill>
+    <skill id="23119" levels="1" name="Умение Агатиона - Синяя Птица">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1536"/>
+        </cond>
+    </skill>
+    <skill id="23120" levels="1" name="Умение Агатиона - Птица">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1537"/>
+        </cond>
+    </skill>
+    <skill id="23121" levels="1" name="Игра Джека - Шкала">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23122" levels="1" name="Игра Джека - Цель">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23123" levels="1" name="Умение Агатиона - Бог Войны">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1551"/>
+        </cond>
+    </skill>
+    <skill id="23124" levels="1" name="Особое Умение Агатиона - Бог Войны - Аура Бешенства">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="60000"/>
+        <set name="coolTime" val="200"/>
+        <cond msgId="2292">
+            <player agathionId="1551"/>
+        </cond>
+    </skill>
+    <skill id="23125" levels="1" name="Умение Агатиона - Богиня Милосердия">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1552"/>
+        </cond>
+    </skill>
+    <skill id="23126" levels="1" name="Особое Умение Агатиона - Богиня Милосердия - Благословение Милосердия">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <cond msgId="2292">
+            <player agathionId="1552"/>
+        </cond>
+    </skill>
+    <skill id="23127" levels="1" name="Умение Агатиона - Китайский Актер">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1553"/>
+        </cond>
+    </skill>
+    <skill id="23128" levels="1" name="Особое Умение Агатиона - Китайский Актер - Меч Восстановления">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <cond msgId="2292">
+            <player agathionId="1553"/>
+        </cond>
+    </skill>
+    <skill id="23129" levels="1" name="Особое Умение Агатиона - Китайский Актер - Водяной Меч">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <cond msgId="2292">
+            <player agathionId="1553"/>
+        </cond>
+    </skill>
+    <skill id="23130" levels="1" name="Умение Агатиона - Китайская Актриса">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1554"/>
+        </cond>
+    </skill>
+    <skill id="23131" levels="1" name="Особое Умение Агатиона - Китайская Актриса - Копье Пламени">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <cond msgId="2292">
+            <player agathionId="1554"/>
+        </cond>
+    </skill>
+    <skill id="23132" levels="1" name="Умение Агатиона - Китайские Актеры">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1555"/>
+        </cond>
+    </skill>
+    <skill id="23133" levels="1" name="Умение Агатиона - Чипао">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1556"/>
+        </cond>
+    </skill>
+    <skill id="23134" levels="1" name="Особое Умение Агатиона - Чипао - Облегчение">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <cond msgId="2292">
+            <player agathionId="1556"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="decrease_weight_penalty" name="Buff" val="0">
+                <add order="0x40" stat="weightLimit" val="9000"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="23135" levels="1" name="Умение Агатиона - Клоун с Трубой">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1557"/>
+        </cond>
+    </skill>
+    <skill id="23136" levels="1" name="Особое Умение Агатиона - Клоун с Трубой - Ускорение Клоуна">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+        <cond msgId="2292">
+            <player agathionId="1557"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="1200" abnormalType="attack_time_down" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.33"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="23137" levels="1" name="Умение Агатиона - Клоун на Шаре">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1558"/>
+        </cond>
+    </skill>
+    <skill id="23138" levels="1" name="Особое Умение Агатиона - Клоун на Шаре - Проницательность Клоуна">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+        <cond msgId="2292">
+            <player agathionId="1558"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="1200" abnormalType="casting_time_down" name="Buff" val="0">
+                <mul order="0x30" stat="mAtkSpd" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="23139" levels="1" name="Умение Агатиона - Клоун на Ходулях">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1559"/>
+        </cond>
+    </skill>
+    <skill id="23140" levels="1" name="Особое Умение Агатиона - Клоун на Ходулях - Легкая Походка Клоуна">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="trait" val="ETC"/>
+        <cond msgId="2292">
+            <player agathionId="1559"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="speed_up" name="Buff" val="0">
+                <add order="0x40" stat="runSpd" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="23141" levels="1" name="Умение Агатиона - Икен">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1539"/>
+        </cond>
+    </skill>
+    <skill id="23142" levels="1" name="Умение Агатиона - Лана">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1540"/>
+        </cond>
+    </skill>
+    <skill id="23143" levels="1" name="Умение Агатиона - Гносиан">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1541"/>
+        </cond>
+    </skill>
+    <skill id="23144" levels="1" name="Умение Агатиона - Ородриэль">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1542"/>
+        </cond>
+    </skill>
+    <skill id="23145" levels="1" name="Умение Агатиона - Ракинос">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1543"/>
+        </cond>
+    </skill>
+    <skill id="23146" levels="1" name="Умение Агатиона - Мортия">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1544"/>
+        </cond>
+    </skill>
+    <skill id="23147" levels="1" name="Умение Агатиона - Хейнтс">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1545"/>
+        </cond>
+    </skill>
+    <skill id="23148" levels="1" name="Умение Агатиона - Мерурил">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1546"/>
+        </cond>
+    </skill>
+    <skill id="23149" levels="1" name="Умение Агатиона - Таман Це Рафатуй">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1547"/>
+        </cond>
+    </skill>
+    <skill id="23150" levels="1" name="Умение Агатиона - Каурин">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1548"/>
+        </cond>
+    </skill>
+    <skill id="23151" levels="1" name="Умение Агатиона - Ахертбайн">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1549"/>
+        </cond>
+    </skill>
+    <skill id="23152" levels="1" name="Умение Агатиона - Наонин">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1550"/>
+        </cond>
+    </skill>
+    <skill id="23153" levels="1" name="Навык Великого Путешественника">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23154" levels="1" name="Особое Умение Кадомацу - Фейерверк">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="4000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="60000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23155" levels="1" name="Погладить">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23156" levels="1" name="Благодарственный Подарок">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="7200000"/>
+    </skill>
+    <skill id="23157" levels="1" name="Благословение Донателлофа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23158" levels="1" name="Благословение Рафаэллофа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23159" levels="1" name="Благословение Леонардофа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23160" levels="1" name="Благословение Микелянджеллофа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23161" levels="1" name="Благословение Девочки Рудольфа - Поддержание Энергии">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23162" levels="1" name="Благословение Девочки Рудольфа - Восстановление Энергии">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23163" levels="1" name="Большая Ошибка Индюка">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23164" levels="1" name="Особое Умение Агатиона - Китайские Актеры - Меч Жизни">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="43200000"/>
+        <cond msgId="2292">
+            <player agathionId="1555"/>
+        </cond>
+    </skill>
+    <skill id="23165" levels="1" name="Нехватка Верности">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="trait" val="ETC"/>
+    </skill>
+    <skill id="23166" levels="1" name="Восполнение Энергии Духа Розы">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23167" levels="1" name="Искушение Света Розы">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23168" levels="1" name="Запредельное Искушение">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="trait" val="ETC"/>
+    </skill>
+    <skill id="23169" levels="1" name="Очарование">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="trait" val="ETC"/>
+    </skill>
+    <skill id="23170" levels="1" name="Очарование">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="trait" val="ETC"/>
+    </skill>
+    <skill id="23171" levels="1" name="Умение Агатиона - Феникс">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1574"/>
+        </cond>
+    </skill>
+    <skill id="23172" levels="1" name="Особое Умение Агатиона Феникса - Нирвана">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="HEAL_PERCENT"/>
+        <set name="hitTime" val="2000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="43200000"/>
+        <set name="staticReuse" val="true"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <player agathionId="1574"/>
+                <player hp="30"/>
+            </and>
+        </cond>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="5" abnormalType="invincibility" abnormalVisualEffect="invincible" name="Invincible" val="0"/>
+            <effect name="CpHealPercent" noicon="1" val="100"/>
+            <effect name="HpHealPercent" noicon="1" val="100"/>
+            <effect name="MpHealPercent" noicon="1" val="100"/>
+        </for>
+    </skill>
+    <skill id="23173" levels="1" name="Особое Умение Агатиона Феникса - Очищение Феникса">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="maxNegated" val="20"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="CANCEL_DEBUFF"/>
+        <set name="power" val="100"/>
+        <set name="hitTime" val="2000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="14400000"/>
+        <cond msgId="2292">
+            <player agathionId="1574"/>
+        </cond>
+    </skill>
+    <skill id="23174" levels="1" name="Риск для Жизни">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="43200000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23175" levels="1" name="Прозрачность Души">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="43200000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23176" levels="1" name="Невидимка">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23177" levels="1" name="Прозрачность Души">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23178" levels="1" name="Прозрачность Души">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23179" levels="1" name="Благословение Жизни">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="GIVE_VITALITY"/>
+        <set name="power" val="20000"/>
+        <set name="isVitalityItemSkill" val="true"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="7210" abnormalType="vp_keep" abnormalVisualEffect="vitality" name="Buff" val="0">
+                <mul order="0x30" stat="vitalityConsumeRate" val="0"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="23180" levels="1" name="Радость Жизни">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="23181" levels="1" name="Умение Агатиона - Змей Горыныч">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="2292">
+            <player agathionId="1575"/>
+        </cond>
+    </skill>
+    <skill id="23182" levels="1" name="Умение Агатиона Змея Горыныча - Легкая Походка">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+        <cond msgId="2292">
+            <player agathionId="1575"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="1200" abnormalType="speed_up" name="Buff" val="0">
+                <add order="0x40" stat="runSpd" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="23183" levels="1" name="Умение Агатиона Ловца Мячей Гносиана - Поддерживающий Эффект">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23184" levels="1" name="Умение Агатиона Ловца Мячей Гносиана - Мяч Поддержки">
+        <set name="create_item_count" val="1"/>
+        <set name="create_item_id" val="20993"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <cond msgId="2292">
+            <player agathionId="20983"/>
+        </cond>
+    </skill>
+    <skill id="23185" levels="1" name="Умение Агатиона Ловца Мячей Ородриэля - Поддерживающий Эффект">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23186" levels="1" name="Умение Агатиона Ловца Мячей Ородриэля - Мяч Поддержки">
+        <set name="create_item_count" val="1"/>
+        <set name="create_item_id" val="20993"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <cond msgId="2292">
+            <player agathionId="20984"/>
+        </cond>
+    </skill>
+    <skill id="23187" levels="1" name="Умение Агатиона Штрафного Удара - Поддерживающий Эффект">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23188" levels="1" name="Умение Агатиона Штрафного Удара - Мяч Поддержки">
+        <set name="create_item_count" val="1"/>
+        <set name="create_item_id" val="20993"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <cond msgId="2292">
+            <player agathionId="20985"/>
+        </cond>
+    </skill>
+    <skill id="23189" levels="1" name="Умение Агатиона Ловца Мячей Гносиана - Поддерживающий Эффект">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23190" levels="1" name="Умение Агатиона Ловца Мячей Гносиана - Мяч Поддержки">
+        <set name="create_item_count" val="1"/>
+        <set name="create_item_id" val="20993"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <cond msgId="2292">
+            <player agathionId="20986"/>
+        </cond>
+    </skill>
+    <skill id="23191" levels="1" name="Умение Агатиона Ловца Мячей Ородриэля - Поддерживающий Эффект">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23192" levels="1" name="Умение Агатиона Ловца Мячей Ородриэля - Мяч Поддержки">
+        <set name="create_item_count" val="1"/>
+        <set name="create_item_id" val="20993"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <cond msgId="2292">
+            <player agathionId="20987"/>
+        </cond>
+    </skill>
+    <skill id="23193" levels="1" name="Умение Агатиона Штрафного Удара - Поддерживающий Эффект">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23194" levels="1" name="Умение Агатиона Штрафного Удара - Мяч Поддержки">
+        <set name="create_item_count" val="1"/>
+        <set name="create_item_id" val="20993"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <cond msgId="2292">
+            <player agathionId="20988"/>
+        </cond>
+    </skill>
+    <skill id="23195" levels="1" name="Умение Агатиона Ловца Мячей Гносиана - Поддерживающий Эффект">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23196" levels="1" name="Умение Агатиона Ловца Мячей Гносиана - Мяч Поддержки">
+        <set name="create_item_count" val="1"/>
+        <set name="create_item_id" val="20993"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <cond msgId="2292">
+            <player agathionId="20989"/>
+        </cond>
+    </skill>
+    <skill id="23197" levels="1" name="Умение Агатиона Ловца Мячей Ородриэля - Поддерживающий Эффект">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="23198" levels="1" name="Умение Агатиона Ловца Мячей Ородриэля - Мяч Поддержки">
+        <set name="create_item_count" val="1"/>
+        <set name="create_item_id" val="20993"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <cond msgId="2292">
+            <player agathionId="20990"/>
+        </cond>
+    </skill>
+    <skill id="23199" levels="1" name="Умение Агатиона Штрафного Удара - Поддерживающий Эффект">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+</list>

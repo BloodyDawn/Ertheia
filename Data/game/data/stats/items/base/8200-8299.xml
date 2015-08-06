@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="8200" name="Зелье Рыбака - Белое" type="EtcItem">
+		<set name="icon" val="icon.etc_oblivion_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="100"/>
+		<set name="price" val="5000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2274-8"/>
+	</item>
+	<item id="8201" name="Зелье Рыбака - Черное" type="EtcItem">
+		<set name="icon" val="icon.etc_oblivion_black_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="100"/>
+		<set name="price" val="5000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+	</item>
+	<item id="8202" name="Восстанавливающее Зелье Рыбака" type="EtcItem">
+		<set name="icon" val="icon.etc_oblivion_black_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="100"/>
+		<set name="price" val="5000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2275-1"/>
+	</item>
+	<item id="8203" name="Только для Монстров (Ядовитый Меч)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1560"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="8204" name="Только для Монстров (Клинок Последователя Фринтезы)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1560"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="8205" name="Только для Монстров (Серп Жреца-Еретика)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1920"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="8206" name="Только для Монстров (Меч Жреца-Еретика)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="8207" name="Только для Монстров (Топор Рядового Еретика)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1560"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="8208" name="Только для Монстров (Посох Рядового Еретика)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1560"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="8209" name="Только для Монстров (Меч Лидии фон Хельман)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1560"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="8210" name="Только для Монстров (Щит Монаха-Воителя)" type="Armor">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="damascus"/>
+		<set name="weight" val="4800"/>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="230"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="8211" name="Только для Монстров (Меч Монаха-Воителя)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1560"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="8212" name="Только для Монстров (Булава Брата Солины)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="chrysolite"/>
+		<set name="weight" val="1570"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="8213" name="Только для Монстров (Булава Отца Солины)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="chrysolite"/>
+		<set name="weight" val="1570"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="8214" name="Только для Монстров (Шест Жреца Солины)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1920"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="8215" name="Только для Монстров (Меч Зомби)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2090"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="8216" name="Только для Монстров (Коготь Зомби)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;32;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1350"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="8217" name="Только для Монстров (Копье Зомби Хранителя Врат)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1560"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="8218" name="Только для Монстров (Топор Зомби Рабочего)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="chrysolite"/>
+		<set name="weight" val="1570"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="8219" name="Только для Монстров (Меч Зомби Рабочего)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1560"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="8220" name="Только для Монстров (Лук Апостола Грааля)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1950"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="mp_consume" val="1"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="8221" name="Только для Монстров (Копье Апостола Грааля)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1920"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="8222" name="Только для Монстров (Оружие Последователя Фринтезы)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1560"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="8223" name="Семя: Двойной Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8224" name="Семя: Большой Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="74"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8225" name="Семя: Пустынный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8226" name="Семя: Синяя Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_blue_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8227" name="Семя: Красная Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_red_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="500"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8228" name="Семя: Золотая Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_golden_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="650"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8229" name="Семя: Пустынная Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_desert_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="750"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8230" name="Семя: Новый Двойной Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8231" name="Семя: Новый Большой Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="74"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8232" name="Семя: Новый Пустынный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8233" name="Семя: Новая Синяя Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_blue_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8234" name="Семя: Новая Красная Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_red_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="500"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8235" name="Семя: Новая Золотая Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_golden_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="650"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8236" name="Семя: Новая Пустынная Коба" type="EtcItem">
+		<set name="icon" val="icon.etc_desert_coba_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="750"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8237" name="Семя: Темная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="4"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8238" name="Семя: Красная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="4"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8239" name="Семя: Холодная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="4"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8240" name="Семя: Синяя Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="10"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8241" name="Семя: Золотая Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8242" name="Семя: Кода Лютни" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8243" name="Семя: Пустынная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8244" name="Семя: Красный Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="8245" name="Семя: Холодный Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="24"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="8246" name="Семя: Синий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="8247" name="Семя: Колючий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="8248" name="Семя: Золотой Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="8249" name="Семя: Большой Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="8250" name="Семя: Красный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="40"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8251" name="Семя: Морской Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8252" name="Семя: Холодный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="40"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8253" name="Семя: Синий Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8254" name="Семя: Двойной Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8255" name="Семя: Новая Темная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="4"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8256" name="Семя: Новая Красная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="4"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8257" name="Семя: Новая Холодная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="4"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8258" name="Семя: Новая Синяя Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="10"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8259" name="Семя: Новая Золотая Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8260" name="Семя: Новая Кода Лютни" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8261" name="Семя: Новая Пустынная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="8262" name="Семя: Новый Красный Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="8263" name="Семя: Новый Холодный Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="24"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="8264" name="Семя: Новый Синий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="8265" name="Семя: Новый Колючий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="8266" name="Семя: Новый Золотой Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="8267" name="Семя: Новый Большой Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="8268" name="Семя: Новый Красный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="40"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8269" name="Семя: Новый Морской Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8270" name="Семя: Новый Холодный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="40"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8271" name="Семя: Новый Синий Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8272" name="Семя: Новый Двойной Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="8273" name="Ключ от Зала Ожидания" type="EtcItem">
+		<set name="icon" val="icon.etc_old_key_i03"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2235-1"/>
+	</item>
+	<item id="8274" name="Ключ от Храма" type="EtcItem">
+		<set name="icon" val="icon.etc_old_key_i01"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2236-1"/>
+	</item>
+	<item id="8275" name="Ключ Тьмы" type="EtcItem">
+		<set name="icon" val="icon.etc_old_key_i02"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2237-1"/>
+	</item>
+	<item id="8276" name="Чешуя Келоны" type="EtcItem">
+		<set name="icon" val="icon.etc_scale_of_medusa_blue_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8277" name="Чешуя Темиса" type="EtcItem">
+		<set name="icon" val="icon.etc_scale_of_medusa_red_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8278" name="Щепка Палатоноса" type="EtcItem">
+		<set name="icon" val="icon.etc_bark_gold_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8279" name="Ядро Хекатона Прайма" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_silver_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8280" name="Осколок Тифона" type="EtcItem">
+		<set name="icon" val="icon.etc_gargoyle_claw_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8281" name="Ядро Глаки" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8282" name="Клык Раххи" type="EtcItem">
+		<set name="icon" val="icon.etc_fang_red_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8283" name="Жало Гигантской Ядовитой Пчелы" type="EtcItem">
+		<set name="icon" val="icon.etc_sting_a_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8284" name="Облачный Самоцвет" type="EtcItem">
+		<set name="icon" val="icon.etc_oriharukon_ore_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8285" name="Коготь Молодого Каракурта" type="EtcItem">
+		<set name="icon" val="icon.etc_claw_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8286" name="Дыхание Феи" type="EtcItem">
+		<set name="icon" val="icon.etc_dragons_blood_i01"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8287" name="Звездный Камень" type="EtcItem">
+		<set name="icon" val="icon.etc_crystal_blue_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8288" name="Письмо Юми" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_red_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8289" name="Звездный Камень" type="EtcItem">
+		<set name="icon" val="icon.etc_crystal_blue_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8290" name="Цветок Павла" type="EtcItem">
+		<set name="icon" val="icon.etc_flower_i02"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8291" name="Сердце Атланты" type="EtcItem">
+		<set name="icon" val="icon.etc_inf_ore_medium_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8292" name="Ожерелье Венди" type="EtcItem">
+		<set name="icon" val="icon.accessary_necklace_of_devotion_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8293" name="Диплом Дрессировщика" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_red_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="8294" name="Рецепт - Стальной Меч (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_blue_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="8180"/>
+		<set name="recipe_id" val="783"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="8295" name="Рецепт - Меч Гигантов (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_blue_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="28000"/>
+		<set name="recipe_id" val="785"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="8296" name="Рецепт - Меч Паагрио (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_yellow_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="86000"/>
+		<set name="recipe_id" val="789"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="8297" name="Рецепт - Меч Стража (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="262000"/>
+		<set name="recipe_id" val="811"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="8298" name="Рецепт - Меч Стража (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="262000"/>
+		<set name="recipe_id" val="810"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="8299" name="Рецепт - Мастер Инферно (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="366000"/>
+		<set name="recipe_id" val="815"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+</list>

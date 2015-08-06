@@ -1,0 +1,2335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="20100" name="Шапка Азартного Санты - (24 часа)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_xmas_gawibawibo_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="reuse_delay" val="1000"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="21014-1;21015-1;21016-1"/>
+		<set name="time" val="1440"/>
+	</item>
+	<item id="20101" name="Комплект подарков Санта Клауса" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_xmas_present_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="capsuled_items" val="20075,1,1,100;20076,1,1,100;20077,1,1,100"/>
+	</item>
+	<item id="20102" name="Комплект подарков Санта Клауса" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_xmas_present_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="capsuled_items" val="20075,1,1,100;20076,1,1,100;20078,1,1,100"/>
+	</item>
+	<item id="20103" name="Рождественский Свиток - Воин в Тяжелых Доспехах - (8 часов)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_xmas_scroll_i00"/>
+		<set name="default_action" val="call_skill"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22013-1"/>
+		<set name="time" val="480"/>
+	</item>
+	<item id="20104" name="Рождественский Свиток - Воин в Легких Доспехах - (8 часов)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_xmas_scroll_i00"/>
+		<set name="default_action" val="call_skill"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22014-1"/>
+		<set name="time" val="480"/>
+	</item>
+	<item id="20105" name="Рождественский Свиток - Лекари - (8 часов)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_xmas_scroll_i00"/>
+		<set name="default_action" val="call_skill"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22015-1"/>
+		<set name="time" val="480"/>
+	</item>
+	<item id="20106" name="Рождественский Свиток - Маги - (8 часов)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_xmas_scroll_i00"/>
+		<set name="default_action" val="call_skill"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22016-1"/>
+		<set name="time" val="480"/>
+	</item>
+	<item id="20107" name="Купон на Оружие Санта Клауса - (12 часов)" type="EtcItem">
+		<set name="icon" val="icon.etc_lottery_card_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="time" val="720"/>
+	</item>
+	<item id="20108" name="Купон на Оружие Санта Клауса - (12 часов)" type="EtcItem">
+		<set name="icon" val="icon.etc_lottery_card_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="time" val="720"/>
+	</item>
+	<item id="20109" name="Меч Революции - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_of_revolution_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="483"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="equip_reuse_delay" val="80"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21017-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="79"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20110" name="Меч Гигантов - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_giants_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="673"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21018-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="96"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20111" name="Дага - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_maingauche_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="357"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21019-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="69"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="20112" name="Тарбар - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_tarbar_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="577"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21020-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="79"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20113" name="Молот Гигантов - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_giants_hammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="700"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21021-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="96"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20114" name="Булава Жреца - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_mace_of_priest_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="573"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21022-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="63"/>
+			<set order="0x08" stat="mAtk" val="63"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20115" name="Рогатый Посох - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_goathead_staff_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="333"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21023-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="77"/>
+			<set order="0x08" stat="mAtk" val="63"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20116" name="Бичхва - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_bichhwa_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;32;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="503"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21024-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="96"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20117" name="Усиленный Длинный Лук - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_strengthening_long_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="607"/>
+		<set name="soulshots" val="10"/>
+		<set name="spiritshots" val="3"/>
+		<set name="mp_consume" val="2"/>
+		<set name="reuse_delay" val="820"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21025-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="179"/>
+			<set order="0x08" stat="mAtk" val="51"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="227"/>
+		</for>
+	</item>
+	<item id="20118" name="Крылатое Копье - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_winged_spear_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="687"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21026-1;3599-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="79"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20119" name="Меч Ремесленника*Меч Ремесленника - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="827"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21027-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="96"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20120" name="Длинная Рапира - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="483"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_skill" val="4,3426-1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21028-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="72"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="20121" name="Кацбальгер - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_tulwar_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="673"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21029-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="86"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="20122" name="Крушитель Костей - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_hunting_gun_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="607"/>
+		<set name="soulshots" val="6"/>
+		<set name="spiritshots" val="3"/>
+		<set name="reuse_delay" val="400"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21030-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="100"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+		</for>
+	</item>
+	<item id="20123" name="Длинный Меч Самурая - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_samurai_longsword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="460"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21017-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="156"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20124" name="Клинок Берсерка - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_berserker_blade_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="460"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21018-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="190"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20125" name="Кристальный Кинжал - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_crystal_dagger_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="333"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21019-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="136"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="20126" name="Булава Якса - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_yaksa_mace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="547"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21020-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="156"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20127" name="Молот Гномов - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_dwarven_hammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="670"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21021-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="190"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20128" name="Топор Затмения - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_eclipse_axe_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="547"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21022-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="125"/>
+			<set order="0x08" stat="mAtk" val="111"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20129" name="Посох Демона - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_demons_staff_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="330"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21023-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="152"/>
+			<set order="0x08" stat="mAtk" val="111"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20130" name="Большая Пата - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_great_pata_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;90"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="chrysolite"/>
+		<set name="weight" val="487"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21024-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="190"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20131" name="Лук Превосходства - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_eminence_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="chrysolite"/>
+		<set name="weight" val="573"/>
+		<set name="soulshots" val="10"/>
+		<set name="spiritshots" val="3"/>
+		<set name="mp_consume" val="3"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21025-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="323"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="20132" name="Секира Орков - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_orcish_poleaxe_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="650"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21026-1;3599-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="156"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20133" name="Катана*Катана - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="757"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_skill" val="4,3045-8"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21027-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="190"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20134" name="Эсток Адмирала - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_blink_slasher_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="460"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_skill" val="4,3426-1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21028-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="141"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="20135" name="Клык - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_invincible_blade_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="650"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21029-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="169"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="20136" name="Самострел - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_taslam_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="580"/>
+		<set name="soulshots" val="6"/>
+		<set name="spiritshots" val="3"/>
+		<set name="reuse_delay" val="400"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21030-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="198"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+		</for>
+	</item>
+	<item id="20137" name="Дамаскус - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_of_damascus_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="damascus"/>
+		<set name="weight" val="450"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21017-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="194"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20138" name="Меч Стража - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_guardians_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="643"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21018-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="236"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20139" name="Кинжал Демона - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_demons_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="323"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21019-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="170"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="20140" name="Топор Искусства Войны - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_art_of_battle_axe_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="chrysolite"/>
+		<set name="weight" val="523"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21020-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="194"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20141" name="Звезда Боли - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_star_buster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="643"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21021-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="236"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20142" name="Кости Каим Ванула - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_bone_of_kaim_vanul_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="523"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21022-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="155"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20143" name="Посох Злых Духов - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_staff_of_evil_sprit_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="310"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21023-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="189"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20144" name="Цестус Беллиона - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_bellion_cestus_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;32;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="463"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21024-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="236"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20145" name="Лук Угрозы - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_hazard_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="567"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="1"/>
+		<set name="mp_consume" val="4"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21025-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="400"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="20146" name="Пика - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_lancia_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="640"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21026-1;3599-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="194"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20147" name="Длинный Меч Самурая*Длинный Меч Самурая - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="693"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_skill" val="4,3045-14"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21027-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="236"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20148" name="Колишмард - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_colichemarde_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="450"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_skill" val="4,3426-1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21028-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="176"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="20149" name="Расчленитель - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_dismantler_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="643"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21029-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="210"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="20150" name="Цербер - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_hell_hound_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="567"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="1"/>
+		<set name="reuse_delay" val="400"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21030-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="245"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+		</for>
+	</item>
+	<item id="20151" name="Темный Легион - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_dark_legions_edge_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="440"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21017-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="232"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20152" name="Убийца Драконов - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_dragon_slayer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="613"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21018-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="282"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20153" name="Душегуб - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_soul_separator_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="317"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21019-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="203"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="20154" name="Элизиум - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_elysian_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="527"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21020-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="232"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20155" name="Крушитель Рока - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_doom_crusher_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="633"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21021-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="282"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20156" name="Пылающий Череп Дракона - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_dragon_flame_head_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="510"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21022-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="186"/>
+			<set order="0x08" stat="mAtk" val="152"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20157" name="Ветвь Древа Жизни - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_worldtrees_branch_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="300"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21023-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="226"/>
+			<set order="0x08" stat="mAtk" val="152"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20158" name="Погибель Дракона - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_dragon_grinder_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;32;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="450"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21024-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="282"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20159" name="Пронзатель Душ - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_soul_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="553"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="1"/>
+		<set name="mp_consume" val="5"/>
+		<set name="reuse_delay" val="820"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21025-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="528"/>
+			<set order="0x08" stat="mAtk" val="125"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="227"/>
+		</for>
+	</item>
+	<item id="20160" name="Глефа Таллума - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_tallum_glaive_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="chrysolite"/>
+		<set name="weight" val="613"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21026-1;3552-1;3599-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="232"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20161" name="Дамаскус*Дамаскус - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="693"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_skill" val="4,3046-20"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21027-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="282"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20162" name="Протыкатель - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_greed_stinger_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="440"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_skill" val="4,3426-1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21028-1;3552-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="210"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="20163" name="Гробовщик - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_death_bringer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="613"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21029-1;3552-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="251"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="20164" name="Жнец - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_soul_shooter_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="553"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="reuse_delay" val="400"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21030-1;3552-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="294"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+		</for>
+	</item>
+	<item id="20165" name="Забытый Клинок - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_forgotten_blade_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="433"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21017-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="281"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20166" name="Разделитель Небес - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_heavens_divider_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="460"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21018-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="342"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20167" name="Убийца Ангелов - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_angel_slayer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="317"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21019-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="246"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="20168" name="Базальтовый Боевой Молот - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_basalt_battlehammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="523"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21020-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="281"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20169" name="Топор Охотника на Драконов - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_dragon_hunter_axe_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="607"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21021-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="342"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20170" name="Посох Тайн - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_arcana_mace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="433"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21022-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="225"/>
+			<set order="0x08" stat="mAtk" val="175"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20171" name="Имперский Посох - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_imperial_staff_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="303"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21023-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="274"/>
+			<set order="0x08" stat="mAtk" val="175"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20172" name="Демон Одиночка - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_demon_splinter_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;32;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="450"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21024-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="342"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20173" name="Лук Дракона - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_draconic_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="550"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="mp_consume" val="6"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21025-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="581"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="20174" name="Святое Копье - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_saint_spear_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="600"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21026-1;3552-1;3599-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="281"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20175" name="Клинок Таллума*Темный Легион - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="693"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_skill" val="4,3570-1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21027-1;3552-1"/>
+		<set name="time" val="240"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="342"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20176" name="Леветайн - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_leavatein_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="433"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_skill" val="4,3426-1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21028-1;3552-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="255"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="20177" name="Грам - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_gram_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="600"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21029-1;3552-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="304"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="20178" name="Шарнга - Ивент - (4 часа)" type="Weapon">
+		<set name="icon" val="icon.weapon_sarnga_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="533"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="reuse_delay" val="400"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21030-1;3552-1"/>
+		<set name="time" val="240"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="356"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+		</for>
+	</item>
+	<item id="20179" name="Упаковка: Билет в Земли Камалоки 5 шт." type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="capsuled_items" val="20027,5,5,100"/>
+	</item>
+	<item id="20180" name="Упаковка: Билет в Земли Камалоки 10 шт." type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="capsuled_items" val="20027,10,10,100"/>
+	</item>
+	<item id="20181" name="Упаковка: Свитки Телепорта к Флагу 5 шт." type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="capsuled_items" val="20025,5,5,100"/>
+	</item>
+	<item id="20182" name="Упаковка: Свитки Телепорта к Флагу 10 шт." type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="capsuled_items" val="20025,10,10,100"/>
+	</item>
+	<item id="20183" name="Упаковка: Флаги 5ед." type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="capsuled_items" val="20033,5,5,100"/>
+	</item>
+	<item id="20184" name="Упаковка: Флаги 10ед." type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="capsuled_items" val="20033,10,10,100"/>
+	</item>
+	<item id="20185" name="Упаковка: Билет в Камалоку (Зал Бездны) 5 шт." type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="capsuled_items" val="20026,5,5,100"/>
+	</item>
+	<item id="20186" name="Упаковка: Билет в Камалоку (Лабиринт Бездны) 5 шт." type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="capsuled_items" val="20028,5,5,100"/>
+	</item>
+	<item id="20187" name="Упаковка: Билет в Камалоку (Зал Бездны) 10 шт." type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="capsuled_items" val="20026,10,10,100"/>
+	</item>
+	<item id="20188" name="Упаковка: Билет в Камалоку (Лабиринт Бездны) 10 шт." type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="capsuled_items" val="20028,10,10,100"/>
+	</item>
+	<item id="20189" name="Упаковка: Декорации Валентина - Премиум" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="20190,1,1,100"/>
+	</item>
+	<item id="20190" name="Декорации Валентина - Премиум - (15 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_valentine_deco_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="time" val="21600"/>
+	</item>
+	<item id="20192" name="Черный Шоколад Валентина" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_valentine_darkchoco_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="20193" name="Белый Шоколад Валентина" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_valentine_whitechoco_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="20194" name="Взбитые Сливки Валентина" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_valentine_cream_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="20195" name="Невзрачный Торт Валентина" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_valentine_cake_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22023-1"/>
+	</item>
+	<item id="20196" name="Простой Торт Валентина" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_valentine_cake_2_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22024-1"/>
+	</item>
+	<item id="20197" name="Вкусный Торт Валентина" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_valentine_cake_3_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22025-1"/>
+	</item>
+	<item id="20198" name="Совершенный Торт Валентина" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_valentine_cake_4_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22026-1"/>
+	</item>
+	<item id="20199" name="Фантастический Торт Валентина - (30 дней)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_valentine_cake_5_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22027-1"/>
+		<set name="time" val="43200"/>
+	</item>
+	<item id="20191" name="Секретное Заклинание Валентина" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_valentine_recipe_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="recipe_id" val="3000"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+</list>

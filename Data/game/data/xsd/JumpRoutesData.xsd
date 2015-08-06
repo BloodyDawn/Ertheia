@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="routes" type="routesType"/>
+	<xs:complexType name="routesType">
+		<xs:sequence>
+			<xs:element type="jumpType" name="jump" maxOccurs="unbounded" minOccurs="0">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="jumpType" mixed="true">
+		<xs:sequence>
+			<xs:element type="routeType" name="route" maxOccurs="unbounded" minOccurs="0">
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute type="xs:string" name="jmpId" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="routeType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="id" use="optional"/>
+				<xs:attribute type="xs:string" name="type" use="optional"/>
+				<xs:attribute type="xs:string" name="coordinates" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+</xs:schema>

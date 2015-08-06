@@ -1,0 +1,3143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="18700" name="Благословенные Парные Кинжалы Реквиема - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="898"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="price" val="84232400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3573-5"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<cond msgId="1518">
+			<and>
+				<player level="85"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="448"/>
+			<set order="0x08" stat="mAtk" val="195"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18701" name="Благословенные Парные Дубины Реквиема - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="17"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="1594600"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-6"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="545"/>
+			<set order="0x08" stat="mAtk" val="195"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18702" name="Благословенные Парные Дубины Реквиема - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="17"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="1594600"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3573-5"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="545"/>
+			<set order="0x08" stat="mAtk" val="195"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18703" name="Благословенные Парные Дубины Реквиема - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="17"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="1594600"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13062-1"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="545"/>
+			<set order="0x08" stat="mAtk" val="195"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18704" name="Острие Апокалипсиса - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_phasian_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3573-5"/>
+		<set name="enchant_skill" val="4,13280-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="441"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18705" name="Острие Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_phasian_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="enchant_skill" val="4,13280-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="441"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18706" name="Острие Апокалипсиса - (Фокусировка )" type="Weapon">
+		<set name="icon" val="icon.weapon_phasian_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="enchant_skill" val="4,13280-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="441"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18707" name="Резак Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_pasis_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="504"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18708" name="Резак Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_pasis_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-7"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="504"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18709" name="Резак Апокалипсиса - (Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_pasis_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13252-3"/>
+		<set name="item_skill" val="3570-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="504"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18710" name="Эспадон Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_volver_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="enchant_skill" val="4,13259-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="613"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18711" name="Эспадон Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_volver_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13062-2"/>
+		<set name="enchant_skill" val="4,13259-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="613"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18712" name="Эспадон Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_volver_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="enchant_skill" val="4,13259-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="613"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18713" name="Мститель Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_raksilion_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="enchant_skill" val="4,13254-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="504"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18714" name="Мститель Апокалипсиса - (Крит. Урон)" type="Weapon">
+		<set name="icon" val="icon.weapon_raksilion_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3572-6"/>
+		<set name="enchant_skill" val="4,13254-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="504"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18715" name="Мститель Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_raksilion_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="enchant_skill" val="4,13254-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="504"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18716" name="Воитель Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_kirche_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1550"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3567-7"/>
+		<set name="enchant_skill" val="4,13265-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="613"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18717" name="Воитель Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_kirche_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1550"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13062-2"/>
+		<set name="enchant_skill" val="4,13265-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="613"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18718" name="Воитель Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_kirche_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1550"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="enchant_skill" val="4,13265-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="613"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18719" name="Буревестник Апокалипсиса - (Поглощение HP)" type="Weapon">
+		<set name="icon" val="icon.weapon_grave_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3568-2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="504"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18720" name="Буревестник Апокалипсиса - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_grave_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3573-5"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="504"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18721" name="Буревестник Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_grave_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13062-2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="504"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18722" name="Бросок Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_spina_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13062-2"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="enchant_skill" val="4,13290-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="992"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18723" name="Бросок Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_spina_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="enchant_skill" val="4,13290-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="992"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18724" name="Бросок Апокалипсиса - (Радиус Удара)" type="Weapon">
+		<set name="icon" val="icon.weapon_spina_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13061-1"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="enchant_skill" val="4,13290-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="992"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18725" name="Страж Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_medianox_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="reuse_delay" val="1300"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="894"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18726" name="Страж Апокалипсиса - (Крит. Замедление)" type="Weapon">
+		<set name="icon" val="icon.weapon_medianox_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3552-1"/>
+		<set name="reuse_delay" val="1300"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="894"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18727" name="Страж Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_medianox_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="reuse_delay" val="1300"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="894"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18728" name="Расчленитель Апокалипсиса - (Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weapon_imerose_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3047-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="403"/>
+			<set order="0x08" stat="mAtk" val="293"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18729" name="Расчленитель Апокалипсиса - (Магические Оковы)" type="Weapon">
+		<set name="icon" val="icon.weapon_imerose_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3577-2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="403"/>
+			<set order="0x08" stat="mAtk" val="293"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18730" name="Расчленитель Апокалипсиса - (Добавление Маны)" type="Weapon">
+		<set name="icon" val="icon.weapon_imerose_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3014-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="403"/>
+			<set order="0x08" stat="mAtk" val="293"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18731" name="Заклинатель Апокалипсиса - (Воодушевление)" type="Weapon">
+		<set name="icon" val="icon.weapon_yuke_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3575-6"/>
+		<set name="enchant_skill" val="4,13297-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="403"/>
+			<set order="0x08" stat="mAtk" val="293"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18732" name="Заклинатель Апокалипсиса - (Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weapon_yuke_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3047-3"/>
+		<set name="enchant_skill" val="4,13297-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="403"/>
+			<set order="0x08" stat="mAtk" val="293"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18733" name="Заклинатель Апокалипсиса - (Магические Оковы)" type="Weapon">
+		<set name="icon" val="icon.weapon_yuke_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3577-2"/>
+		<set name="enchant_skill" val="4,13297-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="403"/>
+			<set order="0x08" stat="mAtk" val="293"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18734" name="Возмездие Апокалипсиса - (Регенерация MP)" type="Weapon">
+		<set name="icon" val="icon.weapon_herencia_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3576-2"/>
+		<set name="enchant_skill" val="4,13302-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="491"/>
+			<set order="0x08" stat="mAtk" val="322"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18735" name="Возмездие Апокалипсиса - (Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weapon_herencia_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3047-3"/>
+		<set name="enchant_skill" val="4,13302-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="491"/>
+			<set order="0x08" stat="mAtk" val="322"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18736" name="Возмездие Апокалипсиса - (Воодушевление)" type="Weapon">
+		<set name="icon" val="icon.weapon_herencia_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1451"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="price" val="136103800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3575-6"/>
+		<set name="enchant_skill" val="4,13302-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="491"/>
+			<set order="0x08" stat="mAtk" val="322"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18737" name="Парные Мечи Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1741"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="163305800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="enchant_skill" val="4,13278-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="613"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18738" name="Парные Мечи Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1741"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="163305800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13062-2"/>
+		<set name="enchant_skill" val="4,13278-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="613"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18739" name="Парные Мечи Апокалипсиса - (Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1741"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="163305800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3013-3"/>
+		<set name="enchant_skill" val="4,13278-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="613"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18740" name="Парные Кинжалы Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1741"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="price" val="163305800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13062-2"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<cond msgId="1518">
+			<and>
+				<player level="85"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="504"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18741" name="Парные Кинжалы Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1741"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="price" val="163305800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<cond msgId="1518">
+			<and>
+				<player level="85"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="504"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18742" name="Парные Кинжалы Апокалипсиса - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1741"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="price" val="163305800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3573-5"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<cond msgId="1518">
+			<and>
+				<player level="85"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="504"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18743" name="Парные Дубины Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1741"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="163305800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="613"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18744" name="Парные Дубины Апокалипсиса - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1741"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="163305800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3573-5"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="613"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18745" name="Парные Дубины Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1741"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="163305800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13062-2"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="613"/>
+			<set order="0x08" stat="mAtk" val="219"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18746" name="Скованное Острие Апокалипсиса - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_phasian_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3573-5"/>
+		<set name="enchant_skill" val="4,13280-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="428"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18747" name="Скованное Острие Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_phasian_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="enchant_skill" val="4,13280-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="428"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18748" name="Скованное Острие Апокалипсиса - (Фокусировка )" type="Weapon">
+		<set name="icon" val="icon.weapon_phasian_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="enchant_skill" val="4,13280-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="428"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18749" name="Скованный Резак Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_pasis_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3564-4"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="489"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18750" name="Скованный Резак Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_pasis_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3566-7"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="489"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18751" name="Скованный Резак Апокалипсиса - (Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_pasis_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3013-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="489"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18752" name="Скованный Эспадон Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_volver_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="enchant_skill" val="4,13259-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="595"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18753" name="Скованный Эспадон Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_volver_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="13062-2"/>
+		<set name="enchant_skill" val="4,13259-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="595"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18754" name="Скованный Эспадон Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_volver_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="enchant_skill" val="4,13259-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="595"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18755" name="Скованный Мститель Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_raksilion_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="enchant_skill" val="4,13254-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="489"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18756" name="Скованный Мститель Апокалипсиса - (Крит. Урон)" type="Weapon">
+		<set name="icon" val="icon.weapon_raksilion_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3572-6"/>
+		<set name="enchant_skill" val="4,13254-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="489"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18757" name="Скованный Мститель Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_raksilion_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="enchant_skill" val="4,13254-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="489"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18758" name="Скованный Воитель Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_kirche_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1550"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3567-7"/>
+		<set name="enchant_skill" val="4,13265-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="595"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18759" name="Скованный Воитель Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_kirche_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1550"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="13062-2"/>
+		<set name="enchant_skill" val="4,13265-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="595"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18760" name="Скованный Воитель Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_kirche_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1550"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="enchant_skill" val="4,13265-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="595"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18761" name="Скованный Буревестник Апокалипсиса - (Поглощение HP)" type="Weapon">
+		<set name="icon" val="icon.weapon_grave_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3568-2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="489"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18762" name="Скованный Буревестник Апокалипсиса - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_grave_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3573-5"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="489"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18763" name="Скованный Буревестник Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_grave_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="13062-2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="489"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18764" name="Скованный Бросок Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_spina_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="13062-2"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="enchant_skill" val="4,13290-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="963"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18765" name="Скованный Бросок Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_spina_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="enchant_skill" val="4,13290-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="963"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18766" name="Скованный Бросок Апокалипсиса - (Радиус Удара)" type="Weapon">
+		<set name="icon" val="icon.weapon_spina_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="13061-1"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="enchant_skill" val="4,13290-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="963"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18767" name="Скованный Страж Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_medianox_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="reuse_delay" val="1300"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="866"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18768" name="Скованный Страж Апокалипсиса - (Крит. Замедление)" type="Weapon">
+		<set name="icon" val="icon.weapon_medianox_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3552-1"/>
+		<set name="reuse_delay" val="1300"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="866"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18769" name="Скованный Страж Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_medianox_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="reuse_delay" val="1300"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="866"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18770" name="Скованный Расчленитель Апокалипсиса - (Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weapon_imerose_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3047-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="392"/>
+			<set order="0x08" stat="mAtk" val="285"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18771" name="Скованный Расчленитель Апокалипсиса - (Магические Оковы)" type="Weapon">
+		<set name="icon" val="icon.weapon_imerose_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3577-2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="392"/>
+			<set order="0x08" stat="mAtk" val="285"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18772" name="Скованный Расчленитель Апокалипсиса - (Добавление Маны)" type="Weapon">
+		<set name="icon" val="icon.weapon_imerose_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3014-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="392"/>
+			<set order="0x08" stat="mAtk" val="285"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18773" name="Скованный Заклинатель Апокалипсиса - (Воодушевление)" type="Weapon">
+		<set name="icon" val="icon.weapon_yuke_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3575-6"/>
+		<set name="enchant_skill" val="4,13297-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="392"/>
+			<set order="0x08" stat="mAtk" val="285"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18774" name="Скованный Заклинатель Апокалипсиса - (Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weapon_yuke_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3047-3"/>
+		<set name="enchant_skill" val="4,13297-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="392"/>
+			<set order="0x08" stat="mAtk" val="285"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18775" name="Скованный Заклинатель Апокалипсиса - (Магические Оковы)" type="Weapon">
+		<set name="icon" val="icon.weapon_yuke_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3577-2"/>
+		<set name="enchant_skill" val="4,13297-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="392"/>
+			<set order="0x08" stat="mAtk" val="285"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18776" name="Скованное Возмездие Апокалипсиса - (Регенерация MP)" type="Weapon">
+		<set name="icon" val="icon.weapon_herencia_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3576-2"/>
+		<set name="enchant_skill" val="4,13302-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="477"/>
+			<set order="0x08" stat="mAtk" val="314"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18777" name="Скованное Возмездие Апокалипсиса - (Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weapon_herencia_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3047-3"/>
+		<set name="enchant_skill" val="4,13302-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="477"/>
+			<set order="0x08" stat="mAtk" val="314"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18778" name="Скованное Возмездие Апокалипсиса - (Воодушевление)" type="Weapon">
+		<set name="icon" val="icon.weapon_herencia_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="90"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="price" val="8442000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3575-6"/>
+		<set name="enchant_skill" val="4,13302-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="477"/>
+			<set order="0x08" stat="mAtk" val="314"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18779" name="Скованные Парные Мечи Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="10130400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="enchant_skill" val="4,13278-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="595"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18780" name="Скованные Парные Мечи Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="10130400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="13062-2"/>
+		<set name="enchant_skill" val="4,13278-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="595"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18781" name="Скованные Парные Мечи Апокалипсиса - (Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="10130400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13278-3"/>
+		<set name="item_skill" val="3570-1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="595"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18782" name="Скованные Парные Кинжалы Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="price" val="10130400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<set name="item_skill" val="13062-2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<cond msgId="1518">
+			<and>
+				<player level="85"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="489"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18783" name="Скованные Парные Кинжалы Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="price" val="10130400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<cond msgId="1518">
+			<and>
+				<player level="85"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="489"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18784" name="Скованные Парные Кинжалы Апокалипсиса - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="price" val="10130400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3573-5"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<cond msgId="1518">
+			<and>
+				<player level="85"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="489"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18785" name="Скованные Парные Дубины Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="10130400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="595"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18786" name="Скованные Парные Дубины Апокалипсиса - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="10130400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="3573-5"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="595"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18787" name="Скованные Парные Дубины Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="10130400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="13062-2"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="595"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18788" name="Благословенное Острие Апокалипсиса - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_phasian_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1813"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="170059400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3573-5"/>
+		<set name="enchant_skill" val="4,13280-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="454"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18789" name="Благословенное Острие Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_phasian_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1813"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="170059400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="enchant_skill" val="4,13280-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="454"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18790" name="Благословенное Острие Апокалипсиса - (Фокусировка )" type="Weapon">
+		<set name="icon" val="icon.weapon_phasian_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1813"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="170059400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="enchant_skill" val="4,13280-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="454"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18791" name="Благословенный Резак Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_pasis_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1813"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="170059400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="519"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18792" name="Благословенный Резак Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_pasis_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1813"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="170059400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-7"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="519"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18793" name="Благословенный Резак Апокалипсиса - (Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_pasis_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1813"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="170059400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3013-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="519"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18794" name="Благословенный Эспадон Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_volver_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1813"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="170059400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="enchant_skill" val="4,13259-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="632"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18795" name="Благословенный Эспадон Апокалипсиса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_volver_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1813"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="170059400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13062-2"/>
+		<set name="enchant_skill" val="4,13259-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="632"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18796" name="Благословенный Эспадон Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_volver_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1813"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="170059400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="enchant_skill" val="4,13259-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="632"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18797" name="Благословенный Мститель Апокалипсиса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_raksilion_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1813"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="170059400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4"/>
+		<set name="enchant_skill" val="4,13254-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="519"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18798" name="Благословенный Мститель Апокалипсиса - (Крит. Урон)" type="Weapon">
+		<set name="icon" val="icon.weapon_raksilion_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1813"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="170059400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3572-6"/>
+		<set name="enchant_skill" val="4,13254-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="519"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="18799" name="Благословенный Мститель Апокалипсиса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_raksilion_i01"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1813"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="price" val="170059400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-7"/>
+		<set name="enchant_skill" val="4,13254-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="519"/>
+			<set order="0x08" stat="mAtk" val="226"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+</list>

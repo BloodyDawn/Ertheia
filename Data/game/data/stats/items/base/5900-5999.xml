@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="5900" name="Коллекционный Альбом" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="10000"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5901" name="Жертвенная Кровь" type="EtcItem">
+		<set name="icon" val="icon.etc_dragon_blood_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="crystal"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="5902" name="Свиток Древней Магии" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="crystal"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="5903" name="Древняя Урна" type="EtcItem">
+		<set name="icon" val="icon.etc_oil_pot_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="crystal"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="5904" name="Камень Уэсли" type="EtcItem">
+		<set name="icon" val="icon.etc_gem_green_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="crystal"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="5905" name="Камень Магистра" type="EtcItem">
+		<set name="icon" val="icon.etc_gem_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="crystal"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="5906" name="Сундук с Подарками в Честь 5-й Годовщины (10 Лепешек)" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="13420,10,10,100;13419,1,1,100"/>
+	</item>
+	<item id="5907" name="Сундук с Подарками в Честь 5-й Годовщины (9 Лепешек)" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="13420,9,9,100;13419,1,1,100"/>
+	</item>
+	<item id="5908" name="Красный Кристалл Души: Уровень 13" type="EtcItem">
+		<set name="icon" val="icon.etc_soul_stone_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="20"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2096-1"/>
+	</item>
+	<item id="5909" name="Сундук с Подарками в Честь 5-й Годовщины (8 Лепешек)" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="13420,8,8,100;13419,1,1,100"/>
+	</item>
+	<item id="5910" name="Сундук с Подарками в Честь 5-й Годовщины (7 Лепешек)" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="capsuled_items" val="13420,7,7,100;13419,1,1,100"/>
+	</item>
+	<item id="5911" name="Зеленый Кристалл Души: Уровень 13" type="EtcItem">
+		<set name="icon" val="icon.etc_soul_stone_i02"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="20"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2096-1"/>
+	</item>
+	<item id="5912" name="Сундук с Подарками в Честь 5-й Годовщины (6 Лепешек)" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="13420,6,6,100;13419,1,1,100"/>
+	</item>
+	<item id="5913" name="Сундук с Подарками в Честь 5-й Годовщины (3 Пирога)" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="13421,3,3,100;13419,1,1,100"/>
+	</item>
+	<item id="5914" name="Синий Кристалл Души: Уровень 13" type="EtcItem">
+		<set name="icon" val="icon.etc_soul_stone_i01"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="20"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2096-1"/>
+	</item>
+	<item id="5915" name="Пиратская Карта" type="EtcItem">
+		<set name="icon" val="icon.etc_map_ivory_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5916" name="Страница Книги Заклинаний" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_white_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2171-1"/>
+	</item>
+	<item id="5917" name="Книга Заклинаний - Огонь" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5918" name="Книга Заклинаний – Вода" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5919" name="Книга Заклинаний – Ветер" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5920" name="Книга Заклинаний – Земля" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5921" name="Кусок Ненужной Бумаги" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5922" name="Чертеж: Гигантский Голем 1" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5923" name="Чертеж: Гигантский Голем 2" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5924" name="Чертеж: Гигантский Голем 3" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5925" name="Чертеж: Гигантский Голем 4" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5926" name="Чертеж: Гигантский Голем 5" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5927" name="Основы Магии Гигантов, ч. 1" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5928" name="Основы Магии Гигантов, ч. 2" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5929" name="Основы Магии Гигантов, ч. 3" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5930" name="Основы Магии Гигантов, ч. 4" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5931" name="Основы Магии Гигантов, ч. 5" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5932" name="Архитектура Гигантов, ч. 1" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5933" name="Архитектура Гигантов, ч. 2" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5934" name="Архитектура Гигантов, ч. 3" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5935" name="Архитектура Гигантов, ч. 4" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5936" name="Архитектура Гигантов, ч. 5" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5937" name="Медицина Гигантов, ч. 1" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5938" name="Медицина Гигантов, ч. 2" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5939" name="Медицина Гигантов, ч. 3" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5940" name="Медицина Гигантов, ч. 4" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5941" name="Медицина Гигантов, ч. 5" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5942" name="Любовное Письмо Гиганта" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_report_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5943" name="Картина Гиганта" type="EtcItem">
+		<set name="icon" val="icon.etc_painting_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5944" name="Древняя Запись" type="EtcItem">
+		<set name="icon" val="icon.etc_roll_of_paper_black_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2172-1"/>
+	</item>
+	<item id="5945" name="Наука и Технологии Гигантов, ч. 1" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5946" name="Наука и Технологии Гигантов, ч. 2" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5947" name="Наука и Технологии Гигантов, ч. 3" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5948" name="Наука и Технологии Гигантов, ч. 4" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5949" name="Наука и Технологии Гигантов, ч. 5" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5950" name="Культура Гигантов, ч. 1" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_summon_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5951" name="Культура Гигантов, ч. 2" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_summon_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5952" name="Культура Гигантов, ч. 3" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_summon_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5953" name="Культура Гигантов, ч. 4" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_summon_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5954" name="Культура Гигантов, ч. 5" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_summon_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5955" name="Древняя Книга Гигантов" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_black_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2173-1"/>
+	</item>
+	<item id="5956" name="Вино (15 Лет)" type="EtcItem">
+		<set name="icon" val="icon.etc_luxury_wine_a_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="20"/>
+		<set name="price" val="5900"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5957" name="Вино (30 Лет)" type="EtcItem">
+		<set name="icon" val="icon.etc_luxury_wine_b_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="20"/>
+		<set name="price" val="7900"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5958" name="Вино (60 Лет)" type="EtcItem">
+		<set name="icon" val="icon.etc_luxury_wine_c_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="20"/>
+		<set name="price" val="30900"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5959" name="Рецепт Ритрона" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="price" val="40000"/>
+	</item>
+	<item id="5960" name="Желе Ритрона" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_i04"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="price" val="920"/>
+	</item>
+	<item id="5961" name="Серебряный Василиск Кайла" type="EtcItem">
+		<set name="icon" val="icon.etc_kyles_silver_basilisk_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="1000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5962" name="Золотой Голем Кайла" type="EtcItem">
+		<set name="icon" val="icon.etc_kyles_gold_golem_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="1000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5963" name="Кровавый Дракон Кайла" type="EtcItem">
+		<set name="icon" val="icon.etc_kyles_blood_dragon_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="1000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5964" name="Медаль Рабочего Склада" type="EtcItem">
+		<set name="icon" val="icon.etc_irongate_medal_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5965" name="Чистый Свиток" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_gray_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5966" name="Древний Красный Папирус" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_red_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2176-1"/>
+	</item>
+	<item id="5967" name="Древний Синий Папирус" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_blue_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2176-2"/>
+	</item>
+	<item id="5968" name="Древний Черный Папирус" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_black_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2176-3"/>
+	</item>
+	<item id="5969" name="Древний Белый Папирус" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_white_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2176-4"/>
+	</item>
+	<item id="5970" name="Древнее Письмо Удачи" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5971" name="Книга с Шутками Древних" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5972" name="Книга Печатей - Алчность" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5973" name="Книга Печатей - Познание" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5974" name="Книга Печатей - Соперничество" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5975" name="Книга Печатей - Возмездие" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5976" name="Книга Печатей - Пробуждение" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5977" name="Книга Печатей - Бедствие" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5978" name="Книга Печатей – Падение" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5979" name="Древний Эпос, ч. 1" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_gray_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5980" name="Древний Эпос, ч. 2" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_gray_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5981" name="Древний Эпос, ч. 3" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_gray_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5982" name="Древний Эпос, ч. 4" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_gray_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5983" name="Древний Эпос, ч. 5" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_gray_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5984" name="Генеалогия Империи, т. 1" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5985" name="Генеалогия Империи, т. 2" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5986" name="Генеалогия Империи, т. 3" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5987" name="Генеалогия Империи, т. 4" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5988" name="Генеалогия Империи, т. 5" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5989" name="Башня Дерзости, 1-й Этаж" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5990" name="Башня Дерзости, 2-й Этаж" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5991" name="Башня Дерзости, 3-й Этаж" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5992" name="Башня Дерзости, 4-й Этаж" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5993" name="Башня Дерзости, 5-й Этаж" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5994" name="Башня Дерзости, 6-й Этаж" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5995" name="Башня Дерзости, 7-й Этаж" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5996" name="Башня Дерзости, 8-й Этаж" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5997" name="Башня Дерзости, 9-й Этаж" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5998" name="Башня Дерзости, 10-й Этаж" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5999" name="Башня Дерзости, 11-й Этаж" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+</list>

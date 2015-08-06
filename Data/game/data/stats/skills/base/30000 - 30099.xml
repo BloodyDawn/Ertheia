@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    <skill id="30001" levels="6" name="Водная Атака">
+        <table name="#mpInitialConsume">2 2 3 3 4 4</table>
+        <table name="#mpConsume">7 8 11 12 14 16</table>
+        <table name="#magicLvl">4 7 11 14 17 20</table>
+        <table name="#power">20000 9 11 13 14 16</table>
+        <set name="mpInitialConsume" val="#mpInitialConsume"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="power" val="#power"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="element" val="2"/>
+        <set name="elementPower" val="20"/>
+        <set name="reuseDelay" val="0"/>
+        <set name="hitTime" val="500"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="40"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1" name="NonStopCast" noicon="1" val="0"/>
+        </for>
+    </skill>
+</list>

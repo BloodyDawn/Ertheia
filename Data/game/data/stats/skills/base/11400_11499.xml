@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="11499" levels="1" name="Сковывающая Атака Призывателя">
+        <set name="skillType" val="PDAM"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="effectRange" val="900"/>
+        <set name="castRange" val="900"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="magicLvl" val="85"/>
+        <set name="power" val="10000"/>
+        <set name="mpConsume" val="71"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="11496" levels="2" name="Штраф Призывателя Босса">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="11497" levels="1" name="Уникальное Умение Призывателя - Пассивное">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="11498" levels="1" name="Уникальное Умение Призывателя">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+</list>

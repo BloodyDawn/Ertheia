@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<!-- 30400 - 30402 - рассовые скиллы Артеи -->
+	<!-- 	30400	1	u,Воля Ветра\0	u,Сопротивление ветру/святости +10
+			30400	2	u,Воля Ветра\0	u,Сопротивление ветру/святости +20 -->
+	<skill id="30400" levels="2" name="Воля Ветра">
+		<table name="#res">10 20</table>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<for>
+			<add order="0x40" stat="windRes" val="#res"/>
+			<add order="0x40" stat="holyRes" val="#res"/>
+		</for>
+	</skill>
+	<!-- 	30401	1	u,Крепкое Тело\0	u,Макс HP +1%, Скорость +4.
+			30401	2	u,Крепкое Тело\0	u,Макс HP +2%, Скорость +7. -->
+	<skill id="30401" levels="2" name="Крепкое Тело">
+		<table name="#maxHp">1.01 1.02</table>
+		<table name="#runSpd">4 7</table>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="#maxHp"/>
+			<add order="0x40" stat="runSpd" val="#runSpd"/>
+		</for>
+	</skill>
+	<!-- 	30402	1	u,Эксперт\0	u,Расход MP -1%\0
+			30402	2	u,Эксперт\0	u,Расход MP -2%\0 -->
+	<skill id="30402" levels="2" name="Эксперт">
+		<table name="#mpConsumeRate">0.99 0.98</table>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<for>
+			<mul order="0x30" stat="MagicalMpConsumeRate" val="#mpConsumeRate"/>
+			<mul order="0x30" stat="PhysicalMpConsumeRate" val="#mpConsumeRate"/>		
+		</for>
+	</skill>
+</list>

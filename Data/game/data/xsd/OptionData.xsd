@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list" type="listType"/>
+	<xs:complexType name="addType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="order" use="optional"/>
+				<xs:attribute type="xs:string" name="stat" use="optional"/>
+				<xs:attribute type="xs:string" name="val" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="optionDataType">
+		<xs:sequence>
+			<xs:element type="forType" name="for" minOccurs="0"/>
+			<xs:element type="skillsType" name="skills" minOccurs="0">
+			</xs:element>
+			<xs:element type="triggersType" name="triggers" minOccurs="0">
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute type="xs:integer" name="id" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="listType">
+		<xs:sequence>
+			<xs:element type="optionDataType" name="optionData" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="forType">
+		<xs:sequence>
+			<xs:element type="addType" name="add">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="skillType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:integer" name="id" use="optional"/>
+				<xs:attribute type="xs:integer" name="level" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="triggersType">
+		<xs:sequence>
+			<xs:element type="triggerType" name="trigger">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="triggerType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:integer" name="id" use="optional"/>
+				<xs:attribute type="xs:integer" name="level" use="optional"/>
+				<xs:attribute type="xs:string" name="type" use="optional"/>
+				<xs:attribute type="xs:string" name="chance" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="skillsType" mixed="true">
+		<xs:sequence>
+			<xs:element type="skillType" name="skill" minOccurs="0">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

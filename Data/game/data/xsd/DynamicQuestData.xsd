@@ -1,0 +1,111 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="quest" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element name="level" maxOccurs="1" minOccurs="1">
+								<xs:complexType>
+									<xs:attribute type="xs:positiveInteger" name="min" use="required" />
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="spawnHolder" maxOccurs="1" minOccurs="0">
+								<xs:complexType>
+									<xs:attribute type="xs:string" name="name" use="required" />
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="dates" maxOccurs="1" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence minOccurs="1" maxOccurs="1">
+										<xs:element name="date" minOccurs="1" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="day" type="xs:string" use="required" />
+												<xs:attribute name="time" type="xs:string" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="steps" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence minOccurs="1" maxOccurs="1">
+										<xs:element name="step" minOccurs="1" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence minOccurs="1" maxOccurs="1">
+													<xs:element name="zones" maxOccurs="1" minOccurs="0">
+														<xs:complexType>
+															<xs:sequence minOccurs="1" maxOccurs="1">
+																<xs:element name="zone" minOccurs="1" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:attribute name="id" type="xs:positiveInteger" use="required" />
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													
+													<xs:element name="dialogs" maxOccurs="1" minOccurs="0">
+														<xs:complexType>
+															<xs:sequence minOccurs="1" maxOccurs="1">
+																<xs:element name="dialog" minOccurs="1" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:attribute name="type" type="xs:string" use="required" />
+																		<xs:attribute name="name" type="xs:string" use="required" />
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													
+													<xs:element name="points" maxOccurs="1" minOccurs="0">
+														<xs:complexType>
+															<xs:sequence minOccurs="1" maxOccurs="1">
+																<xs:element name="npc" minOccurs="1" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:attribute name="id" type="xs:positiveInteger" use="required" />
+																		<xs:attribute name="points" type="xs:positiveInteger" use="required" />
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													
+													<xs:element name="rewards" maxOccurs="1" minOccurs="0">
+														<xs:complexType>
+															<xs:sequence minOccurs="1" maxOccurs="1">
+																<xs:element name="reward" minOccurs="1" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:attribute name="id" type="xs:positiveInteger" use="required" />
+																		<xs:attribute name="count" type="xs:positiveInteger" use="required" />
+																		<xs:attribute name="type" type="xs:string" use="required" />
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute type="xs:positiveInteger" name="id" use="required" />
+												<xs:attribute type="xs:string" name="name" use="optional" />
+												<xs:attribute type="xs:string" name="title" use="optional" />
+												<xs:attribute type="xs:positiveInteger" name="points" use="required" />
+												<xs:attribute type="xs:positiveInteger" name="duration" use="required" />
+												<xs:attribute type="xs:positiveInteger" name="nextTaskId" use="optional" />
+												<xs:attribute type="xs:boolean" name="autostart" use="optional" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute type="xs:positiveInteger" name="id" use="required" />
+						<xs:attribute type="xs:string" name="name" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

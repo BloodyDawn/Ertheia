@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="19110" levels="5" name="Дух Выносливости Клана">
+        <table name="#res">12 13 14 15 16</table>
+        <set name="isClanSkill" val="true"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <sub order="0x40" stat="knockBackVuln" val="#res"/>
+            <sub order="0x40" stat="knockDownVuln" val="#res"/>
+        </for>
+    </skill>
+    <skill id="19111" levels="5" name="Тяжелое Сердце Клана">
+        <table name="#res">12 13 14 15 16</table>
+        <set name="isClanSkill" val="true"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <sub order="0x40" stat="flyUpVuln" val="#res"/>
+        </for>
+    </skill>
+    <skill id="19112" levels="1" name="Мгновенное Возвращение Клана">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3500"/>
+        <set name="reuseDelay" val="1800000"/>
+        <set name="target" val="TARGET_CLAN"/>
+        <set name="skillType" val="RECALL"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="itemConsumeId" val="3031"/>
+        <set name="itemConsumeCount" val="50"/>
+        <set name="fameConsumeSelfCount" val="2000"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="castMagic" val="MAGIC"/>
+        <cond msgId="2327">
+            <player fame="2000"/>
+        </cond>
+    </skill>
+    <skill id="19113" levels="1" name="Запрет на Возвращение Клана">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="castRange" val="600"/>
+        <set name="reuseDelay" val="1800000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="magicLvl" val="1"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="isDebuff" val="true"/>
+        <set name="itemConsumeId" val="3031"/>
+        <set name="itemConsumeCount" val="100"/>
+        <set name="fameConsumeSelfCount" val="3000"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="power" val="80"/>
+        <cond msgId="2327">
+            <player fame="3000"/>
+        </cond>
+        <for>
+            <effect abnormalTime="30" name="BlockRecall" val="0"/>
+        </for>
+    </skill>
+    <skill id="19114" levels="1" name="Запрет на Воскрешение Клана">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="reuseDelay" val="1800000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="magicLvl" val="1"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="isDebuff" val="true"/>
+        <set name="itemConsumeId" val="3031"/>
+        <set name="itemConsumeCount" val="150"/>
+        <set name="fameConsumeClanCount" val="1000"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="power" val="80"/>
+        <cond msgId="2327">
+            <clan fame="1000"/>
+        </cond>
+        <for>
+            <effect abnormalTime="30" name="BlockResurrection" val="0"/>
+        </for>
+    </skill>
+    <skill id="19115" levels="1" name="Воздушное Транспортное Средство">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="1000"/>
+        <set name="transformId" val="146"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+        <cond addName="1" msgId="113">
+            <and>
+                <player canTransform="true"/>
+                <clan level="5"/>
+            </and>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="19116" levels="1" name="Оседлать Линдрако">
+        <set name="hitTime" val="1000"/>
+        <set name="aggroPoints" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="transformId" val="147"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="19102" levels="1" name="Расположение Хаоса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="300"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="19103" levels="1" name="Война Обители">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="19104" levels="2" name="Война Обители">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="19105" levels="1" name="Преимущество Обители">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="19106" levels="2" name="Преимущество Обители">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="19107" levels="1" name="Рубеж Обители">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="19108" levels="2" name="Рубеж Обители">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="19117" levels="1" name="Пространственная Мощь">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="19118" levels="4" name="Способность к Перемещению">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="reuseDelay" val="4000"/>
+        <table name="#mpConsume">61 63 67 70</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="120" abnormalType="dance_of_shadow" abnormalVisualEffect="stealth" name="SilentMove" removed="ON_ATTACK,ON_DAMAGE_RECEIVE" val="0">
+                <sub order="0x40" stat="pDef" val="645"/>
+                <sub order="0x40" stat="mDef" val="165"/>
+                <sub order="0x40" stat="accPhysical" val="12"/>
+                <sub order="0x40" stat="ratePhysicalEvas" val="12"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="19100" levels="1" name="Великое Владение Легкой Броней - тест">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="19101" levels="1" name="Цепной Импульс - тест">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1130"/>
+        <set name="coolTime" val="700"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="19109" levels="4" name="Дух Осадного Голема">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="10000"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="1200000"/>
+        <set name="mpConsume" val="70"/>
+        <set name="itemConsumeId" val="17371"/>
+        <set name="itemConsumeCount" val="10"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="transformId" val="148"/>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <cond msgId="650">
+            <player isInSiege="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="transform" name="Transformation" val="0">
+                <add order="0x10" stat="STR" val="15"/>
+                <add order="0x10" stat="INT" val="46"/>
+                <add order="0x10" stat="CON" val="2"/>
+                <add order="0x10" stat="DEX" val="8"/>
+                <add order="0x10" stat="WIT" val="47"/>
+                <add order="0x10" stat="MEN" val="44"/>
+                <mul order="0x30" stat="maxHp" val="3.4"/>
+                <mul order="0x30" stat="maxCp" val="4"/>
+                <mul order="0x30" stat="maxMp" val="1.5"/>
+                <mul order="0x30" stat="pDef" val="6"/>
+                <mul order="0x30" stat="mDef" val="5"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.5"/>
+            </effect>
+        </for>
+    </skill>
+</list>

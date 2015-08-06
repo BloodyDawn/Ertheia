@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="table" type="tableType">
+	</xs:element>
+	<xs:complexType name="experienceType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="level" use="optional"/>
+				<xs:attribute type="xs:string" name="tolevel" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="tableType">
+		<xs:sequence>
+			<xs:element type="experienceType" name="experience" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute type="xs:string" name="maxLevel"/>
+		<xs:attribute type="xs:string" name="maxPetLevel"/>
+	</xs:complexType>
+</xs:schema>

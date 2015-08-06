@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="21100" levels="1" name="Сила Духа Мудрого Волшебника">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="mAtk" val="1.2"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.95"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21101" levels="1" name="Благ. Телепорт">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="reuseDelay" val="43200000"/>
+        <set name="hitTime" val="200"/>
+        <set name="skillType" val="RECALL"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="21102" levels="1" name="Благ. Воскрешение">
+        <set name="power" val="100"/>
+        <set name="target" val="TARGET_CORPSE_PLAYER"/>
+        <set name="reuseDelay" val="43200000"/>
+        <set name="hitTime" val="3000"/>
+        <set name="skillType" val="RESURRECT"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="effectRange" val="900"/>
+    </skill>
+    <skill id="21103" levels="1" name="Сила Духа Бессмертного Авантюриста">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.2"/>
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="runSpd" val="1.2"/>
+                <sub order="0x40" stat="debuffVuln" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21104" levels="1" name="Инстинкт разрушения">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="hitTime" val="2500"/>
+    </skill>
+    <skill id="21105" levels="1" name="Призвать Агатиона - Чончон">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1529"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21106" levels="1" name="Призвать Агатиона - Бум">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1530"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21107" levels="1" name="Призвать Агатиона - Танцующий ребенок">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1531"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21108" levels="1" name="Призвать Агатиона - Древний Герой">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1532"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21109" levels="1" name="Призвать Агатиона - Утанка">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1533"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21110" levels="1" name="Призвать Агатиона - Бонус В">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1534"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21111" levels="1" name="Сила Духа Бессмертного Авантюриста">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.2"/>
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="runSpd" val="1.2"/>
+                <sub order="0x40" stat="debuffVuln" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21112" levels="1" name="Сила Духа Великого Воина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="pAtk" val="1.1"/>
+                <mul order="0x30" stat="pDef" val="1.2"/>
+                <add order="0x40" stat="absorbDam" val="5"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21113" levels="1" name="Сила Духа Мудрого Волшебника">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="mAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="mAtk" val="1.2"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.95"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21114" levels="1" name="Сила Духа Бессмертного Авантюриста">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.2"/>
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="runSpd" val="1.2"/>
+                <sub order="0x40" stat="debuffVuln" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21115" levels="1" name="Сила Духа Великого Воина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="pAtk" val="1.2"/>
+                <mul order="0x30" stat="pDef" val="1.2"/>
+                <add order="0x40" stat="absorbDam" val="5"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21116" levels="1" name="Сила Духа Мудрого Волшебника">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="mAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="mAtk" val="1.2"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.95"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21117" levels="1" name="Сила Духа Выдающегося Авантюриста">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.2"/>
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="runSpd" val="1.2"/>
+                <mul order="0x30" stat="regHp" val="1.2"/>
+                <mul order="0x30" stat="regMp" val="1.2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21118" levels="1" name="Сила Духа Отважного Воина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="pAtk" val="1.1"/>
+                <mul order="0x30" stat="pDef" val="1.2"/>
+                <mul order="0x30" stat="cAtk" val="1.2"/>
+                <mul order="0x10" stat="pCritRate" val="1.2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21119" levels="1" name="Сила Духа Выдающегося Волшебника">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="mAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="mAtk" val="1.2"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <add order="0x40" stat="mCritRate" val="2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21120" levels="1" name="Карта Джека О'Рентона">
+        <set name="castRange" val="400"/>
+        <set name="effectRange" val="500"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_ONE"/>
+    </skill>
+    <skill id="21121" levels="1" name="Гнилая Карта Джека О'Рентона">
+        <set name="castRange" val="400"/>
+        <set name="effectRange" val="500"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="staticReuse" val="true"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_ONE"/>
+    </skill>
+    <skill id="21122" levels="1" name="Благословение Скульди: Защита Тьмы">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.2"/>
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="pDef" val="1.2"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21123" levels="1" name="Благословение Скульди: Защита Тьмы">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.2"/>
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="pDef" val="1.2"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21124" levels="1" name="Благословение Скульди: Защита Тьмы">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.2"/>
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="pDef" val="1.2"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21125" levels="1" name="Благословение Скульди: Защита Тьмы">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.2"/>
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="pDef" val="1.2"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21126" levels="1" name="Благословение Скульди: Защита Тьмы">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.2"/>
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="pDef" val="1.2"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21127" levels="1" name="Благословение Хеллоуина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="7200000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.4"/>
+                <mul order="0x30" stat="maxMp" val="1.4"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="pAtk" val="1.1"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21128" levels="1" name="Благословение Хеллоуина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="7200000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.4"/>
+                <mul order="0x30" stat="maxMp" val="1.4"/>
+                <mul order="0x10" stat="pCritRate" val="1.1"/>
+                <mul order="0x30" stat="cAtk" val="1.1"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21129" levels="1" name="Благословение Хеллоуина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="7200000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.4"/>
+                <mul order="0x30" stat="maxMp" val="1.4"/>
+                <mul order="0x30" stat="runSpd" val="1.1"/>
+                <add order="0x40" stat="absorbDam" val="5"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21130" levels="1" name="Благословение Хеллоуина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="7200000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.4"/>
+                <mul order="0x30" stat="maxMp" val="1.4"/>
+                <mul order="0x30" stat="runSpd" val="1.2"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.95"/>
+                <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.95"/>
+                <mul order="0x30" stat="DanceMpConsumeRate" val="0.95"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21131" levels="1" name="Благословение Хеллоуина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="7200000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.4"/>
+                <mul order="0x30" stat="maxMp" val="1.4"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.2"/>
+                <add order="0x40" stat="mCritRate" val="2"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21132" levels="1" name="Сила Тени">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="2500"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="120" abnormalType="stealth" abnormalVisualEffect="stealth" name="SilentMove" val="0">
+                <mul order="0x30" stat="runSpd" val="0.7"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21133" levels="1" name="Призвать Агатиона - Мертвец">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1535"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21134" levels="1" name="Призвать Агатиона - Синяя Птица">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1536"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21135" levels="1" name="Призвать Агатиона - Птица">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1537"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21136" levels="1" name="Полномочия Золотого Джека О'Рентона">
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="3000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="trait" val="ETC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="600" abnormalType="br_event_buf1" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.4"/>
+                <mul order="0x30" stat="maxMp" val="1.4"/>
+                <mul order="0x30" stat="maxCp" val="1.4"/>
+                <mul order="0x30" stat="pDef" val="1.3"/>
+                <mul order="0x30" stat="mDef" val="1.3"/>
+                <mul order="0x30" stat="runSpd" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21137" levels="1" name="Благословение Хеллоуина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="600" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.4"/>
+                <mul order="0x30" stat="maxMp" val="1.4"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="pAtk" val="1.1"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21138" levels="1" name="Благословение Хеллоуина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="600" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.4"/>
+                <mul order="0x30" stat="maxMp" val="1.4"/>
+                <mul order="0x10" stat="pCritRate" val="1.1"/>
+                <mul order="0x30" stat="cAtk" val="1.1"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21139" levels="1" name="Благословение Хеллоуина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="600" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.4"/>
+                <mul order="0x30" stat="maxMp" val="1.4"/>
+                <mul order="0x30" stat="runSpd" val="1.1"/>
+                <add order="0x40" stat="absorbDam" val="5"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21140" levels="1" name="Благословение Хеллоуина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="600" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.4"/>
+                <mul order="0x30" stat="maxMp" val="1.4"/>
+                <mul order="0x30" stat="runSpd" val="1.2"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.95"/>
+                <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.95"/>
+                <mul order="0x30" stat="DanceMpConsumeRate" val="0.95"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21141" levels="1" name="Благословение Хеллоуина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="600" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.4"/>
+                <mul order="0x30" stat="maxMp" val="1.4"/>
+                <mul order="0x30" stat="runSpd" val="1.2"/>
+                <add order="0x40" stat="mCritRate" val="2"/>
+                <add order="0x40" stat="darkRes" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21142" levels="1" name="Призвать Агатиона - Бог Войны">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1551"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21143" levels="1" name="Призвать Агатиона - Богиня Милосердия">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1552"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21144" levels="1" name="Призвать Агатиона - Китайский Актер">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1553"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21145" levels="1" name="Призвать Агатиона - Китайский Актер">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1560"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21146" levels="1" name="Призвать Агатиона - Китайская Актриса">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1554"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21147" levels="1" name="Призвать Агатиона - Китайские Актеры">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1555"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21148" levels="1" name="Призвать Агатиона - Чипао">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1556"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21149" levels="1" name="Призвать Агатиона - Клоун с Трубой">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1557"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21150" levels="1" name="Призвать Агатиона - Клоун на Шаре">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1558"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21151" levels="1" name="Призвать Агатиона - Клоун на Ходулях">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1559"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21152" levels="1" name="Большой Фейерверк">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="300000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="21153" levels="1" name="Благословение Тела">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="max_hp_up" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.25"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21154" levels="1" name="Благословение Духа">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="3600" abnormalType="max_hp_up" name="Buff" val="0">
+                <mul order="0x30" stat="maxMp" val="1.25"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21155" levels="1" name="Аромат Острого Сыра">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="pAtk" val="1.1"/>
+                <mul order="0x30" stat="pDef" val="1.3"/>
+                <mul order="0x30" stat="cAtk" val="1.2"/>
+                <mul order="0x10" stat="pCritRate" val="1.2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21156" levels="1" name="Аромат Сладкого Сыра">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="300" abnormalType="multi_buff" name="Buff" val="0">
+                <mul order="0x30" stat="mAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="mAtk" val="1.1"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <add order="0x40" stat="mCritRate" val="2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21157" levels="1" name="Призвать Агатиона - Икен">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1539"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21158" levels="1" name="Призвать Агатиона - Лана">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1540"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21159" levels="1" name="Призвать Агатиона - Гносиан">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1541"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21160" levels="1" name="Призвать Агатиона - Ородриэль">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1542"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21161" levels="1" name="Призвать Агатиона - Ракинос">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1543"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21162" levels="1" name="Призвать Агатиона - Мортия">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1544"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21163" levels="1" name="Призвать Агатиона - Хейнтс">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1545"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21164" levels="1" name="Призвать Агатиона - Мерурил">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1546"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21165" levels="1" name="Призвать Агатиона - Таман Це Рафатуй">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1547"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21166" levels="1" name="Призвать Агатиона - Каурин">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1548"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21167" levels="1" name="Призвать Агатиона - Ахертбайн">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1549"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21168" levels="1" name="Призвать Агатиона - Наонин">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1550"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21169" levels="1" name="Трансформер Кадомацу">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="transformId" val="20000"/>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="21170" levels="1" name="Благословение Духа">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="castMagic" val="STATIC"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="1200" abnormalType="max_mp_up" name="Buff" val="0">
+                <mul order="0x30" stat="maxMp" val="1.25"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21171" levels="1" name="Сесть на Реактивный Мотоцикл">
+        <set name="aggroPoints" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="transformId" val="20001"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="transform" name="Transformation" val="0">
+                <mul order="0x30" stat="runSpd" val="1.5"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21172" levels="1" name="Усиление - ВЫН +1, СИЛ +1">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="180000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="21173" levels="1" name="Усиление - МДР +1, ИНТ +1">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="180000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="21174" levels="1" name="Усиление - МДР +1, ДУХ +1">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="180000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="21175" levels="1" name="Усиление - ВЫН +1, ЛВК +1">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="180000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="21176" levels="1" name="Защита Богов - Свет">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21177" levels="1" name="Защита Богов - Вода">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21178" levels="1" name="Защита Богов - Огонь">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21179" levels="1" name="Защита Богов - Ветер">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21180" levels="1" name="Защита Богов - Земля">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21181" levels="1" name="Защита Богов - Тьма">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21182" levels="1" name="Благословение Сопротивления - Удержание">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21183" levels="1" name="Благословение Сопротивления - Паралич">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21184" levels="1" name="Благословение Сопротивления - Усыпление">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21185" levels="1" name="Благословение Сопротивления - Снижение Скорости">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21186" levels="1" name="Благословение Сопротивления - Кровотечение">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21187" levels="1" name="Благословение Сопротивления - Оглушение">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21188" levels="1" name="Восстановление - HP">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21189" levels="1" name="Восстановление - MP">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="21190" levels="1" name="Щит Духов">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="1200000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="21191" levels="1" name="Призвать Агатиона - Феникс">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1574"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21192" levels="1" name="Тихие Шаги">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="hitTime" val="2000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <for>
+            <effect abnormalLvl="26" abnormalTime="120" abnormalType="stealth" abnormalVisualEffect="stealth" name="SilentMove" val="0">
+                <mul order="0x30" stat="runSpd" val="0.6"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="21193" levels="1" name="Сила Богов">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="21194" levels="1" name="Призвать Агатиона - Змей Горыныч">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="npcId" val="1575"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="21195" levels="1" name="Перевоплощение в Трежера">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+    </skill>
+    <skill id="21196" levels="1" name="Перевоплощение в Суджин">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+    </skill>
+    <skill id="21197" levels="1" name="Эффект Добродетели">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="1800000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+    <skill id="21198" levels="1" name="Безмолвие Преданности">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="1800000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="trait" val="ETC"/>
+    </skill>
+    <skill id="21199" levels="1" name="Энергия Алмаза">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="reuseDelay" val="1800000"/>
+        <set name="staticReuse" val="true"/>
+    </skill>
+</list>

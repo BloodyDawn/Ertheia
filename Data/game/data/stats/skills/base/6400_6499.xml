@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="6400" levels="1" name="Звуковой Духовный Выстрел Кокракона">
+        <set name="castRange" val="900"/>
+        <set name="effectRange" val="1400"/>
+        <set name="hitTime" val="2000"/>
+        <set name="isDebuff" val="true"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="mpConsume" val="88"/>
+        <set name="mpInitialConsume" val="22"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="80"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="30" abnormalType="casting_time_up" name="Debuff" val="0">
+                <mul order="0x30" stat="mAtkSpd" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6401" levels="1" name="Изогнутые Когти Кокракона">
+        <set name="target" val="TARGET_AREA"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="13688"/>
+        <set name="mpConsume" val="121"/>
+        <set name="castRange" val="900"/>
+        <set name="effectRange" val="1200"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="skillRadius" val="150"/>
+    </skill>
+    <skill id="6402" levels="5" name="Отравленный Хлыст Торумба">
+        <table name="#dot">500 1100 2200 4400 8000</table>
+        <table name="#abnormalLvl">11 12 13 14 15</table>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="POISON"/>
+        <set name="isDebuff" val="true"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="mpConsume" val="88"/>
+        <set name="mpInitialConsume" val="22"/>
+        <set name="power" val="100"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="castRange" val="2000"/>
+        <set name="effectRange" val="2200"/>
+        <set name="trait" val="POISON"/>
+        <for>
+            <effect abnormalLvl="#abnormalLvl" abnormalTime="5" abnormalType="poison" abnormalVisualEffect="poison" count="12" name="HpDamOverTime" val="#dot"/>
+        </for>
+    </skill>
+    <skill id="6403" levels="1" name="Отравленная Пуля Торумба">
+        <set name="target" val="TARGET_AREA"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="13688"/>
+        <set name="mpConsume" val="121"/>
+        <set name="castRange" val="60"/>
+        <set name="effectRange" val="400"/>
+        <set name="hitTime" val="1500"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="skillRadius" val="300"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="5" abnormalType="speed_down" abnormalVisualEffect="poison" count="2" effectPower="80" name="HpDamOverTime" val="290">
+                <mul order="0x30" stat="runSpd" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6404" levels="1" name="Отравляющий Боковой Удар Торумба">
+        <set name="target" val="TARGET_AURA"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="13688"/>
+        <set name="mpConsume" val="121"/>
+        <set name="hitTime" val="1500"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="skillRadius" val="200"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="30" abnormalType="speed_down" effectPower="80" name="Debuff" val="0">
+                <mul order="0x30" stat="runSpd" val="0.3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6405" levels="1" name="Рев Торумба">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="85"/>
+        <set name="power" val="80"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="mpInitialConsume" val="14"/>
+        <set name="mpConsume" val="56"/>
+        <set name="hitTime" val="2000"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="20" abnormalType="casting_time_down" abnormalVisualEffect="mute" name="Debuff" val="0">
+                <add order="0x40" stat="runSpd" val="20"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6406" levels="1" name="Отчуждение Торумбы">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="-1"/>
+        <set name="skillType" val="MUTE"/>
+        <set name="castRange" val="1500"/>
+        <set name="effectRange" val="2000"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="99" abnormalTime="300" abnormalType="silence_all" name="Petrification" val="0"/>
+        </for>
+    </skill>
+    <skill id="6407" levels="1" name="Проклятие Торумба">
+        <set name="castRange" val="300"/>
+        <set name="effectRange" val="600"/>
+        <set name="isDebuff" val="true"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="mpConsume" val="60"/>
+        <set name="mpInitialConsume" val="15"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="-1"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="stayAfterDeath" val="true"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="block_resurrection" name="BlockResurrection" val="0"/>
+        </for>
+    </skill>
+    <skill id="6408" levels="1" name="Слабость Души и Тела">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="mpInitialConsume" val="15"/>
+        <set name="mpConsume" val="60"/>
+        <set name="castRange" val="500"/>
+        <set name="effectRange" val="600"/>
+        <set name="isDebuff" val="true"/>
+    </skill>
+    <skill id="6409" levels="1" name="Землетрясение Рептиликона">
+        <set name="target" val="TARGET_AURA"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="13688"/>
+        <set name="mpConsume" val="121"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="skillRadius" val="200"/>
+    </skill>
+    <skill id="6410" levels="1" name="Натиск Рептиликона">
+        <set name="target" val="TARGET_FRONT_AREA"/>
+        <set name="skillScope" val="fan;100;60"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="9125"/>
+        <set name="mpConsume" val="121"/>
+        <set name="castRange" val="60"/>
+        <set name="effectRange" val="400"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="skillRadius" val="100"/>
+        <set name="isDebuff" val="true"/>
+        <set name="trait" val="SHOCK"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="5" abnormalType="stun" effectPower="80" effectType="STUN" name="Stun" val="0"/>
+        </for>
+    </skill>
+    <skill id="6411" levels="1" name="Призыв Рептиликона">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="magicLvl" val="85"/>
+        <set name="hitTime" val="3000"/>
+        <set name="coolTime" val="500"/>
+    </skill>
+    <skill id="6412" levels="1" name="Критический Удар Рептиликона">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="13688"/>
+        <set name="mpConsume" val="121"/>
+        <set name="castRange" val="900"/>
+        <set name="effectRange" val="1200"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="1000"/>
+    </skill>
+    <skill id="6413" levels="1" name="Метательный Снаряд Рептиликона">
+        <set name="target" val="TARGET_AREA"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="13688"/>
+        <set name="mpConsume" val="121"/>
+        <set name="castRange" val="900"/>
+        <set name="effectRange" val="1200"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="skillRadius" val="200"/>
+    </skill>
+    <skill id="6414" levels="1" name="Заряд Рептиликона">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="9125"/>
+        <set name="mpConsume" val="121"/>
+        <set name="castRange" val="60"/>
+        <set name="effectRange" val="400"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="isDebuff" val="true"/>
+        <set name="trait" val="SHOCK"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3" abnormalType="stun" effectPower="80" effectType="STUN" name="Stun" val="0"/>
+        </for>
+    </skill>
+    <skill id="6415" levels="1" name="Царапина Рептиликона">
+        <set name="target" val="TARGET_AURA"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="13688"/>
+        <set name="mpConsume" val="121"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="skillRadius" val="300"/>
+    </skill>
+    <skill id="6416" levels="1" name="Тлетворное Дыхание Рептиликона">
+        <set name="target" val="TARGET_FRONT_AREA"/>
+        <set name="skillScope" val="fan;200;90"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="POISON"/>
+        <set name="magicLvl" val="85"/>
+        <set name="power" val="100"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="mpInitialConsume" val="22"/>
+        <set name="mpConsume" val="88"/>
+        <set name="castRange" val="600"/>
+        <set name="effectRange" val="900"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="skillRadius" val="200"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="8" abnormalTime="5" abnormalType="dot_mp" abnormalVisualEffect="poison" count="4" name="MpDamOverTime" val="20"/>
+        </for>
+    </skill>
+    <skill id="6417" levels="1" name="Отравляющий Выстрел Рептиликона">
+        <set name="target" val="TARGET_AURA"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="POISON"/>
+        <set name="magicLvl" val="85"/>
+        <set name="power" val="100"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="mpInitialConsume" val="22"/>
+        <set name="mpConsume" val="88"/>
+        <set name="castRange" val="900"/>
+        <set name="effectRange" val="1200"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="skillRadius" val="200"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="8" abnormalTime="5" abnormalType="dot_mp" abnormalVisualEffect="poison" count="4" name="MpDamOverTime" val="20"/>
+        </for>
+    </skill>
+    <skill id="6418" levels="1" name="Бомба Отравляющей Ярости Рептиликона">
+        <set name="target" val="TARGET_AURA"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="85"/>
+        <set name="power" val="100"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="skillType" val="POISON"/>
+        <set name="mpInitialConsume" val="22"/>
+        <set name="mpConsume" val="88"/>
+        <set name="castRange" val="900"/>
+        <set name="effectRange" val="1200"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="1000"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="skillRadius" val="200"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="8" abnormalTime="5" abnormalType="dot_mp" abnormalVisualEffect="poison" count="4" name="HpDamOverTime" val="345"/>
+            <effect abnormalTime="5" count="4" name="MpDamOverTime" noicon="1" val="20"/>
+        </for>
+    </skill>
+    <skill id="6419" levels="1" name="Свет Разведчика">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="82"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="6844"/>
+        <set name="mpConsume" val="121"/>
+        <set name="castRange" val="40"/>
+        <set name="effectRange" val="400"/>
+        <set name="hitTime" val="1000"/>
+    </skill>
+    <skill id="6420" levels="1" name="Удар Ящера">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="83"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="6844"/>
+        <set name="mpConsume" val="121"/>
+        <set name="castRange" val="40"/>
+        <set name="effectRange" val="400"/>
+        <set name="hitTime" val="1000"/>
+    </skill>
+    <skill id="6421" levels="1" name="Бешенство Наемника">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="84"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="6844"/>
+        <set name="mpConsume" val="121"/>
+        <set name="castRange" val="40"/>
+        <set name="effectRange" val="400"/>
+        <set name="hitTime" val="1000"/>
+    </skill>
+    <skill id="6422" levels="1" name="Праведный Гнев">
+        <set name="target" val="TARGET_AURA"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="84"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="6844"/>
+        <set name="mpConsume" val="121"/>
+        <set name="hitTime" val="1000"/>
+        <set name="skillRadius" val="200"/>
+    </skill>
+    <skill id="6423" levels="1" name="Шок">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="84"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="2738"/>
+        <set name="mpConsume" val="121"/>
+        <set name="castRange" val="900"/>
+        <set name="effectRange" val="1400"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="1000"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="isDebuff" val="true"/>
+        <set name="trait" val="SHOCK"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="9" abnormalType="stun" effectPower="60" effectType="STUN" name="Stun" val="0"/>
+        </for>
+    </skill>
+    <skill id="6424" levels="1" name="Двойной Выстрел">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="magicLvl" val="84"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="6844"/>
+        <set name="mpConsume" val="121"/>
+        <set name="castRange" val="900"/>
+        <set name="effectRange" val="1400"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+    </skill>
+    <skill id="6425" levels="1" name="Беззащитность">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="lvlDepend" val="2"/>
+    </skill>
+    <skill id="6426" levels="1" name="Предупреждение Провидца">
+        <set name="castRange" val="800"/>
+        <set name="coolTime" val="500"/>
+        <set name="effectRange" val="1200"/>
+        <set name="element" val="3"/>
+        <set name="elementPower" val="20"/>
+        <set name="hitTime" val="2000"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="magicLvl" val="84"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="120"/>
+        <set name="skillRadius" val="200"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="target" val="TARGET_ONE"/>
+    </skill>
+    <skill id="6427" levels="1" name="Эффект Ядовитого Гриба">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="skillType" val="STUN"/>
+        <set name="power" val="100"/>
+        <set name="skillRadius" val="150"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="1000"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="20" abnormalType="stun" name="Stun" val="0"/>
+        </for>
+    </skill>
+    <skill id="6428" levels="1" name="Восстановление Жизненной Силы">
+        <set name="castRange" val="2000"/>
+        <set name="effectRange" val="2000"/>
+        <set name="isDebuff" val="true"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="magicLvl" val="84"/>
+        <set name="mpConsume" val="88"/>
+        <set name="mpInitialConsume" val="22"/>
+        <set name="operateType" val="A2"/>
+        <set name="power" val="80"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="skillType" val="ROOT"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="trait" val="HOLD"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="5" abnormalType="root_magically" name="Root" val="0">
+                <sub order="0x40" stat="rootVuln" val="100"/>
+            </effect>
+            <effect name="HpHealPercent" noicon="1" val="90"/>
+        </for>
+    </skill>
+    <skill id="6429" levels="1" name="Живительная Влага">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castRange" val="2000"/>
+        <set name="hitTime" val="500"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="600" abnormalType="signal_a" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.15">
+                    <using kind="Bow, Crossbow, TwohandCrossbow"/>
+                </mul>
+                <mul order="0x30" stat="regHp" val="5"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6430" levels="1" name="Целительные Лепестки Роз">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="HEAL_PERCENT"/>
+        <set name="castRange" val="2000"/>
+        <set name="hitTime" val="500"/>
+        <set name="castMagic" val="MAGIC"/>
+        <for>
+            <effect name="HpHealPercent" noicon="1" val="30"/>
+        </for>
+    </skill>
+    <skill id="6431" levels="1" name="Рев Мощи">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="reuseDelay" val="90000"/>
+        <set name="hitTime" val="2000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="effectRange" val="900"/>
+        <set name="aggroPoints" val="524"/>
+        <for>
+            <effect abnormalLvl="5" abnormalTime="300" abnormalType="pa_up" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.19"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6432" levels="1" name="Рев Фокусировки">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="reuseDelay" val="90000"/>
+        <set name="hitTime" val="2000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="effectRange" val="900"/>
+        <set name="aggroPoints" val="524"/>
+        <for>
+            <effect abnormalLvl="5" abnormalTime="300" abnormalType="critical_prob_up" name="Buff" val="0">
+                <mul order="0x10" stat="pCritRate" val="1.35"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6433" levels="1" name="Рев Наведения">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="reuseDelay" val="90000"/>
+        <set name="hitTime" val="2000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="effectRange" val="900"/>
+        <set name="aggroPoints" val="989"/>
+        <for>
+            <effect abnormalLvl="5" abnormalTime="300" abnormalType="hit_up" name="Buff" val="0">
+                <add order="0x40" stat="accPhysical" val="7"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6434" levels="1" name="Рев Ускорения">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="reuseDelay" val="90000"/>
+        <set name="hitTime" val="2000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="effectRange" val="900"/>
+        <set name="aggroPoints" val="524"/>
+        <for>
+            <effect abnormalLvl="4" abnormalTime="300" abnormalType="attack_time_down" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.38"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6435" levels="3" name="Проклятие Бездны">
+        <table name="#dot">0.005 0.01 0.02</table>
+        <table name="#pCritRate">0.2 0.5 0.75</table>
+        <table name="#cAtk">1.2 1.3 1.4</table>
+        <table name="#abnormalLvls">7 8 9</table>
+        <set name="isDebuff" val="true"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="magicLvl" val="84"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="80"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect abnormalLvl="#abnormalLvls" abnormalType="multi_debuff" count="5" name="HpDamOverTimePercent" val="#dot">
+                <mul order="0x10" stat="pCritRate" val="#pCritRate">
+                    <using kind="Bow, Crossbow, TwohandCrossbow"/>
+                </mul>
+                <mul order="0x30" stat="cAtk" val="#cAtk">
+                    <using kind="Bow, Crossbow, TwohandCrossbow"/>
+                </mul>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6436" levels="1" name="Проклятие Черной Бездны">
+        <set name="isDebuff" val="true"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="magicLvl" val="84"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="80"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect abnormalLvl="10" abnormalTime="5" abnormalType="multi_debuff" count="3" name="HpDamOverTimePercent" val="0.05">
+                <mul order="0x10" stat="pCritRate" val="0.9">
+                    <using kind="Bow, Crossbow, TwohandCrossbow"/>
+                </mul>
+                <mul order="0x30" stat="cAtk" val="1.5">
+                    <using kind="Bow, Crossbow, TwohandCrossbow"/>
+                </mul>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6437" levels="7" name="Ядро Ледяного Кристалла">
+        <table name="#dot">30 60 90 150 250 350 500</table>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="POISON"/>
+        <set name="magicLvl" val="84"/>
+        <set name="power" val="80"/>
+        <set name="element" val="1"/>
+        <set name="elementPower" val="20"/>
+        <set name="isDebuff" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="trait" val="POISON"/>
+        <for>
+            <effect abnormalLvl="10" abnormalTime="5" abnormalType="poison" abnormalVisualEffect="poison" count="15" name="HpDamOverTime" val="#dot"/>
+        </for>
+    </skill>
+    <skill id="6438" levels="1" name="Зона Штрафа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="trait" val="POISON"/>
+    </skill>
+    <skill id="6439" levels="1" name="Вдохновение Мудрости">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="trait" val="POISON"/>
+    </skill>
+    <skill id="6440" levels="1" name="Вдохновение Силы">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="trait" val="POISON"/>
+    </skill>
+    <skill id="6441" levels="1" name="Вдохновение Ловкости">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="trait" val="POISON"/>
+    </skill>
+    <skill id="6442" levels="1" name="Вдохновение Мудрости">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="trait" val="POISON"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="60" abnormalType="signal_e" name="Buff" val="0">
+                <mul order="0x30" stat="pveMagicalDmg" val="2.0"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6443" levels="1" name="Вдохновение Силы">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="trait" val="POISON"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="60" abnormalType="signal_e" name="Buff" val="0">
+                <mul order="0x30" stat="pvePhysDmg" val="2.0"/>
+                <mul order="0x30" stat="pvePhysSkillsDmg" val="2.0"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6444" levels="1" name="Вдохновение Ловкости">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="trait" val="POISON"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="60" abnormalType="signal_e" name="Buff" val="0">
+                <mul order="0x30" stat="pveBowDmg" val="2.0"/>
+                <mul order="0x30" stat="pveBowSkillsDmg" val="2.0"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6445" levels="1" name="Отображение - Сообщение Фреи 1">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6446" levels="1" name="Отображение - Сообщение Фреи 2">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6447" levels="1" name="Отображение - Сообщение Фреи 3">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6448" levels="1" name="Отображение - Сообщение Фреи 4">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6449" levels="1" name="Отображение - Сообщение Фреи 5">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6450" levels="1" name="Отображение - Новая Фрея">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6451" levels="1" name="Отображение - Передвижение Фреи">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6452" levels="1" name="Отображение - Изменение Пространства Фреи">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6453" levels="1" name="Отображение - Смерть Фреи">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6454" levels="1" name="Отображение - Крах Фреи">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6455" levels="1" name="Отображение - Уничтожение Фреи">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6456" levels="1" name="Отображение - Вечная Снежная Буря Фреи">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6457" levels="1" name="Отображение - Поглощение Сирры">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6458" levels="1" name="Отображение - Перевоплощение Сирры">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6459" levels="1" name="Отображение - Положительный Эффект Кегора">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6460" levels="1" name="Отображение - Положительный Эффект Зинии">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6461" levels="1" name="Отображение - Сообщение Кегора 1">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6462" levels="1" name="Отображение - Сообщение Кегора 2">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6463" levels="1" name="Отображение - Получение Профессии">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6464" levels="1" name="Шутки Семьи Хэллоуина">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="trait" val="ETC"/>
+    </skill>
+    <skill id="6465" levels="1" name="Карта Джека О'Рентона">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="coolTime" val="500"/>
+    </skill>
+    <skill id="6466" levels="1" name="Карта Гнилого Джека О'Рентона">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="coolTime" val="500"/>
+    </skill>
+    <skill id="6467" levels="1" name="Карта Джека О'Рентона">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6468" levels="1" name="Карта Гнилого Джека О'Рентона">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6469" levels="1" name="Поражение Хэллоуина">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6470" levels="1" name="1-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6471" levels="1" name="2-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6472" levels="1" name="3-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6473" levels="1" name="4-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6474" levels="1" name="5-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6475" levels="1" name="6-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6476" levels="1" name="7-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6477" levels="1" name="8-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6478" levels="1" name="9-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6479" levels="1" name="10-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6480" levels="1" name="11-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6481" levels="1" name="12-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6482" levels="1" name="13-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6483" levels="1" name="14-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6484" levels="1" name="15-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6485" levels="1" name="16-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6486" levels="1" name="17-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6487" levels="1" name="18-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6488" levels="1" name="19-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6489" levels="1" name="20-я победа">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6490" levels="1" name="Игра Джека - Шкала">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6491" levels="1" name="Игра Джека - Цель">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6492" levels="28" name="Святая Атака">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="coolTime" val="500"/>
+    </skill>
+    <skill id="6493" levels="28" name="Святая Атака">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="coolTime" val="500"/>
+    </skill>
+    <skill id="6494" levels="28" name="Святая Атака">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="coolTime" val="500"/>
+    </skill>
+    <skill id="6495" levels="28" name="Святая Атака">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="coolTime" val="500"/>
+    </skill>
+    <skill id="6496" levels="28" name="Святая Атака">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="coolTime" val="500"/>
+    </skill>
+    <skill id="6497" levels="28" name="Святая Атака">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="coolTime" val="500"/>
+    </skill>
+    <skill id="6498" levels="28" name="Святой Выстрел">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="coolTime" val="500"/>
+    </skill>
+    <skill id="6499" levels="28" name="Святой Выстрел">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="coolTime" val="500"/>
+    </skill>
+</list>

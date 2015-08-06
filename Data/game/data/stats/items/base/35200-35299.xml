@@ -1,0 +1,2932 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="35291" name="Футболка Славы" type="Armor">
+		<set name="icon" val="icon.honor_shirt_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="underwear"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="130"/>
+		<set name="item_skill" val="8871-1"/>
+		<for>
+			<add order="0x10" stat="pDef" val="60"/>
+		</for>
+	</item>
+	<item id="35293" name="Браслет Таути" type="Armor">
+		<set name="icon" val="icon.accessory_bracelet_of_tauti_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rbracelet"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="item_skill" val="8863-1"/>
+		<for>
+			<add order="0x40" stat="maxMp" val="216"/>
+		</for>
+	</item>
+	<item id="35294" name="Улучшенный Браслет Таути" type="Armor">
+		<set name="icon" val="icon.accessory_bangel_of_tauti_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rbracelet"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="8804-1"/>
+		<for>
+			<add order="0x40" stat="maxMp" val="216"/>
+		</for>
+	</item>
+	<item id="35292" name="Свиток Телепорта: Крепость Гильотина" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9461-1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="weight" val="30"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="35295" name="Бутыль с Душой Таути" type="EtcItem">
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i08"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+	</item>
+	<item id="35296" name="Часть Острия Фантазмы" type="EtcItem">
+		<set name="icon" val="icon.etc_vesper_shaper_piece_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35297" name="Часть Резака Фантазмы" type="EtcItem">
+		<set name="icon" val="icon.etc_vesper_cutter_piece_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35298" name="Часть Эспадона Фантазмы" type="EtcItem">
+		<set name="icon" val="icon.etc_vesper_slasher_piece_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35299" name="Часть Мстителя Фантазмы" type="EtcItem">
+		<set name="icon" val="icon.etc_vesper_avenger_piece_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35200" name="Кровавый Страж Хелиоса" type="Weapon">
+		<set name="icon" val="icon.weapon_stilla_i20"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13294-3"/>
+		<set name="item_skill" val="3566-8;8856-1"/>
+		<set name="reuse_delay" val="1300"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1274"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35201" name="Кровавый Расчленитель Хелиоса" type="Weapon">
+		<set name="icon" val="icon.weaon_serapear_i20"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13295-3"/>
+		<set name="item_skill" val="8857-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35202" name="Кровавый Заклинатель Хелиоса" type="Weapon">
+		<set name="icon" val="icon.weapon_pilia_i20"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13299-3"/>
+		<set name="item_skill" val="8858-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35203" name="Кровавое Возмездие Хелиоса" type="Weapon">
+		<set name="icon" val="icon.weapon_shaelon_i20"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13304-3"/>
+		<set name="item_skill" val="8859-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="700"/>
+			<set order="0x08" stat="mAtk" val="459"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35204" name="Кровавые Парные Мечи Хелиоса" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i20"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13278-3"/>
+		<set name="item_skill" val="8860-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35205" name="Кровавые Парные Кинжалы Хелиоса" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i20"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<set name="item_skill" val="8861-1"/>
+		<cond msgId="1518">
+			<and>
+				<player level="99"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35206" name="Кровавые Парные Дубины Хелиоса" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i20"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<set name="item_skill" val="8862-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35207" name="Кровавое Острие Хелиоса - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_stanpid_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="8849-1;3573-7"/>
+		<set name="enchant_skill" val="4,13282-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="629"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35208" name="Кровавое Острие Хелиоса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_stanpid_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4;8849-1"/>
+		<set name="enchant_skill" val="4,13282-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="629"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35209" name="Кровавое Острие Хелиоса - (Фокусировка )" type="Weapon">
+		<set name="icon" val="icon.weapon_stanpid_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3565-9;8849-1"/>
+		<set name="enchant_skill" val="4,13282-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="629"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35210" name="Кровавый Резак Хелиоса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_plenitas_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4;8850-1"/>
+		<set name="enchant_skill" val="4,13252-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35211" name="Кровавый Резак Хелиоса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_plenitas_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-9;8850-1"/>
+		<set name="enchant_skill" val="4,13252-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35212" name="Кровавый Резак Хелиоса - (Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_plenitas_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13252-3"/>
+		<set name="item_skill" val="3013-3;8850-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35213" name="Кровавый Эспадон Хелиоса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_bauen_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-9;8851-1"/>
+		<set name="enchant_skill" val="4,13261-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35214" name="Кровавый Эспадон Хелиоса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_bauen_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13062-4;8851-1"/>
+		<set name="enchant_skill" val="4,13261-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35215" name="Кровавый Эспадон Хелиоса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_bauen_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-4;8851-1"/>
+		<set name="enchant_skill" val="4,13261-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35216" name="Кровавый Мститель Хелиоса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_qutram_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="item_skill" val="3564-4;8852-1"/>
+		<set name="enchant_skill" val="4,13256-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35217" name="Кровавый Мститель Хелиоса - (Крит. Урон)" type="Weapon">
+		<set name="icon" val="icon.weapon_qutram_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="item_skill" val="3572-8;8852-1"/>
+		<set name="enchant_skill" val="4,13256-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35218" name="Кровавый Мститель Хелиоса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_qutram_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="item_skill" val="3566-8;8852-1"/>
+		<set name="enchant_skill" val="4,13256-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35219" name="Кровавый Воитель Хелиоса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_durga_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1550"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13264-3"/>
+		<set name="item_skill" val="3567-9;8853-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35220" name="Кровавый Воитель Хелиоса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_durga_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1550"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13264-3"/>
+		<set name="item_skill" val="13062-4;8853-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35221" name="Кровавый Воитель Хелиоса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_durga_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1550"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13264-3"/>
+		<set name="item_skill" val="3564-4;8853-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35222" name="Кровавый Буревестник Хелиоса - (Поглощение HP)" type="Weapon">
+		<set name="icon" val="icon.weapon_crabel_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3568-2;8854-1"/>
+		<set name="enchant_skill" val="4,13289-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35223" name="Кровавый Буревестник Хелиоса - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_crabel_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3573-7;8854-1"/>
+		<set name="enchant_skill" val="4,13289-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35224" name="Кровавый Буревестник Хелиоса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_crabel_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13062-4;8854-1"/>
+		<set name="enchant_skill" val="4,13289-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35225" name="Кровавый Бросок Хелиоса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_castron_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13062-4;8855-1"/>
+		<set name="enchant_skill" val="4,13292-3"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1415"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35226" name="Кровавый Бросок Хелиоса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_castron_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-8;8855-1"/>
+		<set name="enchant_skill" val="4,13292-3"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1415"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35227" name="Кровавый Бросок Хелиоса - (Радиус Удара)" type="Weapon">
+		<set name="icon" val="icon.weapon_castron_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13061-1;8855-1"/>
+		<set name="enchant_skill" val="4,13292-3"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1415"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35228" name="Кровавый Страж Хелиоса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_stilla_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-8;8856-1"/>
+		<set name="enchant_skill" val="4,13294-3"/>
+		<set name="reuse_delay" val="1300"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1274"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35229" name="Кровавый Страж Хелиоса - (Крит. Замедление)" type="Weapon">
+		<set name="icon" val="icon.weapon_stilla_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="reuse_delay" val="1300"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13294-3"/>
+		<set name="item_skill" val="3552-1;8856-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1274"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35230" name="Кровавый Страж Хелиоса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_stilla_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="reuse_delay" val="1300"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13294-3"/>
+		<set name="item_skill" val="3564-4;8856-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1274"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35231" name="Кровавый Расчленитель Хелиоса - (Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weaon_serapear_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13295-3"/>
+		<set name="item_skill" val="3047-3;8857-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35232" name="Кровавый Расчленитель Хелиоса - (Магические Оковы)" type="Weapon">
+		<set name="icon" val="icon.weaon_serapear_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="oncast_chance" val="10"/>
+		<set name="oncast_skill" val="1201-16"/>
+		<set name="enchant_skill" val="4,13295-3"/>
+		<set name="item_skill" val="8857-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35233" name="Кровавый Расчленитель Хелиоса - (Добавление Маны)" type="Weapon">
+		<set name="icon" val="icon.weaon_serapear_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13295-3"/>
+		<set name="item_skill" val="3014-3;8857-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35234" name="Кровавый Заклинатель Хелиоса - (Воодушевление)" type="Weapon">
+		<set name="icon" val="icon.weapon_pilia_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="item_skill" val="3575-8;8858-1"/>
+		<set name="enchant_skill" val="4,13299-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35235" name="Кровавый Заклинатель Хелиоса - (Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weapon_pilia_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13299-3"/>
+		<set name="item_skill" val="3047-3;8858-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35236" name="Кровавый Заклинатель Хелиоса - (Магические Оковы)" type="Weapon">
+		<set name="icon" val="icon.weapon_pilia_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13299-3"/>
+		<set name="oncast_chance" val="10"/>
+		<set name="oncast_skill" val="3577-2"/>
+		<set name="item_skill" val="8858-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35237" name="Кровавое Возмездие Хелиоса - (Регенерация MP)" type="Weapon">
+		<set name="icon" val="icon.weapon_shaelon_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13304-3"/>
+		<set name="item_skill" val="3576-2;8859-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="700"/>
+			<set order="0x08" stat="mAtk" val="459"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35238" name="Кровавое Возмездие Хелиоса - (Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weapon_shaelon_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13304-3"/>
+		<set name="item_skill" val="3047-3;8859-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="700"/>
+			<set order="0x08" stat="mAtk" val="459"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35239" name="Кровавое Возмездие Хелиоса - (Воодушевление)" type="Weapon">
+		<set name="icon" val="icon.weapon_shaelon_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13304-3"/>
+		<set name="item_skill" val="3575-8;8859-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="700"/>
+			<set order="0x08" stat="mAtk" val="459"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35240" name="Кровавые Парные Мечи Хелиоса - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13278-3"/>
+		<set name="item_skill" val="3564-4;8860-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35241" name="Кровавые Парные Мечи Хелиоса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13278-3"/>
+		<set name="item_skill" val="13062-4;8860-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35242" name="Кровавые Парные Мечи Хелиоса - (Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13278-3"/>
+		<set name="item_skill" val="3013-3;8860-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35243" name="Кровавые Парные Кинжалы Хелиоса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<set name="item_skill" val="13062-4;8861-1"/>
+		<cond msgId="1518">
+			<and>
+				<player level="99"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35244" name="Кровавые Парные Кинжалы Хелиоса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<set name="item_skill" val="3566-8;8861-1"/>
+		<cond msgId="1518">
+			<and>
+				<player level="99"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35245" name="Кровавые Парные Кинжалы Хелиоса - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<set name="item_skill" val="3573-7;8861-1"/>
+		<cond msgId="1518">
+			<and>
+				<player level="99"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35246" name="Кровавые Парные Дубины Хелиоса - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="item_skill" val="3566-8;8862-1"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35247" name="Кровавые Парные Дубины Хелиоса - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="item_skill" val="3573-7;8862-1"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35248" name="Кровавые Парные Дубины Хелиоса - (Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="item_skill" val="13062-4;8862-1"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35249" name="Кровавое Острие Хелиоса - (Наведение + Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_stanpid_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13282-3"/>
+		<set name="item_skill" val="3573-8;3564-4;8849-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="629"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35250" name="Кровавое Острие Хелиоса - (Ускорение + Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_stanpid_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13282-3"/>
+		<set name="item_skill" val="3564-4;3567-6;8849-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="629"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35251" name="Кровавое Острие Хелиоса - (Фокусировка + Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_stanpid_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13282-3"/>
+		<set name="item_skill" val="3566-8;3573-8;8849-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="629"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35252" name="Кровавый Резак Хелиоса - (Ускорение + Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_plenitas_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13252-3"/>
+		<set name="item_skill" val="3564-4;3566-9;8850-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35253" name="Кровавый Резак Хелиоса - (Фокусировка + Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_plenitas_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13252-3"/>
+		<set name="item_skill" val="3570-1;3566-9;8850-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35254" name="Кровавый Резак Хелиоса - (Здоровье + Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_plenitas_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13252-3"/>
+		<set name="item_skill" val="3570-1;3564-4;8850-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35255" name="Кровавый Эспадон Хелиоса - (Фокусировка + Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_bauen_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13261-3"/>
+		<set name="item_skill" val="3566-9;13062-4;8851-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35256" name="Кровавый Эспадон Хелиоса - (Увелич. Урона + Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_bauen_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13261-3"/>
+		<set name="item_skill" val="13062-4;3564-4;8851-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35257" name="Кровавый Эспадон Хелиоса - (Ускорение + Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_bauen_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13261-3"/>
+		<set name="item_skill" val="3564-4;3566-9;8851-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35258" name="Кровавый Мститель Хелиоса - (Наведение + Крит. Урон)" type="Weapon">
+		<set name="icon" val="icon.weapon_qutram_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13256-3"/>
+		<set name="item_skill" val="3564-4;3572-5;8852-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35259" name="Кровавый Мститель Хелиоса - (Крит. Урон + Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_qutram_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13256-3"/>
+		<set name="item_skill" val="3564-4;3566-9;8852-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35260" name="Кровавый Мститель Хелиоса - (Фокусировка + Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_qutram_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13256-3"/>
+		<set name="item_skill" val="3564-4;3566-9;8852-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35261" name="Кровавый Воитель Хелиоса - (Фокусировка + Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_durga_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1550"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13264-3"/>
+		<set name="item_skill" val="3567-9;13062-4;8853-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35262" name="Кровавый Воитель Хелиоса - (Увелич. Урона + Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_durga_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1550"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13264-3"/>
+		<set name="item_skill" val="13062-4;3564-4;8853-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35263" name="Кровавый Воитель Хелиоса - (Ускорение + Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_durga_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1550"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13252-3"/>
+		<set name="item_skill" val="3564-4;3567-9;8853-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35264" name="Кровавый Буревестник Хелиоса - (Поглощение HP + Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_crabel_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13289-3"/>
+		<set name="item_skill" val="3568-2;3573-8;8854-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35265" name="Кровавый Буревестник Хелиоса - (Наведение + Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_crabel_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13289-3"/>
+		<set name="item_skill" val="3573-6;13062-4;8854-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35266" name="Кровавый Буревестник Хелиоса - (Увелич. Урона + Поглощение HP)" type="Weapon">
+		<set name="icon" val="icon.weapon_crabel_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13289-3"/>
+		<set name="item_skill" val="13062-2;3568-2;8854-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35267" name="Кровавый Бросок Хелиоса - (Увелич. Урона + Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_castron_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13292-3"/>
+		<set name="item_skill" val="13062-2;3566-9;8855-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1415"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35268" name="Кровавый Бросок Хелиоса - (Фокусировка + Радиус Удара)" type="Weapon">
+		<set name="icon" val="icon.weapon_castron_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13292-3"/>
+		<set name="item_skill" val="3566-9;13061-1;8855-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1415"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35269" name="Кровавый Бросок Хелиоса - (Радиус Удара + Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_castron_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13292-3"/>
+		<set name="item_skill" val="13061-1;13062-1;8855-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1415"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35270" name="Кровавый Страж Хелиоса - (Фокусировка + Крит. Замедление)" type="Weapon">
+		<set name="icon" val="icon.weapon_stilla_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="400"/>
+		<set name="reuse_delay" val="1300"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13294-3"/>
+		<set name="item_skill" val="3566-9;3574-3;8856-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1274"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35271" name="Кровавый Страж Хелиоса - (Крит. Замедление + Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_stilla_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="reuse_delay" val="1300"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13294-3"/>
+		<set name="item_skill" val="3574-3;3564-4;8856-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1274"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35272" name="Кровавый Страж Хелиоса - (Ускорение + Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_stilla_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="twohandcrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="reuse_delay" val="1300"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13294-3"/>
+		<set name="item_skill" val="3564-4;3566-9;8856-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1274"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35273" name="Кровавый Расчленитель Хелиоса - (Проницательность + Магические Оковы)" type="Weapon">
+		<set name="icon" val="icon.weaon_serapear_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="oncast_chance" val="10"/>
+		<set name="oncast_skill" val="1201-16"/>
+		<set name="enchant_skill" val="4,13295-3"/>
+		<set name="item_skill" val="3047-3;8857-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35274" name="Кровавый Расчленитель Хелиоса - (Магические Оковы + Добавление Маны)" type="Weapon">
+		<set name="icon" val="icon.weaon_serapear_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="oncast_chance" val="10"/>
+		<set name="oncast_skill" val="1201-16"/>
+		<set name="enchant_skill" val="4,13295-3"/>
+		<set name="item_skill" val="3014-3;8857-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35275" name="Кровавый Расчленитель Хелиоса - (Добавление Маны + Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weaon_serapear_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13295-3"/>
+		<set name="item_skill" val="3014-3;3047-3;8857-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35276" name="Кровавый Заклинатель Хелиоса - (Воодушевление + Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weapon_pilia_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13299-3"/>
+		<set name="item_skill" val="3047-3;3575-8;8858-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35277" name="Кровавый Заклинатель Хелиоса - (Проницательность + Магические Оковы)" type="Weapon">
+		<set name="icon" val="icon.weapon_pilia_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13299-3"/>
+		<set name="oncast_chance" val="10"/>
+		<set name="oncast_skill" val="3577-2"/>
+		<set name="item_skill" val="3047-3;8858-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35278" name="Кровавый Заклинатель Хелиоса - (Магические Оковы + Воодушевление)" type="Weapon">
+		<set name="icon" val="icon.weapon_pilia_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13299-3"/>
+		<set name="oncast_chance" val="10"/>
+		<set name="oncast_skill" val="3577-2"/>
+		<set name="item_skill" val="3072-2;8858-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="575"/>
+			<set order="0x08" stat="mAtk" val="417"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35279" name="Кровавое Возмездие Хелиоса - (Регенерация MP + Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weapon_shaelon_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13304-3"/>
+		<set name="item_skill" val="3576-4;3047-3;8859-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="700"/>
+			<set order="0x08" stat="mAtk" val="459"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35280" name="Кровавое Возмездие Хелиоса - (Проницательность + Воодушевление)" type="Weapon">
+		<set name="icon" val="icon.weapon_shaelon_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13304-3"/>
+		<set name="item_skill" val="3047-3;3575-8;8859-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="700"/>
+			<set order="0x08" stat="mAtk" val="459"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35281" name="Кровавое Возмездие Хелиоса - (Воодушевление + Регенерация MP)" type="Weapon">
+		<set name="icon" val="icon.weapon_shaelon_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="17243"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13304-3"/>
+		<set name="item_skill" val="3575-9;3076-4;8859-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="700"/>
+			<set order="0x08" stat="mAtk" val="459"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35282" name="Кровавые Парные Мечи Хелиоса - (Ускорение + Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13278-3"/>
+		<set name="item_skill" val="3564-4;13062-4;8860-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35283" name="Кровавые Парные Мечи Хелиоса - (Увелич. Урона + Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13278-3"/>
+		<set name="item_skill" val="13062-4;13062-4;3013-1;8860-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35284" name="Кровавые Парные Мечи Хелиоса - (Здоровье + Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13278-3"/>
+		<set name="item_skill" val="3564-4;3013-1;8860-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35285" name="Кровавые Парные Кинжалы Хелиоса - (Увелич. Урона + Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<set name="item_skill" val="13062-3;3566-9;8861-1"/>
+		<cond msgId="1518">
+			<and>
+				<player level="99"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35286" name="Кровавые Парные Кинжалы Хелиоса - (Фокусировка + Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<set name="item_skill" val="3566-8;3573-8;8861-1"/>
+		<cond msgId="1518">
+			<and>
+				<player level="99"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35287" name="Кровавые Парные Кинжалы Хелиоса - (Наведение + Увелич. Урона )" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,13288-3"/>
+		<set name="item_skill" val="3573-7;13062-4;8861-1"/>
+		<cond msgId="1518">
+			<and>
+				<player level="99"/>
+				<and>
+					<or>
+						<player active_skill_id="923"/>
+						<player active_skill_id="10502"/>
+					</or>
+				</and>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="719"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35288" name="Кровавые Парные Дубины Хелиоса - (Фокусировка + Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<set name="item_skill" val="3565-8;3573-8;8862-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35289" name="Кровавые Парные Дубины Хелиоса - (Наведение + Увелич. Урона)" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<set name="item_skill" val="3573-6;13062-4;8862-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="35290" name="Кровавые Парные Дубины Хелиоса - (Увелич. Урона + Фокусировка )" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i21"/>
+		<set name="isBlessedItem" val="true"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="crystal_count" val="20692"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="enchant_skill" val="4,13273-3"/>
+		<set name="item_skill" val="13062-3;3566-9;8862-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="875"/>
+			<set order="0x08" stat="mAtk" val="313"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+</list>

@@ -1,0 +1,1617 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="10245" levels="1" name="Уникальное Умение Волшебника - Пассивное">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="10246" levels="1" name="Уникальное Умение Волшебника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="10247" levels="1" name="Уникальное Умение Рыцаря - Пассивное">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="10248" levels="1" name="Уникальное Умение Рыцаря">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="reuseDelay" val="6000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="10283" levels="1" name="Добавление Энергии">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="10285" levels="1" name="Поглощение HP">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="10290" levels="8" name="Меч Урагана">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1800"/>
+        <set name="reuseDelay" val="7000"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <table name="#mpConsume">138 141 146 150 155 160 165 170</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="10299" levels="1" name="Копье Шока">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="10250" levels="1" name="Оглушающая Атака Рыцаря">
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="effectRange" val="700"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="magicLvl" val="99"/>
+        <set name="power" val="5000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="trait" val="SHOCK"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="10" abnormalType="stun" effectPower="60" effectType="STUN" name="Stun" val="0"/>
+        </for>
+    </skill>
+    <skill id="10249" levels="1" name="Обездвиживающая Атака Рыцаря">
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="flyRadius" val="60"/>
+        <set name="effectRange" val="50"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="magicLvl" val="99"/>
+        <set name="power" val="5000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="trait" val="HOLD"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="5" abnormalVisualEffect="sflyup" effectPower="60" effectType="FLY_UP" name="FlyUp" val="0"/>
+        </for>
+    </skill>
+    <skill id="10244" levels="1" name="Истинный Авангард">
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalTime="3" count="0x7fffffff" name="MpDamOverTime" val="0">
+                <mul order="0x30" stat="pvePhysDmg" val="1.5"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill enchantGroup1="7" id="10251" levels="1" name="Великое Владение Оружием">
+        <table name="#ench1pAtk">1502 1613 1724 1835 1946 2057 2168 2279 2390 2501</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="chanceType" val="ON_HIT"/>
+        <set name="triggeredId" val="10284"/>
+        <set name="triggeredLevel" val="1"/>
+        <set name="activationChance" val="50"/>
+        <for>
+            <add order="0x40" stat="pAtk" val="1252">
+                <using kind="Pole, Sword, Blunt, Big Blunt, Big Sword"/>
+            </add>
+            <add order="0x40" stat="accPhysical" val="3">
+                <using kind="Pole, Sword, Blunt, Big Blunt, Big Sword"/>
+            </add>
+            <mul order="0x30" stat="pAtkSpd" val="1.25"/>
+            <add order="0x10" stat="STR" val="2"/>
+        </for>
+        <enchant1for>
+            <add order="0x40" stat="pAtk" val="#ench1pAtk">
+                <using kind="Pole, Sword, Blunt, Big Blunt, Big Sword"/>
+            </add>
+            <add order="0x40" stat="accPhysical" val="3">
+                <using kind="Pole, Sword, Blunt, Big Blunt, Big Sword"/>
+            </add>
+            <mul order="0x30" stat="pAtkSpd" val="1.25"/>
+            <add order="0x10" stat="STR" val="2"/>
+        </enchant1for>
+    </skill>
+    <skill enchantGroup1="7" id="10252" levels="1" name="Великое Владение Парным Оружием">
+        <table name="#ench1pAtk">1502 1613 1724 1835 1946 2057 2168 2279 2390 2501</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="STR" val="2"/>
+            <add order="0x40" stat="accPhysical" val="3">
+                <using kind="Dual Sword, Dual Fist, Dual Blunt"/>
+            </add>
+            <add order="0x40" stat="pAtk" val="1252">
+                <using kind="Dual Sword, Dual Fist, Dual Blunt"/>
+            </add>
+        </for>
+        <enchant1for>
+            <add order="0x10" stat="STR" val="2"/>
+            <add order="0x40" stat="accPhysical" val="3">
+                <using kind="Dual Sword, Dual Fist, Dual Blunt"/>
+            </add>
+            <add order="0x40" stat="pAtk" val="#ench1pAtk">
+                <using kind="Dual Sword, Dual Fist, Dual Blunt"/>
+            </add>
+        </enchant1for>
+    </skill>
+    <skill enchantGroup1="7" id="10253" levels="1" name="Великое Владение Тяжелой Броней">
+        <table name="#ench1pDef">110 117 124 131 138 145 152 159 166 173</table>
+        <set name="magicLvl" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="STR" val="2"/>
+            <add order="0x40" stat="pDef" val="104">
+                <using kind="Heavy"/>
+            </add>
+            <add order="0x40" stat="maxHp" val="5368">
+                <using kind="Heavy"/>
+            </add>
+        </for>
+        <enchant1for>
+            <add order="0x10" stat="STR" val="2"/>
+            <add order="0x40" stat="pDef" val="#ench1pDef">
+                <using kind="Heavy"/>
+            </add>
+            <add order="0x40" stat="maxHp" val="5368">
+                <using kind="Heavy"/>
+            </add>
+        </enchant1for>
+    </skill>
+    <skill enchantGroup1="7" id="10254" levels="1" name="Великое Владение Легкой Броней">
+        <table name="#ench1pDef">94 100 106 112 118 123 129 135 141 147</table>
+        <set name="magicLvl" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="STR" val="2"/>
+            <add order="0x40" stat="maxHp" val="5368">
+                <using kind="Light"/>
+            </add>
+            <add order="0x40" stat="pDef" val="89">
+                <using kind="Light"/>
+            </add>
+            <add order="0x40" stat="accPhysical" val="3">
+                <using kind="Light"/>
+            </add>
+            <add order="0x40" stat="ratePhysicalEvas" val="6">
+                <using kind="Light"/>
+            </add>
+            <add order="0x40" stat="runSpd" val="10">
+                <using kind="Light"/>
+            </add>
+            <mul order="0x30" stat="pAtkSpd" val="1.10">
+                <using kind="Light"/>
+            </mul>
+            <mul order="0x30" stat="critDamEvas" val="1.10">
+                <using kind="Light"/>
+            </mul>
+        </for>
+        <enchant1for>
+            <add order="0x10" stat="STR" val="2"/>
+            <add order="0x40" stat="maxHp" val="5368">
+                <using kind="Light"/>
+            </add>
+            <add order="0x40" stat="pDef" val="#ench1pDef">
+                <using kind="Light"/>
+            </add>
+            <add order="0x40" stat="accPhysical" val="3">
+                <using kind="Light"/>
+            </add>
+            <add order="0x40" stat="ratePhysicalEvas" val="6">
+                <using kind="Light"/>
+            </add>
+            <add order="0x40" stat="runSpd" val="10">
+                <using kind="Light"/>
+            </add>
+            <mul order="0x30" stat="pAtkSpd" val="1.10">
+                <using kind="Light"/>
+            </mul>
+            <mul order="0x30" stat="critDamEvas" val="1.10">
+                <using kind="Light"/>
+            </mul>
+        </enchant1for>
+    </skill>
+    <skill enchantGroup1="7" id="10255" levels="1" name="Великое Владение Силой">
+        <table name="#ench1activationChance">21 22 23 24 25 26 27 28 29 30</table>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <set order="0x10" stat="energyMastery" val="10"/>
+            <effect abnormalTime="-1" activationChance="40" chanceType="ON_CRIT" name="ChanceSkillTrigger" noicon="1" triggeredId="6813" triggeredLevel="8" val="0"/>
+            <effect abnormalTime="-1" activationChance="20" chanceType="ON_HIT" name="ChanceSkillTrigger" noicon="1" triggeredId="6813" triggeredLevel="8" val="0"/>
+        </for>
+        <enchant1for>
+            <set order="0x10" stat="energyMastery" val="10"/>
+            <effect abnormalTime="-1" activationChance="40" chanceType="ON_CRIT" name="ChanceSkillTrigger" noicon="1" triggeredId="6813" triggeredLevel="8" val="0"/>
+            <effect abnormalTime="-1" activationChance="#ench1activationChance" chanceType="ON_HIT" name="ChanceSkillTrigger" noicon="1" triggeredId="6813" triggeredLevel="8" val="0"/>
+        </enchant1for>
+    </skill>
+    <skill enchantGroup1="7" id="10256" levels="1" name="Великое Владение HP">
+        <table name="#ench1hp">645 685 724 764 804 843 883 922 962 1002</table>
+        <table name="#ench1cp">315 334 353 373 392 411 431 450 469 489</table>
+        <table name="#ench1pAtk">183 194 205 217 228 239 251 262 273 285</table>
+        <table name="#ench1regHpStanding">7.8 8.2 8.7 9.2 9.7 10.1 10.6 11.1 11.5 12</table>
+        <table name="#ench1regHpResting">7.5 7.9 8.4 8.8 9.3 9.8 10.2 10.7 11.1 11.6</table>
+        <table name="#ench1regMp">3.9 4.2 4.4 4.6 4.9 5.1 5.3 5.5 5.8 6</table>
+        <set name="magicLvl" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="STR" val="2"/>
+            <add order="0x40" stat="maxHp" val="606"/>
+            <add order="0x40" stat="maxCp" val="296"/>
+            <add order="0x40" stat="pAtk" val="172">
+                <player hp="30"/>
+            </add>
+            <add order="0x40" stat="regHp" val="7.3">
+                <player standing="true"/>
+            </add>
+            <add order="0x40" stat="regHp" val="7">
+                <player resting="true"/>
+            </add>
+            <add order="0x40" stat="regMp" val="3.7"/>
+        </for>
+        <enchant1for>
+            <add order="0x10" stat="STR" val="2"/>
+            <add order="0x40" stat="maxHp" val="#ench1hp"/>
+            <add order="0x40" stat="maxCp" val="#ench1cp"/>
+            <add order="0x40" stat="pAtk" val="#ench1pAtk">
+                <player hp="30"/>
+            </add>
+            <add order="0x40" stat="regHp" val="#ench1regHpStanding">
+                <player standing="true"/>
+            </add>
+            <add order="0x40" stat="regHp" val="#ench1regHpResting">
+                <player resting="true"/>
+            </add>
+            <add order="0x40" stat="regMp" val="#ench1regMp"/>
+        </enchant1for>
+    </skill>
+    <skill id="10257" levels="1" name="Великое Владение Духом">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="STR" val="2"/>
+            <sub order="0x40" stat="rootVuln" val="30"/>
+            <sub order="0x40" stat="sleepVuln" val="30"/>
+            <sub order="0x40" stat="bleedVuln" val="30"/>
+            <sub order="0x40" stat="derangementVuln" val="30"/>
+        </for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" enchantGroup5="7" enchantGroup6="7" enchantGroup7="7" enchantGroup8="7" id="10258" levels="8" name="Разрушение Брони">
+        <table name="#power">11159 11932 12547 13206 14101 14995 15873 16601</table>
+        <table name="#mpConsume">50 52 53 54 57 59 60 62</table>
+        <table name="#magicLvl">85 87 89 90 92 93 94 95</table>
+        <table name="#pDef">0.98 0.96 0.94 0.92 0.90 0.88 0.86 0.84 0.82 0.80</table>
+        <table name="#ench1MpConsume">59 57 54 52 49 47 44 42 39 37</table>
+        <table name="#enchelementPower">1 2 3 4 5 6 7 8 9 10</table>
+        <table name="#enchPower">16990 17379 17767 18156 18545 18934 19322 19711 20100 20489</table>
+        <set name="isDebuff" val="true"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="nextActionAttack" val="true"/>
+        <set name="hitTime" val="1090"/>
+        <set name="coolTime" val="200"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="power" val="#power"/>
+        <set name="operateType" val="A2"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="baseCritRate" val="15"/>
+        <set name="overHit" val="true"/>
+        <set name="maxChance" val="70"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant1 name="power" val="#enchPower"/>
+        <enchant2 name="pvpPower" val="#enchPower"/>
+        <enchant3 name="element" val="0"/>
+        <enchant3 name="elementPower" val="#enchelementPower"/>
+        <enchant3 name="power" val="#enchPower"/>
+        <enchant4 name="element" val="1"/>
+        <enchant4 name="elementPower" val="#enchelementPower"/>
+        <enchant4 name="power" val="#enchPower"/>
+        <enchant5 name="element" val="2"/>
+        <enchant5 name="elementPower" val="#enchelementPower"/>
+        <enchant5 name="power" val="#enchPower"/>
+        <enchant6 name="element" val="3"/>
+        <enchant6 name="elementPower" val="#enchelementPower"/>
+        <enchant6 name="power" val="#enchPower"/>
+        <enchant7 name="element" val="4"/>
+        <enchant7 name="elementPower" val="#enchelementPower"/>
+        <enchant7 name="power" val="#enchPower"/>
+        <enchant8 name="element" val="5"/>
+        <enchant8 name="elementPower" val="#enchelementPower"/>
+        <enchant8 name="power" val="#enchPower"/>
+        <for>
+            <effect count="10" name="IncreaseCharges" noicon="1" self="1" val="1"/>
+            <effect abnormalLvl="2" abnormalTime="20" abnormalType="pd_down" name="Debuff" val="0">
+                <mul order="0x30" stat="pDef" val="#pDef"/>
+            </effect>
+        </for>
+        <enchant1for>
+            <effect count="10" name="IncreaseCharges" noicon="1" self="1" val="1"/>
+            <effect abnormalLvl="2" abnormalTime="20" abnormalType="pd_down" name="Debuff" val="0">
+                <mul order="0x30" stat="pDef" val="#pDef"/>
+            </effect>
+        </enchant1for>
+        <enchant2for>
+            <effect count="10" name="IncreaseCharges" noicon="1" self="1" val="1"/>
+            <effect abnormalLvl="2" abnormalTime="20" abnormalType="pd_down" name="Debuff" val="0">
+                <mul order="0x30" stat="pDef" val="#pDef"/>
+            </effect>
+        </enchant2for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" enchantGroup5="7" enchantGroup6="7" enchantGroup7="7" enchantGroup8="7" id="10260" levels="8" name="Мегаудар">
+        <table name="#mpConsume">65 66 69 71 73 76 78 80</table>
+        <table name="#enchelementPower">30 33 36 40 43 46 50 53 56 60</table>
+        <table name="#ench1MpConsume">76 73 70 67 64 60 57 54 51 48</table>
+        <table name="#enchPower">23237 23766 24295 24824 25353 25882 26411 26940 27469 27998</table>
+        <table name="#magicLvl">85 86 88 90 92 94 96 98</table>
+        <table name="#power">15303 15831 16889 17947 19005 20063 21121 22179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="ignoreShld" val="true"/>
+        <set name="isDebuff" val="true"/>
+        <set name="power" val="#power"/>
+        <set name="hitTime" val="1490"/>
+        <set name="coolTime" val="200"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="7000"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="CHARGEDAM"/>
+        <set name="overHit" val="true"/>
+        <set name="baseCritRate" val="10"/>
+        <set name="chargesMaxConsume" val="3"/>
+        <set name="nextActionAttack" val="true"/>
+        <set name="effectRange" val="80"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant1 name="power" val="#enchPower"/>
+        <enchant2 name="pvpPower" val="#enchPower"/>
+        <enchant3 name="element" val="0"/>
+        <enchant3 name="elementPower" val="#enchelementPower"/>
+        <enchant3 name="power" val="#enchPower"/>
+        <enchant4 name="element" val="1"/>
+        <enchant4 name="elementPower" val="#enchelementPower"/>
+        <enchant4 name="power" val="#enchPower"/>
+        <enchant5 name="element" val="2"/>
+        <enchant5 name="elementPower" val="#enchelementPower"/>
+        <enchant5 name="power" val="#enchPower"/>
+        <enchant6 name="element" val="3"/>
+        <enchant6 name="elementPower" val="#enchelementPower"/>
+        <enchant6 name="power" val="#enchPower"/>
+        <enchant7 name="element" val="4"/>
+        <enchant7 name="elementPower" val="#enchelementPower"/>
+        <enchant7 name="power" val="#enchPower"/>
+        <enchant8 name="element" val="5"/>
+        <enchant8 name="elementPower" val="#enchelementPower"/>
+        <enchant8 name="power" val="#enchPower"/>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" enchantGroup5="7" enchantGroup6="7" enchantGroup7="7" enchantGroup8="7" id="10262" levels="6" name="Мощный Бомбардир">
+        <table name="#enchelementPower">30 33 36 40 43 46 50 53 56 60</table>
+        <table name="#enchPower">31047 31751 32455 33160 33864 34568 35273 35977 36681 37386</table>
+        <table name="#ench1MpConsume">100 96 92 88 84 79 75 71 67 63</table>
+        <table name="#magicLvl">85 88 91 94 97 99</table>
+        <table name="#power">20483 22595 24708 26821 28934 30343</table>
+        <table name="#mpConsume">84 89 93 98 102 105</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="power" val="#power"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="hitTime" val="1690"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="trait" val="KNOCKDOWN"/>
+        <set name="overHit" val="true"/>
+        <set name="condition" val="10"/>
+        <set name="ignoreShld" val="true"/>
+        <set name="flyRadius" val="75"/>
+        <set name="skillType" val="CHARGEDAM"/>
+        <set name="baseCritRate" val="10"/>
+        <set name="chargesMaxConsume" val="3"/>
+        <set name="operateType" val="A2"/>
+        <set name="effectRange" val="80"/>
+        <set name="skillRadius" val="200"/>
+        <set name="isDebuff" val="true"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant1 name="power" val="#enchPower"/>
+        <enchant2 name="pvpPower" val="#enchPower"/>
+        <enchant3 name="element" val="0"/>
+        <enchant3 name="elementPower" val="#enchelementPower"/>
+        <enchant3 name="power" val="#enchPower"/>
+        <enchant4 name="element" val="1"/>
+        <enchant4 name="elementPower" val="#enchelementPower"/>
+        <enchant4 name="power" val="#enchPower"/>
+        <enchant5 name="element" val="2"/>
+        <enchant5 name="elementPower" val="#enchelementPower"/>
+        <enchant5 name="power" val="#enchPower"/>
+        <enchant6 name="element" val="3"/>
+        <enchant6 name="elementPower" val="#enchelementPower"/>
+        <enchant6 name="power" val="#enchPower"/>
+        <enchant7 name="element" val="4"/>
+        <enchant7 name="elementPower" val="#enchelementPower"/>
+        <enchant7 name="power" val="#enchPower"/>
+        <enchant8 name="element" val="5"/>
+        <enchant8 name="elementPower" val="#enchelementPower"/>
+        <enchant8 name="power" val="#enchPower"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="2" abnormalVisualEffect="sknockdown" comboType="COMBO_KNOCK_DOWN" effectPower="85" effectType="KNOCK_DOWN" name="KnockDown" val="0"/>
+        </for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" enchantGroup5="7" enchantGroup6="7" enchantGroup7="7" enchantGroup8="7" id="10263" levels="8" name="Источник Урагана">
+        <table name="#enchelementPower">30 33 36 40 43 46 50 53 56 60</table>
+        <table name="#enchPower">789 805 820 836 852 868 884 900 916 932</table>
+        <table name="#ench1MpConsume">68 65 62 59 56 53 51 48 45 42</table>
+        <table name="#magicLvl">85 86 88 90 92 94 96 98</table>
+        <table name="#power">551 566 598 630 662 693 725 757</table>
+        <table name="#mpConsume">58 59 61 63 65 67 69 71</table>
+        <table name="#abnormalLvl">1 2 3 4 5 6 7 8</table>
+        <set name="reuseDelay" val="0"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="nextActionAttack" val="true"/>
+        <set name="overHit" val="true"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="600"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="power" val="#power"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="A1"/>
+        <set name="effectRange" val="680"/>
+        <set name="baseCritRate" val="10"/>
+        <set name="isDebuff" val="true"/>
+        <set name="numCharges" val="1"/>
+        <set name="maxCharges" val="15"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant1 name="power" val="#enchPower"/>
+        <enchant2 name="pvpPower" val="#enchPower"/>
+        <enchant3 name="element" val="0"/>
+        <enchant3 name="elementPower" val="#enchelementPower"/>
+        <enchant3 name="power" val="#enchPower"/>
+        <enchant4 name="element" val="1"/>
+        <enchant4 name="elementPower" val="#enchelementPower"/>
+        <enchant4 name="power" val="#enchPower"/>
+        <enchant5 name="element" val="2"/>
+        <enchant5 name="elementPower" val="#enchelementPower"/>
+        <enchant5 name="power" val="#enchPower"/>
+        <enchant6 name="element" val="3"/>
+        <enchant6 name="elementPower" val="#enchelementPower"/>
+        <enchant6 name="power" val="#enchPower"/>
+        <enchant7 name="element" val="4"/>
+        <enchant7 name="elementPower" val="#enchelementPower"/>
+        <enchant7 name="power" val="#enchPower"/>
+        <enchant8 name="element" val="5"/>
+        <enchant8 name="elementPower" val="#enchelementPower"/>
+        <enchant8 name="power" val="#enchPower"/>
+        <for>
+            <effect abnormalLvl="#abnormalLvl" abnormalTime="20" abnormalType="pd_down" name="Debuff" val="0">
+                <mul order="0x30" stat="pDef" val="0.7"/>
+                <mul order="0x30" stat="mDef" val="0.7"/>
+            </effect>
+        </for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" enchantGroup5="7" enchantGroup6="7" enchantGroup7="7" enchantGroup8="7" id="10265" levels="8" name="Взрыв Энергии">
+        <table name="#enchelementPower">30 33 36 40 43 46 50 53 56 60</table>
+        <table name="#enchPower">17545 17945 18344 18743 19142 19542 19941 20340 20739 21139</table>
+        <table name="#ench1MpConsume">144 138 132 126 120 114 108 102 96 90</table>
+        <table name="#magicLvl">85 86 88 90 92 94 96 98</table>
+        <table name="#power">11557 11956 12754 13533 14351 15155 15948 16747</table>
+        <table name="#powerDebuff">30 32 34 36 38 40 42 44</table>
+        <table name="#mpConsume">122 124 129 133 137 142 146 151</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="power" val="#power"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="hitTime" val="1390"/>
+        <set name="coolTime" val="200"/>
+        <set name="castRange" val="200"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="overHit" val="true"/>
+        <set name="trait" val="SHOCK"/>
+        <set name="baseCritRate" val="10"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="A1"/>
+        <set name="skillRadius" val="200"/>
+        <set name="effectRange" val="200"/>
+        <set name="isDebuff" val="true"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant1 name="power" val="#enchPower"/>
+        <enchant2 name="pvpPower" val="#enchPower"/>
+        <enchant3 name="element" val="0"/>
+        <enchant3 name="elementPower" val="#enchelementPower"/>
+        <enchant3 name="power" val="#enchPower"/>
+        <enchant4 name="element" val="1"/>
+        <enchant4 name="elementPower" val="#enchelementPower"/>
+        <enchant4 name="power" val="#enchPower"/>
+        <enchant5 name="element" val="2"/>
+        <enchant5 name="elementPower" val="#enchelementPower"/>
+        <enchant5 name="power" val="#enchPower"/>
+        <enchant6 name="element" val="3"/>
+        <enchant6 name="elementPower" val="#enchelementPower"/>
+        <enchant6 name="power" val="#enchPower"/>
+        <enchant7 name="element" val="4"/>
+        <enchant7 name="elementPower" val="#enchelementPower"/>
+        <enchant7 name="power" val="#enchPower"/>
+        <enchant8 name="element" val="5"/>
+        <enchant8 name="elementPower" val="#enchelementPower"/>
+        <enchant8 name="power" val="#enchPower"/>
+        <for>
+            <effect effectPower="#powerDebuff" name="RandomizeHate" noicon="1" val="0"/>
+            <effect effectPower="#powerDebuff" name="RemoveTarget" noicon="1" val="0"/>
+            <effect abnormalLvl="1" abnormalTime="2" abnormalType="stun" effectPower="#powerDebuff" effectType="STUN" name="Stun" val="0"/>
+        </for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" id="10266" levels="8" name="Удар Гиганта">
+        <table name="#ench1MpConsume">91 87 83 79 76 72 68 64 60 57</table>
+        <table name="#ench2Chance">61 62 63 64 65 66 67 68 69 70</table>
+        <table name="#magicLvl">85 87 88 91 93 95 97 99</table>
+        <table name="#ench4Hex">0.99 0.98 0.97 0.96 0.95 0.94 0.93 0.92 0.91 0.90</table>
+        <table name="#ench3Attack">3800 3900 4000 4100 4200 4300 4400 4500 4600 4700</table>
+        <table name="#mpConsume">76 79 81 84 87 90 92 95</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="element" val="3"/>
+        <set name="elementPower" val="30"/>
+        <set name="power" val="-1"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="flyRadius" val="55"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="trait" val="KNOCKDOWN"/>
+        <set name="isDebuff" val="true"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="A2"/>
+        <set name="skillRadius" val="300"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="target" val="TARGET_AURA"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant3 name="skillType" val="PDAM"/>
+        <enchant3 name="power" val="#ench3Attack"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3" abnormalVisualEffect="sknockdown" comboType="COMBO_KNOCK_DOWN" effectPower="60" effectType="KNOCK_DOWN" name="KnockDown" val="0"/>
+        </for>
+        <enchant2for>
+            <effect abnormalLvl="1" abnormalTime="3" abnormalVisualEffect="sknockdown" comboType="COMBO_KNOCK_DOWN" effectPower="#ench2Chance" effectType="KNOCK_DOWN" name="KnockDown" val="0"/>
+        </enchant2for>
+        <enchant4for>
+            <effect abnormalLvl="1" abnormalTime="3" abnormalVisualEffect="sknockdown" comboType="COMBO_KNOCK_DOWN" effectPower="60" effectType="KNOCK_DOWN" name="KnockDown" val="0">
+                <mul order="0x30" stat="pDef" val="#ench4Hex"/>
+            </effect>
+        </enchant4for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" id="10267" levels="6" name="Бросок Урагана">
+        <table name="#magicLvl">85 87 90 93 96 99</table>
+        <table name="#ench2effectPower">71 72 75 76 78 79 80 82 83 85</table>
+        <table name="#ench3Attack">3800 3900 4000 4100 4200 4300 4400 4500 4600 4700</table>
+        <table name="#ench4Hex">0.99 0.98 0.97 0.96 0.95 0.94 0.93 0.92 0.91 0.90</table>
+        <table name="#ench1MpConsume">45 43 41 39 37 35 33 31 30 28</table>
+        <table name="#effectPower">61 62 63 64 65 66 67 68 69 70</table>
+        <table name="#mpConsume">38 39 41 43 44 47</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="power" val="-1"/>
+        <set name="effectRange" val="670"/>
+        <set name="flyRadius" val="55"/>
+        <set name="skillRadius" val="600"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="hitTime" val="500"/>
+        <set name="coolTime" val="100"/>
+        <set name="castRange" val="600"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="trait" val="SHOCK"/>
+        <set name="baseCritRate" val="10"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="operateType" val="A2"/>
+        <set name="flyType" val="CHARGE"/>
+        <set name="isDebuff" val="true"/>
+        <set name="nextActionAttack" val="true"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <set name="lvlDepend" val="2"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant3 name="skillType" val="PDAM"/>
+        <enchant3 name="power" val="#ench3Attack"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <using kind="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+                <target mindistance="200"/>
+            </and>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3" abnormalType="stun" effectPower="70" effectType="STUN" name="Stun" val="0"/>
+        </for>
+        <enchant2for>
+            <effect abnormalLvl="1" abnormalTime="3" abnormalType="stun" effectPower="#ench2effectPower" effectType="STUN" name="Stun" val="0"/>
+        </enchant2for>
+        <enchant4for>
+            <effect abnormalLvl="1" abnormalTime="3" abnormalType="stun" effectPower="70" effectType="STUN" name="Stun" val="0">
+                <mul order="0x30" stat="pDef" val="#ench4Hex"/>
+            </effect>
+        </enchant4for>
+    </skill>
+    <skill id="10268" levels="6" name="Громовые Раскаты">
+        <table name="#mdot">30 32 34 36 38 40</table>
+        <table name="#magicLvl">89 91 93 95 97 99</table>
+        <table name="#abnormalLvl">1 2 3 4 5 6</table>
+        <table name="#triggeredLevel">1 2 3 4 5 6</table>
+        <table name="#mpInitialConsume">40 42 43 45 46 47</table>
+        <set name="mpInitialConsume" val="#mpInitialConsume"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="skillToCast" val="10287"/>
+        <set name="skillToCastLevel" val="#triggeredLevel"/>
+        <set name="operateType" val="OP_ACTIVE_TOGGLE"/>
+        <for>
+            <effect abnormalLvl="#triggeredLevel" abnormalVisualEffect="AirBind" count="0x7fffffff" name="MpDamOverTime" val="#mdot"/>
+        </for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" enchantGroup5="7" enchantGroup6="7" enchantGroup7="7" enchantGroup8="7" id="10269" levels="7" name="Атака в Прыжке">
+        <table name="#power">10508 11190 11872 12554 13236 13918 14600</table>
+        <table name="#magicLvl">87 89 91 93 95 97 99</table>
+        <table name="#ench1MpConsume">128 123 117 112 107 101 96 91 85 80</table>
+        <table name="#ench2effectPower">81 82 83 84 85 86 87 88 89 90</table>
+        <table name="#enchElementalPower">1 2 3 4 5 6 7 8 9 10</table>
+        <table name="#enchPower">14941 15282 15623 15964 16305 16646 16987 17328 17669 18011</table>
+        <table name="#mpConsume">111 114 118 122 126 130 134</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <set name="flyType" val="CHARGE"/>
+        <set name="isDebuff" val="true"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="DA2"/>
+        <set name="power" val="#power"/>
+        <set name="hitTime" val="890"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="600"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="skillRadius" val="200"/>
+        <set name="effectRange" val="600"/>
+        <set name="skillType" val="CHARGEDAM"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="chargesMaxConsume" val="3"/>
+        <set name="nextActionAttack" val="true"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant2 name="pvpPower" val="#enchPower"/>
+        <enchant3 name="power" val="#enchPower"/>
+        <enchant3 name="element" val="0"/>
+        <enchant3 name="elementPower" val="#enchElementalPower"/>
+        <enchant4 name="power" val="#enchPower"/>
+        <enchant4 name="element" val="1"/>
+        <enchant4 name="elementPower" val="#enchElementalPower"/>
+        <enchant5 name="power" val="#enchPower"/>
+        <enchant5 name="element" val="2"/>
+        <enchant5 name="elementPower" val="#enchElementalPower"/>
+        <enchant6 name="power" val="#enchPower"/>
+        <enchant6 name="element" val="3"/>
+        <enchant6 name="elementPower" val="#enchElementalPower"/>
+        <enchant7 name="power" val="#enchPower"/>
+        <enchant7 name="element" val="4"/>
+        <enchant7 name="elementPower" val="#enchElementalPower"/>
+        <enchant8 name="power" val="#enchPower"/>
+        <enchant8 name="element" val="5"/>
+        <enchant8 name="elementPower" val="#enchElementalPower"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <target mindistance="100"/>
+            </and>
+        </cond>
+        <for>
+            <effect abnormalLvl="5" abnormalTime="5" abnormalType="speed_down" effectPower="80" name="Debuff" val="0">
+                <mul order="0x30" stat="runSpd" val="0.3"/>
+            </effect>
+        </for>
+        <enchant1for>
+            <effect abnormalLvl="5" abnormalTime="5" abnormalType="speed_down" effectPower="80" name="Debuff" val="0">
+                <mul order="0x30" stat="runSpd" val="0.3"/>
+            </effect>
+        </enchant1for>
+        <enchant2for>
+            <effect abnormalLvl="5" abnormalTime="5" abnormalType="speed_down" effectPower="#ench2effectPower" name="Debuff" val="0">
+                <mul order="0x30" stat="runSpd" val="0.3"/>
+            </effect>
+        </enchant2for>
+    </skill>
+    <skill enchantGroup1="7" id="10270" levels="1" name="Последняя Энергия">
+        <table name="#ench1time">132 142 156 168 180 192 204 216 228 240</table>
+        <set name="aggroPoints" val="635"/>
+        <set name="magicLvl" val="93"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="mpConsume" val="43"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="120" abnormalType="max_hp_cp_up" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.35"/>
+                <mul order="0x30" stat="maxCp" val="1.15"/>
+            </effect>
+            <effect name="CpHealPercent" noicon="1" val="15"/>
+            <effect name="HpHealPercent" noicon="1" val="35"/>
+        </for>
+        <enchant1for>
+            <effect abnormalLvl="2" abnormalTime="#ench1time" abnormalType="max_hp_cp_up" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.35"/>
+                <mul order="0x30" stat="maxCp" val="1.15"/>
+            </effect>
+            <effect name="CpHealPercent" noicon="1" val="15"/>
+            <effect name="HpHealPercent" noicon="1" val="35"/>
+        </enchant1for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" enchantGroup5="7" id="10271" levels="2" name="Мощная Провокация">
+        <table name="#ench1MpConsume">79 76 73 69 66 63 59 56 53 49</table>
+        <table name="#ench2effectPower">80 85 90 95 100 105 110 115 120 125</table>
+        <table name="#ench4derangementVuln">1 2 3 4 5 6 7 8 9 10</table>
+        <table name="#magicLvl">97 99</table>
+        <table name="#power">15000 18000</table>
+        <table name="#ench3radius">320 340 360 380 400 420 440 460 480 500</table>
+        <table name="#skillRadius">250 300</table>
+        <table name="#mpConsume">76 83</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="isDebuff" val="true"/>
+        <set name="isRestartableDebuff" val="true"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="power" val="#power"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="4000"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="skillType" val="AGGDAMAGE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="aggroPoints" val="9624"/>
+        <set name="skillRadius" val="#skillRadius"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant3 name="skillRadius" val="#ench3radius"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="10" effectPower="75" name="TargetMe" val="0">
+                <mul order="0x30" stat="pAtk" val="1.2"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="pDef" val="0.76"/>
+            </effect>
+        </for>
+        <enchant2for>
+            <effect abnormalLvl="2" abnormalTime="10" effectPower="#ench2effectPower" name="TargetMe" val="0">
+                <mul order="0x30" stat="pAtk" val="1.2"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="pDef" val="0.76"/>
+            </effect>
+        </enchant2for>
+        <enchant4for>
+            <effect abnormalLvl="2" abnormalTime="10" effectPower="75" name="TargetMe" val="0">
+                <mul order="0x30" stat="pAtk" val="1.2"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="pDef" val="0.76"/>
+                <add order="0x40" stat="derangementVuln" val="#ench4derangementVuln"/>
+            </effect>
+        </enchant4for>
+        <enchant5for>
+            <effect abnormalLvl="2" abnormalTime="10" effectPower="75" name="TargetMe" val="0">
+                <mul order="0x30" stat="pAtk" val="1.2"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="pDef" val="0.76"/>
+                <sub order="0x40" stat="fireRes" val="20"/>
+            </effect>
+        </enchant5for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" enchantGroup5="7" id="10273" levels="4" name="Обезоруживание">
+        <table name="#ench1MpConsume">88 84 80 77 73 69 66 62 58 55</table>
+        <table name="#ench2Time">5 6 6 7 7 8 8 9 9 10</table>
+        <table name="#ench3radius">210 220 230 240 250 260 270 280 290 300</table>
+        <table name="#enchVuln">1 2 3 4 5 6 7 8 9 10</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#def">0.9 0.85 0.8 0.75</table>
+        <set name="effectRange" val="400"/>
+        <set name="isDebuff" val="true"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="mpConsume" val="92"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="80"/>
+        <set name="skillType" val="DISARM"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="skillRadius" val="200"/>
+        <set name="maxChance" val="80"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant3 name="skillRadius" val="#ench3radius"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="5" abnormalType="disarm" name="Disarm" activationChance="70" val="0">
+                <mul order="0x30" stat="pDef" val="#def"/>
+                <mul order="0x30" stat="mDef" val="#def"/>
+            </effect>
+        </for>
+        <enchant1for>
+            <effect abnormalLvl="1" abnormalTime="5" abnormalType="disarm" abnormalVisualEffect="bleed" name="Disarm" val="0">
+                <mul order="0x30" stat="pDef" val="0.75"/>
+                <mul order="0x30" stat="mDef" val="0.75"/>
+            </effect>
+        </enchant1for>
+        <enchant2for>
+            <effect abnormalLvl="1" abnormalTime="#ench2Time" abnormalType="disarm" abnormalVisualEffect="bleed" name="Disarm" val="0">
+                <mul order="0x30" stat="pDef" val="0.75"/>
+                <mul order="0x30" stat="mDef" val="0.75"/>
+            </effect>
+        </enchant2for>
+        <enchant4for>
+            <effect abnormalLvl="1" abnormalTime="5" abnormalType="disarm" abnormalVisualEffect="bleed" name="Disarm" val="0">
+                <mul order="0x30" stat="pDef" val="0.75"/>
+                <mul order="0x30" stat="mDef" val="0.75"/>
+                <add order="0x40" stat="knockDownVuln" val="#enchVuln"/>
+                <add order="0x40" stat="knockBackVuln" val="#enchVuln"/>
+            </effect>
+        </enchant4for>
+        <enchant5for>
+            <effect abnormalLvl="1" abnormalTime="5" abnormalType="disarm" abnormalVisualEffect="bleed" name="Disarm" val="0">
+                <mul order="0x30" stat="pDef" val="0.75"/>
+                <mul order="0x30" stat="mDef" val="0.75"/>
+                <add order="0x40" stat="stunVuln" val="#enchVuln"/>
+            </effect>
+        </enchant5for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" id="10274" levels="4" name="Берсерк">
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#mpConsume">38 41 45 47</table>
+        <table name="#derangementVuln">40 50 60 70</table>
+        <table name="#runSpd">10 15 20 25</table>
+        <table name="#pAtk">1.05 1.07 1.09 1.11</table>
+        <table name="#accPhysical">10 15 20 25</table>
+        <table name="#pDef">1.05 1.07 1.09 1.11</table>
+        <table name="#pAtkSpd">1.05 1.07 1.09 1.11</table>
+        <table name="#cAtkAdd">200 250 300 350</table>
+        <table name="#abnormalLvl">3 4 5 6</table>
+        <table name="#ench1MpConsume">45 43 41 39 37 35 33 31 30 28</table>
+        <table name="#ench2abnormalTime">61 62 63 64 65 66 67 68 69 70</table>
+        <table name="#ench3hpToActivate">61 62 63 64 65 66 67 68 69 70</table>
+        <table name="#ench3skillHook">HpBreakpointHook,0,0,0.61 HpBreakpointHook,0,0,0.62 HpBreakpointHook,0,0,0.63 HpBreakpointHook,0,0,0.64 HpBreakpointHook,0,0,0.65 HpBreakpointHook,0,0,0.66 HpBreakpointHook,0,0,0.67 HpBreakpointHook,0,0,0.68 HpBreakpointHook,0,0,0.69 HpBreakpointHook,0,0,0.70</table>
+        <table name="#ench4stunProf">1 2 3 4 5 6 7 8 9 10</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="300000"/>
+        <set name="aggroPoints" val="624"/>
+        <set name="skillHooks" val="HpBreakpointHook,0,0,0.6"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant3 name="skillHooks" val="#ench3skillHook"/>
+        <cond addName="1" msgId="113">
+            <player hp="70"/>
+        </cond>
+        <enchant3cond addName="1" msgId="113">
+            <and>
+                <player hp="#ench3hpToActivate"/>
+            </and>
+        </enchant3cond>
+        <for>
+            <effect abnormalLvl="#abnormalLvl" abnormalTime="60" abnormalType="pinch" name="Buff" val="0">
+                <sub order="0x40" stat="derangementVuln" val="#derangementVuln"/>
+                <add order="0x40" stat="runSpd" val="#runSpd"/>
+                <mul order="0x30" stat="pAtk" val="#pAtk"/>
+                <add order="0x40" stat="accPhysical" val="#accPhysical"/>
+                <mul order="0x30" stat="pDef" val="#pDef"/>
+                <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+                <add order="0x40" stat="cAtkAdd" val="#cAtkAdd"/>
+                <mul order="0x30" stat="pAtk" val="1.10">
+                    <and>
+                        <player hp="60"/>
+                    </and>
+                </mul>
+                <add order="0x40" stat="pCritRate" val="100">
+                    <and>
+                        <player hp="60"/>
+                    </and>
+                </add>
+                <mul order="0x30" stat="pAtk" val="1.20">
+                    <and>
+                        <player hp="30"/>
+                    </and>
+                </mul>
+                <add order="0x40" stat="pCritRate" val="200">
+                    <and>
+                        <player hp="30"/>
+                    </and>
+                </add>
+            </effect>
+        </for>
+        <enchant2for>
+            <effect abnormalLvl="7" abnormalTime="#ench2abnormalTime" abnormalType="pinch" name="Buff" val="0">
+                <sub order="0x40" stat="derangementVuln" val="70"/>
+                <add order="0x40" stat="runSpd" val="25"/>
+                <mul order="0x30" stat="pAtk" val="1.11"/>
+                <add order="0x40" stat="accPhysical" val="25"/>
+                <mul order="0x30" stat="pDef" val="1.11"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.11"/>
+                <add order="0x40" stat="cAtkAdd" val="350"/>
+                <mul order="0x30" stat="pAtk" val="1.10">
+                    <and>
+                        <player hp="60"/>
+                    </and>
+                </mul>
+                <add order="0x40" stat="pCritRate" val="100">
+                    <and>
+                        <player hp="60"/>
+                    </and>
+                </add>
+                <mul order="0x30" stat="pAtk" val="1.30">
+                    <and>
+                        <player hp="30"/>
+                    </and>
+                </mul>
+                <add order="0x40" stat="pCritRate" val="300">
+                    <and>
+                        <player hp="30"/>
+                    </and>
+                </add>
+            </effect>
+        </enchant2for>
+        <enchant4for>
+            <effect abnormalLvl="7" abnormalTime="60" abnormalType="pinch" name="Buff" val="0">
+                <add order="0x40" stat="stunProf" val="#ench4stunProf"/>
+                <sub order="0x40" stat="derangementVuln" val="70"/>
+                <add order="0x40" stat="runSpd" val="25"/>
+                <mul order="0x30" stat="pAtk" val="1.11"/>
+                <add order="0x40" stat="accPhysical" val="25"/>
+                <mul order="0x30" stat="pDef" val="1.11"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.11"/>
+                <add order="0x40" stat="cAtkAdd" val="350"/>
+                <mul order="0x30" stat="pAtk" val="1.10">
+                    <and>
+                        <player hp="60"/>
+                    </and>
+                </mul>
+                <add order="0x40" stat="pCritRate" val="100">
+                    <and>
+                        <player hp="60"/>
+                    </and>
+                </add>
+                <mul order="0x30" stat="pAtk" val="1.30">
+                    <and>
+                        <player hp="30"/>
+                    </and>
+                </mul>
+                <add order="0x40" stat="pCritRate" val="300">
+                    <and>
+                        <player hp="30"/>
+                    </and>
+                </add>
+            </effect>
+        </enchant4for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" id="10275" levels="1" name="Удар Вечности">
+        <table name="#ench1MpConsume">1131 1083 1037 989 942 896 848 801 753 707</table>
+        <table name="#enchPower">54436 55659 56882 58105 59328 60551 61774 62997 64220 65443</table>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <set name="magicLvl" val="99"/>
+        <set name="nextActionAttack" val="true"/>
+        <set name="power" val="53213"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="overHit" val="true"/>
+        <set name="hitTime" val="5000"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="mpConsume" val="1178"/>
+        <set name="baseCritRate" val="10"/>
+        <set name="SSBoost" val="2.5"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="effectRange" val="80"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant1 name="power" val="#enchPower"/>
+        <enchant2 name="pvpPower" val="#enchPower"/>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" id="10276" levels="1" name="Сила Природы">
+        <table name="#enchPercentHeal">1 2 3 4 5 6 7 8 9 10</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="60000"/>
+        <set name="mpConsume" val="38"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <cond msgId="324">
+            <not>
+                <player Charges="15"/>
+            </not>
+        </cond>
+        <for>
+            <effect count="1" name="IncreaseCharges" noicon="1" val="15"/>
+        </for>
+        <enchant1for>
+            <effect count="1" name="IncreaseCharges" noicon="1" val="15"/>
+            <effect name="HpHealPercent" noicon="1" val="#enchPercentHeal"/>
+        </enchant1for>
+        <enchant2for>
+            <effect count="1" name="IncreaseCharges" noicon="1" val="15"/>
+            <effect name="CpHealPercent" noicon="1" val="#enchPercentHeal"/>
+        </enchant2for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" id="10277" levels="4" name="Последний Крик">
+        <table name="#ench2abnormalTime">125 125 130 135 135 140 145 145 150 155</table>
+        <table name="#ench1MpConsume">45 43 41 39 37 35 33 31 30 28</table>
+        <table name="#pAtk">1.2 1.22 1.26 1.33</table>
+        <table name="#physicalSkillPower">1.1 1.11 1.13 1.16</table>
+        <table name="#mpConsume">38 41 45 47</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="180000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="aggroPoints" val="408"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="120" abnormalType="pa_up_special" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="#pAtk"/>
+                <mul order="0x30" stat="physicalSkillPower" val="#physicalSkillPower"/>
+                <mul order="0x30" stat="pvpPhysDmg" val="1.05"/>
+                <mul order="0x30" stat="pvpPhysSkillsDmg" val="1.05"/>
+            </effect>
+        </for>
+        <enchant1for>
+            <effect abnormalLvl="2" abnormalTime="#ench2abnormalTime" abnormalType="pa_up_special" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.33"/>
+                <mul order="0x30" stat="physicalSkillPower" val="1.33"/>
+                <mul order="0x30" stat="pvpPhysDmg" val="1.05"/>
+                <mul order="0x30" stat="pvpPhysSkillsDmg" val="1.05"/>
+            </effect>
+        </enchant1for>
+        <enchant2for>
+            <effect abnormalLvl="2" abnormalTime="#ench2abnormalTime" abnormalType="pa_up_special" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.33"/>
+                <mul order="0x30" stat="physicalSkillPower" val="1.16"/>
+                <mul order="0x30" stat="pvpPhysDmg" val="1.05"/>
+                <mul order="0x30" stat="pvpPhysSkillsDmg" val="1.05"/>
+            </effect>
+        </enchant2for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" id="10278" levels="8" name="Ослабление Гнева">
+        <table name="#ench1MpConsume">90 86 82 78 75 71 67 63 60 56</table>
+        <table name="#ench2power">71 72 73 74 75 76 77 78 79 80</table>
+        <table name="#magicLvl">85 86 88 90 92 94 96 98</table>
+        <table name="#mpConsume">76 77 80 83 86 88 91 94</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="power" val="70"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="isDebuff" val="true"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="skillType" val="AGGREMOVE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="skillRadius" val="700"/>
+        <set name="trait" val="DERANGEMENT"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant2 name="power" val="#ench2power"/>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" id="10279" levels="1" name="Барьер Великана">
+        <table name="#ench1mpConsume">40 38 36 35 33 31 30 28 26 25</table>
+        <table name="#ench2abnormalTime">11 12 13 14 15 16 17 18 19 20</table>
+        <table name="#ench3playerHpRestrict">21 22 23 24 25 26 27 28 29 30</table>
+        <table name="#ench4stunProf">1 2 3 4 5 6 7 8 9 10</table>
+        <set name="magicLvl" val="91"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="300000"/>
+        <set name="mpConsume" val="42"/>
+        <enchant1 name="mpConsume" val="#ench1mpConsume"/>
+        <cond addName="1" msgId="113">
+            <player hp="20"/>
+        </cond>
+        <enchant3cond addName="1" msgId="113">
+            <and>
+                <player hp="#ench3playerHpRestrict"/>
+            </and>
+        </enchant3cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="10" abnormalType="invincibility" abnormalVisualEffect="invincible" name="Invincible" val="0">
+                <mul order="0x30" stat="runSpd" val="1.3"/>
+            </effect>
+        </for>
+        <enchant2for>
+            <effect abnormalLvl="1" abnormalTime="#ench2abnormalTime" abnormalType="invincibility" abnormalVisualEffect="invincible" name="Invincible" val="0">
+                <mul order="0x30" stat="runSpd" val="1.3"/>
+            </effect>
+        </enchant2for>
+        <enchant4for>
+            <effect abnormalLvl="1" abnormalTime="10" abnormalType="invincibility" abnormalVisualEffect="invincible" name="Invincible" val="0">
+                <mul order="0x30" stat="runSpd" val="1.3"/>
+                <add order="0x40" stat="stunProf" val="#ench4stunProf"/>
+            </effect>
+        </enchant4for>
+    </skill>
+    <skill id="10280" levels="1" name="Заряд Энергии">
+        <set name="magicLvl" val="85"/>
+        <set name="mpInitialConsume" val="58"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <set name="skillType" val="CONT"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="4" count="0x7fffffff" name="IncreaseChargesOverTime" val="100"/>
+        </for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" id="10281" levels="2" name="Ударная Волна">
+        <table name="#ench1MpConsume">1131 1083 1037 989 942 896 848 801 753 707</table>
+        <table name="#enchPower">39727 40628 41528 42429 43330 44231 45132 46033 46934 47835</table>
+        <table name="#power">21958 23344</table>
+        <table name="#magicLvl">95 98</table>
+        <table name="#mpConsume">1103 1158</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="effectRange" val="80"/>
+        <set name="baseCritRate" val="10"/>
+        <set name="hitTime" val="7500"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="isDebuff" val="true"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <set name="operateType" val="A1"/>
+        <set name="overHit" val="true"/>
+        <set name="power" val="#power"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="skillRadius" val="400"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="SSBoost" val="2.5"/>
+        <set name="target" val="TARGET_AURA"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant1 name="power" val="#enchPower"/>
+        <enchant2 name="pvpPower" val="#enchPower"/>
+        <enchant2 name="power" val="#enchPower"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <using kind="Bow, Crossbow, TwohandCrossbow"/>
+                </not>
+            </and>
+        </cond>
+    </skill>
+    <skill id="10284" levels="3" name="Сила Энергии">
+        <table name="#activationChance">20 10 10</table>
+        <table name="#triggeredLevel">2 3 3</table>
+        <table name="#pAtk">1.1 1.2 1.3</table>
+        <table name="#runSpd">5 7 10</table>
+        <table name="#time">15 20 30</table>
+        <table name="#abnormalLvl">1 2 3</table>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castRange" val="400"/>
+        <set name="isTriggeredSkill" val="true"/>
+        <for>
+            <effect abnormalLvl="#abnormalLvl" abnormalTime="#time" abnormalType="energy_power" activationChance="#activationChance" chanceType="ON_CRIT" name="ChanceSkillTrigger" triggeredId="10284" triggeredLevel="#triggeredLevel" val="0">
+                <mul order="0x30" stat="pAtk" val="#pAtk">
+                    <using kind="Pole, Sword, Dual Sword, Blunt, Big Blunt, Big Sword, Dual Blunt, Dual Fist"/>
+                </mul>
+                <add order="0x40" stat="runSpd" val="#runSpd">
+                    <using kind="Pole, Sword, Dual Sword, Blunt, Big Blunt, Big Sword, Dual Blunt, Dual Fist"/>
+                </add>
+            </effect>
+        </for>
+    </skill>
+    <skill enchantGroup1="7" id="10286" levels="1" name="Великое Сопротивление">
+        <table name="#ench1mDef">206 213 220 227 234 241 248 255 262 270</table>
+        <table name="#enchelementPower">21 22 23 24 25 26 27 28 29 30</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="triggeredId" val="10058"/>
+        <set name="triggeredLevel" val="1"/>
+        <set name="activationChance" val="20"/>
+        <set name="activationElements" val="0,1,2,3,4,5"/>
+        <set name="chanceType" val="ON_HIT_BY_OFFENSIVE_SKILL"/>
+        <enchant1 name="elementPower" val="#enchelementPower"/>
+        <for>
+            <add order="0x10" stat="STR" val="2"/>
+            <add order="0x40" stat="mDef" val="199"/>
+            <add order="0x40" stat="waterRes" val="20"/>
+            <add order="0x40" stat="fireRes" val="20"/>
+            <add order="0x40" stat="windRes" val="20"/>
+            <add order="0x40" stat="earthRes" val="20"/>
+        </for>
+        <enchant1for>
+            <add order="0x10" stat="STR" val="2"/>
+            <add order="0x40" stat="mDef" val="#ench1mDef"/>
+            <add order="0x40" stat="waterRes" val="#enchelementPower"/>
+            <add order="0x40" stat="fireRes" val="#enchelementPower"/>
+            <add order="0x40" stat="windRes" val="#enchelementPower"/>
+            <add order="0x40" stat="earthRes" val="#enchelementPower"/>
+        </enchant1for>
+    </skill>
+    <skill id="10287" levels="6" name="Громовые Раскаты">
+        <table name="#magicLvl">89 91 93 95 97 99</table>
+        <table name="#dot">225 228 232 235 238 242</table>
+        <table name="#abnormalLvl">1 2 3 4 5 6</table>
+        <set name="power" val="-1"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="isDebuff" val="true"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="hitTime" val="500"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="skillRadius" val="200"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="dmgDirectlyToHp" val="true"/>
+        <for>
+            <effect abnormalLvl="#abnormalLvl" abnormalType="poison" abnormalVisualEffect="poison" count="15" name="HpDamOverTime" val="#dot"/>
+        </for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" enchantGroup5="7" enchantGroup6="7" enchantGroup7="7" enchantGroup8="7" id="10288" levels="8" name="Ураганный Шторм">
+        <table name="#ench1MpConsume">190 182 174 166 158 150 142 134 126 118</table>
+        <table name="#power">11557 11956 12754 13553 14351 15150 15948 16747</table>
+        <table name="#magicLvl">85 86 88 90 92 94 96 98</table>
+        <table name="#enchPower">17546 17945 18344 18744 19143 19542 19941 20341 20740 21139</table>
+        <table name="#enchelementPower">1 2 3 4 5 6 7 8 9 10</table>
+        <table name="#mpConsume">161 163 169 175 180 186 192 198</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="weaponsAllowed" val="Pole, Sword, Blunt, Dual Sword, Big Blunt, Big Sword, Dual Fist, Dual Blunt"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="power" val="#power"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillRadius" val="200"/>
+        <set name="effectRange" val="200"/>
+        <set name="overHit" val="true"/>
+        <set name="hitTime" val="1790"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="500"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="baseCritRate" val="10"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="A1"/>
+        <enchant1 name="mpConsume" val="#ench1MpConsume"/>
+        <enchant1 name="power" val="#enchPower"/>
+        <enchant2 name="pvpPower" val="#enchPower"/>
+        <enchant3 name="element" val="0"/>
+        <enchant3 name="elementPower" val="#enchelementPower"/>
+        <enchant3 name="power" val="#enchPower"/>
+        <enchant4 name="element" val="1"/>
+        <enchant4 name="elementPower" val="#enchelementPower"/>
+        <enchant4 name="power" val="#enchPower"/>
+        <enchant5 name="element" val="2"/>
+        <enchant5 name="elementPower" val="#enchelementPower"/>
+        <enchant5 name="power" val="#enchPower"/>
+        <enchant6 name="element" val="3"/>
+        <enchant6 name="elementPower" val="#enchelementPower"/>
+        <enchant6 name="power" val="#enchPower"/>
+        <enchant7 name="element" val="4"/>
+        <enchant7 name="elementPower" val="#enchelementPower"/>
+        <enchant7 name="power" val="#enchPower"/>
+        <enchant8 name="element" val="5"/>
+        <enchant8 name="elementPower" val="#enchelementPower"/>
+        <enchant8 name="power" val="#enchPower"/>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" enchantGroup3="7" enchantGroup4="7" id="10289" levels="4" name="Копье Доблести">
+        <table name="#ench1mpConsume">137 131 125 120 114 108 102 97 91 85</table>
+        <table name="#ench2Time">61 62 63 64 65 66 67 68 69 70</table>
+        <table name="#power">1.3 1.35 1.4 1.45</table>
+        <table name="#power2">1.05 1.1 1.15 1.2</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="aggroPoints" val="597"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="200"/>
+        <set name="reuseDelay" val="300000"/>
+        <set name="mpConsume" val="143"/>
+        <enchant1 name="mpConsume" val="#ench1mpConsume"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="60" abnormalType="final_secret" name="Buff" val="0">
+                <mul order="0x30" stat="pvpPhysDmg" val="#power2"/>
+                <mul order="0x30" stat="physicalSkillPower" val="#power"/>
+            </effect>
+        </for>
+        <enchant1for>
+            <effect abnormalLvl="1" abnormalTime="60" abnormalType="final_secret" name="Buff" val="0">
+                <mul order="0x30" stat="pvpPhysDmg" val="1.2"/>
+                <mul order="0x30" stat="physicalSkillPower" val="1.45"/>
+            </effect>
+        </enchant1for>
+        <enchant2for>
+            <effect abnormalLvl="1" abnormalTime="#ench2Time" abnormalType="final_secret" name="Buff" val="0">
+                <mul order="0x30" stat="pvpPhysDmg" val="1.2"/>
+                <mul order="0x30" stat="physicalSkillPower" val="1.45"/>
+            </effect>
+        </enchant2for>
+        <enchant3for>
+            <effect abnormalLvl="1" abnormalTime="60" abnormalType="final_secret" name="Buff" val="0">
+                <mul order="0x30" stat="pvpPhysDmg" val="1.2"/>
+                <mul order="0x30" stat="physicalSkillPower" val="1.45"/>
+            </effect>
+        </enchant3for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" id="10291" levels="1" name="Рев Медведя">
+        <table name="#ench1time">310 320 330 340 350 360 370 380 390 400</table>
+        <table name="#ench2magicFailureRate">1 2 3 4 5 6 7 8 9 10</table>
+        <set name="magicLvl" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="A2"/>
+        <set name="hitTime" val="2000"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="mpConsume" val="38"/>
+        <set name="aggroPoints" val="438"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="possession" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.3"/>
+                <mul order="0x30" stat="cAtk" val="1.3"/>
+            </effect>
+        </for>
+        <enchant1for>
+            <effect abnormalLvl="1" abnormalTime="#ench1time" abnormalType="possession" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.3"/>
+                <mul order="0x30" stat="cAtk" val="1.3"/>
+            </effect>
+        </enchant1for>
+        <enchant2for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="possession" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.3"/>
+                <mul order="0x30" stat="cAtk" val="1.3"/>
+                <sub order="0x40" stat="magicFailureRate" val="#ench2magicFailureRate"/>
+            </effect>
+        </enchant2for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" id="10292" levels="1" name="Вопль Огра">
+        <table name="#ench1time">310 320 330 340 350 360 370 380 390 400</table>
+        <table name="#ench2magicFailureRate">1 2 3 4 5 6 7 8 9 10</table>
+        <set name="magicLvl" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="A2"/>
+        <set name="hitTime" val="2000"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="mpConsume" val="38"/>
+        <set name="aggroPoints" val="438"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="possession" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.35"/>
+                <mul order="0x30" stat="pDef" val="1.35"/>
+                <mul order="0x30" stat="mDef" val="1.35"/>
+                <mul order="0x30" stat="cAtk" val="1.1"/>
+                <mul order="0x30" stat="maxHp" val="1.1"/>
+            </effect>
+            <effect name="HpHealPercent" noicon="1" val="10"/>
+        </for>
+        <enchant1for>
+            <effect abnormalLvl="1" abnormalTime="#ench1time" abnormalType="possession" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.1"/>
+                <mul order="0x30" stat="pAtk" val="1.35"/>
+                <mul order="0x30" stat="pDef" val="1.35"/>
+                <mul order="0x30" stat="mDef" val="1.35"/>
+                <mul order="0x30" stat="cAtk" val="1.1"/>
+            </effect>
+            <effect name="HpHealPercent" noicon="1" val="10"/>
+        </enchant1for>
+        <enchant2for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="possession" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.1"/>
+                <mul order="0x30" stat="pAtk" val="1.35"/>
+                <mul order="0x30" stat="pDef" val="1.35"/>
+                <mul order="0x30" stat="mDef" val="1.35"/>
+                <mul order="0x30" stat="cAtk" val="1.1"/>
+                <sub order="0x40" stat="magicFailureRate" val="#ench2magicFailureRate"/>
+            </effect>
+            <effect name="HpHealPercent" noicon="1" val="10"/>
+        </enchant2for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" id="10293" levels="1" name="Рычание Пумы">
+        <table name="#ench1time">310 320 330 340 350 360 370 380 390 400</table>
+        <table name="#ench2magicFailureRate">1 2 3 4 5 6 7 8 9 10</table>
+        <set name="magicLvl" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="A2"/>
+        <set name="hitTime" val="2000"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="mpConsume" val="38"/>
+        <set name="aggroPoints" val="438"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="possession" name="Buff" val="0">
+                <add order="0x40" stat="accPhysical" val="10"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="critVuln" val="0.6"/>
+            </effect>
+        </for>
+        <enchant1for>
+            <effect abnormalLvl="1" abnormalTime="#ench1time" abnormalType="possession" name="Buff" val="0">
+                <add order="0x40" stat="accPhysical" val="10"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="critVuln" val="0.6"/>
+            </effect>
+        </enchant1for>
+        <enchant2for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="possession" name="Buff" val="0">
+                <add order="0x40" stat="accPhysical" val="10"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="critVuln" val="0.6"/>
+                <sub order="0x40" stat="magicFailureRate" val="#ench2magicFailureRate"/>
+            </effect>
+        </enchant2for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" id="10294" levels="1" name="Визг Кролика">
+        <table name="#ench1time">310 320 330 340 350 360 370 380 390 400</table>
+        <table name="#ench2magicFailureRate">1 2 3 4 5 6 7 8 9 10</table>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="A2"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="2000"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="mpConsume" val="38"/>
+        <set name="aggroPoints" val="438"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="possession" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.3"/>
+                <mul order="0x30" stat="runSpd" val="1.35"/>
+                <add order="0x40" stat="ratePhysicalEvas" val="15"/>
+            </effect>
+        </for>
+        <enchant1for>
+            <effect abnormalLvl="1" abnormalTime="#ench1time" abnormalType="possession" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.3"/>
+                <mul order="0x30" stat="runSpd" val="1.35"/>
+                <add order="0x40" stat="ratePhysicalEvas" val="15"/>
+            </effect>
+        </enchant1for>
+        <enchant2for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="possession" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.3"/>
+                <mul order="0x30" stat="runSpd" val="1.35"/>
+                <add order="0x40" stat="ratePhysicalEvas" val="15"/>
+                <sub order="0x40" stat="magicFailureRate" val="#ench2magicFailureRate"/>
+            </effect>
+        </enchant2for>
+    </skill>
+    <skill enchantGroup1="7" enchantGroup2="7" id="10295" levels="1" name="Клич Ястреба">
+        <table name="#ench1time">310 320 330 340 350 360 370 380 390 400</table>
+        <table name="#ench2magicFailureRate">1 2 3 4 5 6 7 8 9 10</table>
+        <set name="magicLvl" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="A2"/>
+        <set name="hitTime" val="2000"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="mpConsume" val="38"/>
+        <set name="aggroPoints" val="438"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="possession" name="Buff" val="0">
+                <add order="0x40" stat="accPhysical" val="8"/>
+                <add order="0x40" stat="pCritRate" val="120"/>
+                <mul order="0x30" stat="cAtk" val="1.3"/>
+            </effect>
+        </for>
+        <enchant1for>
+            <effect abnormalLvl="1" abnormalTime="#ench1time" abnormalType="possession" name="Buff" val="0">
+                <add order="0x40" stat="accPhysical" val="8"/>
+                <add order="0x40" stat="pCritRate" val="120"/>
+                <mul order="0x30" stat="cAtk" val="1.3"/>
+            </effect>
+        </enchant1for>
+        <enchant2for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="possession" name="Buff" val="0">
+                <add order="0x40" stat="accPhysical" val="8"/>
+                <add order="0x40" stat="pCritRate" val="120"/>
+                <mul order="0x30" stat="cAtk" val="1.3"/>
+                <sub order="0x40" stat="magicFailureRate" val="#ench2magicFailureRate"/>
+            </effect>
+        </enchant2for>
+    </skill>
+    <skill enchantGroup1="7" id="10296" levels="1" name="Дух Охотника">
+        <table name="#ench1Time">1810 1820 1830 1840 1850 1860 1870 1880 1890 1900</table>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="2000"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="mpConsume" val="38"/>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="1800" abnormalType="detect_weakness" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk-insects" val="1.45"/>
+                <mul order="0x30" stat="pAtk-plants" val="1.45"/>
+                <mul order="0x30" stat="pAtk-animals" val="1.45"/>
+            </effect>
+        </for>
+        <enchant1for>
+            <effect abnormalLvl="3" abnormalTime="#ench1Time" abnormalType="detect_weakness" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk-insects" val="1.45"/>
+                <mul order="0x30" stat="pAtk-plants" val="1.45"/>
+                <mul order="0x30" stat="pAtk-animals" val="1.45"/>
+            </effect>
+        </enchant1for>
+    </skill>
+    <skill enchantGroup1="7" id="10297" levels="1" name="Дух Убийцы">
+        <table name="#ench1Time">1810 1820 1830 1840 1850 1860 1870 1880 1890 1900</table>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="2000"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="mpConsume" val="38"/>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="1800" abnormalType="detect_weakness" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk-monsters" val="1.45"/>
+                <mul order="0x30" stat="pAtk-dragons" val="1.45"/>
+                <mul order="0x30" stat="pAtk-giants" val="1.45"/>
+                <mul order="0x30" stat="pAtk-magicCreature" val="1.45"/>
+            </effect>
+        </for>
+        <enchant1for>
+            <effect abnormalLvl="3" abnormalTime="#ench1Time" abnormalType="detect_weakness" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk-monsters" val="1.45"/>
+                <mul order="0x30" stat="pAtk-dragons" val="1.45"/>
+                <mul order="0x30" stat="pAtk-giants" val="1.45"/>
+                <mul order="0x30" stat="pAtk-magicCreature" val="1.45"/>
+            </effect>
+        </enchant1for>
+    </skill>
+    <skill id="10298" levels="1" name="Возрождение Силы">
+        <set name="magicLvl" val="86"/>
+        <set name="aggroPoints" val="100"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="HEAL_PERCENT"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="1500"/>
+        <set name="reuseDelay" val="600000"/>
+        <set name="mpConsume" val="38"/>
+        <for>
+            <effect name="HpHealPercent" noicon="1" val="100"/>
+        </for>
+    </skill>
+</list>

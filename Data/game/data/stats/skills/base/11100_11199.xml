@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="11107" levels="4" name="Взрыв Стихий (Огонь)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">470 511 537 565</table>
+        <set name="element" val="0"/>
+        <set name="elementPower" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillRadius" val="250"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+        <set name="negateId" val="11101"/>
+        <cond msgId="109">
+            <target active_effect_id="11101"/>
+        </cond>
+        <for>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11108" levels="4" name="Взрыв Стихий (Вода)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">470 511 537 565</table>
+        <set name="element" val="1"/>
+        <set name="elementPower" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillRadius" val="250"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+        <set name="negateId" val="11102"/>
+        <cond msgId="109">
+            <target active_effect_id="11102"/>
+        </cond>
+        <for>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11109" levels="4" name="Взрыв Стихий (Ветер)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">470 511 537 565</table>
+        <set name="element" val="2"/>
+        <set name="elementPower" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillRadius" val="250"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+        <set name="negateId" val="11103"/>
+        <cond msgId="109">
+            <target active_effect_id="11103"/>
+        </cond>
+        <for>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11110" levels="4" name="Взрыв Стихий (Земля)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">470 511 537 565</table>
+        <set name="element" val="3"/>
+        <set name="elementPower" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillRadius" val="250"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+        <set name="negateId" val="11104"/>
+        <cond msgId="109">
+            <target active_effect_id="11104"/>
+        </cond>
+        <for>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11111" levels="4" name="Взрыв Стихий (4 Стихии)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">470 511 537 565</table>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillRadius" val="250"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+    </skill>
+    <skill id="11113" levels="4" name="Взрыв Стихий (Огонь)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">470 511 537 565</table>
+        <set name="element" val="0"/>
+        <set name="elementPower" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+        <set name="negateId" val="11101"/>
+        <cond msgId="109">
+            <target active_effect_id="11101"/>
+        </cond>
+        <for>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11114" levels="4" name="Взрыв Стихий (Вода)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">470 511 537 565</table>
+        <set name="element" val="1"/>
+        <set name="elementPower" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+        <set name="negateId" val="11102"/>
+        <cond msgId="109">
+            <target active_effect_id="11102"/>
+        </cond>
+        <for>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11115" levels="4" name="Взрыв Стихий (Ветер)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">470 511 537 565</table>
+        <set name="element" val="2"/>
+        <set name="elementPower" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+        <set name="negateId" val="11103"/>
+        <cond msgId="109">
+            <target active_effect_id="11103"/>
+        </cond>
+        <for>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11116" levels="4" name="Взрыв Стихий (Земля)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">470 511 537 565</table>
+        <set name="element" val="3"/>
+        <set name="elementPower" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+        <set name="negateId" val="11104"/>
+        <cond msgId="109">
+            <target active_effect_id="11104"/>
+        </cond>
+        <for>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11117" levels="4" name="Взрыв Стихий (4 Стихии)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">470 511 537 565</table>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+    </skill>
+    <skill id="11119" levels="4" name="Взрыв Стихий (Огонь)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">517 562 590 621</table>
+        <set name="element" val="0"/>
+        <set name="elementPower" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+        <set name="negateId" val="11101"/>
+        <cond msgId="109">
+            <target active_effect_id="11101"/>
+        </cond>
+        <for>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11120" levels="4" name="Взрыв Стихий (Вода)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">517 562 590 621</table>
+        <set name="element" val="0"/>
+        <set name="elementPower" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+        <set name="negateId" val="11102"/>
+        <cond msgId="109">
+            <target active_effect_id="11102"/>
+        </cond>
+        <for>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11121" levels="4" name="Взрыв Стихий (Ветер)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">517 562 590 621</table>
+        <set name="element" val="1"/>
+        <set name="elementPower" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+        <set name="negateId" val="11103"/>
+        <cond msgId="109">
+            <target active_effect_id="11103"/>
+        </cond>
+        <for>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11122" levels="4" name="Взрыв Стихий (Земля)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">517 562 590 621</table>
+        <set name="element" val="2"/>
+        <set name="elementPower" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+        <set name="negateId" val="11104"/>
+        <cond msgId="109">
+            <target active_effect_id="11104"/>
+        </cond>
+        <for>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11123" levels="4" name="Взрыв Стихий (4 Стихии)">
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <table name="#power">517 562 590 621</table>
+        <set name="element" val="3"/>
+        <set name="elementPower" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <table name="#mpConsume">137 154 166 179</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+    </skill>
+    <skill id="11179" levels="1" name="Состояние Удержания">
+        <set name="castRange" val="1100"/>
+        <set name="effectRange" val="1000"/>
+        <set name="magicLvl" val="89"/>
+        <set name="isDebuff" val="true"/>
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="80"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="trait" val="FLYUP"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillRadius" val="150"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="9" abnormalVisualEffect="sflyup" comboType="COMBO_FLY_UP" effectPower="-1" name="FlyUp" val="0"/>
+            <effect abnormalLvl="1" abnormalTime="1" abnormalType="poison" abnormalVisualEffect="poison" count="9" name="HpDamOverTime" noicon="1" val="100"/>
+        </for>
+    </skill>
+    <skill id="11180" levels="1" name="Состояние Удержания">
+        <set name="castRange" val="1100"/>
+        <set name="effectRange" val="1000"/>
+        <set name="isDebuff" val="true"/>
+        <set name="magicLvl" val="92"/>
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="80"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="trait" val="FLYUP"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillRadius" val="150"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="9" abnormalVisualEffect="sflyup" comboType="COMBO_FLY_UP" effectPower="-1" name="FlyUp" val="0"/>
+            <effect abnormalLvl="1" abnormalTime="1" abnormalType="poison" abnormalVisualEffect="poison" count="9" name="HpDamOverTime" noicon="1" val="100"/>
+        </for>
+    </skill>
+    <skill id="11181" levels="1" name="Состояние Удержания">
+        <set name="castRange" val="1100"/>
+        <set name="effectRange" val="1000"/>
+        <set name="isDebuff" val="true"/>
+        <set name="magicLvl" val="95"/>
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="80"/>
+        <set name="trait" val="FLYUP"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillRadius" val="150"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="9" abnormalVisualEffect="sflyup" comboType="COMBO_FLY_UP" effectPower="-1" name="FlyUp" val="10"/>
+            <effect abnormalLvl="1" abnormalTime="1" abnormalType="poison" abnormalVisualEffect="poison" count="9" name="HpDamOverTime" noicon="1" val="100"/>
+        </for>
+    </skill>
+    <skill id="11182" levels="1" name="Состояние Удержания">
+        <set name="castRange" val="1100"/>
+        <set name="effectRange" val="1000"/>
+        <set name="isDebuff" val="true"/>
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="magicLvl" val="98"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="40"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="trait" val="FLYUP"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillRadius" val="150"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="9" abnormalVisualEffect="sflyup" comboType="COMBO_FLY_UP" effectPower="-1" name="FlyUp" val="0"/>
+            <effect abnormalLvl="1" abnormalTime="1" abnormalType="poison" abnormalVisualEffect="poison" count="9" name="HpDamOverTime" noicon="1" val="100"/>
+        </for>
+    </skill>
+    <skill enchantGroup1="7" id="11185" levels="1" name="Великое Увеличение Маны">
+        <table name="#ench1maxMp">333 354 374 395 415 435 456 476 497 517</table>
+        <set name="magicLvl" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="INT" val="2"/>
+            <add order="0x40" stat="maxMp" val="313"/>
+        </for>
+        <enchant1for>
+            <add order="0x10" stat="INT" val="2"/>
+            <add order="0x40" stat="maxMp" val="#ench1maxMp"/>
+        </enchant1for>
+    </skill>
+    <skill enchantGroup1="7" id="11186" levels="1" name="Великое Быстрое Восстановление MP">
+        <table name="#ench1regMp">3.8 4 4.2 4.4 4.7 4.9 5.1 5.3 5.5 5.7</table>
+        <set name="magicLvl" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="INT" val="2"/>
+            <add order="0x40" stat="regMp" val="3.6"/>
+        </for>
+        <enchant1for>
+            <add order="0x10" stat="INT" val="2"/>
+            <add order="0x40" stat="regMp" val="#ench1regMp"/>
+        </enchant1for>
+    </skill>
+    <skill id="11174" levels="1" name="Прореха в Пространстве">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="staticReuse" val="true"/>
+        <set name="trait" val="ATTRACT"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1" abnormalType="fly_away" effectPower="100" name="ThrowHorizontal" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11175" levels="1" name="Прореха в Пространстве">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="staticReuse" val="true"/>
+        <set name="trait" val="ATTRACT"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1" abnormalType="fly_away" effectPower="100" name="ThrowHorizontal" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="11183" levels="1" name="Великая Перезарядка">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="INT" val="2"/>
+            <mul order="0x30" stat="pReuse" val="0.75"/>
+            <mul order="0x30" stat="mReuse" val="0.75"/>
+        </for>
+    </skill>
+    <skill id="11184" levels="1" name="Великий Колдовской Рык">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="INT" val="2"/>
+            <mul order="0x30" stat="mAtk" val="1.05"/>
+            <add order="0x40" stat="fireRes" val="20"/>
+            <add order="0x40" stat="waterRes" val="20"/>
+            <add order="0x40" stat="windRes" val="20"/>
+            <add order="0x40" stat="earthRes" val="20"/>
+        </for>
+    </skill>
+    <skill enchantGroup1="7" id="11187" levels="1" name="Великий Свет Разума">
+        <table name="#ench1Walk">7.5 8.5 9.5 10.5 11.5 12.5 13.5 14.5 15.5 16.5</table>
+        <table name="#ench1Rest">6.1 7.1 8.1 9.1 10.1 11.1 12.1 13.1 14.1 15.1</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <enchant1 name="regMp" val="#ench1Walk"/>
+        <enchant1 name="regMp" val="#ench1Rest"/>
+        <for>
+            <add order="0x10" stat="INT" val="2"/>
+            <add order="0x40" stat="regMp" val="6.5">
+                <player moving="true"/>
+            </add>
+            <add order="0x40" stat="regMp" val="5.1">
+                <player resting="true"/>
+            </add>
+        </for>
+        <enchant1for>
+            <add order="0x10" stat="INT" val="2"/>
+            <add order="0x40" stat="regMp" val="#ench1Walk">
+                <player moving="true"/>
+            </add>
+            <add order="0x40" stat="regMp" val="#ench1Rest">
+                <player resting="true"/>
+            </add>
+        </enchant1for>
+    </skill>
+    <skill id="11106" levels="4" name="Взрыв Стихий">
+        <table name="#mpConsume">110 123 133 143</table>
+        <table name="#mpInitialConsume">27 31 33 36</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#power">470 511 537 565</table>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="mpInitialConsume" val="#mpInitialConsume"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="SSBoost" val="1.5"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillRadius" val="250"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+    </skill>
+    <skill id="11112" levels="4" name="Взрыв Стихий">
+        <table name="#mpConsume">110 123 133 143</table>
+        <table name="#mpInitialConsume">27 31 33 36</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#power">470 511 537 565</table>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="mpInitialConsume" val="#mpInitialConsume"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="SSBoost" val="1.5"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+    </skill>
+    <skill id="11118" levels="4" name="Взрыв Стихий">
+        <table name="#mpConsume">110 123 133 143</table>
+        <table name="#mpInitialConsume">27 31 33 36</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#power">517 562 590 621</table>
+        <set name="hitTime" val="6080"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="6700"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="mpInitialConsume" val="#mpInitialConsume"/>
+        <set name="replaceableSkills" val="11007,11008,11009,11010:11123;11007:11119;11008:11120;11009:11121;11010:11122"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="SSBoost" val="1.5"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="power" val="#power"/>
+    </skill>
+    <skill id="11124" levels="4" name="Великий Маг">
+        <table name="#magicLvl">85 90 95 99</table>
+        <table name="#increase">1.05 1.06 1.07 1.1</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="mAtk" val="#increase"/>
+            <mul order="0x30" stat="maxMp" val="#increase"/>
+            <mul order="0x30" stat="regMp" val="#increase"/>
+        </for>
+    </skill>
+    <skill id="11125" levels="4" name="Великий Маг">
+        <table name="#increase">1.1 1.12 1.15 1.2</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="mAtk" val="#increase"/>
+        </for>
+    </skill>
+    <skill id="11150" levels="1" name="Проклятие Черного Мрака">
+        <set name="hitTime" val="2780"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1100"/>
+        <set name="reuseDelay" val="2400"/>
+        <set name="mpConsume" val="31"/>
+        <set name="mpInitialConsume" val="8"/>
+        <set name="power" val="80"/>
+        <set name="magicLvl" val="99"/>
+        <set name="isDebuff" val="true"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="effectRange" val="1200"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="10" name="Debuff" val="0">
+                <mul order="0x30" stat="mDef" val="0.5"/>
+                <sub order="0x40" stat="fireRes" val="50"/>
+                <sub order="0x40" stat="waterRes" val="50"/>
+                <sub order="0x40" stat="windRes" val="50"/>
+                <sub order="0x40" stat="earthRes" val="50"/>
+                <sub order="0x40" stat="holyRes" val="50"/>
+                <sub order="0x40" stat="darkRes" val="50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="11151" levels="4" name="Великий Маг">
+        <table name="#increase">1.05 1.06 1.07 1.1</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="mAtk" val="#increase"/>
+            <mul order="0x30" stat="maxMp" val="#increase"/>
+            <mul order="0x30" stat="regMp" val="#increase"/>
+        </for>
+    </skill>
+    <skill id="11176" levels="4" name="Великий Маг">
+        <table name="#reuse">1.05 1.06 1.07 1.1</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="mReuse" val="#reuse"/>
+        </for>
+    </skill>
+    <skill id="11100" levels="1" name="Буйство Стихии - DC">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="11101" levels="1" name="Огонь - Буйство Стихии">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DEBUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="10" name="Debuff" val="0"/>
+        </for>
+    </skill>
+    <skill id="11102" levels="1" name="Вода - Буйство Стихии">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DEBUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="10" name="Debuff" val="0"/>
+        </for>
+    </skill>
+    <skill id="11103" levels="1" name="Ветер - Буйство Стихии">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DEBUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="10" name="Debuff" val="0"/>
+        </for>
+    </skill>
+    <skill id="11104" levels="1" name="Земля - Буйство Стихии">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DEBUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="10" name="Debuff" val="0"/>
+        </for>
+    </skill>
+    <skill id="11105" levels="1" name="4 Стихии - Буйство Стихии">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="11190" levels="1" name="Буйство Стихии - Огонь">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="11191" levels="1" name="Буйство Стихии - Вода">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="11192" levels="1" name="Буйство Стихии - Ветер">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="11193" levels="1" name="Буйство Стихии - Земля">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="11194" levels="1" name="Буйство Стихии - DC">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="11199" levels="1" name="Буйство Стихии - Огонь">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="11142" levels="3" name="Болевой Шок">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="11143" levels="3" name="Болевой Шок">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+</list>

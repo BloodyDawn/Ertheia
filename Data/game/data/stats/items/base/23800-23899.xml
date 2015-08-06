@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <item id="23805" name="Свободная Монета" type="EtcItem">
+        <!-- TODO уточнить -->
+        <set name="immediate_effect" val="1"/>
+        <set name="material" val="gold"/>
+        <set name="is_tradable" val="true"/>
+        <set name="is_dropable" val="false"/>
+        <set name="is_sellable" val="true"/>
+        <set name="is_destroyable" val="true"/>
+    </item>
+	<item id="23833" name="Талисман Богатства Война" type="Armor">
+		<set name="icon" val="icon.accessory_longing_talisman_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="true"/>
+		<cond msgId="1518">
+			<player item_equipped="23834;23835;23836;23837;23838;23839;23840"/>
+		</cond>		
+		<for>
+			<add order="0x40" stat="pAtk" val="154"/>
+			<add order="0x40" stat="mAtk" val="181"/>
+			<add order="0x40" stat="ratePhysicalEvas" val="4"/>
+			<add order="0x40" stat="rateMagicalEvas" val="4"/>
+		</for>
+	</item>
+	<item id="23834" name="Талисман Богатства Тактика" type="Armor">
+		<set name="icon" val="icon.accessory_longing_talisman_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="true"/>
+		<cond msgId="1518">
+			<player item_equipped="23833;23835;23836;23837;23838;23839;23840"/>
+		</cond>				
+		<for>
+			<mul order="0x30" stat="debuffVuln" val="1.1"/>
+			<add order="0x40" stat="fireRes" val="10"/>
+			<add order="0x40" stat="windRes" val="10"/>
+			<add order="0x40" stat="waterRes" val="10"/>
+			<add order="0x40" stat="earthRes" val="10"/>
+			<add order="0x40" stat="holyRes" val="10"/>
+			<add order="0x40" stat="darkRes" val="10"/>
+		</for>
+	</item>
+	<item id="23835" name="Талисман Богатства Мошенничество" type="Armor">
+		<set name="icon" val="icon.accessory_longing_talisman_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="true"/>
+		<cond msgId="1518">
+			<player item_equipped="23833;23834;23836;23837;23838;23839;23840"/>
+		</cond>				
+		<for>
+			<mul order="0x10" stat="pCritRate" val="1.08"/>
+			<mul order="0x10" stat="mCritRate" val="1.08"/>
+			<mul order="0x30" stat="critVuln" val="0.9"/>
+			<mul order="0x30" stat="pvpPhysSkillsDef" val="1.1"/>
+		</for>		
+	</item>
+	<item id="23836" name="Талисман Богатства Тело" type="Armor">
+		<set name="icon" val="icon.accessory_longing_talisman_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="true"/>
+		<cond msgId="1518">
+			<player item_equipped="23833;23834;23835;23837;23838;23839;23840"/>
+		</cond>				
+		<for>
+			<add order="0x40" stat="maxHp" val="325"/>
+			<add order="0x40" stat="maxMp" val="325"/>
+			<add order="0x40" stat="maxCp" val="325"/>		
+		</for>			
+	</item>
+	<item id="23837" name="Талисман Преследователя Богатство" type="Armor">
+		<set name="icon" val="icon.accessory_longing_talisman_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="true"/>
+		<cond msgId="1518">
+			<player item_equipped="23833;23834;23835;23836;23838;23839;23840"/>
+		</cond>				
+		<for>
+			<add order="0x40" stat="pAtk" val="166"/>
+			<add order="0x40" stat="mAtk" val="194"/>
+			<add order="0x40" stat="ratePhysicalEvas" val="7"/>
+			<add order="0x40" stat="rateMagicalEvas" val="7"/>
+			<add order="0x40" stat="fireRes" val="15"/>
+			<add order="0x40" stat="windRes" val="15"/>
+			<add order="0x40" stat="waterRes" val="15"/>
+			<add order="0x40" stat="earthRes" val="15"/>
+			<add order="0x40" stat="holyRes" val="15"/>
+			<add order="0x40" stat="darkRes" val="15"/>
+			<mul order="0x30" stat="debuffVuln" val="1.13"/>
+			<mul order="0x10" stat="pCritRate" val="1.13"/>
+			<mul order="0x10" stat="mCritRate" val="1.13"/>			
+			<mul order="0x30" stat="critVuln" val="0.87"/>
+			<mul order="0x30" stat="pvpPhysSkillsDef" val="1.13"/>
+		</for>			
+	</item>
+	<item id="23838" name="Талисман Убийцы Богатство" type="Armor">
+		<set name="icon" val="icon.accessory_longing_talisman_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="true"/>
+		<cond msgId="1518">
+			<player item_equipped="23833;23834;23835;23836;23837;23839;23840"/>
+		</cond>				
+		<for>
+			<add order="0x40" stat="pAtk" val="166"/>
+			<add order="0x40" stat="mAtk" val="194"/>
+			<add order="0x40" stat="ratePhysicalEvas" val="7"/>
+			<add order="0x40" stat="rateMagicalEvas" val="7"/>
+			<add order="0x40" stat="fireRes" val="15"/>
+			<add order="0x40" stat="windRes" val="15"/>
+			<add order="0x40" stat="waterRes" val="15"/>
+			<add order="0x40" stat="earthRes" val="15"/>
+			<add order="0x40" stat="holyRes" val="15"/>
+			<add order="0x40" stat="darkRes" val="15"/>
+			<mul order="0x30" stat="debuffVuln" val="1.13"/>
+			<add order="0x40" stat="maxHp" val="350"/>
+			<add order="0x40" stat="maxMp" val="350"/>
+			<add order="0x40" stat="maxCp" val="350"/>	
+		</for>			
+	</item>
+	<item id="23839" name="Талисман Завоевателя Богатство" type="Armor">
+		<set name="icon" val="icon.accessory_longing_talisman_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="true"/>
+		<cond msgId="1518">
+			<player item_equipped="23833;23834;23835;23836;23837;23838;23840"/>
+		</cond>				
+		<for>
+			<add order="0x40" stat="pAtk" val="166"/>
+			<add order="0x40" stat="mAtk" val="194"/>
+			<add order="0x40" stat="ratePhysicalEvas" val="7"/>
+			<add order="0x40" stat="rateMagicalEvas" val="7"/>
+			<add order="0x40" stat="maxHp" val="350"/>
+			<add order="0x40" stat="maxMp" val="350"/>
+			<add order="0x40" stat="maxCp" val="350"/>	
+			<mul order="0x10" stat="pCritRate" val="1.13"/>
+			<mul order="0x10" stat="mCritRate" val="1.13"/>			
+			<mul order="0x30" stat="critVuln" val="0.87"/>
+			<mul order="0x30" stat="pvpPhysSkillsDef" val="1.13"/>
+		</for>			
+	</item>
+	<item id="23840" name="Талисман Разбойника Богатство" type="Armor">
+		<set name="icon" val="icon.accessory_longing_talisman_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="true"/>
+		<cond msgId="1518">
+			<player item_equipped="23833;23834;23835;23836;23837;23838;23839"/>
+		</cond>				
+		<for>
+			<add order="0x40" stat="fireRes" val="15"/>
+			<add order="0x40" stat="windRes" val="15"/>
+			<add order="0x40" stat="waterRes" val="15"/>
+			<add order="0x40" stat="earthRes" val="15"/>
+			<add order="0x40" stat="holyRes" val="15"/>
+			<add order="0x40" stat="darkRes" val="15"/>
+			<mul order="0x30" stat="debuffVuln" val="1.13"/>
+			<add order="0x40" stat="maxHp" val="350"/>
+			<add order="0x40" stat="maxMp" val="350"/>
+			<add order="0x40" stat="maxCp" val="350"/>	
+			<mul order="0x10" stat="pCritRate" val="1.13"/>
+			<mul order="0x10" stat="mCritRate" val="1.13"/>			
+			<mul order="0x30" stat="critVuln" val="0.87"/>
+			<mul order="0x30" stat="pvpPhysSkillsDef" val="1.13"/>
+		</for>			
+	</item>
+	<item id="23841" name="Подарочная Коробка Богатства Война" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+		<set name="capsuled_items" val="23833,1,1,4.5;19447,1,1,10.01;19448,1,1,15.06;23347,1,1,8.11;23348,1,1,5.36;17526,1,1,30.06;17527,1,1,30.06;17526,1,1,30.06;36513,1,1,10.06;37041,1,1,6.06"/>
+	</item>
+	<item id="23842" name="Подарочная Коробка Богатства Тактика" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+		<set name="capsuled_items" val="23834,1,1,4.5;19447,1,1,10.01;19448,1,1,15.06;23347,1,1,8.11;23348,1,1,5.36;17526,1,1,30.06;17527,1,1,30.06;17526,1,1,30.06;36513,1,1,10.06;37041,1,1,6.06"/>
+	</item>
+	<item id="23843" name="Подарочная Коробка Богатства Мошенничество" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+		<set name="capsuled_items" val="23835,1,1,4.5;19447,1,1,10.01;19448,1,1,15.06;23347,1,1,8.11;23348,1,1,5.36;17526,1,1,30.06;17527,1,1,30.06;17526,1,1,30.06;36513,1,1,10.06;37041,1,1,6.06"/>
+	</item>
+	<item id="23844" name="Подарочная Коробка Богатства Тело" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+		<set name="capsuled_items" val="23836,1,1,4.5;19447,1,1,10.01;19448,1,1,15.06;23347,1,1,8.11;23348,1,1,5.36;17526,1,1,30.06;17527,1,1,30.06;17526,1,1,30.06;36513,1,1,10.06;37041,1,1,6.06"/>
+	</item>
+</list>

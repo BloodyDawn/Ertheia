@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<quest id="1" name="_0001_DemonsOfDarknessGontaDestruction">
+		<level min="75"/>
+		<spawnHolder name="_0001_DemonsOfDarknessGontaDestruction"/>
+		<dates>
+			<date day="Saturday" time="11:00"/>
+			<date day="Saturday" time="22:00"/>
+		</dates>
+		<steps>
+			<step duration="30" id="101" name="_0001_DemonsOfDarknessGontaDestruction" points="10000" title="Уничтожение злых духов Тьмы">
+				<dialogs>
+					<dialog name="dc0001_start001" type="start"/>
+					<dialog name="dc0001_start002" type="reject"/>
+					<dialog name="dc0001_context001" type="accept"/>
+					<dialog name="dc0001_failed001" type="failed"/>
+					<dialog name="dc0001_reward001" type="reward"/>
+					<dialog name="dc0001_elite_reward001" type="elite_reward"/>
+					<dialog name="dc0001_reward_received001" type="finish"/>
+				</dialogs>
+				<points>
+					<npc id="19086" points="1"/>
+					
+					<npc id="19087" points="2"/>
+					
+				</points>
+				<rewards>
+					<reward count="1" id="33501" type="usual"/>
+					<reward count="1" id="33501" type="elite"/>
+					<reward count="1" id="33500" type="elite"/>
+				</rewards>
+			</step>
+		</steps>
+	</quest>
+
+	<quest id="2" name="_0002_OrbisTemple">
+		<level min="75"/>
+		<spawnHolder name="_0002_OrbisTemple"/>
+		<steps>
+			<step duration="30" id="201" name="_0002_OrbisTemple1" nextTaskId="202" points="4200" title="Храм Орбиса - 1">
+				<zones>
+					<zone id="400031"/>
+					<zone id="400033"/>
+				</zones>
+				<dialogs>
+					<dialog name="dc0002_01_start001" type="start"/>
+					<dialog name="dc0002_01_context001" type="accept"/>
+					<dialog name="dc0002_01_failed001" type="failed"/>
+					<dialog name="dc0002_01_reward001" type="reward"/>
+					<dialog name="dc0002_01_elite_reward001" type="elite_reward"/>
+				</dialogs>
+				<points>
+					<npc id="22911" points="1"/>
+					
+					<npc id="22912" points="1"/>
+					
+					<npc id="22913" points="2"/>
+					
+					<npc id="25833" points="1"/>
+					
+					<npc id="18979" points="1"/>
+					
+					<npc id="22914" points="1"/>
+					
+					<npc id="22915" points="1"/>
+					
+					<npc id="22916" points="2"/>
+					
+					<npc id="25834" points="1"/>
+					
+					<npc id="18980" points="1"/>
+					
+					<npc id="22917" points="1"/>
+					
+					<npc id="22918" points="1"/>
+					
+					<npc id="22919" points="2"/>
+					
+					<npc id="22920" points="1"/>
+					
+					<npc id="25835" points="1"/>
+					
+				</points>
+				<rewards>
+					<reward count="1" id="32604" type="usual"/>
+					
+					<reward count="1" id="32605" type="elite"/>
+					
+				</rewards>
+			</step>
+			<step autostart="false" duration="30" id="202" name="_0002_OrbisTemple2" nextTaskId="203" points="18000" title="Храм Орбиса - 2">
+				<zones>
+					<zone id="400031"/>
+					<zone id="400033"/>
+				</zones>
+				<dialogs>
+					<dialog name="dc0002_02_start001" type="start"/>
+					<dialog name="dc0002_02_context001" type="accept"/>
+					<dialog name="dc0002_02_failed001" type="failed"/>
+					<dialog name="dc0002_02_reward001" type="reward"/>
+					<dialog name="dc0002_02_elite_reward001" type="elite_reward"/>
+				</dialogs>
+				<points>
+					<npc id="22911" points="1"/>
+					
+					<npc id="22912" points="1"/>
+					
+					<npc id="22913" points="2"/>
+					
+					<npc id="25833" points="1"/>
+					
+					<npc id="18979" points="1"/>
+					
+					<npc id="22914" points="1"/>
+					
+					<npc id="22915" points="1"/>
+					
+					<npc id="22916" points="2"/>
+					
+					<npc id="25834" points="1"/>
+					
+					<npc id="18980" points="1"/>
+					
+					<npc id="22917" points="1"/>
+					
+					<npc id="22918" points="1"/>
+					
+					<npc id="22919" points="2"/>
+					
+					<npc id="22920" points="1"/>
+					
+					<npc id="25835" points="1"/>
+					
+				</points>
+				<rewards>
+					<reward count="1" id="32604" type="usual"/>
+					
+					<reward count="1" id="32606" type="elite"/>
+					
+				</rewards>
+			</step>
+			<step autostart="false" duration="30" id="203" name="_0002_OrbisTemple3" nextTaskId="204" points="54000" title="Храм Орбиса - 3">
+				<zones>
+					<zone id="400031"/>
+					<zone id="400033"/>
+				</zones>
+				<dialogs>
+					<dialog name="dc0002_03_start001" type="start"/>
+					<dialog name="dc0002_03_context001" type="accept"/>
+					<dialog name="dc0002_03_failed001" type="failed"/>
+					<dialog name="dc0002_03_reward001" type="reward"/>
+					<dialog name="dc0002_03_elite_reward001" type="elite_reward"/>
+				</dialogs>
+				<points>
+					<npc id="22911" points="1"/>
+					
+					<npc id="22912" points="1"/>
+					
+					<npc id="22913" points="2"/>
+					
+					<npc id="25833" points="1"/>
+					
+					<npc id="18979" points="1"/>
+					
+					<npc id="22914" points="1"/>
+					
+					<npc id="22915" points="1"/>
+					
+					<npc id="22916" points="2"/>
+					
+					<npc id="25834" points="1"/>
+					
+					<npc id="18980" points="1"/>
+					
+					<npc id="22917" points="1"/>
+					
+					<npc id="22918" points="1"/>
+					
+					<npc id="22919" points="2"/>
+					
+					<npc id="22920" points="1"/>
+					
+					<npc id="25835" points="1"/>
+					
+					<npc id="18982" points="1"/>
+					
+					<npc id="22925" points="2"/>
+					
+					<npc id="22924" points="1"/>
+					
+				</points>
+				<rewards>
+					<reward count="1" id="32604" type="usual"/>
+					
+					<reward count="1" id="32607" type="elite"/>
+					
+				</rewards>
+			</step>
+			<step autostart="false" duration="30" id="204" name="_0002_OrbisTemple4" nextTaskId="205" points="4200" title="Храм Орбиса - 4">
+				<zones>
+					<zone id="400031"/>
+					<zone id="400033"/>
+				</zones>
+				<dialogs>
+					<dialog name="dc0002_04_start001" type="start"/>
+					<dialog name="dc0002_04_context001" type="accept"/>
+					<dialog name="dc0002_04_failed001" type="failed"/>
+					<dialog name="dc0002_04_reward001" type="reward"/>
+					<dialog name="dc0002_04_elite_reward001" type="elite_reward"/>
+				</dialogs>
+				<points>
+					<npc id="18979" points="1"/>
+					
+					<npc id="22914" points="1"/>
+					
+					<npc id="22915" points="1"/>
+					
+					<npc id="22916" points="2"/>
+					
+					<npc id="25834" points="1"/>
+					
+					<npc id="18980" points="1"/>
+					
+					<npc id="22917" points="1"/>
+					
+					<npc id="22918" points="1"/>
+					
+					<npc id="22919" points="2"/>
+					
+					<npc id="22920" points="1"/>
+					
+					<npc id="25835" points="1"/>
+					
+					<npc id="22921" points="1"/>
+					
+					<npc id="22922" points="1"/>
+					
+					<npc id="18981" points="1"/>
+					
+					<npc id="22923" points="2"/>
+					
+				</points>
+				<rewards>
+					<reward count="1" id="32604" type="usual"/>
+					
+					<reward count="1" id="32605" type="elite"/>
+					
+				</rewards>
+			</step>
+			<step autostart="false" duration="30" id="205" name="_0002_OrbisTemple5" nextTaskId="206" points="18000" title="Храм Орбиса - 5">
+				<zones>
+					<zone id="400031"/>
+					<zone id="400033"/>
+				</zones>
+				<dialogs>
+					<dialog name="dc0002_05_start001" type="start"/>
+					<dialog name="dc0002_05_context001" type="accept"/>
+					<dialog name="dc0002_05_failed001" type="failed"/>
+					<dialog name="dc0002_05_reward001" type="reward"/>
+					<dialog name="dc0002_05_elite_reward001" type="elite_reward"/>
+				</dialogs>
+				<points>
+					<npc id="18979" points="1"/>
+					
+					<npc id="22914" points="1"/>
+					
+					<npc id="22915" points="1"/>
+					
+					<npc id="22916" points="2"/>
+					
+					<npc id="25834" points="1"/>
+					
+					<npc id="18980" points="1"/>
+					
+					<npc id="22917" points="1"/>
+					
+					<npc id="22918" points="1"/>
+					
+					<npc id="22919" points="2"/>
+					
+					<npc id="22920" points="1"/>
+					
+					<npc id="25835" points="1"/>
+					
+					<npc id="22921" points="1"/>
+					
+					<npc id="22922" points="1"/>
+					
+					<npc id="18981" points="1"/>
+					
+					<npc id="22923" points="2"/>
+					
+					<npc id="18983" points="1"/>
+					
+					<npc id="22927" points="2"/>
+					
+					<npc id="22926" points="1"/>
+					
+				</points>
+				<rewards>
+					<reward count="1" id="32604" type="usual"/>
+					
+					<reward count="1" id="32606" type="elite"/>
+					
+				</rewards>
+			</step>
+			<step autostart="false" duration="30" id="206" name="_0002_OrbisTemple6" nextTaskId="201" points="54000" title="Храм Орбиса - 6">
+				<zones>
+					<zone id="400031"/>
+					<zone id="400033"/>
+				</zones>
+				<dialogs>
+					<dialog name="dc0002_06_start001" type="start"/>
+					<dialog name="dc0002_06_context001" type="accept"/>
+					<dialog name="dc0002_06_failed001" type="failed"/>
+					<dialog name="dc0002_06_reward001" type="reward"/>
+					<dialog name="dc0002_06_elite_reward001" type="elite_reward"/>
+				</dialogs>
+				<points>
+					<npc id="18979" points="1"/>
+					
+					<npc id="22914" points="1"/>
+					
+					<npc id="22915" points="1"/>
+					
+					<npc id="22916" points="2"/>
+					
+					<npc id="25834" points="1"/>
+					
+					<npc id="18980" points="1"/>
+					
+					<npc id="22917" points="1"/>
+					
+					<npc id="22918" points="1"/>
+					
+					<npc id="22919" points="2"/>
+					
+					<npc id="22920" points="1"/>
+					
+					<npc id="25835" points="1"/>
+					
+					<npc id="22921" points="1"/>
+					
+					<npc id="22922" points="1"/>
+					
+					<npc id="18981" points="1"/>
+					
+					<npc id="22923" points="2"/>
+					
+					<npc id="18983" points="1"/>
+					
+					<npc id="22927" points="2"/>
+					
+					<npc id="22926" points="1"/>
+					
+					<npc id="18982" points="1"/>
+					
+					<npc id="22925" points="2"/>
+					
+					<npc id="22924" points="1"/>
+					
+				</points>
+				<rewards>
+					<reward count="1" id="32604" type="usual"/>
+					
+					<reward count="1" id="32607" type="elite"/>
+					
+				</rewards>
+			</step>
+		</steps>
+	</quest>
+
+	<quest id="5" name="_0005_ShilenAdeptsDestruction">
+		
+		<level min="40"/>
+		<spawnHolder name="_0005_ShilenAdeptsDestruction"/>
+		<dates>
+			<date day="Wednesday" time="11:30"/>
+			<date day="Wednesday" time="22:00"/>
+		</dates>
+		<steps>
+			<step duration="30" id="501" name="_0005_ShilenAdeptsDestruction" points="10000" title="Уничтожение Адептов Шилен">
+				<dialogs>
+					<dialog name="dc0005_start001" type="start"/>
+					<dialog name="dc0005_context001" type="accept"/>
+					<dialog name="dc0005_failed001" type="failed"/>
+					<dialog name="dc0005_reward001" type="reward"/>
+					<dialog name="dc0005_elite_reward001" type="elite_reward"/>
+				</dialogs>
+				<points>
+					<npc id="19088" points="1"/>
+					
+				</points>
+				<rewards>
+					<reward count="1" id="33501" type="usual"/>
+					<reward count="1" id="33501" type="elite"/>
+					<reward count="1" id="33500" type="elite"/>
+				</rewards>
+			</step>
+		</steps>
+	</quest>
+
+	<quest id="9" name="_0009_ShilenAdeptsDestruction2">
+		<level min="75"/>
+		<dates>
+			<date day="Monday" time="13:30"/>
+			<date day="Tuesday" time="13:30"/>
+			<date day="Wednesday" time="13:30"/>
+			<date day="Thursday" time="13:30"/>
+			<date day="Friday" time="13:30"/>
+			<date day="Saturday" time="13:30"/>
+			<date day="Sunday" time="13:30"/>
+			<date day="Monday" time="15:30"/>
+			<date day="Tuesday" time="15:30"/>
+			<date day="Wednesday" time="15:30"/>
+			<date day="Thursday" time="15:30"/>
+			<date day="Friday" time="15:30"/>
+			<date day="Saturday" time="15:30"/>
+			<date day="Sunday" time="15:30"/>
+			<date day="Monday" time="17:30"/>
+			<date day="Tuesday" time="17:30"/>
+			<date day="Wednesday" time="17:30"/>
+			<date day="Thursday" time="17:30"/>
+			<date day="Friday" time="17:30"/>
+			<date day="Saturday" time="17:30"/>
+			<date day="Sunday" time="17:30"/>
+			<date day="Monday" time="23:00"/>
+			<date day="Tuesday" time="23:00"/>
+			<date day="Wednesday" time="23:00"/>
+			<date day="Thursday" time="23:00"/>
+			<date day="Friday" time="23:00"/>
+			<date day="Saturday" time="23:00"/>
+			<date day="Sunday" time="23:00"/>
+		</dates>
+		<steps>
+			<step duration="30" id="901" name="_0009_ShilenAdeptsDestruction2" points="7000" title="Печать Шилен">
+				<dialogs>
+					<dialog name="dc0009_01_start001" type="start"/>
+					<dialog name="dc0009_01_context001" type="accept"/>
+					<dialog name="dc0009_01_failed001" type="failed"/>
+					<dialog name="dc0009_01_reward001" type="reward"/>
+					<dialog name="dc0009_01_elite_reward001" type="elite_reward"/>
+				</dialogs>
+				<points>
+					<npc id="23147" points="1"/>
+					
+					<npc id="23148" points="1"/>
+					
+					<npc id="23149" points="1"/>
+					
+					<npc id="23150" points="2"/>
+					
+					<npc id="23151" points="1"/>
+					
+				</points>
+				<rewards>
+					<reward count="1" id="33501" type="usual"/>
+					<reward count="1" id="33501" type="elite"/>
+					<reward count="1" id="33500" type="elite"/>
+				</rewards>
+			</step>
+		</steps>
+	</quest>
+
+	<quest id="14" name="_0014_FantasyIsland2">
+		<level min="40"/>
+		<spawnHolder name="_0014_FantasyIsland"/>
+		<dates>
+			<date day="Wednesday" time="14:00"/>
+			<date day="Saturday" time="14:00"/>
+			<date day="Wednesday" time="18:00"/>
+			<date day="Saturday" time="18:00"/>
+		</dates>
+		<steps>
+			<step duration="30" id="1401" name="_0014_FantasyIsland2" points="10000" title="Хорошо Спрятаться">
+				<dialogs>
+					<dialog name="dc0014_01_start001" type="start"/>
+					<dialog name="dc0014_01_context001" type="accept"/>
+					<dialog name="dc0014_01_failed001" type="failed"/>
+					<dialog name="dc0014_01_reward001" type="reward"/>
+					<dialog name="dc0014_01_elite_reward001" type="elite_reward"/>
+				</dialogs>
+				<points>
+					<npc id="33658" points="2"/>
+					
+				</points>
+				<rewards>
+					<reward count="1" id="33501" type="usual"/>
+					<reward count="1" id="33501" type="elite"/>
+					<reward count="1" id="33500" type="elite"/>
+				</rewards>
+			</step>
+		</steps>
+	</quest>
+
+	<quest id="15" name="_0015_SeedOfHellfire">
+		<level min="85"/>
+		<spawnHolder name="_0015_SeedOfHellfire"/>
+		<steps>
+			<step duration="60" id="1501" name="_0015_SeedOfHellfire" points="200" title="Семя Адского Пламени">
+				<zones>
+					<zone id="400029"/>
+					<zone id="400030"/>
+				</zones>
+				<dialogs>
+					<dialog name="dc0015_01_start001" type="start"/>
+					<dialog name="dc0015_01_context001" type="accept"/>
+					<dialog name="dc0015_01_failed001" type="failed"/>
+					<dialog name="dc0015_01_reward001" type="reward"/>
+					<dialog name="dc0015_01_elite_reward001" type="elite_reward"/>
+				</dialogs>
+				<points>
+					<npc id="23219" points="1"/>
+					<npc id="23233" points="2"/>
+				</points>
+				<rewards>
+					<reward count="1" id="35709" type="usual"/>
+					<reward count="1" id="35548" type="elite"/>
+				</rewards>
+			</step>
+		</steps>
+	</quest>
+</list>

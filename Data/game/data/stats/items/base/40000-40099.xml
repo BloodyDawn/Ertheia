@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    <item id="40061" name="Apprentice's Staff" type="Weapon">
+        <!-- TODO -->
+        <set name="icon" val="icon.weapon_willow_staff_i00" />
+        <set name="default_action" val="equip"/>
+        <set name="weapon_type" val="bigblunt"/>
+        <set name="bodypart" val="lrhand"/>
+        <set name="random_damage" val="20"/>
+        <set name="attack_range" val="40"/>
+        <set name="damage_range" val="0;0;40;120"/>
+        <set name="immediate_effect" val="1"/>
+        <set name="material" val="wood"/>
+        <set name="weight" val="1080"/>
+        <set name="price" val="9600"/>
+        <set name="soulshots" val="1"/>
+        <set name="spiritshots" val="1"/>
+        <set name="is_magic_weapon" val="true"/>
+        <for>
+            <set order="0x08" stat="pAtk" val="6"/>
+            <set order="0x08" stat="mAtk" val="8"/>
+            <set order="0x08" stat="pCritRate" val="6"/>
+            <add order="0x10" stat="accPhysical" val="8.0"/>
+            <set order="0x08" stat="pAtkSpd" val="325"/>
+        </for>
+    </item>
+</list>

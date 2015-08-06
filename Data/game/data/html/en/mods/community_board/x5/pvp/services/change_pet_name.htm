@@ -1,0 +1,29 @@
+<table cellspacing="0" cellpadding="2" width="604">
+    <tr>
+        <td FIXWIDTH="40">
+            <br>
+            <center>
+                <img src="L2UI.bbs_folder" width=32 height=32>
+                <font color="LEVEL">Именение имени питомца</font>
+            </center>
+        </td>
+    </tr>
+</table><br>
+<center>
+    <table cellspacing="0" cellpadding="2" width="604">
+        <tr>
+            <td FIXWIDTH="40">
+                <center><br>
+                    В качестве оплаты используются Монеты удачи (Coin of Luck)<br>
+                    Цена : <font color=FF1424><?price?>.</font><br>
+                    Введите новое имя питомца:
+                    <edit var="nick" width=200><br>
+                        <?msg?><br>
+                        <button value="Сменить" action="bypass -h _bbstop;services:change_pet_name $nick" width=100 height=30 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+                            <button value="Назад" action="bypass -h _bbstop;services:show" width=100 height=30 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+                </center>
+            </td>
+        </tr>
+    </table>
+</center>
+

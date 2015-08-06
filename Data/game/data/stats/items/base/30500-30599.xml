@@ -1,0 +1,2574 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="30534" name="Скованный Латный Щит" type="Armor">
+		<set name="icon" val="icon.shield_plate_shield_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="7"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1310"/>
+		<set name="price" val="3950"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="154"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+			<enchant order="0x0C" stat="sDef" val="0"/>
+		</for>
+	</item>
+	<item id="30535" name="Скованный Латный Щит" type="Armor">
+		<set name="icon" val="icon.shield_plate_shield_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="7"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="0"/>
+		<set name="price" val="3500"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="154"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="30550" name="Скованный Полный Латный Щит" type="Armor">
+		<set name="icon" val="icon.shield_full_plate_shield_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="5"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1220"/>
+		<set name="price" val="14440"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="203"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+			<enchant order="0x0C" stat="sDef" val="0"/>
+		</for>
+	</item>
+	<item id="30507" name="Скованная Составная Чешуйчатая Броня" type="Armor">
+		<set name="icon" val="icon.armor_t20_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_count" val="13"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="8620"/>
+		<set name="price" val="6500"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="95"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30508" name="Скованные Составные Чешуйчатые Набедренники" type="Armor">
+		<set name="icon" val="icon.armor_t20_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_count" val="9"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="3770"/>
+		<set name="price" val="4500"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="61"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30509" name="Скованные Полулаты" type="Armor">
+		<set name="icon" val="icon.armor_t46_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_count" val="27"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="8220"/>
+		<set name="price" val="13500"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="111"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30510" name="Скованные Полулаты" type="Armor">
+		<set name="icon" val="icon.armor_t46_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="111"/>
+		</for>
+	</item>
+	<item id="30523" name="Скованная Серьга Феникса" type="Armor">
+		<set name="icon" val="icon.accessary_phoenixs_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="crystal_count" val="4"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="51800"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="mDef" val="60"/>
+			<add order="0x40" stat="maxMp" val="20"/>
+			<enchant order="0x0C" stat="mDef" val="0"/>
+		</for>
+	</item>
+	<item id="30524" name="Скованное Кольцо Феникса" type="Armor">
+		<set name="icon" val="icon.accessary_phoenixs_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_count" val="2"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="25900"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="mDef" val="40"/>
+			<add order="0x40" stat="maxMp" val="13"/>
+			<enchant order="0x0C" stat="mDef" val="0"/>
+		</for>
+	</item>
+	<item id="30525" name="Скованное Ожерелье Феникса" type="Armor">
+		<set name="icon" val="icon.accessary_phoenixs_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_count" val="5"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="64750"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="mDef" val="80"/>
+			<add order="0x40" stat="maxMp" val="26"/>
+			<enchant order="0x0C" stat="mDef" val="0"/>
+		</for>
+	</item>
+	<item id="30530" name="Скованные Латные Набедренники" type="Armor">
+		<set name="icon" val="icon.armor_t46_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_count" val="17"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="3770"/>
+		<set name="price" val="8500"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="70"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30531" name="Скованные Латные Набедренники" type="Armor">
+		<set name="icon" val="icon.armor_t46_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="70"/>
+		</for>
+	</item>
+	<item id="30532" name="Скованный Латный Шлем" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_count" val="10"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="630"/>
+		<set name="price" val="5000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30533" name="Скованный Латный Шлем" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+		</for>
+	</item>
+	<item id="30536" name="Скованные Латные Сапоги" type="Armor">
+		<set name="icon" val="icon.armor_t46_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_count" val="6"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1240"/>
+		<set name="price" val="3000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="29"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30537" name="Скованные Латные Сапоги" type="Armor">
+		<set name="icon" val="icon.armor_t46_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="29"/>
+		</for>
+	</item>
+	<item id="30538" name="Скованный Латный Кожаный Доспех" type="Armor">
+		<set name="icon" val="icon.armor_t47_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_count" val="6"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="4450"/>
+		<set name="price" val="15600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="94"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30539" name="Скованные Латные Кожаные Сапоги" type="Armor">
+		<set name="icon" val="icon.armor_t47_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_count" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1220"/>
+		<set name="price" val="2600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="32"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30540" name="Скованные Латные Кожаные Перчатки" type="Armor">
+		<set name="icon" val="icon.armor_t47_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_count" val="2"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="610"/>
+		<set name="price" val="5200"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="33"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30541" name="Скованные Латные Кожаные Набедренники" type="Armor">
+		<set name="icon" val="icon.armor_t47_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_count" val="4"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1560"/>
+		<set name="price" val="10400"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="59"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30546" name="Скованная Рубаха из Шкуры Пумы" type="Armor">
+		<set name="icon" val="icon.armor_t09_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_count" val="4"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="4700"/>
+		<set name="price" val="2000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="58"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30547" name="Скованные Набедренники из Шкуры Пумы" type="Armor">
+		<set name="icon" val="icon.armor_t09_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_count" val="2"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1600"/>
+		<set name="price" val="1000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="36"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30548" name="Скованный Полный Латный Шлем" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_count" val="8"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="600"/>
+		<set name="price" val="20800"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="58"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30549" name="Скованный Полный Латный Доспех" type="Armor">
+		<set name="icon" val="icon.armor_t62_ul_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="onepiece"/>
+		<set name="crystal_count" val="35"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="10480"/>
+		<set name="price" val="91000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="239"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30551" name="Скованные Полные Латные Сапоги" type="Armor">
+		<set name="icon" val="icon.armor_t62_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_count" val="5"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1200"/>
+		<set name="price" val="13000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="39"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30552" name="Скованные Полные Латные Рукавицы" type="Armor">
+		<set name="icon" val="icon.armor_t62_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_count" val="5"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="600"/>
+		<set name="price" val="13000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="39"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30553" name="Скованные Голубые Замшевые Сапоги" type="Armor">
+		<set name="icon" val="icon.armor_t18_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_count" val="2"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1300"/>
+		<set name="price" val="1000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="22"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30554" name="Скованная Кираса Синего Волка" type="Armor">
+		<set name="icon" val="icon.armor_t68_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_count" val="16"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="7820"/>
+		<set name="price" val="130400"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="166"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30555" name="Скованные Штаны Синего Волка" type="Armor">
+		<set name="icon" val="icon.armor_t70_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_count" val="7"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="920"/>
+		<set name="price" val="57050"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="52"/>
+			<add order="0x40" stat="maxMp" val="236"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30556" name="Скованный Шлем Синего Волка" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_count" val="6"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<set name="price" val="48900"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="66"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30557" name="Скованная Туника Синего Волка" type="Armor">
+		<set name="icon" val="icon.armor_t70_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_count" val="12"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1920"/>
+		<set name="price" val="97800"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="83"/>
+			<add order="0x40" stat="maxMp" val="377"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30558" name="Скованные Перчатки Синего Волка - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t68_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="590"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30559" name="Скованные Перчатки Синего Волка - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t69_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="590"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30560" name="Скованные Перчатки Синего Волка - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t70_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="590"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30561" name="Скованные Сапоги Синего Волка - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t68_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1130"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30562" name="Скованные Сапоги Синего Волка - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t69_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="b"/>
+
+		<set name="material" val="leather"/>
+		<set name="weight" val="1130"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30563" name="Скованные Сапоги Синего Волка - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t70_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1130"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30564" name="Скованный Кожаный Доспех Синего Волка" type="Armor">
+		<set name="icon" val="icon.armor_t69_ul_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="onepiece"/>
+		<set name="crystal_count" val="20"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="5500"/>
+		<set name="price" val="163000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="202"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30565" name="Скованные Набедренники Синего Волка" type="Armor">
+		<set name="icon" val="icon.armor_t68_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_count" val="10"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="3370"/>
+		<set name="price" val="81500"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="104"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30500" name="Скованный Ручной Арбалет" type="Weapon">
+		<set name="icon" val="icon.weapon_hunting_gun_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="45"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1850"/>
+		<set name="price" val="22500"/>
+		<set name="change_weaponId" val="30833"/>
+		<set name="soulshots" val="4"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="400"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="64"/>
+			<set order="0x08" stat="mAtk" val="32"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30501" name="Скованный Ручной Арбалет" type="Weapon">
+		<set name="icon" val="icon.weapon_hunting_gun_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="45"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1850"/>
+		<set name="price" val="22500"/>
+		<set name="change_weaponId" val="31453"/>
+		<set name="soulshots" val="4"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="400"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="64"/>
+			<set order="0x08" stat="mAtk" val="32"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30502" name="Скованный Лук Угрозы" type="Weapon">
+		<set name="icon" val="icon.weapon_hazard_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="67"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1700"/>
+		<set name="price" val="546050"/>
+		<set name="change_weaponId" val="30467"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="1"/>
+		<set name="mp_consume" val="4"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="400"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30503" name="Скованный Лук Угрозы - (Наведение)" type="Weapon">
+		<set name="icon" val="icon.weapon_hazard_bow_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="67"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1700"/>
+		<set name="price" val="504570"/>
+		<set name="change_weaponId" val="30468"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="1"/>
+		<set name="mp_consume" val="4"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="item_skill" val="3008-6"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="400"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30504" name="Скованный Лук Угрозы - (Быстрое Восстановление)" type="Weapon">
+		<set name="icon" val="icon.weapon_hazard_bow_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="67"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1700"/>
+		<set name="price" val="546050"/>
+		<set name="change_weaponId" val="30469"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="1"/>
+		<set name="mp_consume" val="4"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1310"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="400"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30505" name="Скованный Лук Угрозы - (Экономия)" type="Weapon">
+		<set name="icon" val="icon.weapon_hazard_bow_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="67"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1700"/>
+		<set name="price" val="546050"/>
+		<set name="change_weaponId" val="30470"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="1"/>
+		<set name="mp_consume" val="4"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="reduced_mp_consume" val="42,2"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="400"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30506" name="Скованный Молот Смерти" type="Weapon">
+		<set name="icon" val="icon.weapon_hammer_in_flames_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="99"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="price" val="49500"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3599-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="79"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30511" name="Скованный Молот Гигантов" type="Weapon">
+		<set name="icon" val="icon.weapon_giants_hammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="99"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="2100"/>
+		<set name="price" val="49500"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="96"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30512" name="Скованный Меч Гигантов" type="Weapon">
+		<set name="icon" val="icon.weapon_giants_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="99"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2020"/>
+		<set name="price" val="49500"/>
+		<set name="change_weaponId" val="30686"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="96"/>
+			<set order="0x08" stat="mAtk" val="47"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30513" name="Скованная Книга Крови" type="Weapon">
+		<set name="icon" val="icon.weapon_tome_of_blood_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="etc"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="68"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="570"/>
+		<set name="price" val="34000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="51"/>
+			<set order="0x08" stat="mAtk" val="52"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30514" name="Скованное Кровавое Распятие" type="Weapon">
+		<set name="icon" val="icon.weapon_crucifix_of_blood_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="etc"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="99"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="540"/>
+		<set name="price" val="49500"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="63"/>
+			<set order="0x08" stat="mAtk" val="63"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30515" name="Скованные Кастетные Клинки" type="Weapon">
+		<set name="icon" val="icon.weapon_fist_blade_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;90"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1480"/>
+		<set name="price" val="171600"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="169"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30516" name="Скованные Кастетные Клинки - (Риск. Уклонение)" type="Weapon">
+		<set name="icon" val="icon.weapon_fist_blade_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;90"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1480"/>
+		<set name="price" val="165214"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3030-3"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="169"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30517" name="Скованные Кастетные Клинки - (Риск. Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_fist_blade_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;90"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1480"/>
+		<set name="price" val="171600"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3034-3"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="169"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30518" name="Скованные Кастетные Клинки - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_fist_blade_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;90"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1480"/>
+		<set name="price" val="171600"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3037-3"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="169"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30519" name="Скованный Миротворец" type="Weapon">
+		<set name="icon" val="icon.weapon_peace_maker_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="44"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1720"/>
+		<set name="price" val="358600"/>
+		<set name="change_weaponId" val="31454"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="400"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="221"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30520" name="Скованный Миротворец - (Уклонение)" type="Weapon">
+		<set name="icon" val="icon.weapon_peace_maker_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="44"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1720"/>
+		<set name="price" val="358600"/>
+		<set name="change_weaponId" val="31455"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="400"/>
+		<set name="item_skill" val="3009-5"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="221"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30521" name="Скованный Миротворец - (Крит. Кровопускание)" type="Weapon">
+		<set name="icon" val="icon.weapon_peace_maker_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="44"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1720"/>
+		<set name="price" val="358600"/>
+		<set name="change_weaponId" val="31456"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="400"/>
+		<set name="oncrit_chance" val="41"/>
+		<set name="oncrit_skill" val="3021-5"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="221"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30522" name="Скованный Миротворец - (Скупость)" type="Weapon">
+		<set name="icon" val="icon.weapon_peace_maker_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="44"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1720"/>
+		<set name="price" val="358600"/>
+		<set name="change_weaponId" val="31457"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="400"/>
+		<set name="reduced_soulshot" val="19,1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="221"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30526" name="Скованная Острая Рапира" type="Weapon">
+		<set name="icon" val="icon.weapon_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="45"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1500"/>
+		<set name="price" val="22500"/>
+		<set name="change_weaponId" val="31253"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,3426-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="46"/>
+			<set order="0x08" stat="mAtk" val="32"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30527" name="Скованная Острая Рапира" type="Weapon">
+		<set name="icon" val="icon.weapon_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="45"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1500"/>
+		<set name="price" val="22500"/>
+		<set name="change_weaponId" val="31002"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,3426-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="46"/>
+			<set order="0x08" stat="mAtk" val="32"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30528" name="Скованная Острая Рапира" type="Weapon">
+		<set name="icon" val="icon.weapon_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="45"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1500"/>
+		<set name="price" val="22500"/>
+		<set name="change_weaponId" val="30755"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,3426-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="46"/>
+			<set order="0x08" stat="mAtk" val="32"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30529" name="Скованная Острая Рапира" type="Weapon">
+		<set name="icon" val="icon.weapon_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="45"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1500"/>
+		<set name="price" val="22500"/>
+		<set name="change_weaponId" val="31510"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,3426-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="46"/>
+			<set order="0x08" stat="mAtk" val="32"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30542" name="Скованный Фламберг" type="Weapon">
+		<set name="icon" val="icon.weapon_flamberge_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="35"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="91000"/>
+		<set name="change_weaponId" val="31050"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="130"/>
+			<set order="0x08" stat="mAtk" val="61"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30543" name="Скованный Фламберг - (Крит. Урон)" type="Weapon">
+		<set name="icon" val="icon.weapon_flamberge_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="35"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="91000"/>
+		<set name="change_weaponId" val="31051"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3023-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="130"/>
+			<set order="0x08" stat="mAtk" val="61"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30544" name="Скованный Фламберг - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_flamberge_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="35"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="91000"/>
+		<set name="change_weaponId" val="31052"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3010-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="130"/>
+			<set order="0x08" stat="mAtk" val="61"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30545" name="Скованный Фламберг - (Легкость)" type="Weapon">
+		<set name="icon" val="icon.weapon_flamberge_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="35"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="88144"/>
+		<set name="change_weaponId" val="31053"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3498-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="130"/>
+			<set order="0x08" stat="mAtk" val="61"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30566" name="Скованная Секира" type="Weapon">
+		<set name="icon" val="icon.weapon_poleaxe_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="171600"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3599-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="139"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30567" name="Скованная Секира - (Крит. Оглушение)" type="Weapon">
+		<set name="icon" val="icon.weapon_poleaxe_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="171600"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="oncrit_chance" val="31"/>
+		<set name="oncrit_skill" val="3016-3"/>
+		<set name="item_skill" val="3599-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="139"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30568" name="Скованная Секира - (Радиус Удара)" type="Weapon">
+		<set name="icon" val="icon.weapon_poleaxe_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;80;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="165214"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3599-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="139"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30569" name="Скованная Секира - (Угол Атаки)" type="Weapon">
+		<set name="icon" val="icon.weapon_poleaxe_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;180"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="171600"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3599-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="139"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30570" name="Скованный Забытый Клинок" type="Weapon">
+		<set name="icon" val="icon.weapon_forgotten_blade_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="102"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1300"/>
+		<set name="price" val="2121600"/>
+		<set name="change_weaponId" val="31348"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="281"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30571" name="Скованный Забытый Клинок - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_forgotten_blade_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="102"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1300"/>
+		<set name="price" val="2137970"/>
+		<set name="change_weaponId" val="31349"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3564-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="281"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30572" name="Скованный Забытый Клинок - (Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_forgotten_blade_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="102"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1300"/>
+		<set name="price" val="2121600"/>
+		<set name="change_weaponId" val="31350"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3013-3"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="281"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30573" name="Скованный Забытый Клинок - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_forgotten_blade_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="102"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1300"/>
+		<set name="price" val="2121600"/>
+		<set name="change_weaponId" val="31351"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3566-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="281"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30574" name="Скованная Священная Боль" type="Weapon">
+		<set name="icon" val="icon.weapon_pain_of_godness_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="56"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1900"/>
+		<set name="price" val="725200"/>
+		<set name="change_weaponId" val="30771"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="231"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30575" name="Скованная Священная Боль - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_pain_of_godness_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="56"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1900"/>
+		<set name="price" val="725200"/>
+		<set name="change_weaponId" val="30772"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3068-2"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="231"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30576" name="Скованная Священная Боль - (Крит. Урон)" type="Weapon">
+		<set name="icon" val="icon.weapon_pain_of_godness_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="56"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1900"/>
+		<set name="price" val="725200"/>
+		<set name="change_weaponId" val="30773"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3067-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="231"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30577" name="Скованная Священная Боль - (Фокусировка)" type="Weapon">
+		<set name="icon" val="icon.weapon_pain_of_godness_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="56"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1900"/>
+		<set name="price" val="725200"/>
+		<set name="change_weaponId" val="30774"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3050-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="231"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30578" name="Скованный Посох Парадии" type="Weapon">
+		<set name="icon" val="icon.weapon_paradia_staff_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1010"/>
+		<set name="price" val="171600"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="135"/>
+			<set order="0x08" stat="mAtk" val="111"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30579" name="Скованный Посох Парадии - (Магическая Регенерация)" type="Weapon">
+		<set name="icon" val="icon.weapon_paradia_staff_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1010"/>
+		<set name="price" val="165214"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="oncast_chance" val="30"/>
+		<set name="oncast_skill" val="1044-2"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="135"/>
+			<set order="0x08" stat="mAtk" val="111"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30580" name="Скованный Посох Парадии - (Ментальный Щит)" type="Weapon">
+		<set name="icon" val="icon.weapon_paradia_staff_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1010"/>
+		<set name="price" val="171600"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="oncast_chance" val="50"/>
+		<set name="oncast_skill" val="1035-3"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="135"/>
+			<set order="0x08" stat="mAtk" val="111"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30581" name="Скованный Посох Парадии - (Магические Оковы)" type="Weapon">
+		<set name="icon" val="icon.weapon_paradia_staff_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1010"/>
+		<set name="price" val="171600"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="oncast_chance" val="10"/>
+		<set name="oncast_skill" val="1201-21"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="135"/>
+			<set order="0x08" stat="mAtk" val="111"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30582" name="Скованная Гизарма" type="Weapon">
+		<set name="icon" val="icon.weapon_pike_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="45"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="2090"/>
+		<set name="price" val="24774"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3599-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="51"/>
+			<set order="0x08" stat="mAtk" val="32"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30583" name="Скованный Молот Паагрио" type="Weapon">
+		<set name="icon" val="icon.weapon_paagrio_hammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1010"/>
+		<set name="price" val="171600"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="135"/>
+			<set order="0x08" stat="mAtk" val="111"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30584" name="Скованный Молот Паагрио - (Риск. Уклонение)" type="Weapon">
+		<set name="icon" val="icon.weapon_paagrio_hammer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1010"/>
+		<set name="price" val="165214"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="item_skill" val="3031-3"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="135"/>
+			<set order="0x08" stat="mAtk" val="111"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30585" name="Скованный Молот Паагрио - (Отравление)" type="Weapon">
+		<set name="icon" val="icon.weapon_paagrio_hammer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1010"/>
+		<set name="price" val="171600"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="oncast_chance" val="7"/>
+		<set name="oncast_skill" val="1168-6"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="135"/>
+			<set order="0x08" stat="mAtk" val="111"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30586" name="Скованный Молот Паагрио - (Маг. Слабость)" type="Weapon">
+		<set name="icon" val="icon.weapon_paagrio_hammer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="66"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1010"/>
+		<set name="price" val="171600"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="oncast_chance" val="7"/>
+		<set name="oncast_skill" val="1164-9"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="135"/>
+			<set order="0x08" stat="mAtk" val="111"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30587" name="Скованный Топор Паагрио" type="Weapon">
+		<set name="icon" val="icon.weapon_paagrio_axe_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="73"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="990"/>
+		<set name="price" val="189800"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="141"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30588" name="Скованный Топор Паагрио - (Добавление Маны)" type="Weapon">
+		<set name="icon" val="icon.weapon_paagrio_axe_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="73"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="990"/>
+		<set name="price" val="189800"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="item_skill" val="3014-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="141"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30589" name="Скованный Топор Паагрио - (Маг. Слабость)" type="Weapon">
+		<set name="icon" val="icon.weapon_paagrio_axe_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="73"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="990"/>
+		<set name="price" val="189800"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="oncast_chance" val="7"/>
+		<set name="oncast_skill" val="1164-9"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="141"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30590" name="Скованный Топор Паагрио - (Хаос)" type="Weapon">
+		<set name="icon" val="icon.weapon_paagrio_axe_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="73"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="990"/>
+		<set name="price" val="183884"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="oncast_chance" val="7"/>
+		<set name="oncast_skill" val="1222-5"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="141"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30591" name="Скованный Трехгранный Кинжал" type="Weapon">
+		<set name="icon" val="icon.weapon_dirk_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="45"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1090"/>
+		<set name="price" val="24774"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="45"/>
+			<set order="0x08" stat="mAtk" val="32"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30592" name="Скованный Молот Разрушителя" type="Weapon">
+		<set name="icon" val="icon.weapon_hammer_of_destroyer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="56"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1910"/>
+		<set name="price" val="725200"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="259"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30593" name="Скованный Молот Разрушителя - (Здоровье)" type="Weapon">
+		<set name="icon" val="icon.weapon_hammer_of_destroyer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="56"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1910"/>
+		<set name="price" val="725200"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3013-3"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="259"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30594" name="Скованный Молот Разрушителя - (Ускорение)" type="Weapon">
+		<set name="icon" val="icon.weapon_hammer_of_destroyer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="56"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1910"/>
+		<set name="price" val="725200"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="3068-2"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="259"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30595" name="Скованный Молот Разрушителя - (Крит. Поглощение HP)" type="Weapon">
+		<set name="icon" val="icon.weapon_hammer_of_destroyer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="56"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1910"/>
+		<set name="price" val="725200"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="oncrit_chance" val="24"/>
+		<set name="oncrit_skill" val="3059-1"/>
+		<set name="item_skill" val="3552-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="259"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30596" name="Скованные Слезы Чародея" type="Weapon">
+		<set name="icon" val="icon.weapon_tears_of_wizard_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="67"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1350"/>
+		<set name="price" val="546050"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="155"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30597" name="Скованные Слезы Чародея - (Проницательность)" type="Weapon">
+		<set name="icon" val="icon.weapon_tears_of_wizard_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="67"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1350"/>
+		<set name="price" val="546050"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="item_skill" val="3047-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="155"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30598" name="Скованные Слезы Чародея - (Маг. Сила)" type="Weapon">
+		<set name="icon" val="icon.weapon_tears_of_wizard_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="67"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1350"/>
+		<set name="price" val="504570"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="item_skill" val="3077-6"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="155"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30599" name="Скованные Слезы Чародея - (Конверсия)" type="Weapon">
+		<set name="icon" val="icon.weapon_tears_of_wizard_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="67"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1350"/>
+		<set name="price" val="546050"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<set name="item_skill" val="3048-1"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="155"/>
+			<set order="0x08" stat="mAtk" val="132"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+</list>

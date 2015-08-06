@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="20600" name="Посох Душ - (Танец Тени - 7 дней)" type="Weapon">
+		<set name="icon" val="BranchSys.icon.br_invokespirit_stick_a_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21089-1"/>
+		<set name="time" val="10080"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1"/>
+			<set order="0x08" stat="mAtk" val="1"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20601" name="Шляпа Серой Души - (Душа Феникса - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_comfortspirit_hat_a_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21090-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20602" name="Серебряная Бумага Души - Ивент" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_ghost_silverpaper_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22099-1"/>
+	</item>
+	<item id="20603" name="Благовоние - Ивент" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_ghost_incense_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22100-1"/>
+	</item>
+	<item id="20604" name="Первичное Свидетельство - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_royal_membership_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="20605" name="Свидетельство - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_royal_membership_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="20606" name="Последнее Свидетельство - Ивент - (8 часов)" type="EtcItem">
+		<set name="icon" val="icon.etc_royal_membership_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_questitem" val="true"/>
+		<set name="time" val="480"/>
+	</item>
+	<item id="20607" name="Упаковка: Гарнитура - (Тема: Город)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20613,1,1,100"/>
+	</item>
+	<item id="20608" name="Упаковка: Гарнитура - (Тема: Герой)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20614,1,1,100"/>
+	</item>
+	<item id="20609" name="Упаковка: Гарнитура - (Тема: Парк)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20615,1,1,100"/>
+	</item>
+	<item id="20610" name="Упаковка: Гарнитура (7 дн.) - (Тема: Город. Сила души бессмертного Путешественника)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20616,1,1,100"/>
+	</item>
+	<item id="20611" name="Упаковка: Гарнитура (7 дн.) - (Тема: Герой. Сила души могучего Воина)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20617,1,1,100"/>
+	</item>
+	<item id="20612" name="Упаковка: Гарнитура (7 дн.) - (Тема: Парк. Сила мудрейшего Мистика)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20618,1,1,100"/>
+	</item>
+	<item id="20613" name="Гарнитура - (Тема: Город)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_headphone_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="item_skill" val="21092-1"/>
+	</item>
+	<item id="20614" name="Гарнитура - (Тема: Герой)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_headphone_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="item_skill" val="21093-1"/>
+	</item>
+	<item id="20615" name="Гарнитура - (Тема: Парк)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_headphone_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="item_skill" val="21094-1"/>
+	</item>
+	<item id="20616" name="Гарнитура - (Тема: Город. Сила души бессмертного Путешественника - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_headphone_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="item_skill" val="21092-1;21111-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20617" name="Гарнитура - (Тема: Герой. Сила души могучего Воина - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_headphone_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="item_skill" val="21093-1;21112-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20618" name="Гарнитура - (Тема: Парк. Сила мудрейшего Мистика - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_headphone_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="item_skill" val="21094-1;21113-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20619" name="Упаковка: Агатион Вега (24 ч.) - (Звук Свистка)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20621,1,1,100"/>
+	</item>
+	<item id="20620" name="Упаковка: Агатион Вега (3 дн.) - (Звук Свистка)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20622,1,1,100"/>
+	</item>
+	<item id="20621" name="Браслет Печати Агатиона - Вега - (Звук Свистка - 24 часа)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_womanweaver_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21091-1;23078-1"/>
+		<set name="time" val="1440"/>
+	</item>
+	<item id="20622" name="Браслет Печати Агатиона - Вега - (Звук Свистка - 3 дня)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_womanweaver_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21091-1;23078-1"/>
+		<set name="time" val="4320"/>
+	</item>
+	<item id="20623" name="Упаковка: Серебряная Бумага/Благовоние Души" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="capsuled_items" val="20602,100,100,100;20603,100,100,100"/>
+	</item>
+	<item id="20624" name="Упаковка: Благовоние 100 ед." type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="capsuled_items" val="20603,100,100,100"/>
+	</item>
+	<item id="20625" name="Упаковка: Шляпа Серой Души (7 дн.) - (Воскрешение)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20626,1,1,100"/>
+	</item>
+	<item id="20626" name="Шляпа Серой Души - (Воскрешение - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_comfortspirit_hat_a_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21095-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20627" name="Упаковка: Браслет Любви (7 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20628,1,1,100"/>
+	</item>
+	<item id="20628" name="Браслет Любви - (7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_ring_of_friendship_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21097-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20629" name="Сундук Любви - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22101-1"/>
+	</item>
+	<item id="20630" name="Сундук Магической Души" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_ghost_magicalbox_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="elixir"/>
+		<set name="material" val="fish"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22102-1"/>
+	</item>
+	<item id="20631" name="Упаковка: Шляпа Арбуз (7 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20633,1,1,100"/>
+	</item>
+	<item id="20632" name="Упаковка: Шляпа Арбуз" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20634,1,1,100"/>
+	</item>
+	<item id="20633" name="Шляпа Арбуз - (Арбузная Свежесть - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_watermelon_cap_a_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21096-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20634" name="Шляпа Арбуз" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_watermelon_cap_a_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+	</item>
+	<item id="20635" name="Упаковка: Снаряжение для Новичков (Без ранга)" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="capsuled_items" val="8973,1,1,100;8977,1,1,100;9030,1,1,100;9031,1,1,100;9032,1,1,100;9033,1,1,100;9034,1,1,100;9035,1,1,100;21093,3,3,100;21094,3,3,100"/>
+	</item>
+	<item id="20636" name="Упаковка: Снаряжение для Воинов (Ранг D)" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="capsuled_items" val="20639,1,1,100;20640,1,1,100;20641,1,1,100;20642,1,1,100;20643,1,1,100;20644,1,1,100;20645,1,1,100;20646,1,1,100;20647,1,1,100;20648,1,1,100"/>
+	</item>
+	<item id="20637" name="Упаковка: Снаряжение для Магов (Ранг D)" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="capsuled_items" val="20649,1,1,100;20650,1,1,100;20651,1,1,100;20652,1,1,100;20653,1,1,100;20645,1,1,100"/>
+	</item>
+	<item id="20638" name="Упаковка: Поддержка Новичков" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="capsuled_items" val="20415,1,1,100;21091,1,1,100;21092,1,1,100"/>
+	</item>
+	<item id="20639" name="Обычный Предмет - Длинный Меч Эльфов" type="Weapon">
+		<set name="icon" val="icon.weapon_elven_long_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="100"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="92"/>
+			<set order="0x08" stat="mAtk" val="54"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="20640" name="Обычный Предмет - Легкий Лук" type="Weapon">
+		<set name="icon" val="icon.weapon_cyclone_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="100"/>
+		<set name="soulshots" val="10"/>
+		<set name="spiritshots" val="3"/>
+		<set name="mp_consume" val="2"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="191"/>
+			<set order="0x08" stat="mAtk" val="54"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="20641" name="Обычный Предмет - Меч Рыцаря*Меч Эльфов" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="100"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="107"/>
+			<set order="0x08" stat="mAtk" val="51"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20642" name="Обычный Предмет - Мифриловые Перчатки" type="Armor">
+		<set name="icon" val="icon.armor_t46_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="29"/>
+		</for>
+	</item>
+	<item id="20643" name="Обычный Предмет - Латные Сапоги" type="Armor">
+		<set name="icon" val="icon.armor_t46_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="29"/>
+		</for>
+	</item>
+	<item id="20644" name="Обычный Предмет - Латный Щит" type="Armor">
+		<set name="icon" val="icon.shield_plate_shield_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="154"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="20645" name="Обычный Предмет - Латный Шлем" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+		</for>
+	</item>
+	<item id="20646" name="Обычный Предмет - Латные Набедренники" type="Armor">
+		<set name="icon" val="icon.armor_t46_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="legs"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="70"/>
+		</for>
+	</item>
+	<item id="20647" name="Обычный Предмет - Полулаты" type="Armor">
+		<set name="icon" val="icon.armor_t46_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="chest"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="111"/>
+		</for>
+	</item>
+	<item id="20648" name="Обычный Предмет - Рубаха из Кожи Саламандры" type="Armor">
+		<set name="icon" val="icon.armor_t45_ul_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="onepiece"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="136"/>
+		</for>
+	</item>
+	<item id="20649" name="Обычный Предмет - Посох Призрака" type="Weapon">
+		<set name="icon" val="icon.weapon_ghost_staff_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;46;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="100"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="90"/>
+			<set order="0x08" stat="mAtk" val="79"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="20650" name="Обычный Предмет - Мифриловая Туника" type="Armor">
+		<set name="icon" val="icon.armor_t51_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="52"/>
+			<add order="0x40" stat="maxMp" val="169"/>
+		</for>
+	</item>
+	<item id="20651" name="Обычный Предмет - Мифриловые Штаны" type="Armor">
+		<set name="icon" val="icon.armor_t51_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="32"/>
+			<add order="0x40" stat="maxMp" val="105"/>
+		</for>
+	</item>
+	<item id="20652" name="Обычный Предмет - Сапоги из Кожи Саламандры" type="Armor">
+		<set name="icon" val="icon.armor_t45_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="29"/>
+		</for>
+	</item>
+	<item id="20653" name="Обычный Предмет - Рукавицы Огра" type="Armor">
+		<set name="icon" val="icon.armor_t45_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="29"/>
+		</for>
+	</item>
+	<item id="20654" name="Браслет Печати Агатиона - Чончон" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_luckygirl_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21105-1;23079-1"/>
+	</item>
+	<item id="20655" name="Браслет Печати Агатиона - Чончон - (Сила души отважного Воина: вода - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_luckygirl_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21105-1;23080-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20656" name="Браслет Печати Агатиона - Бум" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_luckyboy_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21106-1;23081-1"/>
+	</item>
+	<item id="20657" name="Браслет Печати Агатиона - Бум - (Сила души великого Мистика: вода - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_luckyboy_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21106-1;23082-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20658" name="Браслет Печати Агатиона - Танцующий ребенок " type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_dancingchild_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21107-1;23083-1"/>
+	</item>
+	<item id="20659" name="Браслет Печати Агатиона - Танцующий ребенок  - (Сила души выдающегося Путешественника:  вода - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_dancingchild_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21107-1;23084-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20660" name="Браслет Печати Агатиона - Древнего Героя" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_sunwukong_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21108-1;23085-1"/>
+	</item>
+	<item id="20661" name="Браслет Печати Агатиона - Древнего Героя - (Сила души великого Мистика: ветер - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_sunwukong_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21108-1;23086-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20662" name="Браслет Печати Агатиона - Утанка" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_uthanka_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21109-1;23087-1"/>
+	</item>
+	<item id="20663" name="Браслет Печати Агатиона - Утанка - (Сила души отважного Воина: ветер - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_uthanka_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21109-1;23088-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20664" name="Браслет Печати Агатиона - Агатион Бонус В" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_bonus_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21110-1;23089-1"/>
+	</item>
+	<item id="20665" name="Браслет Печати Агатиона - Агатион Бонус В - (Сила души выдающегося Путешественника:  ветер - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_bonus_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;21110-1;23090-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20666" name="Головной убор Валькирии" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_valkyrie_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20667" name="Головной убор Валькирии - (Сила души выдающегося Путешественника:  огонь - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_valkyrie_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21098-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20668" name="Маска Тигра" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_tiger_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20669" name="Маска Тигра - (Сила души отважного Воина: огонь - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_tiger_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21099-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20670" name="Ободок" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_maid_hairband_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20671" name="Ободок - (Сила души великого Мистика: огонь - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_maid_hairband_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21100-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20672" name="Шапка Детеныша Панды" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_babypanda_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20673" name="Шапка Детеныша Панды - (Благ. Телепорт - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_babypanda_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21101-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20674" name="Шапка Панды Папы" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_kungfupanda_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20675" name="Шапка Панды Папы - (Сила души выдающегося Путешественника:  вода - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_kungfupanda_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21103-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20676" name="Шапка Панды Мамы" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_sexypanda_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20677" name="Шапка Панды Мамы - (Благ. Воскрешение - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_sexypanda_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21102-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20678" name="Головной убор Стражника" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_gatekeeper_of_hat_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_freightable" val="true"/>
+	</item>
+	<item id="20679" name="Головной убор Стражника - (Инстинкт Разрушения - 7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_gatekeeper_of_hat_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="item_skill" val="21104-1"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="20680" name="Упаковка: Агатион Чончон" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20654,1,1,100"/>
+	</item>
+	<item id="20681" name="Упаковка: Агатион Чончон на 7 дн. - (Сила души отважного Воина)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20655,1,1,100"/>
+	</item>
+	<item id="20682" name="Упаковка: Агатион Бум" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20656,1,1,100"/>
+	</item>
+	<item id="20683" name="Упаковка: Агатион Бум на 7 дн. - (Сила души великого Мистика)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20657,1,1,100"/>
+	</item>
+	<item id="20684" name="Упаковка: Агатион Танцующий ребенок" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20658,1,1,100"/>
+	</item>
+	<item id="20685" name="Упаковка: Агатион Танцующий ребенок на 7 дн. - (Сила души выдающегося Путешественника)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20659,1,1,100"/>
+	</item>
+	<item id="20686" name="Упаковка: Агатион Древнего Героя" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20660,1,1,100"/>
+	</item>
+	<item id="20687" name="Упаковка: Агатион Древнего Героя на 7 дн. - (Сила души великого Мистика)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20661,1,1,100"/>
+	</item>
+	<item id="20688" name="Упаковка: Агатион Утанка " type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20662,1,1,100"/>
+	</item>
+	<item id="20689" name="Упаковка: Агатион Утанка на 7 дн. - (Сила души отважного Воина)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20663,1,1,100"/>
+	</item>
+	<item id="20690" name="Упаковка: Агатион Бонус В" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20664,1,1,100"/>
+	</item>
+	<item id="20691" name="Упаковка: Агатион Бонус В на 7 дн. - (Сила души выдающегося Путешественника)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20665,1,1,100"/>
+	</item>
+	<item id="20692" name="Упаковка: Головной Убор Валькирии " type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20666,1,1,100"/>
+	</item>
+	<item id="20693" name="Упаковка: Головной Убор Валькирии 7 дн. - (Сила души выдающегося Путешественника)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20667,1,1,100"/>
+	</item>
+	<item id="20694" name="Упаковка: Маска Тигра" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20668,1,1,100"/>
+	</item>
+	<item id="20695" name="Упаковка: Маска Тигра 7 дн. - (Сила души отважного Воина)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20669,1,1,100"/>
+	</item>
+	<item id="20696" name="Упаковка: Ободок" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20670,1,1,100"/>
+	</item>
+	<item id="20697" name="Упаковка: Ободок на 7 дн. - (Сила души великого Мистика)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20671,1,1,100"/>
+	</item>
+	<item id="20698" name="Упаковка: Шапка Детеныша Панды " type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20672,1,1,100"/>
+	</item>
+	<item id="20699" name="Упаковка: Шапка Детеныша Панды 7 дн. - (Благ. Телепорт)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_premium" val="true"/>
+		<set name="is_freightable" val="true"/>
+		<set name="capsuled_items" val="20673,1,1,100"/>
+	</item>
+</list>

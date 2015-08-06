@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+		<xs:element name="list" type="listType"/>
+		<xs:complexType name="listType">
+				<xs:sequence>
+						<xs:element type="classtemplateType" name="classtemplate"/>
+				</xs:sequence>
+		</xs:complexType>
+		<xs:complexType name="classtemplateType">
+				<xs:sequence>
+						<xs:element type="lvlupvaluesType" name="lvlupvalues"/>
+				</xs:sequence>
+				<xs:attribute type="xs:string" name="name"/>
+				<xs:attribute type="xs:string" name="serverName"/>
+				<xs:attribute type="xs:string" name="classId"/>
+				<xs:attribute type="xs:string" name="parentClassId"/>
+				<xs:attribute type="xs:string" name="classLevel"/>
+				<xs:attribute type="xs:string" name="raceId"/>
+		</xs:complexType>
+		<xs:complexType name="lvlupvaluesType">
+				<xs:sequence>
+						<xs:element type="lvl_addType" name="lvl_add" maxOccurs="unbounded" minOccurs="0"/>
+				</xs:sequence>
+		</xs:complexType>
+		<xs:complexType name="lvl_addType">
+				<xs:simpleContent>
+						<xs:extension base="xs:string">
+								<xs:attribute type="xs:string" name="lvl" use="optional"/>
+								<xs:attribute type="xs:string" name="hp" use="optional"/>
+								<xs:attribute type="xs:string" name="mp" use="optional"/>
+								<xs:attribute type="xs:string" name="cp" use="optional"/>
+						</xs:extension>
+				</xs:simpleContent>
+		</xs:complexType>
+</xs:schema>

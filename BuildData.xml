@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BuildData" default="dist" basedir=".">
+	<target name="dist">
+		<zip
+			destfile="Build/Data.zip"
+			basedir="./Data"
+			excludes="**/*.iml,**/*.zip,**/*.txt,**/*.log"
+			/>
+	</target>
+</project>

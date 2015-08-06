@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="34833" name="Афроамериканский Парик" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="34837" name="Магическая Веревка - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_braided_hemp_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="6000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34838" name="Компактная Упаковка: Заряды Души - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="200"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22448-5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34839" name="Компактная Упаковка: Заряды Духа - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="200"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22449-10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34840" name="Компактная Упаковка: Благословенные Заряды Духа - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="200"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="22450-5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34861" name="Мешочек с Усилителем и Материалами - R" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_gold_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="17527,1,1,20;17526,1,1,10;9555,1,1,10;9553,1,1,10;9554,1,1,10;9558,1,1,10;9557,1,1,10;9556,1,1,10;19517,1,1,1;19515,1,1,1;19516,1,1,1;19518,1,1,1;19308,1,1,1;19521,1,1,1;19519,1,1,1;19520,1,1,1;19518,1,1,1;19307,1,1,1"/>
+	</item>
+	<item id="34869" name="Браслет Печати Агатиона - Дух Пламени" type="Armor">
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="3267-1;9472-1;15053-1;15054-1"/>
+	</item>
+	<item id="34871" name="Пояс Бессмертия с Плохой Магической Заколкой - (Восстановление HP)" type="Armor">
+		<set name="icon" val="icon.r1_belt_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13231-4"/>
+		<set name="crystal_count" val="21"/>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="34872" name="Пояс Бессмертия с Нормальной Магической Заколкой - (Восстановление HP)" type="Armor">
+		<set name="icon" val="icon.r1_belt_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13231-4"/>
+		<set name="crystal_count" val="21"/>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="34873" name="Пояс Бессмертия с Хорошей Магической Заколкой - (Восстановление HP)" type="Armor">
+		<set name="icon" val="icon.r1_belt_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13231-4"/>
+		<set name="crystal_count" val="21"/>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="34874" name="Пояс Бессмертия с Совершенной Магической Заколкой - (Восстановление HP)" type="Armor">
+		<set name="icon" val="icon.r1_belt_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13231-4"/>
+		<set name="crystal_count" val="21"/>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="34875" name="Пояс Бессмертия с Плохой Магической Заколкой - (Восстановление MP)" type="Armor">
+		<set name="icon" val="icon.r1_belt_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13231-4"/>
+		<set name="crystal_count" val="21"/>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="34876" name="Пояс Бессмертия с Нормальной Магической Заколкой - (Восстановление MP)" type="Armor">
+		<set name="icon" val="icon.r1_belt_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="bodypart" val="waist"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13231-4"/>
+		<set name="crystal_count" val="21"/>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="34877" name="Пояс Бессмертия с Хорошей Магической Заколкой - (Восстановление MP)" type="Armor">
+		<set name="icon" val="icon.r1_belt_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13231-4"/>
+		<set name="crystal_count" val="21"/>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="34878" name="Пояс Бессмертия с Совершенной Магической Заколкой - (Восстановление MP)" type="Armor">
+		<set name="icon" val="icon.r1_belt_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13231-4"/>
+		<set name="crystal_count" val="21"/>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="34883" name="Бутыль с Душой Истхины" type="EtcItem">
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="true"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34884" name="Бутыль с Душой Октависа" type="EtcItem">
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i06"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="true"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34886" name="Фрагмент Пророчества" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_red_i00"/>
+		<set name="material" val="leather"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="34887" name="Бутылка для Воды из Источника" type="EtcItem">
+		<set name="icon" val="icon.etc_hot_spring_glass_bottle_i00"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="20"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9443-1"/>
+		<cond addName="1" msgId="113">
+			<player insideZoneId="241402"/>
+		</cond>
+	</item>
+	<item id="34888" name="Бутылка с Водой из Источника" type="EtcItem">
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i05"/>
+		<set name="material" val="leather"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="34889" name="Толстая Кожа" type="EtcItem">
+		<set name="icon" val="icon.etc_leather_brown_i00"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="34890" name="Лопата" type="EtcItem">
+		<set name="icon" val="icon.etc_trowel_i00"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="20"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9442-1"/>
+		<cond msgId="109">
+			<target npcId="33735"/>
+		</cond>
+	</item>
+	<item id="34891" name="Сила Огня" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_red_i00"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="34892" name="Отвердевшая Сила Воды" type="EtcItem">
+		<set name="icon" val="icon.etc_hard_fossil_i00"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="34896" name="Ушки Кролика - (Кампания)" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair2"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="13381-1"/>
+	</item>
+	<item id="34897" name="Нимб Ангела - (Кампания)" type="Armor">
+		<set name="icon" val="icon.Accessary_angel_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="13382-1"/>
+	</item>
+	<item id="34831" name="Кольцо Большой Тыквы - Маг - (Ивент)" type="Armor">
+		<set name="icon" val="icon.accessory_ring_of_gourd_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="13370-1"/>
+		<for>
+			<add order="0x10" stat="mDef" val="62"/>
+			<add order="0x40" stat="maxMp" val="26"/>
+		</for>
+	</item>
+	<item id="34832" name="Серьга Большой Тыквы - Маг - (Ивент)" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_gourd_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="13372-1"/>
+		<for>
+			<add order="0x10" stat="mDef" val="92"/>
+			<add order="0x40" stat="maxMp" val="40"/>
+		</for>
+	</item>
+	<item id="34848" name="Диадема Землетрясения (60 дн.)" type="Armor">
+		<set name="icon" val="icon.accessory_earthquake_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="item_skill" val="13374-1"/>
+		<set name="time" val="86400"/>
+	</item>
+	<item id="34860" name="Улучшенный Браслет Октависа" type="Armor">
+		<set name="icon" val="icon.octavis_bangel"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="item_skill" val="13379-1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<add order="0x40" stat="maxMp" val="216"/>
+		</for>
+	</item>
+	<item id="34859" name="Улучшенный Браслет Истхины" type="Armor">
+		<set name="icon" val="icon.istina_bangel"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="item_skill" val="13378-1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<add order="0x40" stat="maxMp" val="216"/>
+		</for>
+	</item>
+	<item id="34870" name="Упаковка: Сертификат Подопечного" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="33800,1,1,100;33801,1,1,100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34895" name="Книга Заклинаний - Флаг Клана" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_assistance_i00"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="20"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="7114-1"/>
+		<cond addName="1" msgId="113">
+			<player level="75"/>
+		</cond>
+		<cond msgId="1518">
+			<player pledgeClass="10"/>
+		</cond>
+	</item>
+	<item id="34898" name="Доказательство Выжившего" type="EtcItem">
+		<set name="icon" val="icon.etc_fire_rune_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34841" name="Рецепт - Компактная Упаковка: Заряды Души Ранг R (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1163"/>
+		<set name="price" val="1350000"/>
+	</item>
+	<item id="34842" name="Рецепт - Компактная Упаковка: Заряды Духа Ранг R (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1164"/>
+	</item>
+	<item id="34843" name="Рецепт - Компактная Упаковка: Благословенные Заряды Духа Ранг R (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1165"/>
+		<set name="price" val="1350000"/>
+	</item>
+	<item id="34834" name="Афроамериканский Парик - (7 дней)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="time" val="10080"/>
+	</item>
+	<item id="34800" name="Кристалл Тьмы - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_unholy_crystal_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34801" name="Кристалл Святости - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_holy_crystal_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34811" name="Сундук Зарядов Души - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34812" name="Сундук Благ. Зарядов Духа - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34813" name="Сундук Руды - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34814" name="Сундук Кристаллов - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34815" name="Коробка со Свитками Модификации Доспехов - S - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34816" name="Коробка со Свитками Модификации Доспехов - R - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34817" name="Коробка со Свитками Модификации Оружия - S - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34818" name="Коробка со Свитками Модификации Оружия - R - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34819" name="Сундук с Кольцом Большой Тыквы - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34820" name="Сундук с Серьгой Большой Тыквы - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34821" name="Сундук с Ожерельем Большой Тыквы - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34822" name="Сундук с Аксессуарами Большой Тыквы - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34823" name="Сундук с Редким Кристаллом Души - Ранг R - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34824" name="Сундук с Редким Кристаллом Души - Ранг R95 - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34825" name="Сундук с Редким Кристаллом Души - Ранг R99 - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34826" name="Сундук с Талисманом - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34827" name="Коробка Эликсиров - Ранг S - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34828" name="Коробка Эликсиров - Ранг R - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34829" name="Коробка со Свитком Благословения - Ранг R - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34830" name="Упаковка: Комплект Усиления (R) " type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34835" name="Упаковка: Афроамериканский Парик" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34836" name="Упаковка: Афроамериканский Парик 7 дн." type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34844" name="Настойка Сомнения" type="EtcItem">
+		<set name="icon" val=""/>
+		<set name="material" val="paper"/>
+	</item>
+	<item id="34845" name="Настойка Сомнения" type="EtcItem">
+		<set name="icon" val=""/>
+		<set name="material" val="paper"/>
+	</item>
+	<item id="34846" name="Подарок Барда" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34847" name="Медовый Напиток Мафр - 2 часа" type="EtcItem">
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="1"/>
+		<set name="time" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34849" name="Таинственная Настойка Силы" type="EtcItem">
+		<set name="icon" val="icon.etc_warrior_set_i00"/>
+		<set name="material" val="paper"/>
+	</item>
+	<item id="34850" name="Таинственная Настойка Магии" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_set_i00"/>
+		<set name="material" val="paper"/>
+	</item>
+	<item id="34851" name="Фрагмент Кубика Доспехов - R" type="EtcItem">
+		<set name="icon" val="Branchsys2.icon.event_cubic_a_piece_i01"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34852" name="Фрагмент Кубика Оружия - R" type="EtcItem">
+		<set name="icon" val="Branchsys2.icon.event_cubic_w_piece_i01"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34853" name="Сверкающий Фрагмент Кубика Доспехов – R" type="EtcItem">
+		<set name="icon" val="Branchsys2.icon.shine_cubic_a_piece_i01"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34854" name="Сверкающий Фрагмент Кубика Оружия – R" type="EtcItem">
+		<set name="icon" val="Branchsys2.icon.shine_cubic_w_piece_i01"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34855" name="Сундук Реан" type="EtcItem">
+		<set name="icon" val="icon.present_of_destination_event"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34856" name="Музыкальный Кристалл: Тема - Любовь - (Кампания)" type="EtcItem">
+		<set name="icon" val="icon.etc_echo_crystal_i02"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34857" name="Музыкальный Кристалл: Тема - Фестиваль - (Кампания)" type="EtcItem">
+		<set name="icon" val="icon.etc_echo_crystal_i04"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34858" name="Музыкальный Кристалл: Тема - Праздник - (Кампания)" type="EtcItem">
+		<set name="icon" val="icon.etc_echo_crystal_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34862" name="Яркое Бумажное Украшение" type="EtcItem">
+		<set name="icon" val="icon.etc_plan_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34863" name="Зараженное Яйцо Драко" type="EtcItem">
+		<set name="icon" val="icon.etc_ev_triol_egg"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34864" name="Малое Яйцо Драко" type="EtcItem">
+		<set name="icon" val="icon.etc_ev_small_egg"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34865" name="Большое Яйцо Драко" type="EtcItem">
+		<set name="icon" val="icon.etc_ev_big_egg"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34866" name="Скорлупа" type="EtcItem">
+		<set name="icon" val="icon.etc_ev_broken_egg"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34867" name="Подарок Драко" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i03"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34868" name="Сверкающий Подарок Драко" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34879" name="Плохая Магическая Заколка - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_rune_clip_i00"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="20"/>
+	</item>
+	<item id="34880" name="Нормальная Магическая Заколка - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_rune_clip_i00"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="20"/>
+	</item>
+	<item id="34881" name="Хорошая Магическая Заколка - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_rune_clip_i01"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="20"/>
+	</item>
+	<item id="34882" name="Совершенная Магическая Заколка - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_rune_clip_i02"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="20"/>
+	</item>
+	<item id="34885" name="Упаковка: Диадема Землетрясения (60 дн.)" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="34893" name="Семя Лекарственного Растения Помощи" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="material" val="leather"/>
+	</item>
+	<item id="34894" name="Следы Лекарственного Растения" type="EtcItem">
+		<set name="icon" val="icon.etc_powder_orange_i00"/>
+		<set name="material" val="leather"/>
+	</item>
+	<item id="34899" name="Ключ Тьмы" type="EtcItem">
+		<set name="icon" val="icon.etc_dark_key_i00"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+</list>

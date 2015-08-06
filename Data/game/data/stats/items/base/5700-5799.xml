@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="5700" name="Семя: Новый Большой Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5701" name="Семя: Новый Красный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="40"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5702" name="Семя: Новый Морской Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed2"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5703" name="Амулет Удачи (Без Ранга)" type="EtcItem">
+		<set name="icon" val="icon.etc_charm_of_luck_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="price" val="100"/>
+		<set name="reuse_delay" val="10000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2168-1"/>
+	</item>
+	<item id="5704" name="Кешанберк*Кешанберк" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1464"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2080"/>
+		<set name="price" val="18300000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="259"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="5705" name="Кешанберк*Дамаскус" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1485"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2080"/>
+		<set name="price" val="18567400"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,3013-3"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="275"/>
+			<set order="0x08" stat="mAtk" val="112"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="5706" name="Дамаскус*Дамаскус" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1659"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2080"/>
+		<set name="price" val="20741000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,3046-20"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="282"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="5707" name="Записи Семи Печатей" type="EtcItem">
+		<set name="icon" val="icon.etc_ssq_scroll_i00"/>
+		<set name="default_action" val="show_ssq_status"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="price" val="500"/>
+		<set name="handler" val="SevenSignsRecord"/>
+	</item>
+	<item id="5708" name="Сертификат Лорда" type="EtcItem">
+		<set name="icon" val="icon.etc_permit_card_i00"/>
+		<set name="etcitem_type" val="ticket_of_lord"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+	</item>
+	<item id="5709" name="Запечатанные Рукавицы Зубея" type="Armor">
+		<set name="icon" val="icon.armor_t64_g_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="69"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="590"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5710" name="Рукавицы Зубея - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t64_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="53"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="590"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5711" name="Рукавицы Зубея - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t65_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="53"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="590"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5712" name="Рукавицы Зубея - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t56_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="53"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="590"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5713" name="Запечатанные Перчатки Авадона" type="Armor">
+		<set name="icon" val="icon.armor_t66_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="69"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="590"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5714" name="Перчатки Авадона - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t66_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="53"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="590"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5715" name="Перчатки Авадона - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t67_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="53"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="590"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5716" name="Перчатки Авадона - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t59_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="53"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="590"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5717" name="Запечатанные Перчатки Синего Волка" type="Armor">
+		<set name="icon" val="icon.armor_t68_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="107"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="590"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5718" name="Перчатки Синего Волка - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t68_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="83"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="590"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5719" name="Перчатки Синего Волка - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t69_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="83"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="590"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5720" name="Перчатки Синего Волка - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t70_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="83"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="590"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5721" name="Запечатанные Перчатки Рока" type="Armor">
+		<set name="icon" val="icon.armor_t71_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="107"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5722" name="Перчатки Рока - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t71_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="83"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5723" name="Перчатки Рока - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t72_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="83"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5724" name="Перчатки Рока - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t73_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="83"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5725" name="Запечатанные Сапоги Зубея" type="Armor">
+		<set name="icon" val="icon.armor_t64_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="69"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1180"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5726" name="Сапоги Зубея - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t64_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="53"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1180"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5727" name="Сапоги Зубея - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t65_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="53"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1180"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5728" name="Сапоги Зубея - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t56_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="53"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1180"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5729" name="Запечатанные Сапоги Авадона" type="Armor">
+		<set name="icon" val="icon.armor_t66_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="69"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1180"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5730" name="Сапоги Авадона - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t66_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="53"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1180"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5731" name="Сапоги Авадона - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t67_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="53"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1180"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5732" name="Сапоги Авадона - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t59_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="53"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1180"/>
+		<set name="price" val="399100"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5733" name="Запечатанные Сапоги Синего Волка" type="Armor">
+		<set name="icon" val="icon.armor_t68_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="107"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1130"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5734" name="Сапоги Синего Волка - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t68_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="83"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1130"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5735" name="Сапоги Синего Волка - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t69_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="83"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1130"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5736" name="Сапоги Синего Волка - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t70_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="83"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1130"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5737" name="Запечатанные Сапоги Рока" type="Armor">
+		<set name="icon" val="icon.armor_t71_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="107"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1130"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5738" name="Сапоги Рока - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t71_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="83"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1130"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5739" name="Сапоги Рока - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t72_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="83"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1130"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5740" name="Сапоги Рока - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t73_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="83"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1130"/>
+		<set name="price" val="618800"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5741" name="Рецепт - Запечатанные Рукавицы Зубея (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5742" name="Рецепт - Запечатанные Рукавицы Зубея (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5743" name="Рецепт - Запечатанные Перчатки Авадона (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5744" name="Рецепт - Запечатанные Перчатки Авадона (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5745" name="Плохой Рецепт - Запечатанные Перчатки Синего Волка (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5746" name="Рецепт - Запечатанные Перчатки Синего Волка (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5747" name="Рецепт - Запечатанные Перчатки Рока (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5748" name="Рецепт - Запечатанные Перчатки Рока (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5749" name="Рецепт - Запечатанные Сапоги Зубея (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5750" name="Рецепт - Запечатанные Сапоги Зубея (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5751" name="Рецепт - Запечатанные Сапоги Авадона (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5752" name="Рецепт - Запечатанные Сапоги Авадона (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5753" name="Рецепт - Запечатанные Сапоги Синего Волка (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5754" name="Рецепт - Запечатанные Сапоги Синего Волка (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5755" name="Рецепт - Запечатанные Сапоги Рока (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5756" name="Рецепт - Запечатанные Сапоги Рока (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="17700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5757" name="Плохая Часть Запечатанных Рукавиц Зубея" type="EtcItem">
+		<set name="icon" val="icon.etc_plate_silver_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="price" val="3842"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5758" name="Часть Запечатанных Перчаток Авадона" type="EtcItem">
+		<set name="icon" val="icon.etc_plate_silver_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="price" val="3842"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5759" name="Материя Запечатанных Перчаток Синего Волка" type="EtcItem">
+		<set name="icon" val="icon.etc_leather_gray_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="price" val="4454"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5760" name="Часть Запечатанных Перчаток Рока" type="EtcItem">
+		<set name="icon" val="icon.etc_plate_silver_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="price" val="4454"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5761" name="Плохая Модель Запечатанных Сапог Зубея" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_brown_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="price" val="3842"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5762" name="Модель Запечатанных Сапог Авадона" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="price" val="3842"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5763" name="Модель Запечатанных Сапог Синего Волка" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="price" val="4454"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5764" name="Модель Запечатанных Сапог Рока" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="price" val="4454"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5765" name="Перчатки Кристалла Тьмы - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t74_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<set name="price" val="890000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5766" name="Перчатки Кристалла Тьмы - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t75_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<set name="price" val="890000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5767" name="Перчатки Кристалла Тьмы - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t76_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<set name="price" val="890000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5768" name="Перчатки Таллума - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t77_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<set name="price" val="890000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5769" name="Перчатки Таллума - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t78_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<set name="price" val="890000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5770" name="Перчатки Таллума - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t79_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<set name="price" val="890000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5771" name="Рукавицы Кошмаров - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t80_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="550"/>
+		<set name="price" val="1355000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5772" name="Рукавицы Кошмаров - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t81_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="550"/>
+		<set name="price" val="1355000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5773" name="Рукавицы Кошмаров - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t82_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="550"/>
+		<set name="price" val="1355000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5774" name="Рукавицы Величия - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t83_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="540"/>
+		<set name="price" val="1355000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5775" name="Рукавицы Величия - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t84_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="540"/>
+		<set name="price" val="1355000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5776" name="Рукавицы Величия - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t85_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="540"/>
+		<set name="price" val="1355000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5777" name="Сапоги Кристалла Тьмы - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t74_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="1110"/>
+		<set name="price" val="890000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5778" name="Сапоги Кристалла Тьмы - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t75_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="1110"/>
+		<set name="price" val="890000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5779" name="Сапоги Кристалла Тьмы - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t76_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="1110"/>
+		<set name="price" val="890000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5780" name="Сапоги Таллума - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t77_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1130"/>
+		<set name="price" val="890000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5781" name="Сапоги Таллума - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t78_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1130"/>
+		<set name="price" val="890000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5782" name="Сапоги Таллума - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t79_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1130"/>
+		<set name="price" val="890000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5783" name="Сапоги Кошмаров - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t80_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1110"/>
+		<set name="price" val="1355000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5784" name="Сапоги Кошмаров - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t81_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1110"/>
+		<set name="price" val="1355000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5785" name="Сапоги Кошмаров - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t82_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1110"/>
+		<set name="price" val="1355000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5786" name="Сапоги Величия - (Тяжелый)" type="Armor">
+		<set name="icon" val="icon.armor_t83_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1110"/>
+		<set name="price" val="1355000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5787" name="Сапоги Величия - (Легкий)" type="Armor">
+		<set name="icon" val="icon.armor_t84_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1110"/>
+		<set name="price" val="1355000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5788" name="Сапоги Величия - (Магический)" type="Armor">
+		<set name="icon" val="icon.armor_t85_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1110"/>
+		<set name="price" val="1355000"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="5789" name="Заряд Души: Без Ранга для Новичков" type="EtcItem">
+		<set name="icon" val="icon.etc_soulshot_none_for_rookie_i00"/>
+		<set name="default_action" val="soulshot"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="SoulShots"/>
+		<set name="item_skill" val="2039-1"/>
+	</item>
+	<item id="5790" name="Заряд Духа: Без Ранга для Новичков" type="EtcItem">
+		<set name="icon" val="icon.etc_spiritshot_none_for_rookie_i00"/>
+		<set name="default_action" val="spiritshot"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="SpiritShot"/>
+		<set name="item_skill" val="2047-1"/>
+	</item>
+	<item id="5791" name="Только для Монстров (Страж Гробниц A)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2180"/>
+		<set name="price" val="967000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="78"/>
+			<set order="0x08" stat="mAtk" val="39"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="5792" name="Только для Монстров (Страж Гробниц B)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2180"/>
+		<set name="price" val="967000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="78"/>
+			<set order="0x08" stat="mAtk" val="39"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="5793" name="Только для Монстров (Ученый Гробниц A)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1380"/>
+		<set name="price" val="6130000"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="156"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="5794" name="Только для Монстров (Ученый Гробниц B)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1380"/>
+		<set name="price" val="6130000"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="156"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="5795" name="Только для Монстров (Страж Гробниц A)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2180"/>
+		<set name="price" val="967000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="78"/>
+			<set order="0x08" stat="mAtk" val="39"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="5796" name="Только для Монстров (Страж Гробниц B)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2180"/>
+		<set name="price" val="967000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="78"/>
+			<set order="0x08" stat="mAtk" val="39"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="5797" name="Только для Монстров (Ученый Гробниц A)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1380"/>
+		<set name="price" val="6130000"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="156"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="5798" name="Только для Монстров (Ученый Гробниц B)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1380"/>
+		<set name="price" val="6130000"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="156"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="5799" name="Только для Монстров (Лорд Нефилим)" type="Armor">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1320"/>
+		<set name="price" val="78400"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="142"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+</list>

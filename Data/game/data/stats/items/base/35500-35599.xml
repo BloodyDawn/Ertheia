@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="35544" name="Свидетельство Участия I" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_silver_i00"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="0"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="35551" name="Свидетельство Участия II" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_silver_i00"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="0"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="35565" name="Таинственный Пояс - (3 дня)" type="Armor">
+		<set name="icon" val="icon.belt_rulers_authority"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="time" val="4320"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="15146-1"/>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+		</for>
+	</item>
+	<item id="35569" name="Усиливающий Камень Кровавого Айдиоса" type="EtcItem">
+		<set name="icon" val="icon.energy_condenser_i06"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35570" name="Кольцо Таути" type="Armor">
+		<set name="icon" val="icon.accessary_tauti_ring"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="item_skill" val="8870-1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="fireRes" val="25"/>
+			<add order="0x10" stat="darkRes" val="25"/>
+			<add order="0x10" stat="mDef" val="108"/>
+			<add order="0x40" stat="maxMp" val="38"/>
+			<enchant order="0x0C" stat="mDef" val="0"/>
+		</for>
+	</item>
+	<item id="35548" name="Припасы Инженеров Софа" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i01"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9475-1"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35550" name="Припасы Аку" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9477-1"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35562" name="Энергия Разрушения" type="EtcItem">
+		<set name="icon" val="icon.etc_talisman_beads_i01"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+	</item>
+	<item id="35563" name="Сила Гигантов" type="EtcItem">
+		<set name="icon" val="icon.etc_talisman_energy_i01"/>
+		<set name="material" val="leather"/>
+		<set name="price" val="4950000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35500" name="Рецепт: Благословенная Кожаная Кираса Кадейры (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1246"/>
+	</item>
+	<item id="35501" name="Рецепт: Благословенные Кожаные Брюки Кадейры (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1247"/>
+	</item>
+	<item id="35502" name="Рецепт: Благословенные Кожаные Перчатки Кадейры (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1248"/>
+	</item>
+	<item id="35503" name="Рецепт: Благословенные Кожаные Сапоги Кадейры (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1249"/>
+	</item>
+	<item id="35504" name="Рецепт: Благословенная Диадема Кадейры (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1250"/>
+	</item>
+	<item id="35505" name="Рецепт: Благословенная Туника Кадейры (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1251"/>
+	</item>
+	<item id="35506" name="Рецепт: Благословенные Штаны Кадейры (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1252"/>
+	</item>
+	<item id="35507" name="Рецепт: Благословенные Перчатки Кадейры (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1253"/>
+	</item>
+	<item id="35508" name="Рецепт: Благословенные Ботинки Кадейры (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1254"/>
+	</item>
+	<item id="35509" name="Рецепт: Благословенный Символ Кадейры (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1255"/>
+	</item>
+	<item id="35510" name="Рецепт: Благословенное Ожерелье Кадейры (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1256"/>
+	</item>
+	<item id="35511" name="Рецепт: Благословенная Серьга Кадейры (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1257"/>
+	</item>
+	<item id="35512" name="Рецепт: Благословенное Кольцо Кадейры (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1258"/>
+	</item>
+	<item id="35513" name="Рецепт: Благословенное Острие Хелиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1259"/>
+	</item>
+	<item id="35514" name="Рецепт: Благословенный Резак Хелиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1260"/>
+	</item>
+	<item id="35515" name="Рецепт: Благословенный Эспадон Хелиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1261"/>
+	</item>
+	<item id="35516" name="Рецепт: Благословенный Мститель Хелиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1262"/>
+	</item>
+	<item id="35517" name="Рецепт: Благословенный Воитель Хелиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1263"/>
+	</item>
+	<item id="35518" name="Рецепт: Благословенный Буревестник Хелиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1264"/>
+	</item>
+	<item id="35519" name="Рецепт: Благословенный Бросок Хелиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1265"/>
+	</item>
+	<item id="35520" name="Рецепт: Благословенный Страж Хелиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1266"/>
+	</item>
+	<item id="35521" name="Рецепт: Благословенный Расчленитель Хелиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1267"/>
+	</item>
+	<item id="35522" name="Рецепт: Благословенный Заклинатель Хелиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1268"/>
+	</item>
+	<item id="35523" name="Рецепт: Благословенное Возмездие Хелиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1269"/>
+	</item>
+	<item id="35524" name="Рецепт: Благословенный Шлем Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1270"/>
+	</item>
+	<item id="35525" name="Рецепт: Благословенная Кираса Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1271"/>
+	</item>
+	<item id="35526" name="Рецепт: Благословенные Набедренники Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1272"/>
+	</item>
+	<item id="35527" name="Рецепт: Благословенные Рукавицы Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1273"/>
+	</item>
+	<item id="35528" name="Рецепт: Благословенные Сапоги Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1274"/>
+	</item>
+	<item id="35529" name="Рецепт: Благословенный Щит Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1275"/>
+	</item>
+	<item id="35530" name="Рецепт: Благословенный Кожаный Шлем Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1276"/>
+	</item>
+	<item id="35531" name="Рецепт: Благословенная Кожаная Кираса Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1277"/>
+	</item>
+	<item id="35532" name="Рецепт: Благословенные Кожаные Брюки Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1278"/>
+	</item>
+	<item id="35533" name="Рецепт: Благословенные Кожаные Перчатки Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1279"/>
+	</item>
+	<item id="35534" name="Рецепт: Благословенные Кожаные Сапоги Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1280"/>
+	</item>
+	<item id="35535" name="Рецепт: Благословенная Диадема Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1281"/>
+	</item>
+	<item id="35536" name="Рецепт: Благословенная Туника Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1282"/>
+	</item>
+	<item id="35537" name="Рецепт: Благословенные Штаны Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1283"/>
+	</item>
+	<item id="35538" name="Рецепт: Благословенные Перчатки Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1284"/>
+	</item>
+	<item id="35539" name="Рецепт: Благословенные Ботинки Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1285"/>
+	</item>
+	<item id="35540" name="Рецепт: Благословенный Символ Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1286"/>
+	</item>
+	<item id="35541" name="Рецепт: Благословенное Ожерелье Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1287"/>
+	</item>
+	<item id="35542" name="Рецепт: Благословенная Серьга Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1288"/>
+	</item>
+	<item id="35543" name="Рецепт: Благословенный Кольцо Айдиоса (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_gold_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="handler" val="Recipes"/>
+		<set name="recipe_id" val="1289"/>
+	</item>
+	<item id="35564" name="Полномочия Правителей" type="Armor">
+		<set name="icon" val="icon.belt_rulers_authority"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="15145-1"/>		
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="35571" name="Ожерелье Хранителя: Вода" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="85"/>
+			<add order="0x40" stat="maxMp" val="33"/>
+		</for>
+	</item>
+	<item id="35572" name="Ожерелье Хранителя: Святость" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="85"/>
+			<add order="0x40" stat="maxMp" val="33"/>
+		</for>
+	</item>
+	<item id="35573" name="Ожерелье Хранителя: Ветер" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="85"/>
+			<add order="0x40" stat="maxMp" val="33"/>
+		</for>
+	</item>
+	<item id="35574" name="Ожерелье Хранителя: Тьма" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="85"/>
+			<add order="0x40" stat="maxMp" val="33"/>
+		</for>
+	</item>
+	<item id="35575" name="Ожерелье Хранителя: Земля" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="85"/>
+			<add order="0x40" stat="maxMp" val="33"/>
+		</for>
+	</item>
+	<item id="35576" name="Ожерелье Хранителя: Огонь" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="85"/>
+			<add order="0x40" stat="maxMp" val="33"/>
+		</for>
+	</item>
+	<item id="35577" name="Лучшее Ожерелье Хранителя: Вода" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="35578" name="Лучшее Ожерелье Хранителя: Огонь" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="35579" name="Лучшее Ожерелье Хранителя: Святость" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="35580" name="Лучшее Ожерелье Хранителя: Тьма" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="35581" name="Лучшее Ожерелье Хранителя: Ветер" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="35582" name="Лучшее Ожерелье Хранителя: Земля" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="35583" name="Кольцо Хранителя: Земля" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="42"/>
+			<add order="0x40" stat="maxMp" val="17"/>
+		</for>
+	</item>
+	<item id="35584" name="Кольцо Хранителя: Вода" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="42"/>
+			<add order="0x40" stat="maxMp" val="17"/>
+		</for>
+	</item>
+	<item id="35585" name="Кольцо Хранителя: Огонь" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="42"/>
+			<add order="0x40" stat="maxMp" val="17"/>
+		</for>
+	</item>
+	<item id="35586" name="Кольцо Хранителя: Святость" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="42"/>
+			<add order="0x40" stat="maxMp" val="17"/>
+		</for>
+	</item>
+	<item id="35587" name="Кольцо Хранителя: Тьма" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="42"/>
+			<add order="0x40" stat="maxMp" val="17"/>
+		</for>
+	</item>
+	<item id="35588" name="Кольцо Хранителя: Ветер" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="42"/>
+			<add order="0x40" stat="maxMp" val="17"/>
+		</for>
+	</item>
+	<item id="35589" name="Лучшее Кольцо Хранителя: Земля" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="35590" name="Лучшее Кольцо Хранителя: Вода" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="35591" name="Лучшее Кольцо Хранителя: Огонь" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="35592" name="Лучшее Кольцо Хранителя: Святость" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="35593" name="Лучшее Кольцо Хранителя: Тьма" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="35594" name="Лучшее Кольцо Хранителя: Ветер" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="35595" name="Ожерелье Гвардейца: Вода" type="Armor">
+		<set name="icon" val="icon.accessory_nectklace_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="106"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35596" name="Ожерелье Гвардейца: Земля" type="Armor">
+		<set name="icon" val="icon.accessory_nectklace_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="106"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35597" name="Ожерелье Гвардейца: Огонь" type="Armor">
+		<set name="icon" val="icon.accessory_nectklace_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="106"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35598" name="Ожерелье Гвардейца: Святость" type="Armor">
+		<set name="icon" val="icon.accessory_nectklace_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="106"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35599" name="Ожерелье Гвардейца: Тьма" type="Armor">
+		<set name="icon" val="icon.accessory_nectklace_of_domi_protection_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="106"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="35546" name="Сундук Мертвеца" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35547" name="Сундук Мертвеца" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35549" name="Припасы Партизан" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9476-1"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35552" name="Орден Эйнхасад Первой Степени" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_gold_i00"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35553" name="Орден Эйнхасад" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_black_i00"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35554" name="Орден Революционера Первой Степени" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_gold_i00"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35555" name="Орден Революционера" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_black_i00"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35556" name="Билет в Лабиринт Картии - Ур. 85 (соло)" type="EtcItem">
+		<set name="icon" val="icon.etc_ticket_red_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="35557" name="Билет в Лабиринт Картии - Ур. 90 (соло)" type="EtcItem">
+		<set name="icon" val="icon.etc_ticket_red_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="35558" name="Билет в Лабиринт Картии - Ур. 95 (соло)" type="EtcItem">
+		<set name="icon" val="icon.etc_ticket_red_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="35559" name="Билет в Лабиринт Картии - Ур. 85 (группа)" type="EtcItem">
+		<set name="icon" val="icon.etc_ticket_red_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="35560" name="Билет в Лабиринт Картии - Ур. 90 (группа)" type="EtcItem">
+		<set name="icon" val="icon.etc_ticket_red_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="35561" name="Билет в Лабиринт Картии - Ур. 95 (группа)" type="EtcItem">
+		<set name="icon" val="icon.etc_ticket_red_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+	</item>
+	<item id="35566" name="Усиливающий Камень Темного Хелиоса" type="EtcItem">
+		<set name="icon" val="icon.energy_condenser_i03"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35567" name="Усиливающий Камень Темного Айдиоса" type="EtcItem">
+		<set name="icon" val="icon.energy_condenser_i04"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="35568" name="Усиливающий Камень Кровавого Хелиоса" type="EtcItem">
+		<set name="icon" val="icon.energy_condenser_i05"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+</list>

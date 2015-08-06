@@ -1,0 +1,69 @@
+<html>
+<head><title>HWID консоль</title></head>
+<body>
+<center>
+<table width=270>
+<tr>
+<td width=45><button value="Главная" action="bypass -h admin_admin" width=55 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=180></td>
+<td width=45><button value="Назад" action="bypass -h admin_admin7" width=55 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+
+  <table width="265">
+    <tr>
+      <td align="left" valign="top"><font color="FF6600">HWID консоль</font></td>
+    </tr>
+  </table>
+  <img src="l2ui.SquareGray" width=260 height=1><br1>
+</center>
+<center>
+<img src="l2ui.SquareGray" width="260" height="1"><br1>
+  <table width="265" cellpadding="5">
+    <tr>
+      <td valign="top">Введите имя игрока:</td>
+    </tr>     
+    <tr>  	
+        <td align=left>
+            <center>
+                <edit var="playerName" width=100 value="%targetName%">
+            </center>
+        </td>
+    </tr>
+      <tr>
+          <td valign="top">Введите комментарий:</td>
+      </tr>
+      <tr>
+          <td align=left>
+              <center>
+                  <edit var="comment" width=200>
+              </center>
+          </td>
+      </tr>
+    <tr>
+      <td valign="top">Выберите тип бана из списка:</td>
+    </tr> 
+    <tr>
+      <td>
+		  <center>
+			<combobox var="banType" list=" ;PACKET_HACKER;CLIENT_HACKER;INGAME_BOT;BAD_APPLICATION;PERMANENT" width="170" height="15"/>
+		  </center>
+	  </td>
+    </tr>
+  </table>
+<br>
+  <img src="l2ui.SquareGray" width="260" height="1"><br1>
+  <table width="278" cellpadding="3" bgcolor="303030">
+  <tr>    
+    <td align="center">
+       <button value="Выдать бан" action="bypass -h admin_hwid_ban_apply $playerName $banType $comment" width="75" height="26" back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+    </td>        
+    <td align="center">
+       <button value="Отмена" action="bypass -h voice .closedlg" width="75" height="26" back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+    </td>        
+  </tr>    
+  </table>
+</center>
+</body>
+</html>

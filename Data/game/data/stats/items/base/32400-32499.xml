@@ -1,0 +1,1831 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="32498" name="Фантастический Щит Кристалла Тьмы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.shield_dark_crystal_shield_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="1190"/>
+		<set name="price" val="3000000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="243"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="32499" name="Фантастический Щит Кошмаров - (Не используется)" type="Armor">
+		<set name="icon" val="icon.shield_shield_of_nightmare_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1180"/>
+		<set name="price" val="3000000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="256"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="32407" name="Фантастический Композитный Доспех - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t61_ul_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="onepiece"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="10980"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="224"/>
+		</for>
+	</item>
+	<item id="32408" name="Фантастический Кожаный Доспех Тека - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t63_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="4370"/>
+		<for>
+			<add order="0x10" stat="pDef" val="121"/>
+		</for>
+	</item>
+	<item id="32409" name="Фантастические Кожаные Набедренники Тека - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t63_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1530"/>
+		<for>
+			<add order="0x10" stat="pDef" val="66"/>
+		</for>
+	</item>
+	<item id="32410" name="Фантастическая Туника Демона - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t54_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="1990"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="76"/>
+			<add order="0x40" stat="maxMp" val="284"/>
+		</for>
+	</item>
+	<item id="32411" name="Фантастические Штаны Демона - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t54_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="980"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="43"/>
+			<add order="0x40" stat="maxMp" val="177"/>
+		</for>
+	</item>
+	<item id="32412" name="Фантастические Мифриловые Рукавицы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t61_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="600"/>
+		<for>
+			<add order="0x10" stat="pDef" val="36"/>
+		</for>
+	</item>
+	<item id="32413" name="Фантастические Кожаные Перчатки Тека - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t63_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="600"/>
+		<for>
+			<add order="0x10" stat="pDef" val="37"/>
+		</for>
+	</item>
+	<item id="32414" name="Фантастические Перчатки Демона - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t54_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="610"/>
+		<for>
+			<add order="0x10" stat="pDef" val="36"/>
+		</for>
+	</item>
+	<item id="32415" name="Фантастические Кожаные Сапоги Тека - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t63_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1210"/>
+		<for>
+			<add order="0x10" stat="pDef" val="37"/>
+		</for>
+	</item>
+	<item id="32416" name="Фантастические Сапоги Демона - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t54_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1220"/>
+		<for>
+			<add order="0x10" stat="pDef" val="36"/>
+		</for>
+	</item>
+	<item id="32417" name="Фантастические Композитные Сапоги - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t61_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1220"/>
+		<for>
+			<add order="0x10" stat="pDef" val="36"/>
+		</for>
+	</item>
+	<item id="32418" name="Фантастическая Сверкающая Диадема - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="600"/>
+		<for>
+			<add order="0x10" stat="pDef" val="54"/>
+		</for>
+	</item>
+	<item id="32419" name="Фантастический Композитный Шлем - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="610"/>
+		<for>
+			<add order="0x10" stat="pDef" val="54"/>
+		</for>
+	</item>
+	<item id="32435" name="Фантастическая Кираса Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t64_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="7970"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="157"/>
+		</for>
+	</item>
+	<item id="32436" name="Фантастические Набедренники Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t64_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="3570"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="98"/>
+		</for>
+	</item>
+	<item id="32437" name="Фантастическая Кожаная Рубаха Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t65_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="4330"/>
+		<for>
+			<add order="0x10" stat="pDef" val="117"/>
+		</for>
+	</item>
+	<item id="32438" name="Фантастические Кожаные Набедренники Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t65_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1480"/>
+		<for>
+			<add order="0x10" stat="pDef" val="73"/>
+		</for>
+	</item>
+	<item id="32439" name="Фантастическая Туника Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t56_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1960"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="84"/>
+			<add order="0x40" stat="maxMp" val="345"/>
+		</for>
+	</item>
+	<item id="32440" name="Фантастические Штаны Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t56_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="940"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<add order="0x40" stat="maxMp" val="216"/>
+		</for>
+	</item>
+	<item id="32441" name="Фантастические Рукавицы Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t64_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="590"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+		</for>
+	</item>
+	<item id="32442" name="Фантастические Рукавицы Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t65_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="590"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+		</for>
+	</item>
+	<item id="32443" name="Фантастические Рукавицы Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t56_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="590"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+		</for>
+	</item>
+	<item id="32444" name="Фантастические Сапоги Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t64_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1180"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+		</for>
+	</item>
+	<item id="32445" name="Фантастические Сапоги Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t65_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1180"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+		</for>
+	</item>
+	<item id="32446" name="Фантастические Сапоги Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t56_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1180"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+		</for>
+	</item>
+	<item id="32447" name="Фантастический Шлем Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="590"/>
+		<for>
+			<add order="0x10" stat="pDef" val="62"/>
+		</for>
+	</item>
+	<item id="32474" name="Фантастическая Кираса Кристалла Тьмы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t74_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="7700"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="171"/>
+		</for>
+	</item>
+	<item id="32475" name="Фантастические Набедренники Кристалла Тьмы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t74_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="3320"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="107"/>
+		</for>
+	</item>
+	<item id="32476" name="Фантастический Латный Доспех Величия - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t83_ul_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="onepiece"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="9200"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="293"/>
+		</for>
+	</item>
+	<item id="32477" name="Фантастический Кожаный Доспех Кристалла Тьмы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t75_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="4300"/>
+		<for>
+			<add order="0x10" stat="pDef" val="152"/>
+		</for>
+	</item>
+	<item id="32478" name="Фантастические Поножи Кристалла Тьмы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t75_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1480"/>
+		<for>
+			<add order="0x10" stat="pDef" val="95"/>
+		</for>
+	</item>
+	<item id="32479" name="Фантастический Кожаный Доспех Величия - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t84_ul_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="onepiece"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="5350"/>
+		<for>
+			<add order="0x10" stat="pDef" val="220"/>
+		</for>
+	</item>
+	<item id="32480" name="Фантастическая Туника Таллума - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t79_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1860"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="86"/>
+			<add order="0x40" stat="maxMp" val="409"/>
+		</for>
+	</item>
+	<item id="32481" name="Фантастические Штаны Таллума - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t79_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="920"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="53"/>
+			<add order="0x40" stat="maxMp" val="256"/>
+		</for>
+	</item>
+	<item id="32482" name="Фантастическая Мантия Кристалла Тьмы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t76_ul_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="onepiece"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="2450"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="139"/>
+			<add order="0x40" stat="maxMp" val="665"/>
+		</for>
+	</item>
+	<item id="32483" name="Фантастическая Мантия Величия - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t85_ul_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="onepiece"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="2330"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="147"/>
+			<add order="0x40" stat="maxMp" val="718"/>
+		</for>
+	</item>
+	<item id="32484" name="Фантастические Перчатки Кристалла Тьмы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t74_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+		</for>
+	</item>
+	<item id="32485" name="Фантастические Перчатки Кристалла Тьмы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t75_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+		</for>
+	</item>
+	<item id="32486" name="Фантастические Перчатки Кристалла Тьмы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t76_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+		</for>
+	</item>
+	<item id="32487" name="Фантастические Рукавицы Величия - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t83_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="540"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+		</for>
+	</item>
+	<item id="32488" name="Фантастические Рукавицы Величия - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t84_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="540"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+		</for>
+	</item>
+	<item id="32489" name="Фантастические Рукавицы Величия - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t85_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="540"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+		</for>
+	</item>
+	<item id="32490" name="Фантастические Сапоги Кристалла Тьмы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t74_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="1110"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+		</for>
+	</item>
+	<item id="32491" name="Фантастические Сапоги Кристалла Тьмы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t75_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="1110"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+		</for>
+	</item>
+	<item id="32492" name="Фантастические Сапоги Кристалла Тьмы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t76_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="1110"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+		</for>
+	</item>
+	<item id="32493" name="Фантастические Сапоги Величия - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t83_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1110"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+		</for>
+	</item>
+	<item id="32494" name="Фантастические Сапоги Величия - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t84_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1110"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+		</for>
+	</item>
+	<item id="32495" name="Фантастические Сапоги Величия - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_t85_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1110"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+		</for>
+	</item>
+	<item id="32496" name="Фантастический Шлем Кристалла Тьмы - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="570"/>
+		<for>
+			<add order="0x10" stat="pDef" val="76"/>
+		</for>
+	</item>
+	<item id="32497" name="Фантастическая Диадема Величия - (Не используется)" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="550"/>
+		<for>
+			<add order="0x10" stat="pDef" val="73"/>
+		</for>
+	</item>
+	<item id="32400" name="Фантастический Молот Паагрио  - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_paagrio_hammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1010"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="135"/>
+			<set order="0x08" stat="mAtk" val="111"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32401" name="Фантастический Бердыш - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_bech_de_corbin_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2020"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="122"/>
+			<set order="0x08" stat="mAtk" val="68"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32402" name="Фантастическая Секира - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_poleaxe_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="2010"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="139"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32403" name="Фантастический Кастет - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_knuckle_dust_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1490"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="148"/>
+			<set order="0x08" stat="mAtk" val="68"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32404" name="Фантастические Кастетные Клинки - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_fist_blade_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1480"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="169"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32405" name="Фантастический Меч Революции*Меч Революции - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2360"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="148"/>
+			<set order="0x08" stat="mAtk" val="68"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32406" name="Фантастический Громовержец*Громовержец - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2330"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="175"/>
+			<set order="0x08" stat="mAtk" val="78"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32420" name="Фантастический Композитный Щит - (Не используется)" type="Armor">
+		<set name="icon" val="icon.shield_composite_shield_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1230"/>
+		<set name="price" val="3000000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="190"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="32421" name="Фантастический Крис - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_kris_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="980"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="153"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="32422" name="Фантастический Меч Вальхаллы - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_of_valhalla_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="900"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="140"/>
+			<set order="0x08" stat="mAtk" val="122"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32423" name="Фантастический Кешанберк - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_kshanberk_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1370"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="175"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32424" name="Фантастическая Боевая Рапира - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_assult_fleuret_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1370"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="159"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="32425" name="Фантастический Большой Меч - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_great_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1930"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="213"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32426" name="Фантастическая Безымянная Победа - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_nameless_victory_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1930"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="190"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="32427" name="Фантастический Расчленитель - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_dismantler_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1930"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="210"/>
+			<set order="0x08" stat="mAtk" val="99"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="32428" name="Фантастический Длинный Лук Темных Эльфов - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_dark_elven_long_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1720"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="397"/>
+			<set order="0x08" stat="mAtk" val="100"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="227"/>
+		</for>
+	</item>
+	<item id="32429" name="Фантастический Миротворец - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_peace_maker_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1720"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="400"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="221"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+		</for>
+	</item>
+	<item id="32430" name="Фантастический Тяжелый Топор Войны - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_heavy_war_axe_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1620"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="175"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32431" name="Фантастический Посох Духа - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_sprites_staff_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="960"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="170"/>
+			<set order="0x08" stat="mAtk" val="134"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32432" name="Фантастический Двуручный Топор - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_great_axe_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="damascus"/>
+		<set name="weight" val="1940"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="175"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32433" name="Фантастический Коготь Артро - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_arthro_nail_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1420"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="213"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32434" name="Фантастический Меч Иллюзий*Меч Иллюзий - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2150"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="213"/>
+			<set order="0x08" stat="mAtk" val="91"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32448" name="Фантастический Щит Зубея - (Не используется)" type="Armor">
+		<set name="icon" val="icon.shield_shrnoens_shield_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1210"/>
+		<set name="price" val="3000000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="216"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="32449" name="Фантастическая Кровавая Орхидея - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_bloody_orchid_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="960"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="186"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="32450" name="Фантастический Душегуб - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_soul_separator_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="950"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="203"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="32451" name="Фантастический Легендарный Меч - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_of_miracle_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="840"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="186"/>
+			<set order="0x08" stat="mAtk" val="152"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32452" name="Фантастический Клинок Таллума - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_tallum_blade_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1330"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="213"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32453" name="Фантастический Темный Легион - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_dark_legions_edge_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1320"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="232"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32454" name="Фантастическая Белая Молния - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_lightning_blaze_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1330"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="193"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="32455" name="Фантастический Протыкатель - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_greed_stinger_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1320"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="210"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="32456" name="Фантастический Мастер Инферно - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_inferno_master_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1900"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="259"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32457" name="Фантастический Убийца Драконов - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_dragon_slayer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="1840"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="282"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32458" name="Фантастическая Священная Боль - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_pain_of_godness_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1900"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="231"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="32459" name="Фантастический Гробовщик - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_death_bringer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1840"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="251"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="32460" name="Фантастический Кровавый Лук - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_carnium_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="damascus"/>
+		<set name="weight" val="1670"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="440"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="32461" name="Фантастический Пронзатель Душ - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_soul_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1660"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="528"/>
+			<set order="0x08" stat="mAtk" val="125"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="227"/>
+		</for>
+	</item>
+	<item id="32462" name="Фантастический Певец Судьбы - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_doom_singer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1670"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="400"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="270"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+		</for>
+	</item>
+	<item id="32463" name="Фантастический Жнец - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_soul_shooter_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1660"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="400"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="294"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+		</for>
+	</item>
+	<item id="32464" name="Фантастический Метеоритный Дождь - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_meteor_shower_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1600"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="213"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32465" name="Фантастический Элизиум - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_elysian_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1580"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="232"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32466" name="Фантастический Посох Даспариона - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_dasparions_staff_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="920"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="207"/>
+			<set order="0x08" stat="mAtk" val="157"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32467" name="Фантастическая Ветвь Древа Жизни - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_worldtrees_branch_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="900"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="226"/>
+			<set order="0x08" stat="mAtk" val="167"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32468" name="Фантастическая Алебарда - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_halbard_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1900"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="213"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32469" name="Фантастическая Глефа Таллума - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_tallum_glaive_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="chrysolite"/>
+		<set name="weight" val="1840"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="232"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32470" name="Фантастический Кровавый Торнадо - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_blood_tornado_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1370"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="259"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32471" name="Фантастическая Погибель Дракона - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_dragon_grinder_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1350"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="282"/>
+			<set order="0x08" stat="mAtk" val="114"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32472" name="Фантастический Кешанберк*Кешанберк - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2080"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="259"/>
+			<set order="0x08" stat="mAtk" val="107"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32473" name="Фантастический Кешанберк*Дамаскус - (Не используется)" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2080"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="275"/>
+			<set order="0x08" stat="mAtk" val="112"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+</list>

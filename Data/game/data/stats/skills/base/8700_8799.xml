@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="8700" levels="1" name="R95 Особый Талисман - Защ. Щитом (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="sDef" val="1515"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8701" levels="1" name="R99 Особый Талисман - Защ. Щитом (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="sDef" val="1638"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8702" levels="1" name="R Особый Талисман - Энергия">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="8703" levels="1" name="R90 Особый Талисман - Энергия">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="8704" levels="1" name="R95 Особый Талисман - Энергия">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="8705" levels="1" name="R99 Особый Талисман - Энергия">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="8706" levels="1" name="R Особый Талисман - Энергия (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalType="talisman" count="10" name="IncreaseCharges" noicon="1" val="5"/>
+        </for>
+    </skill>
+    <skill id="8707" levels="1" name="R90 Особый Талисман - Энергия (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalType="talisman" count="10" name="IncreaseCharges" noicon="1" val="5"/>
+        </for>
+    </skill>
+    <skill id="8708" levels="1" name="R95 Особый Талисман - Энергия (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalType="talisman" count="10" name="IncreaseCharges" noicon="1" val="5"/>
+        </for>
+    </skill>
+    <skill id="8709" levels="1" name="R99 Особый Талисман - Энергия (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalType="talisman" count="10" name="IncreaseCharges" noicon="1" val="5"/>
+        </for>
+    </skill>
+    <skill id="8710" levels="1" name="R Особый Талисман - Поглощение MP (актив.)">
+        <set name="activationChance" val="100"/>
+        <set name="chanceType" val="ON_HIT"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="triggeredId" val="8714"/>
+        <set name="triggeredLevel" val="1"/>
+    </skill>
+    <skill id="8711" levels="1" name="R90 Особый Талисман - Поглощение MP (актив.)">
+        <set name="activationChance" val="100"/>
+        <set name="chanceType" val="ON_HIT"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="triggeredId" val="8715"/>
+        <set name="triggeredLevel" val="1"/>
+    </skill>
+    <skill id="8712" levels="1" name="R95 Особый Талисман - Поглощение MP (актив.)">
+        <set name="activationChance" val="100"/>
+        <set name="chanceType" val="ON_HIT"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="triggeredId" val="8716"/>
+        <set name="triggeredLevel" val="1"/>
+    </skill>
+    <skill id="8713" levels="1" name="R99 Особый Талисман - Поглощение MP (актив.)">
+        <set name="activationChance" val="100"/>
+        <set name="chanceType" val="ON_HIT"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="triggeredId" val="8717"/>
+        <set name="triggeredLevel" val="1"/>
+    </skill>
+    <skill id="8714" levels="1" name="Воровство Маны">
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="skillType" val="MANADAM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="power" val="2"/>
+    </skill>
+    <skill id="8715" levels="1" name="Воровство Маны">
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="skillType" val="MANADAM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="power" val="3"/>
+    </skill>
+    <skill id="8716" levels="1" name="Воровство Маны">
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="skillType" val="MANADAM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="power" val="4"/>
+    </skill>
+    <skill id="8717" levels="1" name="Воровство Маны">
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="skillType" val="MANADAM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="power" val="5"/>
+    </skill>
+    <skill id="8718" levels="1" name="R Особый Талисман - Вампиризм (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="absorbDam" val="1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8719" levels="1" name="R90 Особый Талисман - Вампиризм (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="absorbDam" val="1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8720" levels="1" name="R95 Особый Талисман - Вампиризм (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="absorbDam" val="1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8721" levels="1" name="R99 Особый Талисман - Вампиризм (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="absorbDam" val="1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8722" levels="1" name="R Особый Талисман - Увеличение дальности выстрела">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="pAtkRange" val="10">
+                <using kind="Bow, Crossbow, TwohandCrossbow"/>
+            </add>
+        </for>
+    </skill>
+    <skill id="8723" levels="1" name="R90 Особый Талисман - Увеличение дальности выстрела">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="pAtkRange" val="10">
+                <using kind="Bow, Crossbow, TwohandCrossbow"/>
+            </add>
+        </for>
+    </skill>
+    <skill id="8724" levels="1" name="R95 Особый Талисман - Увеличение дальности выстрела">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="pAtkRange" val="10">
+                <using kind="Bow, Crossbow, TwohandCrossbow"/>
+            </add>
+        </for>
+    </skill>
+    <skill id="8725" levels="1" name="R99 Особый Талисман - Увеличение дальности выстрела">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="pAtkRange" val="10">
+                <using kind="Bow, Crossbow, TwohandCrossbow"/>
+            </add>
+        </for>
+    </skill>
+    <skill id="8726" levels="1" name="R Особый Талисман - Увеличение дальности выстрела (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="pAtkRange" val="20">
+                    <using kind="Bow, Crossbow, TwohandCrossbow"/>
+                </add>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8727" levels="1" name="R90 Особый Талисман - Увеличение дальности выстрела (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="pAtkRange" val="20">
+                    <using kind="Bow, Crossbow, TwohandCrossbow"/>
+                </add>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8728" levels="1" name="R95 Особый Талисман - Увеличение дальности выстрела (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="pAtkRange" val="20">
+                    <using kind="Bow, Crossbow, TwohandCrossbow"/>
+                </add>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8729" levels="1" name="R99 Особый Талисман - Увеличение дальности выстрела (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="pAtkRange" val="20">
+                    <using kind="Bow, Crossbow, TwohandCrossbow"/>
+                </add>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8730" levels="1" name="R Особый Талисман - Увеличение усиления Слуги (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SUMMON"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="maxHp" val="120"/>
+                <add order="0x40" stat="maxMp" val="170"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8731" levels="1" name="R90 Особый Талисман - Увеличение усиления Слуги (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SUMMON"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="maxHp" val="210"/>
+                <add order="0x40" stat="maxMp" val="290"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8732" levels="1" name="R95 Особый Талисман - Увеличение усиления Слуги (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SUMMON"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="maxHp" val="287"/>
+                <add order="0x40" stat="maxMp" val="350"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8733" levels="1" name="R99 Особый Талисман - Увеличение усиления Слуги (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SUMMON"/>
+        <set name="skillType" val="HEAL_PERCENT"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="maxHp" val="357"/>
+                <add order="0x40" stat="maxMp" val="432"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8734" levels="1" name="R99 Особый Талисман - Увеличение усиления Слуги (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SUMMON"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="HpHealPercent" noicon="1" val="100"/>
+            <effect name="MpHealPercent" noicon="1" val="100"/>
+        </for>
+    </skill>
+    <skill id="8735" levels="1" name="R Особый Талисман - Отмена Магии">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <div order="0x30" stat="cancel" val="1.10"/>
+        </for>
+    </skill>
+    <skill id="8736" levels="1" name="R Особый Талисман - Отмена Магии (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <div order="0x30" stat="cancel" val="1.20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8737" levels="1" name="R Особый Талисман - Восстановление MP">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="regMp" val="0.66"/>
+        </for>
+    </skill>
+    <skill id="8738" levels="1" name="R90 Особый Талисман - Восстановление MP">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="regMp" val="0.68"/>
+        </for>
+    </skill>
+    <skill id="8739" levels="1" name="R95 Особый Талисман - Восстановление MP">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="regMp" val="0.70"/>
+        </for>
+    </skill>
+    <skill id="8740" levels="1" name="R99 Особый Талисман - Восстановление MP">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="regMp" val="0.72"/>
+        </for>
+    </skill>
+    <skill id="8741" levels="1" name="R Особый Талисман - Уменьшение расхода MP">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="MagicalMpConsumeRate" val="0.85"/>
+            <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.85"/>
+        </for>
+    </skill>
+    <skill id="8742" levels="1" name="R Особый Талисман - Усиление исцелительных способностей">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="gainHp" val="75"/>
+        </for>
+    </skill>
+    <skill id="8743" levels="1" name="R90 Особый Талисман - Усиление исцелительных способностей">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="gainHp" val="82"/>
+        </for>
+    </skill>
+    <skill id="8744" levels="1" name="R95 Особый Талисман - Усиление исцелительных способностей">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="gainHp" val="90"/>
+        </for>
+    </skill>
+    <skill id="8745" levels="1" name="R99 Особый Талисман - Усиление исцелительных способностей">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="gainHp" val="96"/>
+        </for>
+    </skill>
+    <skill id="8746" levels="1" name="R Особый Талисман - Увеличение усиления исцеления (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="gainHp" val="225"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8747" levels="1" name="R90 Особый Талисман - Увеличение усиления исцеления (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="gainHp" val="246"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8748" levels="1" name="R95 Особый Талисман - Увеличение усиления исцеления (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="gainHp" val="270"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8749" levels="1" name="R99 Особый Талисман - Увеличение усиления исцеления (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="gainHp" val="288"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8774" levels="1" name="R Особый Талисман - Снятие Злых Чар (актив.)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CANCEL_DEBUFF"/>
+    </skill>
+    <skill id="8775" levels="1" name="Браслет Бессмертия">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <set order="0x50" stat="talisman" val="5"/>
+        </for>
+    </skill>
+    <skill id="8776" levels="1" name="Браслет Ада">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <set order="0x50" stat="talisman" val="5"/>
+        </for>
+    </skill>
+    <skill id="8777" levels="1" name="Браслет Кадейры">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <set order="0x50" stat="talisman" val="5"/>
+        </for>
+    </skill>
+    <skill id="8778" levels="1" name="Браслет Айдиоса">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <set order="0x50" stat="talisman" val="5"/>
+        </for>
+    </skill>
+    <skill id="8779" levels="1" name="Браслет Истхины">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <set order="0x50" stat="talisman" val="5"/>
+        </for>
+    </skill>
+    <skill id="8780" levels="1" name="Браслет Октависа">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <set order="0x50" stat="talisman" val="5"/>
+        </for>
+    </skill>
+    <skill id="8781" levels="1" name="Экипировка Щитом">
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="rShld" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="8782" levels="1" name="Экипировка Щитом">
+        <set name="magicLvl" val="90"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="rShld" val="1.06"/>
+        </for>
+    </skill>
+    <skill id="8783" levels="1" name="Экипировка Щитом">
+        <set name="magicLvl" val="95"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="rShld" val="1.07"/>
+        </for>
+    </skill>
+    <skill id="8784" levels="1" name="Экипировка Щитом">
+        <set name="magicLvl" val="99"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="rShld" val="1.08"/>
+        </for>
+    </skill>
+    <skill id="8786" levels="1" name="Лучшая Серьга Гвардейца - Глудио">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="maxCp" val="1.05"/>
+            <sub order="0x40" stat="bleedVuln" val="15"/>
+            <sub order="0x40" stat="stunVuln" val="15"/>
+            <add order="0x40" stat="waterRes" val="10"/>
+        </for>
+    </skill>
+    <skill id="8787" levels="1" name="Лучшая Серьга Гвардейца - Дион">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="maxCp" val="1.05"/>
+            <sub order="0x40" stat="poisonVuln" val="15"/>
+            <sub order="0x40" stat="stunVuln" val="15"/>
+            <add order="0x40" stat="waterRes" val="10"/>
+        </for>
+    </skill>
+    <skill id="8788" levels="1" name="Лучшая Серьга Гвардейца - Гиран">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="maxCp" val="1.05"/>
+            <sub order="0x40" stat="paralyzeVuln" val="15"/>
+            <sub order="0x40" stat="bleedVuln" val="15"/>
+            <add order="0x40" stat="windRes" val="10"/>
+        </for>
+    </skill>
+    <skill id="8789" levels="1" name="Лучшая Серьга Гвардейца - Орен">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="maxCp" val="1.05"/>
+            <sub order="0x40" stat="paralyzeVuln" val="15"/>
+            <sub order="0x40" stat="rootVuln" val="15"/>
+            <add order="0x40" stat="darkRes" val="10"/>
+        </for>
+    </skill>
+    <skill id="8790" levels="1" name="Лучшая Серьга Гвардейца - Аден">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="maxCp" val="1.05"/>
+            <sub order="0x40" stat="derangementVuln" val="15"/>
+            <sub order="0x40" stat="stunVuln" val="15"/>
+            <add order="0x40" stat="earthRes" val="10"/>
+        </for>
+    </skill>
+    <skill id="8791" levels="1" name="Лучшая Серьга Гвардейца - Иннадрил">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="maxCp" val="1.05"/>
+            <sub order="0x40" stat="sleepVuln" val="15"/>
+            <sub order="0x40" stat="stunVuln" val="15"/>
+            <add order="0x40" stat="waterRes" val="10"/>
+        </for>
+    </skill>
+    <skill id="8792" levels="1" name="Лучшая  Серьга Гвардейца - Годдард">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="maxCp" val="1.05"/>
+            <sub order="0x40" stat="sleepVuln" val="15"/>
+            <sub order="0x40" stat="stunVuln" val="15"/>
+            <add order="0x40" stat="fireRes" val="10"/>
+        </for>
+    </skill>
+    <skill id="8793" levels="1" name="Лучшая  Серьга Гвардейца - Руна">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="maxCp" val="1.05"/>
+            <sub order="0x40" stat="poisonVuln" val="15"/>
+            <sub order="0x40" stat="rootVuln" val="15"/>
+            <add order="0x40" stat="fireRes" val="10"/>
+        </for>
+    </skill>
+    <skill id="8794" levels="1" name="Лучшая  Серьга Гвардейца - Шутгарт">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="maxCp" val="1.05"/>
+            <sub order="0x40" stat="derangementVuln" val="15"/>
+            <sub order="0x40" stat="rootVuln" val="15"/>
+            <add order="0x40" stat="windRes" val="10"/>
+        </for>
+    </skill>
+    <skill id="8795" levels="1" name="Лучшее Кольцо Гвардейца - Глудио">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="windRes" val="15"/>
+        </for>
+    </skill>
+    <skill id="8796" levels="1" name="Лучшее Кольцо Гвардейца - Дион">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="waterRes" val="15"/>
+        </for>
+    </skill>
+    <skill id="8797" levels="1" name="Лучшее Кольцо Гвардейца - Гиран">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="fireRes" val="15"/>
+        </for>
+    </skill>
+    <skill id="8798" levels="1" name="Лучшее Кольцо Гвардейца - Орен">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="earthRes" val="15"/>
+        </for>
+    </skill>
+    <skill id="8799" levels="1" name="Лучшее Кольцо Гвардейца - Аден">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="holyRes" val="15"/>
+        </for>
+    </skill>
+    <skill id="8750" levels="1" name="Особое Свойство: Резец Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8751" levels="1" name="Снижение Физ. Защ.">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8752" levels="1" name="Особое Свойство: Мститель Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8753" levels="1" name="Несогласие">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8754" levels="1" name="Особое Свойство: Эспадон Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8755" levels="1" name="Особое Свойство: Крушитель Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8756" levels="1" name="Шок">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8757" levels="1" name="Особое Свойство: Дуэль Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8758" levels="1" name="Ограничитель Физических Умений">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8759" levels="1" name="Особое Свойство: Боец Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8760" levels="1" name="Шок">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8761" levels="1" name="Особое Свойство: Кинжал Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8762" levels="1" name="Безмолвие">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8763" levels="1" name="Особое Свойство: Порез Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8764" levels="1" name="Рассеивание">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8765" levels="1" name="Особое Свойство: Выстрел Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8766" levels="1" name="Замедление">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8767" levels="1" name="Особое Свойство: Возмездие Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8768" levels="1" name="Полное Восстановление">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8769" levels="1" name="Особое Свойство: Магия Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8770" levels="1" name="Полное Восстановление">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8771" levels="1" name="Особое Свойство: Рапира Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8772" levels="1" name="Особое Свойство: Меч Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8773" levels="1" name="Особое Свойство: Страж Вечности">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="8785" levels="1" name="Экипировка Щитом">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+</list>

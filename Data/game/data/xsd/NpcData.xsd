@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list" type="listType"/>
+	<xs:complexType name="teach_classesType">
+		<xs:sequence>
+			<xs:element type="setType" name="set" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="minionsType">
+		<xs:sequence>
+			<xs:element type="setType" name="set" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="setType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="name" use="optional"/>
+				<xs:attribute type="xs:string" name="value" use="optional"/>
+				<xs:attribute type="xs:string" name="id" use="optional"/>
+				<xs:attribute type="xs:string" name="level" use="optional"/>
+				<xs:attribute type="xs:string" name="amount_min" use="optional"/>
+				<xs:attribute type="xs:string" name="amount_max" use="optional"/>
+				<xs:attribute type="xs:string" name="x" use="optional"/>
+				<xs:attribute type="xs:string" name="y" use="optional"/>
+				<xs:attribute type="xs:string" name="z" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="listType">
+		<xs:sequence>
+			<xs:element type="npcType" name="npc" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="npcType">
+		<xs:sequence>
+			<xs:element type="setType" name="set" maxOccurs="unbounded" minOccurs="0"/>
+			<xs:element type="ai_paramsType" name="ai_params" maxOccurs="unbounded" minOccurs="0"/>
+			<xs:element type="skillsType" name="skills" minOccurs="0"/>
+			<xs:element type="doorsType" name="doors" minOccurs="0"/>
+			<xs:element type="teleportPositionsType" name="teleportPositions" minOccurs="0"/>
+			<xs:element type="teach_classesType" name="teach_classes" minOccurs="0"/>
+			<xs:element type="minionsType" name="minions" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute type="xs:string" name="id" use="optional"/>
+		<xs:attribute type="xs:string" name="displayId" use="optional"/>
+		<xs:attribute type="xs:string" name="name" use="optional"/>
+		<xs:attribute type="xs:string" name="title" use="optional"/>
+		<xs:attribute type="xs:string" name="server_name" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="teleportPositionsType">
+		<xs:sequence>
+			<xs:element type="setType" name="set" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="doorsType">
+		<xs:sequence>
+			<xs:element type="setType" name="set" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ai_paramsType">
+		<xs:sequence>
+			<xs:element type="setType" name="set" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="skillsType">
+		<xs:sequence>
+			<xs:element type="setType" name="set" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

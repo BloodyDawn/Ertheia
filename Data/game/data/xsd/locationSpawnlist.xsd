@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list" type="listType" />
+	<xs:complexType name="spawnsType">
+		<xs:sequence>
+			<xs:element type="npcType" name="npc" maxOccurs="unbounded" minOccurs="0">
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute type="xs:string" name="name" />
+		<xs:attribute type="xs:string" name="isCustom" />
+		<xs:attribute type="xs:string" name="isCustom2" />
+	</xs:complexType>
+	<xs:complexType name="listType">
+		<xs:sequence>
+			<xs:element type="spawnsType" name="spawns" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="npcType">
+		<xs:sequence>
+			<xs:element type="spawnType" name="spawn" maxOccurs="unbounded" minOccurs="0" />
+		</xs:sequence>
+		<xs:attribute type="xs:integer" name="id" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="spawnType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:integer" name="x" use="optional" />
+				<xs:attribute type="xs:integer" name="y" use="optional" />
+				<xs:attribute type="xs:integer" name="z" use="optional" />
+				<xs:attribute type="xs:integer" name="heading" use="optional" />
+				<xs:attribute type="xs:integer" name="respawn" use="optional" />
+				<xs:attribute type="xs:integer" name="periodOfDay" use="optional" />
+				<xs:attribute type="xs:integer" name="count" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+</xs:schema>

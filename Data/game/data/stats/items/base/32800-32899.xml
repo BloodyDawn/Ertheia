@@ -1,0 +1,2081 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="32874" name="Круглый Щит - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.shield_round_shield_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="139"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="79"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="32883" name="Круглый Щит - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.shield_round_shield_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="139"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="79"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="32814" name="Рецепт - Заряд Души: Ранг R (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="900000"/>
+		<set name="recipe_id" val="1160"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="32815" name="Рецепт - Заряд Духа: Ранг R (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="900000"/>
+		<set name="recipe_id" val="1161"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="32816" name="Рецепт - Благословенный Заряд Духа: Ранг R (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="900000"/>
+		<set name="recipe_id" val="1162"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="32800" name="Скованные Запечатанные Перчатки Синего Волка" type="Armor">
+		<set name="icon" val="icon.armor_t68_g_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="590"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32801" name="Скованные Запечатанные Перчатки Рока" type="Armor">
+		<set name="icon" val="icon.armor_t71_g_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32802" name="Скованные Запечатанные Сапоги Зубея" type="Armor">
+		<set name="icon" val="icon.armor_t64_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1180"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32803" name="Скованные Запечатанные Сапоги Авадона" type="Armor">
+		<set name="icon" val="icon.armor_t66_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1180"/>
+		<for>
+			<add order="0x10" stat="pDef" val="41"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32804" name="Скованные Запечатанные Сапоги Синего Волка" type="Armor">
+		<set name="icon" val="icon.armor_t68_b_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1130"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32805" name="Скованные Запечатанные Сапоги Рока" type="Armor">
+		<set name="icon" val="icon.armor_t71_b_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="b"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="1130"/>
+		<for>
+			<add order="0x10" stat="pDef" val="44"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32806" name="Скованные Запечатанные Перчатки Кристалла Тьмы" type="Armor">
+		<set name="icon" val="icon.armor_t74_g_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32807" name="Скованные Запечатанные Перчатки Таллума" type="Armor">
+		<set name="icon" val="icon.armor_t77_g_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="580"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32808" name="Скованные Запечатанные Рукавицы Кошмаров" type="Armor">
+		<set name="icon" val="icon.armor_t80_g_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="550"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32809" name="Скованные Запечатанные Рукавицы Величия" type="Armor">
+		<set name="icon" val="icon.armor_t83_g_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="540"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32810" name="Скованные Запечатанные Сапоги Кристалла Тьмы" type="Armor">
+		<set name="icon" val="icon.armor_t74_b_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="1110"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32811" name="Скованные Запечатанные Сапоги Таллума" type="Armor">
+		<set name="icon" val="icon.armor_t77_b_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1130"/>
+		<for>
+			<add order="0x10" stat="pDef" val="46"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32812" name="Скованные Запечатанные Сапоги Кошмаров" type="Armor">
+		<set name="icon" val="icon.armor_t80_b_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1110"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32813" name="Скованные Запечатанные Сапоги Величия" type="Armor">
+		<set name="icon" val="icon.armor_t83_b_i02"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="1110"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="32871" name="Деревянный Шлем - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="66"/>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+		</for>
+	</item>
+	<item id="32872" name="Деревянная Кираса - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t06_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="chest"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="482"/>
+		<for>
+			<add order="0x10" stat="pDef" val="47"/>
+		</for>
+	</item>
+	<item id="32873" name="Деревянные Набедренники - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t06_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="legs"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="167"/>
+		<for>
+			<add order="0x10" stat="pDef" val="29"/>
+		</for>
+	</item>
+	<item id="32875" name="Кожаный Шлем - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="65"/>
+		<for>
+			<add order="0x10" stat="pDef" val="23"/>
+		</for>
+	</item>
+	<item id="32876" name="Туника Преданности - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t55_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="209"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="30"/>
+			<add order="0x40" stat="maxMp" val="67"/>
+		</for>
+	</item>
+	<item id="32877" name="Штаны Преданности - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t55_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="104"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+			<add order="0x40" stat="maxMp" val="42"/>
+		</for>
+	</item>
+	<item id="32878" name="Кожаные Перчатки - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t32_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="65"/>
+		<for>
+			<add order="0x10" stat="pDef" val="15"/>
+		</for>
+	</item>
+	<item id="32879" name="Простые Сапоги - Артефакт Судьбы (Огонь, Ветер, Тьма)" type="Armor">
+		<set name="icon" val="icon.armor_t32_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="132"/>
+		<for>
+			<add order="0x10" stat="pDef" val="15"/>
+		</for>
+	</item>
+	<item id="32880" name="Деревянный Шлем - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="66"/>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+		</for>
+	</item>
+	<item id="32881" name="Деревянная Кираса - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t06_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="chest"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="482"/>
+		<for>
+			<add order="0x10" stat="pDef" val="47"/>
+		</for>
+	</item>
+	<item id="32882" name="Деревянные Набедренники - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t06_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="legs"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="167"/>
+		<for>
+			<add order="0x10" stat="pDef" val="29"/>
+		</for>
+	</item>
+	<item id="32884" name="Кожаный Шлем - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="65"/>
+		<for>
+			<add order="0x10" stat="pDef" val="23"/>
+		</for>
+	</item>
+	<item id="32885" name="Туника Преданности - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t55_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="209"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="30"/>
+			<add order="0x40" stat="maxMp" val="67"/>
+		</for>
+	</item>
+	<item id="32886" name="Штаны Преданности - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t55_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="104"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+			<add order="0x40" stat="maxMp" val="42"/>
+		</for>
+	</item>
+	<item id="32887" name="Кожаные Перчатки - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t32_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="65"/>
+		<for>
+			<add order="0x10" stat="pDef" val="15"/>
+		</for>
+	</item>
+	<item id="32888" name="Простые Сапоги - Артефакт Судьбы (Вода, Земля, Святость)" type="Armor">
+		<set name="icon" val="icon.armor_t32_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="132"/>
+		<for>
+			<add order="0x10" stat="pDef" val="15"/>
+		</for>
+	</item>
+	<item id="32817" name="Мечелом - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_breaker_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="111"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="27"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="32818" name="Фальшион - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_falchion_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="153"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32819" name="Меч Воителя - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_sealed_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="130"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="12"/>
+			<set order="0x08" stat="mAtk" val="10"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="32820" name="Цвайхандэр - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_zweihander_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="153"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="38"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32821" name="Композитный Лук - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_composition_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="188"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="7"/>
+		<set name="spiritshots" val="2"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="64"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="32822" name="Железный Молот - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_iron_hammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="185"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32823" name="Магический Посох - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_apprentices_staff_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="105"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="30"/>
+			<set order="0x08" stat="mAtk" val="31"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32824" name="Копье - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_long_spear_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="212"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32825" name="Клык Гадюки - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_vipers_canine_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="156"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="38"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32826" name="Мечелом - Артефакт Судьбы (Вода)" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_breaker_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="111"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="27"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="32827" name="Фальшион - Артефакт Судьбы (Вода)" type="Weapon">
+		<set name="icon" val="icon.weapon_falchion_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="153"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32828" name="Меч Воителя - Артефакт Судьбы (Вода)" type="Weapon">
+		<set name="icon" val="icon.weapon_sealed_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="130"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="12"/>
+			<set order="0x08" stat="mAtk" val="10"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="32829" name="Цвайхандэр - Артефакт Судьбы (Вода)" type="Weapon">
+		<set name="icon" val="icon.weapon_zweihander_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="153"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="38"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32830" name="Композитный Лук - Артефакт Судьбы (Вода)" type="Weapon">
+		<set name="icon" val="icon.weapon_composition_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="188"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="7"/>
+		<set name="spiritshots" val="2"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="64"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="32831" name="Железный Молот - Артефакт Судьбы (Вода)" type="Weapon">
+		<set name="icon" val="icon.weapon_iron_hammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="185"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32832" name="Магический Посох - Артефакт Судьбы (Вода)" type="Weapon">
+		<set name="icon" val="icon.weapon_apprentices_staff_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="105"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="30"/>
+			<set order="0x08" stat="mAtk" val="31"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32833" name="Копье - Артефакт Судьбы (Вода)" type="Weapon">
+		<set name="icon" val="icon.weapon_long_spear_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="212"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32834" name="Клык Гадюки - Артефакт Судьбы (Вода)" type="Weapon">
+		<set name="icon" val="icon.weapon_vipers_canine_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="156"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="38"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32835" name="Мечелом - Артефакт Судьбы (Ветер)" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_breaker_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="111"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="27"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="32836" name="Фальшион - Артефакт Судьбы (Ветер)" type="Weapon">
+		<set name="icon" val="icon.weapon_falchion_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="153"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32837" name="Меч Воителя - Артефакт Судьбы (Ветер)" type="Weapon">
+		<set name="icon" val="icon.weapon_sealed_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="130"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="12"/>
+			<set order="0x08" stat="mAtk" val="10"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="32838" name="Цвайхандэр - Артефакт Судьбы (Ветер)" type="Weapon">
+		<set name="icon" val="icon.weapon_zweihander_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="153"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="38"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32839" name="Композитный Лук - Артефакт Судьбы (Ветер)" type="Weapon">
+		<set name="icon" val="icon.weapon_composition_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="188"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="7"/>
+		<set name="spiritshots" val="2"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="64"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="32840" name="Железный Молот - Артефакт Судьбы (Ветер)" type="Weapon">
+		<set name="icon" val="icon.weapon_iron_hammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="185"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32841" name="Магический Посох - Артефакт Судьбы (Ветер)" type="Weapon">
+		<set name="icon" val="icon.weapon_apprentices_staff_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="105"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="30"/>
+			<set order="0x08" stat="mAtk" val="31"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32842" name="Копье - Артефакт Судьбы (Ветер)" type="Weapon">
+		<set name="icon" val="icon.weapon_long_spear_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="212"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32843" name="Клык Гадюки - Артефакт Судьбы (Ветер)" type="Weapon">
+		<set name="icon" val="icon.weapon_vipers_canine_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="156"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="38"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32844" name="Мечелом - Артефакт Судьбы (Земля)" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_breaker_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="111"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="27"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="32845" name="Фальшион - Артефакт Судьбы (Земля)" type="Weapon">
+		<set name="icon" val="icon.weapon_falchion_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="153"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32846" name="Меч Воителя - Артефакт Судьбы (Земля)" type="Weapon">
+		<set name="icon" val="icon.weapon_sealed_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="130"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="12"/>
+			<set order="0x08" stat="mAtk" val="10"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="32847" name="Цвайхандэр - Артефакт Судьбы (Земля)" type="Weapon">
+		<set name="icon" val="icon.weapon_zweihander_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="153"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="38"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32848" name="Композитный Лук - Артефакт Судьбы (Земля)" type="Weapon">
+		<set name="icon" val="icon.weapon_composition_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="188"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="7"/>
+		<set name="spiritshots" val="2"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="64"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="32849" name="Железный Молот - Артефакт Судьбы (Земля)" type="Weapon">
+		<set name="icon" val="icon.weapon_iron_hammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="185"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32850" name="Магический Посох - Артефакт Судьбы (Земля)" type="Weapon">
+		<set name="icon" val="icon.weapon_apprentices_staff_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="105"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="30"/>
+			<set order="0x08" stat="mAtk" val="31"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32851" name="Копье - Артефакт Судьбы (Земля)" type="Weapon">
+		<set name="icon" val="icon.weapon_long_spear_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="212"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32852" name="Клык Гадюки - Артефакт Судьбы (Земля)" type="Weapon">
+		<set name="icon" val="icon.weapon_vipers_canine_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="156"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="38"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32853" name="Мечелом - Артефакт Судьбы (Святость)" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_breaker_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="111"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="27"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="32854" name="Фальшион - Артефакт Судьбы (Святость)" type="Weapon">
+		<set name="icon" val="icon.weapon_falchion_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="153"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32855" name="Меч Воителя - Артефакт Судьбы (Святость)" type="Weapon">
+		<set name="icon" val="icon.weapon_sealed_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="130"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="12"/>
+			<set order="0x08" stat="mAtk" val="10"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="32856" name="Цвайхандэр - Артефакт Судьбы (Святость)" type="Weapon">
+		<set name="icon" val="icon.weapon_zweihander_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="153"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="38"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32857" name="Композитный Лук - Артефакт Судьбы (Святость)" type="Weapon">
+		<set name="icon" val="icon.weapon_composition_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="188"/>
+		<set name="soulshots" val="7"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="64"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="32858" name="Железный Молот - Артефакт Судьбы (Святость)" type="Weapon">
+		<set name="icon" val="icon.weapon_iron_hammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="185"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32859" name="Магический Посох - Артефакт Судьбы (Святость)" type="Weapon">
+		<set name="icon" val="icon.weapon_apprentices_staff_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="105"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="30"/>
+			<set order="0x08" stat="mAtk" val="31"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32860" name="Копье - Артефакт Судьбы (Святость)" type="Weapon">
+		<set name="icon" val="icon.weapon_long_spear_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="212"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32861" name="Клык Гадюки - Артефакт Судьбы (Святость)" type="Weapon">
+		<set name="icon" val="icon.weapon_vipers_canine_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="156"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="38"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32862" name="Мечелом - Артефакт Судьбы (Тьма)" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_breaker_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="111"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="27"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="32863" name="Фальшион - Артефакт Судьбы (Тьма)" type="Weapon">
+		<set name="icon" val="icon.weapon_falchion_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="153"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32864" name="Меч Воителя - Артефакт Судьбы (Тьма)" type="Weapon">
+		<set name="icon" val="icon.weapon_sealed_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="130"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="12"/>
+			<set order="0x08" stat="mAtk" val="10"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="32865" name="Цвайхандэр - Артефакт Судьбы (Тьма)" type="Weapon">
+		<set name="icon" val="icon.weapon_zweihander_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="153"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="38"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32866" name="Композитный Лук - Артефакт Судьбы (Тьма)" type="Weapon">
+		<set name="icon" val="icon.weapon_composition_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="188"/>
+		<set name="soulshots" val="7"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="64"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="32867" name="Железный Молот - Артефакт Судьбы (Тьма)" type="Weapon">
+		<set name="icon" val="icon.weapon_iron_hammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="185"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32868" name="Магический Посох - Артефакт Судьбы (Тьма)" type="Weapon">
+		<set name="icon" val="icon.weapon_apprentices_staff_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="105"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="30"/>
+			<set order="0x08" stat="mAtk" val="31"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32869" name="Копье - Артефакт Судьбы (Тьма)" type="Weapon">
+		<set name="icon" val="icon.weapon_long_spear_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="212"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="31"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32870" name="Клык Гадюки - Артефакт Судьбы (Тьма)" type="Weapon">
+		<set name="icon" val="icon.weapon_vipers_canine_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="156"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="38"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32889" name="Мифриловый Кинжал - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_mithril_dagger_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="106"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="80"/>
+			<set order="0x08" stat="mAtk" val="54"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="32890" name="Длинный Меч Эльфов - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_elven_long_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="144"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="92"/>
+			<set order="0x08" stat="mAtk" val="54"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32891" name="Большая Рапира - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="144"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="83"/>
+			<set order="0x08" stat="mAtk" val="54"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="32892" name="Клеймор - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_claymore_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="209"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="112"/>
+			<set order="0x08" stat="mAtk" val="54"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32893" name="Кацбальгер Генерала - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_tulwar_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="201"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="100"/>
+			<set order="0x08" stat="mAtk" val="54"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="32894" name="Легкий Лук - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_cyclone_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="181"/>
+		<set name="soulshots" val="10"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="191"/>
+			<set order="0x08" stat="mAtk" val="54"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="32895" name="Легкий Арбалет - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_hunting_gun_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="181"/>
+		<set name="soulshots" val="6"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="reuse_delay" val="400"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="117"/>
+			<set order="0x08" stat="mAtk" val="54"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+		</for>
+	</item>
+	<item id="32896" name="Костолом - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_bonebreaker_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="172"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="92"/>
+			<set order="0x08" stat="mAtk" val="54"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32897" name="Посох Жизни - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_life_stick_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="118"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="74"/>
+			<set order="0x08" stat="mAtk" val="72"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="32898" name="Молот Атубы - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_atuba_hammer_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="101"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="90"/>
+			<set order="0x08" stat="mAtk" val="79"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="32899" name="Глефа - Артефакт Судьбы (Огонь)" type="Weapon">
+		<set name="icon" val="icon.weapon_glaive_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="205"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="92"/>
+			<set order="0x08" stat="mAtk" val="54"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+</list>

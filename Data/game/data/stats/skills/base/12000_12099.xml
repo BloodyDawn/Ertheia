@@ -1,0 +1,1875 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="12001" levels="1" name="Мерцающий Кристалл">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="41000"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="41" abnormalType="crystal_melody" name="Buff" val="0"/>
+        </for>
+    </skill>
+    <skill id="12002" levels="1" name="Слюда">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="castRange" val="150"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="isDebuff" val="true"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <target npcId="32919,32920"/>
+        </cond>
+    </skill>
+    <skill id="12004" levels="1" name="Призыв Поисковика">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="skillRadius" val="150"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="skillType" val="DUMMY"/>
+    </skill>
+    <skill id="12005" levels="1" name="Распыление Лекарства">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castRange" val="150"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DUMMY"/>
+        <cond addName="1" msgId="113">
+            <target npcId="19080"/>
+        </cond>
+    </skill>
+    <skill id="12006" levels="1" name="Распыление Лекарства">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castRange" val="150"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DUMMY"/>
+        <cond addName="1" msgId="113">
+            <target npcId="19080"/>
+        </cond>
+    </skill>
+    <skill id="12007" levels="1" name="Распыление Лекарства">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castRange" val="150"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DUMMY"/>
+        <cond addName="1" msgId="113">
+            <target npcId="19080"/>
+        </cond>
+    </skill>
+    <skill id="12008" levels="1" name="Отражающий Щит Орбиса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="800"/>
+        <set name="coolTime" val="1000"/>
+        <set name="castRange" val="900"/>
+        <set name="reuseDelay" val="180000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NEGATE"/>
+        <set name="negateAbnormals" val="octavisStone,99;turn_stone,99"/>
+        <set name="ignoreSkillParalyze" val="true"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond addName="1" msgId="113">
+            <player active_effect_id_lvl="14575,1"/>
+        </cond>
+    </skill>
+    <skill id="12011" levels="1" name="Мерцающий Кристалл">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="12000" levels="1" name="">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="900"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="mpConsume" val="2"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="12003" levels="1" name="Осколок Цитадели">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="300"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="12009" levels="1" name="Противоядие Траджана">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="12010" levels="1" name="Ключ от Бонусной Комнаты">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="castRange" val="450"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="12012" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17831,1,96.0;17290,1,3.0;17967,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12013" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17832,1,96.0;17291,1,3.0;17968,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12014" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17833,1,96.0;17292,1,3.0;17969,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12015" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17834,1,96.0;17293,1,3.0;17970,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12016" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17835,1,96.0;17294,1,3.0;17971,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12017" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17836,1,96.0;17295,1,3.0;17972,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12018" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17837,1,96.0;17296,1,3.0;17973,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12019" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17838,1,96.0;17297,1,3.0;17974,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12020" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17839,1,96.0;17298,1,3.0;17975,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12021" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17840,1,96.0;17299,1,3.0;17976,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12022" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17841,1,96.0;17300,1,3.0;17977,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12023" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17842,1,96.0;17301,1,3.0;17978,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12024" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17843,1,96.0;17302,1,3.0;17979,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12025" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17844,1,96.0;17303,1,3.0;17980,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12026" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17845,1,96.0;17304,1,3.0;17981,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12027" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17846,1,96.0;17305,1,3.0;17982,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12028" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17847,1,96.0;17306,1,3.0;17983,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12029" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17848,1,96.0;17307,1,3.0;17984,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12030" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17849,1,96.0;17308,1,3.0;17985,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12031" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17850,1,96.0;17309,1,3.0;17986,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12032" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17851,1,96.0;17310,1,3.0;17987,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12033" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17852,1,96.0;17311,1,3.0;17988,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12034" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17853,1,96.0;17312,1,3.0;17989,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12035" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17854,1,96.0;17313,1,3.0;17990,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12036" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17855,1,96.0;17314,1,3.0;17991,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12037" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17856,1,96.0;17315,1,3.0;17992,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12038" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17857,1,96.0;17316,1,3.0;17993,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12039" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17858,1,96.0;17317,1,3.0;17994,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12040" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17859,1,96.0;17318,1,3.0;17995,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12041" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17860,1,96.0;17319,1,3.0;17996,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12042" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17861,1,96.0;17320,1,3.0;17997,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12043" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17862,1,96.0;17321,1,3.0;17998,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12044" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17863,1,96.0;17322,1,3.0;17999,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12045" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17864,1,96.0;17323,1,3.0;18000,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12046" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17865,1,96.0;17324,1,3.0;18001,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12047" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17866,1,96.0;17325,1,3.0;18002,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12048" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17867,1,96.0;17326,1,3.0;18003,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12049" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17868,1,96.0;17327,1,3.0;18004,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12050" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17869,1,96.0;17328,1,3.0;18005,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12051" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17870,1,96.0;17329,1,3.0;18006,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12052" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17871,1,96.0;17330,1,3.0;18007,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12053" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17872,1,96.0;17331,1,3.0;18008,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12054" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17873,1,96.0;17332,1,3.0;18009,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12055" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17874,1,96.0;17333,1,3.0;18010,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12056" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17875,1,96.0;17334,1,3.0;18011,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12057" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17876,1,96.0;17335,1,3.0;18012,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12058" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17877,1,96.0;17336,1,3.0;18013,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12059" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17878,1,96.0;17337,1,3.0;18014,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12060" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17879,1,96.0;17338,1,3.0;18015,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12061" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17880,1,96.0;17339,1,3.0;18016,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12062" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17881,1,96.0;17340,1,3.0;18017,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12063" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17882,1,96.0;17341,1,3.0;18018,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12064" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17883,1,96.0;17342,1,3.0;18019,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12065" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17884,1,96.0;17343,1,3.0;18020,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12066" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17885,1,96.0;17344,1,3.0;18021,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12067" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17886,1,96.0;17345,1,3.0;18022,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12068" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17887,1,96.0;17346,1,3.0;18023,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12069" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17888,1,96.0;17347,1,3.0;18024,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12070" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17889,1,96.0;17348,1,3.0;18025,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12071" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17890,1,96.0;17349,1,3.0;18026,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12072" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17891,1,96.0;17350,1,3.0;18027,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12073" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17892,1,96.0;17351,1,3.0;18028,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12074" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17893,1,96.0;17352,1,3.0;18029,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12075" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17894,1,96.0;17353,1,3.0;18030,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12076" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17895,1,96.0;17354,1,3.0;18031,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12077" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17896,1,96.0;17355,1,3.0;18032,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12078" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17897,1,96.0;17356,1,3.0;18033,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12079" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17898,1,96.0;17357,1,3.0;18034,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12080" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17899,1,96.0;17382,1,3.0;18035,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12081" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17900,1,96.0;17383,1,3.0;18036,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12082" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17901,1,96.0;17384,1,3.0;18037,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12083" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17902,1,96.0;17385,1,3.0;18038,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12084" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17903,1,96.0;17386,1,3.0;18039,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12085" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17904,1,96.0;17387,1,3.0;18040,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12086" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17905,1,96.0;17388,1,3.0;18041,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12087" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17906,1,96.0;17389,1,3.0;18042,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12088" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17907,1,96.0;17390,1,3.0;18043,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12089" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17908,1,96.0;17391,1,3.0;18044,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12090" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17909,1,96.0;17392,1,3.0;18045,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12091" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17910,1,96.0;17393,1,3.0;18046,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12092" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17911,1,96.0;17394,1,3.0;18047,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12093" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17912,1,96.0;17395,1,3.0;18048,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12094" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17913,1,96.0;17396,1,3.0;18049,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12095" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17914,1,96.0;17397,1,3.0;18050,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12096" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17915,1,96.0;17398,1,3.0;18051,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12097" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17916,1,96.0;17399,1,3.0;18052,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12098" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17917,1,96.0;17400,1,3.0;18053,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="12099" levels="1" name="Опознание Предмета">
+        <table name="#extractableItems">17918,1,96.0;17401,1,3.0;18054,1,1.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+</list>

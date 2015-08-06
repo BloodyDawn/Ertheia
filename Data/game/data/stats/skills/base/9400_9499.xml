@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="9407" levels="1" name="Призвать Агатиона - Чан Хе Чжин">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="npcId" val="16088"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9408" levels="1" name="Призвать Агатиона - Чан Хек">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="npcId" val="16089"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9409" levels="1" name="Призвать Агатиона - Ким Су Ро">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="npcId" val="16090"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9410" levels="1" name="Призвать Агатиона - Пак Чже Бом">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="npcId" val="16091"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9411" levels="1" name="Призвать Агатиона - Ким Син Енг">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="npcId" val="16092"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9412" levels="1" name="Трюк Агатиона - Чан Хе Чжин">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6200"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <cond msgId="2292">
+            <player agathionId="16088"/>
+        </cond>
+    </skill>
+    <skill id="9413" levels="1" name="Трюк Агатиона - Чан Хек">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6200"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <cond msgId="2292">
+            <player agathionId="16089"/>
+        </cond>
+    </skill>
+    <skill id="9414" levels="1" name="Трюк Агатиона - Ким Су Ро">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6200"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <cond msgId="2292">
+            <player agathionId="16090"/>
+        </cond>
+    </skill>
+    <skill id="9415" levels="1" name="Трюк Агатиона - Пак Чже Бом">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6200"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <cond msgId="2292">
+            <player agathionId="16091"/>
+        </cond>
+    </skill>
+    <skill id="9416" levels="1" name="Трюк Агатиона - Ким Син Енг">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6200"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <cond msgId="2292">
+            <player agathionId="16092"/>
+        </cond>
+    </skill>
+    <skill id="9438" levels="1" name="Подарок Коллекционера Знаков - 9-я годовщина">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="reuseDelay" val="1800000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="7200" abnormalType="special_vesper_c" abnormalVisualEffect="vesper_c" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.10"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.10"/>
+                <mul order="0x30" stat="maxHp" val="1.10"/>
+                <mul order="0x30" stat="maxMp" val="1.10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9442" levels="1" name="Лопатка">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="5000"/>
+        <set name="castRange" val="40"/>
+        <set name="reuseDelay" val="6000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DUMMY"/>
+    </skill>
+    <skill id="9443" levels="1" name="Бутылка для Воды из Источника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="5000"/>
+        <set name="castRange" val="900"/>
+        <set name="reuseDelay" val="6000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+    </skill>
+    <skill id="9444" levels="1" name="Семена Помощи">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="230"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DUMMY"/>
+    </skill>
+    <skill id="9445" levels="1" name="Камень Призыва">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+    </skill>
+    <skill id="9446" levels="1" name="Свиток Телепорта: Горячие Источники">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TELEPORT"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="teleCoords" val="144849,-113443,-2555"/>
+    </skill>
+    <skill id="9447" levels="1" name="Свиток Телепорта: Кузница Богов">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TELEPORT"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="teleCoords" val="169068,-116351,-2427"/>
+    </skill>
+    <skill id="9448" levels="1" name="Свиток Телепорта: Кристальный Остров">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TELEPORT"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="teleCoords" val="149481,195329,-3731"/>
+    </skill>
+    <skill id="9449" levels="1" name="Свиток Телепорта: Замок Аден (осада)">
+        <table name="#teleCoords">146759,25813,-2003</table>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TELEPORT"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="teleCoords" val="#teleCoords"/>
+    </skill>
+    <skill id="9450" levels="1" name="Свиток Телепорта: Замок Руна (осада)">
+        <table name="#teleCoords">43821,-47765,-787</table>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TELEPORT"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="teleCoords" val="#teleCoords"/>
+    </skill>
+    <skill id="9461" levels="1" name="Свиток Телепорта - Крепость Гильотина">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="20000"/>
+        <set name="skillType" val="TELEPORT"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="teleCoords" val="54556,139159,-2591"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9472" levels="1" name="Призвать Агатиона - Дух Пламени">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="npcId" val="16093"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9475" levels="1" name="Припасы Инженеров Софа">
+        <table name="#extractableItems">19448,1,6.25;19447,1,6.25;9555,1,6.25;9553,1,6.25;9554,1,6.25;9552,1,6.25;9557,1,6.25;9556,1,6.25;9549,1,6.25;9547,1,6.25;9548,1,6.25;9546,1,6.25;9551,1,6.25;9550,1,6.25;17527,1,6.25;17526,1,6.25</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9477" levels="1" name="Припасы Аку">
+        <table name="#extractableItems">34990,1,16.4;34991,1,40;34992,1,42;35407,1,0.2;35409,1,0.2;45414,1,0.2;35418,1,0.2;35342,1,0.2;35353,1,0.2;35348,1,0.2;35330,1,0.2</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9487" levels="1" name="Благословение Кота-Ангела">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="1800000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="special_vesper_c" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.05"/>
+                <mul order="0x30" stat="pDef" val="1.20"/>
+                <mul order="0x30" stat="mDef" val="1.05"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.05"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.05"/>
+                <mul order="0x30" stat="maxHp" val="1.05"/>
+                <mul order="0x30" stat="maxMp" val="1.05"/>
+                <mul order="0x30" stat="bonusExp" val="1.3"/>
+                <mul order="0x30" stat="bonusSp" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9400" levels="1" name="Сундук с Кольцом Большой Тыквы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9401" levels="1" name="Сундук с Серьгой Большой Тыквы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9402" levels="1" name="Сундук с Ожерельем Большой Тыквы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9403" levels="1" name="Медовый Напиток Мафр">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9404" levels="1" name="Таинственная Настойка Силы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="100"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9405" levels="1" name="Таинственная Настойка Магии">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="100"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9406" levels="1" name="Ингредиент, Мешочек с Усилителем - R">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9417" levels="1" name="Синий Сундук Хранителя Мира">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9418" levels="1" name="Красный Сундук Хранителя Мира">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9419" levels="1" name="Золотистый Сундук Хранителя Мира">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9420" levels="1" name="Синий Сундук Странника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9421" levels="1" name="Красный Сундук Странника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9422" levels="1" name="Золотистый Сундук Странника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9423" levels="1" name="Мешочек с Наградой за Кампанию">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9424" levels="1" name="Мешочек с Наградой за Кампанию">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9425" levels="1" name="Коробка с Краской Гигантов Ур. 2">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9426" levels="1" name="Коробка с Легендарной Краской Ур. 2">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9427" levels="1" name="Коробка с Древней Краской Ур. 2">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9428" levels="1" name="Коробка с Краской Гигантов Ур. 3">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9429" levels="1" name="Коробка с Легендарной Краской Ур. 3">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9430" levels="1" name="Коробка с Древней Краской Ур. 3">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9431" levels="1" name="Коробка с Краской Гигантов Ур. 4">
+        <table name="#extractableItems">17679,1,20;17680,1,20;17681,1,20;17682,1,20;17683,1,20;17684,1,20</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9432" levels="1" name="Коробка с Легендарной Краской Ур. 4">
+        <table name="#extractableItems">17691,1,20;17692,1,20;17693,1,20;17694,1,20;17695,1,20;17696,1,20</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9433" levels="1" name="Коробка с Древней Краской Ур. 4">
+        <table name="#extractableItems">17685,1,20;17686,1,20;17687,1,20;17688,1,20;17689,1,20;17690,1,20</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9434" levels="1" name="Коробка с Краской Гигантов Ур. 5">
+        <table name="#extractableItems">17697,1,20;17698,1,20;17699,1,20;17700,1,20;17701,1,20;17702,1,20</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9435" levels="1" name="Коробка с Легендарной Краской Ур. 5">
+        <table name="#extractableItems">17709,1,20;17710,1,20;17711,1,20;17712,1,20;17713,1,20;17714,1,20</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9436" levels="1" name="Коробка с Древней Краской Ур. 5">
+        <table name="#extractableItems">17703,1,20;17704,1,20;17705,1,20;17706,1,20;17707,1,20;17708,1,20</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9437" levels="1" name="Сундук со Свитком Телепорта: Деревня">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9439" levels="1" name="Эффект: Свиток 10 000 Очков Личной Репутации">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9440" levels="1" name="Эффект: Свиток 50 000 Очков Личной Репутации">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9441" levels="1" name="Эффект: Свиток 100 000 Очков Личной Репутации">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="200"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9451" levels="1" name="Предметное Умение - Прыжок">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="reuseDelay" val="24000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9452" levels="1" name="Предметное Умение - Рывок">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="reuseDelay" val="90000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9453" levels="1" name="Предметное Умение - Стойкость Бессмертия">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="reuseDelay" val="480000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9454" levels="1" name="Предметное Умение - Безмолвие">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="castRange" val="1000"/>
+        <set name="reuseDelay" val="240000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9455" levels="1" name="Предметное Умение - Неуловимая Цель">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="800"/>
+        <set name="reuseDelay" val="480000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9456" levels="3" name="Предметное Умение - Сопротивление Отражению Урона">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="4000"/>
+        <set name="reuseDelay" val="4000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9459" levels="1" name="Бешенство Таути">
+        <set name="flyRadius" val="130"/>
+        <set name="power" val="27552"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="300"/>
+        <set name="mpConsume" val="191"/>
+        <set name="basicProperty" val="PHYSIC"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillRadius" val="400"/>
+        <set name="castRange" val="20"/>
+        <set name="effectRange" val="100"/>
+        <set name="trait" val="KNOCKDOWN"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3" abnormalVisualEffect="sknockdown" effectPower="27552" effectType="KNOCK_DOWN" name="KnockDown" val="1">
+            </effect>
+        </for>
+    </skill>
+    <skill id="9460" levels="1" name="Полномочия Таути">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="300"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="mpConsume" val="279"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9464" levels="1" name="Сундук Сокровищ Правителя Адена">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9465" levels="1" name="Котомка">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9466" levels="1" name="Сундук Cокровищ Правителя Руны">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9467" levels="1" name="Зараженное Яйцо Драко">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9468" levels="1" name="Малое Яйцо Драко">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9469" levels="1" name="Большое Яйцо Драко">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9470" levels="1" name="Подарок Драко">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9471" levels="1" name="Сверкающий Подарок Драко">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9473" levels="1" name="Сундук Мертвеца">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9474" levels="1" name="Сундук Мертвеца">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9476" levels="1" name="Припасы Партизан">
+        <table name="#extractableItems">34990,1,16.4;34991,1,40;34992,1,42;35407,1,0.2;35409,1,0.2;45414,1,0.2;35418,1,0.2;35342,1,0.2;35353,1,0.2;35348,1,0.2;35330,1,0.2</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9478" levels="1" name="Активация Запрета Чата">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2000"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="900"/>
+        <set name="reuseDelay" val="180000"/>
+        <set name="mpConsume" val="1"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9479" levels="1" name="Дополнительный Билет">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9480" levels="1" name="Дополнительный Билет">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9481" levels="1" name="Дополнительный Билет">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9482" levels="1" name="Дополнительный Билет">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9483" levels="1" name="Дополнительный Билет">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9484" levels="1" name="Дополнительный Билет">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9485" levels="1" name="Зараженное Яйцо Драко - Шанс Выпадания Предмета">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9486" levels="1" name="Запрет Чата">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9488" levels="1" name="Новогоднее Благословение 1 Ур.">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="900"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9489" levels="1" name="Новогоднее Благословение 2 Ур.">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="900"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9490" levels="1" name="Новогоднее Благословение 3 Ур.">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="900"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9491" levels="1" name="Новогоднее Благословение 4 Ур.">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="900"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9492" levels="1" name="Новогоднее Благословение 5 Ур.">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="900"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9493" levels="1" name="Эффект Новогоднего Благословения 1 Ур.">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9494" levels="1" name="Эффект Новогоднего Благословения 2 Ур.">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9495" levels="1" name="Эффект Новогоднего Благословения 3 Ур.">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9496" levels="1" name="Эффект Новогоднего Благословения 4 Ур.">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9497" levels="1" name="Эффект Новогоднего Благословения 5 Ур.">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9498" levels="1" name="Плащ Снегурочки">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9499" levels="1" name="Мешочек Антараса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+</list>

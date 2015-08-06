@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="3300" levels="1" name="Желтый Талисман Скорости">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="runSpd" val="5"/>
+        </for>
+    </skill>
+    <skill id="3301" levels="1" name="Желтый Талисман Неистовой Скорости">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="pAtkSpd" val="10"/>
+        </for>
+    </skill>
+    <skill id="3302" levels="1" name="Желтый Талисман Магической Скорости">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="mAtkSpd" val="8"/>
+        </for>
+    </skill>
+    <skill id="3303" levels="1" name="Белый Талисман Сопротивления Кровотечению">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x40" stat="bleedVuln" val="10"/>
+        </for>
+    </skill>
+    <skill id="3304" levels="1" name="Белый Талисман Сопротивления Усыплению">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x40" stat="sleepVuln" val="10"/>
+        </for>
+    </skill>
+    <skill id="3305" levels="1" name="Белый Талисман Сопротивления Шоку">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x40" stat="stunVuln" val="10"/>
+        </for>
+    </skill>
+    <skill id="3306" levels="1" name="Белый Талисман Ментального Сопротивления">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x40" stat="derangementVuln" val="10"/>
+        </for>
+    </skill>
+    <skill id="3307" levels="1" name="Белый Талисман Сопротивления Параличу">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x40" stat="paralyzeVuln" val="10"/>
+        </for>
+    </skill>
+    <skill id="3308" levels="1" name="Белый Талисман Сопротивления Удержанию">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x40" stat="rootVuln" val="10"/>
+        </for>
+    </skill>
+    <skill id="3309" levels="1" name="Белый Талисман Стойкости Чар">
+        <set name="magicLvl" val="55"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="cancelVuln" val="100"/>
+        </for>
+    </skill>
+    <skill id="3310" levels="1" name="Желтый Талисман Восстановления HP">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="regHp" val="1.03"/>
+        </for>
+    </skill>
+    <skill id="3311" levels="1" name="Желтый Талисман Восстановления CP">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="regCp" val="1.03"/>
+        </for>
+    </skill>
+    <skill id="3312" levels="1" name="Желтый Талисман Исцеления">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="bonusHp" val="40"/>
+        </for>
+    </skill>
+    <skill id="3313" levels="1" name="Желтый Талисман Быстроты">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="pAtkSpd" val="5"/>
+            <add order="0x40" stat="mAtkSpd" val="4"/>
+            <add order="0x40" stat="runSpd" val="3"/>
+        </for>
+    </skill>
+    <skill id="3314" levels="1" name="Серый Талисман Лимита Веса">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="weightLimit" val="1.1"/>
+        </for>
+    </skill>
+    <skill id="3315" levels="1" name="Серый Талисман Рыболова">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3316" levels="1" name="Желтый Талисман Крит. Уклонения">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="critDamEvas" val="1.03"/>
+        </for>
+    </skill>
+    <skill id="3317" levels="1" name="Желтый Талисман Крит. Сопротивления">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x40" stat="critAddVuln" val="100"/>
+        </for>
+    </skill>
+    <skill id="3318" levels="1" name="Установить Флаг">
+        <set name="target" val="TARGET_FLAGPOLE"/>
+        <set name="hitTime" val="180000"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="skillType" val="TAKEFORT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="3319" levels="1" name="Божественная Защита Кольца">
+        <set name="magicLvl" val="86"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x40" stat="gustVuln" val="100"/>
+        </for>
+    </skill>
+    <skill id="3320" levels="1" name="Желтый Талисман Восстановления MP">
+        <set name="magicLvl" val="55"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="regMp" val="1.03"/>
+        </for>
+    </skill>
+    <skill id="3321" levels="1" name="Синий Талисман Уклонения">
+        <set name="aggroPoints" val="379"/>
+        <set name="hitTime" val="4000"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="magicLvl" val="40"/>
+        <set name="mpConsume" val="14"/>
+        <set name="mpInitialConsume" val="4"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="120" abnormalType="talisman" name="Buff" val="0">
+                <add order="0x40" stat="ratePhysicalEvas" val="2"/>
+                <mul order="0x30" stat="critDamEvas" val="1.05"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="3322" levels="1" name="Медный Браслет">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <set order="0x50" stat="talisman" val="1"/>
+        </for>
+    </skill>
+    <skill id="3323" levels="1" name="Бронзовый Браслет">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <set order="0x50" stat="talisman" val="2"/>
+        </for>
+    </skill>
+    <skill id="3324" levels="1" name="Стальной Браслет">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <set order="0x50" stat="talisman" val="3"/>
+        </for>
+    </skill>
+    <skill id="3325" levels="1" name="Мифриловый Браслет">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <set order="0x50" stat="talisman" val="4"/>
+        </for>
+    </skill>
+    <skill id="3326" levels="1" name="Драгоценный Браслет">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <set order="0x50" stat="talisman" val="5"/>
+        </for>
+    </skill>
+    <skill id="3327" levels="1" name="Орихаруконовый Браслет">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <set order="0x50" stat="talisman" val="6"/>
+        </for>
+    </skill>
+    <skill id="3328" levels="1" name="Двойной Укол">
+        <set name="nextActionAttack" val="true"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="reuseDelay" val="60000"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="hitTime" val="1670"/>
+        <set name="coolTime" val="133"/>
+    </skill>
+    <skill id="3329" levels="1" name="Двойной Порез">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="nextActionAttack" val="true"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="reuseDelay" val="60000"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="hitTime" val="1670"/>
+        <set name="coolTime" val="133"/>
+    </skill>
+    <skill id="3330" levels="1" name="Воздушный Клинок">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="nextActionAttack" val="true"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="reuseDelay" val="60000"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="hitTime" val="1080"/>
+        <set name="coolTime" val="720"/>
+    </skill>
+    <skill id="3331" levels="1" name="Порабощение">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="reuseDelay" val="8000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="basicProperty" val="MAGIC"/>
+    </skill>
+    <skill id="3332" levels="1" name="Оранжевый Талисман Зелья Восстановления CP">
+        <set name="create_item_count" val="1"/>
+        <set name="create_item_id" val="10166"/>
+        <set name="hitTime" val="20000"/>
+        <set name="itemConsumeCount" val="16"/>
+        <set name="itemConsumeId" val="1785"/>
+        <set name="magicLvl" val="1"/>
+        <set name="mpConsume" val="40"/>
+        <set name="mpInitialConsume" val="10"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="300000"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="3333" levels="1" name="Оранжевый Талисман Эликсира Жизни Ранга А">
+        <set name="create_item_count" val="1"/>
+        <set name="create_item_id" val="8626"/>
+        <set name="hitTime" val="20000"/>
+        <set name="itemConsumeCount" val="50"/>
+        <set name="itemConsumeId" val="1785"/>
+        <set name="magicLvl" val="1"/>
+        <set name="mpConsume" val="40"/>
+        <set name="mpInitialConsume" val="10"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="600000"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="3334" levels="1" name="Оранжевый Талисман Эликсира Ментальной Силы Ранга А">
+        <set name="create_item_count" val="1"/>
+        <set name="create_item_id" val="8632"/>
+        <set name="hitTime" val="20000"/>
+        <set name="itemConsumeCount" val="57"/>
+        <set name="itemConsumeId" val="1785"/>
+        <set name="magicLvl" val="1"/>
+        <set name="mpConsume" val="40"/>
+        <set name="mpInitialConsume" val="10"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="600000"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="3335" levels="1" name="Превращение в Йети">
+        <set name="aggroPoints" val="1"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="magicLvl" val="56"/>
+        <set name="operateType" val="A2"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="500"/>
+        <set name="transformId" val="102"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="3336" levels="1" name="превращение в Буйвола">
+        <set name="aggroPoints" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="magicLvl" val="56"/>
+        <set name="negateAbnormals" val="big_head,9"/>
+        <set name="operateType" val="A2"/>
+        <set name="hitTime" val="500"/>
+        <set name="transformId" val="103"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="transform" name="Transformation" val="0"/>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="3337" levels="1" name="Превращение в Милую Свинью">
+        <set name="aggroPoints" val="1"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="magicLvl" val="56"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="reuseDelay" val="600000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="transformId" val="104"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="3338" levels="1" name="Мастер Щита">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3339" levels="1" name="Бард">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3340" levels="1" name="Мастер-Оружейник">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3341" levels="1" name="Мастер Силы">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3342" levels="1" name="Мастер Лука">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3343" levels="1" name="Мастер Кинжала">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3344" levels="1" name="Чародей">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3345" levels="1" name="Призыватель">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3346" levels="1" name="Целитель">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3347" levels="1" name="Зачарователь">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3348" levels="1" name="Кираса Династии">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x10" stat="STR" val="2"/>
+            <add order="0x10" stat="CON" val="2"/>
+            <mul order="0x30" stat="pDef" val="1.054"/>
+            <add order="0x40" stat="maxHp" val="492"/>
+            <mul order="0x30" stat="gainHp" val="1.03"/>
+            <sub order="0x40" stat="stunVuln" val="13"/>
+            <add order="0x40" stat="darkRes" val="8"/>
+            <add order="0x10" stat="cloak" val="1"/>
+        </for>
+    </skill>
+    <skill id="3349" levels="1" name="Кираса Династии">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x10" stat="CON" val="2"/>
+            <add order="0x10" stat="STR" val="2"/>
+            <mul order="0x30" stat="pAtk" val="1.054"/>
+            <add order="0x40" stat="maxHp" val="492"/>
+            <add order="0x40" stat="pCritRate" val="24.6"/>
+            <add order="0x40" stat="cAtkAdd" val="234"/>
+            <add order="0x40" stat="darkRes" val="8"/>
+            <add order="0x10" stat="cloak" val="1"/>
+        </for>
+    </skill>
+    <skill id="3350" levels="1" name="Кираса Династии">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x10" stat="CON" val="2"/>
+            <add order="0x10" stat="STR" val="1"/>
+            <add order="0x10" stat="DEX" val="1"/>
+            <mul order="0x30" stat="pAtk" val="1.054"/>
+            <add order="0x40" stat="maxHp" val="492"/>
+            <add order="0x40" stat="darkRes" val="8"/>
+            <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.95"/>
+            <add order="0x10" stat="cloak" val="1"/>
+        </for>
+    </skill>
+    <skill id="3351" levels="1" name="Кираса Династии">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x10" stat="CON" val="2"/>
+            <add order="0x10" stat="STR" val="2"/>
+            <mul order="0x30" stat="pDef" val="1.054"/>
+            <add order="0x40" stat="maxHp" val="492"/>
+            <mul order="0x30" stat="DanceMpConsumeRate" val="0.95"/>
+            <add order="0x40" stat="darkRes" val="8"/>
+            <add order="0x10" stat="cloak" val="1"/>
+        </for>
+    </skill>
+    <skill id="3352" levels="1" name="Кожаный Доспех Династии">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x10" stat="CON" val="2"/>
+            <add order="0x10" stat="DEX" val="2"/>
+            <add order="0x40" stat="ratePhysicalEvas" val="4.3"/>
+            <add order="0x40" stat="maxHp" val="492"/>
+            <mul order="0x30" stat="pAtkSpd" val="1.0266"/>
+            <sub order="0x40" stat="rootVuln" val="13"/>
+            <add order="0x40" stat="darkRes" val="8"/>
+            <add order="0x10" stat="cloak" val="1"/>
+        </for>
+    </skill>
+    <skill id="3353" levels="1" name="Кожаный Доспех Династии">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x10" stat="CON" val="2"/>
+            <add order="0x10" stat="DEX" val="2"/>
+            <add order="0x40" stat="accPhysical" val="4.3"/>
+            <add order="0x40" stat="maxMp" val="321"/>
+            <mul order="0x30" stat="pAtkSpd" val="1.0266"/>
+            <add order="0x40" stat="regMp" val="1.72"/>
+            <add order="0x40" stat="darkRes" val="8"/>
+            <add order="0x10" stat="cloak" val="1"/>
+        </for>
+    </skill>
+    <skill id="3354" levels="1" name="Туника Династии">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x10" stat="INT" val="2"/>
+            <add order="0x10" stat="MEN" val="2"/>
+            <mul order="0x30" stat="mAtkSpd" val="1.15"/>
+            <add order="0x40" stat="maxMp" val="321"/>
+            <add order="0x40" stat="bonusHp" val="20"/>
+            <sub order="0x40" stat="cancel" val="15"/>
+            <add order="0x40" stat="darkRes" val="8"/>
+            <add order="0x10" stat="cloak" val="1"/>
+        </for>
+    </skill>
+    <skill id="3355" levels="1" name="Туника Династии">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x10" stat="INT" val="2"/>
+            <add order="0x10" stat="MEN" val="2"/>
+            <sub order="0x10" stat="WIT" val="2">
+                <using kind="Light"/>
+            </sub>
+            <mul order="0x30" stat="mAtkSpd" val="1.15"/>
+            <add order="0x40" stat="maxMp" val="321"/>
+            <sub order="0x40" stat="cancel" val="15"/>
+            <mul order="0x30" stat="MagicalMpConsumeRate" val="0.95"/>
+            <add order="0x40" stat="darkRes" val="8"/>
+            <add order="0x10" stat="cloak" val="1"/>
+        </for>
+    </skill>
+    <skill id="3356" levels="1" name="Туника Династии">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x10" stat="INT" val="2"/>
+            <add order="0x10" stat="MEN" val="2"/>
+            <mul order="0x30" stat="mAtkSpd" val="1.15"/>
+            <add order="0x40" stat="maxMp" val="321"/>
+            <mul order="0x30" stat="pDef" val="1.026"/>
+            <mul order="0x30" stat="pAtk" val="1.026"/>
+            <add order="0x40" stat="darkRes" val="8"/>
+            <add order="0x10" stat="cloak" val="1"/>
+        </for>
+    </skill>
+    <skill id="3357" levels="1" name="Туника Династии">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x10" stat="INT" val="1"/>
+            <add order="0x10" stat="WIT" val="1"/>
+            <sub order="0x10" stat="MEN" val="2"/>
+            <mul order="0x30" stat="mAtkSpd" val="1.15"/>
+            <mul order="0x30" stat="mAtk" val="1.054"/>
+            <add order="0x40" stat="maxMp" val="321"/>
+            <add order="0x40" stat="darkRes" val="8"/>
+            <add order="0x10" stat="cloak" val="1"/>
+        </for>
+    </skill>
+    <skill id="3358" levels="1" name="Флагоносец">
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="runSpd" val="0.2"/>
+            <mul order="0x30" stat="pAtkSpd" val="0.2"/>
+            <mul order="0x30" stat="pAtk" val="0.2"/>
+            <mul order="0x30" stat="mAtkSpd" val="0.2"/>
+            <mul order="0x30" stat="mAtk" val="0.2"/>
+        </for>
+    </skill>
+    <skill id="3359" levels="1" name="Превращение в Аборигена">
+        <set name="aggroPoints" val="1"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="magicLvl" val="56"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="transformId" val="101"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="300" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="3360" levels="1" name="Особое Свойство: Экономия">
+        <set name="magicLvl" val="99"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.88"/>
+            <mul order="0x30" stat="MagicalMpConsumeRate" val="0.88"/>
+        </for>
+    </skill>
+    <skill id="3361" levels="1" name="Призвать Агатиона - Крепость">
+        <set name="hitTime" val="3000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="65"/>
+        <set name="npcId" val="16029"/>
+        <set name="operateType" val="A1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="-1" name="SummonAgathion" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="3362" levels="1" name="Ожерелье Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3363" levels="1" name="Кольцо Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3364" levels="1" name="Серьга Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3365" levels="1" name="Ожерелье Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="stunVuln" val="18"/>
+        </for>
+    </skill>
+    <skill id="3366" levels="1" name="Кольцо Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="stunVuln" val="8"/>
+        </for>
+    </skill>
+    <skill id="3367" levels="1" name="Серьга Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="stunVuln" val="12"/>
+        </for>
+    </skill>
+    <skill id="3368" levels="1" name="Ожерелье Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3369" levels="1" name="Кольцо Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3370" levels="1" name="Серьга Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3371" levels="1" name="Ожерелье Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="bleedVuln" val="11"/>
+        </for>
+    </skill>
+    <skill id="3372" levels="1" name="Кольцо Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="bleedVuln" val="5"/>
+        </for>
+    </skill>
+    <skill id="3373" levels="1" name="Серьга Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="bleedVuln" val="8"/>
+        </for>
+    </skill>
+    <skill id="3374" levels="1" name="Ожерелье Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3375" levels="1" name="Кольцо Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3376" levels="1" name="Серьга Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3377" levels="1" name="Ожерелье Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="poisonVuln" val="16"/>
+        </for>
+    </skill>
+    <skill id="3378" levels="1" name="Кольцо Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="poisonVuln" val="7"/>
+        </for>
+    </skill>
+    <skill id="3379" levels="1" name="Серьга Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="poisonVuln" val="11"/>
+        </for>
+    </skill>
+    <skill id="3380" levels="1" name="Ожерелье Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3381" levels="1" name="Кольцо Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3382" levels="1" name="Серьга Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3383" levels="1" name="Ожерелье Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="paralyzeVuln" val="9"/>
+        </for>
+    </skill>
+    <skill id="3384" levels="1" name="Кольцо Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="paralyzeVuln" val="4"/>
+        </for>
+    </skill>
+    <skill id="3385" levels="1" name="Серьга Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="paralyzeVuln" val="6"/>
+        </for>
+    </skill>
+    <skill id="3386" levels="1" name="Ожерелье Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3387" levels="1" name="Кольцо Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3388" levels="1" name="Серьга Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3389" levels="1" name="Ожерелье Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="rootVuln" val="18"/>
+        </for>
+    </skill>
+    <skill id="3390" levels="1" name="Кольцо Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="rootVuln" val="8"/>
+        </for>
+    </skill>
+    <skill id="3391" levels="1" name="Серьга Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="rootVuln" val="12"/>
+        </for>
+    </skill>
+    <skill id="3392" levels="1" name="Ожерелье Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3393" levels="1" name="Кольцо Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3394" levels="1" name="Серьга Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3395" levels="1" name="Ожерелье Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="sleepVuln" val="18"/>
+        </for>
+    </skill>
+    <skill id="3396" levels="1" name="Кольцо Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="sleepVuln" val="8"/>
+        </for>
+    </skill>
+    <skill id="3397" levels="1" name="Серьга Сопротивления Династии">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <sub order="0x40" stat="sleepVuln" val="12"/>
+        </for>
+    </skill>
+    <skill id="3398" levels="1" name="Ожерелье Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="3399" levels="1" name="Кольцо Сильной Черты">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+</list>

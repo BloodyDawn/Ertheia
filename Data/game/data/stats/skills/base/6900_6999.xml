@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="6900" levels="1" name="Рейдовый Босс - Уровень 84">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6901" levels="1" name="Рейдовый Босс - Уровень 84">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6902" levels="1" name="Рейдовый Босс - Уровень 84">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6903" levels="1" name="Рейдовый Босс - Уровень 84">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6904" levels="1" name="Рейдовый Босс - Уровень 84">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6905" levels="1" name="Рейдовый Босс - Уровень 85">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6906" levels="1" name="Рейдовый Босс - Уровень 85">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6907" levels="1" name="Рейдовый Босс - Уровень 85">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6908" levels="1" name="Перевоплощение в Мастера">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="transformId" val="22"/>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="6909" levels="1" name="Зачарование">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6910" levels="1" name="Танец">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6911" levels="1" name="Приветствие">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6912" levels="1" name="Последствия Печати">
+        <set name="magicLvl" val="85"/>
+        <set name="power" val="100"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="isDebuff" val="true"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="1" abnormalType="stigma_of_antharas" abnormalVisualEffect="stigmashilien" count="10" name="HpDamOverTime" val="500"/>
+            <effect abnormalTime="1" count="10" name="MpDamOverTime" noicon="1" val="300"/>
+        </for>
+    </skill>
+    <skill id="6913" levels="1" name="Вызов Веры">
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="magicLvl" val="83"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="15" name="Buff" val="0">
+                <add order="0x40" stat="pDef" val="360"/>
+                <add order="0x40" stat="mDef" val="270"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6914" levels="10" name="Ускорение">
+        <table name="#pAtkSpd">1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+        </for>
+    </skill>
+    <skill id="6915" levels="10" name="Проницательность">
+        <table name="#mAtkSpd">1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2</table>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+        </for>
+    </skill>
+    <skill id="6916" levels="1" name="Трюк Антараса">
+        <set name="operate_type" val="A1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <cond msgId="2292">
+            <player agathionId="16077"/>
+        </cond>
+    </skill>
+    <skill id="6917" levels="1" name="Сияние Канны">
+        <set name="operate_type" val="A1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <cond msgId="2292">
+            <player agathionId="16078"/>
+        </cond>
+    </skill>
+    <skill id="6918" levels="1" name="Сияние Калесина">
+        <set name="operate_type" val="A1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <cond msgId="2292">
+            <player agathionId="16079"/>
+        </cond>
+    </skill>
+    <skill id="6919" levels="1" name="Принять Вызов">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="6920" levels="1" name="Фортуна Коллекционера">
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="magicLvl" val="74"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond>
+            <player active_skill_id="952"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="10" abnormalType="fortune" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.15"/>
+                <mul order="0x10" stat="pCritRate" val="1.1"/>
+                <mul order="0x30" stat="cAtk" val="1.1"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.03"/>
+                <add order="0x40" stat="runSpd" val="5"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6921" levels="1" name="Прокалывающая Атака">
+        <set name="operate_type" val="A2"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="magicLvl" val="80"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="power" val="50"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isDebuff" val="true"/>
+        <set name="castRange" val="500"/>
+        <set name="effectRange" val="1000"/>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="10" abnormalType="pd_down" count="1" name="Debuff" val="0">
+                <mul order="0x30" stat="pDef" val="0.77"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="6922" levels="3" name="Могущество Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="6923" levels="3" name="Воодушевление Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="6924" levels="3" name="Щит Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="6925" levels="2" name="Магический Барьер Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="6926" levels="6" name="Благословение Тела Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="6927" levels="6" name="Благословение Духа Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="6928" levels="3" name="Фокусировка Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="6929" levels="2" name="Дикая Магия Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="6930" levels="2" name="Ускорение Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="6931" levels="3" name="Проницательность Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="6932" levels="4" name="Гнев Вампира Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="6933" levels="2" name="Дух Берсерка Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="6934" levels="3" name="Шепот Смерти Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="6935" levels="2" name="Легкая Походка Путешественника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+</list>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list" type="listType"/>
+	<xs:complexType name="groupType">
+		<xs:sequence>
+			<xs:element type="enchantType" name="enchant" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute type="xs:string" name="id" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="listType">
+		<xs:sequence>
+			<xs:element type="groupType" name="group" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="enchantType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:integer" name="level" use="required"/>
+				<xs:attribute type="xs:integer" name="adena" use="required"/>
+				<xs:attribute type="xs:integer" name="sp" use="required"/>
+				<xs:attribute type="xs:string" name="successRate" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+</xs:schema>

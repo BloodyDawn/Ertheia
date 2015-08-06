@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="1100" name="Хлопковая Туника" type="Armor">
+		<set name="icon" val="icon.armor_t50_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="2120"/>
+		<set name="price" val="1870"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="21"/>
+			<add order="0x40" stat="maxMp" val="38"/>
+		</for>
+	</item>
+	<item id="1101" name="Туника Преданности" type="Armor">
+		<set name="icon" val="icon.armor_t55_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="2090"/>
+		<set name="price" val="15600"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="30"/>
+			<add order="0x40" stat="maxMp" val="67"/>
+		</for>
+	</item>
+	<item id="1102" name="Туника Мага" type="Armor">
+		<set name="icon" val="icon.armor_t58_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="2080"/>
+		<set name="price" val="28400"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="34"/>
+			<add order="0x40" stat="maxMp" val="86"/>
+		</for>
+	</item>
+	<item id="1103" name="Хлопковые Штаны" type="Armor">
+		<set name="icon" val="icon.armor_t50_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="1060"/>
+		<set name="price" val="1170"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="13"/>
+			<add order="0x40" stat="maxMp" val="23"/>
+		</for>
+	</item>
+	<item id="1104" name="Штаны Преданности" type="Armor">
+		<set name="icon" val="icon.armor_t55_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="1040"/>
+		<set name="price" val="9770"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+			<add order="0x40" stat="maxMp" val="42"/>
+		</for>
+	</item>
+	<item id="1105" name="Штаны Мага" type="Armor">
+		<set name="icon" val="icon.armor_t58_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="1030"/>
+		<set name="price" val="17700"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="21"/>
+			<add order="0x40" stat="maxMp" val="54"/>
+		</for>
+	</item>
+	<item id="1106" name="Письмо Нормана" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_gray_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1107" name="Обломок Кости" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_bone_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1108" name="Письмо Арбона" type="EtcItem">
+		<set name="icon" val="icon.item_normal20"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1109" name="Письмо Роена" type="EtcItem">
+		<set name="icon" val="icon.item_normal20"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1110" name="Обломок Кости" type="EtcItem">
+		<set name="icon" val="icon.item_normal05"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1111" name="_" type="EtcItem">
+		<set name="icon" val="icon.item_normal49"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1112" name="Лист Древа Жизни" type="EtcItem">
+		<set name="icon" val="icon.etc_leaf_green_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1113" name="Кровь Митраэля" type="EtcItem">
+		<set name="icon" val="icon.item_canuse48"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1114" name="Амулет Орка" type="EtcItem">
+		<set name="icon" val="icon.etc_feather_gold_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1115" name="Ожерелье Орка" type="EtcItem">
+		<set name="icon" val="icon.accessary_necklace_of_anguish_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1116" name="Амулет Орка" type="EtcItem">
+		<set name="icon" val="icon.etc_feather_gold_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1117" name="Ожерелье Орка" type="EtcItem">
+		<set name="icon" val="icon.accessary_necklace_of_anguish_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1118" name="Мешочек со Спорами" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_brown_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1119" name="Короткие Кожаные Перчатки" type="Armor">
+		<set name="icon" val="icon.armor_t04_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="660"/>
+		<set name="price" val="470"/>
+		<for>
+			<add order="0x10" stat="pDef" val="11"/>
+		</for>
+	</item>
+	<item id="1120" name="Рука Паагрио" type="Armor">
+		<set name="icon" val="icon.armor_short_leather_gloves_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="64"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1600"/>
+		<set name="price" val="123900"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="34"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="1121" name="Ботинки Ученика" type="Armor">
+		<set name="icon" val="icon.armor_t01_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1320"/>
+		<set name="price" val="4"/>
+		<for>
+			<add order="0x10" stat="pDef" val="8"/>
+		</for>
+	</item>
+	<item id="1122" name="Хлопковые Сандалии" type="Armor">
+		<set name="icon" val="icon.armor_t50_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1320"/>
+		<set name="price" val="470"/>
+		<for>
+			<add order="0x10" stat="pDef" val="11"/>
+		</for>
+	</item>
+	<item id="1123" name="Голубые Замшевые Сапоги" type="Armor">
+		<set name="icon" val="icon.armor_t18_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="47"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1300"/>
+		<set name="price" val="25600"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="22"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="1124" name="Сапоги Силы" type="Armor">
+		<set name="icon" val="icon.armor_t40_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="106"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1250"/>
+		<set name="price" val="57400"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="27"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="1125" name="Штурмовые Сапоги" type="Armor">
+		<set name="icon" val="icon.armor_t44_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="139"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1240"/>
+		<set name="price" val="75200"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="29"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="1126" name="Багровые Сапоги" type="Armor">
+		<set name="icon" val="icon.armor_t57_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="50"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1210"/>
+		<set name="price" val="123900"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="34"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="1127" name="Забытые Сапоги" type="Armor">
+		<set name="icon" val="icon.armor_iron_boots_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="98"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="4000"/>
+		<set name="price" val="188800"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="36"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="1128" name="Адамантитовые Сапоги" type="Armor">
+		<set name="icon" val="icon.armor_iron_boots_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="143"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="4000"/>
+		<set name="price" val="275100"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="39"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="1129" name="Ботинки из Грубой Кожи" type="Armor">
+		<set name="icon" val="icon.armor_t04_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1320"/>
+		<set name="price" val="470"/>
+		<for>
+			<add order="0x10" stat="pDef" val="11"/>
+		</for>
+	</item>
+	<item id="1130" name="Лекарство Кобенделла" type="EtcItem">
+		<set name="icon" val="icon.etc_lesser_potion_green_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1131" name="Лекарство Кобенделла" type="EtcItem">
+		<set name="icon" val="icon.etc_lesser_potion_green_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1132" name="Лекарство Кобенделла" type="EtcItem">
+		<set name="icon" val="icon.etc_lesser_potion_green_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1133" name="Лекарство Кобенделла" type="EtcItem">
+		<set name="icon" val="icon.etc_lesser_potion_green_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1134" name="Лекарство Кобенделла" type="EtcItem">
+		<set name="icon" val="icon.etc_lesser_potion_green_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1135" name="Посох Духов" type="EtcItem">
+		<set name="icon" val="icon.weapon_club_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1136" name="Посох Духов" type="EtcItem">
+		<set name="icon" val="icon.weapon_club_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1137" name="Посох Духов" type="EtcItem">
+		<set name="icon" val="icon.weapon_club_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1138" name="Письмо Аурона" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1139" name="Знак Гильдии Воителей" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_gold_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1140" name="Ржавый Меч" type="EtcItem">
+		<set name="icon" val="icon.weapon_broad_sword_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1141" name="Ржавый Меч" type="EtcItem">
+		<set name="icon" val="icon.weapon_broad_sword_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1142" name="Ржавый Меч" type="Weapon">
+		<set name="icon" val="icon.weapon_broad_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1400"/>
+		<set name="price" val="116000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="18"/>
+			<set order="0x08" stat="mAtk" val="21"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="1143" name="Письмо Симплона" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_gray_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1144" name="Лапка Ядовитого Паука" type="EtcItem">
+		<set name="icon" val="icon.etc_horn_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1145" name="Медальон Воителя" type="EtcItem">
+		<set name="icon" val="icon.accessary_earing_of_protection_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1146" name="Рубаха Оруженосца" type="Armor">
+		<set name="icon" val="icon.armor_t01_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="chest"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="3301"/>
+		<set name="price" val="20"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="33"/>
+		</for>
+	</item>
+	<item id="1147" name="Бриджи Оруженосца" type="Armor">
+		<set name="icon" val="icon.armor_t01_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="legs"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="1750"/>
+		<set name="price" val="4"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="20"/>
+		</for>
+	</item>
+	<item id="1148" name="Шлем из Толстой Кожи" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="640"/>
+		<set name="price" val="14200"/>
+		<for>
+			<add order="0x10" stat="pDef" val="26"/>
+		</for>
+	</item>
+	<item id="1149" name="Сверкающая Диадема" type="Armor">
+		<set name="icon" val="icon.armor_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="113"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="600"/>
+		<set name="price" val="283200"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="54"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="1150" name="Книга Заклинаний - Удар Ветра" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="1151" name="Книга Заклинаний - Самолечение" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="1152" name="Книга Заклинаний - Лечение" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="1153" name="Письмо Дженны" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1154" name="Клинок Часового" type="EtcItem">
+		<set name="icon" val="icon.weapon_bastard_sword_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1155" name="Клинок Часового" type="EtcItem">
+		<set name="icon" val="icon.weapon_bastard_sword_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1156" name="Клинок Часового" type="EtcItem">
+		<set name="icon" val="icon.weapon_bastard_sword_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1157" name="Старый Бронзовый Меч" type="EtcItem">
+		<set name="icon" val="icon.weapon_crimson_sword_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1158" name="Обломок Кости" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_bone_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1159" name="Череп Эльфа" type="EtcItem">
+		<set name="icon" val="icon.etc_skull_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1160" name="Темный Безоар" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1161" name="Ритуальный Меч" type="EtcItem">
+		<set name="icon" val="icon.weapon_flamberge_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1162" name="Монета Лорда - Начальник Стражи Батис" type="EtcItem">
+		<set name="icon" val="icon.etc_coins_silver_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1163" name="Монета Лорда - Верховный Жрец Раймонд" type="EtcItem">
+		<set name="icon" val="icon.etc_coins_silver_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1164" name="Монета Лорда - Начальник Стражи Безик" type="EtcItem">
+		<set name="icon" val="icon.etc_coins_silver_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1165" name="Монета Лорда - Верховная Жрица Левиан" type="EtcItem">
+		<set name="icon" val="icon.etc_coins_silver_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1166" name="Монета Лорда - Начальник Стражи Гилберт" type="EtcItem">
+		<set name="icon" val="icon.etc_coins_silver_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1167" name="Монета Лорда - Верховный Жрец Биотин" type="EtcItem">
+		<set name="icon" val="icon.etc_coins_silver_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1168" name="Знак Стража Глудио" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_silver_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1169" name="Ожерелье Людоеда" type="EtcItem">
+		<set name="icon" val="icon.etc_totem_necklace_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1170" name="Знак Храма Эйнхасад" type="EtcItem">
+		<set name="icon" val="icon.accessary_earing_of_holy_spirit_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1171" name="Распятие Эйнхасад" type="EtcItem">
+		<set name="icon" val="icon.accessary_necklace_of_knowledge_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1172" name="Знак Стража Глудио" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_silver_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1173" name="Лапка Ядовитого Паука" type="EtcItem">
+		<set name="icon" val="icon.etc_horn_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1174" name="Знак Храма Эйнхасад" type="EtcItem">
+		<set name="icon" val="icon.accessary_earing_of_holy_spirit_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1175" name="Тотем Ящера" type="EtcItem">
+		<set name="icon" val="icon.etc_totem_green_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1176" name="Знак Стража Глудио" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_silver_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1177" name="Кожа Гигантского Паука" type="EtcItem">
+		<set name="icon" val="icon.etc_leather_gray_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1178" name="Знак Храма Эйнхасад" type="EtcItem">
+		<set name="icon" val="icon.accessary_earing_of_holy_spirit_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1179" name="Череп Безмолвного Ужаса" type="EtcItem">
+		<set name="icon" val="icon.etc_skull_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1180" name="Письмо Безика" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1181" name="Лук Нети" type="Weapon">
+		<set name="icon" val="icon.weapon_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1850"/>
+		<set name="soulshots" val="7"/>
+		<set name="spiritshots" val="2"/>
+		<set name="mp_consume" val="1"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="45"/>
+			<set order="0x08" stat="mAtk" val="16"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="1182" name="Кинжал Нети" type="Weapon">
+		<set name="icon" val="icon.weapon_knife_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="19"/>
+			<set order="0x08" stat="mAtk" val="16"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="1183" name="Кости Скелета" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_bone_black_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1184" name="Подкова Света" type="EtcItem">
+		<set name="icon" val="icon.accessary_red_cresent_earing_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1185" name="Список Особо Опасных" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1186" name="Украденное Украшение" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1187" name="Украденная Книга" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1188" name="Украденное Кольцо" type="EtcItem">
+		<set name="icon" val="icon.accessary_ring_of_grace_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1189" name="Украденное Ожерелье" type="EtcItem">
+		<set name="icon" val="icon.accessary_necklace_of_blessing_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1190" name="Рекомендация Безика" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_red_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1191" name="I Разрешение" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1192" name="II Разрешение" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_gray_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1193" name="Книга Лионеля" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1194" name="Книга Вивиан" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1195" name="Книга Симплона" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1196" name="Книга Прага" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_blue_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1197" name="Свидетельство Галлинта" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1198" name="Кулон Матери" type="EtcItem">
+		<set name="icon" val="icon.accessary_blessed_earing_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="1199" name="Ожерелье Матери" type="EtcItem">
+		<set name="icon" val="icon.accessary_blessed_necklace_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+</list>

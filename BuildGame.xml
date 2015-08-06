@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BuildGame" default="dist" basedir=".">
+	<property name="src" location="SrcGame"/>
+	<property name="libs" location="Data/game/libs"/>
+	<property name="build" location="./Data/game"/>
+	<property name="build.classes" location="${build}/classes"/>
+	<path id="classpath">
+		<fileset dir="${libs}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	<pathconvert property="jar.list" pathsep=" " refid="classpath">
+		<mapper type="flatten"/>
+	</pathconvert>
+	<property name="build.classpath" refid="classpath"/>
+	<tstamp>
+		<format property="build.tstamp" pattern="yyyy.MM.dd HH:mm"/>
+	</tstamp>
+	<target name="dist">
+		<mkdir dir="${build}"/>
+		<delete dir="${build.classes}"/>
+		<mkdir dir="${build.classes}"/>
+		<javac srcdir="${src}" destdir="${build.classes}" debug="on" source="1.8" target="1.8"
+			   encoding="UTF-8" nowarn="on" classpath="${build.classpath}" includeantruntime="true">
+			<!--<compilerarg value="-Xlint:all"/>-->
+		</javac>
+		<jar destfile="${build}/game.jar">
+			<fileset dir="${build.classes}"/>
+			<manifest>
+				<attribute name="Build-Date" value="${build.tstamp}"/>
+			</manifest>
+		</jar>
+		<delete dir="${build.classes}"/>
+	</target>
+</project>

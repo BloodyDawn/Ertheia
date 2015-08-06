@@ -1,0 +1,1174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="6902" name="Геральдический Щит" type="Armor">
+		<set name="icon" val="icon.shield_pledge_shield_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="1380"/>
+		<set name="price" val="9900"/>
+		<cond msgId="1518">
+			<and>
+				<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+				<player clanHall="-1"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="90"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="6903" name="Музыкальная Коробка M" type="EtcItem">
+		<set name="icon" val="icon.etc_m_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="reuse_delay" val="20000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2187-1"/>
+	</item>
+	<item id="6904" name="Материя Карнавальной Маски" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_cloth_blue_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="price" val="5000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="6905" name="Часть Заколки Леди" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_green_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="price" val="5000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="6906" name="Материя Глазной Повязки Пирата" type="EtcItem">
+		<set name="icon" val="icon.etc_braided_hemp_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="price" val="5000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="6907" name="Часть Монокля" type="EtcItem">
+		<set name="icon" val="icon.etc_bark_blue_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="60"/>
+		<set name="price" val="5000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="6908" name="Плохой Рыбий Жир" type="EtcItem">
+		<set name="icon" val="icon.etc_fish_oil_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="6909" name="Рыбий Жир" type="EtcItem">
+		<set name="icon" val="icon.etc_fish_oil_i01"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="250"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="6910" name="Отличный Рыбий Жир" type="EtcItem">
+		<set name="icon" val="icon.etc_fish_oil_i02"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="1250"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="6911" name="Чешуя Рыбки" type="EtcItem">
+		<set name="icon" val="icon.etc_fish_scale_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="6912" name="Чешуя Блестящей Рыбки" type="EtcItem">
+		<set name="icon" val="icon.etc_fish_scale_i01"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="300"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="6913" name="Самоцвет Рыбки" type="EtcItem">
+		<set name="icon" val="icon.etc_fish_gem_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="6914" name="Самоцвет Блестящей Рыбки" type="EtcItem">
+		<set name="icon" val="icon.etc_fish_gem_i01"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="1000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="6915" name="Кость Худой Рыбки" type="EtcItem">
+		<set name="icon" val="icon.etc_fang_gray_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="300"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="6916" name="Кость Толстой Рыбки" type="EtcItem">
+		<set name="icon" val="icon.etc_fang_ivory_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="450"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="6917" name="Только для Монстров (Ядовитая Игла)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="6"/>
+		<set name="price" val="2"/>
+		<for/>
+	</item>
+	<item id="6918" name="Только для Монстров (Щит Безмолвия)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="1380"/>
+		<set name="price" val="12900"/>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="90"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="6919" name="Только для Монстров (Щит Орка Кетра)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="142"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1320"/>
+		<set name="price" val="78400"/>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="142"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="6900" name="Рецепт - Посох Тайн (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="976000"/>
+		<set name="recipe_id" val="645"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6901" name="Рецепт - Сверкающая Стрела (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="200000"/>
+		<set name="recipe_id" val="625"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6920" name="Рецепт - Рыбий Жир (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="50"/>
+		<set name="recipe_id" val="680"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6921" name="Рецепт - Отличный Рыбий Жир (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="250"/>
+		<set name="recipe_id" val="681"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6922" name="Рецепт - Карнавальная Маска (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="100000"/>
+		<set name="recipe_id" val="682"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6923" name="Рецепт - Заколка Леди (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="100000"/>
+		<set name="recipe_id" val="683"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6924" name="Рецепт - Глазная Повязка Пирата (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="100000"/>
+		<set name="recipe_id" val="684"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6925" name="Рецепт - Монокль (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="100000"/>
+		<set name="recipe_id" val="685"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6926" name="Рецепт - Зелье Исцеления (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="18"/>
+		<set name="recipe_id" val="686"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6927" name="Рецепт - Большое Зелье Исцеления (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="66"/>
+		<set name="recipe_id" val="687"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6928" name="Рецепт - Сильнодействующее Зелье Исцеления (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="180"/>
+		<set name="recipe_id" val="688"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6929" name="Рецепт - Противоядие (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="14"/>
+		<set name="recipe_id" val="689"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6930" name="Рецепт - Большое Противоядие (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="36"/>
+		<set name="recipe_id" val="690"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6931" name="Рецепт - Бинт (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="14"/>
+		<set name="recipe_id" val="691"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6932" name="Рецепт - Большой Бинт (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="36"/>
+		<set name="recipe_id" val="692"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6933" name="Рецепт - Зелье Ускорения (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="240"/>
+		<set name="recipe_id" val="693"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6934" name="Рецепт - Зелье Скор. Атк. (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="480"/>
+		<set name="recipe_id" val="694"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6935" name="Рецепт - Большое Зелье Ускорения (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="600"/>
+		<set name="recipe_id" val="695"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6936" name="Рецепт - Большое Зелье Скор. Атк. (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="1200"/>
+		<set name="recipe_id" val="696"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6937" name="Рецепт - Зелье Скор. Маг. (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="480"/>
+		<set name="recipe_id" val="697"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6938" name="Рецепт - Большое Зелье Скор. Маг. (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="1200"/>
+		<set name="recipe_id" val="698"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6939" name="Рецепт - Мистическое Зелье (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="2000"/>
+		<set name="recipe_id" val="699"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6940" name="Рецепт - Зелье Внешности - A (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="700"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6941" name="Рецепт - Зелье Внешности - B (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="701"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6942" name="Рецепт - Зелье Внешности - C (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="702"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6943" name="Рецепт - Красящее Зелье - A (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="703"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6944" name="Рецепт - Красящее Зелье - B (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="704"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6945" name="Рецепт - Красящее Зелье - C (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="705"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6946" name="Рецепт - Красящее Зелье - D (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="706"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6947" name="Рецепт - Зелье Прически - A (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="707"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6948" name="Рецепт - Зелье Прически - B (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="708"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6949" name="Рецепт - Зелье Прически - C (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="709"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6950" name="Рецепт - Зелье Прически - D (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="710"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6951" name="Рецепт - Зелье Прически - E (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="711"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6952" name="Рецепт - Зелье Прически - F (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="712"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6953" name="Рецепт - Зелье Прически - G (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="4000"/>
+		<set name="recipe_id" val="713"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6954" name="Рецепт - Краска СИЛ (СИЛ+1 ВЫН-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="7000"/>
+		<set name="recipe_id" val="714"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6955" name="Рецепт - Краска СИЛ (СИЛ+1 ЛВК-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="7000"/>
+		<set name="recipe_id" val="715"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6956" name="Рецепт - Краска ВЫН (ВЫН+1 СИЛ-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="7000"/>
+		<set name="recipe_id" val="716"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6957" name="Рецепт - Краска ВЫН (ВЫН+1 ЛВК-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="7000"/>
+		<set name="recipe_id" val="717"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6958" name="Рецепт - Краска ЛВК (ЛВК+1 СИЛ-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="7000"/>
+		<set name="recipe_id" val="718"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6959" name="Рецепт - Краска ЛВК (ЛВК+1 ВЫН-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="7000"/>
+		<set name="recipe_id" val="719"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6960" name="Рецепт - Краска ИНТ (ИНТ+1 ДУХ-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="7000"/>
+		<set name="recipe_id" val="720"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6961" name="Рецепт - Краска ИНТ (ИНТ+1 МДР-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="7000"/>
+		<set name="recipe_id" val="721"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6962" name="Рецепт - Краска ДУХ (ДУХ+1 ИНТ-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="7000"/>
+		<set name="recipe_id" val="722"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6963" name="Рецепт - Краска ДУХ (ДУХ+1 МДР-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="7000"/>
+		<set name="recipe_id" val="723"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6964" name="Рецепт - Краска МДР (МДР+1 ИНТ-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="7000"/>
+		<set name="recipe_id" val="724"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6965" name="Рецепт - Краска МДР (МДР+1 ДУХ-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="7000"/>
+		<set name="recipe_id" val="725"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6966" name="Рецепт - Улучшенная Краска СИЛ (СИЛ+1 ВЫН-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="10000"/>
+		<set name="recipe_id" val="726"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6967" name="Рецепт - Улучшенная Краска СИЛ (СИЛ+1 ЛВК-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="10000"/>
+		<set name="recipe_id" val="727"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6968" name="Рецепт - Улучшенная Краска ВЫН (ВЫН+1 СИЛ-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="10000"/>
+		<set name="recipe_id" val="728"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6969" name="Рецепт - Улучшенная Краска ВЫН (ВЫН+1 ЛВК-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="10000"/>
+		<set name="recipe_id" val="729"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6970" name="Рецепт - Улучшенная Краска ЛВК (ЛВК+1 СИЛ-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="10000"/>
+		<set name="recipe_id" val="730"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6971" name="Рецепт - Улучшенная Краска ЛВК (ЛВК+1 ВЫН-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="10000"/>
+		<set name="recipe_id" val="731"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6972" name="Рецепт - Улучшенная Краска ИНТ (ИНТ+1 ДУХ-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="10000"/>
+		<set name="recipe_id" val="732"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6973" name="Рецепт - Улучшенная Краска ИНТ (ИНТ+1 МДР-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="10000"/>
+		<set name="recipe_id" val="733"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6974" name="Рецепт - Улучшенная Краска ДУХ (ДУХ+1 ИНТ-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="10000"/>
+		<set name="recipe_id" val="734"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6975" name="Рецепт - Улучшенная Краска ДУХ (ДУХ+1 МДР-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="10000"/>
+		<set name="recipe_id" val="735"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6976" name="Рецепт - Улучшенная Краска МДР (МДР+1 ИНТ-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="10000"/>
+		<set name="recipe_id" val="736"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6977" name="Рецепт - Улучшенная Краска МДР (МДР+1 ДУХ-1) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="10000"/>
+		<set name="recipe_id" val="737"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6978" name="Рецепт - Улучшенная Краска СИЛ (СИЛ+2 ВЫН-2) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="12000"/>
+		<set name="recipe_id" val="738"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6979" name="Рецепт - Улучшенная Краска СИЛ (СИЛ+2 ЛВК-2) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="12000"/>
+		<set name="recipe_id" val="739"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6980" name="Рецепт - Улучшенная Краска ВЫН (ВЫН+2 СИЛ-2) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="12000"/>
+		<set name="recipe_id" val="740"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6981" name="Рецепт - Улучшенная Краска ВЫН (ВЫН+2 ЛВК-2) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="12000"/>
+		<set name="recipe_id" val="741"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6982" name="Рецепт - Улучшенная Краска ЛВК (ЛВК+2 СИЛ-2) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="12000"/>
+		<set name="recipe_id" val="742"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6983" name="Рецепт - Улучшенная Краска ЛВК (ЛВК+2 ВЫН-2) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="12000"/>
+		<set name="recipe_id" val="743"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6984" name="Рецепт - Улучшенная Краска ИНТ (ИНТ+2 ДУХ-2) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="12000"/>
+		<set name="recipe_id" val="744"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6985" name="Рецепт - Улучшенная Краска ИНТ (ИНТ+2 МДР-2) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="12000"/>
+		<set name="recipe_id" val="745"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6986" name="Рецепт - Улучшенная Краска ДУХ (ДУХ+2 ИНТ-2) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="12000"/>
+		<set name="recipe_id" val="746"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6987" name="Рецепт - Улучшенная Краска ДУХ (ДУХ+2 МДР-2) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="12000"/>
+		<set name="recipe_id" val="747"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6988" name="Рецепт - Улучшенная Краска МДР (МДР+2 ИНТ-2) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="12000"/>
+		<set name="recipe_id" val="748"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6989" name="Рецепт - Улучшенная Краска МДР (МДР+2 ДУХ-2) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="12000"/>
+		<set name="recipe_id" val="749"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6990" name="Рецепт - Улучшенная Краска СИЛ (СИЛ+3 ВЫН-3) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="18000"/>
+		<set name="recipe_id" val="750"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6991" name="Рецепт - Улучшенная Краска СИЛ (СИЛ+3 ЛВК-3) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="18000"/>
+		<set name="recipe_id" val="751"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6992" name="Рецепт - Улучшенная Краска ВЫН (ВЫН+3 СИЛ-3) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="18000"/>
+		<set name="recipe_id" val="752"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6993" name="Рецепт - Улучшенная Краска ВЫН (ВЫН+3 ЛВК-3) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="18000"/>
+		<set name="recipe_id" val="753"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6994" name="Рецепт - Улучшенная Краска ЛВК (ЛВК+3 СИЛ-3) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="18000"/>
+		<set name="recipe_id" val="754"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6995" name="Рецепт - Улучшенная Краска ЛВК (ЛВК+3 ВЫН-3) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="18000"/>
+		<set name="recipe_id" val="755"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6996" name="Рецепт - Улучшенная Краска ИНТ (ИНТ+3 ДУХ-3) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="18000"/>
+		<set name="recipe_id" val="756"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6997" name="Рецепт - Улучшенная Краска ИНТ (ИНТ+3 МДР-3) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="18000"/>
+		<set name="recipe_id" val="757"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6998" name="Рецепт - Улучшенная Краска ДУХ (ДУХ+3 ИНТ-3) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="18000"/>
+		<set name="recipe_id" val="758"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="6999" name="Рецепт - Улучшенная Краска ДУХ (ДУХ+3 МДР-3) (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="18000"/>
+		<set name="recipe_id" val="759"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+</list>

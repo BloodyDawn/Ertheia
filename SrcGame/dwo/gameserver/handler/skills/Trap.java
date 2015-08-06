@@ -1,0 +1,116 @@
+/*
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option) any later
+ * version.
+ * 
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+ * details.
+ * 
+ * You should have received a copy of the GNU General Public License along with
+ * this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+package dwo.gameserver.handler.skills;
+
+import dwo.gameserver.handler.ISkillHandler;
+import dwo.gameserver.model.actor.L2Character;
+import dwo.gameserver.model.actor.L2Object;
+import dwo.gameserver.model.actor.L2Trap;
+import dwo.gameserver.model.actor.instance.L2PcInstance;
+import dwo.gameserver.model.skills.base.L2Skill;
+import dwo.gameserver.model.skills.base.proptypes.L2SkillType;
+import dwo.gameserver.model.world.quest.Quest;
+import dwo.gameserver.model.world.quest.Quest.TrapAction;
+import dwo.gameserver.network.game.components.SystemMessageId;
+
+public class Trap implements ISkillHandler
+{
+	private static final L2SkillType[] SKILL_IDS = {
+		L2SkillType.DETECT_TRAP, L2SkillType.REMOVE_TRAP
+	};
+
+	@Override
+	public void useSkill(L2Character activeChar, L2Skill skill, L2Object[] targets)
+	{
+		if(activeChar == null || skill == null)
+		{
+			return;
+		}
+
+		switch(skill.getSkillType())
+		{
+			case DETECT_TRAP:
+				for(L2Character target : activeChar.getKnownList().getKnownCharactersInRadius(skill.getSkillRadius()))
+				{
+					if(!(target instanceof L2Trap))
+					{
+						continue;
+					}
+
+					if(target.isAlikeDead())
+					{
+						continue;
+					}
+
+					L2Trap trap = (L2Trap) target;
+
+					if(trap.getLevel() <= skill.getPower())
+					{
+						trap.setDetected(activeChar);
+					}
+				}
+				break;
+			case REMOVE_TRAP:
+				for(L2Character target : (L2Character[]) targets)
+				{
+					if(!(target instanceof L2Trap))
+					{
+						continue;
+					}
+
+					if(target.isAlikeDead())
+					{
+						continue;
+					}
+
+					L2Trap trap = (L2Trap) target;
+
+					if(!trap.canSee(activeChar))
+					{
+						if(activeChar instanceof L2PcInstance)
+						{
+							activeChar.sendPacket(SystemMessageId.INCORRECT_TARGET);
+						}
+						continue;
+					}
+
+					if(trap.getLevel() > skill.getPower())
+					{
+						continue;
+					}
+
+					if(trap.getTemplate().getEventQuests(Quest.QuestEventType.ON_TRAP_ACTION) != null)
+					{
+						for(Quest quest : trap.getTemplate().getEventQuests(Quest.QuestEventType.ON_TRAP_ACTION))
+						{
+							quest.notifyTrapAction(trap, activeChar, TrapAction.TRAP_DISARMED);
+						}
+					}
+
+					trap.unSummon();
+					if(activeChar instanceof L2PcInstance)
+					{
+						activeChar.sendPacket(SystemMessageId.A_TRAP_DEVICE_HAS_BEEN_STOPPED);
+					}
+				}
+		}
+	}
+
+	@Override
+	public L2SkillType[] getSkillIds()
+	{
+		return SKILL_IDS;
+	}
+}

@@ -1,0 +1,22 @@
+<html><title>Информация о НПЦ</title><body>
+<center>
+<table width=270 border=0 bgcolor="444444">
+<tr>
+<td><button value="Убить" action="bypass -h admin_kill" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Удалить" action="bypass -h admin_delete" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Призвать" action="bypass -h admin_recall_npc" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Бафы" action="bypass -h admin_getbuffs" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td><button value="Изменить" action="bypass -h admin_edit_npc %tmplid%" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Скилы" action="bypass -h admin_show_skilllist_npc %tmplid%" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Дроп" action="bypass -h admin_show_droplist %tmplid%" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Квесты" action="bypass -h admin_show_quests %tmplid%" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br><img src="L2UI.SquareWhite" width=260 height=1><br>
+<table width=270 border=0>
+%quests%
+</table>
+<br><img src="L2UI.SquareWhite" width=260 height=1><br>
+</center></body></html>

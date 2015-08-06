@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="37703" name="2013 시길" type="Armor">
+		<set name="icon" val="icon.elos_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="sigil"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="920"/>
+		<for>
+			<add order="0x10" stat="pDef" val="150"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+			<EnchantAccEvas order="0x0C" stat="ratePhysicalEvas" val="0"/>
+			<EnchantAccEvas order="0x0C" stat="rateMagicalEvas" val="0"/>
+		</for>
+	</item>
+	<item id="37714" name="릴리스의 탈리스만" type="Armor">
+		<set name="icon" val="icon.lilith_talisman_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="37715" name="아나킴의 탈리스만" type="Armor">
+		<set name="icon" val="icon.anakim_talisman_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="37717" name="세븐사인의 탈리스만" type="Armor">
+		<set name="icon" val="icon.sevensign_talisman_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="37718" name="반짝이는 아인하사드 티셔츠" type="Armor">
+		<set name="icon" val="icon.ainhasard_shirt"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="130"/>
+		<for>
+			<add order="0x10" stat="pDef" val="28"/>
+		</for>
+	</item>
+	<item id="37725" name="NC 다이노스 유니폼" type="Armor">
+		<set name="icon" val="icon.london_olympic_bikini"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="1000"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+	</item>
+	<item id="37726" name="NC 다이노스 수비수 모자" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="fine_steel"/>
+	</item>
+	<item id="37732" name="축복받은 안타라스의 귀걸이  7일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_antaras_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="170"/>
+			<add order="0x40" stat="maxMp" val="59"/>
+		</for>
+	</item>
+	<item id="37733" name="축복받은 발라카스의 목걸이  7일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_necklace_of_valakas_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="226"/>
+			<add order="0x40" stat="maxMp" val="79"/>
+		</for>
+	</item>
+	<item id="37734" name="타우티의 반지  7일 기간제" type="Armor">
+		<set name="icon" val="icon.accessary_tauti_ring"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="108"/>
+			<add order="0x40" stat="maxMp" val="38"/>
+		</for>
+	</item>
+	<item id="37735" name="어스웜의 심장 반지  7일 기간제" type="Armor">
+		<set name="icon" val="icon.ring_earthworm_heart"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="108"/>
+			<add order="0x40" stat="maxMp" val="38"/>
+		</for>
+	</item>
+	<item id="37736" name="불멸의 자켄 귀걸이  7일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_zaken_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="94"/>
+			<add order="0x40" stat="maxMp" val="37"/>
+			<enchant order="0x0C" stat="mDef" val="0"/>
+		</for>
+	</item>
+	<item id="37737" name="지배자의 권능  7일 기간제" type="Armor">
+		<set name="icon" val="icon.belt_rulers_authority"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+		</for>
+	</item>
+	<item id="37704" name="사랑의 묘약" type="EtcItem">
+		<set name="icon" val="icon.etc_whiteday_herb"/>
+		<set name="material" val="paper"/>
+	</item>
+	<item id="37705" name="킹카의 기운이 감도는 초콜릿" type="EtcItem">
+		<set name="icon" val="icon.etc_whiteday_choco"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37706" name="퀸카의 기운이 감도는 사탕 " type="EtcItem">
+		<set name="icon" val="icon.etc_whiteday_candy"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37707" name="천상천하 유아독존 쿠키" type="EtcItem">
+		<set name="icon" val="icon.etc_whiteday_cookie"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37708" name="코코의 변신 초콜릿" type="EtcItem">
+		<set name="icon" val="icon.etc_whiteday_choco"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37709" name="코코의 변신 사탕" type="EtcItem">
+		<set name="icon" val="icon.etc_whiteday_candy"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37710" name="코코의 변신 쿠키" type="EtcItem">
+		<set name="icon" val="icon.etc_whiteday_cookie"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37711" name="코코의 친구 소환 초콜릿" type="EtcItem">
+		<set name="icon" val="icon.etc_whiteday_choco"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37712" name="코코의 친구 소환 사탕" type="EtcItem">
+		<set name="icon" val="icon.etc_whiteday_candy"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37713" name="코코의 친구 소환 쿠키" type="EtcItem">
+		<set name="icon" val="icon.etc_whiteday_cookie"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37716" name="세븐사인의 기운" type="EtcItem">
+		<set name="icon" val="icon.sevensign_energy_i00"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37719" name="파아그리오의 스페셜 상자" type="EtcItem">
+		<set name="icon" val="icon.shirt_special_box_i02"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37720" name="마프르의 스페셜 상자" type="EtcItem">
+		<set name="icon" val="icon.shirt_special_box_i01"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37721" name="사이하의 스페셜 상자" type="EtcItem">
+		<set name="icon" val="icon.shirt_special_box_i03"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37722" name="에바의 스페셜 상자" type="EtcItem">
+		<set name="icon" val="icon.shirt_special_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37723" name="반짝이는 아인하사드의 티셔츠 교환석" type="EtcItem">
+		<set name="icon" val="icon.shirt_stone"/>
+		<set name="material" val="leather"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37724" name="실렌의 기운" type="EtcItem">
+		<set name="icon" val="icon.etc_crystal_ball_silver_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37727" name="단디의 선물 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37728" name="단디의 도전 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37729" name="단디의 믿음 주문서" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_xmas_scroll_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37730" name="단디의 열정 주문서" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_xmas_scroll_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37731" name="단디의 도전 주문서" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_xmas_scroll_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="37700" name="2013 듀얼 대거 " type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="500"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<cond msgId="1518">
+			<and>
+				<player level="1"/>
+				<player class_id_restriction="55, 93, 101, 108, 117, 141, 158, 159, 160, 161"/>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="752"/>
+			<set order="0x08" stat="mAtk" val="414"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="37701" name="2013 전사 듀얼 블런트" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualblunt"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="500"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="916"/>
+			<set order="0x08" stat="mAtk" val="414"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="37702" name="2013 방패" type="Armor">
+		<set name="icon" val="icon.weapon_akra_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="damascus"/>
+		<set name="weight" val="1130"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="546"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+			<enchant order="0x0C" stat="sDef" val="0"/>
+		</for>
+	</item>
+</list>

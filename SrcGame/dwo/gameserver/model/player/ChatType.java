@@ -1,0 +1,38 @@
+package dwo.gameserver.model.player;
+
+/**
+ * L2GOD Team
+ * User: ANZO
+ * Date: 29.04.13
+ * Time: 20:15
+ */
+
+public enum ChatType
+{
+	ALL,
+	SHOUT,
+	TELL,
+	PARTY,
+	CLAN,
+	GM,
+	PETITION_PLAYER,
+	PETITION_GM,
+	TRADE,
+	ALLIANCE,
+	ANNOUNCEMENT,
+	BOAT,
+	L2FRIEND,
+	MSNCHAT,
+	PARTYMATCH_ROOM,
+	PARTYROOM_COMMANDER,
+	PARTYROOM_ALL,
+	HERO_VOICE,
+	CRITICAL_ANNOUNCE,
+	SCREEN_ANNOUNCE,
+	BATTLEFIELD,
+	MPCC_ROOM,
+	NPC_ALL,
+	NPC_SHOUT,
+    NPC_TELL,
+    GLOBAL
+}

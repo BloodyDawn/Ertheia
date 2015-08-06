@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="9100" name="Теневой Предмет: Сапоги Величия" type="Armor">
+		<set name="icon" val="icon.armor_t84_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="370"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="duration" val="600"/>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+		</for>
+	</item>
+	<item id="9101" name="Теневой Предмет: Мантия Величия" type="Armor">
+		<set name="icon" val="icon.armor_t85_ul_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="onepiece"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="777"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="duration" val="600"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="147"/>
+			<add order="0x40" stat="maxMp" val="718"/>
+		</for>
+	</item>
+	<item id="9102" name="Теневой Предмет: Рукавицы Величия" type="Armor">
+		<set name="icon" val="icon.armor_t85_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="180"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="duration" val="600"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+		</for>
+	</item>
+	<item id="9103" name="Теневой Предмет: Сапоги Величия" type="Armor">
+		<set name="icon" val="icon.armor_t85_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="blood_steel"/>
+		<set name="weight" val="370"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="duration" val="600"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="49"/>
+		</for>
+	</item>
+	<item id="9104" name="Композитный Лук и Деревянная Стрела" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-1"/>
+	</item>
+	<item id="9105" name="Гастрафет и Костяная Стрела" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-2"/>
+	</item>
+	<item id="9106" name="Длинный Лук Аката и Стальная Стрела" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-3"/>
+	</item>
+	<item id="9107" name="Длинный Лук Темных Эльфов и Серебряная Стрела" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-4"/>
+	</item>
+	<item id="9108" name="Кровавый Лук и Мифриловая Стрела" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-5"/>
+	</item>
+	<item id="9109" name="Пронзатель Душ и Мифриловая Стрела" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-6"/>
+	</item>
+	<item id="9110" name="Коробка с Комплектом Теневого Доспеха (Тяжелый Доспех, Без Ранга)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-7"/>
+	</item>
+	<item id="9111" name="Коробка с Комплектом Теневого Доспеха (Тяжелый Доспех, Ранг D)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-8"/>
+	</item>
+	<item id="9112" name="Коробка с Комплектом Теневого Доспеха (Тяжелый Доспех, Ранг C)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-9"/>
+	</item>
+	<item id="9113" name="Коробка с Комплектом Теневого Доспеха (Тяжелый Доспех, Ранг B)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-10"/>
+	</item>
+	<item id="9114" name="Коробка с Комплектом Теневого Доспеха (Тяжелый Доспех, Ранг A)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-11"/>
+	</item>
+	<item id="9115" name="Коробка с Комплектом Теневого Доспеха (Тяжелый Доспех, Ранг S)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-12"/>
+	</item>
+	<item id="9116" name="Коробка с Комплектом Теневого Доспеха (Легкий Доспех, Без Ранга)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-13"/>
+	</item>
+	<item id="9117" name="Коробка с Комплектом Теневого Доспеха (Легкий Доспех, Ранг D)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-14"/>
+	</item>
+	<item id="9118" name="Коробка с Комплектом Теневого Доспеха (Легкий Доспех, Ранг C)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-15"/>
+	</item>
+	<item id="9119" name="Коробка с Комплектом Теневого Доспеха (Легкий Доспех, Ранг B)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-16"/>
+	</item>
+	<item id="9120" name="Коробка с Комплектом Теневого Доспеха (Легкий Доспех, Ранг A)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-17"/>
+	</item>
+	<item id="9121" name="Коробка с Комплектом Теневого Доспеха (Легкий Доспех, Ранг S)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-18"/>
+	</item>
+	<item id="9122" name="Коробка с Комплектом Теневого Доспеха (Мантия, Без Ранга)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-19"/>
+	</item>
+	<item id="9123" name="Коробка с Комплектом Теневого Доспеха (Мантия, Ранг D)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-20"/>
+	</item>
+	<item id="9124" name="Коробка с Комплектом Теневого Доспеха (Мантия, Ранг C)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-21"/>
+	</item>
+	<item id="9125" name="Коробка с Комплектом Теневого Доспеха (Мантия, Ранг B)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-22"/>
+	</item>
+	<item id="9126" name="Коробка с Комплектом Теневого Доспеха (Мантия, Ранг A)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-23"/>
+	</item>
+	<item id="9127" name="Коробка с Комплектом Теневого Доспеха (Мантия, Ранг S)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-24"/>
+	</item>
+	<item id="9128" name="Теневой Предмет: Мифриловые Рукавицы" type="Armor">
+		<set name="icon" val="icon.armor_t61_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="mithril"/>
+		<set name="weight" val="200"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="duration" val="600"/>
+		<for>
+			<add order="0x10" stat="pDef" val="36"/>
+		</for>
+	</item>
+	<item id="9129" name="Теневой Предмет: Щит Кошмаров" type="Armor">
+		<set name="icon" val="icon.shield_shield_of_nightmare_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="400"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="duration" val="600"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="256"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="9130" name="Коробка с Комплектом Предметов (для Мага, Без Ранга)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-31"/>
+	</item>
+	<item id="9131" name="Коробка с Комплектом Предметов (для Мага, Ранг D)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-32"/>
+	</item>
+	<item id="9132" name="Коробка с Комплектом Предметов (для Мага, Ранг C)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-33"/>
+	</item>
+	<item id="9133" name="Коробка с Комплектом Предметов (для Мага, Ранг B)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-34"/>
+	</item>
+	<item id="9134" name="Коробка с Комплектом Предметов (для Мага, Ранг A)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-35"/>
+	</item>
+	<item id="9135" name="Коробка с Комплектом Предметов (для Мага, Ранг S)" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2308-36"/>
+	</item>
+	<item id="9136" name="Меч Валакаса (Одноручный)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="oriharukon"/>
+		<set name="weight" val="1380"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="156"/>
+			<set order="0x08" stat="mAtk" val="83"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="9137" name="Меч Валакаса (Двуручный)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2180"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="78"/>
+			<set order="0x08" stat="mAtk" val="39"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="9138" name="Шапка Деда Мороза" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+	</item>
+	<item id="9139" name="Шапка Деда Мороза" type="EtcItem">
+		<set name="icon" val="icon.accessory_santas_cap_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+	</item>
+	<item id="9140" name="Лук Купидона" type="Weapon">
+		<set name="icon" val="icon.weapon_krono_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="1"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="900"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="mp_consume" val="1"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="item_skill" val="3261-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1"/>
+			<set order="0x08" stat="mAtk" val="1"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="9141" name="Лук Купидона - Ивент" type="Weapon">
+		<set name="icon" val="icon.weapon_krono_bow_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="1"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="300"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="mp_consume" val="1"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="reuse_delay" val="1500"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3260-1;3262-1"/>
+		<set name="duration" val="230"/>
+		<set name="useSkillDisTime" val="1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1"/>
+			<set order="0x08" stat="mAtk" val="1"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="9142" name="Апига" type="EtcItem">
+		<set name="icon" val="icon.etc_pig_adena_i01"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="9143" name="Золотая Апига" type="EtcItem">
+		<set name="icon" val="icon.etc_pig_adena_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="9144" name="Добыча Пиратов" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2309-1"/>
+	</item>
+	<item id="9145" name="Крылышко Ангела - Ивент" type="Armor">
+		<set name="icon" val="icon.accessory_hair_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair2"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+	</item>
+	<item id="9146" name="Свиток Наведения - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2310-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="9147" name="Свиток Шепота Смерти - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2311-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="9148" name="Свиток Фокусировки - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2312-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="9149" name="Свиток Проницательности - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2313-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="9150" name="Свиток Ускорения - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2314-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="9151" name="Свиток Проворства - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2315-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="9152" name="Свиток Воодушевления - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2316-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="9153" name="Свиток Силы - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2317-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="9154" name="Свиток Легкой Походки - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2318-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="9155" name="Свиток Защиты - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2319-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="9156" name="Свиток Благ. Телепорта - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i01"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2320-1"/>
+	</item>
+	<item id="9157" name="Свиток Благ. Воскрешения - Ивент" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_resurrection_i01"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scroll"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ScrollOfResurrection"/>
+		<set name="item_skill" val="2321-1"/>
+	</item>
+	<item id="9158" name="Золотая Диадема Искупления - Ивент" type="Armor">
+		<set name="icon" val="icon.Accessary_gold_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="9159" name="Серебряная Диадема Освобождения - Ивент" type="Armor">
+		<set name="icon" val="icon.Accessary_gold_circlet_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="9160" name="Средневековая Кожаная Шляпа - Ивент" type="Armor">
+		<set name="icon" val="icon.Accessary_middle_ages_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="9161" name="Рог Деда Мороза" type="EtcItem">
+		<set name="icon" val="icon.accessory_santas_antler_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+	</item>
+	<item id="9168" name="Руда Философского Камня" type="EtcItem">
+		<set name="icon" val="icon.etc_stone_piece_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="9169" name="Формула Изменения Философского Камня" type="EtcItem">
+		<set name="icon" val="icon.etc_trans_form_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="9170" name="Магические Реагенты" type="EtcItem">
+		<set name="icon" val="icon.etc_madicine_bottle_i00"/>
+		<set name="etcitem_type" val="material"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="9171" name="Красный Философский Камень" type="EtcItem">
+		<set name="icon" val="icon.etc_wise_man_stone_i00"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2323-1"/>
+	</item>
+	<item id="9172" name="Синий Философский Камень" type="EtcItem">
+		<set name="icon" val="icon.etc_wise_man_stone_i01"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2324-1"/>
+	</item>
+	<item id="9173" name="Оранжевый Философский Камень" type="EtcItem">
+		<set name="icon" val="icon.etc_wise_man_stone_i03"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2325-1"/>
+	</item>
+	<item id="9174" name="Черный Философский Камень" type="EtcItem">
+		<set name="icon" val="icon.etc_wise_man_stone_i04"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2326-1"/>
+	</item>
+	<item id="9175" name="Белый Философский Камень" type="EtcItem">
+		<set name="icon" val="icon.etc_wise_man_stone_i05"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2327-1"/>
+	</item>
+	<item id="9176" name="Зеленый Философский Камень" type="EtcItem">
+		<set name="icon" val="icon.etc_wise_man_stone_i02"/>
+		<set name="default_action" val="capsule"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2328-1"/>
+	</item>
+	<item id="9177" name="Теневой Предмет - Шляпа Медвежонка Тедди - (Воскрешение)" type="Armor">
+		<set name="icon" val="icon.accessory_bear_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3263-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9178" name="Теневой Предмет - Шляпа Хрю-хрю - (Воскрешение)" type="Armor">
+		<set name="icon" val="icon.accessory_pig_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3263-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9179" name="Теневой Предмет - Шляпа Шута - (Воскрешение)" type="Armor">
+		<set name="icon" val="icon.accessory_jester_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3263-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9180" name="Теневой Предмет - Шляпа Чародея - (Воскрешение)" type="Armor">
+		<set name="icon" val="icon.accessory_magic_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3263-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9181" name="Теневой Предмет - Опрятная Шляпа - (Воскрешение)" type="Armor">
+		<set name="icon" val="icon.accessory_dandy_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3263-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9182" name="Теневой Предмет - Модная Шляпа - (Воскрешение)" type="Armor">
+		<set name="icon" val="icon.accessory_romantic_chaperon_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3263-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9183" name="Теневой Предмет - Железная Диадема - (Воскрешение)" type="Armor">
+		<set name="icon" val="icon.accessory_iron_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3263-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9184" name="Теневой Предмет - Шляпа Медвежонка Тедди - (Телепорт)" type="Armor">
+		<set name="icon" val="icon.accessory_bear_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3264-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9185" name="Теневой Предмет - Шляпа Хрю-хрю - (Телепорт)" type="Armor">
+		<set name="icon" val="icon.accessory_pig_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3264-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9186" name="Теневой Предмет - Шляпа Шута - (Телепорт)" type="Armor">
+		<set name="icon" val="icon.accessory_jester_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3264-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9187" name="Теневой Предмет - Шляпа Чародея - (Телепорт)" type="Armor">
+		<set name="icon" val="icon.accessory_magic_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3264-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9188" name="Теневой Предмет - Опрятная Шляпа - (Телепорт)" type="Armor">
+		<set name="icon" val="icon.accessory_dandy_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3264-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9189" name="Теневой Предмет - Модная Шляпа - (Телепорт)" type="Armor">
+		<set name="icon" val="icon.accessory_romantic_chaperon_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3264-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9190" name="Теневой Предмет - Железная Диадема - (Телепорт)" type="Armor">
+		<set name="icon" val="icon.accessory_iron_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3264-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="30"/>
+	</item>
+	<item id="9191" name="Теневой Предмет - Шляпа Медвежонка Тедди - (Большая Голова)" type="Armor">
+		<set name="icon" val="icon.accessory_bear_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3265-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="10"/>
+	</item>
+	<item id="9192" name="Теневой Предмет - Шляпа Хрю-хрю - (Большая Голова)" type="Armor">
+		<set name="icon" val="icon.accessory_pig_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3265-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="10"/>
+	</item>
+	<item id="9193" name="Теневой Предмет - Шляпа Шута - (Большая Голова)" type="Armor">
+		<set name="icon" val="icon.accessory_jester_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3265-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="10"/>
+	</item>
+	<item id="9194" name="Теневой Предмет - Шляпа Чародея - (Большая Голова)" type="Armor">
+		<set name="icon" val="icon.accessory_magic_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3265-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="10"/>
+	</item>
+	<item id="9195" name="Теневой Предмет - Опрятная Шляпа - (Большая Голова)" type="Armor">
+		<set name="icon" val="icon.accessory_dandy_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3265-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="10"/>
+	</item>
+	<item id="9196" name="Теневой Предмет - Модная Шляпа - (Большая Голова)" type="Armor">
+		<set name="icon" val="icon.accessory_romantic_chaperon_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3265-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="10"/>
+	</item>
+	<item id="9197" name="Теневой Предмет - Железная Диадема - (Большая Голова)" type="Armor">
+		<set name="icon" val="icon.accessory_iron_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3265-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="10"/>
+	</item>
+	<item id="9198" name="Теневой Предмет - Шляпа Медвежонка Тедди - (Фейерверк)" type="Armor">
+		<set name="icon" val="icon.accessory_bear_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3266-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="5"/>
+	</item>
+	<item id="9199" name="Теневой Предмет - Шляпа Хрю-хрю - (Фейерверк)" type="Armor">
+		<set name="icon" val="icon.accessory_pig_cap_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+		<set name="equip_reuse_delay" val="30"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="3266-1"/>
+		<set name="duration" val="360"/>
+		<set name="useSkillDisTime" val="5"/>
+	</item>
+	<item id="9162" name="Красный Философский Камень Цикла Перевоплощения" type="EtcItem">
+		<set name="icon" val="icon.etc_sign_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="recipe_id" val="866"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="9163" name="Синий Философский Камень Цикла Перевоплощения" type="EtcItem">
+		<set name="icon" val="icon.etc_sign_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="recipe_id" val="867"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="9164" name="Оранжевый Философский Камень Цикла Перевоплощения" type="EtcItem">
+		<set name="icon" val="icon.etc_sign_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="recipe_id" val="868"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="9165" name="Черный Философский Камень Цикла Перевоплощения" type="EtcItem">
+		<set name="icon" val="icon.etc_sign_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="recipe_id" val="869"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="9166" name="Белый Философский Камень Цикла Перевоплощения" type="EtcItem">
+		<set name="icon" val="icon.etc_sign_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="recipe_id" val="870"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="9167" name="Зеленый Философский Камень Цикла Перевоплощения" type="EtcItem">
+		<set name="icon" val="icon.etc_sign_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="recipe_id" val="871"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+</list>

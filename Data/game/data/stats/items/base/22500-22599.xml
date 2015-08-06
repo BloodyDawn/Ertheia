@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="22562" name="Эликсир Жизни - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i02"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="elixir"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="12500"/>
+		<set name="shared_reuse_group" val="5"/>
+		<set name="reuse_delay" val="200000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="Elixir"/>
+		<set name="item_skill" val="2287-7"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="22563" name="Эликсир Ментальной Силы - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="elixir"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="12500"/>
+		<set name="shared_reuse_group" val="5"/>
+		<set name="reuse_delay" val="200000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="Elixir"/>
+		<set name="item_skill" val="2288-7"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="22564" name="Эликсир CP - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i01"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="elixir"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="12500"/>
+		<set name="shared_reuse_group" val="5"/>
+		<set name="reuse_delay" val="200000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="Elixir"/>
+		<set name="item_skill" val="2289-7"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="22565" name="Упаковка: Снабжение Витаминами" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+	</item>
+	<item id="22566" name="Упаковка: Снабжение Зельями" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+	</item>
+	<item id="22567" name="Упаковка: Снабжение Предметами" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+	</item>
+	<item id="22500" name="Упаковка: Свиток Телепорта к Флагу (10 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22501" name="Упаковка: Свиток Телепорта к Флагу (30 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22502" name="Упаковка: Флаг (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22503" name="Упаковка: Флаг (5 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22504" name="Упаковка: Флаг (10 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22505" name="Упаковка: Благословенное Перо (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22506" name="Упаковка: Благословенное Перо (3 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22507" name="Упаковка: Снадобье Маны (5 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22508" name="Упаковка: Парное Молоко (3 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22509" name="Упаковка: Камень: Модифицировать Оружие (R)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22510" name="Упаковка: Камень: Модифицировать Доспех (R)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22511" name="Упаковка: Изменение Цвета Титула (3 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22512" name="Упаковка: Купон на Ожерелье Питомца (3 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22513" name="Упаковка: Купон на Ожерелье Питомца (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22514" name="Упаковка: Купон Обмена на Особого Питомца (2 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22515" name="Упаковка: Купон Обмена на Особого Питомца (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22516" name="Упаковка: Зелье Внешности - A (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22517" name="Упаковка: Зелье Внешности - B (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22518" name="Упаковка: Зелье Внешности - C (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22519" name="Упаковка: Красящее Зелье - A (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22520" name="Упаковка: Красящее Зелье - B (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22521" name="Упаковка: Красящее Зелье - C (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22522" name="Упаковка: Красящее Зелье - D (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22523" name="Упаковка: Зелье Прически - A (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22524" name="Упаковка: Зелье Прически - B (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22525" name="Упаковка: Зелье Прически - C (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22526" name="Упаковка: Зелье Прически - D (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22527" name="Упаковка: Зелье Прически - E (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22528" name="Упаковка: Зелье Прически - F (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22529" name="Упаковка: Зелье Прически - G (1 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22530" name="Упаковка: Улучш. Бронзовый Браслет (1 день)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="time" val="1440"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22531" name="Упаковка: Улучш. Бронзовый Браслет (15 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22532" name="Упаковка: Улучш. Бронзовый Браслет (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22533" name="Упаковка: Улучш. Бронзовый Браслет (90 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22534" name="Упаковка: Улучш. Железный Браслет (1 день)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="time" val="1440"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22535" name="Упаковка: Улучш. Железный Браслет (15 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22536" name="Упаковка: Улучш. Железный Браслет (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22537" name="Упаковка: Улучш. Железный Браслет (90 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22538" name="Упаковка: Улучш. Мифриловый Браслет (1 день)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="time" val="1440"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22539" name="Упаковка: Улучш. Мифриловый Браслет (15 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22540" name="Упаковка: Улучш. Мифриловый Браслет (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22541" name="Упаковка: Улучш. Мифриловый Браслет (90 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22542" name="Упаковка: Улучш. Мифриловый Браслет" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22543" name="Упаковка: Скидка на Комиссию (3 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22544" name="Упаковка: Купон Освобождения от Комиссии (3 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22545" name="Упаковка: Купон Продления Регистрации - 15 дн. (3 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22546" name="Упаковка: Купон Продления Регистрации - 30 дн. (3 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22550" name="Свиток: Модифицировать Оружие (А) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i04"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="2689648"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22551" name="Свиток: Модифицировать Доспех (А) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i04"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22552" name="Свиток: Модифицировать Оружие (B) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i03"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22553" name="Свиток: Модифицировать Доспех (B) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i03"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22554" name="Свиток: Модифицировать Оружие (C) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i02"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22555" name="Свиток: Модифицировать Доспех (C) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i02"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22556" name="Свиток: Модифицировать Оружие (D) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i01"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22557" name="Свиток: Модифицировать Доспех (D) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i01"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22558" name="Свиток: Модифицировать Оружие (S) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i05"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="3584394"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22559" name="Свиток: Модифицировать Доспех (S) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i05"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22560" name="Свиток: Модифицировать Оружие (R) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.scroll_of_enchant_weapon_i06"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22561" name="Свиток: Модифицировать Доспех (R) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.scroll_of_enchant_armor_i06"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22568" name="Упаковка Развития" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22569" name="Упаковка Путешествий" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22570" name="Упаковка Судьбы" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22571" name="Сундук Агатиона" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22572" name="Упаковка: Заряды Души R (10 000)" type="EtcItem">
+		<set name="icon" val="icon.br_cash_pack_of_soulshot_r_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22573" name="Упаковка: Благ. Заряды Духа R (10 000)" type="EtcItem">
+		<set name="icon" val="icon.br_cash_pack_of_blessed_spiritshot_r_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22574" name="Упаковка: Заряды Души R (3000)" type="EtcItem">
+		<set name="icon" val="icon.br_cash_pack_of_soulshot_r_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22575" name="Упаковка: Благ. Заряды Духа R (3000)" type="EtcItem">
+		<set name="icon" val="icon.br_cash_pack_of_blessed_spiritshot_r_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22576" name="Упаковка: Чудесные Заряды Души S (10 000)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_s_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22577" name="Упаковка: Чудесные Благ. Заряды Духа S (10 000)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_large_pack_of_blessed_spiritshot_s_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22578" name="Сундук Оружия C (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22579" name="Сундук Оружия B (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22580" name="Сундук Оружия A (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22581" name="Сундук Оружия S (90 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22582" name="Сундук Доспехов D (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22583" name="Сундук Доспехов C (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22584" name="Сундук Доспехов B (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22585" name="Сундук Доспехов A (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22586" name="Сундук Доспехов S (90 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22587" name="Сундук Оружия D (30 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22588" name="Энергия Ростка" type="EtcItem">
+		<set name="icon" val="icon.etc_leaf_green_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22589" name="Упаковка: Энергия Ростка (3 шт.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22590" name="Упаковка: Чудесные Заряды Души D (10 000)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_d_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22591" name="Упаковка: Чудесные Заряды Души D (5000)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_d_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22592" name="Упаковка: Чудесные Заряды Души C (10 000)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_c_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22593" name="Упаковка: Чудесные Заряды Души C (5000)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_c_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22594" name="Упаковка: Чудесные Заряды Души B (10 000)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_b_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22595" name="Упаковка: Чудесные Заряды Души B (5000)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_b_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22596" name="Упаковка: Чудесные Заряды Души A (10 000)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_a_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22597" name="Упаковка: Чудесные Заряды Души A (5000)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_a_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22598" name="Упаковка: Чудесные Заряды Духа D (10 000)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_spiritshot_d_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22599" name="Упаковка: Чудесные Заряды Духа D (5000)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_spiritshot_d_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1000"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="22547" name="(Тест) Световой Меч" type="Weapon">
+		<set name="icon" val="BranchSys3.Icon.g_beam_1h_sword"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1600"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<for/>
+	</item>
+</list>

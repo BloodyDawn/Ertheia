@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="10606" levels="1" name="Теневое Уклонение">
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="mpConsume" val="38"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="weaponsAllowed" val="Dagger, Dual Dagger"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="10" abnormalType="avoid_up_special" name="Buff" val="0">
+                <mul order="0x30" stat="pSkillEvas" val="1.9"/>
+                <mul order="0x30" stat="rateMagicalEvas" val="1.9"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="10607" levels="1" name="Максимальный Смертельный Укол">
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="300000"/>
+        <set name="mpConsume" val="38"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="weaponsAllowed" val="Dagger, Dual Dagger"/>
+        <for>
+            <effect abnormalLvl="4" abnormalTime="60" abnormalType="might_mortal" name="Buff" val="0">
+                <mul order="0x30" stat="blowRate" val="1.2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="10608" levels="4" name="Великий Шанс Крит. Удара">
+        <table name="#reuse">1.05 1.06 1.07 1.1</table>
+        <table name="#spd">5 6 7 10</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x10" stat="pReuse" val="#reuse"/>
+            <add order="0x10" stat="runSpd" val="#spd"/>
+        </for>
+    </skill>
+    <skill id="10653" levels="1" name="Отражение Атаки">
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="mpConsume" val="38"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="weaponsAllowed" val="Dagger, Dual Dagger"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="10" abnormalType="avoid_up_special" name="Buff" val="0">
+                <add order="0x40" stat="reflectSkillPhysicDam" val="90"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="10654" levels="1" name="Максимальный Смертельный Укол">
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="300000"/>
+        <set name="mpConsume" val="38"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="weaponsAllowed" val="Dagger, Dual Dagger"/>
+        <for>
+            <effect abnormalLvl="4" abnormalTime="60" abnormalType="might_mortal" name="Buff" val="0">
+                <mul order="0x30" stat="blowRate" val="1.2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="10655" levels="4" name="Великая Крит. Мощь">
+        <table name="#crit">1.05 1.06 1.07 1.1</table>
+        <table name="#spd">2 3 4 5</table>
+        <table name="#magicLvl">85 90 95 99</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x10" stat="cAtk" val="#crit">
+                <using kind="Dagger,Dual Dagger"/>
+            </mul>
+            <add order="0x10" stat="runSpd" val="#spd"/>
+        </for>
+    </skill>
+</list>

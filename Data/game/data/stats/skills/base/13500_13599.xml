@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="13539" levels="1" name="Кольцо Души Баюма">
+        <set name="magicLvl" val="90"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <sub order="0x40" stat="poisonVuln" val="25"/>
+            <sub order="0x40" stat="rootVuln" val="25"/>
+            <sub order="0x40" stat="stunVuln" val="25"/>
+            <sub order="0x40" stat="derangementVuln" val="25"/>
+            <add order="0x40" stat="poisonProf" val="25"/>
+            <add order="0x40" stat="rootProf" val="25"/>
+            <add order="0x40" stat="stunProf" val="25"/>
+            <add order="0x40" stat="derangementProf" val="25"/>
+            <mul order="0x30" stat="cAtk" val="1.15"/>
+            <mul order="0x30" stat="mCritPower" val="1.15"/>
+            <mul order="0x30" stat="pAtkSpd" val="1.05"/>
+            <mul order="0x30" stat="mAtkSpd" val="1.05"/>
+            <add order="0x40" stat="accPhysical" val="4"/>
+            <add order="0x40" stat="accMagical" val="4"/>
+        </for>
+    </skill>
+    <skill id="13540" levels="1" name="Ожерелье Души Фринтезы">
+        <set name="magicLvl" val="90"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <sub order="0x40" stat="paralyzeVuln" val="20"/>
+            <sub order="0x40" stat="bleedVuln" val="20"/>
+            <sub order="0x40" stat="poisonVuln" val="20"/>
+            <sub order="0x40" stat="stunVuln" val="20"/>
+            <sub order="0x40" stat="rootVuln" val="20"/>
+            <add order="0x40" stat="paralyzeProf" val="20"/>
+            <add order="0x40" stat="bleedProf" val="20"/>
+            <add order="0x40" stat="poisonProf" val="20"/>
+            <add order="0x40" stat="stunProf" val="20"/>
+            <add order="0x40" stat="rootProf" val="20"/>
+            <mul order="0x30" stat="runSpd" val="1.05"/>
+            <add order="0x40" stat="reflectDam" val="5"/>
+            <mul order="0x30" stat="mReuse" val="0.9"/>
+            <mul order="0x30" stat="pReuse" val="0.9"/>
+        </for>
+    </skill>
+    <skill id="13500" levels="1" name="Камень Обработки Оружия Монстров - Молот Клакиеса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13501" levels="1" name="Камень Обработки Оружия Монстров - Парные Мечи Тебода">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13502" levels="1" name="Камень Обработки Оружия Монстров - Кинжал Дракоса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13503" levels="1" name="Камень Обработки Оружия Монстров - Дуальные Кинжалы Дракоса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13504" levels="1" name="Камень Обработки Оружия Монстров - Меч Гильотина">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13505" levels="1" name="Камень Обработки Оружия Монстров - Копье Теджакара">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13506" levels="1" name="Камень Обработки Оружия Монстров - Посох Мимириды">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13507" levels="1" name="Камень Обработки Оружия Монстров - Посох Сатира">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13508" levels="1" name="Камень Обработки Оружия Монстров - Рука Канадиса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13509" levels="1" name="Камень Обработки Оружия Монстров - Лук Канадиса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13510" levels="1" name="Камень Обработки Оружия Монстров - Лук Кентавра">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13511" levels="1" name="Камень Обработки Оружия Монстров - Арбалет Спикулы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13512" levels="1" name="Камень Обработки Оружия Монстров - Щит Теора">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13513" levels="1" name="Камень Обработки Оружия Монстров - Щит Порока">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13514" levels="1" name="Отражение Урона Гиганта">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="reflectDam" val="20"/>
+        </for>
+    </skill>
+    <skill id="13515" levels="1" name="Крит. Урон Гиганта">
+        <set name="magicLvl" val="99"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormalTime="300" name="Buff" val="0">
+                <mul order="0x30" stat="cAtk" val="1.15"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="13516" levels="1" name="Колючий Щит Отражения Гиганта">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x40" stat="reflectVuln" val="50"/>
+        </for>
+    </skill>
+    <skill id="13517" levels="1" name="Боевой Рев Гиганта">
+        <set name="magicLvl" val="99"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect abnormalTime="300" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.10"/>
+                <mul order="0x30" stat="maxCp" val="1.10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="13518" levels="1" name="Малый Небесный Щит Гиганта">
+        <set name="magicLvl" val="99"/>
+        <set name="abnormalType" val="INVINCIBILITY"/>
+        <set name="abnormalLevel" val="1"/>
+        <set name="abnormalVisualEffect" val="invincible"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="hitTime" val="500"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="600000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="30" name="Invincible" removed="ON_ACTION_EXCEPT_MOVE" val="0"/>
+        </for>
+    </skill>
+    <skill id="13519" levels="1" name="Стойкость Бессмертия Гиганта">
+        <set name="magicLvl" val="99"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="reuseDelay" val="600000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillHooks" val="HpBreakpointHook,1133,1134,0.2"/>
+        <cond addName="1" msgId="113">
+            <player hp="20"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="10" abnormalType="invincibility" abnormalVisualEffect="invincible" name="Invincible" val="0">
+            </effect>
+        </for>
+    </skill>
+    <skill id="13520" levels="1" name="Безмолвие Гиганта">
+        <set name="magicLvl" val="99"/>
+        <set name="abnormalType" val="SILENCE_MAGICAL"/>
+        <set name="abnormalLevel" val="1"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="reuseDelay" val="300000"/>
+        <set name="hitTime" val="1500"/>
+        <set name="coolTime" val="500"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="power" val="90"/>
+        <set name="castRange" val="900"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isDebuff" val="true"/>
+        <cond addName="1" msgId="113">
+            <target playable="false"/>
+        </cond>
+        <for>
+            <effect abnormalTime="5" effectPower="-1" name="Mute" val="0"/>
+        </for>
+    </skill>
+    <skill id="13521" levels="1" name="Усыпление Гиганта">
+        <set name="magicLvl" val="99"/>
+        <set name="abnormalType" val="SLEEP"/>
+        <set name="abnormalLevel" val="1"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="coolTime" val="500"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="reuseDelay" val="300000"/>
+        <set name="hitTime" val="1000"/>
+        <set name="basicProperty" val="MAGIC"/>
+        <set name="skillType" val="SLEEP"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="1000"/>
+        <set name="isDebuff" val="true"/>
+        <set name="trait" val="SLEEP"/>
+        <for>
+            <effect abnormalTime="30" effectPower="-1" name="Sleep" val="0"/>
+        </for>
+    </skill>
+    <skill id="13522" levels="1" name="Зима Гиганта">
+        <set name="magicLvl" val="99"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1000"/>
+        <set name="reuseDelay" val="300000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalTime="10" effectPower="-1" name="Slow" val="0">
+                <mul order="0x30" stat="runSpd" val="0.50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="13523" levels="1" name="Критическая Уязвимость Гиганта">
+        <set name="magicLvl" val="99"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="castRange" val="1000"/>
+        <set name="reuseDelay" val="300000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="isDebuff" val="true"/>
+        <for>
+            <effect abnormalTime="10" effectPower="-1" name="Debuff" val="0">
+                <mul order="0x30" stat="critVuln" val="0.1"/>
+                <mul order="0x30" stat="cAtk" val="0.1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="13524" levels="1" name="Серьга Линдвиора">
+        <set name="magicLvl" val="95"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="knockDownProf" val="40"/>
+            <add order="0x40" stat="knockBackProf" val="40"/>
+            <add order="0x40" stat="attractProf" val="40"/>
+            <sub order="0x40" stat="knockBackVuln" val="40"/>
+            <sub order="0x40" stat="knockDownVuln" val="40"/>
+            <sub order="0x40" stat="attractVuln" val="40"/>
+            <mul order="0x30" stat="cAtk" val="1.10"/>
+            <mul order="0x30" stat="mCritPowerAdd" val="1.10"/>
+            <add order="0x40" stat="reflectSkillPhysicPercent" val="10"/>
+            <add order="0x40" stat="reflectSkillMagicPercent" val="10"/>
+            <add order="0x40" stat="reflectSkillMagicDam" val="10"/>
+            <add order="0x40" stat="runSpd" val="5"/>
+            <add order="0x40" stat="WIT" val="3"/>
+            <add order="0x40" stat="DEX" val="3"/>
+            <add order="0x40" stat="windRes" val="15"/>
+            <add order="0x40" stat="darkRes" val="15"/>
+        </for>
+    </skill>
+    <skill id="13525" levels="1" name="Благословление Серьги Линдвиора">
+        <set name="magicLvl" val="95"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="knockDownProf" val="40"/>
+            <add order="0x40" stat="knockBackProf" val="40"/>
+            <add order="0x40" stat="attractProf" val="40"/>
+            <sub order="0x40" stat="knockBackVuln" val="40"/>
+            <sub order="0x40" stat="knockDownVuln" val="40"/>
+            <sub order="0x40" stat="attractVuln" val="40"/>
+            <mul order="0x30" stat="cAtk" val="1.10"/>
+            <mul order="0x30" stat="mCritPowerAdd" val="1.10"/>
+            <add order="0x40" stat="reflectSkillPhysicPercent" val="10"/>
+            <add order="0x40" stat="reflectSkillMagicPercent" val="10"/>
+            <add order="0x40" stat="reflectSkillMagicDam" val="10"/>
+            <add order="0x40" stat="runSpd" val="5"/>
+            <add order="0x40" stat="WIT" val="3"/>
+            <add order="0x40" stat="DEX" val="3"/>
+            <add order="0x40" stat="windRes" val="30"/>
+            <add order="0x40" stat="darkRes" val="30"/>
+        </for>
+    </skill>
+    <skill id="13526" levels="1" name="Благословление Серьги Линдвиора">
+        <set name="operateType" val="A1"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="abnormalType" val="KNOCKBACKDOWN_VULN"/>
+        <set name="abnormalLevel" val="1"/>
+        <set name="hitTime" val="200"/>
+        <set name="reuseDelay" val="7200000"/>
+        <set name="magicLvl" val="95"/>
+        <set name="staticReuse" val="true"/>
+        <set name="negateAbnormals" val="KnockBack,99;KnockDown,99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="isStealable" val="false"/>
+        <for>
+            <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
+            <effect abnormalTime="5" name="Buff" val="0">
+                <sub order="0x40" stat="knockBackVuln" val="100"/>
+                <sub order="0x40" stat="knockDownVuln" val="100"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="13527" levels="1" name="Зачарованное Кольцо Октависа - Воин">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="pAtkSpd" val="1.03"/>
+            <mul order="0x30" stat="pCritRate" val="1.1"/>
+            <mul order="0x30" stat="cAtk" val="1.15"/>
+        </for>
+    </skill>
+    <skill id="13528" levels="1" name="Зачарованная Серьга Октависа - Воин">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="1.03"/>
+            <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.95"/>
+            <add order="0x40" stat="absorbDam" val="5"/>
+        </for>
+    </skill>
+    <skill id="13529" levels="1" name="Зачарованное Ожерелье Октависа - Воин">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="pAtk" val="1.03"/>
+            <mul order="0x30" stat="pReuse" val="0.9"/>
+            <mul order="0x30" stat="reflectDam" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13530" levels="1" name="Зачарованное Кольцо Истхины - Воин">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="pAtkSpd" val="1.02"/>
+            <mul order="0x30" stat="pCritRate" val="1.1"/>
+            <mul order="0x30" stat="cAtk" val="1.1"/>
+        </for>
+    </skill>
+    <skill id="13531" levels="1" name="Зачарованная Серьга Истхины - Воин">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="1.02"/>
+            <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.97"/>
+            <add order="0x40" stat="absorbDam" val="5"/>
+        </for>
+    </skill>
+    <skill id="13532" levels="1" name="Зачарованное Ожерелье Истхины - Воин">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="pAtk" val="1.02"/>
+            <mul order="0x30" stat="pReuse" val="0.95"/>
+            <mul order="0x30" stat="reflectDam" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13533" levels="1" name="Зачарованное Кольцо Октависа - Маг">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="mAtkSpd" val="1.02"/>
+            <mul order="0x30" stat="pCritRate" val="1.1"/>
+            <mul order="0x30" stat="mCritPower" val="1.1"/>
+        </for>
+    </skill>
+    <skill id="13534" levels="1" name="Зачарованная Серьга Октависа - Маг">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="mDef" val="1.03"/>
+            <mul order="0x30" stat="MagicalMpConsumeRate" val="0.95"/>
+            <add order="0x40" stat="absorbDam" val="5"/>
+        </for>
+    </skill>
+    <skill id="13535" levels="1" name="Зачарованное Ожерелье Октависа - Маг">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="mAtk" val="1.03"/>
+            <mul order="0x30" stat="mReuse" val="0.95"/>
+            <mul order="0x30" stat="reflectDam" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13536" levels="1" name="Зачарованное Кольцо Истхины - Маг">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="mAtkSpd" val="1.03"/>
+            <mul order="0x30" stat="pCritRate" val="1.1"/>
+            <mul order="0x30" stat="mCritPower" val="1.1"/>
+        </for>
+    </skill>
+    <skill id="13537" levels="1" name="Зачарованная Серьга Истхины - Маг">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="mDef" val="1.03"/>
+            <mul order="0x30" stat="MagicalMpConsumeRate" val="0.95"/>
+            <add order="0x40" stat="absorbDam" val="5"/>
+        </for>
+    </skill>
+    <skill id="13538" levels="1" name="Зачарованное Ожерелье Истхины - Маг">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="mAtk" val="1.05"/>
+            <mul order="0x30" stat="mReuse" val="0.9"/>
+            <mul order="0x30" stat="reflectDam" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13541" levels="1" name="Рубаха Октависа">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="STR" val="2"/>
+            <add order="0x40" stat="INT" val="2"/>
+            <add order="0x40" stat="DEX" val="1"/>
+            <add order="0x40" stat="CON" val="2"/>
+            <add order="0x40" stat="WIT" val="1"/>
+            <add order="0x40" stat="MEN" val="2"/>
+            <add order="0x40" stat="darkRes" val="30"/>
+            <add order="0x40" stat="runSpd" val="7"/>
+        </for>
+    </skill>
+    <skill id="13542" levels="1" name="Серьга Линдвиора">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="200"/>
+        <set name="reuseDelay" val="7200000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13543" levels="1" name="Шляпа Мессенджер NC">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13544" levels="1" name="Чудодейственная Энергия Пэ Гисона">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13545" levels="1" name="Сила Пэ Гисона">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13546" levels="1" name="Равновесие Пэ Гисона">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13547" levels="1" name="신비한 힘이 담긴 셰이퍼">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13548" levels="1" name="신비한 힘이 담긴 커터">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13549" levels="1" name="신비한 힘이 담긴 슬래셔">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13550" levels="1" name="신비한 힘이 담긴 어벤져">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13551" levels="1" name="신비한 힘이 담긴 파이터">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13552" levels="1" name="신비한 힘이 담긴 스토머">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13553" levels="1" name="신비한 힘이 담긴 스로워">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13554" levels="1" name="신비한 힘이 담긴 슈트제">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13555" levels="1" name="신비한 힘이 담긴 버스터">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13556" levels="1" name="신비한 힘이 담긴 캐스터">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13557" levels="1" name="신비한 힘이 담긴 레트리뷰터">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13558" levels="1" name="신비한 힘이 담긴 듀얼소드">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13559" levels="1" name="신비한 힘이 담긴 듀얼대거">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13560" levels="1" name="신비한 힘이 담긴 듀얼블런트">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13561" levels="1" name="반짝이는 아인하사드의 티셔츠 기본 효과">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13562" levels="10" name="반짝이는 아인하사드의 티셔츠 인챈트 효과">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13563" levels="5" name="아인하사드의 분노">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <table name="#reuseDelay">1800000 1740000 1680000 1620000 1500000</table>
+        <set name="reuseDelay" val="#reuseDelay"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13564" levels="4" name="아인하사드의 보호">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <table name="#reuseDelay">1800000 1680000 1560000 1500000</table>
+        <set name="reuseDelay" val="#reuseDelay"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13565" levels="3" name="아인하사드의 침묵">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <table name="#reuseDelay">1800000 1620000 1500000</table>
+        <set name="reuseDelay" val="#reuseDelay"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13566" levels="2" name="아인하사드의 구원">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <table name="#reuseDelay">1800000 1500000</table>
+        <set name="reuseDelay" val="#reuseDelay"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13567" levels="1" name="아인하사드의 축복">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="1800000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13568" levels="1" name="탈리스만의 기운">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="13569" levels="3" name="릴리스의 탈리스만">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+</list>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="27001" levels="1" name="Custom Mana Potion">
+        <set name="itemConsumeId" val="728"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="1000"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="skillType" val="MANAHEAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond addName="1" msgId="113">
+            <player flyMounted="False"/>
+        </cond>
+    </skill>
+    <skill id="27002" levels="1" name="Вспомогательное Зелье Маны">
+        <set name="itemConsumeId" val="726"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="buffDuration" val="15000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="MPHOT"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="5" abnormalType="mp_recover" count="3" name="MpHealOverTime" val="1.5"/>
+        </for>
+    </skill>
+</list>

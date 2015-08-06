@@ -1,0 +1,2171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="2700" levels="1" name="Наемник Гирана — Гном">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="staticReuse" val="true"/>
+        <set name="transformId" val="14"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="83"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2701" levels="1" name="Наемник Гирана — Камаэль">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="15"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="83"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2702" levels="1" name="Генерал Королевской Стражи Гирана">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="16"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="83"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2703" levels="1" name="Генерал Лучников Гирана">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="17"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="83"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2704" levels="1" name="Главный Маг Гирана">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="18"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="83"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2705" levels="1" name="Генерал Стражи Камаэлей Гирана">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="19"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="83"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2706" levels="1" name="Рыцарь Рассвета Гирана">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="20"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="83"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2707" levels="1" name="Генерал Крепости Гирана">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="21"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="83"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2708" levels="1" name="Наемник Орена — Человек">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="10"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="84"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2709" levels="1" name="Наемник Орена — Эльф">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="11"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="84"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2710" levels="1" name="Наемник Орена - Темный Эльф">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="12"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="84"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2711" levels="1" name="Наемник Орена — Орк">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="13"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="84"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2712" levels="1" name="Наемник Орена — Гном">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="14"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="84"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2713" levels="1" name="Наемник Орена — Камаэль">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="15"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="84"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2714" levels="1" name="Генерал Королевской Стражи Орена">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="16"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="84"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2715" levels="1" name="Генерал Лучников Орена">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="17"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="84"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2716" levels="1" name="Главный Маг Орена">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="18"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="84"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2717" levels="1" name="Генерал Стражи Камаэлей Орена">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="19"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="84"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2718" levels="1" name="Рыцарь Рассвета Орена">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="20"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="84"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2719" levels="1" name="Генерал Крепости Орена">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="21"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="84"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2720" levels="1" name="Наемник Адена — Человек">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="10"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="85"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2721" levels="1" name="Наемник Адена — Эльф">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="11"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="85"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2722" levels="1" name="Наемник Адена - Темный Эльф">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="12"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="85"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2723" levels="1" name="Наемник Адена — Орк">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="13"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="85"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2724" levels="1" name="Наемник Адена — Гном">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="14"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="85"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2725" levels="1" name="Наемник Адена — Камаэль">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="15"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="85"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2726" levels="1" name="Генерал Королевской Стражи Адена">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="16"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="85"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2727" levels="1" name="Генерал Лучников Адена">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="17"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="85"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2728" levels="1" name="Главный Маг Адена">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="staticReuse" val="true"/>
+        <set name="transformId" val="18"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="85"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2729" levels="1" name="Генерал Стражи Камаэлей Адена">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="19"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="85"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2730" levels="1" name="Рыцарь Рассвета Адена">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="20"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="85"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2731" levels="1" name="Генерал Крепости Адена">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="21"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="85"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2732" levels="1" name="Наемник Иннадрила — Человек">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="10"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="86"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2733" levels="1" name="Наемник Иннадрила — Эльф">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="11"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="86"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2734" levels="1" name="Наемник Иннадрила - Темный Эльф">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="12"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="86"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2735" levels="1" name="Наемник Иннадрила — Орк">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="13"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="86"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2736" levels="1" name="Наемник Иннадрила — Гном">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="14"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="86"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2737" levels="1" name="Наемник Иннадрила — Камаэль">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="15"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="86"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2738" levels="1" name="Генерал Королевской Стражи Иннадрила">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="16"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="86"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2739" levels="1" name="Генерал Лучников Иннадрила">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="17"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="86"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2740" levels="1" name="Главный Маг Иннадрила">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="18"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="86"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2741" levels="1" name="Генерал Стражи Камаэлей Иннадрила">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="19"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="86"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2742" levels="1" name="Рыцарь Рассвета Иннадрила">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="20"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="86"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2743" levels="1" name="Генерал Крепости Иннадрила">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="21"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="86"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2744" levels="1" name="Наемник Годдарда — Человек">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="10"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="87"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2745" levels="1" name="Наемник Годдарда — Эльф">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="11"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="87"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2746" levels="1" name="Наемник Годдарда - Темный Эльф">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="12"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="87"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2747" levels="1" name="Наемник Годдарда — Орк">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="13"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="87"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2748" levels="1" name="Наемник Годдарда — Гном">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="14"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="87"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2749" levels="1" name="Наемник Годдарда — Камаэль">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="15"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="87"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2750" levels="1" name="Генерал Королевской Стражи Годдарда">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="16"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="87"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2751" levels="1" name="Генерал Лучников Годдарда">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="17"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="87"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2752" levels="1" name="Главный Маг Годдарда">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="18"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="87"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2753" levels="1" name="Генерал Стражи Камаэлей Годдарда">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="19"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="87"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2754" levels="1" name="Рыцарь Рассвета Годдарда">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="20"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="87"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2755" levels="1" name="Генерал Крепости Годдарда">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="21"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="87"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2756" levels="1" name="Наемник Руны — Человек">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="10"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="88"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2757" levels="1" name="Наемник Руны — Эльф">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="11"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="88"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2758" levels="1" name="Наемник Руны - Темный Эльф">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="12"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="88"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2759" levels="1" name="Наемник Руны — Орк">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="13"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="88"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2760" levels="1" name="Наемник Руны — Гном">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="14"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="88"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2761" levels="1" name="Наемник Руны — Камаэль">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="15"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="88"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2762" levels="1" name="Генерал Королевской Стражи Руны">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="16"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="88"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2763" levels="1" name="Генерал Лучников Руны">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="17"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="88"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2764" levels="1" name="Главный Маг Руны">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="18"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="88"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2765" levels="1" name="Генерал Стражи Камаэлей Руны">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="19"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="88"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2766" levels="1" name="Рыцарь Рассвета Руны">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="20"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="88"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2767" levels="1" name="Генерал Крепости Руны">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="21"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="88"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2768" levels="1" name="Наемник Шутгарта — Человек">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="10"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="89"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2769" levels="1" name="Наемник Шутгарта — Эльф">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="11"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="89"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2770" levels="1" name="Наемник Шутгарта - Темный Эльф">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="12"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="89"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2771" levels="1" name="Наемник Шутгарта — Орк">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="13"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="89"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2772" levels="1" name="Наемник Шутгарта — Гном">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="14"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="89"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2773" levels="1" name="Наемник Шутгарта — Камаэль">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="15"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="89"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2774" levels="1" name="Генерал Королевской Стражи Шутгарт">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="16"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="89"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2775" levels="1" name="Генерал Лучников Шутгарт">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="17"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="89"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2776" levels="1" name="Главный Маг Шутгарт">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="18"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="89"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2777" levels="1" name="Генерал Стражи Камаэлей Шутгарт">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="19"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="89"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2778" levels="1" name="Рыцарь Рассвета Шутгарт">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="20"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="89"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2779" levels="1" name="Генерал Крепости Шутгарт">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="staticReuse" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="2500"/>
+        <set name="transformId" val="21"/>
+        <set name="itemConsumeCount" val="1"/>
+        <cond msgId="2955">
+            <and>
+                <player siegeZone="147"/>
+                <player siegeSide="89"/>
+            </and>
+        </cond>
+        <cond addName="1" msgId="113">
+            <player canTransform="true"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="1800" abnormalType="transform" name="Transformation" val="0"/>
+        </for>
+    </skill>
+    <skill id="2780" levels="1" name="Воля Мага">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="945"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="945"/>
+                </not>
+                <player class_id_restriction="94, 95, 96, 97, 98, 103, 104, 105, 110, 111, 112, 115, 116"/>
+                <player level="81"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2781" levels="1" name="Безмолвие Разума">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="946"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="946"/>
+                </not>
+                <player class_id_restriction="92, 102, 109"/>
+                <player level="81"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2782" levels="1" name="Обращение в Камень">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="1540"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="1540"/>
+                </not>
+                <player class_id_restriction="97, 98, 105, 112, 115, 116"/>
+                <player level="81"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2783" levels="1" name="Нежданная Удача">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="947"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="947"/>
+                </not>
+                <player class_id_restriction="117"/>
+                <player level="83"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2784" levels="1" name="Око за Око">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="948"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="948"/>
+                </not>
+                <player class_id_restriction="131"/>
+                <player level="83"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2785" levels="1" name="Проклятие Даспариона">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="1541"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="1541"/>
+                </not>
+                <player class_id_restriction="95"/>
+                <player level="83"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2786" levels="1" name="Ответный Крит. Удар">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="1542"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="1542"/>
+                </not>
+                <player class_id_restriction="98"/>
+                <player level="83"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2787" levels="1" name="Бешеный Натиск Паагрио">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="949"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="949"/>
+                </not>
+                <player class_id_restriction="115"/>
+                <player level="83"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2788" levels="1" name="Неукротимая Ярость">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="1543"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="1543"/>
+                </not>
+                <player class_id_restriction="116"/>
+                <player level="83"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2789" levels="1" name="Конечная Летающая Форма">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="840"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="840"/>
+                </not>
+                <player races="Kamael"/>
+                <player level="75"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2790" levels="1" name="Птица Ауры — Сокол">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="841"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="841"/>
+                </not>
+                <player level="75"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2791" levels="1" name="Птица Ауры — Сова">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="842"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="842"/>
+                </not>
+                <player level="75"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="2792" levels="2" name="Большой Камень Жизни">
+        <table name="#amount">700 20000</table>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="isStaticHeal" val="true"/>
+        <set name="magicLvl" val="1"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="HEAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="100"/>
+        <for>
+            <effect name="HpHeal" noicon="1" val="#amount"/>
+        </for>
+    </skill>
+    <skill id="2793" levels="2" name="Большой Камень Mаны">
+        <table name="#amount">500 20000</table>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="1"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="MANAHEAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="100"/>
+        <for>
+            <effect name="MpHeal" noicon="1" val="#amount"/>
+        </for>
+    </skill>
+    <skill id="2794" levels="2" name="Большой Камень Восстановления">
+        <table name="#hpHeal">15 25</table>
+        <table name="#mpHeal">11 18</table>
+        <set name="aggroPoints" val="100"/>
+        <set name="hitTime" val="100"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="magicLvl" val="80"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="skillType" val="HEAL_PERCENT"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect name="HpHealPercent" noicon="1" val="#hpHeal"/>
+            <effect name="MpHealPercent" noicon="1" val="#mpHeal"/>
+        </for>
+    </skill>
+    <skill id="2795" levels="1" name="Камень Урона">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="1200" abnormalType="pa_up" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.12"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="2796" levels="1" name="Камень Неуязвимости">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="1200" abnormalType="pd_up" name="Buff" val="0">
+                <mul order="0x30" stat="pDef" val="1.12"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="2797" levels="1" name="Камень Ускорения">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="hitTime" val="4000"/>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="1200" abnormalType="attack_time_down" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.15"/>
+            </effect>
+            <effect abnormalLvl="2" abnormalTime="1200" abnormalType="casting_time_down" name="Buff" noicon="1" val="0">
+                <mul order="0x30" stat="mAtkSpd" val="1.23"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="2798" levels="1" name="Камень Скорости">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="1200" abnormalType="speed_up" name="Buff" val="0">
+                <add order="0x40" stat="runSpd" val="33"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="2799" levels="1" name="Камень Концентрации">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="1200" abnormalType="critical_prob_up" name="Buff" val="0">
+                <mul order="0x30" stat="cAtk" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+</list>

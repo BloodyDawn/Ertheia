@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS `world_statistic_statues` (
+  `char_id` INT(11) NOT NULL,
+  `cat_id` INT(11) NOT NULL,
+  `class_id` INT(11) DEFAULT NULL,
+  `race_id` INT(11) DEFAULT NULL,
+  `sex` TINYINT(1) DEFAULT NULL,
+  `face` INT(11) DEFAULT NULL,
+  `hair_style` INT(11) DEFAULT NULL,
+  `hair_color` INT(11) DEFAULT NULL,
+  `social_id` INT(11) DEFAULT NULL,
+  `necklace` INT(11) DEFAULT NULL,
+  `head` INT(11) DEFAULT NULL,
+  `rhand` INT(11) DEFAULT NULL,
+  `lhand` INT(11) DEFAULT NULL,
+  `gloves` INT(11) DEFAULT NULL,
+  `chest` INT(11) DEFAULT NULL,
+  `legs` INT(11) DEFAULT NULL,
+  `feet` INT(11) DEFAULT NULL,
+  `accessory1` INT(11) DEFAULT NULL,
+  `accessory2` INT(11) DEFAULT NULL,
+  PRIMARY KEY (`char_id`,`cat_id`),
+  KEY `NewIndex1` (`cat_id`)
+);

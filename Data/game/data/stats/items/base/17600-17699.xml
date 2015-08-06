@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="17600" name="Записи Ада" type="EtcItem">
+		<set name="icon" val="icon.q10338_book_of_hades"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="0"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+	</item>
+	<item id="17601" name="Кусочек Сердца Земляного Червя" type="EtcItem">
+		<set name="icon" val="icon.earthworm_heart"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="0"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="17602" name="Кристалл Жизненной Энергии" type="EtcItem">
+		<set name="icon" val="icon.high_star_stone_piece_i02"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="0"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17603" name="Рецепт - Удобрение (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_white_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="recipe_id" val="1000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="17604" name="Мерцающий Кристалл" type="EtcItem">
+		<set name="icon" val="icon.glimmer_crystal"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="reuse_delay" val="20000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="12011-1;12001-1"/>
+	</item>
+	<item id="17608" name="Устройство Контроля Энергии" type="EtcItem">
+		<set name="icon" val="icon.etc_medicine_of_growth_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="is_questitem" val="false"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="reuse_delay" val="20000"/>
+		<set name="item_skill" val="14224-1"/>
+	</item>
+	<item id="17609" name="(Не используется) Ожерелье Истхины" type="Armor">
+		<set name="icon" val="icon.accessary_verpes_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="neck"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="1046"/>
+		<set name="crystal_type" val="s84"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="21795000"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="mDef" val="125"/>
+			<add order="0x40" stat="maxMp" val="50"/>
+			<enchant order="0x0C" stat="mDef" val="0"/>
+		</for>
+	</item>
+	<item id="17615" name="Знак Беллис" type="EtcItem">
+		<set name="icon" val="icon.bel_mark_clear"/>
+		<set name="is_stackable" val="true"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="17623" name="Кольцо Земляного Червя" type="Armor">
+		<set name="icon" val="icon.accessory_ring_of_baium_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="83"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="7785400"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="item_skill" val="13317-1;13318-1;13319-1"/>
+		<for>
+			<add order="0x10" stat="mDef" val="108"/>
+			<add order="0x40" stat="maxMp" val="38"/>
+			<enchant order="0x0C" stat="mDef" val="0"/>
+		</for>
+	</item>
+	<item id="17625" name="Краска Гигантов Ур. 1 - СИЛ - (СИЛ+3 ЛВК-2)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="488300"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17626" name="Краска Гигантов Ур. 1 - ЛВК - (ЛВК+3 ВЫН-2)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="488300"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17627" name="Краска Гигантов Ур. 1 - ВЫН - (ВЫН+3 СИЛ-2)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="488300"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17628" name="Краска Гигантов Ур. 1 - ИНТ - (ИНТ+3 МДР-2)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="488300"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17629" name="Краска Гигантов Ур. 1 - МДР - (МДР+3 ДУХ-2)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="488300"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17630" name="Краска Гигантов Ур. 1 - ДУХ - (ДУХ+3 ИНТ-2)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="488300"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17631" name="Древняя Краска Ур. 1 - СИЛ - (СИЛ+3 ЛВК-2 Сопротивление огню +5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="692400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17632" name="Древняя Краска Ур. 1 - ЛВК - (ЛВК+3 ВЫН-2 Сопротивление земле +5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="692400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17633" name="Древняя Краска Ур. 1 - ВЫН - (ВЫН+3 СИЛ-2 Сопротивление тьме +5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="692400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17634" name="Древняя Краска Ур. 1 - ИНТ - (ИНТ+3 МДР-2 Сопротивление воде +5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="692400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17635" name="Древняя Краска Ур. 1 - МДР - (МДР+3 ДУХ-2 Сопротивление ветру +5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="692400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17636" name="Древняя Краска Ур. 1 - ДУХ - (ДУХ+3 ИНТ-2 Сопротивление свету +5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="692400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17637" name="Легендарная Краска Ур. 1 - СИЛ - (СИЛ+3 ЛВК-1 Сопротивление огню +5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="896400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17638" name="Легендарная Краска Ур. 1 - ЛВК - (ЛВК+3 ВЫН-1 Сопротивление земле +5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="896400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17639" name="Легендарная Краска Ур. 1 - ВЫН - (ВЫН+3 СИЛ-1 Сопротивление тьме +5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="896400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17640" name="Легендарная Краска Ур. 1 - ИНТ - (ИНТ+3 МДР-1 Сопротивление воде +5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="896400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17641" name="Легендарная Краска Ур. 1 - МДР - (МДР+3 ДУХ-1 Сопротивление ветру +5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="896400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17642" name="Легендарная Краска Ур. 1 - ДУХ - (ДУХ+3 ИНТ-1 Сопротивление свету +5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="896400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17643" name="Краска Гигантов Ур. 2 - СИЛ - (СИЛ+4 ЛВК-3)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1097700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17644" name="Краска Гигантов Ур. 2 - ЛВК - (ЛВК+4 ВЫН-3)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1097700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17645" name="Краска Гигантов Ур. 2 - ВЫН - (ВЫН+4 СИЛ-3)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1097700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17646" name="Краска Гигантов Ур. 2 - ИНТ - (ИНТ+4 МДР-3)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1097700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17647" name="Краска Гигантов Ур. 2 - МДР - (МДР+4 ДУХ-3)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1097700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17648" name="Краска Гигантов Ур. 2 - ДУХ - (ДУХ+4 ИНТ-3)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1097700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17649" name="Древняя Краска Ур. 2 - СИЛ - (СИЛ+4 ЛВК-3 Сопротивление огню +10)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1496100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17650" name="Древняя Краска Ур. 2 - ЛВК - (ЛВК+4 ВЫН-3 Сопротивление земле +10)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1496100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17651" name="Древняя Краска Ур. 2 - ВЫН - (ВЫН+4 СИЛ-3 Сопротивление тьме +10)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1496100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17652" name="Древняя Краска Ур. 2 - ИНТ - (ИНТ+4 МДР-3 Сопротивление воде +10)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1496100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17653" name="Древняя Краска Ур. 2 - МДР - (МДР+4 ДУХ-3 Сопротивление ветру +10)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1496100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17654" name="Древняя Краска Ур. 2 - ДУХ - (ДУХ+4 ИНТ-3 Сопротивление свету +10)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1496100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17655" name="Легендарная Краска Ур. 2 - СИЛ - (СИЛ+4 ЛВК-2 Сопротивление огню +10)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1894500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17656" name="Легендарная Краска Ур. 2 - ЛВК - (ЛВК+4 ВЫН-2 Сопротивление земле +10)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1894500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17657" name="Легендарная Краска Ур. 2 - ВЫН - (ВЫН+4 СИЛ-2 Сопротивление тьме +10)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1894500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17658" name="Легендарная Краска Ур. 2 - ИНТ - (ИНТ+4 МДР-2 Сопротивление воде +10)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1894500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17659" name="Легендарная Краска Ур. 2 - МДР - (МДР+4 ДУХ-2 Сопротивление ветру +10)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1894500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17660" name="Легендарная Краска Ур. 2 - ДУХ - (ДУХ+4 ИНТ-2 Сопротивление свету +10)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="1894500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17661" name="Краска Гигантов Ур. 3 - СИЛ - (СИЛ+5 ЛВК-4)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="2518000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17662" name="Краска Гигантов Ур. 3 - ЛВК - (ЛВК+5 ВЫН-4)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="2518000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17663" name="Краска Гигантов Ур. 3 - ВЫН - (ВЫН+5 СИЛ-4)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="2518000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17664" name="Краска Гигантов Ур. 3 - ИНТ - (ИНТ+5 МДР-4)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="2518000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17665" name="Краска Гигантов Ур. 3 - МДР - (МДР+5 ДУХ-4)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="2518000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17666" name="Краска Гигантов Ур. 3 - ДУХ - (ДУХ+5 ИНТ-4)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="2518000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17667" name="Древняя Краска Ур. 3 - СИЛ - (СИЛ+5 ЛВК-4 Сопротивление огню +15)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="3295800"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17668" name="Древняя Краска Ур. 3 - ЛВК - (ЛВК+5 ВЫН-4 Сопротивление земле +15)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="3295800"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17669" name="Древняя Краска Ур. 3 - ВЫН - (ВЫН+5 СИЛ-4 Сопротивление тьме +15)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="3295800"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17670" name="Древняя Краска Ур. 3 - ИНТ - (ИНТ+5 МДР-4 Сопротивление воде +15)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="3295800"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17671" name="Древняя Краска Ур. 3 - МДР - (МДР+5 ДУХ-4 Сопротивление ветру +15)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="3295800"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17672" name="Древняя Краска Ур. 3 - ДУХ - (ДУХ+5 ИНТ-4 Сопротивление свету +15)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="3295800"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17673" name="Легендарная Краска Ур. 3 - СИЛ - (СИЛ+5 ЛВК-3 Сопротивление огню +15)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="4073600"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17674" name="Легендарная Краска Ур. 3 - ЛВК - (ЛВК+5 ВЫН-3 Сопротивление земле +15)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="4073600"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17675" name="Легендарная Краска Ур. 3 - ВЫН - (ВЫН+5 СИЛ-3 Сопротивление тьме +15)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="4073600"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17676" name="Легендарная Краска Ур. 3 - ИНТ - (ИНТ+5 МДР-3 Сопротивление воде +15)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="4073600"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17677" name="Легендарная Краска Ур. 3 - МДР - (МДР+5 ДУХ-3 Сопротивление ветру +15)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="4073600"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17678" name="Легендарная Краска Ур. 3 - ДУХ - (ДУХ+5 ИНТ-3 Сопротивление свету +15)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="4073600"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17679" name="Краска Гигантов Ур. 4 - СИЛ - (СИЛ+5 ЛВК-2)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="11334400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17680" name="Краска Гигантов Ур. 4 - ЛВК - (ЛВК+5 ВЫН-2)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="11334400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17681" name="Краска Гигантов Ур. 4 - ВЫН - (ВЫН+5 СИЛ-2)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17682" name="Краска Гигантов Ур. 4 - ИНТ - (ИНТ+5 МДР-2)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="11334400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17683" name="Краска Гигантов Ур. 4 - МДР - (МДР+5 ДУХ-2)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="11334400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17684" name="Краска Гигантов Ур. 4 - ДУХ - (ДУХ+5 ИНТ-2)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17685" name="Древняя Краска Ур. 4 - СИЛ - (СИЛ+5 ЛВК-2 Сопротивление огню +20)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17686" name="Древняя Краска Ур. 4 - ЛВК - (ЛВК+5 ВЫН-2 Сопротивление земле +20)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17687" name="Древняя Краска Ур. 4 - ВЫН - (ВЫН+5 СИЛ-2 Сопротивление тьме +20)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17688" name="Древняя Краска Ур. 4 - ИНТ - (ИНТ+5 МДР-2 Сопротивление воде +20)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="12966700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17689" name="Древняя Краска Ур. 4 - МДР - (МДР+5 ДУХ-2 Сопротивление ветру +20)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17690" name="Древняя Краска Ур. 4 - ДУХ - (ДУХ+5 ИНТ-2 Сопротивление свету +20)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17691" name="Легендарная Краска Ур. 4 - СИЛ - (СИЛ+5 ЛВК-1 Сопротивление огню +20)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17692" name="Легендарная Краска Ур. 4 - ЛВК - (ЛВК+5 ВЫН-1 Сопротивление земле +20)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17693" name="Легендарная Краска Ур. 4 - ВЫН - (ВЫН+5 СИЛ-1 Сопротивление тьме +20)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17694" name="Легендарная Краска Ур. 4 - ИНТ - (ИНТ+5 МДР-1 Сопротивление воде +20)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17695" name="Легендарная Краска Ур. 4 - МДР - (МДР+5 ДУХ-1 Сопротивление ветру +20)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17696" name="Легендарная Краска Ур. 4 - ДУХ - (ДУХ+5 ИНТ-1 Сопротивление свету +20)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17697" name="Краска Гигантов Ур. 5 - СИЛ - (СИЛ+5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="35884300"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17698" name="Краска Гигантов Ур. 5 - ЛВК - (ЛВК+5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="35884300"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17699" name="Краска Гигантов Ур. 5 - ВЫН - (ВЫН+5)" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i00"/>
+		<set name="etcitem_type" val="dye"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="35884300"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17619" name="Устройство Поиска Сокровищ" type="EtcItem">
+		<set name="icon" val="icon.summon_object_finder"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="0"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="12004-1"/>
+	</item>
+	<item id="17620" name="Пестицид" type="EtcItem">
+		<set name="icon" val="icon.bug_spray_a"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="material" val="liquid"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="12005-1"/>
+	</item>
+	<item id="17621" name="Пестицид" type="EtcItem">
+		<set name="icon" val="icon.bug_spray_b"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="material" val="liquid"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="12006-1"/>
+	</item>
+	<item id="17622" name="Пестицид" type="EtcItem">
+		<set name="icon" val="icon.bug_spray_c"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="material" val="liquid"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="item_skill" val="12007-1"/>
+	</item>
+	<item id="17605" name="10 000 000 аден" type="EtcItem">
+		<set name="icon" val="icon.fairy_adena_joke"/>
+		<set name="material" val="crystal"/>
+	</item>
+	<item id="17606" name="Обломок Крепости" type="EtcItem">
+		<set name="icon" val="icon.gd_square_fragment"/>
+		<set name="material" val="crystal"/>
+	</item>
+	<item id="17607" name="Ключи с Самоцветами" type="EtcItem">
+		<set name="icon" val="icon.etc_key_i00"/>
+		<set name="material" val="crystal"/>
+	</item>
+	<item id="17610" name="Конденсат Жизненной Энергии" type="EtcItem">
+		<set name="icon" val="icon.etc_bark_green_i00"/>
+		<set name="material" val="crystal"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17611" name="Огромное Ядро" type="EtcItem">
+		<set name="icon" val="icon.mde_big_bullet"/>
+		<set name="material" val="crystal"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17612" name="Осколок Памяти" type="EtcItem">
+		<set name="icon" val="icon.mde_memory_fragment"/>
+		<set name="material" val="crystal"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17613" name="Осколок Утраченной Памяти" type="EtcItem">
+		<set name="icon" val="icon.mde_memory_fragment02"/>
+		<set name="material" val="crystal"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17614" name="Записи Пантеона" type="EtcItem">
+		<set name="icon" val="icon.si_phanteon_book"/>
+		<set name="material" val="crystal"/>
+	</item>
+	<item id="17616" name="Свеча Души" type="EtcItem">
+		<set name="icon" val="icon.darkelf_campaign_candle"/>
+		<set name="material" val="crystal"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17617" name="Шкатулка с Самоцветами" type="EtcItem">
+		<set name="icon" val="icon.darkelf_campaign_box"/>
+		<set name="material" val="crystal"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17618" name="Карта Фортуны" type="EtcItem">
+		<set name="icon" val="icon.fortuna_enter"/>
+		<set name="material" val="crystal"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="17624" name="Символ Дерзости" type="EtcItem">
+		<set name="icon" val="icon.token_of_oman"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+</list>

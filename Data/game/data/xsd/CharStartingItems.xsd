@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list">
+		<xs:complexType>
+			<xs:sequence minOccurs="1" maxOccurs="1">
+				<xs:element name="equipment" minOccurs="1" maxOccurs="136">
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element name="item" minOccurs="1" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+									<xs:attribute name="count" type="xs:positiveInteger" use="required"/>
+									<xs:attribute name="equipped" type="xs:boolean"/>
+									<xs:attribute name="location">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="VOID"/>
+												<xs:enumeration value="INVENTORY"/>
+												<xs:enumeration value="PAPERDOLL"/>
+												<xs:enumeration value="WAREHOUSE"/>
+												<xs:enumeration value="CLANWH"/>
+												<xs:enumeration value="PET"/>
+												<xs:enumeration value="PET_EQUIP"/>
+												<xs:enumeration value="LEASE"/>
+												<xs:enumeration value="REFUND"/>
+												<xs:enumeration value="MAIL"/>
+												<xs:enumeration value="FREIGHT"/>
+												<xs:enumeration value="COMMISSION"/>
+												<xs:enumeration value="GOODS"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="classId">
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="-1"/>
+									<xs:maxInclusive value="189"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

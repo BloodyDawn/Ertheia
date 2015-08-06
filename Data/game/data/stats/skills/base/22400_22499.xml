@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="22400" levels="1" name="Свиток Превращения -Закен">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="22401" levels="1" name="Свиток Превращения -Ранку">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="22402" levels="1" name="Подарок Агатиона Чучу">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="22403" levels="1" name="Билет в Камалоку (Зал Кошмаров )">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="22404" levels="1" name="Награда Следопыта">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="22405" levels="1" name="Сундук Оружия Высшего Ранга S84">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="22406" levels="1" name="Коробка Доспехов Элегии">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="22407" levels="1" name="Сила ПА">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="22408" levels="1" name="Ящик с Инструментами">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="22416" levels="1" name="Особенное печенье на Хэлоуин">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="3600" abnormalType="cookie" name="Buff" val="0">
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="regHp" val="1.2"/>
+                <add order="0x40" stat="mCritRate" val="2"/>
+                <mul order="0x30" stat="cAtk" val="1.2"/>
+                <mul order="0x30" stat="pAtk" val="1.1"/>
+                <mul order="0x30" stat="mAtk" val="1.2"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <mul order="0x30" stat="pDef" val="1.2"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="runSpd" val="0.85"/>
+                <mul order="0x30" stat="rootVuln" val="0.9"/>
+                <mul order="0x40" stat="sleepVuln" val="0.9"/>
+                <mul order="0x40" stat="derangementVuln" val="0.9"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="22440" levels="1" name="Священный Кристалл: Модифицировать Оружие (R)">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_WEAPON"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="22443" levels="1" name="Свиток: Модифицировать Доспех (R)">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_ARMOR"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="22448" levels="5" name="Средняя Упаковка - Заряды Души: Ранг R">
+        <set name="create_item_count" val="300"/>
+        <set name="create_item_id" val="22433"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="22449" levels="10" name="Большая Упаковка - Заряды Души: Ранг R">
+        <set name="create_item_count" val="300"/>
+        <set name="create_item_id" val="22433"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="22450" levels="5" name="Средняя Упаковка - Благословенные Заряды Духа: Ранг R">
+        <set name="create_item_count" val="300"/>
+        <set name="create_item_id" val="22434"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="22451" levels="10" name="Большая Упаковка - Благословенные Заряды Духа: Ранг R">
+        <set name="create_item_count" val="10000"/>
+        <set name="create_item_id" val="19442"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="CREATE_ITEM"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="22454" levels="1" name="Свиток: Модифицировать Оружие (D)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_WEAPON"/>
+    </skill>
+    <skill id="22455" levels="1" name="Свиток: Модифицировать Доспех (D)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_ARMOR"/>
+    </skill>
+    <skill id="22456" levels="1" name="Свиток: Модифицировать Оружие (C)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_WEAPON"/>
+    </skill>
+    <skill id="22457" levels="1" name="Свиток: Модифицировать Доспех (C)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_ARMOR"/>
+    </skill>
+    <skill id="22458" levels="1" name="Свиток: Модифицировать Оружие (B)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_WEAPON"/>
+    </skill>
+    <skill id="22459" levels="1" name="Свиток: Модифицировать Доспех (B)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_ARMOR"/>
+    </skill>
+    <skill id="22460" levels="1" name="Свиток: Модифицировать Оружие (A)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_WEAPON"/>
+    </skill>
+    <skill id="22461" levels="1" name="Свиток: Модифицировать Доспех (A)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_ARMOR"/>
+    </skill>
+    <skill id="22462" levels="1" name="Свиток: Модифицировать Оружие (S)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_WEAPON"/>
+    </skill>
+    <skill id="22463" levels="1" name="Свиток: Модифицировать Доспех (S)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_ARMOR"/>
+    </skill>
+    <skill id="22464" levels="1" name="Свиток: Модифицировать Оружие (R)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_WEAPON"/>
+    </skill>
+    <skill id="22465" levels="1" name="Свиток: Модифицировать Доспех (R)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="ENCHANT_ARMOR"/>
+    </skill>
+    <skill id="22410" levels="1" name="Песня Путешественника - Защита Евы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22411" levels="1" name="Песня Путешественника - Защита Евы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22412" levels="1" name="Трансформация Оружия - Одноручный Световой Меч">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22413" levels="1" name="Трансформация Оружия - Парные Световые Мечи">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22414" levels="1" name="Подарочный Ящик - Хэллоуин">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22415" levels="1" name="Печенье Хэллоуина">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22417" levels="1" name="Установка Магического Седла">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="45000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22418" levels="1" name="Источник Эволюции">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="reuseDelay" val="86400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22419" levels="1" name="Обработка Оружия (R)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22420" levels="1" name="Обработка Оружия (S)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22421" levels="1" name="Обработка Оружия (A)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22422" levels="1" name="Обработка Оружия (B)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22423" levels="1" name="Обработка Оружия (C)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22424" levels="1" name="Обработка Оружия (D)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22425" levels="1" name="Обработка Благословенного Оружия (R)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22426" levels="1" name="Обработка Благословенного Оружия (S)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22427" levels="1" name="Обработка Благословенного Оружия (A)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22428" levels="1" name="Обработка Благословенного Оружия (B)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22429" levels="1" name="Обработка Благословенного Оружия (C)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22430" levels="1" name="Обработка Благословенного Оружия (D)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22431" levels="1" name="Восстановление Оружия (R)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22432" levels="1" name="Восстановление Оружия (S)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22433" levels="1" name="Восстановление Оружия (A)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22434" levels="1" name="Восстановление Оружия (B)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22435" levels="1" name="Восстановление Оружия (C)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22436" levels="1" name="Восстановление Оружия (D)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22437" levels="1" name="(тест)  Обработка Оружия - Эмеральдовый Меч">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22438" levels="1" name="Свиток: Модифицировать Оружие (R)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22439" levels="1" name="Древний Кристалл: Модифицировать Оружие (R)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22441" levels="1" name="Свиток: Модифицировать Оружие (R)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22442" levels="1" name="Свиток: Модифицировать Оружие (R)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22444" levels="1" name="Роскошный Сундук Удачи">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22445" levels="1" name="Роскошный Куб Удачи">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22446" levels="1" name="Заряд Души: Ранг R">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22447" levels="1" name="Благословенный Заряд Духа: Ранг R">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22452" levels="1" name="Коробка с Подарками Снегурочки">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22453" levels="1" name="Сундук с Талисманом">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22466" levels="1" name="Свиток Телепорта">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22467" levels="1" name="Свиток Телепорта: Замок">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22468" levels="1" name="Свиток Телепорта: Холл Клана">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22469" levels="1" name="Свиток Благ. Телепорта">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="200"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22470" levels="1" name="Свиток Благ. Телепорта: Замок">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="200"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22471" levels="1" name="Свиток Благ. Телепорта: Холл Клана">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="200"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22472" levels="1" name="Свиток Благ. Воскрешения Питомцев">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="15000"/>
+        <set name="castRange" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22473" levels="1" name="Сундук Агатиона">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22474" levels="10" name="Заряды Души R (10 000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22475" levels="5" name="Благословенные Заряды Духа R (10 000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22476" levels="3" name="Заряды Души R (3000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22477" levels="3" name="Благословенные Заряды Духа R (3000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22478" levels="10" name="Заряды Души S (10 000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22479" levels="10" name="Заряды Души S (10 000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22480" levels="1" name="Энергия Ростка">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22481" levels="10" name="Чудесные Заряды Души D (10 000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22482" levels="5" name="Чудесные Заряды Души D (5000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22483" levels="10" name="Чудесные Заряды Души C (10 000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22484" levels="5" name="Чудесные Заряды Души C (5000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22485" levels="10" name="Чудесные Заряды Души B (10 000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22486" levels="5" name="Чудесные Заряды Души B (5000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22487" levels="10" name="Чудесные Заряды Души A (10 000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22488" levels="5" name="Чудесные Заряды Души A (5000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22489" levels="10" name="Чудесные Заряды Духа D (10 000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22490" levels="5" name="Чудесные Заряды Духа D (5000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22491" levels="10" name="Чудесные Заряды Духа C (10 000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22492" levels="5" name="Чудесные Заряды Духа C (5000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22493" levels="10" name="Чудесные Заряды Духа B (10 000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22494" levels="5" name="Чудесные Заряды Духа B (5000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22495" levels="10" name="Чудесные Заряды Духа A (10 000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22496" levels="5" name="Чудесные Заряды Духа A (5000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22497" levels="10" name="Чудесные Заряды Духа S (10 000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22498" levels="5" name="Чудесные Заряды Духа S (5000)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="22499" levels="1" name="Билет в Окрестности Камалоки">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+</list>

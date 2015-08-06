@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="23172" name="Камень Обработки Пляжного Купального Костюма - (Ивент)" type="EtcItem">
+		<set name="icon" val="BranchSys3.lcon.g_scrl_change_co_swimsuit_01"/>
+		<set name="handler" val="ShapeShifting"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23107" name="Шлем Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="530"/>
+		<for>
+			<add order="0x10" stat="pDef" val="107"/>
+		</for>
+	</item>
+	<item id="23108" name="Кожаный Шлем Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="530"/>
+		<for>
+			<add order="0x10" stat="pDef" val="107"/>
+		</for>
+	</item>
+	<item id="23109" name="Диадема Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="530"/>
+		<for>
+			<add order="0x10" stat="pDef" val="107"/>
+		</for>
+	</item>
+	<item id="23110" name="Кираса Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_t94_u_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="7520"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="263"/>
+		</for>
+	</item>
+	<item id="23111" name="Кожаная Кираса Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_t95_u_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="4140"/>
+		<for>
+			<add order="0x10" stat="pDef" val="197"/>
+		</for>
+	</item>
+	<item id="23112" name="Туника Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_t96_u_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="1750"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="132"/>
+			<add order="0x40" stat="maxMp" val="649"/>
+		</for>
+	</item>
+	<item id="23113" name="Набедренники Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_t94_l_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="scale_of_dragon"/>
+		<set name="weight" val="3170"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="164"/>
+		</for>
+	</item>
+	<item id="23114" name="Кожаные Брюки Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_t95_l_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="scale_of_dragon"/>
+		<set name="weight" val="1320"/>
+		<for>
+			<add order="0x10" stat="pDef" val="123"/>
+		</for>
+	</item>
+	<item id="23115" name="Штаны Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_t96_l_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="scale_of_dragon"/>
+		<set name="weight" val="850"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="82"/>
+			<add order="0x40" stat="maxMp" val="427"/>
+		</for>
+	</item>
+	<item id="23116" name="Рукавицы Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_t94_g_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="510"/>
+		<for>
+			<add order="0x10" stat="pDef" val="71"/>
+		</for>
+	</item>
+	<item id="23117" name="Кожаные Перчатки Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_t95_g_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="510"/>
+		<for>
+			<add order="0x10" stat="pDef" val="71"/>
+		</for>
+	</item>
+	<item id="23118" name="Перчатки Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_t96_g_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="510"/>
+		<for>
+			<add order="0x10" stat="pDef" val="71"/>
+		</for>
+	</item>
+	<item id="23119" name="Сапоги Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_t94_b_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1070"/>
+		<for>
+			<add order="0x10" stat="pDef" val="71"/>
+		</for>
+	</item>
+	<item id="23120" name="Кожаные Сапоги Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_t95_b_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1070"/>
+		<for>
+			<add order="0x10" stat="pDef" val="71"/>
+		</for>
+	</item>
+	<item id="23121" name="Ботинки Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.armor_t96_b_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1070"/>
+		<for>
+			<add order="0x10" stat="pDef" val="71"/>
+		</for>
+	</item>
+	<item id="23123" name="Символ Верпеса - (90 дней)" type="Armor">
+		<set name="icon" val="icon.belleface_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="sigil"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="920"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="23130" name="Кольцо Верпеса - Артефакт Дружбы - (Время действия: 90 дн.)" type="Armor">
+		<set name="icon" val="icon.accessary_ponshrnoen_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="gold"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="65"/>
+			<add order="0x40" stat="maxMp" val="26"/>
+		</for>
+	</item>
+	<item id="23131" name="Серьга Верпеса - Артефакт Дружбы - (Время действия: 90 дн.)" type="Armor">
+		<set name="icon" val="icon.accessary_ponshrnoen_earring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="98"/>
+			<add order="0x40" stat="maxMp" val="38"/>
+		</for>
+	</item>
+	<item id="23132" name="Ожерелье Верпеса - Артефакт Дружбы - (Время действия: 90 дн.)" type="Armor">
+		<set name="icon" val="icon.accessary_ponshrnoen_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<for>
+			<add order="0x10" stat="mDef" val="131"/>
+			<add order="0x40" stat="maxMp" val="51"/>
+		</for>
+	</item>
+	<item id="23136" name="Кольцо Капитана Пиратов Утанки" type="Armor">
+		<set name="icon" val="BranchSys3.lcon.g_ring_of_uthanka_jp"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="23140" name="Белье Солдата" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_military_undwrwear"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="130"/>
+		<for>
+			<add order="0x10" stat="pDef" val="42"/>
+		</for>
+	</item>
+	<item id="23141" name="Белье Премиум" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_premium_underwear"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="130"/>
+		<for>
+			<add order="0x10" stat="pDef" val="42"/>
+		</for>
+	</item>
+	<item id="23142" name="Соблазнительное Белье" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_sexy_underwear"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="130"/>
+		<for>
+			<add order="0x10" stat="pDef" val="42"/>
+		</for>
+	</item>
+	<item id="23143" name="Кибер Белье" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_sf_underwear_01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="130"/>
+		<for>
+			<add order="0x10" stat="pDef" val="42"/>
+		</for>
+	</item>
+	<item id="23144" name="Миловидное Белье Горничной" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_maid_underwear_f01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="130"/>
+		<for>
+			<add order="0x10" stat="pDef" val="42"/>
+		</for>
+	</item>
+	<item id="23145" name="Укрепленное Устройство Изгнания Злых Духов - (Ивент)" type="Armor">
+		<set name="icon" val="icon.etc_imperial_scepter_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="1"/>
+	</item>
+	<item id="23146" name="Бутыль Святой Воды Невитта - (Ивент)" type="Armor">
+		<set name="icon" val="icon.etc_water_potion_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="1"/>
+	</item>
+	<item id="23152" name="Браслет Печати Духовного Аватара - Икен" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_local2009_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="23153" name="Браслет Печати Духовного Аватара - Лана" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_local2009_a_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="23154" name="Браслет Печати Духовного Аватара - Гносиан" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_local2009_f_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="23155" name="Браслет Печати Духовного Аватара - Ородриэль" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_local2009_e_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="23156" name="Браслет Печати Духовного Аватара - Ракинос" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_local2009_d_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="23157" name="Браслет Печати Духовного Аватара - Мортия" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_local2009_c_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="23158" name="Браслет Печати Духовного Аватара - Хейнтс" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_local2009_h_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="23159" name="Браслет Печати Духовного Аватара - Мерурил" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_local2009_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="23160" name="Браслет Печати Духовного Аватара - Таман це Рафатуй" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_local2009_i_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="23161" name="Браслет Печати Духовного Аватара - Каурин" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_local2009_j_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="23162" name="Браслет Печати Духовного Аватара - Ахертбайн" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_local2009_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="23163" name="Браслет Печати Духовного Аватара - Наонин" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_local2009_k_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="23171" name="Пляжный Купальный Костюм - (Ивент)" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_swimsuit_event_01"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="cloth"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+	</item>
+	<item id="23173" name="Купальник Очарования" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_swimsuit_event_02"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="cloth"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+	</item>
+	<item id="23175" name="Яркий Пляжный Головной Убор - (30 дней)" type="Armor">
+		<set name="icon" val="BranchSys3.icon.g_beach_cap"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="23176" name="Стильная Соломенная Шляпа - (30 дней)" type="Armor">
+		<set name="icon" val="BranchSys3.icon.g_straw_hat"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="23179" name="Туника Ниндзя" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_ninja_u"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="chest"/>
+		<set name="material" val="leather"/>
+	</item>
+	<item id="23180" name="Штаны Ниндзя" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_ninja_l"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="legs"/>
+		<set name="material" val="leather"/>
+	</item>
+	<item id="23181" name="Перчатки Ниндзя" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_ninja_g"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="material" val="leather"/>
+	</item>
+	<item id="23182" name="Ботинки Ниндзя" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_ninja_b"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="material" val="leather"/>
+	</item>
+	<item id="23183" name="Головной Убор Ниндзя" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_ninja_hair"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair"/>
+		<set name="material" val="cloth"/>
+	</item>
+	<item id="23184" name="Национальная Тайваньская Туника" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_paiwan_u"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="chest"/>
+		<set name="material" val="leather"/>
+	</item>
+	<item id="23185" name="Национальные Тайваньские Штаны" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_paiwan_l"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="legs"/>
+		<set name="material" val="leather"/>
+	</item>
+	<item id="23186" name="Национальные Тайваньские Перчатки" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_paiwan_g"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="material" val="leather"/>
+	</item>
+	<item id="23187" name="Национальные Тайваньские Ботинки" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_paiwan_b"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="material" val="leather"/>
+	</item>
+	<item id="23188" name="Национальный Тайваньский Головной Убор" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_paiwan_hair"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair"/>
+		<set name="material" val="cloth"/>
+	</item>
+	<item id="23147" name="Энергия Экзорциста - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_water_potion_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23148" name="Знак Экзорциста - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_black_i00"/>
+		<set name="material" val="crystal"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23149" name="Подарок Экзорциста - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_grave_goods_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23150" name="Подарок Эйнхасад - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.event_july_seven_park_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23151" name="Подарок Шилен - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.event_big_july_seven_park_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23164" name="Большое Золотое Семя Духовного Аватара" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_shield_bread_i01"/>
+		<set name="material" val="gold"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23189" name="Камень Обработки Туники Ниндзя" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ShapeShifting"/>
+	</item>
+	<item id="23190" name="Камень Обработки Штанов Ниндзя" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_legs"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ShapeShifting"/>
+	</item>
+	<item id="23191" name="Камень Обработки Перчаток Ниндзя" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_gloves"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ShapeShifting"/>
+	</item>
+	<item id="23192" name="Камень Обработки Ботинок Ниндзя" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_feet"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ShapeShifting"/>
+	</item>
+	<item id="23193" name="Камень Обработки Головного Убора Ниндзя" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ShapeShifting"/>
+	</item>
+	<item id="23194" name="Камень Обработки Национальной Тайваньской Туники" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ShapeShifting"/>
+	</item>
+	<item id="23195" name="Камень Обработки Национальных Тайваньских Штанов" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_legs"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ShapeShifting"/>
+	</item>
+	<item id="23196" name="Камень Обработки Национальных Тайваньских Перчаток" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_gloves"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ShapeShifting"/>
+	</item>
+	<item id="23197" name="Камень Обработки Национальных Тайваньских Ботинок" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_feet"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ShapeShifting"/>
+	</item>
+	<item id="23198" name="Камень Обработки Национального Тайваньского Головного Убора" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ShapeShifting"/>
+	</item>
+	<item id="23199" name="Упаковка: Камень Обработки Костюма Ниндзя" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23100" name="Возмездие Венеры - Артефакт Дружбы - (90 дней)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_retributer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1740"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="482"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="4"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="23101" name="Заклинатель Венеры - Артефакт Дружбы - (90 дней)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_caster_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="317"/>
+			<set order="0x08" stat="mAtk" val="234"/>
+			<set order="0x08" stat="pCritRate" val="4"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="23102" name="Певец Венеры - Артефакт Дружбы - (90 дней)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_singer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="1080"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="386"/>
+			<set order="0x08" stat="mAtk" val="257"/>
+			<set order="0x08" stat="pCritRate" val="4"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="23103" name="Бросок Венеры - Артефакт Дружбы - (90 дней)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_thrower_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="724"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="23104" name="Клещи Венеры - Артефакт Дружбы - (90 дней)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_pincer_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1280"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="359"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="23105" name="Страж Венеры - Артефакт Дружбы - (90 дней)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_schutze_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1580"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="reuse_delay" val="400"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="444"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+		</for>
+	</item>
+	<item id="23106" name="Оскал Венеры - Артефакт Дружбы - (90 дней)" type="Weapon">
+		<set name="icon" val="icon.weapon_vesper_nagen_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1800"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="429"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="23122" name="Щит Верпеса - Артефакт Дружбы - (90 дней)" type="Armor">
+		<set name="icon" val="icon.Evilgate_Shield_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="1190"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="rShld" val="20"/>
+			<set order="0x08" stat="sDef" val="399"/>
+			<add order="0x10" stat="ratePhysicalEvas" val="-8.0"/>
+		</for>
+	</item>
+	<item id="23138" name="Парные Мечи Венеры - Артефакт Дружбы - (90 дней)" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="1520"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="482"/>
+			<set order="0x08" stat="mAtk" val="176"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="23139" name="Парные Кинжалы Венеры - Артефакт Дружбы - (90 дней)" type="Weapon">
+		<set name="icon" val="icon.dual_dagger_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualdagger"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="2050"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<and>
+				<player level="80"/>
+				<player class_id_restriction="55, 93, 101, 108, 117, 141, 158, 159, 160, 161"/>
+				<player subclass="false"/>
+			</and>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="360"/>
+			<set order="0x08" stat="mAtk" val="181"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="23124" name="Упаковка: Комплект Тяжелых Доспехов Верпеса(S80) - Артефакт Дружбы - (Время действия: 90 дн.)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i02"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+	</item>
+	<item id="23125" name="Упаковка: Комплект Легких Доспехов Верпеса(S80) - Артефакт Дружбы - (Время действия: 90 дн.)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i02"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+	</item>
+	<item id="23126" name="Упаковка: Комплект Мантии Верпеса(S80) - Артефакт Дружбы - (Время действия: 90 дн.)" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i02"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_dropable" val="false"/>
+	</item>
+	<item id="23127" name="Сундук Доспехов - S80 (90 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23128" name="Сундук Оружия - S80 (90 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23129" name="Сундук Аксессуаров - S80 (90 дн.)" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23133" name="Смена пола" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23134" name="Смена имени" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23135" name="Повторное перерождение" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23137" name="Билет в Древний Лабиринт Картии" type="EtcItem">
+		<set name="icon" val="icon.etc_ticket_red_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+	</item>
+	<item id="23165" name="Шоколад с Ледяной Крошкой - (Ивент)" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_ev_icewater_cho"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23166" name="Сливки с Ледяной Крошкой - (Ивент)" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_ev_icewater_cream"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23167" name="Ледяная Крошка - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_white_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23168" name="Сироп с Ледяной Крошкой - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.etc_candy_basket_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23169" name="Сладкий Ледяной Коктейль - (Ивент)" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_ev_sweet_icewater"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23170" name="Ледяной Коктейль Фантазии - (Ивент)" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_ev_sweet_icewater"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23174" name="Коробка с Дарами Хелены - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.event_big_july_seven_park_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23177" name="Упаковка: Яркий Пляжный Головной Убор (30 дн.) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="23178" name="Упаковка: Стильная Соломенная Шляпа (30 дн.) - (Ивент)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="100"/>
+		<set name="time" val="129600"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+</list>

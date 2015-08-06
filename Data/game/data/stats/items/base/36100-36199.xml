@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="36163" name="Свиток Гигантов: Модифицировать Оружие (R)" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_wp_r"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_wp"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="16000000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="EnchantScrolls"/>
+		<set name="item_skill" val="9185-1"/>
+	</item>
+	<item id="36164" name="Свиток Гигантов: Модифицировать Доспех (R)" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_am_r"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="scrl_enchant_am"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="1250000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="EnchantScrolls"/>
+		<set name="item_skill" val="9186-1"/>
+	</item>
+	<item id="36167" name="Пояс Нурки" type="Armor">
+		<set name="icon" val="icon.event_energy_belt_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="weight" val="440"/>
+		<set name="item_skill" val="13406-1"/>
+		<for>
+			<add order="0x10" stat="pDef" val="25"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="36168" name="Пояс Лидии" type="Armor">
+		<set name="icon" val="icon.event_energy_belt_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="item_skill" val="13407-1"/>
+		<for>
+			<add order="0x10" stat="pDef" val="25"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="36169" name="Пояс Густава" type="Armor">
+		<set name="icon" val="icon.event_energy_belt_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="item_skill" val="13408-1"/>
+		<for>
+			<add order="0x10" stat="pDef" val="25"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="36187" name="Рубаха Восхода" type="Armor">
+		<set name="icon" val="icon.dual_shirt1"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="underwear"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="130"/>
+		<set name="enchant_enabled" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="13409-1"/>
+		<cond msgId="1518">
+			<and>
+				<player dualClassLevel="87"/>
+				<player level="87"/>
+			</and>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="38"/>
+		</for>
+	</item>
+	<item id="36188" name="Рубаха Сияния" type="Armor">
+		<set name="icon" val="icon.dual_shirt2"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="underwear"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="130"/>
+		<set name="enchant_enabled" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="item_skill" val="13410-1"/>
+		<cond msgId="1518">
+			<and>
+				<player dualClassLevel="92"/>
+				<player level="92"/>
+			</and>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="38"/>
+		</for>
+	</item>
+	<item id="36189" name="Пояс Восхода" type="Armor">
+		<set name="icon" val="icon.dual_belt1"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="item_skill" val="13411-1"/>
+		<cond msgId="1518">
+			<and>
+				<player dualClassLevel="87"/>
+				<player level="87"/>
+			</and>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="25"/>
+		</for>
+	</item>
+	<item id="36190" name="Пояс Сияния" type="Armor">
+		<set name="icon" val="icon.dual_belt2"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="item_skill" val="13412-1"/>
+		<cond msgId="1518">
+			<and>
+				<player dualClassLevel="92"/>
+				<player level="92"/>
+			</and>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="25"/>
+		</for>
+	</item>
+	<item id="36100" name="Браслет Призыва Агатиона: Шикарный Чже Бом" type="Armor">
+		<set name="icon" val="icon.bracelet_agathion_bm_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="36101" name="Браслет Призыва Агатиона: Милая Син Енг" type="Armor">
+		<set name="icon" val="icon.bracelet_agathion_bm_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="36121" name="Ушки Кролика - СИЛ (3 дн.) - (Кампания)" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair2"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="36122" name="Ушки Кролика - ЛВК (3 дн.) - (Кампания)" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair2"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="36123" name="Ушки Кролика - МДР (3 дн.) - (Кампания)" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair2"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="36124" name="Ушки Кролика - ИНТ (3 дн.) - (Кампания)" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hair2"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="36125" name="Нимб Ангела - СИЛ (7 дн.) - (Кампания)" type="Armor">
+		<set name="icon" val="icon.Accessary_angel_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="36126" name="Нимб Ангела - ЛВК (7 дн.) - (Кампания)" type="Armor">
+		<set name="icon" val="icon.Accessary_angel_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="36127" name="Нимб Ангела - МДР (7 дн.) - (Кампания)" type="Armor">
+		<set name="icon" val="icon.Accessary_angel_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="36128" name="Нимб Ангела - ИНТ (7 дн.) - (Кампания)" type="Armor">
+		<set name="icon" val="icon.Accessary_angel_circlet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="36176" name="Аксессуар Героя Олимпиады 2012 - (Рыцарь Сигеля)" type="Armor">
+		<set name="icon" val="icon.accessory_archer_hat2_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="wood"/>
+	</item>
+	<item id="36177" name="Аксессуар Героя Олимпиады 2012 - (Лучник Эура)" type="Armor">
+		<set name="icon" val="icon.accessory_archer_hat2_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="wood"/>
+	</item>
+	<item id="36178" name="Аксессуар Героя Олимпиады 2012 - (Воин Тира)" type="Armor">
+		<set name="icon" val="icon.accessory_archer_hat2_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="wood"/>
+	</item>
+	<item id="36179" name="Аксессуар Героя Олимпиады 2012 - (Разбойник Одала)" type="Armor">
+		<set name="icon" val="icon.accessory_archer_hat2_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="wood"/>
+	</item>
+	<item id="36180" name="Аксессуар Героя Олимпиады 2012 - (Заклинатель Иса)" type="Armor">
+		<set name="icon" val="icon.accessory_archer_hat2_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="wood"/>
+	</item>
+	<item id="36181" name="Аксессуар Героя Олимпиады 2012 - (Призыватель Веньо)" type="Armor">
+		<set name="icon" val="icon.accessory_archer_hat2_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="wood"/>
+	</item>
+	<item id="36182" name="Аксессуар Героя Олимпиады 2012 - (Целитель Альгиза)" type="Armor">
+		<set name="icon" val="icon.accessory_archer_hat2_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="wood"/>
+	</item>
+	<item id="36183" name="Аксессуар Героя Олимпиады 2012 - (Волшебник Фео)" type="Armor">
+		<set name="icon" val="icon.accessory_archer_hat2_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="hairall"/>
+		<set name="material" val="wood"/>
+	</item>
+	<item id="36102" name="Коробка Агатиона" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_joy_pack"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36103" name="Коробка Свитков Трансформации Магазина N" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="100"/>
+	</item>
+	<item id="36104" name="Значок Гильдии Бронзового Ключа" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_silver_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36105" name="Значок Гильдии Черной Наковальни" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_silver_i01"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36106" name="Значок Гильдии Золотого Колеса" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_silver_i02"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36107" name="Клановая Миссия" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_white_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36108" name="Клановый Заказ - 7 персонажей" type="EtcItem">
+		<set name="icon" val="icon.item_normal20"/>
+		<set name="material" val="paper"/>
+	</item>
+	<item id="36109" name="Сундук с Сокровищами Карли (Мал.)" type="EtcItem">
+		<set name="icon" val="icon.etc_ev_kalie_treasure_box"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36110" name="Сундук с Сокровищами Карли (Сред.)" type="EtcItem">
+		<set name="icon" val="icon.etc_ev_kalie_treasure_box"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36111" name="Сундук с Сокровищами Карли (Бол.)" type="EtcItem">
+		<set name="icon" val="icon.etc_ev_kalie_treasure_box"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36112" name="Символ Карли" type="EtcItem">
+		<set name="icon" val="icon.etc_ev_kalie_token"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36113" name="Настоящее Золото Вулкана" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_gold_i00"/>
+		<set name="material" val="crystal"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="36114" name="Чистое Серебро Вулкана" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_silver_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="36115" name="Кровавый Огонь Вулкана" type="EtcItem">
+		<set name="icon" val="icon.etc_potion_red_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="36116" name="Свиток Благословения - Ранг R - (Кампания)" type="EtcItem">
+		<set name="icon" val="icon.bless_scroll_r1"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36117" name="Свиток Благословения - Ранг R95 - (Кампания)" type="EtcItem">
+		<set name="icon" val="icon.bless_scroll_r95"/>
+		<set name="material" val="wood"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36129" name="Клановый Заказ - 14 персонажей" type="EtcItem">
+		<set name="icon" val="icon.item_normal20"/>
+		<set name="material" val="paper"/>
+	</item>
+	<item id="36130" name="Сундук Свитков: Модифицировать Доспех (R) (5 шт.)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36131" name="Коробка с Кулоном HP/MP" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36132" name="Коробка с Кулоном ИНТ/МДР" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36133" name="Коробка с Кулоном СИЛ/ЛВК" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36134" name="Коробка с Кулоном Защита/Уклонение" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36135" name="Коробка с Кулоном Атака/Точность" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36136" name="Коробка с Кулоном Крит." type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36143" name="Сундук с Благ. Двойными Зарядами Души Хелиоса (Физ.)" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36144" name="Сундук с Благ. Двойными Зарядами Души Хелиоса (Маг.)" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36145" name="Сундук с Благ. Двойными Зарядами Души Хелиоса (Дуэль)" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36146" name="Сундук с Оружием Кровавого Хелиоса" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36147" name="Сундук с Оружием Темного Хелиоса" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36148" name="Сундук со Свитками Телепортации Карли" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36149" name="Сундук с Сосудом Души Карли" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36150" name="Песочные Часы Карли" type="EtcItem">
+		<set name="icon" val="icon.etc_dragons_blood_i03"/>
+		<set name="material" val="liquid"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36151" name="Свиток Тренировки Карли" type="EtcItem">
+		<set name="icon" val="icon.etc_training_scroll_kalie_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36152" name="Сундук Энергии Карли" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36153" name="Сундук Руды Стихий Карли" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36154" name="Сундук Кристаллов Стихий Карли" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36155" name="Сундук Улучшенной Руды Стихий Карли" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36156" name="Сундук Улучшенных Кристаллов Стихий Карли" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36157" name="Сундук Свитков: Модифицировать Головной Убор" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36158" name="Сундук Камней Жизни для Головных Уборов" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36159" name="Свиток Благословения - Ранг R(1)" type="EtcItem">
+		<set name="icon" val="icon.bless_scroll_r1"/>
+		<set name="material" val="paper"/>
+	</item>
+	<item id="36160" name="Свиток Благословения - Ранг R(2)" type="EtcItem">
+		<set name="icon" val="icon.bless_scroll_r2"/>
+		<set name="material" val="paper"/>
+	</item>
+	<item id="36161" name="Свиток Благословения - Ранг R95" type="EtcItem">
+		<set name="icon" val="icon.bless_scroll_r95"/>
+		<set name="material" val="paper"/>
+	</item>
+	<item id="36162" name="Свиток Благословения - Ранг R99" type="EtcItem">
+		<set name="icon" val="icon.bless_scroll_r99"/>
+		<set name="material" val="paper"/>
+	</item>
+	<item id="36165" name="Сундук Души Карли" type="EtcItem">
+		<set name="icon" val="icon.etc_ev_kalie_treasure_box"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36166" name="Сундук Подарков Карли" type="EtcItem">
+		<set name="icon" val="icon.etc_ev_kalie_treasure_box"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36191" name="Желание Карли" type="EtcItem">
+		<set name="icon" val="icon.etc_blessed_kalie_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36192" name="Мешочек с Желанием Карли" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_gold_i00"/>
+		<set name="material" val="fish"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36119" name="Щит Элегии - Фестиваль Хаоса" type="Armor">
+		<set name="icon" val="icon.heavengate_shield_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lhand"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="1190"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<enchant order="0x0C" stat="sDef" val="0"/>
+		</for>
+	</item>
+	<item id="36137" name="Сундук с Легендарной Краской Ур. 5 - ДУХ (10 шт.)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="17714,10,10,100"/>
+	</item>
+	<item id="36138" name="Сундук с Легендарной Краской Ур. 5 - МДР (10 шт.)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="17713,10,10,100"/>
+	</item>
+	<item id="36139" name="Сундук с Легендарной Краской Ур. 5 - ЛВК (10 шт.)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="17710,10,10,100"/>
+	</item>
+	<item id="36140" name="Сундук с Легендарной Краской Ур. 5 - ВЫН (10 шт.)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="17711,10,10,100"/>
+	</item>
+	<item id="36141" name="Сундук с Легендарной Краской Ур. 5 - ИНТ (10 шт.)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="17712,10,10,100"/>
+	</item>
+	<item id="36142" name="Сундук с Легендарной Краской Ур. 5 - СИЛ (10 шт.)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="default_action" val="peel"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="17709,10,10,100"/>
+	</item>
+	<item id="36170" name="Свиток Телепортации в Топи" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="price" val="148500"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9690-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="36171" name="Свиток Телепортации в Гавань Острова Душ" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="price" val="148500"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9691-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="36172" name="Свиток Телепортации в Руины Эсагира" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="price" val="148500"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9692-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="36173" name="Свиток Телепортации в Крепость Гильотина" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="price" val="148500"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9693-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="36174" name="Свиток Телепортации в Парнас" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="price" val="148500"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9694-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="36175" name="Свиток Телепортации к Запретным Вратам" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="price" val="148500"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="9695-1"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="36118" name="Символ Элегии - Фестиваль Хаоса" type="Armor">
+		<set name="icon" val="icon.weapon_pricklelotus_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="sigil"/>
+		<set name="bodypart" val="back"/>
+		<set name="crystal_type" val="s80"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="920"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+	</item>
+	<item id="36120" name="Плащ Клана - Холл Клана (Захват)" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="back"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="220"/>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+			<add order="0x10" stat="mDef" val="40"/>
+		</for>
+	</item>
+	<item id="36184" name="Дух Карли  - (Уничтожение)" type="EtcItem">
+		<set name="icon" val="icon.etc_spirit_kalie_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36185" name="Дух Карли  - (Огонь)" type="EtcItem">
+		<set name="icon" val="icon.etc_spirit_kalie_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36186" name="Дух Карли  - (Желание)" type="EtcItem">
+		<set name="icon" val="icon.etc_spirit_kalie_i00"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="36193" name="Острие Запечатанной Силы Героя - (1 день)" type="Weapon">
+		<set name="icon" val="icon.weapon_the_dagger_of_hero_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="500"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="time" val="1440"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="685"/>
+			<set order="0x08" stat="mAtk" val="414"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="36194" name="Резак Запечатанной Силы Героя - (1 день)" type="Weapon">
+		<set name="icon" val="icon.weapon_the_sword_of_hero_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="500"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="time" val="1440"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="752"/>
+			<set order="0x08" stat="mAtk" val="414"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="36195" name="Эспадон Запечатанной Силы Героя - (1 день)" type="Weapon">
+		<set name="icon" val="icon.weapon_the_two_handed_sword_of_hero_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="500"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="time" val="1440"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="916"/>
+			<set order="0x08" stat="mAtk" val="414"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="36196" name="Мститель Запечатанной Силы Героя - (1 день)" type="Weapon">
+		<set name="icon" val="icon.weapon_the_axe_of_hero_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="500"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="time" val="1440"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_magic_weapon" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="752"/>
+			<set order="0x08" stat="mAtk" val="414"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="36197" name="Воитель Запечатанной Силы Героя - (1 день)" type="Weapon">
+		<set name="icon" val="icon.weapon_the_fist_of_hero_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="500"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="time" val="1440"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="916"/>
+			<set order="0x08" stat="mAtk" val="414"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="36198" name="Буревестник Запечатанной Силы Героя - (1 день)" type="Weapon">
+		<set name="icon" val="icon.weapon_the_pole_of_hero_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="bronze"/>
+		<set name="weight" val="500"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="time" val="1440"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="752"/>
+			<set order="0x08" stat="mAtk" val="414"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="36199" name="Бросок Запечатанной Силы Героя - (1 день)" type="Weapon">
+		<set name="icon" val="icon.weapon_the_bow_of_hero_i01"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="attack_range" val="500"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="none"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="500"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="time" val="1440"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="reuse_delay" val="1500"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="1481"/>
+			<set order="0x08" stat="mAtk" val="414"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+</list>

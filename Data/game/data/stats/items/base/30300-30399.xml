@@ -1,0 +1,1476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="30306" name="Эссенция Гигантов" type="EtcItem">
+		<set name="icon" val="icon.essence_of_giant"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+	</item>
+	<item id="30307" name="R99(Rare) Пояс" type="Armor">
+		<set name="icon" val="icon.armor_belt_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<for>
+			<add order="0x10" stat="pDef" val="25"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30310" name="Мантия Авелиуса - (Рыцарь Сигеля)" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="back"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="220"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<cond msgId="2453">
+			<and>
+				<player class_id_restriction="148, 149, 150, 151"/>
+				<player cloakStatus="1"/>
+			</and>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+			<add order="0x10" stat="mDef" val="40"/>
+		</for>
+	</item>
+	<item id="30311" name="Мантия Сафироса - (Воин Тира)" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="back"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="220"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<cond msgId="2453">
+			<and>
+				<player class_id_restriction="152, 153, 154, 155, 156, 157"/>
+				<player cloakStatus="1"/>
+			</and>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+			<add order="0x10" stat="mDef" val="40"/>
+		</for>
+	</item>
+	<item id="30312" name="Мантия Кайшунаги - (Разбойник Одала)" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="back"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="220"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<cond msgId="2453">
+			<and>
+				<player class_id_restriction="158, 159, 160, 161"/>
+				<player cloakStatus="1"/>
+			</and>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+			<add order="0x10" stat="mDef" val="40"/>
+		</for>
+	</item>
+	<item id="30313" name="Мантия Кронвиста - (Лучник Эура)" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="back"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="220"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<cond msgId="2453">
+			<and>
+				<player class_id_restriction="162, 163, 164, 165"/>
+				<player cloakStatus="1"/>
+			</and>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+			<add order="0x10" stat="mDef" val="40"/>
+		</for>
+	</item>
+	<item id="30314" name="Мантия Сольткрига - (Волшебник Фео)" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="back"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="220"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<cond msgId="2453">
+			<and>
+				<player class_id_restriction="166, 167, 168, 169, 170"/>
+				<player cloakStatus="1"/>
+			</and>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+			<add order="0x10" stat="mDef" val="40"/>
+		</for>
+	</item>
+	<item id="30315" name="Мантия Набиаропа - (Призыватель Веньо)" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="back"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="220"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<cond msgId="2453">
+			<and>
+				<player class_id_restriction="176, 177, 178"/>
+				<player cloakStatus="1"/>
+			</and>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+			<add order="0x10" stat="mDef" val="40"/>
+		</for>
+	</item>
+	<item id="30316" name="Мантия Райстера - (Заклинатель Иса)" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="back"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="220"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<cond msgId="2453">
+			<and>
+				<player class_id_restriction="171, 172, 173, 174, 175"/>
+				<player cloakStatus="1"/>
+			</and>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+			<add order="0x10" stat="mDef" val="40"/>
+		</for>
+	</item>
+	<item id="30317" name="Мантия Лакисиса - (Целитель Альгиза)" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="back"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="220"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<cond msgId="2453">
+			<and>
+				<player class_id_restriction="179, 180, 181"/>
+				<player cloakStatus="1"/>
+			</and>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+			<add order="0x10" stat="mDef" val="40"/>
+		</for>
+	</item>
+	<item id="30319" name="Знак Старания" type="EtcItem">
+		<set name="icon" val="icon.armor_soul_i00"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="0"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30320" name="Знак Орка Тамлин" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_silver_i00"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="0"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="30321" name="Мемориальный Кристалл" type="EtcItem">
+		<set name="icon" val="icon.etc_crystal_cave_crystal_i02"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="0"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="30322" name="Пепел Костра" type="EtcItem">
+		<set name="icon" val="icon.etc_fire_crystal_i00"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="0"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="30323" name="Кристалл Опыта" type="EtcItem">
+		<set name="icon" val="icon.etc_crystal_cave_crystal_i03"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="0"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="30357" name="Эликсир Жизни - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i02"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="elixir"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="17500"/>
+		<set name="shared_reuse_group" val="5"/>
+		<set name="reuse_delay" val="300000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="Elixir"/>
+		<set name="item_skill" val="2287-7"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="30358" name="Эликсир Ментальной Силы - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="elixir"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="18800"/>
+		<set name="shared_reuse_group" val="5"/>
+		<set name="reuse_delay" val="300000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="Elixir"/>
+		<set name="item_skill" val="2288-7"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="30359" name="Эликсир CP - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i01"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="elixir"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="7000"/>
+		<set name="shared_reuse_group" val="5"/>
+		<set name="reuse_delay" val="300000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="Elixir"/>
+		<set name="item_skill" val="2289-7"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="30360" name="Великий Эликсир Жизни - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i02"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="elixir"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="12500"/>
+		<set name="shared_reuse_group" val="5"/>
+		<set name="reuse_delay" val="200000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="Elixir"/>
+		<set name="item_skill" val="2287-7"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="30361" name="Великий Эликсир Ментальной Силы - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="elixir"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="12500"/>
+		<set name="shared_reuse_group" val="5"/>
+		<set name="reuse_delay" val="200000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="Elixir"/>
+		<set name="item_skill" val="2288-7"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="30362" name="Великий Эликсир CP - Ранг R" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i01"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="elixir"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="5"/>
+		<set name="price" val="12500"/>
+		<set name="shared_reuse_group" val="5"/>
+		<set name="reuse_delay" val="200000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="Elixir"/>
+		<set name="item_skill" val="2289-7"/>
+		<cond addName="1" msgId="113">
+			<player flyMounted="False"/>
+		</cond>
+	</item>
+	<item id="30368" name="Футболка" type="Armor">
+		<set name="icon" val="icon.etc_stripe_shirts_s_i05"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="underwear"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="130"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="38"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30369" name="Ремень" type="Armor">
+		<set name="icon" val="icon.armor_belt_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="waist"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="440"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="19"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30372" name="Мантия Героя" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="back"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="220"/>
+		<set name="price" val="28671000"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_heroEquip" val="true"/>
+		<set name="item_skill" val="13136-1"/>
+		<cond msgId="1518">
+			<player isHero="true"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="60"/>
+			<add order="0x10" stat="mDef" val="50"/>
+		</for>
+		<cond msgId="2453">
+			<player cloakStatus="1"/>
+		</cond>
+	</item>
+	<item id="30373" name="Мантия Славы" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="back"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="220"/>
+		<set name="price" val="28671000"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_heroEquip" val="true"/>
+		<set name="is_rankItem" val="true"/>
+		<set name="item_skill" val="13137-1"/>
+		<cond msgId="2453">
+			<player cloakStatus="1"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="60"/>
+			<add order="0x10" stat="mDef" val="50"/>
+		</for>
+	</item>
+	<item id="30381" name="Камень: Модифицировать Оружие (R)" type="EtcItem">
+		<set name="icon" val="icon.ench_wp_potion_violet_i00"/>
+		<set name="etcitem_type" val="scrl_inc_enchant_prop_wp"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2519-1"/>
+	</item>
+	<item id="30382" name="Камень: Модифицировать Доспех (R)" type="EtcItem">
+		<set name="icon" val="icon.ench_am_potion_violet_i00"/>
+		<set name="etcitem_type" val="scrl_inc_enchant_prop_am"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2524-1"/>
+	</item>
+	<item id="30384" name="Доказательство Обещания" type="EtcItem">
+		<set name="icon" val="icon.item_normal52"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="30385" name="Доказательство Жизни" type="EtcItem">
+		<set name="icon" val="icon.item_normal52"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="30386" name="Доказательство Героя" type="EtcItem">
+		<set name="icon" val="icon.item_normal52"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="30387" name="Доказательство Ада" type="EtcItem">
+		<set name="icon" val="icon.item_normal52"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="30383" name="Кольцо Наставника" type="Armor">
+		<set name="icon" val="icon.accessary_enchanted_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="crystal_type" val="a"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<add order="0x10" stat="mDef" val="55"/>
+			<add order="0x40" stat="maxMp" val="22"/>
+		</for>
+	</item>
+	<item id="30330" name="Лучшее Ожерелье Хранителя Глудио: Вода" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8388-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="30331" name="Лучшее Ожерелье Хранителя Диона: Святость" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8389-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="30332" name="Лучшее Ожерелье Хранителя Гирана: Ветер" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8390-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="30333" name="Лучшее Ожерелье Хранителя Орена: Тьма" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8391-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="30334" name="Лучшее Ожерелье Хранителя Адена: Земля" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8392-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="30335" name="Лучшее Ожерелье Хранителя Иннадрила: Вода" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8393-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="30336" name="Лучшее Ожерелье Хранителя Годдарда: Огонь" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8394-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="30337" name="Лучшее Ожерелье Хранителя Руны: Огонь" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8395-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="30338" name="Лучшее Ожерелье Хранителя Шутгарта: Ветер" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="bodypart" val="neck"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8396-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="158"/>
+			<add order="0x40" stat="maxMp" val="62"/>
+		</for>
+	</item>
+	<item id="30339" name="Лучшая Серьга Хранителя Глудио: Вода" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8348-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="30340" name="Лучшая Серьга Хранителя Диона: Святость" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8349-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="30341" name="Лучшая Серьга Хранителя Гирана: Ветер" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8350-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="30342" name="Лучшая Серьга Хранителя Орена: Тьма" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8351-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="30343" name="Лучшая Серьга Хранителя Адена: Земля" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8352-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="30344" name="Лучшая Серьга Хранителя Иннадрила: Вода" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8353-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="30345" name="Лучшая Серьга Хранителя Годдарда: Огонь" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8354-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="30346" name="Лучшая Серьга Хранителя Руны: Огонь" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8355-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="30347" name="Лучшая Серьга Хранителя Шутгарта: Ветер" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rear;lear"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8356-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="118"/>
+			<add order="0x40" stat="maxMp" val="46"/>
+		</for>
+	</item>
+	<item id="30348" name="Лучшее Кольцо Хранителя Глудио: Земля" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8379-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="30349" name="Лучшее Кольцо Хранителя Диона: Вода" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8380-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="30350" name="Лучшее Кольцо Хранителя Гирана: Огонь" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8381-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="30351" name="Лучшее Кольцо Хранителя Орена: Земля" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8382-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="30352" name="Лучшее Кольцо Хранителя Адена: Святость" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8383-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="30353" name="Лучшее Кольцо Хранителя Иннадрила: Святость" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8384-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="30354" name="Лучшее Кольцо Хранителя Годдарда: Тьма" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8385-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="30355" name="Лучшее Кольцо Хранителя Руны: Ветер" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8386-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="30356" name="Лучшее Кольцо Хранителя Шутгарта: Тьма" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="rfinger;lfinger"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="item_skill" val="8387-2"/>
+		<for>
+			<add order="0x10" stat="mDef" val="79"/>
+			<add order="0x40" stat="maxMp" val="31"/>
+		</for>
+	</item>
+	<item id="30371" name="Сундук Магической Силы" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="0"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="default_action" val="capsule"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="19440,1,1,95;19445,1,1,1"/>
+	</item>
+	<item id="30374" name="Сундук Невиданной Магической Силы" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="0"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="default_action" val="capsule"/>
+		<set name="handler" val="ExtractableItems"/>
+		<set name="capsuled_items" val="19440,1,1,95;19445,1,1,1"/>
+	</item>
+	<item id="30308" name="R99(Rare) Браслет" type="Armor">
+		<set name="icon" val="icon.etc_rbracelet_s_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="30309" name="R99(Rare) Рубаха" type="Armor">
+		<set name="icon" val="icon.etc_stripe_shirts_s_i05"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="deco1"/>
+		<set name="crystal_type" val="r99"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="130"/>
+		<for>
+			<add order="0x10" stat="pDef" val="50"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+		</for>
+	</item>
+	<item id="30365" name="Шлем" type="Armor">
+		<set name="icon" val="icon.armor_helmet_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="head"/>
+		<set name="crystal_count" val="108"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="bone"/>
+		<set name="weight" val="530"/>
+		<set name="price" val="10130400"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="element_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="114"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+			<EnchantAccEvas order="0x0C" stat="ratePhysicalEvas" val="0"/>
+			<EnchantAccEvas order="0x0C" stat="rateMagicalEvas" val="0"/>
+		</for>
+	</item>
+	<item id="30366" name="Сапоги" type="Armor">
+		<set name="icon" val="icon.armor_t97_b_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="feet"/>
+		<set name="crystal_count" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1070"/>
+		<set name="price" val="93800"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="element_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="76"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+			<EnchantRunSpd order="0x0C" stat="runSpd" val="0"/>
+		</for>
+	</item>
+	<item id="30367" name="Перчатки" type="Armor">
+		<set name="icon" val="icon.armor_t97_g_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="gloves"/>
+		<set name="crystal_count" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="510"/>
+		<set name="price" val="93800"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="element_enabled" val="true"/>
+		<for>
+			<add order="0x10" stat="pDef" val="76"/>
+			<enchant order="0x0C" stat="pDef" val="0"/>
+			<EnchantAccEvas order="0x0C" stat="accPhysical" val="0"/>
+			<EnchantAccEvas order="0x0C" stat="accMagical" val="0"/>
+		</for>
+	</item>
+	<item id="30370" name="Браслет" type="Armor">
+		<set name="icon" val="icon.etc_rbracelet_s_i03"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+	</item>
+	<item id="30300" name="Кодекс Перерождения - Забвение" type="EtcItem">
+		<set name="icon" val="icon.codex_of_incuse_forgetting"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="price" val="10800000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30301" name="Копия Кодекса Перерождения" type="EtcItem">
+		<set name="icon" val="icon.codex_of_incuse"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30302" name="Копия Кодекса Перерождения - Мастерство" type="EtcItem">
+		<set name="icon" val="icon.codex_of_incuse_dexterity"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30303" name="Копия Кодекса Перерождения - Дисциплина" type="EtcItem">
+		<set name="icon" val="icon.codex_of_incuse_training"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30304" name="Копия Кодекса Перерождения - Забвение" type="EtcItem">
+		<set name="icon" val="icon.codex_of_incuse_forgetting"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30305" name="Предмет для Тестирования" type="EtcItem">
+		<set name="icon" val="icon.weapon_vesper_shaper_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30318" name="Доклад Сумерек" type="EtcItem">
+		<set name="icon" val="icon.etc_old_evil_book_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+	</item>
+	<item id="30324" name="Улучшенное Кольцо Пайлаки" type="EtcItem">
+		<set name="icon" val="icon.accessary_mithril_ring_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30325" name="Знак Вернувшегося Путешестенника" type="EtcItem">
+		<set name="icon" val="icon.etc_permit_card_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+	</item>
+	<item id="30326" name="Краска Антараса" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i02"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30327" name="Краска Валакаса" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i02"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30328" name="Краска Земляного Червя" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i02"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="150"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30363" name="Кристалл Души" type="EtcItem">
+		<set name="icon" val="icon.etc_soul_stone_i00"/>
+		<set name="material" val="crystal"/>
+		<set name="weight" val="20"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="30364" name="Камень Жизни" type="EtcItem">
+		<set name="icon" val="icon.etc_mineral_general_i00"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30375" name="Колчан с Бесконечными Медными Стрелами - (Доп. Удар)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_arrows_i00"/>
+		<set name="material" val="gold"/>
+	</item>
+	<item id="30376" name="Колчан с Бесконечными Медными Стрелами - (Крит. Удар)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_arrows_i00"/>
+		<set name="material" val="gold"/>
+	</item>
+	<item id="30377" name="Колчан с Бесконечными Медными Стрелами - (Кровопускающий Удар)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_arrows_i00"/>
+		<set name="material" val="gold"/>
+	</item>
+	<item id="30378" name="Колчан с Бесконечными Медными Болтами - (Доп. Удар)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_bolts_i00"/>
+		<set name="material" val="gold"/>
+	</item>
+	<item id="30379" name="Колчан с Бесконечными Медными Болтами - (Крит. Удар)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_bolts_i00"/>
+		<set name="material" val="gold"/>
+	</item>
+	<item id="30380" name="Колчан с Бесконечными Медными Болтами - (Кровопускающий Удар)" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_bolts_i00"/>
+		<set name="material" val="gold"/>
+	</item>
+	<item id="30388" name="Сундук Поддержки Вернувшегося Путешественника (S)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30389" name="Сундук Поддержки Вернувшегося Путешественника (A)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30390" name="Сундук Поддержки Вернувшегося Путешественника (B)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30391" name="Сундук Поддержки Вернувшегося Путешественника (C)" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00"/>
+		<set name="material" val="fish"/>
+		<set name="weight" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="30329" name="Оружие Посланника" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="100"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="300"/>
+		<set name="price" val="3000000"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="5"/>
+			<set order="0x08" stat="mAtk" val="5"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="30393" name="Резак Вечности" type="Weapon">
+		<set name="icon" val="icon.weapon_the_sword_of_hero_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="sword"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1300"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_heroEquip" val="true"/>
+		<set name="item_skill" val="13147-1"/>
+		<cond msgId="1518">
+			<player isHero="true"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="1007"/>
+			<set order="0x08" stat="mAtk" val="521"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="30394" name="Эспадон Вечности" type="Weapon">
+		<set name="icon" val="icon.weapon_the_two_handed_sword_of_hero_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bigsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;44;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1300"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_heroEquip" val="true"/>
+		<set name="item_skill" val="13148-1"/>
+		<cond msgId="1518">
+			<player isHero="true"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="1225"/>
+			<set order="0x08" stat="mAtk" val="521"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="30395" name="Мститель Вечности" type="Weapon">
+		<set name="icon" val="icon.weapon_the_axe_of_hero_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1300"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_heroEquip" val="true"/>
+		<set name="item_skill" val="13149-1"/>
+		<cond msgId="1518">
+			<player isHero="true"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="1007"/>
+			<set order="0x08" stat="mAtk" val="521"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="30399" name="Страж Вечности" type="Weapon">
+		<set name="icon" val="icon.weapon_infinity_shooter_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="TwohandCrossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1300"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="reuse_delay" val="1300"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_heroEquip" val="true"/>
+		<set name="item_skill" val="13153-1"/>
+		<cond msgId="1518">
+			<player isHero="true"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="1786"/>
+			<set order="0x08" stat="mAtk" val="521"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="30392" name="Острие Вечности" type="Weapon">
+		<set name="icon" val="icon.weapon_the_dagger_of_hero_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dagger"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1300"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_heroEquip" val="true"/>
+		<set name="item_skill" val="13146-1"/>
+		<cond msgId="1518">
+			<player isHero="true"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="881"/>
+			<set order="0x08" stat="mAtk" val="521"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="433"/>
+		</for>
+	</item>
+	<item id="30396" name="Воитель Вечности" type="Weapon">
+		<set name="icon" val="icon.weapon_the_fist_of_hero_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dualfist"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;32;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1300"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_heroEquip" val="true"/>
+		<set name="item_skill" val="13150-1"/>
+		<cond msgId="1518">
+			<player isHero="true"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="1225"/>
+			<set order="0x08" stat="mAtk" val="521"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+	<item id="30398" name="Бросок Вечности" type="Weapon">
+		<set name="icon" val="icon.weapon_the_bow_of_hero_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="bow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="5"/>
+		<set name="attack_range" val="500"/>
+		<set name="damage_range" val="0;0;10;0"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1300"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="reuse_delay" val="1398"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_heroEquip" val="true"/>
+		<set name="item_skill" val="13152-1"/>
+		<cond msgId="1518">
+			<player isHero="true"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="1983"/>
+			<set order="0x08" stat="mAtk" val="521"/>
+			<set order="0x08" stat="pCritRate" val="12"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="293"/>
+		</for>
+	</item>
+	<item id="30397" name="Буревестник Вечности" type="Weapon">
+		<set name="icon" val="icon.weapon_the_pole_of_hero_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="pole"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="80"/>
+		<set name="damage_range" val="0;0;66;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="r"/>
+		<set name="material" val="adamantaite"/>
+		<set name="weight" val="1300"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="is_heroEquip" val="true"/>
+		<set name="item_skill" val="13151-1"/>
+		<cond msgId="1518">
+			<player isHero="true"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="1007"/>
+			<set order="0x08" stat="mAtk" val="521"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="-3.75"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+		</for>
+	</item>
+</list>

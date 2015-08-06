@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="9988" levels="1" name="Эликсир Бойца">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="aggroPoints" val="514"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="1800" abnormalType="harmony" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.35"/>
+                <mul order="0x30" stat="cAtk" val="1.35"/>
+                <mul order="0x10" stat="pCritRate" val="2"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="mAtk" val="1.16"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.08"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9989" levels="1" name="Эликсир Защиты">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="aggroPoints" val="514"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="1800" abnormalType="harmony" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.12"/>
+                <mul order="0x30" stat="cAtk" val="1.35"/>
+                <mul order="0x10" stat="pCritRate" val="2"/>
+                <mul order="0x30" stat="pDef" val="1.45"/>
+                <mul order="0x30" stat="rShld" val="1.30"/>
+                <mul order="0x30" stat="sDef" val="1.50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9990" levels="1" name="Эликсир Магии">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="aggroPoints" val="514"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="1800" abnormalType="harmony" name="Buff" val="0">
+                <mul order="0x30" stat="mAtk" val="1.4"/>
+                <mul order="0x10" stat="mCritRate" val="2"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="pAtk" val="1.08"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.08"/>
+                <add order="0x40" stat="runSpd" val="8"/>
+                <mul order="0x30" stat="mDef" val="1.14"/>
+                <mul order="0x30" stat="regMp" val="1.2"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.85"/>
+                <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.95"/>
+                <mul order="0x30" stat="mReuse" val="0.8"/>
+                <mul order="0x30" stat="pReuse" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9997" levels="1" name="Сундук Железных Врат с Наградой Низкого Уровня">
+        <table name="#extractableItems">36517,1,25.0;36522,1,25.0;36527,1,25.0;36562,1,25.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9998" levels="1" name="Сундук Железных Врат с Наградой Среднего Уровня">
+        <table name="#extractableItems">36523,1,25.0;36528,1,25.0;36563,1,25.0;36518,1,25.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9999" levels="1" name="Сундук Железных Врат с Наградой Высокого Уровня">
+        <table name="#extractableItems">36557,1,25.0;36562,1,25.0;36552,1,25.0;36547,1,25.0</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9900" levels="1" name="Обработка Доспехов - Ранг B">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9901" levels="1" name="Обработка Доспехов - Ранг C">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9902" levels="1" name="Обработка Доспехов - Ранг D">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9903" levels="1" name="Благ. Обработка Доспехов - Ранг R">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9904" levels="1" name="Благ. Обработка Доспехов - Ранг S">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9905" levels="1" name="Благ. Обработка Доспехов - Ранг A">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9906" levels="1" name="Благ. Обработка Доспехов - Ранг B">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9907" levels="1" name="Благ. Обработка Доспехов - Ранг C">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9908" levels="1" name="Благ. Обработка Доспехов - Ранг D">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9909" levels="1" name="Камень Обработки Головного Убора">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9910" levels="1" name="Благ. Камень Обработки Головного Убора">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9911" levels="3" name="Могущество - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9912" levels="3" name="Воодушевление - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9913" levels="3" name="Щит - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9914" levels="2" name="Магический Барьер - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9915" levels="6" name="Благословение Тела - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9916" levels="6" name="Благословение Духа - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9917" levels="3" name="Фокусировка - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9918" levels="2" name="Дикая Магия - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9919" levels="2" name="Ускорение - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9920" levels="3" name="Проницательность - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9921" levels="4" name="Гнев Вампира - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9922" levels="2" name="Дух Берсерка - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9923" levels="3" name="Шепот Смерти - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9924" levels="2" name="Легкая Походка - Благодарность Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9925" levels="1" name="Пророчество Воды - Поддержка Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="700"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="900"/>
+        <set name="mpConsume" val="120"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9926" levels="1" name="Пророчество Огня - Поддержка Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="700"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="900"/>
+        <set name="mpConsume" val="120"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9927" levels="1" name="Пророчество Ветра - Поддержка Наставника">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="700"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="900"/>
+        <set name="mpConsume" val="120"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9928" levels="1" name="Свиток Телепорта: Перемещение в Хейн">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9929" levels="1" name="Свиток Телепорта: Перемещение в Хейн">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9930" levels="1" name="Свиток Телепрота: Перемещение в Орен">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9931" levels="1" name="Свиток Телепрота: Перемещение в Орен">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9932" levels="1" name="Свиток Телепрота: Перемещение в Орен">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9933" levels="1" name="Свиток Телепорта: Перемещение в Годдард">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9934" levels="1" name="Свиток Телепорта: Перемещение в Годдард">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9935" levels="1" name="Свиток Телепорта: Перемещение в Годдард">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9936" levels="1" name="Свиток Телепорта: Перемещение в Годдард">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9937" levels="1" name="Свиток Телепорта: Перемещение в Годдард">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9938" levels="1" name="9-я годовщина - Благословение">
+        <set name="aggroPoints" val="100"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="staticReuse" val="true"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="buffDuration" val="14400000"/>
+        <set name="isVitalityItemSkill" val="true"/>
+        <set name="stayAfterDeath" val="true"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="14400" abnormalType="vp_up" name="Buff" val="0">
+                <add order="0x40" stat="STR" val="5"/>
+                <add order="0x40" stat="INT" val="5"/>
+                <add order="0x40" stat="DEX" val="5"/>
+                <add order="0x40" stat="CON" val="5"/>
+                <add order="0x40" stat="WIT" val="5"/>
+                <add order="0x40" stat="MEN" val="5"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9939" levels="3" name="Руда Огня (Super)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9940" levels="3" name="Руда Воды (Super)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9941" levels="3" name="Руда Ветра (Super)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9942" levels="3" name="Руда Земли (Super)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9943" levels="3" name="Руда Святости (Super)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9944" levels="3" name="Руда Тьмы (Super)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9945" levels="1" name="Свиток: Модифицировать Головной Убор">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9946" levels="1" name="Куб к 9-й Годовщине - Особое Событие (30 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9947" levels="1" name="Куб к 9-й Годовщине - Особое Событие (20 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9948" levels="1" name="Куб к 9-й Годовщине - Особое Событие (10дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9949" levels="1" name="Куб к 9-й Годовщине - Особое Событие (5 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9950" levels="1" name="Мешок Коллекционера Букв - TOGETHER">
+        <table name="#extractableItems">3887,1,20;3884,1,20;3879,1,20;3877,1,20;3880,1,20</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9951" levels="1" name="Мешок Коллекционера Букв - LINEAGE II">
+        <table name="#extractableItems">3882,1,16.6;3881,1,16.6;3883,1,16.6;3877,1,16.6;3875,1,16.6;3879,1,16.6</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9952" levels="1" name="Мешок Коллекционера Букв - NCSOFT">
+        <table name="#extractableItems">3883,1,20;3876,1,20;3884,1,20;3878,1,20;3887,1,20</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9953" levels="1" name="Мешок Коллекционера Букв - RIIS">
+        <table name="#extractableItems">3885,1,33.33;3888,1,33.33;3886,1,33.33</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9954" levels="1" name="Мешок Удачи Коллекционера Букв">
+        <table name="#extractableItems">37006,1,33.33</table>
+        <set name="capsuled_items_skill" val="#extractableItems"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DUMMY"/>
+        <set name="target" val="TARGET_SELF"/>
+        <cond msgId="129">
+            <and>
+                <player invSize="10"/>
+                <player weight="80"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="RestorationRandom" noicon="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="9955" levels="1" name="Клубничный Торт (Эликсир HP)">
+        <set name="reuseDelay" val="120000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="COMBATPOINTHEAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect name="HpHealPercent" noicon="1" val="50"/>
+        </for>
+    </skill>
+    <skill id="9956" levels="1" name="Черничный Торт (Эликсир MP)">
+        <set name="reuseDelay" val="120000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="COMBATPOINTHEAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect name="MpHealPercent" noicon="1" val="20"/>
+        </for>
+    </skill>
+    <skill id="9957" levels="1" name="Чизкейк (Эликсир CP)">
+        <set name="castMagic" val="STATIC"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="COMBATPOINTHEAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect name="CpHealPercent" noicon="1" val="50"/>
+        </for>
+    </skill>
+    <skill id="9958" levels="1" name="Поэма Рога - 9-я Годовщина">
+        <set name="buffDuration" val="1800000"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="6" abnormalTime="1800" abnormalType="extend_pd_up" name="Buff" val="0">
+                <mul order="0x30" stat="pDef" val="1.15"/>
+                <mul order="0x30" stat="pAtk" val="1.17"/>
+                <mul order="0x30" stat="mDef" val="1.30"/>
+                <mul order="0x30" stat="mAtk" val="1.79"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9959" levels="1" name="Поэма Барабана - 9-я Годовщина">
+        <set name="buffDuration" val="1800000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalTime="1800" activationChance="25" activationMinDamage="300" chanceType="ON_ATTACKED" name="ChanceSkillTrigger" noicon="1" triggeredId="11569" triggeredLevel="1" val="0"/>
+            <effect abnormalLvl="6" abnormalTime="1800" abnormalType="extend_multi_buff" name="Buff" val="0">
+                <add order="0x40" stat="absorbDam" val="9"/>
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="regHp" val="1.2"/>
+                <add order="0x40" stat="mCritRate" val="20"/>
+                <mul order="0x30" stat="cAtk" val="1.20"/>
+                <mul order="0x30" stat="pAtk" val="1.10"/>
+                <mul order="0x30" stat="pDef" val="1.20"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.20"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.20"/>
+                <mul order="0x30" stat="mAtk" val="1.20"/>
+                <mul order="0x30" stat="mDef" val="1.20"/>
+                <mul order="0x30" stat="runSpd" val="0.85"/>
+                <sub order="0x40" stat="debuffVuln" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9960" levels="1" name="Поэма Лютни - 9-я Годовщина">
+        <set name="buffDuration" val="1800000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="6" abnormalTime="1800" abnormalType="extend_attack_time_down" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.34"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.31"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9961" levels="1" name="Поэма Органа - 9-я Годовщина">
+        <set name="buffDuration" val="1800000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="6" abnormalTime="1800" abnormalType="extend_max_hp_up" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.37"/>
+                <mul order="0x30" stat="maxMp" val="1.37"/>
+                <mul order="0x30" stat="regMp" val="1.20"/>
+                <mul order="0x30" stat="maxCp" val="1.37"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9962" levels="1" name="Поэма Гитары - 9-я Годовщина">
+        <set name="buffDuration" val="1800000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="6" abnormalTime="1800" abnormalType="criticals_prob_up" name="Buff" val="0">
+                <mul order="0x10" stat="pCritRate" val="1.32"/>
+                <mul order="0x30" stat="cAtk" val="1.35"/>
+                <add order="0x40" stat="mCritRate" val="20"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.9"/>
+                <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9963" levels="1" name="Поэма Арфы - 9-я Годовщина">
+        <set name="buffDuration" val="1800000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="6" abnormalTime="1800" abnormalType="extend_hit_up" name="Buff" val="0">
+                <add order="0x40" stat="accPhysical" val="5"/>
+                <add order="0x40" stat="runSpd" val="34"/>
+                <add order="0x40" stat="ratePhysicalEvas" val="5"/>
+                <add order="0x40" stat="rateMagicalEvas" val="5"/>
+                <mul order="0x30" stat="critVuln" val="0.7"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9964" levels="1" name="Гармония Берсерка - 9-я Годовщина">
+        <set name="buffDuration" val="1800000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="3600" abnormalType="harmony" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.35"/>
+                <mul order="0x30" stat="cAtk" val="1.35"/>
+                <mul order="0x30" stat="pCritRate" val="2"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="mAtk" val="1.16"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.08"/>
+                <add order="0x40" stat="runSpd" val="8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9965" levels="1" name="Гармония Стража - 9-я Годовщина">
+        <set name="buffDuration" val="1800000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="420" abnormalType="harmony" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.12"/>
+                <mul order="0x30" stat="pDef" val="1.45"/>
+                <mul order="0x30" stat="rShld" val="1.30"/>
+                <add order="0x40" stat="pCritRate" val="2"/>
+                <mul order="0x30" stat="cAtk" val="1.35"/>
+                <mul order="0x30" stat="sDef" val="1.50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9966" levels="1" name="Гармония Мага - 9-я Годовщина">
+        <set name="buffDuration" val="1800000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="420" abnormalType="harmony" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.08"/>
+                <mul order="0x30" stat="mAtk" val="1.40"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="mDef" val="1.14"/>
+                <mul order="0x10" stat="mCritRate" val="2"/>
+                <mul order="0x30" stat="regMp" val="1.2"/>
+                <add order="0x40" stat="runSpd" val="8"/>
+                <mul order="0x30" stat="pDef" val="0.92"/>
+                <sub order="0x40" stat="ratePhysicalEvas" val="4"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="1.15"/>
+                <mul order="0x30" stat="PhysicalMpConsumeRate" val="1.05"/>
+                <mul order="0x30" stat="mReuse" val="0.8"/>
+                <mul order="0x30" stat="pReuse" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9967" levels="1" name="Свиток Телепорта - Остров Аллигаторов">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9968" levels="1" name="Свиток Телепорта - Лес Разбойников">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9969" levels="1" name="Свиток Телепорта - Море Спор">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9970" levels="1" name="Свиток Телепорта - Забытые Равнины">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9971" levels="1" name="Свиток Телепорта - Поле Брани">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9972" levels="1" name="Свиток Телепорта - Болото Криков">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9973" levels="1" name="Свиток Телепорта - Лес Неупокоенных">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9974" levels="1" name="Свиток Телепорта - Стена Аргоса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9975" levels="1" name="Свиток Телепорта - Лагерь Фавнов Варка">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9976" levels="1" name="Свиток Телепорта - Передовая Застава Орков Кетра">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9977" levels="1" name="Свиток Телепорта - Жилище Демона">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9978" levels="1" name="Свиток Телепорта - Школа Полномочий">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9979" levels="1" name="Свиток Телепорта - Долина Ящеров">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9980" levels="1" name="Свиток Телепорта - Поля Безмолвия">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9981" levels="1" name="Свиток Телепорта - Шепчущие Поля">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9982" levels="1" name="Зелье - Защита">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="100"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="85"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="itemConsumeCount" val="1"/>
+        <for>
+            <effect abnormalLvl="6" abnormalTime="1800" name="Buff" val="0">
+                <mul order="0x30" stat="maxHp" val="1.3"/>
+                <mul order="0x30" stat="maxMp" val="1.3"/>
+                <mul order="0x30" stat="maxCp" val="1.3"/>
+                <mul order="0x30" stat="pDef" val="1.3"/>
+                <mul order="0x30" stat="mDef" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9983" levels="1" name="Свиток Телепорта - Стена Аргоса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9984" levels="1" name="Куб к 9-й Годовщине  - одноразовый">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9985" levels="7" name="Эликсир Жизни Высокого Качества - Ранг R">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9986" levels="7" name="Эликсир Ментальной Силы Высокого Качества - Ранг R">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9987" levels="7" name="Эликсир CP Высокого Качества - Ранг R">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9991" levels="1" name="Свиток Телепорта: Перемещение в Руну">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9992" levels="1" name="Свиток Телепорта: Перемещение в Руну">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9993" levels="1" name="Свиток Телепорта: Перемещение в Аден">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9994" levels="1" name="Свиток Телепорта: Перемещение в Аден">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9995" levels="1" name="Свиток Телепорта: Перемещение в Орен">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9996" levels="1" name="Сундук Судьбы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="10000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+</list>

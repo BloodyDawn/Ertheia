@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <skill id="17000" levels="1" name="Свиток 100 млн SP">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="hitTime" val="200"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="magicLvl" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="1000000000"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="skillType" val="GIVE_SP"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="17049" levels="1" name="Свиток Телепорта: Кайнак">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TELEPORT"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="teleCoords" val="16319,-114064,-219"/>
+    </skill>
+    <skill id="17050" levels="1" name="Свиток Телепорта: Перекресток Разбойников">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="TELEPORT"/>
+        <set name="hitTime" val="20000"/>
+        <set name="castMagic" val="STATIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="teleCoords" val="20384,-129596,-1720"/>
+    </skill>
+    <skill id="17051" levels="1" name="Свиток Телепорта: Земля Хаоса">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17081" levels="1" name="Книга Заклинаний - Оседлать Линдрако">
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="LEARN_SKILL"/>
+        <set name="learnSkillId" val="19116"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="castMagic" val="STATIC"/>
+        <cond addName="1" msgId="113">
+            <and>
+                <not>
+                    <player active_skill_id="19116"/>
+                </not>
+                <player level="75"/>
+            </and>
+        </cond>
+    </skill>
+    <skill id="17082" levels="1" name="Соната Битвы Наставника">
+        <set name="castMagic" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLvl" val="99"/>
+        <set name="canBeDispeled" val="false"/>
+        <set name="isMentorSkill" val="true"/>
+        <set name="stayOnSubclassChange" val="false"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormalLvl="3" abnormalTime="-1" abnormalType="battle_sonata" name="Buff" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.15"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.30"/>
+                <mul order="0x30" stat="maxHp" val="1.30"/>
+                <mul order="0x30" stat="regHp" val="1.20"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.9"/>
+                <sub order="0x40" stat="magicFailureRate" val="40"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="17083" levels="1" name="Соната Движения Наставника">
+        <set name="castMagic" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLvl" val="99"/>
+        <set name="canBeDispeled" val="false"/>
+        <set name="isMentorSkill" val="true"/>
+        <set name="stayOnSubclassChange" val="false"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="-1" abnormalType="movement_sonata" name="Buff" val="0">
+                <mul order="0x30" stat="pAtk" val="1.05"/>
+                <mul order="0x30" stat="mAtk" val="1.10"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.05"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.05"/>
+                <mul order="0x30" stat="pDef" val="0.96"/>
+                <mul order="0x30" stat="mDef" val="0.96"/>
+                <sub order="0x40" stat="ratePhysicalEvas" val="4"/>
+                <add order="0x40" stat="absorbDam" val="8"/>
+                <add order="0x40" stat="reflectDam" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="17084" levels="1" name="Соната Расслабления Наставника">
+        <set name="castMagic" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLvl" val="99"/>
+        <set name="canBeDispeled" val="false"/>
+        <set name="isMentorSkill" val="true"/>
+        <set name="stayOnSubclassChange" val="false"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormalLvl="2" abnormalTime="-1" abnormalType="meditation_sonata" name="Buff" val="0">
+                <mul order="0x30" stat="regHp" val="1.10"/>
+                <mul order="0x30" stat="MagicalMpConsumeRate" val="0.9"/>
+                <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.9"/>
+                <add order="0x40" stat="accPhysical" val="2"/>
+                <add order="0x40" stat="ratePhysicalEvas" val="2"/>
+                <add order="0x40" stat="runSpd" val="10"/>
+                <mul order="0x30" stat="pReuse" val="0.95"/>
+                <mul order="0x30" stat="mReuse" val="0.95"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="17001" levels="1" name="Благословенная Обработка Оружия - Ранг R">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17002" levels="1" name="Благословенная Обработка Оружия - Ранг S">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17003" levels="1" name="Благословенная Обработка Оружия - Ранг A">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17004" levels="1" name="Благословенная Обработка Оружия - Ранг B">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17005" levels="1" name="Благословенная Обработка Оружия - Ранг C">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17006" levels="1" name="Благословенная Обработка Оружия - Ранг D">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17007" levels="1" name="Благословенная Обработка Доспехов - Ранг R">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17008" levels="1" name="Благословенная Обработка Доспехов - Ранг S">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17009" levels="1" name="Благословенная Обработка Доспехов - Ранг A">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17010" levels="1" name="Благословенная Обработка Доспехов - Ранг B">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17011" levels="1" name="Благословенная Обработка Доспехов - Ранг C">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17012" levels="1" name="Благословенная Обработка Доспехов - Ранг D">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17013" levels="1" name="Камень Обработки Светового Оружия - Одноручный Меч (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17014" levels="1" name="Камень Обработки Светового Оружия - Кинжал (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17015" levels="1" name="Камень Обработки Светового Оружия - Двуручный меч (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17016" levels="1" name="Камень Обработки Светового Оружия - Кастет (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17017" levels="1" name="Камень Обработки Светового Оружия - Копье (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17018" levels="1" name="Камень Обработки Светового Оружия - Лук (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17019" levels="1" name="Камень Обработки Светового Оружия - Арбалет (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17020" levels="1" name="Камень Обработки Светового Оружия - Одноручная Дубина (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17021" levels="1" name="Камень Обработки Светового Оружия - Двуручная Дубина (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17022" levels="1" name="Камень Обработки Светового Оружия - Одноручная Магическая Дубина (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17023" levels="1" name="Камень Обработки Светового Оружия - Двуручная Магическая Дубина (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17024" levels="1" name="Камень Обработки Светового Оружия - Парные Мечи (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17025" levels="1" name="Камень Обработки Светового Оружия - Парные Кинжалы (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17026" levels="1" name="Камень Обработки Светового Оружия - Парные Дубины (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17027" levels="1" name="Камень Обработки Светового Доспеха - Щит (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17028" levels="1" name="Камень Обработки Светового Доспеха - Символ (15 дней)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17029" levels="1" name="Камень Обработки Светового Оружия - Одноручный Меч">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17030" levels="1" name="Камень Обработки Светового Оружия - Кинжал">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17031" levels="1" name="Камень Обработки Светового Оружия - Двуручный меч">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17032" levels="1" name="Камень Обработки Светового Оружия - Кастет">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17033" levels="1" name="Камень Обработки Светового Оружия - Копье">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17034" levels="1" name="Камень Обработки Светового Оружия - Лук">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17035" levels="1" name="Камень Обработки Светового Оружия - Арбалет">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17036" levels="1" name="Камень Обработки Светового Оружия - Одноручная Дубина">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17037" levels="1" name="Камень Обработки Светового Оружия - Двуручная Дубина">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17038" levels="1" name="Камень Обработки Светового Оружия - Одноручная Магическая Дубина">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17039" levels="1" name="Камень Обработки Светового Оружия - Двуручная Магическая Дубина">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17040" levels="1" name="Камень Обработки Светового Оружия - Парные Мечи">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17041" levels="1" name="Камень Обработки Светового Оружия - Парные Кинжалы">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17042" levels="1" name="Камень Обработки Светового Оружия - Парные Дубины">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17043" levels="1" name="Камень Обработки Светового Доспеха - Щит">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17044" levels="1" name="Камень Обработки Светового Доспеха - Символ">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17045" levels="1" name="Сундук Измерений Черной Наковальни">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17046" levels="1" name="Сундук с Припасами Хозяина Измерений">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17047" levels="1" name="Отмена Невидимости">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17048" levels="1" name="Премиум Положительный Эффект">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17052" levels="1" name="Сундук Припасов Эльмора">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17053" levels="1" name="Чудесный Сундук Эльмора">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17054" levels="1" name="Ценный Сундук Эльмора">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17055" levels="1" name="Мешок Рецептов Айдиоса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17056" levels="1" name="Мешок Материалов Айдиоса">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17057" levels="1" name="Энергия Измерений">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3600000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17058" levels="1" name="Благословение Измерений - Ивент">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="castRange" val="1200"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17059" levels="1" name="Талисман - Телепорт (Глудио)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17060" levels="1" name="Талисман - Телепорт  (Дион)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17061" levels="1" name="Талисман - Телепорт (Гиран)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17062" levels="1" name="Талисман - Телепорт (Хейн)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17063" levels="1" name="Талисман - Телепорт (Орен)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17064" levels="1" name="Талисман - Телепорт (Аден)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17065" levels="1" name="Талисман - Телепорт (Годдард)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17066" levels="1" name="Талисман - Телепорт (Руна)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17067" levels="1" name="Талисман - Телепорт (Шутгарт)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17068" levels="1" name="Талисман - Телепорт (Говорящий Остров)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17069" levels="1" name="Талисман - Телепорт (Эльфийская Деревня)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17070" levels="1" name="Талисман - Телепорт (Деревня Темных Эльфов)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17071" levels="1" name="Талисман - Телепорт (Деревня Орков)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17072" levels="1" name="Талисман - Телепорт (Деревня Гномов)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17073" levels="1" name="Талисман - Телепорт (Флоран)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17074" levels="1" name="Талисман - Телепорт (Академия Хардина)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17075" levels="1" name="Талисман - Телепорт (Башня Слоновой Кости)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17076" levels="1" name="Талисман - Телепорт (Деревня Охотников)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17077" levels="1" name="Талисман - Телепорт (Деревня Орков Кетра)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17078" levels="1" name="Талисман - Телепорт (Деревня Фавнов Варка)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17079" levels="1" name="Талисман - Телепорт (Остров Душ)">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="20000"/>
+        <set name="reuseDelay" val="14400000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17080" levels="1" name="Камень Восстановления Облика Аксессуаров для Волос">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17085" levels="1" name="Добавление Мощности Пэ Гисона">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17086" levels="1" name="Призвать Агатиона - Пэ Гисон">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17087" levels="1" name="Добавление Мощности Пэгисон - Ивент">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17088" levels="1" name="Жест Пэгисон2">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="3800"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17089" levels="1" name="Обаяние Пэгисон">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="6000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17090" levels="1" name="Трюк Пэгисон">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="7000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17091" levels="1" name="Свиток Трансформации - Одноглазый Парапаракот">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17092" levels="1" name="Свиток Трансформации - Улыбчивый Парапаракот">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17093" levels="1" name="Свиток Трансформации - Очаровательный Парапаракот">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17094" levels="1" name="Свиток Трансформации - Могучий Парапаракот">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17095" levels="1" name="Свиток Трансформации - Состоятельный Парапаракот">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17096" levels="1" name="Превращение - Одноглазый Парапаракот">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17097" levels="1" name="Превращение - Улыбчивый Парапаракот">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17098" levels="1" name="Превращение - Очаровательный Парапаракот">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="17099" levels="1" name="Превращение - Могучий Парапаракот">
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+</list>

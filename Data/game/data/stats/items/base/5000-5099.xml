@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="5009" name="Трофей Альянса" type="EtcItem">
+		<set name="icon" val="icon.etc_trophy_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="price" val="50"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+	</item>
+	<item id="5010" name="Музыкальный Кристалл - Тема: Победа" type="EtcItem">
+		<set name="icon" val="icon.etc_echo_crystal_i02"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="10"/>
+		<set name="price" val="100"/>
+		<set name="reuse_delay" val="3000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2066-1"/>
+	</item>
+	<item id="5011" name="Звезда Судьбы" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_gold_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="steel"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_destroyable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="5012" name="Письмо Лейкана" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_white_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_questitem" val="true"/>
+	</item>
+	<item id="5013" name="Книга Заклинаний - Стихийное Нападение" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_element_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="7200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5014" name="Книга Заклинаний - Стихийная Симфония" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_element_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="7200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5015" name="Книга Заклинаний - Стихийный Шторм" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_element_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="7200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5016" name="Семя: Темная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="4"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5017" name="Семя: Красная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="4"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5018" name="Семя: Холодная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="4"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5019" name="Семя: Синяя Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="10"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5020" name="Семя: Золотая Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5021" name="Семя: Кода Лютни" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5022" name="Семя: Пустынная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5023" name="Семя: Синий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5024" name="Семя: Синяя Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="10"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5025" name="Семя: Золотая Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5026" name="Семя: Кода Лютни" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="30"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5027" name="Семя: Пустынная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5028" name="Семя: Красный Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5029" name="Семя: Холодный Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="24"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5030" name="Семя: Колючий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5031" name="Семя: Золотой Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5032" name="Семя: Большой Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5033" name="Семя: Красный Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="20"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5034" name="Семя: Холодный Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="24"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5035" name="Семя: Синий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5036" name="Семя: Колючий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5037" name="Семя: Золотой Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5038" name="Семя: Большой Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5039" name="Семя: Красный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="40"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5040" name="Семя: Двойной Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5041" name="Семя: Пустынный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5042" name="Семя: Темная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="4"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5043" name="Семя: Красная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="4"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5044" name="Семя: Синяя Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="10"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5045" name="Семя: Красный Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5046" name="Семя: Холодный Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="24"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5047" name="Семя: Синий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5048" name="Семя: Колючий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5049" name="Семя: Морской Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5050" name="Семя: Холодный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="40"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5051" name="Семя: Синий Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5052" name="Семя: Двойной Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5053" name="Семя: Колючий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5054" name="Семя: Золотой Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5055" name="Семя: Большой Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5056" name="Семя: Красный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="40"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5057" name="Семя: Холодный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="40"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5058" name="Семя: Синий Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5059" name="Семя: Двойной Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5060" name="Семя: Большой Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="74"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5061" name="Семя: Пустынный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="default_action" val="seed"/>
+		<set name="etcitem_type" val="seed"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Seed"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5062" name="Мусор" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="20"/>
+		<set name="price" val="1"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2097-1"/>
+	</item>
+	<item id="5063" name="Мусор" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="20"/>
+		<set name="price" val="1"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2097-2"/>
+	</item>
+	<item id="5064" name="Мусор" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="20"/>
+		<set name="price" val="1"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2097-3"/>
+	</item>
+	<item id="5065" name="Холодная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i00"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5066" name="Горячая Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i01"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5067" name="Синяя Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i02"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5068" name="Красная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i03"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5069" name="Золотая Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i04"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5070" name="Пустынная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i05"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5071" name="Кода Лютни" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i06"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="300"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5072" name="Двойная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i07"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5073" name="Темная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i08"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5074" name="Светлая Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i09"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5075" name="Холодный Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_i00"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="250"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5076" name="Горячий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_i01"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5077" name="Синий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_i02"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5078" name="Красный Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_i03"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5079" name="Золотой Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_i04"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5080" name="Пустынный Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_i05"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5081" name="Морской Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_i06"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5082" name="Колючий Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_i07"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5083" name="Пятнистый Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_i08"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5084" name="Большой Кобол" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_i09"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5085" name="Холодный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_i00"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5086" name="Горячий Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_i01"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5087" name="Синий Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_i02"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5088" name="Красный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_i03"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5089" name="Пятнистый Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_i04"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5090" name="Пустынный Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_i05"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="1000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5091" name="Морской Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_i06"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5092" name="Двойной Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_i07"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="500"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5093" name="Колючий Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_i08"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5094" name="Большой Кодран" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_i09"/>
+		<set name="etcitem_type" val="crop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="2"/>
+		<set name="price" val="750"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5095" name="Спелая Холодная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i00"/>
+		<set name="etcitem_type" val="maturecrop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5096" name="Спелая Горячая Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i01"/>
+		<set name="etcitem_type" val="maturecrop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5097" name="Спелая Синяя Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i02"/>
+		<set name="etcitem_type" val="maturecrop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="100"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5098" name="Спелая Красная Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i03"/>
+		<set name="etcitem_type" val="maturecrop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="50"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5099" name="Спелая Золотая Кода" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_i04"/>
+		<set name="etcitem_type" val="maturecrop"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="1"/>
+		<set name="price" val="200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="5000" name="Рецепт - Дамаскус (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="262000"/>
+		<set name="recipe_id" val="458"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="5001" name="Рецепт - Пика (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="262000"/>
+		<set name="recipe_id" val="460"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="5002" name="Рецепт - Топор Мертвеца (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="262000"/>
+		<set name="recipe_id" val="462"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="5003" name="Рецепт - Топор Искусства Войны (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="262000"/>
+		<set name="recipe_id" val="464"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="5004" name="Рецепт - Посох Злых Духов (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="262000"/>
+		<set name="recipe_id" val="466"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="5005" name="Рецепт - Кинжал Демона (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="262000"/>
+		<set name="recipe_id" val="468"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="5006" name="Рецепт - Цестус Беллиона (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="262000"/>
+		<set name="recipe_id" val="470"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="5007" name="Рецепт - Лук Угрозы (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="262000"/>
+		<set name="recipe_id" val="472"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+	<item id="5008" name="Рецепт - Пата (60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_yellow_i00"/>
+		<set name="default_action" val="recipe"/>
+		<set name="etcitem_type" val="recipe"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="30"/>
+		<set name="price" val="156600"/>
+		<set name="recipe_id" val="436"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="Recipes"/>
+	</item>
+</list>

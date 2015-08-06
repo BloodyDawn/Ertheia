@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+	<item id="10000" name="Зелье Ветра" type="EtcItem">
+		<set name="icon" val="icon.etc_wind_potion_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="price" val="10000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2337-1"/>
+	</item>
+	<item id="10001" name="Зелье Тьмы" type="EtcItem">
+		<set name="icon" val="icon.etc_unholy_potion_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="price" val="10000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2340-1"/>
+	</item>
+	<item id="10002" name="Зелье Святости" type="EtcItem">
+		<set name="icon" val="icon.etc_holy_potion_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="etcitem_type" val="potion"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="price" val="10000"/>
+		<set name="is_stackable" val="true"/>
+		<set name="is_oly_restricted" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2339-1"/>
+	</item>
+	<item id="10003" name="Острая Рапира" type="Weapon">
+		<set name="icon" val="icon.weapon_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="915"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1500"/>
+		<set name="price" val="495500"/>
+		<set name="change_weaponId" val="128"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,3426-1"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="46"/>
+			<set order="0x08" stat="mAtk" val="32"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="10004" name="Парные Мечи Династии" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="dual"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="3597"/>
+		<set name="crystal_type" val="s"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="1520"/>
+		<set name="price" val="74946000"/>
+		<set name="soulshots" val="1"/>
+		<set name="spiritshots" val="1"/>
+		<set name="element_enabled" val="true"/>
+		<set name="enchant_enabled" val="true"/>
+		<set name="enchant_skill" val="4,3411-1"/>
+		<set name="item_skill" val="3552-1"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="405"/>
+			<set order="0x08" stat="mAtk" val="151"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<set order="0x08" stat="pAtkSpd" val="325"/>
+			<enchant order="0x0C" stat="pAtk" val="0"/>
+			<enchant order="0x0C" stat="mAtk" val="0"/>
+		</for>
+	</item>
+	<item id="10005" name="Теневой Предмет: Острая Рапира" type="Weapon">
+		<set name="icon" val="icon.weapon_rapier_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="500"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="enchant_skill" val="4,3426-1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="duration" val="90"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="46"/>
+			<set order="0x08" stat="mAtk" val="32"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="10006" name="Теневой Предмет: Военный Тальвар" type="Weapon">
+		<set name="icon" val="icon.weapon_tulwar_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="693"/>
+		<set name="soulshots" val="2"/>
+		<set name="spiritshots" val="2"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="duration" val="90"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="55"/>
+			<set order="0x08" stat="mAtk" val="32"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="10007" name="Теневой Предмет: Ручной Арбалет" type="Weapon">
+		<set name="icon" val="icon.weapon_hunting_gun_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="693"/>
+		<set name="soulshots" val="4"/>
+		<set name="spiritshots" val="2"/>
+		<set name="reuse_delay" val="400"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="duration" val="90"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="64"/>
+			<set order="0x08" stat="mAtk" val="32"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+		</for>
+	</item>
+	<item id="10008" name="Теневой Предмет: Истребитель" type="Weapon">
+		<set name="icon" val="icon.weapon_blink_slasher_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="rapier"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="40"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="467"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="enchant_skill" val="4,3426-1"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="duration" val="120"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="126"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="406"/>
+		</for>
+	</item>
+	<item id="10009" name="Теневой Предмет: Вечный Клинок" type="Weapon">
+		<set name="icon" val="icon.weapon_invincible_blade_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="ancientsword"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="15"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="660"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="duration" val="120"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="151"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="8"/>
+			<add order="0x10" stat="accPhysical" val="2.0"/>
+			<set order="0x08" stat="pAtkSpd" val="350"/>
+		</for>
+	</item>
+	<item id="10010" name="Теневой Предмет: Татлум" type="Weapon">
+		<set name="icon" val="icon.weapon_taslam_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="crossbow"/>
+		<set name="bodypart" val="lrhand"/>
+		<set name="random_damage" val="10"/>
+		<set name="attack_range" val="400"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="587"/>
+		<set name="soulshots" val="5"/>
+		<set name="spiritshots" val="3"/>
+		<set name="reuse_delay" val="400"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="duration" val="120"/>
+		<cond msgId="1518">
+			<player races="Kamael"/>
+		</cond>
+		<for>
+			<set order="0x08" stat="pAtk" val="176"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="10"/>
+			<add order="0x10" stat="accPhysical" val="-1.5"/>
+			<set order="0x08" stat="pAtkSpd" val="303"/>
+		</for>
+	</item>
+	<item id="10011" name="Теневой Предмет: Топор Войны" type="Weapon">
+		<set name="icon" val="icon.weapon_war_axe_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="weapon_type" val="blunt"/>
+		<set name="bodypart" val="rhand"/>
+		<set name="random_damage" val="20"/>
+		<set name="attack_range" val="40"/>
+		<set name="damage_range" val="0;0;40;120"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_type" val="c"/>
+		<set name="material" val="fine_steel"/>
+		<set name="weight" val="533"/>
+		<set name="soulshots" val="3"/>
+		<set name="spiritshots" val="3"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="duration" val="120"/>
+		<for>
+			<set order="0x08" stat="pAtk" val="139"/>
+			<set order="0x08" stat="mAtk" val="76"/>
+			<set order="0x08" stat="pCritRate" val="6"/>
+			<add order="0x10" stat="accPhysical" val="8.0"/>
+			<set order="0x08" stat="pAtkSpd" val="379"/>
+		</for>
+	</item>
+	<item id="10012" name="Ядовитое Жало Скорпиона" type="EtcItem">
+		<set name="icon" val="icon.etc_claw_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="20"/>
+		<set name="price" val="1000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10013" name="Печать Гонок" type="EtcItem">
+		<set name="icon" val="icon.etc_hs_agit_war_joining_certificate_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="20"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="is_depositable" val="false"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10014" name="Карта Контрольной Рубки" type="EtcItem">
+		<set name="icon" val="icon.etc_hs_agit_war_joining_certificate_i00"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="20"/>
+		<set name="price" val="250"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10015" name="Ключ от Врат Тюрьмы" type="EtcItem">
+		<set name="icon" val="icon.etc_key_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="steel"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2362-1"/>
+	</item>
+	<item id="10016" name="Ключ от Подземного Склада" type="EtcItem">
+		<set name="icon" val="icon.etc_key_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="liquid"/>
+		<set name="weight" val="10"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2363-1"/>
+	</item>
+	<item id="10017" name="Ключ от Кораллового Сундука" type="EtcItem">
+		<set name="icon" val="icon.etc_key_i00"/>
+		<set name="default_action" val="skill_reduce"/>
+		<set name="material" val="steel"/>
+		<set name="is_stackable" val="true"/>
+		<set name="handler" val="ItemSkills"/>
+		<set name="item_skill" val="2400-1"/>
+	</item>
+	<item id="10018" name="Браслет Печати Агатиона - Крепость" type="Armor">
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="bodypart" val="lbracelet"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="silver"/>
+		<set name="weight" val="150"/>
+		<set name="price" val="5000000"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<set name="unequip_skill" val="3267-1"/>
+		<set name="item_skill" val="5458-1;3361-1;3267-1"/>
+		<set name="equip_condition" val="{{ec_fortress;1}}"/>
+		<cond msgId="1518">
+			<player fort="-1"/>
+		</cond>
+	</item>
+	<item id="10019" name="Кольчужная Кираса" type="Armor">
+		<set name="icon" val="icon.armor_t12_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="chest"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="151"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="8820"/>
+		<set name="price" val="64210"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="77"/>
+		</for>
+	</item>
+	<item id="10020" name="Железные Латные Набедренники" type="Armor">
+		<set name="icon" val="icon.armor_t12_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="heavy"/>
+		<set name="bodypart" val="legs"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="94"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="steel"/>
+		<set name="weight" val="3820"/>
+		<set name="price" val="40100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="48"/>
+		</for>
+	</item>
+	<item id="10021" name="Рубаха из Шкуры Пумы" type="Armor">
+		<set name="icon" val="icon.armor_t09_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="chest"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="113"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="4700"/>
+		<set name="price" val="48200"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="58"/>
+		</for>
+	</item>
+	<item id="10022" name="Набедренники из Шкуры Пумы" type="Armor">
+		<set name="icon" val="icon.armor_t09_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="light"/>
+		<set name="bodypart" val="legs"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="leather"/>
+		<set name="weight" val="1600"/>
+		<set name="price" val="30100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<for>
+			<add order="0x10" stat="pDef" val="36"/>
+		</for>
+	</item>
+	<item id="10023" name="Проклятая Туника" type="Armor">
+		<set name="icon" val="icon.armor_t14_u_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="chest"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="113"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="2090"/>
+		<set name="price" val="48200"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="39"/>
+			<add order="0x40" stat="maxMp" val="106"/>
+		</for>
+	</item>
+	<item id="10024" name="Проклятые Штаны" type="Armor">
+		<set name="icon" val="icon.armor_t14_l_i00"/>
+		<set name="default_action" val="equip"/>
+		<set name="armor_type" val="magic"/>
+		<set name="bodypart" val="legs"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="crystal_count" val="71"/>
+		<set name="crystal_type" val="d"/>
+		<set name="material" val="cloth"/>
+		<set name="weight" val="1020"/>
+		<set name="price" val="30100"/>
+		<set name="is_tradable" val="false"/>
+		<set name="is_dropable" val="false"/>
+		<set name="is_sellable" val="false"/>
+		<cond msgId="1518">
+			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+		</cond>
+		<for>
+			<add order="0x10" stat="pDef" val="24"/>
+			<add order="0x40" stat="maxMp" val="66"/>
+		</for>
+	</item>
+	<item id="10025" name="Боевое Руководство: Стрела Порока" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="74"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10026" name="Боевое Руководство: Порочная Атака" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="74"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10027" name="Боевое Руководство: Обнаружение Ловушек" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="550"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10028" name="Боевое Руководство: Обезвреживание Ловушек" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="550"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10029" name="Боевое Руководство: Удар Тьмой" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10030" name="Боевое Руководство: Сокрушение Тьмой" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="2900"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10031" name="Боевое Руководство: Двойной Укол" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10032" name="Боевое Руководство: Сияние Бездны" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10033" name="Боевое Руководство: Взрыв Тьмы" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="1150"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10034" name="Боевое Руководство: Переназначить Цель" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="3200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10035" name="Боевое Руководство: Обмен Камня Жизни" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="2600"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10036" name="Боевое Руководство: Расправить Крылья" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="5000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10037" name="Боевое Руководство: Режущий Клинок" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="3850"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10038" name="Боевое Руководство: Сокрушающая Боль" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="7000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10039" name="Боевое Руководство: Инфекция" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="7950"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10040" name="Боевое Руководство: Жизнь за Душу" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="3200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10041" name="Боевое Руководство: Презрение" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="3700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10042" name="Боевое Руководство: Тройной Укол" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="2900"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10043" name="Боевое Руководство: Сверкающая Грань" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="4400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10044" name="Боевое Руководство: Шах и Мат" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="5400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10045" name="Боевое Руководство: Скорбящая Душа" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="3000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10046" name="Боевое Руководство: Темное Пламя" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="4000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10047" name="Боевое Руководство: Круг Истребления" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="6750"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10048" name="Боевое Руководство: Проклятие Божественности" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="8700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10049" name="Боевое Руководство: Кража Божественности" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="6000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10050" name="Боевое Руководство: Мерцание" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="7200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10051" name="Боевое Руководство: Перемещение Душ" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="1150"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10052" name="Боевое Руководство: Сдвоенный Выстрел" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="2900"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10053" name="Боевое Руководство: Восходящий Выстрел" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="3850"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10054" name="Боевое Руководство: Смертельная Рулетка" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="8700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10055" name="Боевое Руководство: Соблазн" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="5400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10056" name="Боевое Руководство: Создать Биозелье" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="800"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10057" name="Боевое Руководство: Создать Темное Семя" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="7700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10058" name="Боевое Руководство: Огненная Ловушка" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="1550"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10059" name="Боевое Руководство: Отравляющая Ловушка" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="4800"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10060" name="Боевое Руководство: Замедляющая Ловушка" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="5400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10061" name="Боевое Руководство: Ослепляющая Ловушка" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="6000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10062" name="Боевое Руководство: Обездвиживающая Ловушка" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="3200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10063" name="Боевое Руководство: Колчан Болтов: Ранг A" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="8700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10064" name="Боевое Руководство: Колчан Болтов: Ранг S" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i03"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="10000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10065" name="Боевое Руководство: Излечить от Темного Семени" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="8200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10066" name="Боевое Руководство: Приманка" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="3700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10067" name="Боевое Руководство: Цепь Молний" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i03"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="10800"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10068" name="Боевое Руководство: Энума Элиш" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i03"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="30000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10069" name="Боевое Руководство: Леопольд" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i03"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="30000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10070" name="Боевое Руководство: Смена Оружия" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="800"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10071" name="Боевое Руководство: Колчан Болтов: Ранг B" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="5400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10072" name="Боевое Руководство: Увеличение Силы" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="250"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10073" name="Боевое Руководство: Быстрая Атака" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="250"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10074" name="Боевое Руководство: Яростная Душа" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="1150"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10075" name="Боевое Руководство: Защититься Мечом" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="2600"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10076" name="Боевое Руководство: Обезоружить" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="2600"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10077" name="Боевое Руководство: Быстрый Выстрел" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="2050"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10078" name="Боевое Руководство: Метка Смерти" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="1150"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10079" name="Боевое Руководство: Отвага" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="2600"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10080" name="Боевое Руководство: Дурной Характер" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="4800"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10081" name="Боевое Руководство: Благо для Души" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="3700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10082" name="Боевое Руководство: Защита Тьмы" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="6750"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10083" name="Боевое Руководство: Оружие Тьмы" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="4250"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10084" name="Боевое Руководство: Честь Камаэль" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="4800"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10085" name="Боевое Руководство: Предание Пороку" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="1250"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10086" name="Боевое Руководство: Кровопускающий Выстрел" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="3350"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10087" name="Боевое Руководство: Прицельная Стрельба" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="7200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10088" name="Боевое Руководство: Главная Цель" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="3200"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10089" name="Боевое Руководство: Посадить Темное Семя" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="7700"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10090" name="Боевое Руководство: Прана" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i03"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="30000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10091" name="Боевое Руководство: Конечная Форма" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i03"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="40000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10092" name="Боевое Руководство: Пленение Тени" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="5400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10093" name="Боевое Руководство: Пленение Голоса" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="6750"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10094" name="Боевое Руководство: Стремительный Бросок" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="2050"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10095" name="Боевое Руководство: Штормовой Натиск" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="4400"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10096" name="Боевое Руководство: Атака Крылом" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i03"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="40000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10097" name="Боевое Руководство: Толчок Плечом" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i01"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="2900"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10098" name="Боевое Руководство: Бросок Стремительных Клинков" type="EtcItem">
+		<set name="icon" val="icon.etc_kamael_skill_book_i02"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="6000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+	<item id="10099" name="Книга Заклинаний - Пульсация Огня" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_element_i00"/>
+		<set name="immediate_effect" val="1"/>
+		<set name="material" val="paper"/>
+		<set name="weight" val="120"/>
+		<set name="price" val="30000"/>
+		<set name="is_stackable" val="true"/>
+	</item>
+</list>

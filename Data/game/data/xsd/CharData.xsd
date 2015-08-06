@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="list">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="template_data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="creation_data">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="start_points">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="point" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="x" use="optional"/>
+                                  <xs:attribute type="xs:string" name="y" use="optional"/>
+                                  <xs:attribute type="xs:string" name="z" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="stats_data">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="min_attributes">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="int"/>
+                            <xs:attribute type="xs:string" name="str"/>
+                            <xs:attribute type="xs:string" name="con"/>
+                            <xs:attribute type="xs:string" name="men"/>
+                            <xs:attribute type="xs:string" name="dex"/>
+                            <xs:attribute type="xs:string" name="wit"/>
+                            <xs:attribute type="xs:string" name="luc"/>
+                            <xs:attribute type="xs:string" name="cha"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="max_attributes">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="int"/>
+                            <xs:attribute type="xs:string" name="str"/>
+                            <xs:attribute type="xs:string" name="con"/>
+                            <xs:attribute type="xs:string" name="men"/>
+                            <xs:attribute type="xs:string" name="dex"/>
+                            <xs:attribute type="xs:string" name="wit"/>
+                            <xs:attribute type="xs:string" name="luc"/>
+                            <xs:attribute type="xs:string" name="cha"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="base_attributes">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="int"/>
+                            <xs:attribute type="xs:string" name="str"/>
+                            <xs:attribute type="xs:string" name="con"/>
+                            <xs:attribute type="xs:string" name="men"/>
+                            <xs:attribute type="xs:string" name="dex"/>
+                            <xs:attribute type="xs:string" name="wit"/>
+                            <xs:attribute type="xs:string" name="luc"/>
+                            <xs:attribute type="xs:string" name="cha"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="base_defense">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="chest"/>
+                            <xs:attribute type="xs:string" name="legs"/>
+                            <xs:attribute type="xs:string" name="helmet"/>
+                            <xs:attribute type="xs:string" name="boots"/>
+                            <xs:attribute type="xs:string" name="gloves"/>
+                            <xs:attribute type="xs:string" name="underwear"/>
+                            <xs:attribute type="xs:string" name="cloak"/>
+                            <xs:attribute type="xs:string" name="r_earring"/>
+                            <xs:attribute type="xs:string" name="l_earring"/>
+                            <xs:attribute type="xs:string" name="r_ring"/>
+                            <xs:attribute type="xs:string" name="l_ring"/>
+                            <xs:attribute type="xs:string" name="necklace"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="base_stats">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="stat_set" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                                  <xs:attribute type="xs:string" name="value" use="optional"/>
+                                  <xs:attribute type="xs:string" name="sex" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="regen_lvl_data">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="lvl_data" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="lvl" use="optional"/>
+                                        <xs:attribute type="xs:string" name="hp" use="optional"/>
+                                        <xs:attribute type="xs:string" name="mp" use="optional"/>
+                                        <xs:attribute type="xs:string" name="cp" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="race"/>
+            <xs:attribute type="xs:string" name="type"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
