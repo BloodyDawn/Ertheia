@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<!-- This appender prints information to console -->
+	
+	<!-- ANSI последовательности не поддерживаются Windows -->
+	<!-- Включать по желанию только на nix-ах -->
+	<!--<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<layout class="dwo.tools.logger.layout.ANSIColorLayout">
+			<param name="ConversionPattern" value="[%p] %m%n"/>
+		</layout>
+		<filter class="dwo.tools.logger.filters.ConsoleLogFilter"/>
+	</appender>-->
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %p %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.ConsoleLogFilter"/>
+	</appender>
+	<!-- This appender prints all that is shown in console to file -->
+
+	<appender name="CONSOLE_TO_FILE" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/java/console.log"/>
+		<param name="append" value="false"/>
+		<param name="backupDir" value="log/backup"/>
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%p %d{yyyy-MM-dd HH:mm:ss}] %c:%L - %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.ConsoleLogFilter"/>
+	</appender>
+    <appender name="DEBUG_TO_FILE" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/java/debug.log"/>
+		<param name="append" value="true"/>
+		<param name="backupDir" value="log/java"/>
+		<!-- Windows systems doesn't support : char in file names -->
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%p %d{yyyy-MM-dd HH:mm:ss}] %c:%L - %m%n"/>
+		</layout>
+	    <filter class="dwo.gameserver.engine.logengine.filters.DebuggingFilter"/>
+	</appender>
+	<!-- This appender accepts only messages with exceptions and logs them to separate file -->
+	<appender name="ERROR_APPENDER" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/java/errors.log"/>
+		<param name="append" value="true"/>
+		<param name="backupDir" value="log/java"/>
+		<!-- Windows systems doesn't support : char in file names -->
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%p %d{yyyy-MM-dd HH:mm:ss}] %c:%L - %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.ThrowablePresentFilter"/>
+	</appender>
+	<appender name="chat" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/chat.log"/>
+		<param name="append" value="true"/>
+		<param name="backupDir" value="log/backup"/>
+		<!-- Windows systems doesn't support : char in file names -->
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%p %d{yyyy-MM-dd HH:mm:ss}] %c:%L - %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.ChatLogFilter"/>
+	</appender>
+	<appender name="Pdamage" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/damage_pdam.log"/>
+		<param name="append" value="true"/>
+		<param name="backupDir" value="log/backup"/>
+		<!-- Windows systems doesn't support : char in file names -->
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %p %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.PDamageLogFilter"/>
+	</appender>
+	<appender name="Mdamage" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/damage_mdam.log"/>
+		<param name="append" value="true"/>
+		<param name="backupDir" value="log/backup"/>
+		<!-- Windows systems doesn't support : char in file names -->
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %p %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.MDamageLogFilter"/>
+	</appender>
+	<appender name="audit" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/audit.log"/>
+		<param name="append" value="true"/>
+		<param name="backupDir" value="log/backup"/>
+		<!-- Windows systems doesn't support : char in file names -->
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %p %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.AuditLogFilter"/>
+	</appender>
+	<appender name="item" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/item.log"/>
+		<param name="append" value="true"/>
+		<param name="backupDir" value="log/backup"/>
+		<!-- Windows systems doesn't support : char in file names -->
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %p %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.ItemLogFilter"/>
+	</appender>
+	<appender name="enchantItem" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/enchant_item.log"/>
+		<param name="append" value="true"/>
+		<param name="backupDir" value="log/backup"/>
+		<!-- Windows systems doesn't support : char in file names -->
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %p %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.EnchantItemLogFilter"/>
+	</appender>
+	<appender name="enchantSkill" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/enchant_skill.log"/>
+		<param name="append" value="true"/>
+		<param name="backupDir" value="log/backup"/>
+		<!-- Windows systems doesn't support : char in file names -->
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %p %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.EnchantSkillLogFilter"/>
+	</appender>
+	<appender name="olympiad" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/olympiad.log"/>
+		<param name="append" value="true"/>
+		<param name="backupDir" value="log/backup"/>
+		<!-- Windows systems doesn't support : char in file names -->
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %p %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.OlympiadLogFilter"/>
+	</appender>
+	<appender name="lameguard" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/lameguard.log"/>
+		<param name="append" value="true"/>
+		<param name="backupDir" value="log/backup"/>
+		<!-- Windows systems doesn't support : char in file names -->
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %p %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.LameguardLogFilter"/>
+	</appender>
+	<appender name="vote" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/vote.log"/>
+		<param name="append" value="true"/>
+		<param name="backupDir" value="log/backup"/>
+		<!-- Windows systems doesn't support : char in file names -->
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %p %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.VoteLogFilter"/>
+	</appender>
+	<appender name="donate" class="dwo.gameserver.engine.logengine.appenders.TruncateToZipFileAppender">
+		<param name="file" value="log/donate.log"/>
+		<param name="append" value="true"/>
+		<param name="backupDir" value="log/backup"/>
+		<!-- Windows systems doesn't support : char in file names -->
+		<param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss}] %p %m%n"/>
+		</layout>
+		<filter class="dwo.gameserver.engine.logengine.filters.DonateLogFilter"/>
+	</appender>
+	<root>
+		<priority value="INFO"/>
+		<appender-ref ref="CONSOLE"/>
+		<appender-ref ref="ERROR_APPENDER"/>
+		<appender-ref ref="CONSOLE_TO_FILE"/>
+		<appender-ref ref="DEBUG_TO_FILE"/>
+		<appender-ref ref="chat"/>
+		<appender-ref ref="Pdamage"/>
+		<appender-ref ref="Mdamage"/>
+		<appender-ref ref="audit"/>
+		<appender-ref ref="item"/>
+		<appender-ref ref="enchantItem"/>
+		<appender-ref ref="enchantSkill"/>
+		<appender-ref ref="olympiad"/>
+		<appender-ref ref="lameguard"/>
+		<appender-ref ref="vote"/>
+		<appender-ref ref="donate"/>
+	</root>
+	<categoryFactory class="dwo.gameserver.engine.logengine.throwable.ThrowableAsMessageAwareFactory"/>
+</log4j:configuration>

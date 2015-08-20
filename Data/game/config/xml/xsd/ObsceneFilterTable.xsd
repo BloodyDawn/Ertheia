@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="root" type="rootType"/>
+	<xs:complexType name="equivalentsType">
+		<xs:sequence>
+			<xs:element type="equivalentType" name="equivalent" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="badWordsType">
+		<xs:sequence>
+			<xs:element name="badWordSet" maxOccurs="unbounded" minOccurs="0">
+				<xs:complexType mixed="true">
+					<xs:sequence>
+						<xs:element name="include" minOccurs="0">
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="exclude" minOccurs="0">
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="equivalentType">
+		<xs:sequence>
+			<xs:element type="xs:string" name="find"/>
+			<xs:element type="xs:string" name="replace"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="rootType">
+		<xs:sequence>
+			<xs:element type="equivalentsType" name="equivalents"/>
+			<xs:element type="xs:string" name="nonAlphanumericCharacter"/>
+			<xs:element type="badWordsType" name="badWords"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="badWordSetType">
+		<xs:sequence>
+			<xs:element name="include" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="exclude" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
