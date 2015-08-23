@@ -62,6 +62,21 @@ public class XmlDocumentEngine
                 count++;
             }
 		}
+
+		for(File file : Util.getAllFileList(FilePath.CUSTOM_SKILL_DATA, ".xml"))
+		{
+			List<L2Skill> s = loadSkills(file);
+			if(s == null)
+			{
+				continue;
+			}
+            for(L2Skill skill : s)
+            {
+                allSkills.put(SkillTable.getSkillHashCode(skill.getId(), skill.getLevel()), skill);
+                count++;
+            }
+		}
+
 		_log.log(Level.INFO, getClass().getSimpleName() + ": Loaded " + count + " Skill templates from XML files.");
 	}
 
@@ -73,6 +88,27 @@ public class XmlDocumentEngine
 	{
 		Map<Integer, L2Item> list = new FastMap<>();
 		for(File f : Util.getAllFileList(FilePath.ITEMS_DIR, ".xml"))
+		{
+			XmlDocumentItem document = new XmlDocumentItem(f);
+			document.parse();
+
+			List<L2Item> arr = document.getItemList();
+			if(arr == null)
+			{
+				continue;
+			}
+
+			for(L2Item item : arr)
+			{
+				if(!reload && list.containsKey(item.getItemId()))
+				{
+					_log.log(Level.ERROR, getClass().getSimpleName() + ": Item " + item + " duplicated!!!");
+				}
+				list.put(item.getItemId(), item);
+			}
+		}
+
+		for(File f : Util.getAllFileList(FilePath.CUSTOM_ITEMS_DIR, ".xml"))
 		{
 			XmlDocumentItem document = new XmlDocumentItem(f);
 			document.parse();

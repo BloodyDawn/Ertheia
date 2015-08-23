@@ -26,6 +26,7 @@ public class HtmCache
 {
 	private static final String HTML_CACHE = "data/cache/html.cache";
 	private static final String _htmlDir = "data/html/";
+	private static final String _htmlDirCustom = "custom/html/";
 	private static Logger _log = LogManager.getLogger(HtmCache.class);
 	private final HtmFilter htmFilter = new HtmFilter();
 	private Map<Integer, String> _cache;
@@ -46,11 +47,12 @@ public class HtmCache
 		_cache = new HashMap<>();
 		_bytesBuffLen = 0;
 		reload(new File(Config.DATAPACK_ROOT.toString() + '/' + _htmlDir));
+		reload( new File( Config.DATAPACK_ROOT.toString() + '/' + _htmlDirCustom ) );
 	}
 
 	public void reload(File f)
 	{
-		_log.log(Level.INFO, "Html cache start...");
+		_log.log( Level.INFO, "Html cache start..." );
 		boolean loaded = false;
 		if(Config.USE_HTML_CACHE)
 		{
@@ -95,7 +97,7 @@ public class HtmCache
 
 	private void parseDir(File dir)
 	{
-		File[] files = dir.listFiles(htmFilter);
+		File[] files = dir.listFiles( htmFilter );
 
 		for(File file : files)
 		{
@@ -208,6 +210,12 @@ public class HtmCache
 		{
 			newPath = _htmlDir + prefix + dir + path;
 			content = getHtm(newPath);
+			if (content == null)
+			{
+				newPath = _htmlDirCustom + prefix + dir + path;
+				content = getHtm(newPath);
+			}
+
 			if(content != null)
 			{
 				return content;
@@ -218,6 +226,11 @@ public class HtmCache
 		for(String lang : ConfigLocalization.MULTILANG_ALLOWED)
 		{
 			content = getHtm(_htmlDir + lang + dir + path);
+			if (content == null)
+			{
+				content = getHtm( _htmlDirCustom + lang + dir + path );
+			}
+
 			if(content != null && newPath != null)
 			{
 				_cache.put(newPath.toLowerCase().hashCode(), content);
@@ -259,6 +272,11 @@ public class HtmCache
 		for(String lang : ConfigLocalization.MULTILANG_ALLOWED)
 		{
 			if(getCache(_htmlDir + lang + '/' + path.toLowerCase()) != null)
+			{
+				return true;
+			}
+
+			if(getCache(_htmlDirCustom + lang + '/' + path.toLowerCase()) != null)
 			{
 				return true;
 			}

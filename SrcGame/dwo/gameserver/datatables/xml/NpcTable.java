@@ -53,6 +53,7 @@ public class NpcTable extends XmlDocumentParser
         _drop.clear();
         parseFile(new File(Config.DATAPACK_ROOT, "/data/stats/client/ClientNpc.xml"));
         parseDirectory(FilePath.NPC_STATS);
+        parseDirectory(FilePath.CUSTOM_NPC_STATS);
         for (final DropList dl : _drop)
         {
             for (final DropCategory cat : dl.getCategories())
