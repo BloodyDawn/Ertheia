@@ -44,6 +44,7 @@ public class SpawnTable extends XmlDocumentParser
     public void load() throws JDOMException, IOException {
         _spawnTable.clear();
         parseDirectory(FilePath.STATIC_SPAWN_DATA);
+        parseDirectory(FilePath.CUSTOM_STATIC_SPAWN_DATA);
         _log.log(Level.INFO, getClass().getSimpleName() + ": Loaded " + _spawnTable.size() + " spawn's.");
     }
 
@@ -134,11 +135,11 @@ public class SpawnTable extends XmlDocumentParser
                 spawnDat.stopRespawn();
             }
         }
-        try 
+        try
         {
             load();
-        } 
-        catch (JDOMException | IOException e) 
+        }
+        catch (JDOMException | IOException e)
         {
             e.printStackTrace();
         }

@@ -79,6 +79,30 @@ public class MultiSellData extends XmlDocumentParser
             }
         }
 
+        fileList = FilePath.CUSTOM_MULTISELL_DIR.listFiles();
+        for(File f : fileList)
+        {
+            if(f.isFile())
+            {
+                parseFile(f);
+            }
+            else if(f.isDirectory())
+            {
+                if(f.getName().equals("custom"))
+                {
+                    File customDir = new File(f, Config.CUSTOM_DATA_DIRECTORY);
+                    if(customDir.exists())
+                    {
+                        parseDirectory(customDir);
+                    }
+                }
+                else
+                {
+                    parseDirectory(f);
+                }
+            }
+        }
+
         verify();
         _log.log(Level.INFO, "MultiSell: Loaded " + _entries.size() + " lists.");
     }
