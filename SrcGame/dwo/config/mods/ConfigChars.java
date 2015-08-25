@@ -17,9 +17,9 @@ public class ConfigChars extends Config
 			ALLOW_NEW_CHARACTER_TITLE = getBoolean(properties, "AllowNewCharacterTitle", false);
 			NEW_CHARACTER_TITLE = getString(properties, "NewCharacterTitle", "GodWorld");
 
-            TITLE_PVP_MODE = getBoolean(properties, "TitlePVPMode", false);
-            TITLE_PVP_MODE_FOR_SELF = getBoolean(properties, "TitlePVPModeSelf", false);
-            TITLE_PVP_MODE_RATE = getFloat(properties, "TitlePVPModeRate", 1.5f);
+			TITLE_PVP_MODE = getBoolean(properties, "TitlePVPMode", false);
+			TITLE_PVP_MODE_FOR_SELF = getBoolean(properties, "TitlePVPModeSelf", false);
+			TITLE_PVP_MODE_RATE = getFloat(properties, "TitlePVPModeRate", 1.5f);
 		}
 		catch(Exception e)
 		{

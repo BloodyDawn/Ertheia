@@ -39,21 +39,6 @@ public class ConfigCustom extends Config
 			PUNISH_PLAYER = getBoolean(properties, "PunishPlayer", false);
 			PVP_ALLOW_REWARD = getBoolean(properties, "PvpAllowReward", false);
 			PVP_REWARD = getStringArray(properties, "PvpReward", "57,500000;5575,500".split("\\;"), ";");
-			ALLOW_PVP_COLOR_SYSTEM = getBoolean(properties, "AllowPvPColorSystem", false);
-			ALLOW_PVP_COLOR_NAME = getBoolean(properties, "AllowPvPColorName", false);
-			ALLOW_PVP_COLOR_TITLE = getBoolean(properties, "AllowPvPColorTitle", false);
-			try
-			{
-				String _configLine = getString(properties, "SystemPvPColor", "50,FFFFFF,FFFF77;100,FFFFFF,FFFF77;150,FFFFFF,FFFF77;250,FFFFFF,FFFF77;500,FFFFFF,FFFF77");
-				if(ALLOW_PVP_COLOR_SYSTEM)
-				{
-					SYSTEM_PVP_COLOR = new SystemPvPColor(_configLine);
-				}
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.WARN, "SystemPvPColor[loadCustomConfig()]: invalid config property -> SYSTEM_PVP_COLOR");
-			}
 			AUGMENTATION_WEAPONS_PVP = getBoolean(properties, "AugmentationWeaponsPvP", false);
 			ELEMENTAL_ITEM_PVP = getBoolean(properties, "ElementalItemPvP", false);
 			ENTER_HELLBOUND_WITHOUT_QUEST = getBoolean(properties, "EnterHellBoundWithoutQuest", false);
