@@ -47,7 +47,7 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
         _trap = trap;
         common(_trap);
     }
-    
+
     public NpcInfo(L2Npc npc)
     {
         _npc = npc;
@@ -139,7 +139,7 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
         {
             addComponentType(NpcInfoType.TRANSFORMATION);
         }
-        
+
         if (npc.isOctavisRaid())
         {
             addComponentType(NpcInfoType.OCTAVIS_RAID);
@@ -531,7 +531,18 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
             }
             if (containsMask(NpcInfoType.TITLE))
             {
-                writeS(_npc.getTitle());
+              String _title = _npc.getTitle();
+              if( Config.SHOW_NPC_LVL && (_npc instanceof L2MonsterInstance) )
+              {
+                String t = "Lv " + _npc.getLevel() + (_npc.isAggressive() ? "*" : "");
+                if( _title != null )
+                {
+                  t += " " + _title;
+                }
+
+                _title = t;
+              }
+              writeS( _title );
             }
 
             // Block 2
