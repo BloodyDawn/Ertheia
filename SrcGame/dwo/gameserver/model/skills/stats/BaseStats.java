@@ -24,24 +24,8 @@ public enum BaseStats
   WIT( new WIT() ),
   CON( new CON() ),
   MEN( new MEN() ),
-  // TODO: Implement luck
-  LUC( new LUC()
-  {
-    @Override
-    public double calcBonus( L2Character actor )
-    {
-      return 1;
-    }
-  } ),
-  // TODO: Implement charisma
-  CHA( new CHA()
-  {
-    @Override
-    public double calcBonus( L2Character actor )
-    {
-      return 1;
-    }
-  } ),
+  LUC( new LUC() ),
+  CHA( new CHA() ),
   NULL( new NULL() );
 
   public static final int MAX_STAT_VALUE = 201;
@@ -140,7 +124,8 @@ public enum BaseStats
     @Override
     public double calcBonus( L2Character actor )
     {
-      return LUCbonus[ actor.getLUC() ];
+//      return LUCbonus[ actor.getLUC() ];
+      return 1;
     }
   }
 
@@ -149,7 +134,8 @@ public enum BaseStats
     @Override
     public double calcBonus( L2Character actor )
     {
-      return CHAbonus[ actor.getCHA() ];
+//      return CHAbonus[ actor.getCHA() ];
+      return 1;
     }
   }
 
