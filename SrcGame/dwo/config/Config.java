@@ -773,9 +773,9 @@ public class Config
 	public static int CHAMPION_ENABLE_AURA;
 	public static boolean ALLOW_NEW_CHARACTER_TITLE;
 	public static String NEW_CHARACTER_TITLE;
-    public static boolean TITLE_PVP_MODE;
-    public static boolean TITLE_PVP_MODE_FOR_SELF;
-    public static float TITLE_PVP_MODE_RATE;
+	public static boolean TITLE_PVP_MODE;
+	public static boolean TITLE_PVP_MODE_FOR_SELF;
+	public static float TITLE_PVP_MODE_RATE;
 	public static boolean CHAT_ADMIN;
 	public static String SERVER_NAME;
 	public static String CUSTOM_DATA_DIRECTORY;
@@ -785,10 +785,6 @@ public class Config
 	public static boolean PUNISH_PLAYER;
 	public static boolean PVP_ALLOW_REWARD;
 	public static String[] PVP_REWARD;
-	public static boolean ALLOW_PVP_COLOR_SYSTEM;
-	public static boolean ALLOW_PVP_COLOR_NAME;
-	public static boolean ALLOW_PVP_COLOR_TITLE;
-	public static SystemPvPColor SYSTEM_PVP_COLOR;
 	public static boolean AUGMENTATION_WEAPONS_PVP;
 	public static boolean ELEMENTAL_ITEM_PVP;
 	public static boolean ENTER_HELLBOUND_WITHOUT_QUEST;
@@ -1363,43 +1359,5 @@ public class Config
 	public static enum ObjectSetType
 	{
 		L2ObjectHashSet, WorldObjectSet
-	}
-
-	public static class SystemPvPColor
-	{
-		private final ThreadLocal<Map<Integer, Integer>> _colorName = new ThreadLocal<>();
-		private final ThreadLocal<Map<Integer, Integer>> _colorTitle = new ThreadLocal<>();
-
-		public SystemPvPColor(String _configLine)
-		{
-			_colorName.set(new TreeMap<>(new KeyComparator()));
-			_colorTitle.set(new TreeMap<>(new KeyComparator()));
-
-			if(_configLine != null)
-			{
-				parseConfigLine(_configLine);
-			}
-		}
-
-		private void parseConfigLine(String _configLine)
-		{
-			String[] items = _configLine.split("\\;");
-			for(String item : items)
-			{
-				String[] itemSplit = item.split("\\,");
-				Integer pvpAmount = Integer.parseInt(itemSplit[0]);
-				_colorName.get().put(pvpAmount, Integer.decode("0x" + itemSplit[1]));
-				_colorTitle.get().put(pvpAmount, Integer.decode("0x" + itemSplit[2]));
-			}
-		}
-
-		private static class KeyComparator implements Comparator<Integer>
-		{
-			@Override
-			public int compare(Integer key1, Integer key2)
-			{
-				return key1 - key2;
-			}
-		}
 	}
 }
