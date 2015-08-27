@@ -62,7 +62,7 @@ public class ClassTemplateTable extends XmlDocumentParser
             String className;
             String classServerName;
             int classId, classParentId = -1, classLevel, raceId,
-                    str = 0, con = 0, dex = 0, _int = 0, wit = 0, men = 0,
+                    str = 0, con = 0, dex = 0, _int = 0, wit = 0, men = 0, luc = 0, cha = 0,
                     pAtk = 0, pDef = 0, mAtk = 0, mDef = 0, pSpd = 0, mSpd = 0, pCritRate = 0, runSpd = 0;
             
             double collisionRM = 0.0, collisionHM = 0.0, collisionRF = 0.0, collisionHF = 0.0;
@@ -119,6 +119,12 @@ public class ClassTemplateTable extends XmlDocumentParser
                                     break;
                                 case "men":
                                     men = Integer.parseInt(element2.getAttributeValue(atr));
+                                    break;
+                                case "luc":
+                                    luc = Integer.parseInt(element2.getAttributeValue(atr));
+                                    break;
+                                case "cha":
+                                    cha = Integer.parseInt(element2.getAttributeValue(atr));
                                     break;
                                 case "pAtk":
                                     pAtk = Integer.parseInt(element2.getAttributeValue(atr));
@@ -192,6 +198,8 @@ public class ClassTemplateTable extends XmlDocumentParser
                     set.set("int", _int);
                     set.set("wit", wit);
                     set.set("men", men);
+                    set.set("luc", luc);
+                    set.set("cha", cha);
 
                     set.set("org_hp_regen", 2);
                     set.set("org_mp_regen", 0.9);
