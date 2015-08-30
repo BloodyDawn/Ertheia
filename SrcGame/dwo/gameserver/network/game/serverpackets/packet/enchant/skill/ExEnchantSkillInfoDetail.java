@@ -102,7 +102,7 @@ public class ExEnchantSkillInfoDetail extends L2GameServerPacket
 		writeD(_type);
 		writeD(_skillid);
 		writeD(_skilllvl);
-		writeD(_sp * multi); // sp
+		writeQ( _sp * multi);
 		writeD(_chance); // exp
 		writeD(2); // items count?
 		writeD(PcInventory.ADENA_ID); // adena //TODO unhardcode me
