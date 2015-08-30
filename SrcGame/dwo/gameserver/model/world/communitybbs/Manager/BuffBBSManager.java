@@ -59,7 +59,7 @@ public class BuffBBSManager
 			}
 			else if(var.startsWith("load"))
 			{
-				if(!activeChar.getFloodProtectors().getCommunityBoard().tryPerformAction(FloodAction.BBS_BUFF_LOAD))
+				if(!activeChar.getFloodProtectors().getCommunityBoard().tryPerformAction( FloodAction.BBS_BUFF_LOAD ))
 				{
 					activeChar.sendMessage("Данное действие нельзя выполнять несколько раз подряд!");
 					return null;
@@ -78,10 +78,9 @@ public class BuffBBSManager
 				}
 				return null;
 			}
-			/*
 			else if (var.startsWith("heal"))
 			{
-				if (!activeChar.getFloodProtectors().getCommunityBoard().tryPerformAction("bbs_buff_heal"))
+				if (!activeChar.getFloodProtectors().getCommunityBoard().tryPerformAction(FloodAction.BBS_BUFF_HEAL))
 				{
 					activeChar.sendMessage("Данное действие нельзя выполнять несколько раз подряд!");
 					return null;
@@ -90,7 +89,6 @@ public class BuffBBSManager
 				activeChar.setCurrentCp(activeChar.getMaxCp());
 				return null;
 			}
-			*/
 			else if(var.startsWith("cancel"))
 			{
 				if(!activeChar.getFloodProtectors().getCommunityBoard().tryPerformAction(FloodAction.BBS_BUFF_CANCEL))
@@ -156,13 +154,13 @@ public class BuffBBSManager
 		buffer_top = html.toString();
 
 		html.clear();
-		html.append("<center>");
+		html.append( "<center>" );
 		html.append("<table>");
 		html.append("<tr>");
 		html.append("<td><button value=\"Сохранить\" action=\"bypass -h _bbstop;buff:save\" width=90 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"><br1></td>");
 		html.append("<td><button value=\"Востановить\" action=\"bypass -h _bbstop;buff:load\" width=90 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"><br1></td>");
 		html.append("<td><button value=\"Канцел\" action=\"bypass -h _bbstop;buff:cancel\" width=90 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"><br1></td>");
-		//html.append("<td><button value=\"hp/mp/cp\" action=\"bypass -h _bbstop;buff:heal\" width=90 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"><br></td>");
+		html.append("<td><button value=\"hp/mp/cp\" action=\"bypass -h _bbstop;buff:heal\" width=90 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"><br></td>");
 		html.append("</tr>");
 		html.append("</table>");
 		html.append("</center>");
