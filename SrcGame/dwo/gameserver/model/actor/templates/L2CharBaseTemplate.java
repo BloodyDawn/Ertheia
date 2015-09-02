@@ -190,8 +190,8 @@ public class L2CharBaseTemplate
 			private int _str;
 			private int _dex;
 			private int _con;
-            private int _luc;
-            private int _cha;
+			private int _luc;
+			private int _cha;
 
 			public AttributeSet(int _int, int wit, int men, int str, int dex, int con, int luc, int cha)
 			{
@@ -201,8 +201,8 @@ public class L2CharBaseTemplate
 				_str = str;
 				_dex = dex;
 				_con = con;
-                _luc = luc;
-                _cha = cha;
+				_luc = luc;
+				_cha = cha;
 			}
 
 			public int getInt()
@@ -235,15 +235,15 @@ public class L2CharBaseTemplate
 				return _con;
 			}
 
-            public int getLuc()
-            {
-                return _luc;
-            }
+			public int getLuc()
+			{
+					return _luc;
+			}
 
-            public int getCha()
-            {
-                return _cha;
-            }
+			public int getCha()
+			{
+					return _cha;
+			}
 		}
 
 		/**

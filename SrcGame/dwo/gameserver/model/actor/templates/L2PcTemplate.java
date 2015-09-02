@@ -58,6 +58,8 @@ public class L2PcTemplate extends L2CharTemplate
 			setBaseINT(_baseTemplate.getDefaultAttributes().base().getInt());
 			setBaseWIT(_baseTemplate.getDefaultAttributes().base().getWit());
 			setBaseMEN(_baseTemplate.getDefaultAttributes().base().getMen());
+			setBaseLUC( _baseTemplate.getDefaultAttributes().base().getLuc() );
+			setBaseCHA( _baseTemplate.getDefaultAttributes().base().getCha() );
 
 			int ringDef = _baseTemplate.getDefaultAttributes().defense().getLeftRing() + _baseTemplate.getDefaultAttributes().defense().getRightRing();
 			int earringDef = _baseTemplate.getDefaultAttributes().defense().getLeftEarring() + _baseTemplate.getDefaultAttributes().defense().getRightEarring();
