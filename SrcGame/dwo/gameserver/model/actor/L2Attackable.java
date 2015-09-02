@@ -2285,6 +2285,14 @@ public class L2Attackable extends L2Npc
 	}
 
 	@Override
+	public String getTitle()
+	{
+		if( Config.SHOW_NPC_LVL )
+			return "Lvl " + getLevel() + (isAggressive() ? "*" : "") + " - " + super.getTitle();
+		return super.getTitle();
+	}
+
+	@Override
 	public void onSpawn()
 	{
 		super.onSpawn();

@@ -531,18 +531,7 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
             }
             if (containsMask(NpcInfoType.TITLE))
             {
-              String _title = _npc.getTitle();
-              if( Config.SHOW_NPC_LVL && (_npc instanceof L2MonsterInstance) )
-              {
-                String t = "Lv " + _npc.getLevel() + (_npc.isAggressive() ? "*" : "");
-                if( _title != null )
-                {
-                  t += " " + _title;
-                }
-
-                _title = t;
-              }
-              writeS( _title );
+              writeS( _npc.getTitle() );
             }
 
             // Block 2
