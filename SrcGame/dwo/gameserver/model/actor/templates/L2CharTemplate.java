@@ -63,8 +63,8 @@ public class L2CharTemplate
 	private int _baseINT;
 	private int _baseWIT;
 	private int _baseMEN;
-    private int _baseCHA;
-    private int _baseLUC;
+	private int _baseCHA;
+	private int _baseLUC;
 	private float _basePAtk;
 	private float _baseMAtk;
 	private float _basePDef;
@@ -462,25 +462,25 @@ public class L2CharTemplate
 		_baseMEN = men;
 	}
 
-    public int getBaseLUC()
-    {
-        return _baseLUC;
-    }
+	public int getBaseLUC()
+	{
+			return _baseLUC;
+	}
 
-    public void setBaseLUC(int luc)
-    {
-        _baseLUC = luc;
-    }
+	public void setBaseLUC(int luc)
+	{
+			_baseLUC = luc;
+	}
 
-    public int getBaseCHA()
-    {
-        return _baseCHA;
-    }
+	public int getBaseCHA()
+	{
+			return _baseCHA;
+	}
 
-    public void setBaseCHA(int cha)
-    {
-        _baseCHA = cha;
-    }
+	public void setBaseCHA(int cha)
+	{
+			_baseCHA = cha;
+	}
 	/**
 	 * @return the baseCpMax
 	 */
