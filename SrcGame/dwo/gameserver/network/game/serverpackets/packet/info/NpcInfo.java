@@ -52,10 +52,10 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
     {
         _npc = npc;
 
-        if (npc.getTemplate().getIdTemplate() != npc.getTemplate().getNpcId())
-        {
-            _masks[2] |= 0x10;
-        }
+//        if (npc.getTemplate().getIdTemplate() != npc.getTemplate().getNpcId())
+//        {
+//            _masks[2] |= 0x10;
+//        }
 
         addComponentType(NpcInfoType.ATTACKABLE, NpcInfoType.UNKNOWN1, NpcInfoType.TITLE, NpcInfoType.ID, NpcInfoType.POSITION, NpcInfoType.ALIVE, NpcInfoType.RUNNING);
 
