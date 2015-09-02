@@ -2288,7 +2288,7 @@ public class L2Attackable extends L2Npc
 	public String getTitle()
 	{
 		if( Config.SHOW_NPC_LVL )
-			return "Lvl " + getLevel() + (isAggressive() ? "*" : "") + " - " + super.getTitle();
+			return "Lvl " + getLevel() + (isAggressive() ? "*" : "") + super.getTitle();
 		return super.getTitle();
 	}
 
