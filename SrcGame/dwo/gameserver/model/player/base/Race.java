@@ -28,5 +28,5 @@ public enum Race
 	Orc,
 	Dwarf,
 	Kamael,
-	Arteas
+	Ertheia
 }

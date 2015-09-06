@@ -206,7 +206,7 @@ public class UseItem extends L2GameClientPacket
                                     return;
                             }
                             break;
-                        case Arteas:
+                        case Ertheia:
                             switch (wpn.getItemType()) {
                                 case SWORD:
                                 case DAGGER:

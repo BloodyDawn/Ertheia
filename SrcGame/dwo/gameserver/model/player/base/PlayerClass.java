@@ -256,17 +256,17 @@ public enum PlayerClass
 	AeoreHealer_EvaSaint(Elf, Priest, AWAKEN),
 	AeoreHealer_ShillenSaint(DarkElf, Priest, AWAKEN),
 
-	ertheiaFighter(Arteas, Fighter, FIRST),
-	ertheiaWizzard(Arteas, Mystic, FIRST),
+	ertheiaFighter( Ertheia, Fighter, FIRST),
+	ertheiaWizzard( Ertheia, Mystic, FIRST),
 
-	marauder(Arteas, Fighter, SECOND),
-	cloudBreaker(Arteas, Mystic, SECOND),
+	marauder( Ertheia, Fighter, SECOND),
+	cloudBreaker( Ertheia, Mystic, SECOND),
 
-	ripper(Arteas, Fighter, THIRD),
-	Stratomancer(Arteas, Mystic, THIRD),
+	ripper( Ertheia, Fighter, THIRD),
+	Stratomancer( Ertheia, Mystic, THIRD),
 
-	eviscerator(Arteas, Fighter, AWAKEN),
-	sayhaSeer(Arteas, Mystic, AWAKEN);
+	eviscerator( Ertheia, Fighter, AWAKEN),
+	sayhaSeer( Ertheia, Mystic, AWAKEN);
 
 	public static final PlayerClass[] VALUES = values();
 	private static final Set<PlayerClass> mainSubclassSet;
@@ -336,7 +336,7 @@ public enum PlayerClass
 		{
             subclasses = EnumSet.copyOf(mainSubclassSet);
             subclasses.remove(this);
-            subclasses.removeAll(getSet(Arteas, SECOND));
+            subclasses.removeAll(getSet( Ertheia, SECOND));
 
             if(player.getRace() == Kamael)
 			{
