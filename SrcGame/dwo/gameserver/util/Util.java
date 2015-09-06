@@ -10,6 +10,7 @@ import dwo.gameserver.model.actor.L2Object;
 import dwo.gameserver.model.actor.instance.L2PcInstance;
 import dwo.gameserver.model.player.base.ClassId;
 import dwo.gameserver.model.player.base.ClassLevel;
+import dwo.gameserver.model.player.base.PlayerClass;
 import dwo.gameserver.model.player.base.Race;
 import dwo.gameserver.network.L2GameClient;
 import dwo.gameserver.network.game.serverpackets.packet.lobby.CharacterCreateFail;
@@ -892,7 +893,7 @@ public class Util
 	public static int getAwakenRelativeClass(int classId)
 	{
 		// Если уже переражден
-		if(classId >= 139)
+		if( PlayerClass.values()[classId].getLevel() == ClassLevel.AWAKEN )
 		{
 			return classId;
 		}
