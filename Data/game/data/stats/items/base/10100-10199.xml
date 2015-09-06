@@ -144,7 +144,7 @@
 		<set name="weight" val="1370"/>
 		<set name="price" val="6404000"/>
 		<cond msgId="1518">
-			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+			<player races="Human,Elf,DarkElf,Orc,Dwarf,Ertheia"/>
 		</cond>
 		<for/>
 	</item>
@@ -156,7 +156,7 @@
 		<set name="weight" val="1390"/>
 		<set name="price" val="6404000"/>
 		<cond msgId="1518">
-			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+			<player races="Human,Elf,DarkElf,Orc,Dwarf,Ertheia"/>
 		</cond>
 		<for/>
 	</item>
@@ -174,7 +174,7 @@
 		<set name="enchant_enabled" val="true"/>
 		<set name="item_skill" val="8311-1"/>
 		<cond msgId="1518">
-			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+			<player races="Human,Elf,DarkElf,Orc,Dwarf,Ertheia"/>
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="15"/>
@@ -195,7 +195,7 @@
 		<set name="price" val="6404000"/>
 		<set name="enchant_enabled" val="true"/>
 		<cond msgId="1518">
-			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+			<player races="Human,Elf,DarkElf,Orc,Dwarf,Ertheia"/>
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="15"/>
@@ -216,7 +216,7 @@
 		<set name="price" val="3355000"/>
 		<set name="enchant_enabled" val="true"/>
 		<cond msgId="1518">
-			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+			<player races="Human,Elf,DarkElf,Orc,Dwarf,Ertheia"/>
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="13"/>
@@ -317,7 +317,7 @@
 		<set name="equip_condition" val="{{ec_category;{@force_master}}}"/>
 		<cond msgId="1518">
 			<and>
-				<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+				<player races="Human,Elf,DarkElf,Orc,Dwarf,Ertheia"/>
 				<player class_id_restriction="88, 114"/>
 			</and>
 		</cond>

@@ -1075,7 +1075,7 @@
 		<set name="price" val="3355000"/>
 		<set name="enchant_enabled" val="true"/>
 		<cond msgId="1518">
-			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+			<player races="Human,Elf,DarkElf,Orc,Dwarf,Ertheia"/>
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="13"/>
@@ -1096,7 +1096,7 @@
 		<set name="price" val="6404000"/>
 		<set name="enchant_enabled" val="true"/>
 		<cond msgId="1518">
-			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+			<player races="Human,Elf,DarkElf,Orc,Dwarf,Ertheia"/>
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="15"/>
@@ -1117,7 +1117,7 @@
 		<set name="price" val="12250000"/>
 		<set name="enchant_enabled" val="true"/>
 		<cond msgId="1518">
-			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+			<player races="Human,Elf,DarkElf,Orc,Dwarf,Ertheia"/>
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="17"/>
@@ -1135,7 +1135,7 @@
 		<set name="weight" val="220"/>
 		<set name="price" val="28671000"/>
 		<cond msgId="1518">
-			<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+			<player races="Human,Elf,DarkElf,Orc,Dwarf,Ertheia"/>
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="2"/>
@@ -1188,7 +1188,7 @@
 		<set name="equip_condition" val="{{ec_category;{@rogue_cloack}}}"/>
 		<cond msgId="2453">
 			<and>
-				<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+				<player races="Human,Elf,DarkElf,Orc,Dwarf,Ertheia"/>
 				<player class_id_restriction="55, 93, 101, 108, 92, 102, 109"/>
 				<player cloakStatus="1"/>
 			</and>
@@ -1209,7 +1209,7 @@
 		<set name="equip_condition" val="{{ec_category;{@mage_cloack}}}"/>
 		<cond msgId="2453">
 			<and>
-				<player races="Human,Elf,DarkElf,Orc,Dwarf"/>
+				<player races="Human,Elf,DarkElf,Orc,Dwarf,Ertheia"/>
 				<player class_id_restriction="97, 105, 112, 98, 115, 116, 96, 104, 111, 94, 95, 103, 110"/>
 				<player cloakStatus="1"/>
 			</and>
