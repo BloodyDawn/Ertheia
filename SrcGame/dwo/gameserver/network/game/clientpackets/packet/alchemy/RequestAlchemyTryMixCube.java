@@ -45,7 +45,7 @@ public class RequestAlchemyTryMixCube extends L2GameClientPacket
     {
         L2PcInstance activeChar = getClient().getActiveChar();
 
-        if (activeChar == null || activeChar.getRace() != Race.Arteas)
+        if (activeChar == null || activeChar.getRace() != Race.Ertheia )
         {
             return;
         }

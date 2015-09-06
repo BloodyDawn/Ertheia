@@ -421,7 +421,7 @@ public class CharEnterWorld extends Quest
 
         if (player.getOnlineTime() == 0 && player.getLevel() == 1)
         {
-            if (player.getRace() == Race.Arteas)
+            if (player.getRace() == Race.Ertheia )
             {
                 player.sendPacket(new ExShowUsm(ExShowUsm.INTRO_ARTEAS));
             }

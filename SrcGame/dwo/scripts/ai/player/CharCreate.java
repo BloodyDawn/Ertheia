@@ -108,7 +108,7 @@ public class CharCreate extends Quest
 		for(L2SkillLearn skill : SkillTreesData.getInstance().getAvailableSkills(newChar, newChar.getClassId(), false, true, false))
 		{
 			newChar.addSkill(SkillTable.getInstance().getInfo(skill.getSkillId(), skill.getSkillLevel()), true);
-			if (newChar.getRace() != Race.Arteas) {
+			if (newChar.getRace() != Race.Ertheia ) {
                 if (skill.getSkillId() == 1001 || skill.getSkillId() == 1177) {
                     shortcut = new L2ShortCut(1, 0, 2, skill.getSkillId(), skill.getSkillLevel(), 1);
                     newChar.getShortcutController().registerShortcut(shortcut);

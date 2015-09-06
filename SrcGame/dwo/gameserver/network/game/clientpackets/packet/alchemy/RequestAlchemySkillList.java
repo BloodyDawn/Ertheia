@@ -22,7 +22,7 @@ public class RequestAlchemySkillList extends L2GameClientPacket
     protected void runImpl()
     {
         final L2PcInstance activeChar = getClient().getActiveChar();
-        if ((activeChar == null) || (activeChar.getRace() != Race.Arteas))
+        if ((activeChar == null) || (activeChar.getRace() != Race.Ertheia))
         {
             return;
         }

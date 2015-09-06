@@ -53,7 +53,7 @@ public final class Alchemic extends Quest
             {
                 case 1:
                 {
-                    if (player.getRace() == Race.Arteas)
+                    if (player.getRace() == Race.Ertheia )
                     {
                         player.sendPacket(new TutorialShowHtml(TutorialShowHtml.CLIENT_SIDE, TUTORIAL_LINK));
                     }
