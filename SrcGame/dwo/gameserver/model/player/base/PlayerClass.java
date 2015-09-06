@@ -268,6 +268,7 @@ public enum PlayerClass
 	eviscerator(Arteas, Fighter, AWAKEN),
 	sayhaSeer(Arteas, Mystic, AWAKEN);
 
+	public static final PlayerClass[] VALUES = values();
 	private static final Set<PlayerClass> mainSubclassSet;
 	private static final Set<PlayerClass> neverSubclassed = EnumSet.of(Overlord, Warsmith);
 	private static final Set<PlayerClass> subclasseSet1 = EnumSet.of(DarkAvenger, Paladin, TempleKnight, ShillienKnight);

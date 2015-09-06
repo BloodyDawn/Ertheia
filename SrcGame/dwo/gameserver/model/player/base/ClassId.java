@@ -393,28 +393,23 @@ public enum ClassId
 	 */
 	public int level()
 	{
-		if(_parent == null)
-		{
-			return 0;
-		}
-
-		return 1 + _parent.level();
+		return PlayerClass.VALUES[_id].getLevel().ordinal();
 	}
 
-    public ClassType2 getType2()
-    {
-        return _type;
-    }
+	public ClassType2 getType2()
+	{
+			return _type;
+	}
 
-    public final boolean isOfType2(ClassType2 type)
-    {
-        return _type == type;
-    }
+	public final boolean isOfType2(ClassType2 type)
+	{
+			return _type == type;
+	}
 
-    public final String getName()
-    {
-        return Util.getGeneralAwakenName(getId());
-    }
+	public final String getName()
+	{
+			return Util.getGeneralAwakenName(getId());
+	}
 
 	/**
 	 * @return its parent ClassId
