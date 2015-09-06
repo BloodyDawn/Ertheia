@@ -2,9 +2,9 @@ package dwo.gameserver.model.player.base;
 
 public enum ClassLevel
 {
-    NONE,
+	NONE,
 	FIRST,
 	SECOND,
 	THIRD,
-    AWAKEN
+	AWAKEN
 }

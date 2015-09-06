@@ -256,17 +256,17 @@ public enum PlayerClass
 	AeoreHealer_EvaSaint(Elf, Priest, AWAKEN),
 	AeoreHealer_ShillenSaint(DarkElf, Priest, AWAKEN),
 
-    ertheiaFighter(Arteas, Fighter, FIRST),
-    ertheiaWizzard(Arteas, Mystic, FIRST),
+	ertheiaFighter(Arteas, Fighter, NONE),
+	ertheiaWizzard(Arteas, Mystic, NONE),
 
-    marauder(Arteas, Fighter, SECOND),
-    cloudBreaker(Arteas, Mystic, SECOND),
+	marauder(Arteas, Fighter, FIRST),
+	cloudBreaker(Arteas, Mystic, FIRST),
 
-    ripper(Arteas, Fighter, THIRD),
-    Stratomancer(Arteas, Mystic, THIRD),
+	ripper(Arteas, Fighter, SECOND),
+	Stratomancer(Arteas, Mystic, SECOND),
 
-    eviscerator(Arteas, Fighter, AWAKEN),
-    sayhaSeer(Arteas, Mystic, AWAKEN);
+	eviscerator(Arteas, Fighter, THIRD),
+	sayhaSeer(Arteas, Mystic, THIRD);
 
 	private static final Set<PlayerClass> mainSubclassSet;
 	private static final Set<PlayerClass> neverSubclassed = EnumSet.of(Overlord, Warsmith);
