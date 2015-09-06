@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="../../data/xsd/NpcData.xsd">
+	<npc id="60200" displayId="29001" name="Королева Муравьев" server_name="queen_ant" title="">
+		<set name="type" value="L2RaidBoss"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="99"/>
+		<set name="exp" value="7840606928"/>
+		<set name="sp" value="651281540"/>
+		<set name="org_hp" value="10150785"/>
+		<set name="org_mp" value="22800"/>
+		<set name="org_hp_regen" value="250.5"/>
+		<set name="org_mp_regen" value="3"/>
+		<set name="base_physical_attack" value="25971"/>
+		<set name="base_magic_attack" value="9363"/>
+		<set name="base_defend" value="3500"/>
+		<set name="base_magic_defend" value="3500"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="200"/>
+		<set name="ground_low" value="50"/>
+		<set name="str" value="110"/>
+		<set name="con" value="107"/>
+		<set name="dex" value="55"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="78"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="45"/>
+		<set name="collision_height" value="53"/>
+		<set name="baseFireRes" value="150"/>
+		<set name="baseWaterRes" value="150"/>
+		<set name="baseWindRes" value="150"/>
+		<set name="baseEarthRes" value="150"/>
+		<set name="baseDivineRes" value="150"/>
+		<set name="baseDarkRes" value="150"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="clan" value="custom_queen_ant_clan"/>
+			<set name="clan_range" value="200"/>
+		</ai_params>
+		<skills>
+			<set id="4019" level="1"/>
+			<set id="4021" level="1"/>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="12"/>
+		</skills>
+		<minions>
+			<set amount_max="7" amount_min="3" id="60201"/>
+		</minions>
+	</npc>
+	<npc id="60201" displayId="29005" name="Муравей Гвардеец" server_name="royal_guard_ant" title="">
+		<set name="type" value="L2Monster"/>
+		<set name="sex" value="male"/>
+		<set name="level" value="95"/>
+		<set name="org_hp" value="7051"/>
+		<set name="org_mp" value="463"/>
+		<set name="org_hp_regen" value="122"/>
+		<set name="org_mp_regen" value="1.8"/>
+		<set name="base_physical_attack" value="1190"/>
+		<set name="base_magic_attack" value="1074"/>
+		<set name="base_defend" value="610"/>
+		<set name="base_magic_defend" value="223"/>
+		<set name="base_attack_speed" value="253"/>
+		<set name="base_attack_range" value="40"/>
+		<set name="base_critical" value="4"/>
+		<set name="ground_high" value="230"/>
+		<set name="ground_low" value="40"/>
+		<set name="str" value="89"/>
+		<set name="con" value="75"/>
+		<set name="dex" value="42"/>
+		<set name="int" value="79"/>
+		<set name="wit" value="66"/>
+		<set name="men" value="10"/>
+		<set name="collision_radius" value="26"/>
+		<set name="collision_height" value="15"/>
+		<set name="baseFireRes" value="20"/>
+		<set name="baseWaterRes" value="20"/>
+		<set name="baseWindRes" value="20"/>
+		<set name="baseEarthRes" value="20"/>
+		<set name="baseDivineRes" value="20"/>
+		<set name="baseDarkRes" value="20"/>
+		<ai_params>
+			<set name="ai_type" value="balanced"/>
+			<set name="clan" value="custom_queen_ant_clan"/>
+			<set name="clan_range" value="200"/>
+		</ai_params>
+		<skills>
+			<set id="4045" level="1"/>
+			<set id="4408" level="1"/>
+			<set id="4409" level="1"/>
+			<set id="4410" level="11"/>
+			<set id="4411" level="11"/>
+			<set id="4412" level="11"/>
+			<set id="4413" level="11"/>
+			<set id="4414" level="2"/>
+			<set id="4415" level="3"/>
+			<set id="4416" level="12"/>
+		</skills>
+	</npc>
+</list>

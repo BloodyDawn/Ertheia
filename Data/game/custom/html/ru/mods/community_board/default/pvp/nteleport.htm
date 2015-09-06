@@ -1,0 +1,29 @@
+<br>
+<table>
+    <tr>
+        <td fixwidth=300 valign=top>
+            <center>
+                <button action="bypass _bbstop;newteleports/town" value="Towns" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"/>
+                <button action="bypass _bbstop;newteleports/townarea" value="Town Area's" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"/>
+                <button action="bypass _bbstop;newteleports/primeval" value="Primeval Area" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"/>
+                <button action="bypass _bbstop;newteleports/clanhall" value="Conquerable Halls" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"/>
+                <button action="bypass _bbstop;newteleports/epilogue" value="Gracia Epilogue" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"/>
+            </center>
+        </td>
+        <td fixwidth=300 valign=top>
+            <font color=LEVEL>Пользовательские точки телепорта</font>
+            <br>
+            <font color=3293F3>1. Введите имя сохраняемой точки</font>
+            <br>
+            <edit var="name" width="250"/>
+            <br>
+            <font color=3293F3>2. Cохраните текущюю точку</font>
+            <br>
+            <button action="bypass -h _bbstop;nteleport:teleportsave $name" value="Сохранить точку" width=200 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"/>
+            <br>
+            <font color=LEVEL>Сохраненные точки</font>
+            <br>
+            %points%
+        </td>
+    </tr>
+</table>
