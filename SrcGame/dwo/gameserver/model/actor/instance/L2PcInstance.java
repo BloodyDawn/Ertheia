@@ -4774,8 +4774,7 @@ public class L2PcInstance extends L2Playable
 	@Override
 	public boolean isAwakened()
 	{
-		// return _baseClassId >= 148;
-		return _activeClassId >= 148;
+		return ClassId.values()[_activeClassId].getClassLevel() == ClassLevel.AWAKEN;
 	}
 
 	/**

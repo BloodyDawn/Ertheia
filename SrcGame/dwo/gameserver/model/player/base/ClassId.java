@@ -173,7 +173,7 @@ public enum ClassId
 	judicator(136, false, Race.Kamael, inspector, null),
 
 	dummyEntry35(137, false, null, null, null),
-	dummyEntry37(138, false, null, null, null),
+	dummyEntry36(138, false, null, null, null),
 
 	/*
 	 139  Sigil Knight  - Phoenix Knight, Hell Knight, Eva's Templar, Shillen Templar
@@ -195,7 +195,7 @@ public enum ClassId
 	@Deprecated WynnSummoner(145, false, null, null, null),
 	@Deprecated AeoreHealer(146, false, null, null, null),
 
-	dummyEntry38(147, false, null, null, null),
+	dummyEntry37(147, false, null, null, null),
 
 	SigelKnight_PhoenixKnight(148, false, Race.Human, phoenixKnight, ClassType2.Knight_Group),
 	SigelKnight_HellKnight(149, false, Race.Human, hellKnight, ClassType2.Knight_Group),
@@ -265,7 +265,7 @@ public enum ClassId
 
 	/* The parent ClassId or null if this class is a root */
 	private final ClassId _parent;
-    
+
     private final ClassType2 _type;
 
 	/**
@@ -393,7 +393,13 @@ public enum ClassId
 	 */
 	public int level()
 	{
-		return PlayerClass.VALUES[_id].getLevel().ordinal();
+    ClassLevel classLevel = getClassLevel();
+		return classLevel == null ? 0 : classLevel.ordinal();
+	}
+
+	public ClassLevel getClassLevel()
+	{
+		return PlayerClass.VALUES[_id].getLevel();
 	}
 
 	public ClassType2 getType2()
@@ -417,5 +423,14 @@ public enum ClassId
 	public ClassId getParent()
 	{
 		return _parent;
+	}
+
+	public static void main( String[] args )
+	{
+		for (ClassId classId : values())
+		{
+			System.out.println(classId.level());
+		}
+		values();
 	}
 }
