@@ -396,6 +396,11 @@ public enum ClassId
 		return PlayerClass.VALUES[_id].getLevel().ordinal();
 	}
 
+	public ClassLevel getClassLevel()
+	{
+		return PlayerClass.VALUES[_id].getLevel();
+	}
+
 	public ClassType2 getType2()
 	{
 			return _type;
