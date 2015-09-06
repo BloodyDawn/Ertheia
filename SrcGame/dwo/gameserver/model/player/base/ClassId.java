@@ -239,17 +239,17 @@ public enum ClassId
 	AeoreHealer_EvaSaint(180, true, Race.Elf, evaSaint, ClassType2.Healer_Group),
 	AeoreHealer_ShillenSaint(181, true, Race.DarkElf, shillienSaint, ClassType2.Healer_Group),
 
-    Arteas_Fighter(182, false, Race.Arteas, null, ClassType2.Arteas_Group),
-    Arteas_Wizard(183, true, Race.Arteas, null, ClassType2.Arteas_Group),
+	Arteas_Fighter(182, false, Race.Arteas, null, ClassType2.Arteas_Group),
+	Arteas_Wizard(183, true, Race.Arteas, null, ClassType2.Arteas_Group),
 
-    Marauder(184, false, Race.Arteas, Arteas_Fighter, ClassType2.Arteas_Group),
-    Cloud_Breaker(185, true, Race.Arteas, Arteas_Wizard, ClassType2.Arteas_Group),
+	Marauder(184, false, Race.Arteas, Arteas_Fighter, ClassType2.Arteas_Group),
+	Cloud_Breaker(185, true, Race.Arteas, Arteas_Wizard, ClassType2.Arteas_Group),
 
-    Ripper(186, false, Race.Arteas, Marauder, ClassType2.Arteas_Group),
-    Stratomancer(187, true, Race.Arteas, Cloud_Breaker, ClassType2.Arteas_Group),
+	Ripper(186, false, Race.Arteas, Marauder, ClassType2.Arteas_Group),
+	Stratomancer(187, true, Race.Arteas, Cloud_Breaker, ClassType2.Arteas_Group),
 
-    Eviscerator(188, false, Race.Arteas, Ripper, ClassType2.Arteas_Group),
-    Sayha_Seer(189, true, Race.Arteas, Stratomancer, ClassType2.Arteas_Group);
+	Eviscerator(188, false, Race.Arteas, Ripper, ClassType2.Arteas_Group),
+	Sayha_Seer(189, true, Race.Arteas, Stratomancer, ClassType2.Arteas_Group);
 
 	/* The Identifier of the Class */
 	private final int _id;
