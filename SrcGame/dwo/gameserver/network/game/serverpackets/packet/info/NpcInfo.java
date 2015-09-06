@@ -52,10 +52,10 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
     {
         _npc = npc;
 
-        if (npc.getTemplate().getIdTemplate() != npc.getTemplate().getNpcId())
-        {
-            _masks[2] |= 0x10;
-        }
+//        if (npc.getTemplate().getIdTemplate() != npc.getTemplate().getNpcId())
+//        {
+//            _masks[2] |= 0x10;
+//        }
 
         addComponentType(NpcInfoType.ATTACKABLE, NpcInfoType.UNKNOWN1, NpcInfoType.TITLE, NpcInfoType.ID, NpcInfoType.POSITION, NpcInfoType.ALIVE, NpcInfoType.RUNNING);
 
@@ -531,18 +531,7 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
             }
             if (containsMask(NpcInfoType.TITLE))
             {
-              String _title = _npc.getTitle();
-              if( Config.SHOW_NPC_LVL && (_npc instanceof L2MonsterInstance) )
-              {
-                String t = "Lv " + _npc.getLevel() + (_npc.isAggressive() ? "*" : "");
-                if( _title != null )
-                {
-                  t += " " + _title;
-                }
-
-                _title = t;
-              }
-              writeS( _title );
+              writeS( _npc.getTitle() );
             }
 
             // Block 2

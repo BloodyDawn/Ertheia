@@ -3,6 +3,7 @@ package dwo.gameserver.datatables.xml;
 import dwo.config.Config;
 import dwo.config.FilePath;
 import dwo.gameserver.engine.documentengine.XmlDocumentParser;
+import dwo.gameserver.model.actor.instance.L2MonsterInstance;
 import dwo.gameserver.model.actor.templates.L2NpcTemplate;
 import dwo.gameserver.model.player.base.ClassId;
 import dwo.gameserver.model.skills.SkillTable;

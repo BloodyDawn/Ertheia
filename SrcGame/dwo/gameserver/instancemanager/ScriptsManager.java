@@ -35,6 +35,9 @@ public class ScriptsManager
         continue;
       }
 
+      if( cls.isAnonymousClass() || cls.isLocalClass() || cls.isMemberClass() )
+        continue;
+
       try
       {
         Method m = cls.getMethod( "main", new Class[] { String[].class } );
