@@ -13,21 +13,24 @@ import java.util.Set;
  */
 public class NpcInfoAbnormalVisualEffect extends L2GameServerPacket
 {
-    private final L2Npc _npc;
-    
-    public NpcInfoAbnormalVisualEffect(L2Npc npc)
-    {
-        _npc = npc;
-    }
+  private final L2Npc _npc;
 
-    @Override
-    protected void writeImpl()
-    {
-        writeD(_npc.getObjectId());
-        writeD(((L2MonsterInstance) _npc).getTransformation() == null ? 0x00 : ((L2MonsterInstance) _npc).getTransformationId());
-        
-        Set<Integer> _abnormals = _npc.getAbnormalEffects();
-        writeD(_abnormals.size());
-        _abnormals.forEach(this::writeH);
-    }
+  public NpcInfoAbnormalVisualEffect( L2Npc npc )
+  {
+    _npc = npc;
+  }
+
+  @Override
+  protected void writeImpl()
+  {
+    writeD( _npc.getObjectId() );
+    if( _npc instanceof L2MonsterInstance )
+      writeD( ((L2MonsterInstance) _npc).getTransformationId() );
+    else
+      writeD( 0x00 );
+
+    Set<Integer> _abnormals = _npc.getAbnormalEffects();
+    writeD( _abnormals.size() );
+    _abnormals.forEach( this::writeH );
+  }
 }

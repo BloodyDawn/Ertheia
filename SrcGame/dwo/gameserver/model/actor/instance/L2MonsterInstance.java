@@ -43,7 +43,6 @@ public class L2MonsterInstance extends L2Attackable
 	private L2MonsterInstance _master;
 	private MinionList _minionList;
 	private L2Transformation _transformation;
-	private int _transformationId;
 
 	/**
 	 * Constructor of L2MonsterInstance (use L2Character and L2NpcInstance
@@ -283,21 +282,6 @@ public class L2MonsterInstance extends L2Attackable
 	public int getTransformationId()
 	{
 		return _transformation == null ? 0 : _transformation.getId();
-	}
-
-	/**
-	 * This returns the transformation Id stored inside the character table,
-	 * selected by the method: transformSelectInfo()
-	 * For example, if a player is transformed as a Buffalo, and then picks up
-	 * the Zariche,
-	 * the transform Id returned will be that of the Buffalo, and NOT the
-	 * Zariche.
-	 *
-	 * @return Transformation Id
-	 */
-	public int transformId()
-	{
-		return _transformationId;
 	}
 
 	@Override
