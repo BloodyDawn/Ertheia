@@ -185,13 +185,13 @@ public class PcInventory extends Inventory
 			else
 			{
 				InventoryUpdate playerIU = new InventoryUpdate();
-				playerIU.addItem(item);
+				playerIU.addNewItem(item);
 				actor.sendPacket(playerIU);
 			}
 
 			// Update current load as well
-            actor.sendPacket(new ExUserInfoInvenWeight(actor));
-            actor.sendPacket(new ExAdenaInvenCount(actor));
+			actor.sendPacket(new ExUserInfoInvenWeight(actor));
+			actor.sendPacket(new ExAdenaInvenCount(actor));
 		}
 		return item;
 	}

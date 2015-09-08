@@ -2,13 +2,10 @@ package dwo.gameserver.network.game.serverpackets;
 
 import dwo.config.Config;
 import dwo.gameserver.model.items.ItemInfo;
-import dwo.gameserver.model.items.base.instance.L2ItemInstance;
-import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import javolution.util.FastList;
 import org.apache.log4j.Level;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class InventoryUpdate extends AbstractInventoryUpdate
 {
@@ -22,10 +19,6 @@ public class InventoryUpdate extends AbstractInventoryUpdate
 			showDebug();
 		}
 	}
-
-	/**
-	 * @param items
-	 */
 	public InventoryUpdate(List<ItemInfo> items)
 	{
 		_items = items;
@@ -48,10 +41,4 @@ public class InventoryUpdate extends AbstractInventoryUpdate
 	{
 		writeItems();
 	}
-
-    @Override
-    public void runImpl()
-    {
-        getClient().getActiveChar().sendPacket(new ExUserInfoInvenWeight(getClient().getActiveChar()));
-    }
 }
