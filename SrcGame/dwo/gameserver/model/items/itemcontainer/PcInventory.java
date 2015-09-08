@@ -185,7 +185,7 @@ public class PcInventory extends Inventory
 			else
 			{
 				InventoryUpdate playerIU = new InventoryUpdate();
-				playerIU.addNewItem(item);
+				playerIU.addItem(item );
 				actor.sendPacket(playerIU);
 			}
 
