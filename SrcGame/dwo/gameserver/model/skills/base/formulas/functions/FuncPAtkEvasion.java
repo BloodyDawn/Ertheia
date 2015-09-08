@@ -38,7 +38,8 @@ public class FuncPAtkEvasion extends Func
 		//	170	= dex(лвк) 50 level 99
 
 		int level = env.getCharacter().getLevel();
-		env.setValue(Math.sqrt(env.getCharacter().getDEX()) * Math.sqrt(env.getCharacter().getLUC()) * 5 + level);
+//		env.setValue(Math.sqrt(env.getCharacter().getDEX()) * Math.sqrt(env.getCharacter().getLUC()) * 5 + level);
+		env.setValue(Math.sqrt(env.getCharacter().getDEX()) * 5 + level);
 
 		if(level > 69)
 		{
