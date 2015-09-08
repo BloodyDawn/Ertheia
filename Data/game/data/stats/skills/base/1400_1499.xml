@@ -1691,7 +1691,8 @@
             <effect effectType="NEGATE" name="Negate" noicon="1" val="0"/>
         </for>
     </skill>
-    <skill enchantGroup1="5" enchantGroup2="5" id="1457" levels="1" name="Эхо Воодушевления">
+    <skill enchantGroup1="5" enchantGroup2="5" id="1457" levels="2" name="Эхо Воодушевления">
+        <table name="#time">1200 1800</table>
         <table name="#ench1Time">1240 1280 1320 1360 1400 1440 1480 1520 1560 1600 1640 1680 1720 1760 1800</table>
         <table name="#ench2mpConsume">140 135 130 125 120 115 110 106 101 96 91 86 81 76 72</table>
         <set name="mpConsume" val="145"/>
@@ -1703,7 +1704,7 @@
         <set name="operateType" val="OP_ACTIVE"/>
         <enchant2 name="mpConsume" val="#ench2mpConsume"/>
         <for>
-            <effect abnormalLvl="1" abnormalTime="1200" abnormalType="ma_up_special" name="Buff" val="0">
+            <effect abnormalLvl="1" abnormalTime="#time" abnormalType="ma_up_special" name="Buff" val="0">
                 <mul order="0x30" stat="mAtk" val="1.25"/>
                 <mul order="0x30" stat="MagicalMpConsumeRate" val="1.35"/>
             </effect>

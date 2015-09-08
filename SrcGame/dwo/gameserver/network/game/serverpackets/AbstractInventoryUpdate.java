@@ -15,6 +15,11 @@ import java.util.concurrent.ConcurrentSkipListMap;
  */
 public abstract class AbstractInventoryUpdate extends L2GameServerPacket
 {
+    public static final int UNCHANGED = 0;
+    public static final int ADDED = 1;
+    public static final int MODIFIED = 2;
+    public static final int REMOVED = 3;
+
     private final Map<Integer, ItemInfo> _items = new ConcurrentSkipListMap<>();
 
     public AbstractInventoryUpdate()
@@ -41,17 +46,17 @@ public abstract class AbstractInventoryUpdate extends L2GameServerPacket
 
     public final void addNewItem(L2ItemInstance item)
     {
-        _items.put(item.getObjectId(), new ItemInfo(item, 1));
+        _items.put( item.getObjectId(), new ItemInfo( item, ADDED ) );
     }
 
     public final void addModifiedItem(L2ItemInstance item)
     {
-        _items.put(item.getObjectId(), new ItemInfo(item, 2));
+        _items.put( item.getObjectId(), new ItemInfo( item, MODIFIED ) );
     }
 
     public final void addRemovedItem(L2ItemInstance item)
     {
-        _items.put(item.getObjectId(), new ItemInfo(item, 3));
+        _items.put( item.getObjectId(), new ItemInfo( item, REMOVED ) );
     }
 
     public final void addItems(List<L2ItemInstance> items)
