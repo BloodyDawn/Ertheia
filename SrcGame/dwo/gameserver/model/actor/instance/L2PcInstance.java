@@ -5224,7 +5224,7 @@ public class L2PcInstance extends L2Playable
 			else
 			{
 				InventoryUpdate playerIU = new InventoryUpdate();
-				playerIU.addItem(newitem);
+				playerIU.addNewItem(newitem);
 				sendPacket(playerIU);
 			}
 
