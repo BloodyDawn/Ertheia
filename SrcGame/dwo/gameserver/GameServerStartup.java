@@ -77,20 +77,20 @@ public class GameServerStartup
 
 		gameServer = this;
 
-		printSection("Database Engine");
+		printSection( "Database Engine" );
 		L2DatabaseFactory.getInstance();
 
-		printSection("IDFactory Engine");
+		printSection( "IDFactory Engine" );
 		IdFactory.getInstance();
-		_log.log(Level.INFO, "IdFactory: Free ObjectID's remaining: " + IdFactory.getInstance().size());
+		_log.log( Level.INFO, "IdFactory: Free ObjectID's remaining: " + IdFactory.getInstance().size() );
 
 		ThreadPoolManager.getInstance();
 
-		printSection("Engines");
+		printSection( "Engines" );
 		ScriptsManager.getInstance();
 		ServerPacketOpCodeManager.getInstance();
 
-		printSection("World Engine");
+		printSection( "World Engine" );
         Colors.loadColors();
 		GameTimeController.init();
 		InstanceManager.getInstance();
@@ -102,16 +102,16 @@ public class GameServerStartup
 		DynamicSpawnData.getInstance();
 		ResidenceFunctionData.getInstance();
 
-		printSection("Skills Engine");
+		printSection( "Skills Engine" );
 		BuffStackGroupData.getInstance();
 		EnchantSkillGroupsTable.getInstance();
         SkillTable.getInstance().loadClient();
-        SkillTable.getInstance().load(false);
+        SkillTable.getInstance().load( false );
 		SkillTreesData.getInstance();
 
-		printSection("Items Engine");
+		printSection( "Items Engine" );
         ItemTable.getInstance().loadClient();
-        ItemTable.getInstance().load(false);
+        ItemTable.getInstance().load( false );
         SummonItemsData.getInstance();
 		EnchantBonusData.getInstance();
 		BuyListData.getInstance();
@@ -133,7 +133,7 @@ public class GameServerStartup
         AbilityPointsData.getInstance();
         AlchemyDataTable.getInstance();
 
-		printSection("Characters Engine");
+		printSection( "Characters Engine" );
 		CharTemplateTable.getInstance();
 		ClassTemplateTable.getInstance();
 		CharNameTable.getInstance();
@@ -147,19 +147,19 @@ public class GameServerStartup
 		HitConditionBonus.getInstance();
 		ObsceneFilterTable.getInstance();
 
-		printSection("Clans Engine");
+		printSection( "Clans Engine" );
 		ClanTable.getInstance();
 		ClanTable.getInstance().restoreWars();
 		ClanHallSiegeManager.getInstance();
 		ClanHallManager.getInstance();
 		AuctionManager.getInstance();
 
-		printSection("Geodata Engine");
+		printSection( "Geodata Engine" );
 		GeoEngine.init();
 		PathFinding.init();
 		DoorGeoEngine.init();
 
-		printSection("NPCs Engine");
+		printSection( "NPCs Engine" );
 		HerbDropTable.getInstance();
 		NpcTable.getInstance();
 		AutoChatDataTable.getInstance();
@@ -179,6 +179,7 @@ public class GameServerStartup
 		FourSepulchersManager.getInstance().init();
 		TeleportListTable.getInstance();
 		BeautyShopData.getInstance();
+		CustomDropListDataXml.getInstance();
 
 		printSection("Residence Siege Engine");
 		CastleSiegeManager.getInstance().getSieges();

@@ -65,7 +65,7 @@ public class CustomDropListDataXml extends XmlDocumentParser
       }
       ++dropDataCount;
     }
-    _log.log( Level.INFO, (this.getClass().getSimpleName() + ": Loaded " + dropDataCount + " drops.") );
+    _log.log( Level.INFO, (this.getClass().getSimpleName() + ": Loaded " + dropDataCount + " custom drops.") );
   }
 
   @Override
