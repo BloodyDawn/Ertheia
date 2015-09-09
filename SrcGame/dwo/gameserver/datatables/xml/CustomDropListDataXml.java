@@ -73,58 +73,55 @@ public class CustomDropListDataXml extends XmlDocumentParser
   {
     try
     {
-      for( Element l : rootElement.getChildren() )
+      for( Element n : rootElement.getChildren() )
       {
-        for( Element n : l.getChildren() )
+        if( "npc".equalsIgnoreCase( n.getName() ) )
         {
-          if( "npc".equalsIgnoreCase( n.getName() ) )
+          int npcId = Integer.parseInt( n.getAttributeValue( "id" ) );
+          L2NpcTemplate template = NpcTable.getInstance().getTemplate( npcId );
+          if( template == null )
           {
-            int npcId = Integer.parseInt( n.getAttributeValue( "id" ) );
-            L2NpcTemplate template = NpcTable.getInstance().getTemplate( npcId );
-            if( template == null )
+            _log.log( Level.WARN, ("Omitted NPC ID: " + npcId + " - NPC template does not exists!") );
+          }
+          else
+          {
+            template.clearAllDropData();
+            DropList dropList = new DropList();
+            dropList.categories = new ArrayList<>();
+            dropList.id = npcId;
+            dropLists.add( dropList );
+            for( Element d : n.getChildren() )
             {
-              _log.log( Level.WARN, ("Omitted NPC ID: " + npcId + " - NPC template does not exists!") );
-            }
-            else
-            {
-              template.clearAllDropData();
-              DropList dropList = new DropList();
-              dropList.categories = new ArrayList<>();
-              dropList.id = npcId;
-              dropLists.add( dropList );
-              for( Element d : n.getChildren() )
+              if( d.getName().equals( "category" ) )
               {
-                if( d.getName().equals( "category" ) )
+                int categoryId = Integer.parseInt( d.getAttributeValue( "id" ) );
+                double cache = Double.parseDouble( d.getAttributeValue( "chance" ) );
+                DropCategory dropCategory = new DropCategory();
+                dropCategory.id = categoryId;
+                dropCategory.setChance( cache );
+                dropList.categories.add( dropCategory );
+
+                List<L2DropData> items = new ArrayList<>();
+                dropCategory.items = items;
+                for( Element r : d.getChildren() )
                 {
-                  int categoryId = Integer.parseInt( d.getAttributeValue( "id" ) );
-                  double cache = Double.parseDouble( d.getAttributeValue( "chance" ) );
-                  DropCategory dropCategory = new DropCategory();
-                  dropCategory.id = categoryId;
-                  dropCategory.setChance( cache );
-                  dropList.categories.add( dropCategory );
-
-                  List<L2DropData> items = new ArrayList<>();
-                  dropCategory.items = items;
-                  for( Element r : d.getChildren() )
+                  if( r.getName().equals( "items" ) )
                   {
-                    if( r.getName().equals( "items" ) )
+                    for( Element i : r.getChildren() )
                     {
-                      for( Element i : r.getChildren() )
+                      if( i.getName().equals( "item" ) )
                       {
-                        if( i.getName().equals( "item" ) )
-                        {
-                          int itemId = Integer.parseInt( i.getAttributeValue( "id" ) );
-                          int min = Integer.parseInt( i.getAttributeValue( "min" ) );
-                          int max = Integer.parseInt( i.getAttributeValue( "max" ) );
-                          double chance = Double.parseDouble( i.getAttributeValue( "chance" ) );
+                        int itemId = Integer.parseInt( i.getAttributeValue( "id" ) );
+                        int min = Integer.parseInt( i.getAttributeValue( "min" ) );
+                        int max = Integer.parseInt( i.getAttributeValue( "max" ) );
+                        double chance = Double.parseDouble( i.getAttributeValue( "chance" ) );
 
-                          L2DropData dropData = new L2DropData();
-                          dropData.setItemId( itemId );
-                          dropData.setMinDrop( min );
-                          dropData.setMaxDrop( max );
-                          dropData.setChance( chance );
-                          items.add( dropData );
-                        }
+                        L2DropData dropData = new L2DropData();
+                        dropData.setItemId( itemId );
+                        dropData.setMinDrop( min );
+                        dropData.setMaxDrop( max );
+                        dropData.setChance( chance );
+                        items.add( dropData );
                       }
                     }
                   }
