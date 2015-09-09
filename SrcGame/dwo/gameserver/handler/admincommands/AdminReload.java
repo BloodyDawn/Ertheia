@@ -317,6 +317,7 @@ public class AdminReload implements IAdminCommandHandler
 					else if(op.equalsIgnoreCase("teleport"))
 					{
 						TeleportListTable.getInstance().load();
+						CommunityTeleportData.getInstance().load();
 						activeChar.sendChatMessage(0, ChatType.ALL, "SYS", "Teleport Locations have been reloaded");
 					}
 					else if(op.equalsIgnoreCase("zone"))
