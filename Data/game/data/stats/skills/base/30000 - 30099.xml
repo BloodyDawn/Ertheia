@@ -1,27 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
 <list>
-    <skill id="30001" levels="6" name="Водная Атака">
-        <table name="#mpInitialConsume">2 2 3 3 4 4</table>
-        <table name="#mpConsume">7 8 11 12 14 16</table>
-        <table name="#magicLvl">4 7 11 14 17 20</table>
-        <table name="#power">20000 9 11 13 14 16</table>
-        <set name="mpInitialConsume" val="#mpInitialConsume"/>
+    <skill id="30001" levels="25" name="Водная Атака">
+        <table name="#mpInitialConsume">2 2 3 3 4 4 5 5 5 7 7 7 8 8 8 9 9 9 10 10 10 11 11 11 12</table>
+        <table name="#mpConsume">3 8 10 13 16 18 20 21 23 25 27 29 30 31 32 32 33 33 33 34 34 34 34 34 35</table>
+        <table name="#magicLvl">1 20 28 36 42 46 50 54 58 62 66 70 74 77 79 81 83 85 87 89 91 93 95 97 99</table>
+        <table name="#power">1 20 28 36 42 46 50 54 58 62 66 70 74 77 79 81 83 85 87 89 91 93 95 97 99</table>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="80"/>
         <set name="mpConsume" val="#mpConsume"/>
-        <set name="magicLvl" val="#magicLvl"/>
-        <set name="power" val="#power"/>
-        <set name="lvlDepend" val="1"/>
-        <set name="target" val="TARGET_ONE"/>
+        <set name="mpInitialConsume" val="#mpInitialConsume"/>
+        <set name="reuseDelay" val="0"/>
+        <set name="effectRange" val="80"/>
         <set name="element" val="2"/>
         <set name="elementPower" val="20"/>
-        <set name="reuseDelay" val="0"/>
-        <set name="hitTime" val="500"/>
-        <set name="basicProperty" val="MAGIC"/>
-        <set name="skillType" val="MDAM"/>
         <set name="castMagic" val="MAGIC"/>
+        <set name="overHit" val="true"/>
+        <set name="magicLvl" val="#magicLvl"/>
         <set name="operateType" val="OP_ACTIVE"/>
-        <set name="castRange" val="40"/>
+        <set name="power" val="#power"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="target" val="TARGET_ONE"/>
+		<cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
         <for>
-            <effect abnormalLvl="1" abnormalTime="1" name="NonStopCast" noicon="1" val="0"/>
+            <effect chanceType="ON_START" name="ChanceSkillTrigger" noicon="1" triggeredId="30002" triggeredLevel="1" val="0"/>
         </for>
     </skill>
+
+    <skill id="30002" levels="3" name="Водная Атака">
+        <table name="#abnormalLvl">1 2 3</table>
+        <table name="#magicLvl">20 25 30</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="triggeredLevelUpMax" val="3"/>
+        <set name="isDebuff" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="power" val="100"/>
+        <for>
+            <effect abnormalLvl="#abnormalLvl" abnormalTime="5" name="Debuff" val="0">
+                <mul order="0x30" stat="mDef" val="0.7"/>
+                <sub order="0x40" stat="runSpd" val="70"/>
+            </effect>
+        </for>
+    </skill>
+	
+	<skill id="30003" levels="17" name="Ледяная Вспышка">
+	<!--TODO: С определенной вероятностью может наложить Клеймо Шторма Ур. 4, при этом персонажу можно будет использовать Факел.-->
+		<table name="#magicLevel">58 62 66 70 74 77 79 81 83 85 86 88 90 92 94 96 98</table>
+		<table name="#power">110 120 130 140 150 157 162 167 172 501 515 543 571 599 627 655 683</table>
+		<table name="#mp_consume">47 51 54 58 60 62 64 65 66 67 67 68 68 68 69 69 70</table>
+		<set name="coolTime" val="500"/>
+		<set name="castRange" val="80"/>
+		<set name="hitTime" val="4000"/>
+		<set name="mpConsume" val="#mp_consume"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="magicLvl" val="#magicLevel"/>
+		<set name="castMagic" val="MAGIC"/>
+		<set name="power" val="#power"/>
+		<set name="icon" val="icon.skill30003"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
+	</skill>
+	
+	<skill id="30004" levels="22" name="Водяной Удар">
+		<table name="#magicLevel">40 44 48 52 56 60 64 68 72 76 78 80 82 84 85 87 89 91 93 95 97 98</table>
+		<table name="#power">57 66 74 83 92 101 110 118 127 136 140 145 149 154 420 442 464 486 508 530 552 574</table>
+		<table name="#effectPoint">250 320 360 410 460 500 550 600 640 690 720 750 770 790 1710 1790 1870 1950 2030 2110 2190 2270</table>
+		<table name="#mp_consume">31 34 38 41 45 49 53 56 59 62 63 64 65 66 67 67 68 68 69 69 69 70</table>
+		<set name="coolTime" val="500"/>
+		<set name="castRange" val="80"/>
+		<set name="hitTime" val="3000"/>
+		<set name="mpConsume" val="#mp_consume"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="abnormal_effect" val="AIRBIND"/>
+		<set name="abnormal_time" val="5"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="airbind"/>
+		<set name="activateRate" val="40"/>
+		<set name="magicLvl" val="#magicLevel"/>
+		<set name="castMagic" val="MAGIC"/>
+		<set name="power" val="#power"/>
+		<set name="icon" val="icon.skill30004"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="effectPoint" val="#effectPoint"/>
+		<!--<set name="trait" val="AIRJOKE"/>-->
+		<set name="saveVs" val="MEN"/>
+		<cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
+	</skill>
+	
+	<skill id="30012" levels="22" name="Натиск Ветра">
+		<table name="#magicLevel">40 44 48 52 56 60 64 68 72 76 78 80 82 84 85 87 89 91 93 95 97 99</table>
+		<table name="#power">57 66 74 83 92 101 110 118 127 136 141 145 150 154 376 397 418 438 459 480 501 522</table>
+		<table name="#effectPoint">250 320 360 410 460 500 550 600 640 690 720 750 770 790 1710 1790 1870 1950 2030 2110 2190 2270</table>
+		<table name="#mp_consume">31 34 38 41 45 49 53 56 59 62 63 64 65 66 67 67 68 68 69 69 69 70</table>
+		<set name="reuseDelay" val="7000"/>
+		<set name="coolTime" val="500"/>
+		<set name="castRange" val="900"/>
+		<set name="hitTime" val="1000"/>
+		<set name="mpConsume" val="#mp_consume"/>
+		<set name="ride_state" val="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="abnormal_effect" val="KNOCKDOWN"/>
+		<set name="abnormal_time" val="2"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="knockdown"/>
+		<set name="magicLvl" val="#magicLevel"/>
+		<set name="castMagic" val="MAGIC"/>
+		<set name="power" val="#power"/>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="activateRate" val="85"/>
+		<set name="icon" val="icon.skill30012"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="trait" val="KNOCKDOWN"/>   
+		<set name="saveVs" val="MEN"/>
+		<set name="fly_type" val="CHARGE"/>
+		<set name="fly_radius" val="900"/>
+		<cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
+		<!--TODO: Наносимый урон +10, если на противника наложен отрицательный эффект. Если на цель наложенно Клеймо Шторма, снимает его и наносит дополнительный урон.-->
+	</skill>
 </list>
