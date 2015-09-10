@@ -47,7 +47,7 @@ REM set JAVA_OPTS=%JAVA_OPTS% -Xloggc:gc.log
 REM ----------- Set Class Paths and Calls setenv.bat -----------------
 SET OLDCLASSPATH=%CLASSPATH%
 REM ------------------------------------------------------------------
-java -server -Dfile.encoding=UTF-8 %JAVA_OPTS% -cp ./libs/*;./libs/game.jar BootManager
+java -server -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005 -Dfile.encoding=UTF-8 %JAVA_OPTS% -cp ./libs/*;./game.jar BootManager
 
 REM ======== Optimize memory settings =======
 REM Minimal size with geodata is 1.5G, w/o geo 1G
