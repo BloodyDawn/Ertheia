@@ -117,7 +117,7 @@ public enum AbnormalEffect
   S_CHRISTMAS_ARMOR2( "hristmas_armor2", 86 ),   // Новогодний костюмчик
   WIND_BLEND( "wind_blend", 115 ),
   DECEPTIVE_BLINK( "deceptive_blink", 116 ),
-  WIND_HIDE( "WIND_HIDE", 117 ),
+  WIND_HIDE( "wind_hide", 117 ),
   SPALLATION( "spallation", 127 ); // скил 30515
 
   private final int _mask;
