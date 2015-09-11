@@ -256,17 +256,17 @@ public enum PlayerClass
 	AeoreHealer_EvaSaint(Elf, Priest, AWAKEN),
 	AeoreHealer_ShillenSaint(DarkElf, Priest, AWAKEN),
 
-	ertheiaFighter( Ertheia, Fighter, FIRST),
-	ertheiaWizzard( Ertheia, Mystic, FIRST),
+	ertheiaFighter( Ertheia, Fighter, NONE),
+	ertheiaWizzard( Ertheia, Mystic, NONE),
 
-	marauder( Ertheia, Fighter, SECOND),
-	cloudBreaker( Ertheia, Mystic, SECOND),
+	marauder( Ertheia, Fighter, FIRST),
+	cloudBreaker( Ertheia, Mystic, FIRST),
 
-	ripper( Ertheia, Fighter, THIRD),
-	Stratomancer( Ertheia, Mystic, THIRD),
+	ripper( Ertheia, Fighter, SECOND),
+	Stratomancer( Ertheia, Mystic, SECOND),
 
-	eviscerator( Ertheia, Fighter, AWAKEN),
-	sayhaSeer( Ertheia, Mystic, AWAKEN);
+	eviscerator( Ertheia, Fighter, THIRD),
+	sayhaSeer( Ertheia, Mystic, THIRD);
 
 	public static final PlayerClass[] VALUES = values();
 	private static final Set<PlayerClass> mainSubclassSet;
