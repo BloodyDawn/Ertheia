@@ -118,6 +118,7 @@ public enum AbnormalEffect
   WIND_BLEND( "wind_blend", 115 ),
   DECEPTIVE_BLINK( "deceptive_blink", 116 ),
   WIND_HIDE( "wind_hide", 117 ),
+  SQUALL( "squall", 119 ),
   SPALLATION( "spallation", 127 ); // скил 30515
 
   private final int _mask;
