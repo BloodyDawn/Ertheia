@@ -293,6 +293,27 @@
 		<!--TODO: Наносимый урон +10, если на противника наложен отрицательный эффект. Если на цель наложенно Клеймо Шторма, снимает его и наносит дополнительный урон.-->
 	</skill>
 
+    <skill id="30016" levels="3" name="Око Шторма">
+        <!-- В течение 30 сек. Шанс Маг. Крит. Атк. +100, Физ./Маг. Защ. +30% -->
+        <table name="#mpConsumes">18 37 40</table>
+        <set name="icon" val="icon.skill30016"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="mpConsume" val="#mpConsumes"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="300000"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="storm">
+                <add stat="mCritRate" order="0x40" val="100"/>
+                <mul stat="pDef" order="0x30" val="1.30"/>
+                <mul stat="mDef" order="0x30" val="1.30"/>
+            </effect>
+        </for>
+    </skill>
+
     <skill id="30031" levels="1" name="Потенциальная Магия">
         <!-- Увеличивает макс. значение Маг. Крит. Атк. -->
         <set name="icon" val="icon.skill30025"/>
