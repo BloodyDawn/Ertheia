@@ -14,6 +14,7 @@ public class RequestAnswerFriendInvite extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
+		readC(); // Ertheia unk
 		_response = readD();
 	}
 
