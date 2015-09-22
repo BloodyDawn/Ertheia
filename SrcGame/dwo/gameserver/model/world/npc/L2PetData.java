@@ -2,6 +2,7 @@ package dwo.gameserver.model.world.npc;
 
 import dwo.gameserver.model.skills.SkillTable;
 import gnu.trove.map.hash.TIntObjectHashMap;
+import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +19,7 @@ public class L2PetData
 	private int _load = 20000;
 	private int _hungry_limit = 1;
 	private int _minlvl = Byte.MAX_VALUE;
-	private int[] _food;
+	private int[] _food = ArrayUtils.EMPTY_INT_ARRAY;
 	private boolean _sync_level;
 
 	public void addNewStat(L2PetLevelData data, int level)
