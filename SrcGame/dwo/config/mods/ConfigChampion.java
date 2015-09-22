@@ -33,23 +33,19 @@ public class ConfigChampion extends Config
 			ConfigProperties properties = new ConfigProperties(path);
 			CHAMPION_ENABLE = getBoolean(properties, "ChampionEnable", false);
 			CHAMPION_PASSIVE = getBoolean(properties, "ChampionPassive", false);
-			CHAMPION_FREQUENCY = getInt(properties, "ChampionFrequency", 0);
+			CHAMPION_FREQUENCY_1 = getInt(properties, "ChampionFrequency1", 0);
+			CHAMPION_FREQUENCY_2 = getInt(properties, "ChampionFrequency2", 0);
 			CHAMP_TITLE = getString(properties, "ChampionTitle", "Champion");
 			CHAMP_MIN_LVL = getInt(properties, "ChampionMinLevel", 20);
 			CHAMP_MAX_LVL = getInt(properties, "ChampionMaxLevel", 60);
-			CHAMPION_HP = getInt(properties, "ChampionHp", 7);
-			CHAMPION_HP_REGEN = getFloat(properties, "ChampionHpRegen", 1.0F);
 			CHAMPION_REWARDS = getInt(properties, "ChampionRewards", 8);
 			CHAMPION_ADENAS_REWARDS = getFloat(properties, "ChampionAdenasRewards", 1.0F);
-			CHAMPION_ATK = getFloat(properties, "ChampionAtk", 1.0F);
-			CHAMPION_SPD_ATK = getFloat(properties, "ChampionSpdAtk", 1.0F);
 			CHAMPION_REWARD_LOWER_LVL_ITEM_CHANCE = getInt(properties, "ChampionRewardLowerLvlItemChance", 0);
 			CHAMPION_REWARD_HIGHER_LVL_ITEM_CHANCE = getInt(properties, "ChampionRewardHigherLvlItemChance", 0);
 			CHAMPION_REWARD_ID = getInt(properties, "ChampionRewardItemID", 6393);
 			CHAMPION_REWARD_QTY = getInt(properties, "ChampionRewardItemQty", 1);
 			CHAMPION_ENABLE_VITALITY = getBoolean(properties, "ChampionEnableVitality", false);
 			CHAMPION_ENABLE_IN_INSTANCES = getBoolean(properties, "ChampionEnableInInstances", false);
-			CHAMPION_ENABLE_AURA = getInt(properties, "ChampionEnableAura", 0);
 		}
 		catch(Exception e)
 		{

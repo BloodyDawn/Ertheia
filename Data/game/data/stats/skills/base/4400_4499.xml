@@ -113,10 +113,21 @@
         </for>
     </skill>
     <skill id="4407" levels="2" name="Сильный Монстр">
+        <table name="#hp">10 50</table>
+        <table name="#TabmAtk">1.3 2</table>
+        <table name="#TabpAtk">1.15 1.5</table>
+        <table name="#eff">12.5 50</table>
+        <table name="#drop">10 25</table>
         <set name="magicLvl" val="1"/>
         <set name="operateType" val="OP_PASSIVE"/>
         <set name="skillType" val="PASSIVE"/>
         <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="maxHp" val="#hp"/>
+            <mul order="0x30" stat="maxMp" val="#hp"/>
+            <mul order="0x30" stat="mAtk" val="#TabmAtk"/>
+            <mul order="0x30" stat="pAtk" val="#TabpAtk"/>
+        </for>
     </skill>
     <skill id="4408" levels="20" name="HP увеличены (12x)">
         <table name="#maxhp">1 1.1 1.21 1.33 1.46 1.61 1.77 0.25 0.5 2 3 4 5 6 7 8 9 10 11 12</table>

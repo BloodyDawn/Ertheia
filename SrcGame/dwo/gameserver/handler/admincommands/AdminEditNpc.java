@@ -588,9 +588,9 @@ public class AdminEditNpc implements IAdminCommandHandler
 						categoryDropChance *= Config.PREMIUM_DROP_ITEM_RATE;
 					}
 
-					if(Config.CHAMPION_ENABLE && npc.isChampion())
+					if(npc.getChampion() > 0)
 					{
-						categoryDropChance *= Config.CHAMPION_REWARDS;
+						categoryDropChance *= Config.CHAMPION_REWARDS * npc.getChampion();
 					}
 
 					// Set our limits for chance of drop
@@ -642,9 +642,9 @@ public class AdminEditNpc implements IAdminCommandHandler
 						}
 
 						// Для мобов чемпионов
-						if(Config.CHAMPION_ENABLE && npc.isChampion())
+						if(npc.getChampion() > 0)
 						{
-							multiplier = Config.CHAMPION_REWARDS;
+							multiplier = Config.CHAMPION_REWARDS * npc.getChampion();
 						}
 
 						// Если последний атакующий имеет ПА применяем его рейт

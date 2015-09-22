@@ -406,10 +406,6 @@ public class CharStat
 			return 1;
 		}
 		float bonusAtk = 1;
-		if(Config.CHAMPION_ENABLE && _activeChar.isChampion())
-		{
-			bonusAtk = Config.CHAMPION_ATK;
-		}
 		if(_activeChar.isRaid())
 		{
 			bonusAtk *= Config.RAID_MATTACK_MULTIPLIER;
@@ -537,10 +533,6 @@ public class CharStat
 			return 1;
 		}
 		float bonusSpdAtk = 1;
-		if(Config.CHAMPION_ENABLE && _activeChar.isChampion())
-		{
-			bonusSpdAtk = Config.CHAMPION_SPD_ATK;
-		}
 		double val = calcStat(Stats.MAGIC_ATTACK_SPEED, _activeChar.getTemplate().getBaseMAtkSpd() * bonusSpdAtk, null, null);
 		if(val > Config.MAX_MATK_SPEED && !_activeChar.isGM())
 		{
@@ -667,10 +659,6 @@ public class CharStat
 			return 1;
 		}
 		float bonusAtk = 1;
-		if(Config.CHAMPION_ENABLE && _activeChar.isChampion())
-		{
-			bonusAtk = Config.CHAMPION_ATK;
-		}
 		if(_activeChar.isRaid())
 		{
 			bonusAtk *= Config.RAID_PATTACK_MULTIPLIER;
@@ -761,12 +749,7 @@ public class CharStat
 			return 1;
 		}
 		float bonusAtk = 1;
-		if(Config.CHAMPION_ENABLE && _activeChar.isChampion())
-		{
-			bonusAtk = Config.CHAMPION_SPD_ATK;
-		}
-		int val = (int) calcStat(Stats.POWER_ATTACK_SPEED, _activeChar.getTemplate().getBasePAtkSpd() * bonusAtk, null, null);
-		return val;
+		return (int) calcStat(Stats.POWER_ATTACK_SPEED, _activeChar.getTemplate().getBasePAtkSpd() * bonusAtk, null, null);
 	}
 
 	/**

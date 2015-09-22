@@ -37,6 +37,7 @@ import dwo.gameserver.model.actor.knownlist.AttackableKnownList;
 import dwo.gameserver.model.actor.status.AttackableStatus;
 import dwo.gameserver.model.actor.templates.L2NpcTemplate;
 import dwo.gameserver.model.holders.ItemHolder;
+import dwo.gameserver.model.holders.SkillHolder;
 import dwo.gameserver.model.items.ItemTable;
 import dwo.gameserver.model.items.base.L2Item;
 import dwo.gameserver.model.items.base.instance.L2ItemInstance;
@@ -48,6 +49,7 @@ import dwo.gameserver.model.player.formation.group.L2CommandChannel;
 import dwo.gameserver.model.player.formation.group.L2Party;
 import dwo.gameserver.model.skills.SkillTable;
 import dwo.gameserver.model.skills.base.L2Skill;
+import dwo.gameserver.model.skills.effects.AbnormalEffect;
 import dwo.gameserver.model.skills.stats.Stats;
 import dwo.gameserver.model.world.npc.drop.EventDropDataTable;
 import dwo.gameserver.model.world.npc.drop.L2DropCategory;
@@ -79,7 +81,7 @@ public class L2Attackable extends L2Npc
 	protected int _onKillDelay = 5000;
 	private boolean _isRaid;
 	private boolean _isRaidMinion;
-	private boolean _champion;
+	private int _champion;
 	private boolean _isReturningToSpawnPoint;
 	private boolean _canReturnToSpawnPoint = true;
 	private boolean _seeThroughSilentMove;
@@ -340,7 +342,6 @@ public class L2Attackable extends L2Npc
 			{
 				L2Party attackerParty;
 				long exp;
-				int levelDiff;
 				int partyDmg;
 				int partyLvl;
 				int sp;
@@ -409,10 +410,10 @@ public class L2Attackable extends L2Npc
 							sp = calculateSp(attacker.getLevel(), damage);
 							exp *= 1 - penalty;
 
-							if(Config.CHAMPION_ENABLE && _champion)
+							if(Config.CHAMPION_ENABLE && _champion > 0)
 							{
-								exp *= Config.CHAMPION_REWARDS;
-								sp *= Config.CHAMPION_REWARDS;
+								exp *= Config.CHAMPION_REWARDS * _champion;
+								sp *= Config.CHAMPION_REWARDS * _champion;
 							}
 
 							// Check for an over-hit enabled strike
@@ -557,10 +558,10 @@ public class L2Attackable extends L2Npc
 						exp = calculateExp(partyLvl, partyDmg);
 						sp = calculateSp(partyLvl, partyDmg);
 
-						if(Config.CHAMPION_ENABLE && _champion)
+						if(Config.CHAMPION_ENABLE && _champion > 0)
 						{
-							exp *= Config.CHAMPION_REWARDS;
-							sp *= Config.CHAMPION_REWARDS;
+							exp *= Config.CHAMPION_REWARDS * _champion;
+							sp *= Config.CHAMPION_REWARDS * _champion;
 						}
 
 						exp *= partyMul;
@@ -719,7 +720,7 @@ public class L2Attackable extends L2Npc
 	}
 
 	@Override
-	public boolean isChampion()
+	public int getChampion()
 	{
 		return _champion;
 	}
@@ -730,9 +731,17 @@ public class L2Attackable extends L2Npc
 		return _seeThroughSilentMove;
 	}
 
-	public void setChampion(boolean champ)
-	{
-		_champion = champ;
+	public void setChampion(final int level) {
+		if (level == 0) {
+//			stopAbnormalEffect(AbnormalEffect.GREEN_SPEED_UP);
+//			stopAbnormalEffect(AbnormalEffect.RED_SPEED_UP);
+			removeSkill(4407);
+			_champion = 0;
+		} else {
+//			startAbnormalEffect((level == 1) ? AbnormalEffect.GREEN_SPEED_UP : AbnormalEffect.RED_SPEED_UP);
+			addSkill(SkillTable.getInstance().getInfo(4407, level));
+			_champion = level;
+		}
 	}
 
 	/**
@@ -1121,9 +1130,9 @@ public class L2Attackable extends L2Npc
 			dropChance *= _isRaid && !_isRaidMinion ? Config.RATE_DROP_ITEMS_BY_RAID : Config.RATE_DROP_ITEMS;
 		}
 
-		if(Config.CHAMPION_ENABLE && _champion)
+		if(Config.CHAMPION_ENABLE && _champion > 0)
 		{
-			dropChance *= Config.CHAMPION_REWARDS;
+			dropChance *= Config.CHAMPION_REWARDS * _champion;
 		}
 
 		// Если последний атакующий имеет ПА применяем его рейт
@@ -1186,9 +1195,9 @@ public class L2Attackable extends L2Npc
 		if(Config.CHAMPION_ENABLE)
 		{
 			// TODO (April 11, 2009): Find a way not to hardcode these values.
-			if(drop.getItemId() == PcInventory.ADENA_ID && _champion)
+			if(drop.getItemId() == PcInventory.ADENA_ID && _champion > 0)
 			{
-				itemCount *= Config.CHAMPION_ADENAS_REWARDS;
+				itemCount *= Config.CHAMPION_ADENAS_REWARDS * _champion;
 			}
 		}
 
@@ -1255,9 +1264,9 @@ public class L2Attackable extends L2Npc
 			categoryDropChance *= Config.PREMIUM_DROP_ITEM_RATE;
 		}
 
-		if(Config.CHAMPION_ENABLE && _champion)
+		if(Config.CHAMPION_ENABLE && _champion > 0)
 		{
-			categoryDropChance *= Config.CHAMPION_REWARDS;
+			categoryDropChance *= Config.CHAMPION_REWARDS * _champion;
 		}
 
 		// Set our limits for chance of drop
@@ -1302,9 +1311,9 @@ public class L2Attackable extends L2Npc
 			}
 
 			// Для мобов чемпионов
-			if(Config.CHAMPION_ENABLE && _champion)
+			if(Config.CHAMPION_ENABLE && _champion > 0)
 			{
-				multiplier *= Config.CHAMPION_REWARDS;
+				multiplier *= Config.CHAMPION_REWARDS * _champion;
 			}
 
 			// Если последний атакующий имеет ПА применяем его рейт
@@ -1600,7 +1609,7 @@ public class L2Attackable extends L2Npc
 			}
 		}
 		// Apply Special Item drop with random(rnd) quantity(qty) for champions.
-		if(Config.CHAMPION_ENABLE && _champion && (Config.CHAMPION_REWARD_LOWER_LVL_ITEM_CHANCE > 0 || Config.CHAMPION_REWARD_HIGHER_LVL_ITEM_CHANCE > 0))
+		if(Config.CHAMPION_ENABLE && _champion > 0 && (Config.CHAMPION_REWARD_LOWER_LVL_ITEM_CHANCE > 0 || Config.CHAMPION_REWARD_HIGHER_LVL_ITEM_CHANCE > 0))
 		{
 			int champqty = Rnd.get(Config.CHAMPION_REWARD_QTY);
 			ItemHolder item = new ItemHolder(Config.CHAMPION_REWARD_ID, ++champqty);
@@ -2415,7 +2424,7 @@ public class L2Attackable extends L2Npc
 	 */
 	public boolean useVitalityRate()
 	{
-		return !(_champion && !Config.CHAMPION_ENABLE_VITALITY);
+		return !(_champion > 0 && !Config.CHAMPION_ENABLE_VITALITY);
 
 	}
 

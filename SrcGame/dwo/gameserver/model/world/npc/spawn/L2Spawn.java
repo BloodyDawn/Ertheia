@@ -582,21 +582,25 @@ public class L2Spawn
 			mob.setHeading(_heading);
 		}
 
-		if(mob instanceof L2Attackable)
+		if (mob instanceof L2MonsterInstance)
 		{
-			((L2Attackable) mob).setChampion(false);
-		}
-
-		if(Config.CHAMPION_ENABLE)
-		{
-			// Set champion on next spawn
-			if(mob instanceof L2MonsterInstance && !_template.isQuestMonster() && !mob.isRaid() && !mob.isRaidMinion() && Config.CHAMPION_FREQUENCY > 0 && mob.getLevel() >= Config.CHAMP_MIN_LVL && mob.getLevel() <= Config.CHAMP_MAX_LVL && (Config.CHAMPION_ENABLE_IN_INSTANCES || _instanceId == 0))
+			if (Config.CHAMPION_ENABLE)
 			{
-				if(Rnd.getChance(Config.CHAMPION_FREQUENCY))
+				if (!_template.isQuestMonster()
+						&& !mob.isRaid() && !mob.isRaidMinion()
+						&& mob.getLevel() >= Config.CHAMP_MIN_LVL
+						&& mob.getLevel() <= Config.CHAMP_MAX_LVL
+						&& (Config.CHAMPION_ENABLE_IN_INSTANCES || _instanceId == 0))
 				{
-					((L2Attackable) mob).setChampion(true);
+					if (Rnd.getChance(Config.CHAMPION_FREQUENCY_2)) {
+						((L2Attackable) mob).setChampion(2);
+					} else if (Rnd.getChance(Config.CHAMPION_FREQUENCY_1)) {
+						((L2Attackable) mob).setChampion(1);
+					} else
+						((L2Attackable) mob).setChampion(0);
 				}
-			}
+			} else
+				((L2MonsterInstance) mob).setChampion(0);
 		}
 
 		// Link the L2NpcInstance to this L2Spawn
