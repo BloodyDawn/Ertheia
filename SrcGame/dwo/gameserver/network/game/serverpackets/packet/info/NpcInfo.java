@@ -583,7 +583,7 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
             }
             if (containsMask(NpcInfoType.TEAM))
             {
-                writeC(_trap.getChampion());
+                writeC(_npc.getChampion());
             }
             if (containsMask(NpcInfoType.ENCHANT))
             {
