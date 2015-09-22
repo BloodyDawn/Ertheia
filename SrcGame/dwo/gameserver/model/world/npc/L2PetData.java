@@ -23,10 +23,7 @@ public class L2PetData
 
 	public void addNewStat(L2PetLevelData data, int level)
 	{
-		if(_minlvl > level)
-		{
-			_minlvl = level;
-		}
+		_minlvl = Math.min( _minlvl, level );
 		_levelStats.put(level, data);
 	}
 
