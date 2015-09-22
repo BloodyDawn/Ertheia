@@ -82,8 +82,6 @@ public class AwakeningManager
 	{
 		InventoryUpdate iu = new InventoryUpdate();
 		iu.addRemovedItem(player.getInventory().destroyItemByItemId(ProcessType.QUEST, 17600, 1, player, null));
-
-		// Скилл линк
 		iu.addRemovedItem(player.getInventory().destroyItemByItemId(ProcessType.QUEST, 15307, player.getInventory().getCountOf(15307), player, null));
 		iu.addRemovedItem(player.getInventory().destroyItemByItemId(ProcessType.QUEST, 15308, player.getInventory().getCountOf(15308), player, null));
 		iu.addRemovedItem(player.getInventory().destroyItemByItemId(ProcessType.QUEST, 15309, player.getInventory().getCountOf(15309), player, null));

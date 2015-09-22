@@ -1,27 +1,477 @@
 <?xml version="1.0" encoding="utf-8"?>
 <list>
-    <skill id="30001" levels="6" name="Водная Атака">
-        <table name="#mpInitialConsume">2 2 3 3 4 4</table>
-        <table name="#mpConsume">7 8 11 12 14 16</table>
-        <table name="#magicLvl">4 7 11 14 17 20</table>
-        <table name="#power">20000 9 11 13 14 16</table>
-        <set name="mpInitialConsume" val="#mpInitialConsume"/>
+    <skill id="30000" levels="1" name="Водная Атака - Отрицательный Эффект">
+        <!-- AUTO GENERATED SKILL -->
+        <!-- Водная Атака. Накладывает Знак Шторма -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="30001" levels="25" name="Водная Атака">
+        <table name="#mpInitialConsume">2 2 3 3 4 4 5 5 5 7 7 7 8 8 8 9 9 9 10 10 10 11 11 11 12</table>
+        <table name="#mpConsume">3 8 10 13 16 18 20 21 23 25 27 29 30 31 32 32 33 33 33 34 34 34 34 34 35</table>
+        <table name="#magicLvl">1 20 28 36 42 46 50 54 58 62 66 70 74 77 79 81 83 85 87 89 91 93 95 97 99</table>
+        <table name="#power">1 20 28 36 42 46 50 54 58 62 66 70 74 77 79 81 83 85 87 89 91 93 95 97 99</table>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="300"/>
+        <set name="castRange" val="80"/>
         <set name="mpConsume" val="#mpConsume"/>
-        <set name="magicLvl" val="#magicLvl"/>
-        <set name="power" val="#power"/>
-        <set name="lvlDepend" val="1"/>
-        <set name="target" val="TARGET_ONE"/>
+        <set name="mpInitialConsume" val="#mpInitialConsume"/>
+        <set name="reuseDelay" val="0"/>
+        <set name="effectRange" val="80"/>
         <set name="element" val="2"/>
         <set name="elementPower" val="20"/>
-        <set name="reuseDelay" val="0"/>
-        <set name="hitTime" val="500"/>
-        <set name="basicProperty" val="MAGIC"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="overHit" val="true"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="#power"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="target" val="TARGET_ONE"/>
+		<cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
+        <for>
+            <effect chanceType="ON_START" name="ChanceSkillTrigger" noicon="1" triggeredId="30002" triggeredLevel="1" val="0"/>
+        </for>
+    </skill>
+
+    <skill id="30002" levels="3" name="Водная Атака">
+        <table name="#abnormalLvl">1 2 3</table>
+        <table name="#magicLvl">20 25 30</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="isTriggeredSkill" val="true"/>
+        <set name="triggeredLevelUpMax" val="3"/>
+        <set name="isDebuff" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="power" val="100"/>
+        <for>
+            <effect abnormalLvl="#abnormalLvl" abnormalTime="5" name="Debuff" val="0">
+                <mul order="0x30" stat="mDef" val="0.7"/>
+                <sub order="0x40" stat="runSpd" val="70"/>
+            </effect>
+        </for>
+    </skill>
+
+	<skill id="30003" levels="17" name="Ледяная Вспышка">
+	<!--TODO: С определенной вероятностью может наложить Клеймо Шторма Ур. 4, при этом персонажу можно будет использовать Факел.-->
+		<table name="#magicLevel">58 62 66 70 74 77 79 81 83 85 86 88 90 92 94 96 98</table>
+		<table name="#power">110 120 130 140 150 157 162 167 172 501 515 543 571 599 627 655 683</table>
+		<table name="#mp_consume">47 51 54 58 60 62 64 65 66 67 67 68 68 68 69 69 70</table>
+		<set name="coolTime" val="500"/>
+		<set name="castRange" val="80"/>
+		<set name="hitTime" val="4000"/>
+		<set name="mpConsume" val="#mp_consume"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="magicLvl" val="#magicLevel"/>
+		<set name="castMagic" val="MAGIC"/>
+		<set name="power" val="#power"/>
+		<set name="icon" val="icon.skill30003"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
+	</skill>
+
+	<skill id="30004" levels="22" name="Водяной Удар">
+		<table name="#magicLevel">40 44 48 52 56 60 64 68 72 76 78 80 82 84 85 87 89 91 93 95 97 98</table>
+		<table name="#power">57 66 74 83 92 101 110 118 127 136 140 145 149 154 420 442 464 486 508 530 552 574</table>
+		<table name="#mp_consume">31 34 38 41 45 49 53 56 59 62 63 64 65 66 67 67 68 68 69 69 69 70</table>
+		<set name="coolTime" val="500"/>
+		<set name="castRange" val="80"/>
+		<set name="hitTime" val="3000"/>
+		<set name="mpConsume" val="#mp_consume"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="abnormal_effect" val="AIRBIND"/>
+		<set name="abnormal_time" val="5"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="airbind"/>
+		<set name="activateRate" val="40"/>
+		<set name="magicLvl" val="#magicLevel"/>
+		<set name="castMagic" val="MAGIC"/>
+		<set name="power" val="#power"/>
+		<set name="icon" val="icon.skill30004"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<!--<set name="trait" val="AIRJOKE"/>-->
+		<set name="saveVs" val="MEN"/>
+		<cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
+	</skill>
+
+    <!-- Level 4 : M. Def. - 50%, Speed - 100. -->
+    <skill id="30005" levels="4" name="Клеймо Шторма">
+        <!-- Маг. Защ. -50%, Скорость -100. -->
+        <set name="icon" val="icon.skill30027"/>
+        <set name="isDebuff" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="5" name="Debuff" val="0">
+                <mul stat="mDef" order="0x30" val="0.5"/>
+                <add stat="runSpd" order="0x40" val="100"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="30006" levels="8" name="Ярость Шторма">
+        <!-- Шторм наносит урон противникам, сметая их прочь. Мощность 255. Наносимый урон +10%, если на противников наложен отрицательный эффект. -->
+        <table name="#mpConsumes">134 135 136 137 138 138 139 141</table>
+        <table name="#power">255 269 283 297 311 325 339 353</table>
+        <set name="icon" val="icon.skill30006"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="mpConsume" val="#mpConsumes"/>
+        <set name="power" val="#power"/>
+        <set name="effectRange" val="400"/>
+        <set name="castRange" val="60"/>
+        <set name="coolTime" val="500"/>
+        <set name="hitTime" val="1000"/>
+        <set name="reuseDelay" val="30000"/>
         <set name="skillType" val="MDAM"/>
         <set name="castMagic" val="MAGIC"/>
+        <cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
+    </skill>
+    <skill id="30007" levels="12" name="Поток Воды">
+        <!-- Наносит магический урон противнику. Мощность 123. Восстанавливает 10% HP, 5% MP. Возможен сверхудар. Можно использовать только при наложенном Клейме Шторма Ур. 3. Требуется меч/дробящее оружие. -->
+        <table name="#power">123 127 130 134 386 396 416 436 456 476 496 516</table>
+        <table name="#mpConsumes">63 64 65 66 67 67 68 68 68 69 69 70</table>
+        <set name="icon" val="icon.skill30007"/>
         <set name="operateType" val="OP_ACTIVE"/>
-        <set name="castRange" val="40"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="power" val="#power"/>
+        <set name="mpConsume" val="#mpConsumes"/>
+        <set name="castRange" val="80"/>
+        <set name="hitTime" val="4000"/>
+        <set name="coolTime" val="500"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="overHit" val="true"/>
+        <cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
+    </skill>
+    <skill id="30008" levels="5" name="Приручение Ветра">
+        <!-- На 10 сек. персонаж исчезает, слившись с ветром. Скорость +70. Эффект отменяется при обычной атаке или при использовании атакующего умения. Требуется меч/дробящее оружие. -->
+        <table name="#abnormalLvls">1 2 3 4 5</table>
+        <table name="#magicLevel">20 85 90 94 98</table>
+        <table name="#mpConsume">16 67 68 69 70</table>
+        <table name="#reuseDelay">50000 50000 40000 30000 25000</table>
+        <table name="#spd">70 100 100 100 100</table>
+        <set name="icon" val="icon.skill30008"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="reuseDelay" val="#reuseDelay"/>
+        <set name="castMagic" val="MAGIC"/>
+        <cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
         <for>
-            <effect abnormalLvl="1" abnormalTime="1" name="NonStopCast" noicon="1" val="0"/>
+            <effect abnormalLvl="#abnormalLvls" abnormalTime="10" abnormalType="hide" name="Hide"
+                    abnormalVisualEffect="wind_blend" val="0">
+                <add stat="runSpd" order="0x40" val="#spd"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="30009" levels="10" name="Ложный Отблеск">
+        <!-- Персонаж телепортируется назад и на 5 сек. исчезает, слившись с ветром. Скорость +100. Требуется меч/дробящее оружие. -->
+        <table name="#mpConsumes">77 78 79 80 81 82 82 83 83 84</table>
+        <set name="icon" val="icon.skill30009"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="mpConsume" val="#mpConsumes"/>
+        <set name="hitTime" val="1000"/>
+        <set name="effectPoint" val="-575"/>
+        <set name="flyCourse" val="0"/>
+        <!-- Teleport to Back -->
+        <set name="flyRadius" val="400"/>
+        <set name="coolTime" val="500"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="simultaneousCast" val="true"/>
+        <cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
+        <for>
+            <effect abnormalLvl="1" abnormalTime="5" abnormalType="hide" name="Hide"
+                    abnormalVisualEffect="deceptive_blink" val="0">
+                <add stat="runSpd" order="0x40" val="100"/>
+            </effect>
+            <effect name="Blink" noicon="1" self="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="30010" levels="1" name="Защита Ветра">
+        <!-- Снимает все отрицательные эффекты. На 10 сек. утаивает под покровом ветра, восстанавливая HP и MP. В этом состоянии перемещение невозможно. -->
+        <set name="icon" val="icon.skill30010"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="mpConsume" val="40"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="180000"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="castRange" val="0"/>
+        <cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
+        <for>
+            <effect effectPower="100" effectType="CANCEL_DEBUFF" name="CancelAllDebuff" noicon="1" val="0"/>
+            <effect abnormalLvl="1" abnormalTime="10" abnormalType="paralyze" name="Paralyze" val="0">
+                <add stat="regHp" order="0x40" val="266"/>
+                <add stat="regMp" order="0x40" val="74"/>
+            </effect>
+            <effect abnormalLvl="1" abnormalTime="10" abnormalType="hide" name="Hide"
+                    abnormalVisualEffect="wind_hide" val="0"/>
+        </for>
+    </skill>
+    <skill id="30011" levels="12" name="Опасный Ветер">
+        <!-- Порыв шквального ветра оставляет на цели Клеймо Шторма 3-го ур. Требуется меч/дробящее оружие. -->
+        <table name="#mpConsumes">31 31 32 32 33 33 34 34 34 34 34 35</table>
+        <set name="icon" val="icon.skill30011"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="mpConsume" val="#mpConsumes"/>
+        <set name="castRange" val="900"/>
+        <set name="hitTime" val="1200"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="skillType" val="DEBUFF"/>
+        <cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
+        <for>
+            <effect abnormalTime="10" activationChance="80" chanceType="ON_ATTACKED" name="ChanceSkillTrigger"
+                    noicon="1" triggeredId="30002" triggeredLevel="3" val="0"/>
+        </for>
+    </skill>
+
+    <skill id="30012" levels="22" name="Натиск Ветра">
+		<table name="#magicLevel">40 44 48 52 56 60 64 68 72 76 78 80 82 84 85 87 89 91 93 95 97 99</table>
+		<table name="#power">57 66 74 83 92 101 110 118 127 136 141 145 150 154 376 397 418 438 459 480 501 522</table>
+		<table name="#mp_consume">31 34 38 41 45 49 53 56 59 62 63 64 65 66 67 67 68 68 69 69 69 70</table>
+		<set name="reuseDelay" val="7000"/>
+		<set name="coolTime" val="500"/>
+		<set name="castRange" val="900"/>
+		<set name="hitTime" val="1000"/>
+		<set name="mpConsume" val="#mp_consume"/>
+		<set name="ride_state" val="NONE;STRIDER;WYVERN;WOLF"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="abnormal_effect" val="KNOCKDOWN"/>
+		<set name="abnormal_time" val="2"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="knockdown"/>
+		<set name="magicLvl" val="#magicLevel"/>
+		<set name="castMagic" val="MAGIC"/>
+		<set name="power" val="#power"/>
+		<set name="activateRate" val="85"/>
+		<set name="icon" val="icon.skill30012"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="trait" val="KNOCKDOWN"/>
+		<set name="saveVs" val="MEN"/>
+		<set name="flyType" val="CHARGE"/>
+		<set name="effectRange" val="900"/>
+		<cond addName="1" msgId="113">
+            <using kind="Sword,Blunt,Big Blunt"/>
+        </cond>
+		<for>
+			<effect abnormalLvl="1" abnormalTime="1" abnormalVisualEffect="sknockdown" effectPower="85" effectType="KNOCK_DOWN" name="KnockDown" val="0"/>
+		</for>
+		<!--TODO: Наносимый урон +10, если на противника наложен отрицательный эффект. Если на цель наложенно Клеймо Шторма, снимает его и наносит дополнительный урон.-->
+	</skill>
+
+    <skill id="30016" levels="3" name="Око Шторма">
+        <!-- В течение 30 сек. Шанс Маг. Крит. Атк. +100, Физ./Маг. Защ. +30% -->
+        <table name="#mpConsumes">18 37 40</table>
+        <set name="icon" val="icon.skill30016"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="mpConsume" val="#mpConsumes"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="300000"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="storm">
+                <add stat="mCritRate" order="0x40" val="100"/>
+                <mul stat="pDef" order="0x30" val="1.30"/>
+                <mul stat="mDef" order="0x30" val="1.30"/>
+            </effect>
+        </for>
+    </skill>
+
+    <skill id="30017" levels="3" name="Идеальный Шторм">
+        <!-- На 10 мин. урон от Физ./Маг. Крит. Атк. -15%. С определенной вероятностью может поразить противника молнией. -->
+        <table name="#magicLvl">40 76 85</table>
+        <table name="#mpConsume">18 37 40</table>
+        <table name="#spd">0 7 7</table>
+        <set name="icon" val="icon.skill30017"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="hitTime" val="1000"/>
+        <set name="coolTime" val="500"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="castMagic" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="600" val="0" abnormalLvl="1" abnormalVisualEffect="squall">
+                <mul order="0x30" stat="critVuln" val="0.85"/>
+                <mul order="0x30" stat="magicCritVuln" val="0.85"/>
+                <add order="0x40" stat="runSpd" val="#spd"/>
+            </effect>
+        </for>
+    </skill>
+
+    <skill id="30031" levels="1" name="Потенциальная Магия">
+        <!-- Увеличивает макс. значение Маг. Крит. Атк. -->
+        <set name="icon" val="icon.skill30025"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="mCritRate" val="55"/>
+        </for>
+    </skill>
+
+    <skill id="30040" levels="11" name="Превосходное Владение Дробящим Оружием">
+        <!-- При использовании дробящего оружия Маг. Атк. +17%. Дополнительно Маг. Атк. +10, Скор. Магии +5%. -->
+        <table name="#magicLevel">5 20 40 52 64 76 80 85 90 95 99</table>
+        <table name="#mAtkAdd">10 57 228 436 728 834 942 1050 1252 1454 1727</table>
+        <table name="#mAtkMul">1.17 1.17 1.17 1.17 1.17 1.17 1.17 1.40 1.40 1.40 1.40</table>
+        <table name="#mAtkSpd">1.05 1.05 1.10 1.10 1.10 1.15 1.20 1.30 1.30 1.30 1.30</table>
+        <table name="#mCritRate">1 1 1 1 1 1 1 1.10 1.10 1.10 1.10</table>
+        <table name="#mCritPower">1 1 1 1 1 1 1 1.10 1.10 1.10 1.10</table>
+        <set name="icon" val="icon.skill30023"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add stat="mAtk" order="0x40" val="#mAtkAdd">
+                <using kind="Blunt"/>
+            </add>
+            <mul stat="mAtk" order="0x30" val="#mAtkMul">
+                <using kind="Blunt"/>
+            </mul>
+            <mul stat="mAtkSpd" order="0x30" val="#mAtkSpd">
+                <using kind="Blunt"/>
+            </mul>
+            <mul stat="mCritRate" order="0x30" val="#mCritRate">
+                <using kind="Blunt"/>
+            </mul>
+            <mul stat="mCritPower" order="0x30" val="#mCritPower">
+                <using kind="Blunt"/>
+            </mul>
+        </for>
+    </skill>
+
+    <skill id="30041" levels="11" name="Превосходное Владение Магической Броней">
+        <!-- При ношении магических доспехов Физ. Защ. +7. Нельзя использовать щит/символ. -->
+        <!-- При ношении магических доспехов Физ. Защ. +12, сопротивление магическому урону +5%. Нельзя использовать щит/символ. -->
+        <table name="#magicLevel">5 20 40 44 64 76 80 85 90 95 99</table>
+        <table name="#pDef">7 12 27 39 55 69 77 1238 1347 1456 1601</table>
+        <table name="#mDef">1 1 1 1 1 1 1.03 1.05 1.05 1.05 1.05</table>
+        <table name="#mDefAdd">0 0 0 0 0 0 533 1156 1258 1360 1496</table>
+        <table name="#magicSuccRes">1 1.05 1.10 1.15 1.20 1.25 1.30 1.35 1.35 1.35 1.35</table>
+        <set name="icon" val="icon.skill30024"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add stat="pDef" order="0x40" val="#pDef">
+                <using kind="Magic"/>
+            </add>
+            <add stat="mDef" order="0x40" val="#mDefAdd">
+                <using kind="Magic"/>
+            </add>
+            <mul stat="mDef" order="0x30" val="#mDef">
+                <using kind="Magic"/>
+            </mul>
+            <mul stat="magicSuccRes" order="0x30" val="#magicSuccRes">
+                <using kind="Magic"/>
+            </mul>
+        </for>
+    </skill>
+
+    <skill id="30042" levels="7" name="Превосходная Перезарядка">
+        <!-- Макс. MP +33, бонус восстановления MP +1, Время перезарядки маг. умений -10%. -->
+        <table name="#magicLevel">20 40 76 85 90 95 99</table>
+        <table name="#maxHp">0 0 0 4891 4891 4891 4891</table>
+        <table name="#maxMp">33 77 223 344 411 478 568</table>
+        <table name="#regMp">1 3 5 7 8 10 11</table>
+        <table name="#mReuse">1.10 1.15 1.20 1.30 1.30 1.30 1.30</table>
+        <table name="#MagicalMpConsumeRate">1 1 0.95 0.93 0.93 0.93 0.93</table>
+        <set name="icon" val="icon.skill10504"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add stat="maxHp" order="0x40" val="#maxHp"/>
+            <mul stat="mReuse" order="0x30" val="#mReuse"/>
+            <add stat="regMp" order="0x40" val="#regMp"/>
+            <mul stat="MagicalMpConsumeRate" order="0x30" val="#MagicalMpConsumeRate"/>
+        </for>
+    </skill>
+    <skill id="30043" levels="2" name="Превосходное Сопротивление Стихиям">
+        <!-- Level 1: Wind Resistance + 30. -->
+        <!-- Level 2: Wind Resistance + 30, Holy Resistance +30. -->
+        <table name="#windRes">30 30</table>
+        <table name="#holyRes">0 30</table>
+        <table name="#magicLvl">76 85</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="windRes" val="#windRes"/>
+            <add order="0x40" stat="holyRes" val="#holyRes"/>
+        </for>
+    </skill>
+    <skill id="30044" levels="2" name="Превосходное Сопротивление Отрицательным Эффектам">
+        <table name="#vuln1">30 30</table>
+        <table name="#vuln2">0 30</table>
+        <table name="#magicLvl">76 85</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <sub order="0x40" stat="rootVuln" val="#vuln1"/>
+            <sub order="0x40" stat="derangementVuln" val="#vuln1"/>
+            <sub order="0x40" stat="knockBackVuln" val="#vuln2"/>
+            <sub order="0x40" stat="knockDownVuln" val="#vuln2"/>
+            <sub order="0x40" stat="flyUpVuln" val="#vuln2"/>
+            <sub order="0x40" stat="attractVuln" val="#vuln2"/>
+        </for>
+    </skill>
+    <skill id="30045" levels="3" name="Превосходные Способности">
+        <table name="#int">2 4 16</table>
+        <table name="#magicLvl">40 76 85</table>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x10" stat="INT" val="#int"/>
+            <add order="0x40" stat="skillMastery" val="2"/>
         </for>
     </skill>
 </list>

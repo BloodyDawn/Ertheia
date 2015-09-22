@@ -205,10 +205,6 @@ public class AdminMenu implements IAdminCommandHandler
 				showMainPage(activeChar, (L2PcInstance) target);
 				return;
 			}
-			else if(Config.CHAMPION_ENABLE && target.isChampion())
-			{
-				target.reduceCurrentHp(target.getMaxHp() * Config.CHAMPION_HP + 1, activeChar, null);
-			}
 			else
 			{
 				target.reduceCurrentHp(target.getMaxHp() + 1, activeChar, null);
