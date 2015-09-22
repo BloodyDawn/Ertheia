@@ -1,5 +1,6 @@
 package dwo.gameserver.network.game.serverpackets.packet.pledge;
 
+import dwo.config.Config;
 import dwo.gameserver.model.actor.instance.L2PcInstance;
 import dwo.gameserver.model.player.formation.clan.L2Clan;
 import dwo.gameserver.model.player.formation.clan.L2ClanMember;
@@ -47,6 +48,7 @@ public class PledgeShowMemberListAll extends L2GameServerPacket
 
 		writeD(pledge == null ? 0 : 1);
 		writeD(_clan.getClanId());
+		writeD( Config.SERVER_ID);
 		writeD(pledgeId);
 		writeS(_clan.getName());
 		writeS(name);

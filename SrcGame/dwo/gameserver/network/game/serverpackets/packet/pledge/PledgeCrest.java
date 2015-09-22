@@ -1,5 +1,6 @@
 package dwo.gameserver.network.game.serverpackets.packet.pledge;
 
+import dwo.config.Config;
 import dwo.gameserver.cache.CrestCache;
 import dwo.gameserver.network.game.serverpackets.L2GameServerPacket;
 
@@ -17,7 +18,7 @@ public class PledgeCrest extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeD(200); // приаритет
+		writeD( Config.SERVER_ID);
 		writeD(_crestId);
 		if(_data != null)
 		{

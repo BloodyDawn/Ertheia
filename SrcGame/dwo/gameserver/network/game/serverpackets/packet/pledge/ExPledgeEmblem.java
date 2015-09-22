@@ -1,5 +1,6 @@
 package dwo.gameserver.network.game.serverpackets.packet.pledge;
 
+import dwo.config.Config;
 import dwo.gameserver.network.game.serverpackets.L2GameServerPacket;
 
 public class ExPledgeEmblem extends L2GameServerPacket
@@ -21,7 +22,7 @@ public class ExPledgeEmblem extends L2GameServerPacket
 	protected void writeImpl()
 	{
 		// ddd ddd
-		writeD(200);            // ServerIdx
+		writeD( Config.SERVER_ID);            // ServerIdx
 		writeD(_pledgeId);    // PledgeId
 		writeD(_crestId);        // CrestId
 		writeD(_order);        // Emblem_order
