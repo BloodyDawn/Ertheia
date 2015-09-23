@@ -158,7 +158,7 @@ public class L2Npc extends L2Character
 	{
 		// Call the L2Character constructor to set the _template of the L2Character, copy skills from template to object
 		// and link _calculators to NPC_STD_CALCULATOR
-		super(objectId, template);
+		super( objectId, template );
 		initCharStatusUpdateValues();
 
 		// initialize the "current" equipment
@@ -167,7 +167,7 @@ public class L2Npc extends L2Character
         _armorId = getTemplate().getArmor();
 		_currentEnchant = Config.ENABLE_RANDOM_ENCHANT_EFFECT ? Rnd.get(4, 21) : getTemplate().getEnchantEffect();
 		// initialize the "current" collisions
-		_currentCollisionHeight = getTemplate().getFCollisionHeight(this);
+		_currentCollisionHeight = getTemplate().getFCollisionHeight( this );
 		_currentCollisionRadius = getTemplate().getFCollisionRadius(this);
 
 		if(template == null)
@@ -177,6 +177,9 @@ public class L2Npc extends L2Character
 		}
 
 		setName(template.getName());
+
+		if( template.isServerSideTitle() )
+			setTitle( template.getTitle() );
 	}
 
 	public L2Character getOwner()
