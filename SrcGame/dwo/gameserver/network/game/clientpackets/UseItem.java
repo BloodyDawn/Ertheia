@@ -207,21 +207,12 @@ public class UseItem extends L2GameClientPacket
                             }
                             break;
                         case Ertheia:
-                            switch (wpn.getItemType()) {
-                                case SWORD:
-                                case DAGGER:
-                                case BOW:
-                                case POLE:
-                                case NONE:
-                                case DUAL:
-                                case RAPIER:
-                                case ANCIENTSWORD:
-                                case CROSSBOW:
-                                case DUALDAGGER:
-                                    activeChar.sendPacket(SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION);
-                                    return;
-                            }
-                            break;
+                          if( wpn.getItemType() != L2WeaponType.SWORD && wpn.getItemType() != L2WeaponType.BLUNT && wpn.getItemType() != L2WeaponType.BIGBLUNT )
+                          {
+                            activeChar.sendPacket( SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION );
+                            return;
+                          }
+
                     }
                 }
 

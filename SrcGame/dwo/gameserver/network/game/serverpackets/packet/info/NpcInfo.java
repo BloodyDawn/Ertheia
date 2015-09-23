@@ -11,7 +11,6 @@ import dwo.gameserver.model.actor.instance.L2MonsterInstance;
 import dwo.gameserver.model.player.formation.clan.L2Clan;
 import dwo.gameserver.network.game.masktypes.NpcInfoType;
 import dwo.gameserver.network.game.serverpackets.AbstractMaskPacket;
-import dwo.gameserver.util.Rnd;
 
 /**
  * La2Era Team
@@ -79,7 +78,7 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
             addComponentType(NpcInfoType.EQUIPPED);
         }
 
-        if (Config.CHAMPION_ENABLE && npc.isChampion())
+        if (npc.getChampion() > 0)
         {
             addComponentType(NpcInfoType.TEAM);
         }
@@ -258,7 +257,7 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
             addComponentType(NpcInfoType.SPEED_MULTIPLIER);
         }
 
-        if (Config.CHAMPION_ENABLE && trap.isChampion())
+        if (trap.getChampion() > 0)
         {
             addComponentType(NpcInfoType.TEAM);
         }
@@ -460,7 +459,7 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
             }
             if (containsMask(NpcInfoType.TEAM))
             {
-                writeC(Config.CHAMPION_ENABLE_AURA == 3 ? Rnd.get(1, 2) : Config.CHAMPION_ENABLE_AURA);
+                writeC(_trap.getChampion());
             }
             if (containsMask(NpcInfoType.FLYING))
             {
@@ -584,7 +583,7 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
             }
             if (containsMask(NpcInfoType.TEAM))
             {
-                writeC(Config.CHAMPION_ENABLE_AURA == 3 ? Rnd.get(1, 2) : Config.CHAMPION_ENABLE_AURA);
+                writeC(_npc.getChampion());
             }
             if (containsMask(NpcInfoType.ENCHANT))
             {

@@ -56,6 +56,8 @@ public abstract class AbstractInventoryUpdate extends L2GameServerPacket
 
     public final void addRemovedItem(L2ItemInstance item)
     {
+        if( item == null )
+            return;
         _items.put( item.getObjectId(), new ItemInfo( item, REMOVED ) );
     }
 

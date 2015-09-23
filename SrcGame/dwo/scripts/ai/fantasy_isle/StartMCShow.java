@@ -2,7 +2,7 @@ package dwo.scripts.ai.fantasy_isle;
 
 import dwo.gameserver.instancemanager.QuestManager;
 
-public class StartMCShow implements Runnable
+class StartMCShow implements Runnable
 {
 	@Override
 	public void run()

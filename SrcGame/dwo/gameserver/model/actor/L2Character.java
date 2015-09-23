@@ -8157,14 +8157,7 @@ public abstract class L2Character extends L2Object
 			}
 		}
 
-		if(Config.CHAMPION_ENABLE && isChampion() && Config.CHAMPION_HP != 0)
-		{
-			getStatus().reduceHp(damage / Config.CHAMPION_HP, attacker, awake, isDOT, false);
-		}
-		else
-		{
-			getStatus().reduceHp(damage, attacker, awake, isDOT, false);
-		}
+		getStatus().reduceHp(damage, attacker, awake, isDOT, false);
 	}
 
 	public void reduceCurrentMp(double i)
@@ -8265,9 +8258,9 @@ public abstract class L2Character extends L2Object
 		return 0;
 	}
 
-	public boolean isChampion()
+	public int getChampion()
 	{
-		return false;
+		return 0;
 	}
 
 	/**

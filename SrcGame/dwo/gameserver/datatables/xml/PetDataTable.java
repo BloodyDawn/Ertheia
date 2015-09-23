@@ -55,7 +55,7 @@ public class PetDataTable extends XmlDocumentParser
                 
                 for(Element element1 : element.getChildren())
                 {
-                    final String name1 = element.getName();
+                    final String name1 = element1.getName();
                     if(name1.equalsIgnoreCase("set"))
                     {
                         String type = element1.getAttributeValue("name");
@@ -71,46 +71,46 @@ public class PetDataTable extends XmlDocumentParser
                                 data.setFood(food);
                                 break;
                             case "load":
-                                data.setLoad(Integer.parseInt(element.getAttributeValue("val")));
+                                data.setLoad(Integer.parseInt(element1.getAttributeValue("val")));
                                 break;
                             case "hungry_limit":
-                                data.setHungryLimit(Integer.parseInt(element.getAttributeValue("val")));
+                                data.setHungryLimit(Integer.parseInt(element1.getAttributeValue("val")));
                                 break;
                             case "sync_level":
-                                data.setSyncLevel(Integer.parseInt(element.getAttributeValue("val")));
+                                data.setSyncLevel(Integer.parseInt(element1.getAttributeValue("val")));
                                 break;
                         }
                     }
                     else if(name1.equalsIgnoreCase("skills"))
                     {
-                        for(Element element2 : element1.getChildren())
+                        for(Element skillElement : element1.getChildren())
                         {
-                            final String name2 = element2.getName();
+                            final String name2 = skillElement.getName();
                             if(name2.equalsIgnoreCase("skill"))
                             {
-                                int skillId = Integer.parseInt(element.getAttributeValue("skillId"));
-                                int skillLvl = Integer.parseInt(element.getAttributeValue("skillLvl"));
-                                int minLvl = Integer.parseInt(element.getAttributeValue("minLvl"));
+                                int skillId = Integer.parseInt(skillElement.getAttributeValue("skillId"));
+                                int skillLvl = Integer.parseInt(skillElement.getAttributeValue("skillLvl"));
+                                int minLvl = Integer.parseInt(skillElement.getAttributeValue("minLvl"));
                                 data.addNewSkill(skillId, skillLvl, minLvl);
                             }
                         }
                     }
                     else if(name1.equalsIgnoreCase("stats"))
                     {
-                        for(Element element2 : element1.getChildren())
+                        for(Element statsElement : element1.getChildren())
                         {
-                            final String name2 = element2.getName();
+                            final String name2 = statsElement.getName();
                             if(name2.equalsIgnoreCase("stat"))
                             {
-                                int level = Integer.parseInt(element.getAttributeValue("level"));
+                                int level = Integer.parseInt(statsElement.getAttributeValue("level"));
                                 L2PetLevelData stat = new L2PetLevelData();
-                                for(Element element3 : element2.getChildren())
+                                for(Element statElement : statsElement.getChildren())
                                 {
-                                    final String name3 = element3.getName();
+                                    final String name3 = statElement.getName();
                                     if(name3.equalsIgnoreCase("set"))
                                     {
-                                        String type = element3.getAttributeValue("name");
-                                        String value = element3.getAttributeValue("val");
+                                        String type = statElement.getAttributeValue("name");
+                                        String value = statElement.getAttributeValue("val");
                                         switch(type)
                                         {
                                             case "max_meal":

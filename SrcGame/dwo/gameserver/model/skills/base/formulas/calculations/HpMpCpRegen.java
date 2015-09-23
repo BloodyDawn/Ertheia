@@ -137,10 +137,6 @@ public class HpMpCpRegen
 		{
 			init = ((L2PetInstance) cha).getPetLevelData().getPetRegenHP() * Config.PET_HP_REGEN_MULTIPLIER;
 		}
-		else if(Config.CHAMPION_ENABLE && cha.isChampion())
-		{
-			hpRegenMultiplier *= Config.CHAMPION_HP_REGEN;
-		}
 
 		return cha.calcStat(Stats.REGENERATE_HP_RATE, Math.max(1, init), null, null) * hpRegenMultiplier + hpRegenBonus;
 	}

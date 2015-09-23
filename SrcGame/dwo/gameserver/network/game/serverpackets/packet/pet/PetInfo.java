@@ -21,8 +21,8 @@ public class PetInfo extends L2GameServerPacket
 	private int _flyWalkSpd;
 	private int _maxFed;
 	private int _curFed;
-    private FastSet<Integer> _abnormals;
-    private int _statusMask;
+  private FastSet<Integer> _abnormals;
+  private int _statusMask;
 
 	public PetInfo(L2Summon summon, int state)
 	{
@@ -157,9 +157,8 @@ public class PetInfo extends L2GameServerPacket
         writeD(_summon.getMAtkSpd());//casting speed
 
         writeC(_summon.isMountable() ? 1 : 0);//c2    ride button
-        writeC(0);
 
-		writeC(_summon.getOwner() != null ? _summon.getOwner().getTeam() : 0); // team aura (1 = blue, 2 = red)
+	      writeC(_summon.getOwner() != null ? _summon.getOwner().getTeam() : 0); // team aura (1 = blue, 2 = red)
         writeC(_summon.getSoulShotsPerHit()); // How many soulshots this servitor uses per hit
         writeC(_summon.getSpiritShotsPerHit()); // How many spiritshots this servitor uses per hit
 

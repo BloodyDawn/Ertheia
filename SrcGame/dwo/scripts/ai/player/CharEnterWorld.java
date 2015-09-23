@@ -52,10 +52,7 @@ import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoCubic;
 import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoEquipSlot;
 import dwo.gameserver.network.game.serverpackets.packet.mail.ExUnReadMailCount;
 import dwo.gameserver.network.game.serverpackets.packet.party.ExPCCafePointInfo;
-import dwo.gameserver.network.game.serverpackets.packet.pledge.ExPledgeCount;
-import dwo.gameserver.network.game.serverpackets.packet.pledge.PledgeShowMemberListAll;
-import dwo.gameserver.network.game.serverpackets.packet.pledge.PledgeShowMemberListUpdate;
-import dwo.gameserver.network.game.serverpackets.packet.pledge.PledgeSkillList;
+import dwo.gameserver.network.game.serverpackets.packet.pledge.*;
 import dwo.gameserver.network.game.serverpackets.packet.pledge.clanSearch.ExPledgeWaitingListAlarm;
 import dwo.gameserver.network.game.serverpackets.packet.primeshop.ExBR_NewIConCashBtnWnd;
 import dwo.gameserver.network.game.serverpackets.packet.show.ExShowUsm;
@@ -614,11 +611,12 @@ public class CharEnterWorld extends Quest
 		boolean showClanNotice = false;
 		L2Clan clan = player.getClan();
 
-		if(player.getClan() != null)
+		if(clan != null)
 		{
-			player.sendPacket(new PledgeSkillList(player.getClan()));
+			player.sendPacket( new PledgeShowInfoUpdate( clan ) );
+			player.sendPacket(new PledgeSkillList(clan));
 
-			AuctionableHall clanHall = ClanHallManager.getInstance().getClanHallByOwner(player.getClan());
+			AuctionableHall clanHall = ClanHallManager.getInstance().getClanHallByOwner(clan);
 
 			if(clanHall != null)
 			{
@@ -635,13 +633,13 @@ public class CharEnterWorld extends Quest
 					continue;
 				}
 
-				if(castleSiegeEngine.checkIsAttacker(player.getClan()))
+				if(castleSiegeEngine.checkIsAttacker(clan))
 				{
 					player.setSiegeSide(PlayerSiegeSide.ATTACKER);
 					player.setActiveSiegeId(castleSiegeEngine.getCastle().getCastleId());
 				}
 
-				else if(castleSiegeEngine.checkIsDefender(player.getClan()))
+				else if(castleSiegeEngine.checkIsDefender(clan))
 				{
 					player.setSiegeSide(PlayerSiegeSide.DEFENDER);
 					player.setActiveSiegeId(castleSiegeEngine.getCastle().getCastleId());
@@ -655,13 +653,13 @@ public class CharEnterWorld extends Quest
 					continue;
 				}
 
-				if(siegeEngine.checkIsAttacker(player.getClan()))
+				if(siegeEngine.checkIsAttacker(clan))
 				{
 					player.setSiegeSide(PlayerSiegeSide.ATTACKER);
 					player.setActiveSiegeId(siegeEngine.getFort().getFortId());
 				}
 
-				else if(siegeEngine.checkIsDefender(player.getClan()))
+				else if(siegeEngine.checkIsDefender(clan))
 				{
 					player.setSiegeSide(PlayerSiegeSide.DEFENDER);
 					player.setActiveSiegeId(siegeEngine.getFort().getFortId());
@@ -675,7 +673,7 @@ public class CharEnterWorld extends Quest
 					continue;
 				}
 
-				if(hall.isRegistered(player.getClan()))
+				if(hall.isRegistered(clan))
 				{
 					player.setSiegeSide(PlayerSiegeSide.ATTACKER);
 					player.setActiveSiegeId(hall.getId());
@@ -684,26 +682,26 @@ public class CharEnterWorld extends Quest
 			}
 
 			// Residential skills support
-			if(player.getClan().getCastleId() > 0)
+			if(clan.getCastleId() > 0)
 			{
-				CastleManager.getInstance().getCastleByOwner(player.getClan()).giveResidentialSkills(player);
+				CastleManager.getInstance().getCastleByOwner(clan).giveResidentialSkills(player);
 			}
 
-			if(player.getClan().getFortId() > 0)
+			if(clan.getFortId() > 0)
 			{
-				FortManager.getInstance().getFortByOwner(player.getClan()).giveResidentialSkills(player);
+				FortManager.getInstance().getFortByOwner(clan).giveResidentialSkills(player);
 			}
 
 			notifySponsorOrApprentice(player);
 
 			clan.notifyClanEnterWorld(player);
 
-			showClanNotice = player.getClan().isNoticeEnabled();
+			showClanNotice = clan.isNoticeEnabled();
 
 			// Шлем клиенту информацию
 			player.sendPacket(new PledgeShowMemberListUpdate(player));
-			player.sendPacket(new PledgeShowMemberListAll(player.getClan(), player));
-			player.sendPacket(new PledgeSkillList(player.getClan()));
+			player.sendPacket(new PledgeShowMemberListAll(clan, player));
+			player.sendPacket(new PledgeSkillList(clan));
 			player.sendPacket(new ExPledgeCount(clan.getOnlineMembersCount()));
 
 		}

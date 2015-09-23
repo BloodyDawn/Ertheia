@@ -1,8 +1,5 @@
 package dwo.gameserver.instancemanager;
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -19,12 +16,6 @@ import java.util.jar.JarFile;
  */
 class ClassEnumerator
 {
-  private static final Logger _log = LogManager.getLogger( ClassEnumerator.class );
-  private static void log( String msg )
-  {
-    _log.info( "ClassDiscovery: " + msg );
-  }
-
   private static Class<?> loadClass( String className )
   {
     try
@@ -39,28 +30,21 @@ class ClassEnumerator
 
   private static void processDirectory( File directory, String pkgname, ArrayList<Class<?>> classes )
   {
-    log( "Reading Directory '" + directory + "'" );
     // Get the list of the files contained in the package
     String[] files = directory.list();
-    for( int i = 0; i < files.length; i++ )
-    {
-      String fileName = files[ i ];
+    for (String fileName : files) {
       String className = null;
       // we are only interested in .class files
-      if( fileName.endsWith( ".class" ) )
-      {
+      if (fileName.endsWith(".class")) {
         // removes the .class extension
-        className = pkgname + '.' + fileName.substring( 0, fileName.length() - 6 );
+        className = pkgname + '.' + fileName.substring(0, fileName.length() - 6);
       }
-      log( "FileName '" + fileName + "'  =>  class '" + className + "'" );
-      if( className != null )
-      {
-        classes.add( loadClass( className ) );
+      if (className != null) {
+        classes.add(loadClass(className));
       }
-      File subdir = new File( directory, fileName );
-      if( subdir.isDirectory() )
-      {
-        processDirectory( subdir, pkgname + '.' + fileName, classes );
+      File subdir = new File(directory, fileName);
+      if (subdir.isDirectory()) {
+        processDirectory(subdir, pkgname + '.' + fileName, classes);
       }
     }
   }
@@ -70,7 +54,6 @@ class ClassEnumerator
     String relPath = pkgname.replace( '.', '/' );
     String resPath = resource.getPath();
     String jarPath = resPath.replaceFirst( "[.]jar[!].*", ".jar" ).replaceFirst( "file:", "" );
-    log( "Reading JAR file: '" + jarPath + "'" );
     JarFile jarFile;
     try
     {
@@ -90,7 +73,6 @@ class ClassEnumerator
       {
         className = entryName.replace( '/', '.' ).replace( '\\', '.' ).replace( ".class", "" );
       }
-      log( "JarEntry '" + entryName + "'  =>  class '" + className + "'" );
       if( className != null )
       {
         classes.add( loadClass( className ) );
@@ -100,7 +82,7 @@ class ClassEnumerator
 
   public static ArrayList<Class<?>> getClassesForPackage( String pkg )
   {
-    ArrayList<Class<?>> classes = new ArrayList<Class<?>>();
+    ArrayList<Class<?>> classes = new ArrayList<>();
 
     String relPath = pkg.replace( '.', '/' );
 
@@ -110,7 +92,6 @@ class ClassEnumerator
     {
       throw new RuntimeException( "Unexpected problem: No resource for " + relPath );
     }
-    log( "Package: '" + pkg + "' becomes Resource: '" + resource.toString() + "'" );
 
     resource.getPath();
     if( resource.toString().startsWith( "jar:" ) )

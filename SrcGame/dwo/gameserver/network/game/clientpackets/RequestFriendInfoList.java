@@ -1,6 +1,7 @@
 package dwo.gameserver.network.game.clientpackets;
 
 import dwo.gameserver.model.actor.instance.L2PcInstance;
+import dwo.gameserver.network.game.serverpackets.packet.friend.FriendList;
 import dwo.gameserver.network.game.serverpackets.packet.friend.L2FriendList;
 
 /**
@@ -26,6 +27,7 @@ public class RequestFriendInfoList extends L2GameClientPacket
 		{
 			return;
 		}
+		player.sendPacket(new FriendList(player));
 		player.sendPacket(new L2FriendList(player));
 		// TODO: BlockListPacket
 		// TODO: Еще шлется

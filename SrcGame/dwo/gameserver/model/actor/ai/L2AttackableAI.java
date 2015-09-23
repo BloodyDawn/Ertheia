@@ -369,7 +369,7 @@ public class L2AttackableAI extends L2CharacterAI implements Runnable
 				return false;
 			}
 
-			if(me.isChampion() && Config.CHAMPION_PASSIVE)
+			if(me.getChampion() > 0 && Config.CHAMPION_PASSIVE)
 			{
 				return false;
 			}
