@@ -40,13 +40,13 @@ public class PetStatusUpdate extends L2GameServerPacket
 		writeD(_summon.getX());
 		writeD(_summon.getY());
 		writeD(_summon.getZ());
-		writeS("");
+		writeS(_summon.getTitle());
 		writeD(_curFed);
 		writeD(_maxFed);
 		writeD((int) _summon.getCurrentHp());
-		writeD(_summon.getMaxVisibleHp());
+		writeD(_maxHp);
 		writeD((int) _summon.getCurrentMp());
-		writeD(_summon.getMaxMp());
+		writeD(_maxMp);
 		writeD(_summon.getLevel());
 		writeQ(_summon.getStat().getExp());
 		writeQ(_summon.getExpForThisLevel());// 0% absolute value
