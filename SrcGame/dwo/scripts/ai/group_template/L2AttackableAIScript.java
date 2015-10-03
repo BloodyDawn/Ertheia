@@ -157,7 +157,7 @@ public class L2AttackableAIScript extends Quest
 				L2Object npcTarget = attackable.getTarget();
 				for(L2Object skillTarget : targets)
 				{
-					if(npcTarget.equals(skillTarget) || npc.equals(skillTarget))
+					if (npcTarget == skillTarget || npc == skillTarget)
 					{
 						L2Character originalCaster = isPet ? caster.getPets().getFirst() : caster;
 						attackable.addDamageHate(originalCaster, 0, skillAggroPoints * 150 / (attackable.getLevel() + 7));
