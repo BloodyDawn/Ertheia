@@ -556,11 +556,20 @@ public class Util
 	 * @param id ID класса текущей профессии
 	 * @return профессию 3-его класса дял указанного ID професиии
 	 */
+	@Deprecated
 	public static int getThirdClassForId( int id )
 	{
 		ClassId classId = ClassId.getClassId( id );
-		if( classId == null || classId.getClassLevel() != ClassLevel.SECOND )
+		if( classId == null )
 			return -1;
+
+		if( classId.getClassLevel() == ClassLevel.THIRD )
+			return classId.getId();
+		else if( classId.getClassLevel() == ClassLevel.AWAKEN )
+			return classId.getParent().getId();
+		else if( classId.getClassLevel() != ClassLevel.SECOND )
+			return -1;
+
 
 		for( ClassId cid : ClassId.values() )
 		{
