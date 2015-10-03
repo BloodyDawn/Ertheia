@@ -3,6 +3,7 @@ package dwo.gameserver.util;
 import dwo.config.Config;
 import dwo.gameserver.ThreadPoolManager;
 import dwo.gameserver.datatables.sql.CharNameTable;
+import dwo.gameserver.datatables.xml.ClassTemplateTable;
 import dwo.gameserver.datatables.xml.ObsceneFilterTable;
 import dwo.gameserver.instancemanager.WorldManager;
 import dwo.gameserver.model.actor.L2Character;
@@ -552,159 +553,26 @@ public class Util
 	}
 
 	/**
-	 * @param classId ID класса текущей профессии
+	 * @param id ID класса текущей профессии
 	 * @return профессию 3-его класса дял указанного ID професиии
 	 */
-	public static int getThirdClassForId(int classId)
+	public static int getThirdClassForId( int id )
 	{
-		int result = -1;
-		switch(classId)
+		ClassId classId = ClassId.getClassId( id );
+		if( classId == null || classId.getClassLevel() != ClassLevel.SECOND )
+			return -1;
+
+		for( ClassId cid : ClassId.values() )
 		{
-			// Elder -> Evas Saint
-			case 30:
-				result = 105;
-				break;
-			// Temple Knight -> Evas Templar
-			case 20:
-				result = 99;
-				break;
-			// Treasure Hunter -> Adventurer
-			case 8:
-				result = 93;
-				break;
-			// Warlock -> Arcana Lord
-			case 14:
-				result = 96;
-				break;
-			// Sorcerer -> Archmage
-			case 12:
-				result = 94;
-				break;
-			// Bishop -> Cardinal
-			case 16:
-				result = 97;
-				break;
-			// Overlord -> Dominator
-			case 51:
-				result = 115;
-				break;
-			// Berserker -> Doombringer
-			case 127:
-				result = 131;
-				break;
-			// Warcryer -> Doomcryer
-			case 52:
-				result = 116;
-				break;
-			// Warlord -> Dreadnought
-			case 3:
-				result = 89;
-				break;
-			// Gladiator -> Duelist
-			case 2:
-				result = 88;
-				break;
-			// Elemental Summoner -> Elemental Master
-			case 28:
-				result = 104;
-				break;
-			// Bounty Hunter -> Fortune Seeker
-			case 55:
-				result = 117;
-				break;
-			// Abyss Walker -> GhostHunter
-			case 36:
-				result = 108;
-				break;
-			// Phantom Ranger -> Ghost Sentinel
-			case 37:
-				result = 109;
-				break;
-			// Tyrant -> Grand Khavatari
-			case 48:
-				result = 114;
-				break;
-			// Dark Avenger -> Hell Knight
-			case 6:
-				result = 91;
-				break;
-			// Prophet -> Hierophant
-			case 17:
-				result = 98;
-				break;
-			// Warsmith -> Maestro
-			case 57:
-				result = 118;
-				break;
-			// Silver Ranger -> Moonlight Sentinel
-			case 24:
-				result = 102;
-				break;
-			// Spellsinger -> Mystic Muse
-			case 27:
-				result = 103;
-				break;
-			// Paladin -> Phoenix Knight
-			case 5:
-				result = 90;
-				break;
-			// Hawkeye -> Saggitarius
-			case 9:
-				result = 92;
-				break;
-			// Shillien Elder -> Shillen Saint
-			case 43:
-				result = 112;
-				break;
-			// Shillien Knight -> Shillien Templar
-			case 33:
-				result = 106;
-				break;
-			// Soulbreaker -> Soulhound
-			case 128:
-				result = 132;
-				break;
-			case 129:
-				result = 133;
-				break;
-			// Necromancer -> Soultaker
-			case 13:
-				result = 95;
-				break;
-			// Blade Dancer -> Spectral Dancer
-			case 34:
-				result = 107;
-				break;
-			// Phantom Summoner -> Spectral Master
-			case 41:
-				result = 111;
-				break;
-			// Spell Howler -> Storm Screamer
-			case 40:
-				result = 110;
-				break;
-			// Sword Singer -> Sword Muse
-			case 21:
-				result = 100;
-				break;
-			// Destroyer -> Titan
-			case 46:
-				result = 113;
-				break;
-			// Arbalester -> Trickster
-			case 130:
-				result = 134;
-				break;
-			// Plains Walker -> Wind Rider
-			case 23:
-				result = 101;
-				break;
-			// Judicator -> Inspector
-			case 135:
-				result = 136;
-				break;
+			if( cid == ClassId.inspector )
+				continue;
+
+			if( cid.childOf( classId ) && cid.getClassLevel() == ClassLevel.THIRD )
+			{
+				return cid.getId();
+			}
 		}
-		return result;
+		return -1;
 	}
 
 	/***
