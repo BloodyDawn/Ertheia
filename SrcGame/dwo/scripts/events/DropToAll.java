@@ -15,35 +15,35 @@ import dwo.gameserver.util.Rnd;
  * Time: 20:14
  */
 public class DropToAll extends Quest
-{
-  // Gold Einhasad 4356
-  // Silver Shilen 4357
-  // Coin of Luck 4037
-  // Mouse Coin 10639
-  private static final int ITEM_ID = 10639;
-
-  public DropToAll()
-  {
-    super();
-    System.out.println( "Event: Drop to all" );
-    for( L2NpcTemplate npcTemplate : NpcTable.getInstance().getAllMonstersOfLevel( 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99 ) )
     {
-      this.addEventId( npcTemplate.getNpcId(), Quest.QuestEventType.ON_KILL );
-    }
-  }
+      // Gold Einhasad 4356
+      // Silver Shilen 4357
+      // Coin of Luck 4037
+      // Mouse Coin 10639
+      private static final int ITEM_ID = 10639;
 
-  public static void main( final String[] args )
-  {
-    new DropToAll();
-  }
+      public DropToAll()
+      {
+        super();
+        System.out.println( "Event: Drop to all" );
+        for( L2NpcTemplate npcTemplate : NpcTable.getInstance().getAllMonstersOfLevel( 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99 ) )
+        {
+          this.addEventId( npcTemplate.getNpcId(), Quest.QuestEventType.ON_KILL );
+        }
+      }
 
-  @Override
-  public String onKill( final L2Npc npc, final L2PcInstance killer, final boolean isPet )
-  {
-    if( npc.getLevel() >= 85 && npc.getLevel() <= 95 && Rnd.getChance( 50 ) )
+    public static void main( final String[] args )
     {
-      killer.addItem( ProcessType.DROP, ITEM_ID, Rnd.get( 5, 10 ), killer, true );
+      new DropToAll();
     }
+
+    @Override
+    public String onKill( final L2Npc npc, final L2PcInstance killer, final boolean isPet )
+    {
+      if( npc.getLevel() >= 85 && npc.getLevel() <= 95 && Rnd.getChance( 50 ) )
+      {
+        killer.addItem( ProcessType.DROP, ITEM_ID, Rnd.get( 5, 10 ), killer, true );
+      }
     else if( npc.getLevel() > 95 && npc.getLevel() < 100 && Rnd.getChance( 70 ) )
     {
       killer.addItem( ProcessType.DROP, ITEM_ID, Rnd.get( 10, 15 ), killer, true );
