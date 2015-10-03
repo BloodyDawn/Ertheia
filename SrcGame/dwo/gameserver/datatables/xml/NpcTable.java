@@ -31,6 +31,7 @@ public class NpcTable extends XmlDocumentParser
 {
     private static final Map<Integer, L2NpcTemplate> _npcs = new HashMap<>();
     private List<DropList> _drop = new ArrayList<>();
+    private boolean custom;
 
     protected static NpcTable instance;
 
@@ -52,9 +53,19 @@ public class NpcTable extends XmlDocumentParser
     public void load() throws JDOMException, IOException {
         _npcs.clear();
         _drop.clear();
-        parseFile(new File(Config.DATAPACK_ROOT, "/data/stats/client/ClientNpc.xml"));
+        parseFile( new File( Config.DATAPACK_ROOT, "/data/stats/client/ClientNpc.xml" ) );
         parseDirectory(FilePath.NPC_STATS);
-        parseDirectory(FilePath.CUSTOM_NPC_STATS);
+
+        try
+        {
+            custom = true;
+            parseDirectory( FilePath.CUSTOM_NPC_STATS );
+        }
+        finally
+        {
+            custom = false;
+        }
+
         for (final DropList dl : _drop)
         {
             for (final DropCategory cat : dl.getCategories())
@@ -71,7 +82,6 @@ public class NpcTable extends XmlDocumentParser
         _log.info(getClass().getSimpleName() + ": Loaded " + _npcs.size() + " NPC template(s) and " + _drop.size() + " drop(s) count.");
     }
 
-    @Override
     protected void parseDocument(Element rootElement)
     {
         StatsSet npcDat;
@@ -271,30 +281,29 @@ public class NpcTable extends XmlDocumentParser
                     }
                 }
 
-                if(_npcs.get(npcId) == null)
+                if( _npcs.get( npcId ) != null && !custom )
                 {
-                    L2NpcTemplate template = new L2NpcTemplate(npcDat);
+                    L2NpcTemplate template = _npcs.get( npcId );
+                    npcDat.set( "ground_high", template.getBaseRunSpd() );
+                    npcDat.set( "ground_low", template.getBaseWalkSpd() );
+                    npcDat.set( "collision_radius", template.getCollisionRadius() );
+                    npcDat.set( "collision_height", template.getCollisionHeight() );
+                    npcDat.set( "org_hp", template.getBaseHpMax() );
+                    npcDat.set( "org_mp", template.getBaseMpMax() );
+                    template.updateL2CharTemplate( npcDat );
+                    template.updateL2NpcTemplate( npcDat );
                     npc_skills.forEach(template::addSkill);
                     minions.forEach(template::addRaidData);
                     teachInfos.forEach(template::addTeachInfo);
-                    telePositions.forEach(template::addTelePosition);
+                    telePositions.forEach( template::addTelePosition );
                     for(Map.Entry<String, Integer> entry : doorList.entrySet())
                     {
                         template.addDoor(entry.getKey(), entry.getValue());
                     }
-                    _npcs.put(npcId, template);
                 }
                 else
                 {
-                    L2NpcTemplate template = _npcs.get(npcId);
-                    npcDat.set("ground_high", template.getBaseRunSpd());
-                    npcDat.set("ground_low", template.getBaseWalkSpd());
-                    npcDat.set("collision_radius", template.getCollisionRadius());
-                    npcDat.set("collision_height", template.getCollisionHeight());
-                    npcDat.set("org_hp", template.getBaseHpMax());
-                    npcDat.set("org_mp", template.getBaseMpMax());
-                    template.updateL2CharTemplate(npcDat);
-                    template.updateL2NpcTemplate(npcDat);
+                    L2NpcTemplate template = new L2NpcTemplate( npcDat );
                     npc_skills.forEach(template::addSkill);
                     minions.forEach(template::addRaidData);
                     teachInfos.forEach(template::addTeachInfo);
@@ -303,6 +312,7 @@ public class NpcTable extends XmlDocumentParser
                     {
                         template.addDoor(entry.getKey(), entry.getValue());
                     }
+                    _npcs.put( npcId, template );
                 }
             }
         }
