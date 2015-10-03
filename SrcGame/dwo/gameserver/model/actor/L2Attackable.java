@@ -740,6 +740,7 @@ public class L2Attackable extends L2Npc
 		} else {
 //			startAbnormalEffect((level == 1) ? AbnormalEffect.GREEN_SPEED_UP : AbnormalEffect.RED_SPEED_UP);
 			addSkill(SkillTable.getInstance().getInfo(4407, level));
+			setCurrentHp( getMaxHp() );
 			_champion = level;
 		}
 	}
