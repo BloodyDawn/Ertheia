@@ -198,6 +198,7 @@ public class UseItem extends L2GameClientPacket
                         case Elf:
                         case DarkElf:
                         case Orc:
+                        case Ertheia:
                             switch (wpn.getItemType()) {
                                 case RAPIER:
                                 case CROSSBOW:
@@ -206,13 +207,6 @@ public class UseItem extends L2GameClientPacket
                                     return;
                             }
                             break;
-                        case Ertheia:
-                          if( wpn.getItemType() != L2WeaponType.SWORD && wpn.getItemType() != L2WeaponType.BLUNT && wpn.getItemType() != L2WeaponType.BIGBLUNT )
-                          {
-                            activeChar.sendPacket( SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION );
-                            return;
-                          }
-
                     }
                 }
 

@@ -1244,12 +1244,6 @@ public class L2Attackable extends L2Npc
 			}
 		}
 
-		// Avoid dividing by 0
-		if(deepBlueDrop == 0)
-		{
-			deepBlueDrop = 1;
-		}
-
 		// Check if we should apply our maths so deep blue mobs will not drop that easy
 		if(!_isRaid && Config.DEEPBLUE_DROP_RULES || _isRaid && Config.DEEPBLUE_DROP_RULES_RAID)
 		{
@@ -1314,7 +1308,7 @@ public class L2Attackable extends L2Npc
 			// Для мобов чемпионов
 			if(Config.CHAMPION_ENABLE && _champion > 0)
 			{
-				multiplier *= Config.CHAMPION_REWARDS * _champion;
+				multiplier *= Config.CHAMPION_REWARDS;
 			}
 
 			// Если последний атакующий имеет ПА применяем его рейт
@@ -1324,8 +1318,8 @@ public class L2Attackable extends L2Npc
 			}
 
 			// Получаем мин и макс количество предметов
-			int min = drop.getMinDrop() * (drop.getItemId() == PcInventory.ADENA_ID ? (int) multiplier : 1);
-			int max = drop.getMaxDrop() * (int) multiplier;
+			int min = Math.round(drop.getMinDrop() * (drop.getItemId() == PcInventory.ADENA_ID ? multiplier : 1));
+			int max = Math.round(drop.getMaxDrop() * multiplier);
 
 			// Количество итемов которое упадет
 			int itemCount = Rnd.get(min, max);
