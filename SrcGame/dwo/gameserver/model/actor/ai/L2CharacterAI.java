@@ -204,7 +204,7 @@ public class L2CharacterAI extends AbstractAI
 		if(getIntention() == AI_INTENTION_ATTACK)
 		{
 			// Check if the AI already targets the L2Character
-			if(getAttackTarget().equals(target))
+			if(getAttackTarget() == target)
 			{
 				clientActionFailed(); // else client freezes until cancel target
 			}
