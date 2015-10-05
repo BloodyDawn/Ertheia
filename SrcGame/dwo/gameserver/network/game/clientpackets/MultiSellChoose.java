@@ -31,6 +31,7 @@ import dwo.gameserver.network.game.components.SystemMessageId;
 import dwo.gameserver.network.game.serverpackets.ItemList;
 import dwo.gameserver.network.game.serverpackets.StatusUpdate;
 import dwo.gameserver.network.game.serverpackets.SystemMessage;
+import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.util.Rnd;
 import javolution.util.FastList;
 import org.apache.log4j.Level;
@@ -509,9 +510,7 @@ public class MultiSellChoose extends L2GameClientPacket
 						}
 					}
 					player.sendPacket(new ItemList(player, false));
-					StatusUpdate su = new StatusUpdate(player);
-					su.addAttribute(StatusUpdate.CUR_LOAD, player.getCurrentLoad());
-					player.sendPacket(su);
+					player.sendPacket(new ExUserInfoInvenWeight(player));
 				}
 				finally
 				{

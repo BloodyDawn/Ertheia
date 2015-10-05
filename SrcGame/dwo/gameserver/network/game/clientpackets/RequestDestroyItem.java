@@ -15,6 +15,7 @@ import dwo.gameserver.network.game.serverpackets.InventoryUpdate;
 import dwo.gameserver.network.game.serverpackets.ItemList;
 import dwo.gameserver.network.game.serverpackets.StatusUpdate;
 import dwo.gameserver.network.game.serverpackets.SystemMessage;
+import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.util.Util;
 import dwo.gameserver.util.database.DatabaseUtils;
 import org.apache.log4j.Level;
@@ -211,9 +212,7 @@ public class RequestDestroyItem extends L2GameClientPacket
 			activeChar.sendPacket(iu);
 		}
 
-		StatusUpdate su = new StatusUpdate(activeChar);
-		su.addAttribute(StatusUpdate.CUR_LOAD, activeChar.getCurrentLoad());
-		activeChar.sendPacket(su);
+		activeChar.sendPacket(new ExUserInfoInvenWeight(activeChar));
 	}
 
 	@Override

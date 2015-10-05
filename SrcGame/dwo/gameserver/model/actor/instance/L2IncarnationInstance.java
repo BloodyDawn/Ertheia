@@ -146,7 +146,7 @@ public class L2IncarnationInstance extends L2DecoyInstance
         {
             L2Skill skill = skills[Rnd.get(skills.length)].getSkill();
 
-            if (getTarget() == null)
+            if (getTarget() == null && _skillUseTask != null)
             {
                 _skillUseTask.cancel(true);
                 _skillUseTask = null;

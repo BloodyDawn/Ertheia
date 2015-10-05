@@ -45,7 +45,7 @@ public class MpHeal extends L2Effect
 		}
 		mp += effmp;
 		getEffected().setCurrentMp(mp);
-		StatusUpdate sump = new StatusUpdate(getEffected().getObjectId());
+		StatusUpdate sump = new StatusUpdate(getEffected());
 		sump.addAttribute(StatusUpdate.CUR_MP, (int) mp);
 		getEffected().sendPacket(sump);
 		SystemMessage smp = SystemMessage.getSystemMessage(SystemMessageId.S1_MP_RESTORED);

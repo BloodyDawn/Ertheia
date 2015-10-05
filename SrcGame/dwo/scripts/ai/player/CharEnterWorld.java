@@ -305,7 +305,7 @@ public class CharEnterWorld extends Quest
 		player.onPlayerEnter();
 		player.startRecommendationGiveTask();
 		player.broadcastUserInfo();
-        player.sendPacket(new StatusUpdate(player.getObjectId()));
+        player.sendPacket(new StatusUpdate(player));
 
         player.sendPacket(new ExUserInfoEquipSlot(player));
         player.sendPacket(new ExUserInfoCubic(player));

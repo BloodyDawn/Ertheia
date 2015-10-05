@@ -34,6 +34,7 @@ import dwo.gameserver.network.game.serverpackets.Say2;
 import dwo.gameserver.network.game.serverpackets.StatusUpdate;
 import dwo.gameserver.network.game.serverpackets.packet.ex.ExBlockUpSetList;
 import dwo.gameserver.network.game.serverpackets.packet.ex.ExBlockUpSetState;
+import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.util.Rnd;
 import dwo.gameserver.util.StringUtil;
 import javolution.util.FastMap;
@@ -436,16 +437,13 @@ public class TvTEvent
 				}
 			}
 
-			StatusUpdate statusUpdate = new StatusUpdate(playerInstance);
 			NpcHtmlMessage npcHtmlMessage = new NpcHtmlMessage(playerInstance.getObjectId());
-
-			statusUpdate.addAttribute(StatusUpdate.CUR_LOAD, playerInstance.getCurrentLoad());
 			String html = HtmCache.getInstance().getHtm(playerInstance.getLang(), htmlPath + "Reward.htm");
 			if(html != null)
 			{
 				npcHtmlMessage.setHtml(html);
 			}
-			playerInstance.sendPacket(statusUpdate);
+			playerInstance.sendPacket(new ExUserInfoInvenWeight(playerInstance));
 			playerInstance.sendPacket(npcHtmlMessage);
 		}
 	}
