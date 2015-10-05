@@ -8479,30 +8479,27 @@ public class L2PcInstance extends L2Playable
 	 */
 	public void store(boolean storeActiveEffects)
 	{
-		synchronized(this)
+		// update client coords, if these look like true
+		if(isInsideRadius(_clientX, _clientY, 1000, true))
 		{
-			// update client coords, if these look like true
-			if(isInsideRadius(_clientX, _clientY, 1000, true))
-			{
-				setXYZ(_clientX, _clientY, _clientZ);
-			}
-
-			storeSummons();
-			storeCharBase();
-			storeCharSubClasses();
-			storeEffect(storeActiveEffects);
-			// Записываем бинды
-			storeBindConfigData();
-			storeItemReuseDelay();
-			transformInsertInfo();
-
-			if(Config.STORE_RECIPE_SHOPLIST)
-			{
-				storeRecipeShopList();
-			}
-			storeRecommendations();
-			saveVitalityData();
+			setXYZ(_clientX, _clientY, _clientZ);
 		}
+
+		storeSummons();
+		storeCharBase();
+		storeCharSubClasses();
+		storeEffect(storeActiveEffects);
+		// Записываем бинды
+		storeBindConfigData();
+		storeItemReuseDelay();
+		transformInsertInfo();
+
+		if(Config.STORE_RECIPE_SHOPLIST)
+		{
+			storeRecipeShopList();
+		}
+		storeRecommendations();
+		saveVitalityData();
 	}
 
 	/**
@@ -12291,441 +12288,438 @@ public class L2PcInstance extends L2Playable
 
 	private void cleanup()
 	{
-		synchronized(this)
+		// Set the online Flag to True or False and update the characters table of the database with online status and lastAccess (called when login and logout)
+		try
 		{
-			// Set the online Flag to True or False and update the characters table of the database with online status and lastAccess (called when login and logout)
-			try
+			if(!_isOnline)
 			{
-				if(!_isOnline)
-				{
-					_log.log(Level.ERROR, "deleteMe() called on offline character " + this);
-				}
-				setOnlineStatus(false, true);
+				_log.log(Level.ERROR, "deleteMe() called on offline character " + this);
 			}
-			catch(Exception ignored)
-			{
-			}
+			setOnlineStatus(false, true);
+		}
+		catch(Exception ignored)
+		{
+		}
 
-			try
+		try
+		{
+			if(ConfigEvents.ENABLE_BLOCK_CHECKER_EVENT && _eventController.isInHandysBlockCheckerEventArena())
 			{
-				if(ConfigEvents.ENABLE_BLOCK_CHECKER_EVENT && _eventController.isInHandysBlockCheckerEventArena())
+				HandysBlockCheckerManager.getInstance().onDisconnect(this);
+			}
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		try
+		{
+			_isOnline = false;
+			abortAttack();
+			abortCast();
+			stopMove(null);
+			setDebug(null);
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		// remove combat flag
+		try
+		{
+			if(_inventory.getItemByItemId(9819) != null)
+			{
+				Fort fort = FortManager.getInstance().getFort(this);
+				if(fort != null)
 				{
-					HandysBlockCheckerManager.getInstance().onDisconnect(this);
+					FortSiegeManager.getInstance().dropCombatFlag(this, fort.getFortId());
+				}
+				else
+				{
+					long slot = _inventory.getSlotFromItem(_inventory.getItemByItemId(9819));
+					_inventory.unEquipItemInBodySlot(slot);
+					destroyItem(ProcessType.COMBATFLAG, _inventory.getItemByItemId(9819), null, true);
 				}
 			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
 
-			try
+		try
+		{
+			PartyMatchWaitingList.getInstance().removePlayer(this);
+			if(_partyRoomId != 0)
 			{
-				_isOnline = false;
-				abortAttack();
+				PartyMatchRoom room = PartyMatchRoomList.getInstance().getRoom(_partyRoomId);
+				if(room != null)
+				{
+					room.deleteMember(this);
+				}
+			}
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		try
+		{
+			if(isFlying())
+			{
+				removeSkill(SkillTable.getInstance().getInfo(4289, 1));
+			}
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		// Recommendations must be saved before task (timer) is canceled
+		try
+		{
+			storeRecommendations();
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		// Stop the HP/MP/CP Regeneration task (scheduled tasks)
+		try
+		{
+			stopAllTimers();
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		try
+		{
+			setIsTeleporting(false);
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		// Cancel Attak or Cast
+		try
+		{
+			setTarget(null);
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		try
+		{
+			if(_fusionSkill != null)
+			{
 				abortCast();
-				stopMove(null);
-				setDebug(null);
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
 			}
 
-			// remove combat flag
-			try
+			getKnownList().getKnownCharacters().stream().filter(character -> character != null && character.getFusionSkill() != null && character.getFusionSkill().getTarget().equals(this)).forEach(L2Character::abortCast);
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		try
+		{
+			for(L2Effect effect : getAllEffects())
 			{
-				if(_inventory.getItemByItemId(9819) != null)
+				if(effect == null)
 				{
-					Fort fort = FortManager.getInstance().getFort(this);
-					if(fort != null)
-					{
-						FortSiegeManager.getInstance().dropCombatFlag(this, fort.getFortId());
-					}
-					else
-					{
-						long slot = _inventory.getSlotFromItem(_inventory.getItemByItemId(9819));
-						_inventory.unEquipItemInBodySlot(slot);
-						destroyItem(ProcessType.COMBATFLAG, _inventory.getItemByItemId(9819), null, true);
-					}
-				}
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
-
-			try
-			{
-				PartyMatchWaitingList.getInstance().removePlayer(this);
-				if(_partyRoomId != 0)
-				{
-					PartyMatchRoom room = PartyMatchRoomList.getInstance().getRoom(_partyRoomId);
-					if(room != null)
-					{
-						room.deleteMember(this);
-					}
-				}
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
-
-			try
-			{
-				if(isFlying())
-				{
-					removeSkill(SkillTable.getInstance().getInfo(4289, 1));
-				}
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
-
-			// Recommendations must be saved before task (timer) is canceled
-			try
-			{
-				storeRecommendations();
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
-
-			// Stop the HP/MP/CP Regeneration task (scheduled tasks)
-			try
-			{
-				stopAllTimers();
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
-
-			try
-			{
-				setIsTeleporting(false);
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
-
-			// Cancel Attak or Cast
-			try
-			{
-				setTarget(null);
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
-
-			try
-			{
-				if(_fusionSkill != null)
-				{
-					abortCast();
+					continue;
 				}
 
-				getKnownList().getKnownCharacters().stream().filter(character -> character != null && character.getFusionSkill() != null && character.getFusionSkill().getTarget().equals(this)).forEach(L2Character::abortCast);
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
-
-			try
-			{
-				for(L2Effect effect : getAllEffects())
+				if(effect.getSkill().isToggle() && !effect.getSkill().isForceStorable())
 				{
-					if(effect == null)
-					{
-						continue;
-					}
+					effect.exit();
+					continue;
+				}
 
-					if(effect.getSkill().isToggle() && !effect.getSkill().isForceStorable())
-					{
+				switch(effect.getEffectType())
+				{
+					case SIGNET_GROUND:
+					case SIGNET_EFFECT:
 						effect.exit();
-						continue;
-					}
-
-					switch(effect.getEffectType())
-					{
-						case SIGNET_GROUND:
-						case SIGNET_EFFECT:
-							effect.exit();
-							break;
-					}
+						break;
 				}
 			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
 
-			// Remove from world regions zones
-			L2WorldRegion oldRegion = getLocationController().getWorldRegion();
+		// Remove from world regions zones
+		L2WorldRegion oldRegion = getLocationController().getWorldRegion();
 
-			if(oldRegion != null)
-			{
-				oldRegion.removeFromZones(this);
-			}
-			// Remove the L2PcInstance from the world
+		if(oldRegion != null)
+		{
+			oldRegion.removeFromZones(this);
+		}
+		// Remove the L2PcInstance from the world
+		try
+		{
+			getLocationController().decay();
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		// If a Party is in progress, leave it (and festival party)
+		if(isInParty())
+		{
 			try
 			{
-				getLocationController().decay();
+				leaveParty();
 			}
 			catch(Exception e)
 			{
 				_log.log(Level.ERROR, "deleteMe()", e);
 			}
+		}
 
-			// If a Party is in progress, leave it (and festival party)
-			if(isInParty())
+		// If the L2PcInstance has Pet, unsummon it
+		if(!_summons.isEmpty())
+		{
+			try
 			{
-				try
+				for(L2Summon pet : _summons)
 				{
-					leaveParty();
-				}
-				catch(Exception e)
-				{
-					_log.log(Level.ERROR, "deleteMe()", e);
+					pet.setRestoreSummon(true);
+					pet.getLocationController().decay();
+
+					// dead pet wasnt unsummoned, broadcast npcinfo changes (pet
+					// will be without owner name - means owner offline)
+					if(pet != null)
+					{
+						pet.broadcastNpcInfo(0);
+					}
 				}
 			}
-
-			// If the L2PcInstance has Pet, unsummon it
-			if(!_summons.isEmpty())
+			catch(Exception e)
 			{
-				try
-				{
-					for(L2Summon pet : _summons)
-					{
-						pet.setRestoreSummon(true);
-						pet.getLocationController().decay();
+				_log.log(Level.ERROR, "deleteMe()", e);
+			}// returns pet to control item
+		}
 
-						// dead pet wasnt unsummoned, broadcast npcinfo changes (pet
-						// will be without owner name - means owner offline)
-						if(pet != null)
+		if(_clan != null)
+		{
+			// set the status for pledge member list to OFFLINE
+			try
+			{
+				L2ClanMember clanMember = _clan.getClanMember(getObjectId());
+				if(clanMember != null)
+				{
+					clanMember.setPlayerInstance(null);
+				}
+
+			}
+			catch(Exception e)
+			{
+				_log.log(Level.ERROR, "deleteMe()", e);
+			}
+		}
+
+		if(getActiveRequester() != null)
+		{
+			// deals with sudden exit in the middle of transaction
+			_activeRequester = null;
+			cancelActiveTrade();
+		}
+
+		// If the L2PcInstance is a GM, remove it from the GM List
+		if(isGM())
+		{
+			try
+			{
+				AdminTable.getInstance().deleteGm(this);
+			}
+			catch(Exception e)
+			{
+				_log.log(Level.ERROR, "deleteMe()", e);
+			}
+		}
+
+		try
+		{
+			// Check if the L2PcInstance is in observer mode to set its position
+			// to its position
+			// before entering in observer mode
+			if(_observerController.isObserving())
+			{
+				setXYZ(_lastObserverPositionX, _lastObserverPositionY, _lastObserverPositionZ, false);
+			}
+
+			if(_vehicle != null)
+			{
+				_vehicle.oustPlayer(this);
+			}
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		// remove player from instance and set spawn location if any
+		try
+		{
+			int instanceId = getInstanceId();
+			if(instanceId != 0 && !Config.RESTORE_PLAYER_INSTANCE)
+			{
+				Instance inst = InstanceManager.getInstance().getInstance(instanceId);
+				if(inst != null)
+				{
+					inst.removePlayer(getObjectId());
+					Location spawn = inst.getReturnLoc();
+					if(spawn != null && spawn.getX() != 0 && spawn.getY() != 0 && spawn.getZ() != 0)
+					{
+						setXYZ(spawn, false);
+						if(!_summons.isEmpty()) // dead pet
 						{
-							pet.broadcastNpcInfo(0);
-						}
-					}
-				}
-				catch(Exception e)
-				{
-					_log.log(Level.ERROR, "deleteMe()", e);
-				}// returns pet to control item
-			}
-
-			if(_clan != null)
-			{
-				// set the status for pledge member list to OFFLINE
-				try
-				{
-					L2ClanMember clanMember = _clan.getClanMember(getObjectId());
-					if(clanMember != null)
-					{
-						clanMember.setPlayerInstance(null);
-					}
-
-				}
-				catch(Exception e)
-				{
-					_log.log(Level.ERROR, "deleteMe()", e);
-				}
-			}
-
-			if(getActiveRequester() != null)
-			{
-				// deals with sudden exit in the middle of transaction
-				_activeRequester = null;
-				cancelActiveTrade();
-			}
-
-			// If the L2PcInstance is a GM, remove it from the GM List
-			if(isGM())
-			{
-				try
-				{
-					AdminTable.getInstance().deleteGm(this);
-				}
-				catch(Exception e)
-				{
-					_log.log(Level.ERROR, "deleteMe()", e);
-				}
-			}
-
-			try
-			{
-				// Check if the L2PcInstance is in observer mode to set its position
-				// to its position
-				// before entering in observer mode
-				if(_observerController.isObserving())
-				{
-					setXYZ(_lastObserverPositionX, _lastObserverPositionY, _lastObserverPositionZ, false);
-				}
-
-				if(_vehicle != null)
-				{
-					_vehicle.oustPlayer(this);
-				}
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
-
-			// remove player from instance and set spawn location if any
-			try
-			{
-				int instanceId = getInstanceId();
-				if(instanceId != 0 && !Config.RESTORE_PLAYER_INSTANCE)
-				{
-					Instance inst = InstanceManager.getInstance().getInstance(instanceId);
-					if(inst != null)
-					{
-						inst.removePlayer(getObjectId());
-						Location spawn = inst.getReturnLoc();
-						if(spawn != null && spawn.getX() != 0 && spawn.getY() != 0 && spawn.getZ() != 0)
-						{
-							setXYZ(spawn, false);
-							if(!_summons.isEmpty()) // dead pet
+							for(L2Summon pet : _summons)
 							{
-								for(L2Summon pet : _summons)
-								{
-									pet.teleToInstance(spawn, 0);
-								}
+								pet.teleToInstance(spawn, 0);
 							}
 						}
 					}
 				}
 			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
 
-			// TvT Event removal
+		// TvT Event removal
+		try
+		{
+			EventManager.onLogout(this);
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		// Update database with items in its inventory and remove them from the
+		// world
+		try
+		{
+			_inventory.deleteMe();
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		// Update database with items in its warehouse and remove them from the world
+		try
+		{
+			clearWarehouse();
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+		if(Config.WAREHOUSE_CACHE)
+		{
+			WarehouseCacheManager.getInstance().remCacheTask(this);
+		}
+
+		try
+		{
+			_freight.deleteMe();
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "getFreight().deleteMe()", e);
+		}
+
+		try
+		{
+			clearRefund();
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
+
+		if(isCursedWeaponEquipped())
+		{
 			try
 			{
-				EventManager.onLogout(this);
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
-
-			// Update database with items in its inventory and remove them from the
-			// world
-			try
-			{
-				_inventory.deleteMe();
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
-
-			// Update database with items in its warehouse and remove them from the world
-			try
-			{
-				clearWarehouse();
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
-			if(Config.WAREHOUSE_CACHE)
-			{
-				WarehouseCacheManager.getInstance().remCacheTask(this);
-			}
-
-			try
-			{
-				_freight.deleteMe();
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "getFreight().deleteMe()", e);
-			}
-
-			try
-			{
-				clearRefund();
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "deleteMe()", e);
-			}
-
-			if(isCursedWeaponEquipped())
-			{
-				try
-				{
-					CursedWeaponsManager.getInstance().getCursedWeapon(_cursedWeaponEquippedId).setPlayer(null);
-				}
-				catch(Exception e)
-				{
-					_log.log(Level.ERROR, "deleteMe()", e);
-				}
-			}
-
-			// Remove all L2Object from _knownObjects and _knownPlayer of the L2Character then cancel Attak or Cast and notify AI
-			try
-			{
-				getKnownList().removeAllKnownObjects();
+				CursedWeaponsManager.getInstance().getCursedWeapon(_cursedWeaponEquippedId).setPlayer(null);
 			}
 			catch(Exception e)
 			{
 				_log.log(Level.ERROR, "deleteMe()", e);
 			}
+		}
 
-			if(_clanId > 0)
-			{
-				_clan.broadcastToOtherOnlineMembers(new PledgeShowMemberListUpdate(this), this);
-			}
-			//ClanTable.getInstance().getClan(getClanId()).broadcastToOnlineMembers(new PledgeShowMemberListAdd(this));
+		// Remove all L2Object from _knownObjects and _knownPlayer of the L2Character then cancel Attak or Cast and notify AI
+		try
+		{
+			getKnownList().removeAllKnownObjects();
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "deleteMe()", e);
+		}
 
-			for(L2PcInstance player : _snoopedPlayer)
-			{
-				player.removeSnooper(this);
-			}
+		if(_clanId > 0)
+		{
+			_clan.broadcastToOtherOnlineMembers(new PledgeShowMemberListUpdate(this), this);
+		}
+		//ClanTable.getInstance().getClan(getClanId()).broadcastToOnlineMembers(new PledgeShowMemberListAdd(this));
 
-			for(L2PcInstance player : _snoopListener)
-			{
-				player.removeSnooped(this);
-			}
+		for(L2PcInstance player : _snoopedPlayer)
+		{
+			player.removeSnooper(this);
+		}
 
-			// Remove L2Object object from _allObjects of L2World
-			WorldManager.getInstance().removeObject(this);
-			WorldManager.getInstance().removeFromAllPlayers(this); // force remove in case of crash during teleport
+		for(L2PcInstance player : _snoopListener)
+		{
+			player.removeSnooped(this);
+		}
 
-			// update bbs
-			try
-			{
-				RegionBBSManager.getInstance().changeCommunityBoard();
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "Exception on deleteMe() changeCommunityBoard: " + e.getMessage(), e);
-			}
+		// Remove L2Object object from _allObjects of L2World
+		WorldManager.getInstance().removeObject(this);
+		WorldManager.getInstance().removeFromAllPlayers(this); // force remove in case of crash during teleport
 
-			// Если игрок состоит в листе ожидания на автопоиск группы - удаляем его оттуда
-			if(_isInPartyWaitingList)
-			{
-				PartySearchingManager.getInstance().deleteFromWaitingList(this, false);
-			}
+		// update bbs
+		try
+		{
+			RegionBBSManager.getInstance().changeCommunityBoard();
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "Exception on deleteMe() changeCommunityBoard: " + e.getMessage(), e);
+		}
 
-			try
-			{
-				notifyFriends();
-			}
-			catch(Exception e)
-			{
-				_log.log(Level.ERROR, "Exception on deleteMe() notifyFriends: " + e.getMessage(), e);
-			}
+		// Если игрок состоит в листе ожидания на автопоиск группы - удаляем его оттуда
+		if(_isInPartyWaitingList)
+		{
+			PartySearchingManager.getInstance().deleteFromWaitingList(this, false);
+		}
+
+		try
+		{
+			notifyFriends();
+		}
+		catch(Exception e)
+		{
+			_log.log(Level.ERROR, "Exception on deleteMe() notifyFriends: " + e.getMessage(), e);
 		}
 	}
 
@@ -13641,15 +13635,12 @@ public class L2PcInstance extends L2Playable
 	 */
 	private void restartSoulTask()
 	{
-		synchronized(this)
+		if(_soulTask != null)
 		{
-			if(_soulTask != null)
-			{
-				_soulTask.cancel(false);
-				_soulTask = null;
-			}
-			_soulTask = ThreadPoolManager.getInstance().scheduleGeneral(new SoulTask(), 600000);
+			_soulTask.cancel(false);
+			_soulTask = null;
 		}
+		_soulTask = ThreadPoolManager.getInstance().scheduleGeneral(new SoulTask(), 600000);
 	}
 
 	/**
@@ -14189,76 +14180,70 @@ public class L2PcInstance extends L2Playable
 
 	public void increaseCharges(int count, int max)
 	{
-		synchronized(this)
+		int _max = (int) calcStat(Stats.ENERGY_MASTERY, 0, null, null);
+
+		if(_max > max)
 		{
-			int _max = (int) calcStat(Stats.ENERGY_MASTERY, 0, null, null);
-
-			if(_max > max)
-			{
-				max = _max;
-			}
-
-			if(_charges.get() >= max)
-			{
-				sendPacket(SystemMessageId.FORCE_MAXLEVEL_REACHED);
-				return;
-			}
-
-			// Charge clear task should be reset every time a charge is increased.
-			restartChargeTask();
-
-			if(_charges.addAndGet(count) >= max)
-			{
-				_charges.set(max);
-				sendPacket(SystemMessageId.FORCE_MAXLEVEL_REACHED);
-			}
-			else
-			{
-				sendPacket(SystemMessage.getSystemMessage(SystemMessageId.FORCE_INCREASED_TO_S1).addNumber(_charges.get()));
-			}
-
-			sendPacket(new EtcStatusUpdate(this));
+			max = _max;
 		}
+
+		if(_charges.get() >= max)
+		{
+			sendPacket(SystemMessageId.FORCE_MAXLEVEL_REACHED);
+			return;
+		}
+
+		// Charge clear task should be reset every time a charge is increased.
+		restartChargeTask();
+
+		if(_charges.addAndGet(count) >= max)
+		{
+			_charges.set(max);
+			sendPacket(SystemMessageId.FORCE_MAXLEVEL_REACHED);
+		}
+		else
+		{
+			sendPacket(SystemMessage.getSystemMessage(SystemMessageId.FORCE_INCREASED_TO_S1).addNumber(_charges.get()));
+		}
+
+		sendPacket(new EtcStatusUpdate(this));
 	}
 
 	public boolean decreaseCharges(int count, boolean remaining)
 	{
-		synchronized(this)
+		if(remaining)
 		{
-			if(remaining)
+			if(_charges.get() >= count)
 			{
-				if(_charges.get() >= count)
-				{
-					_charges.addAndGet(-count);
-					stopChargeTask();
-				}
-				else
-				{
-					_charges.addAndGet(-_charges.get());
-					stopChargeTask();
-				}
+				_charges.addAndGet(-count);
+				stopChargeTask();
 			}
 			else
 			{
-				if(_charges.get() < count)
-				{
-					return false;
-				}
-
-				// Charge clear task should be reset every time a charge is decreased and stopped when charges become 0.
-				if(_charges.addAndGet(-count) == 0)
-				{
-					stopChargeTask();
-				}
-				else
-				{
-					restartChargeTask();
-				}
+				_charges.addAndGet(-_charges.get());
+				stopChargeTask();
+			}
+		}
+		else
+		{
+			if(_charges.get() < count)
+			{
+				return false;
 			}
 
-			sendPacket(new EtcStatusUpdate(this));
-			return true;
+			// Charge clear task should be reset every time a charge is decreased and stopped when charges become 0.
+			if(_charges.addAndGet(-count) == 0)
+			{
+				stopChargeTask();
+			}
+			else
+			{
+				restartChargeTask();
+			}
 		}
+
+		sendPacket(new EtcStatusUpdate(this));
+		return true;
 	}
 
 	public void clearCharges()
