@@ -11,6 +11,7 @@ import dwo.gameserver.model.items.base.proptypes.ProcessType;
 import dwo.gameserver.model.player.FloodAction;
 import dwo.gameserver.model.player.L2TradeList;
 import dwo.gameserver.network.game.serverpackets.StatusUpdate;
+import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.network.game.serverpackets.packet.tradelist.ExBuySellList;
 import dwo.gameserver.util.Util;
 
@@ -145,9 +146,7 @@ public class RequestSellItem extends L2GameClientPacket
 		}
 
 		// Обновляем вес инвентаря
-		StatusUpdate su = new StatusUpdate(player);
-		su.addAttribute(StatusUpdate.CUR_LOAD, player.getCurrentLoad());
-		player.sendPacket(su);
+		player.sendPacket(new ExUserInfoInvenWeight(player));
 
 		// Обновляем игроку байлист
 		player.sendPacket(new ExBuySellList(player, list, ProcessType.BUY, townTaxRate, false, player.getAdenaCount()));

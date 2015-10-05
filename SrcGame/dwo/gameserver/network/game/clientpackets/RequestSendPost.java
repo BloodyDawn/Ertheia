@@ -19,6 +19,7 @@ import dwo.gameserver.network.game.serverpackets.InventoryUpdate;
 import dwo.gameserver.network.game.serverpackets.ItemList;
 import dwo.gameserver.network.game.serverpackets.StatusUpdate;
 import dwo.gameserver.network.game.serverpackets.SystemMessage;
+import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.network.game.serverpackets.packet.mail.ExReplyWritePost;
 import dwo.gameserver.util.StringUtil;
 import org.apache.log4j.Level;
@@ -344,9 +345,7 @@ public class RequestSendPost extends L2GameClientPacket
 		}
 
 		// Обновляем вес инвентаря
-		StatusUpdate su = new StatusUpdate(player);
-		su.addAttribute(StatusUpdate.CUR_LOAD, player.getCurrentLoad());
-		player.sendPacket(su);
+		player.sendPacket(new ExUserInfoInvenWeight(player));
 
 		return true;
 	}

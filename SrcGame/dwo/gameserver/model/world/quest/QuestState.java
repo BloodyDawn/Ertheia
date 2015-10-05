@@ -54,6 +54,7 @@ import dwo.gameserver.network.game.serverpackets.TutorialCloseHtml;
 import dwo.gameserver.network.game.serverpackets.TutorialEnableClientEvent;
 import dwo.gameserver.network.game.serverpackets.TutorialShowHtml;
 import dwo.gameserver.network.game.serverpackets.TutorialShowQuestionMark;
+import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.network.game.serverpackets.packet.show.ExShowQuestMark;
 import dwo.gameserver.util.Rnd;
 import dwo.gameserver.util.Util;
@@ -817,9 +818,7 @@ public class QuestState
 			}
 		}
 		// send packets
-		StatusUpdate su = new StatusUpdate(_player);
-		su.addAttribute(StatusUpdate.CUR_LOAD, _player.getCurrentLoad());
-		_player.sendPacket(su);
+		_player.sendPacket(new ExUserInfoInvenWeight(_player));
 	}
 
 	/**
@@ -890,9 +889,7 @@ public class QuestState
 			}
 		}
 		// send packets
-		StatusUpdate su = new StatusUpdate(_player);
-		su.addAttribute(StatusUpdate.CUR_LOAD, _player.getCurrentLoad());
-		_player.sendPacket(su);
+		_player.sendPacket(new ExUserInfoInvenWeight(_player));
 	}
 
 	public void giveItems(int itemId, long count, byte attributeId, int attributeLevel)
@@ -949,9 +946,7 @@ public class QuestState
 			}
 		}
 		// send packets
-		StatusUpdate su = new StatusUpdate(_player);
-		su.addAttribute(StatusUpdate.CUR_LOAD, _player.getCurrentLoad());
-		_player.sendPacket(su);
+		_player.sendPacket(new ExUserInfoInvenWeight(_player));
 	}
 
 	/**

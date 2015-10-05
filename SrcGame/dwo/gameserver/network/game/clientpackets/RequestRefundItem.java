@@ -183,12 +183,7 @@ public class RequestRefundItem extends L2GameClientPacket
 		}
 
 		// Обновляем вес инвентаря
-		StatusUpdate su = new StatusUpdate(player);
-		su.addAttribute(StatusUpdate.CUR_LOAD, player.getCurrentLoad());
-		player.sendPacket(su);
-
-		// Обновляем игроку байлист
-        player.sendPacket(new ExUserInfoInvenWeight(player));
+		player.sendPacket(new ExUserInfoInvenWeight(player));
 		player.sendPacket(new ExBuySellList(player, list, ProcessType.BUY, townTaxRate, false, player.getAdenaCount()));
 		player.sendPacket(new ExBuySellList(player, list, ProcessType.SELL, townTaxRate, true, player.getAdenaCount()));
 	}

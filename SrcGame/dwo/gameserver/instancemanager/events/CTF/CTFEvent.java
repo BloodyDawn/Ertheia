@@ -32,6 +32,7 @@ import dwo.gameserver.network.game.serverpackets.Say2;
 import dwo.gameserver.network.game.serverpackets.StatusUpdate;
 import dwo.gameserver.network.game.serverpackets.packet.ex.ExBlockUpSetList;
 import dwo.gameserver.network.game.serverpackets.packet.ex.ExBlockUpSetState;
+import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.util.Rnd;
 import dwo.gameserver.util.StringUtil;
 import javolution.util.FastMap;
@@ -313,12 +314,10 @@ public class CTFEvent
 				player.addItem(ProcessType.EVENT, reward[0], reward[1], player, true);
 			}
 
-			StatusUpdate statusUpdate = new StatusUpdate(player.getObjectId());
 			NpcHtmlMessage npcHtmlMessage = new NpcHtmlMessage(0);
-
-			statusUpdate.addAttribute(StatusUpdate.CUR_LOAD, player.getCurrentLoad());
 			npcHtmlMessage.setHtml(HtmCache.getInstance().getHtm(player.getLang(), htmlPath + "Reward.htm"));
-			player.sendPacket(statusUpdate);
+
+			player.sendPacket(new ExUserInfoInvenWeight(player));
 			player.sendPacket(npcHtmlMessage);
 		}
 	}

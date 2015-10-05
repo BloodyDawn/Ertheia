@@ -364,9 +364,7 @@ public class RequestEnchantItem extends L2GameClientPacket
 				}
 			}
 
-			StatusUpdate su = new StatusUpdate(activeChar);
-			su.addAttribute(StatusUpdate.CUR_LOAD, activeChar.getCurrentLoad());
-			activeChar.sendPacket(su);
+			activeChar.sendPacket(new ExUserInfoInvenWeight(activeChar));
 
 			InventoryUpdate iu = new InventoryUpdate();
 			if(scroll.getCount() == 0)
