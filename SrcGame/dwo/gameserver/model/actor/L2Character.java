@@ -7011,7 +7011,7 @@ public abstract class L2Character extends L2Object
 			{
 				_castTimeSkill.onCastAbort();
 			}
-			notifyQuestEventSkillFinished(skill, targets[-1]);
+			notifyQuestEventSkillFinished(skill, targets[0]);
 			return;
 		}
 		L2Effect mog = getFirstEffect(L2EffectType.SIGNET_GROUND);
