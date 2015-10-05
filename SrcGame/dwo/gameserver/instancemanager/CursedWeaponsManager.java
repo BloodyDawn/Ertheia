@@ -1,5 +1,17 @@
 package dwo.gameserver.instancemanager;
 
+import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+import org.apache.log4j.Level;
+import org.jdom2.Element;
+import org.jdom2.JDOMException;
+
 import dwo.config.Config;
 import dwo.config.FilePath;
 import dwo.gameserver.datatables.sql.queries.Characters;
@@ -9,28 +21,25 @@ import dwo.gameserver.engine.databaseengine.ThreadConnection;
 import dwo.gameserver.engine.documentengine.XmlDocumentParser;
 import dwo.gameserver.model.actor.L2Attackable;
 import dwo.gameserver.model.actor.L2Character;
-import dwo.gameserver.model.actor.instance.*;
+import dwo.gameserver.model.actor.instance.L2DefenderInstance;
+import dwo.gameserver.model.actor.instance.L2FeedableBeastInstance;
+import dwo.gameserver.model.actor.instance.L2FortCommanderInstance;
+import dwo.gameserver.model.actor.instance.L2GrandBossInstance;
+import dwo.gameserver.model.actor.instance.L2GuardInstance;
+import dwo.gameserver.model.actor.instance.L2IncarnationInstance;
+import dwo.gameserver.model.actor.instance.L2PcInstance;
+import dwo.gameserver.model.actor.instance.L2RiftInvaderInstance;
 import dwo.gameserver.model.items.CursedWeapon;
 import dwo.gameserver.model.items.base.instance.L2ItemInstance;
 import dwo.gameserver.network.game.components.SystemMessageId;
 import dwo.gameserver.network.game.serverpackets.SystemMessage;
 import dwo.gameserver.util.Broadcast;
 import dwo.gameserver.util.database.DatabaseUtils;
-import org.apache.log4j.Level;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-
-import java.io.IOException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
 public class CursedWeaponsManager extends XmlDocumentParser
 {
-    private static final Map<Integer, CursedWeapon> _cursedWeapons = new HashMap<>();
+    private static final CursedWeaponsManager _instance = new CursedWeaponsManager();
+    private final Map<Integer, CursedWeapon> _cursedWeapons = new HashMap<>();
 
     private CursedWeaponsManager()
     {
@@ -48,7 +57,7 @@ public class CursedWeaponsManager extends XmlDocumentParser
 
     public static CursedWeaponsManager getInstance()
     {
-        return SingletonHolder._instance;
+        return _instance;
     }
 
     @Override
@@ -391,8 +400,5 @@ public class CursedWeaponsManager extends XmlDocumentParser
         }
     }
 
-    private static class SingletonHolder
-    {
-        protected static final CursedWeaponsManager _instance = new CursedWeaponsManager();
-    }
+
 }
