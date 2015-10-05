@@ -18,6 +18,7 @@ import dwo.gameserver.network.game.serverpackets.ItemList;
 import dwo.gameserver.network.game.serverpackets.StatusUpdate;
 import dwo.gameserver.network.game.serverpackets.SystemMessage;
 import dwo.gameserver.network.game.serverpackets.packet.ex.ExChangePostState;
+import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.network.game.serverpackets.packet.mail.ExUnReadMailCount;
 import dwo.gameserver.util.Util;
 
@@ -189,9 +190,7 @@ public class RequestCancelSentPost extends L2GameClientPacket
 		}
 
 		// Update current load status on player
-		StatusUpdate su = new StatusUpdate(activeChar);
-		su.addAttribute(StatusUpdate.CUR_LOAD, activeChar.getCurrentLoad());
-		activeChar.sendPacket(su);
+		activeChar.sendPacket(new ExUserInfoInvenWeight(activeChar));
 
 		L2PcInstance receiver = WorldManager.getInstance().getPlayer(msg.getReceiverId());
 		if(receiver != null)

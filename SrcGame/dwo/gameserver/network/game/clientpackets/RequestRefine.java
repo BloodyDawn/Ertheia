@@ -8,6 +8,7 @@ import dwo.gameserver.model.items.base.proptypes.ProcessType;
 import dwo.gameserver.network.game.components.SystemMessageId;
 import dwo.gameserver.network.game.serverpackets.InventoryUpdate;
 import dwo.gameserver.network.game.serverpackets.StatusUpdate;
+import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.network.game.serverpackets.packet.variation.ExVariationResult;
 
 /**
@@ -112,9 +113,7 @@ public class RequestRefine extends AbstractRefinePacket
 		iu.addModifiedItem(targetItem);
 		activeChar.sendPacket(iu);
 
-		StatusUpdate su = new StatusUpdate(activeChar);
-		su.addAttribute(StatusUpdate.CUR_LOAD, activeChar.getCurrentLoad());
-		activeChar.sendPacket(su);
+		activeChar.sendPacket(new ExUserInfoInvenWeight(activeChar));
 	}
 
 	@Override

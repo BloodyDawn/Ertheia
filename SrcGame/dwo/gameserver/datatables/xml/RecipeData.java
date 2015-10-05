@@ -22,6 +22,7 @@ import dwo.gameserver.network.game.components.SystemMessageId;
 import dwo.gameserver.network.game.serverpackets.ItemList;
 import dwo.gameserver.network.game.serverpackets.StatusUpdate;
 import dwo.gameserver.network.game.serverpackets.SystemMessage;
+import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.network.game.serverpackets.packet.recipeshop.RecipeBookItemList;
 import dwo.gameserver.network.game.serverpackets.packet.recipeshop.RecipeItemMakeInfo;
 import dwo.gameserver.network.game.serverpackets.packet.recipeshop.RecipeShopItemInfo;
@@ -473,9 +474,7 @@ public class RecipeData extends XmlDocumentParser
 
         private void updateCurLoad()
         {
-            StatusUpdate su = new StatusUpdate(_target);
-            su.addAttribute(StatusUpdate.CUR_LOAD, _target.getCurrentLoad());
-            _target.sendPacket(su);
+            _target.sendPacket(new ExUserInfoInvenWeight(_target));
         }
 
         private void updateCurMp()
