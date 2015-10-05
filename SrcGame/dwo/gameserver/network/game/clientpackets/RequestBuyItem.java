@@ -238,12 +238,9 @@ public class RequestBuyItem extends L2GameClientPacket
 		}
 
 		// Обновляем вес инвентаря
-		StatusUpdate su = new StatusUpdate(player);
-		su.addAttribute(StatusUpdate.CUR_LOAD, player.getCurrentLoad());
-		player.sendPacket(su);
+		player.sendPacket(new ExUserInfoInvenWeight(player));
 
 		// Обновляем игроку байлист
-        player.sendPacket(new ExUserInfoInvenWeight(player));
 		player.sendPacket(new ExBuySellList(player, list, ProcessType.BUY, castleTaxRate + townTaxRate, false, player.getAdenaCount()));
 		player.sendPacket(new ExBuySellList(player, list, ProcessType.SELL, castleTaxRate + townTaxRate, true, player.getAdenaCount()));
 	}

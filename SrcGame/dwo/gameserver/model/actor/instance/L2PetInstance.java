@@ -40,6 +40,7 @@ import dwo.gameserver.network.game.serverpackets.InventoryUpdate;
 import dwo.gameserver.network.game.serverpackets.StatusUpdate;
 import dwo.gameserver.network.game.serverpackets.StopMove;
 import dwo.gameserver.network.game.serverpackets.SystemMessage;
+import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.network.game.serverpackets.packet.pet.PetInventoryUpdate;
 import dwo.gameserver.network.game.serverpackets.packet.pet.PetItemList;
 import dwo.gameserver.util.Rnd;
@@ -875,11 +876,7 @@ public class L2PetInstance extends L2Summon
 				iu.addRemovedItem(removedItem);
 
 				owner.sendPacket(iu);
-
-				StatusUpdate su = new StatusUpdate(owner);
-				su.addAttribute(StatusUpdate.CUR_LOAD, owner.getCurrentLoad());
-				owner.sendPacket(su);
-
+				owner.sendPacket(new ExUserInfoInvenWeight(owner));
 				owner.broadcastUserInfo();
 
 				WorldManager.getInstance().removeObject(removedItem);

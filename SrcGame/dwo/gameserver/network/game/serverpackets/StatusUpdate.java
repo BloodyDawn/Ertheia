@@ -16,35 +16,35 @@ import java.util.List;
 
 public class StatusUpdate extends L2GameServerPacket
 {
-    public static final int LEVEL = 1;
-    public static final int EXP = 2;
-    public static final int STR = 3;
-    public static final int DEX = 4;
-    public static final int CON = 5;
-    public static final int INT = 6;
-    public static final int WIT = 7;
-    public static final int MEN = 8;
-    public static final int CUR_HP = 9;
-    public static final int MAX_HP = 10;
-    public static final int CUR_MP = 11;
-    public static final int MAX_MP = 12;
-    public static final int SP = 13;
-    public static final int CUR_LOAD = 14;
-    public static final int MAX_LOAD = 15;
-    public static final int P_ATK = 17;
-    public static final int ATK_SPD = 18;
-    public static final int P_DEF = 19;
-    public static final int EVASION = 20;
-    public static final int ACCURACY = 21;
-    public static final int CRITICAL = 22;
-    public static final int M_ATK = 23;
-    public static final int CAST_SPD = 24;
-    public static final int M_DEF = 25;
-    public static final int PVP_FLAG = 26;
-    public static final int REPUTATION = 27;
-    public static final int CUR_CP = 33;
-    public static final int MAX_CP = 34;
-    private static final int HP_MOD = 10000000;
+    public static final int LEVEL = 0x01;
+    public static final int EXP = 0x02;
+    public static final int STR = 0x03;
+    public static final int DEX = 0x04;
+    public static final int CON = 0x05;
+    public static final int INT = 0x06;
+    public static final int WIT = 0x07;
+    public static final int MEN = 0x08;
+
+    public static final int CUR_HP = 0x09;
+    public static final int MAX_HP = 0x0A;
+    public static final int CUR_MP = 0x0B;
+    public static final int MAX_MP = 0x0C;
+
+    public static final int P_ATK = 0x10;
+    public static final int ATK_SPD = 0x11;
+    public static final int P_DEF = 0x12;
+    public static final int EVASION = 0x13;
+    public static final int ACCURACY = 0x14;
+    public static final int CRITICAL = 0x15;
+    public static final int M_ATK = 0x16;
+    public static final int CAST_SPD = 0x17;
+    public static final int M_DEF = 0x18;
+    public static final int PVP_FLAG = 0x19;
+    public static final int KARMA = 0x1A;
+
+    public static final int CUR_CP = 0x21;
+    public static final int MAX_CP = 0x22;
+
     private int _objectId;
     private int _attackObjectId;
     private boolean _isPlayer;
