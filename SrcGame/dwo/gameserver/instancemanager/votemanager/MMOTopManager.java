@@ -243,11 +243,11 @@ public class MMOTopManager
 
 						if(player.getLang().equals("ru"))
 						{
-							player.sendMessage("Спасибо за Ваш голос в рейтинге MMOTop. C наилучшими пожеланиями, Администрация GodWorld");
+							player.sendMessage("Спасибо за Ваш голос в рейтинге MMOTop. C наилучшими пожеланиями, Администрация сервера.");
 						}
 						else
 						{
-							player.sendMessage("Thank you for your vote in MMOTop raiting. Best regards, GodWorld Administration. ");
+							player.sendMessage("Thank you for your vote in MMOTop raiting. Best regards, Administration. ");
 						}
 
 						if(Config.MMO_TOP_REWARD[0] == -100) // PC Bang
