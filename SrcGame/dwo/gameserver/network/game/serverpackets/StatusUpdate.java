@@ -1,6 +1,5 @@
 package dwo.gameserver.network.game.serverpackets;
 
-import dwo.gameserver.instancemanager.WorldManager;
 import dwo.gameserver.model.actor.L2Attackable;
 import dwo.gameserver.model.actor.L2Character;
 import dwo.gameserver.model.actor.L2Object;
@@ -53,29 +52,6 @@ public class StatusUpdate extends L2GameServerPacket
     private List<Attribute> _attributes;
 
     /**
-     * If you have access to object itself use {@link StatusUpdate#StatusUpdate(L2Object)}.
-     * @param objectId
-     */
-    public StatusUpdate(int objectId)
-    {
-        _attributes = new ArrayList<>();
-        _objectId = objectId;
-        L2Object obj = WorldManager.getInstance().findObject(objectId);
-
-        if(obj != null)
-        {
-            if(obj instanceof L2Attackable)
-            {
-                _maxHp = ((L2Character) obj).getMaxVisibleHp();
-            }
-            if(obj instanceof L2PcInstance)
-            {
-                _isPlayer = true;
-            }
-        }
-    }
-
-    /**
      * Create  packet for given {@link L2Object}.
      * @param object
      */
@@ -111,17 +87,15 @@ public class StatusUpdate extends L2GameServerPacket
 //		}
         _attributes.add(new Attribute(id, level));
 
-//        if(_isPlayer)
-//        {
-//            switch(id)
-//            {
-//                case CUR_HP:
-//                case CUR_MP:
-//                case CUR_CP:
-//                    setVisibleStats(_objectId);
-//                    break;
-//            }
-//        }
+        if (_isPlayer) {
+            switch (id) {
+                case CUR_HP:
+                case CUR_MP:
+                case CUR_CP:
+                    setVisibleStats(_objectId);
+                    break;
+            }
+        }
     }
 
     // Паказывает регенерацию _objectId у objectId2
@@ -135,10 +109,8 @@ public class StatusUpdate extends L2GameServerPacket
     protected void writeImpl()
     {
         writeD(_objectId);
-        writeD(0x00); // Tauti ->  targetObjectId  ?? // если тут приходит ID атакующего то  на npc\pc будут отображаться параметры типа сколько у него хп\ сколько регенит хп, сколько дамаги нанем и т.д. В зависимости от атрибутов приходящих далее. Нужно разобраться когда и при каких условиях приходят данные.
-
-        // Судя по дампу работает только для CUR_HP CUR_MP CUR_CP   0 1 4
-        writeC(0x00); // Опция показывать на экране всплывающие надписи при потере или получении любого из атрибута CP, HP, MP и др... 0 -  не показывать, 1 - показывать.
+        writeD(_attackObjectId);
+        writeC(_isVisible);
         writeC(_attributes.size());
 
         for(Attribute temp : _attributes)
