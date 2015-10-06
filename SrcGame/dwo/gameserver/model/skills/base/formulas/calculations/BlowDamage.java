@@ -42,7 +42,7 @@ public class BlowDamage implements Variables
 		double power = skill.getPower(isPvP, isPvE);
 		double damage = 0;
 		double proximityBonus = attacker.isBehindTarget() ? 1.2 : attacker.isInFrontOfTarget() ? 1 : 1.1; // Behind: +20% - Side: +10% (TODO: values are unconfirmed, possibly custom, remove or update when confirmed);
-		double ssboost = ss ? 2 : 1;
+		double ssboost = ss ? 1.458 : 1;
 		double pvpBonus = 1;
 
 		if (isPvP)
