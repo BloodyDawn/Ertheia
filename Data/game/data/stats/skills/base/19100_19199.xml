@@ -268,4 +268,18 @@
             <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
         </for>
     </skill>
+
+    <skill id="19124" levels="2" name="Врожденная Защита Дворянина">
+        <table name="#prof">1.05 1.1</table>
+        <table name="#vuln">5 10</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="paralyzeProf" val="#prof"/>
+            <mul order="0x30" stat="stunProf" val="#prof"/>
+            <sub order="0x40" stat="paralyzeVuln" val="#vuln"/>
+            <sub order="0x40" stat="stunVuln" val="#vuln"/>
+        </for>
+    </skill>
 </list>
