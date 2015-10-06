@@ -501,7 +501,7 @@
             <sub order="0x40" stat="stunVuln" val="#power"/>
             <sub order="0x40" stat="flyUpVuln" val="#power"/>
             <add order="0x40" stat="stunProf" val="#power"/>
-            <add order="0x40" stat="flyUpProf" val="power"/>
+            <add order="0x40" stat="flyUpProf" val="#power"/>
         </for>
     </skill>
 
@@ -521,7 +521,10 @@
         <set name="target" val="TARGET_SELF"/>
         <set name="skillType" val="BUFF"/>
         <for>
-            <mul order="0x30" stat="physDamage" val="#physDamage">
+            <mul order="0x30" stat="pvpPhysDmg" val="#physDamage">
+                <player behind="True"/>
+            </mul>
+            <mul order="0x30" stat="pvePhysDmg" val="#physDamage">
                 <player behind="True"/>
             </mul>
         </for>
@@ -601,9 +604,7 @@
         <set name="target" val="TARGET_SELF"/>
         <set name="skillType" val="BUFF"/>
         <for>
-            <effect>
-                <add order="0x40" stat="absorbDam" val="#TababsorbDam"/>
-            </effect>
+            <add order="0x40" stat="absorbDam" val="#TababsorbDam"/>
         </for>
     </skill>
 
