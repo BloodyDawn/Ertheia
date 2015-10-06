@@ -18,7 +18,6 @@ import dwo.gameserver.GameTimeController;
 import dwo.gameserver.model.actor.L2Npc;
 import dwo.gameserver.model.actor.instance.L2RaidBossInstance;
 import dwo.gameserver.model.world.npc.spawn.L2Spawn;
-import javolution.util.FastMap;
 import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -26,6 +25,7 @@ import org.apache.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author godson
@@ -33,21 +33,16 @@ import java.util.Map;
 
 public class DayNightSpawnManager
 {
-
-	private static Logger _log = LogManager.getLogger(DayNightSpawnManager.class);
-
-	private List<L2Spawn> _dayCreatures;
-	private List<L2Spawn> _nightCreatures;
-	private Map<L2Spawn, L2RaidBossInstance> _bosses;
+	private static final Logger _log = LogManager.getLogger(DayNightSpawnManager.class);
+	private final List<L2Spawn> _dayCreatures = new ArrayList<>();
+	private final List<L2Spawn> _nightCreatures = new ArrayList<>();
+	private final Map<L2Spawn, L2RaidBossInstance> _bosses = new ConcurrentHashMap<>();
 
 	//private static int _currentState;  // 0 = Day, 1 = Night
 
 	private DayNightSpawnManager()
 	{
 		_log.log(Level.INFO, "DayNightSpawnManager: Initializing...");
-		_dayCreatures = new ArrayList<>();
-		_nightCreatures = new ArrayList<>();
-		_bosses = new FastMap<>();
 	}
 
 	public static DayNightSpawnManager getInstance()
@@ -194,16 +189,14 @@ public class DayNightSpawnManager
 		try
 		{
 			L2RaidBossInstance boss;
-			for(Map.Entry<L2Spawn, L2RaidBossInstance> l2SpawnL2RaidBossInstanceEntry : _bosses.entrySet())
+			for (L2Spawn spawn : _bosses.keySet())
 			{
-				boss = l2SpawnL2RaidBossInstanceEntry.getValue();
-
-				if(boss == null && mode == 1)
+				boss = _bosses.get(spawn);
+				if (boss == null && mode == 1)
 				{
-					boss = (L2RaidBossInstance) l2SpawnL2RaidBossInstanceEntry.getKey().doSpawn();
+					boss = (L2RaidBossInstance) spawn.doSpawn();
 					RaidBossSpawnManager.getInstance().notifySpawnNightBoss(boss);
-					_bosses.remove(l2SpawnL2RaidBossInstanceEntry.getKey());
-					_bosses.put(l2SpawnL2RaidBossInstanceEntry.getKey(), boss);
+					_bosses.put(spawn, boss);
 					continue;
 				}
 
