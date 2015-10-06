@@ -594,4 +594,111 @@
             </mul>
         </for>
     </skill>
+
+    <skill id="19151" levels="3" name="Вампиризм Дворянина">
+        <table name="#TababsorbDam">3 6 9</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect>
+                <add order="0x40" stat="absorbDam" val="#TababsorbDam"/>
+            </effect>
+        </for>
+    </skill>
+
+    <skill id="19152" levels="1" name="Выдержка Дворянина">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+    </skill>
+
+    <skill id="19153" levels="1" name="Критическое Чутье Дворянина">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="pCritRate" val="50"/>
+            <add order="0x40" stat="mCritRate" val="20"/>
+            <add order="0x40" stat="skillMastery" val="1.5"/>
+        </for>
+    </skill>
+
+    <skill id="19154" levels="4" name="Воодушевление Дворянина">
+        <table name="#mAtk">1.03 1.06 1.09 1.14</table>
+        <table name="#hpEff">47 94 141 211</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <add order="0x40" stat="bonusHp" val="#hpEff"/>
+        </for>
+    </skill>
+
+    <skill id="19155" levels="2" name="Проницательность Дворянина">
+        <table name="#mAtkSpd">1.02 1.04</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+        </for>
+    </skill>
+
+    <skill id="19156" levels="2" name="Врожденная Магия Дворянина">
+        <table name="#power">5 10</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <sub order="0x40" stat="rootVuln" val="#power"/>
+            <sub order="0x40" stat="derangementVuln" val="#power"/>
+            <add order="0x40" stat="rootProf" val="#power"/>
+            <add order="0x40" stat="derangementProf" val="#power"/>
+        </for>
+    </skill>
+
+    <skill id="19157" levels="2" name="Дикая Магия Дворянина">
+        <table name="#baseMCritRate">20 30</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="mCritRate" val="#baseMCritRate"/>
+        </for>
+    </skill>
+
+    <skill id="19158" levels="2" name="Благословение Духа Дворянина">
+        <table name="#maxMp">1.06 1.1</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="maxMp" val="#maxMp"/>
+        </for>
+    </skill>
+
+    <skill id="19159" levels="2" name="Сопротивление Дворянина">
+        <table name="#power">5 10</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <sub order="0x40" stat="debuffVuln" val="#power"/>
+            <add order="0x40" stat="debuffProf" val="#power"/>
+        </for>
+    </skill>
+
+    <skill id="19160" levels="2" name="Смертельная Магия Дворянина">
+        <table name="#mCritDamage">1.03 1.05</table>
+        <table name="#hpEff">94 211</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="mCritPower" val="#mCritDamage"/>
+            <add order="0x40" stat="bonusHp" val="#hpEff"/>
+        </for>
+    </skill>
 </list>
