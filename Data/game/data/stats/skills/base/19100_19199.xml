@@ -289,7 +289,17 @@
         <set name="target" val="TARGET_SELF"/>
         <set name="skillType" val="BUFF"/>
         <for>
-            <add order="0x40" stat="pCritRate" value="#pCritRate"/>
+            <add order="0x40" stat="pCritRate" val="#pCritRate"/>
+        </for>
+    </skill>
+
+    <skill id="19126" levels="2" name="Фокусировка Разума Дворянина">
+        <table name="#regMp">4 10</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="regMp" val="#regMp"/>
         </for>
     </skill>
 </list>
