@@ -366,4 +366,22 @@
             <add order="0x40" stat="darkPower" val="#power"/>
         </for>
     </skill>
+
+    <skill id="19131" levels="2" name="Мастерство Дворянина">
+        <table name="#power">1.03 1.05</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pAtk" value="#power">
+                <using kind="Pole,Dual Sword,Dual Fist,Big Sword,Big Blunt,Dual Blunt,Dual Dagger,Ancient"/>
+            </mul>
+            <mul order="0x30" stat="pAtkSpd" value="#power">
+                <and>
+                    <using kind="Pole,Dual Sword,Dual Fist,Big Sword,Big Blunt,Dual Blunt,Dual Dagger,Ancient"/>
+                    <using kind="Shield"/>
+                </and>
+            </mul>
+        </for>
+    </skill>
 </list>
