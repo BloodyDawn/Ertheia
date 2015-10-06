@@ -11623,7 +11623,7 @@ public class L2PcInstance extends L2Playable
 	{
 		startWarnUserTakeBreak();
 
-        startWarnChatTask();
+		startWarnChatTask();
 
 		// jail task
 		updatePunishState();

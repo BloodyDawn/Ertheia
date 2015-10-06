@@ -152,6 +152,8 @@ public class CharEnterWorld extends Quest
 			player.sendPacket(new ExCastleState(castle));
 		}
 
+		player.sendActionFailed();
+
 		// Шлем инормацию о клане если он есть
 		boolean showClanNotice = sendClanInfo(player);
 
@@ -205,8 +207,8 @@ public class CharEnterWorld extends Quest
 
 		// Показывает кол-во адены и кол-во занятых ячеек в инвенторе
 		player.sendPacket(new ExAdenaInvenCount(player));
-
-        player.sendPacket(new ExUserInfoEquipSlot(player));
+		player.sendPacket(new ExUserInfoCubic(player));
+		player.sendPacket(new ExUserInfoEquipSlot(player));
 
 		player.sendPacket(new SkillCoolTime(player));
 
@@ -299,17 +301,14 @@ public class CharEnterWorld extends Quest
 
 		if(Config.PETITIONING_ALLOWED)
 		{
-			PetitionManager.getInstance().checkPetitionMessages(player);
+			PetitionManager.getInstance().checkPetitionMessages(player );
 		}
 
 		player.onPlayerEnter();
 		player.startRecommendationGiveTask();
 		player.broadcastUserInfo();
-        player.sendPacket(new StatusUpdate(player));
 
-        player.sendPacket(new ExUserInfoEquipSlot(player));
-        player.sendPacket(new ExUserInfoCubic(player));
-        player.sendPacket(new ExUserInfoAbnormalVisualEffect(player));
+		player.sendPacket(new ExUserInfoAbnormalVisualEffect(player));
 
 		for(L2ItemInstance i : player.getInventory().getItems())
 		{
@@ -701,7 +700,6 @@ public class CharEnterWorld extends Quest
 			// Шлем клиенту информацию
 			player.sendPacket(new PledgeShowMemberListUpdate(player));
 			player.sendPacket(new PledgeShowMemberListAll(clan, player));
-			player.sendPacket(new PledgeSkillList(clan));
 			player.sendPacket(new ExPledgeCount(clan.getOnlineMembersCount()));
 
 		}
