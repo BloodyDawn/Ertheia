@@ -239,6 +239,16 @@
         </for>
     </skill>
 
+    <skill id="19120" levels="4" name="Щит Дворянина">
+        <table name="#pDef">1.02 1.04 1.06 1.08</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+        </for>
+    </skill>
+
     <skill id="19121" levels="4" name="Магический Барьер Дворянина">
         <table name="#mDef">1.03 1.05 1.07 1.1</table>
         <set name="operateType" val="OP_PASSIVE"/>
