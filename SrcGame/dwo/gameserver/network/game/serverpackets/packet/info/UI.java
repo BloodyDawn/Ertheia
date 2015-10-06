@@ -328,11 +328,12 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.INVENTORY_LIMIT))
         {
-            writeH(9);
+            writeH( 9 );
+            writeD( 0x00 );
+            writeH( _activeChar.getInventoryLimit() );
             writeD(0x00);
-            writeH(_activeChar.getInventoryLimit());
-            writeC(_activeChar.isTransformed() ? _activeChar.getTransformationId() : 0x00);
-            writeC(_activeChar.isCursedWeaponEquipped() ? CursedWeaponsManager.getInstance().getLevel(_activeChar.getCursedWeaponEquippedId()) : 0);
+//            writeC(_activeChar.isTransformed() ? _activeChar.getTransformationId() : 0x00);
+//            writeC(_activeChar.isCursedWeaponEquipped() ? CursedWeaponsManager.getInstance().getLevel(_activeChar.getCursedWeaponEquippedId()) : 0);
         }
 
         if (containsMask(UserInfoType.UNK_3))
