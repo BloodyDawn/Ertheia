@@ -47,9 +47,6 @@ import dwo.gameserver.network.game.serverpackets.packet.event.ExLightingCandleEv
 import dwo.gameserver.network.game.serverpackets.packet.ex.*;
 import dwo.gameserver.network.game.serverpackets.packet.friend.L2FriendList;
 import dwo.gameserver.network.game.serverpackets.packet.henna.HennaInfo;
-import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoAbnormalVisualEffect;
-import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoCubic;
-import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoEquipSlot;
 import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.network.game.serverpackets.packet.mail.ExUnReadMailCount;
 import dwo.gameserver.network.game.serverpackets.packet.party.ExPCCafePointInfo;
@@ -300,12 +297,10 @@ public class CharEnterWorld extends Quest
 		player.onPlayerEnter();
 		player.startRecommendationGiveTask();
 		player.broadcastUserInfo();
-
-		player.updateEffectIcons();
-
-		player.sendPacket( new ExUserInfoEquipSlot( player ) );
 		player.sendPacket( new ExUserInfoInvenWeight( player ) );
 		player.sendPacket( new ExAdenaInvenCount( player ) );
+
+		player.updateEffectIcons();
 
 		for(L2ItemInstance i : player.getInventory().getItems())
 		{

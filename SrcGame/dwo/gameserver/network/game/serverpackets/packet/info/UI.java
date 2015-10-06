@@ -2,7 +2,6 @@ package dwo.gameserver.network.game.serverpackets.packet.info;
 
 import dwo.config.Config;
 import dwo.gameserver.datatables.xml.ExperienceTable;
-import dwo.gameserver.instancemanager.CursedWeaponsManager;
 import dwo.gameserver.instancemanager.RaidBossPointsManager;
 import dwo.gameserver.model.actor.L2Character;
 import dwo.gameserver.model.actor.instance.L2PcInstance;
@@ -67,6 +66,10 @@ public class UI extends AbstractMaskPacket<UserInfoType>
         {
             addComponentType(UserInfoType.values());
         }
+
+        cha.sendPacket(new ExUserInfoEquipSlot(cha, true));
+        cha.sendPacket(new ExUserInfoCubic(cha));
+        cha.sendPacket(new ExUserInfoAbnormalVisualEffect(cha));
     }
 
     @Override
@@ -326,7 +329,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
             }
         }
 
-        if (containsMask(UserInfoType.INVENTORY_LIMIT))
+        if (containsMask( UserInfoType.INVENTORY_LIMIT))
         {
             writeH( 9 );
             writeD( 0x00 );

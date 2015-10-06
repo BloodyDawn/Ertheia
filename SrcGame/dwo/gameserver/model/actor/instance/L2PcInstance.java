@@ -4132,8 +4132,7 @@ public class L2PcInstance extends L2Playable
 	@Override
 	public void updateAbnormalEffect()
 	{
-			sendPacket(new ExUserInfoAbnormalVisualEffect(this));
-			broadcastPacket(new CI(this));
+		broadcastUserInfo();
 	}
 
 	@Override
@@ -6491,7 +6490,7 @@ public class L2PcInstance extends L2Playable
 		if(_transformation != null)
 		{
 			// You already polymorphed and cannot polymorph again.
-			sendPacket(SystemMessageId.YOU_ALREADY_POLYMORPHED_AND_CANNOT_POLYMORPH_AGAIN);
+			sendPacket( SystemMessageId.YOU_ALREADY_POLYMORPHED_AND_CANNOT_POLYMORPH_AGAIN );
 			return;
 		}
 		setQueuedSkill(null, false, false);
@@ -6506,7 +6505,6 @@ public class L2PcInstance extends L2Playable
 		transformation.onTransform();
 		sendSkillList();
 		sendPacket(new SkillCoolTime(this));
-		sendPacket(new ExUserInfoAbnormalVisualEffect(this));
 		broadcastUserInfo();
 	}
 
@@ -10431,15 +10429,12 @@ public class L2PcInstance extends L2Playable
 	{
 		if(_cubics != null)
 		{
-			boolean removed = false;
 			for(L2CubicInstance cubic : _cubics)
 			{
 				cubic.stopAction();
 				removeCubic(cubic.getId());
-				removed = true;
 			}
-            sendPacket(new ExUserInfoCubic(this));
-            broadcastPacket(new CI(this));
+			broadcastUserInfo();
 		}
 	}
 
@@ -10463,8 +10458,7 @@ public class L2PcInstance extends L2Playable
 			}
 			if(broadcast)
 			{
-                sendPacket(new ExUserInfoCubic(this));
-                broadcastPacket(new CI(this));
+				broadcastUserInfo();
 			}
 		}
 	}
