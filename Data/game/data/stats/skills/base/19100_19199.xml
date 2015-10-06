@@ -238,4 +238,34 @@
             </effect>
         </for>
     </skill>
+
+    <skill id="19121" levels="4" name="Магический Барьер Дворянина">
+        <table name="#mDef">1.03 1.05 1.07 1.1</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="mDef" val="#mDef"/>
+        </for>
+    </skill>
+
+    <skill id="19122" levels="4" name="Благословение Тела Дворянина">
+        <table name="#maxHp">1.06 1.1 1.12 1.16</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="maxHp" val="#maxHp"/>
+        </for>
+    </skill>
+
+    <skill id="19123" levels="4" name="Ускорение Дворянина">
+        <table name="#pAtkSpd">1.02 1.04 1.06 1.09</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+        </for>
+    </skill>
 </list>
