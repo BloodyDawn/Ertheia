@@ -4,16 +4,16 @@ import dwo.gameserver.model.actor.L2Character;
 import dwo.gameserver.model.actor.L2Object;
 import dwo.gameserver.model.world.zone.L2WorldRegion;
 import dwo.gameserver.util.Util;
-import dwo.gameserver.util.arrays.L2FastMap;
 
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class ObjectKnownList
 {
-	private L2Object _activeObject;
-	private Map<Integer, L2Object> _knownObjects;
+	private final L2Object _activeObject;
+	private volatile Map<Integer, L2Object> _knownObjects;
 
 	public ObjectKnownList(L2Object activeObject)
 	{
@@ -170,11 +170,17 @@ public class ObjectKnownList
 	/**
 	 * @return the _knownObjects containing all L2Object known by the L2Character.
 	 */
-	public Map<Integer, L2Object> getKnownObjects()
+	public final Map<Integer, L2Object> getKnownObjects()
 	{
-		if(_knownObjects == null)
+		if (_knownObjects == null)
 		{
-			_knownObjects = new L2FastMap<>(true);
+			synchronized (this)
+			{
+				if (_knownObjects == null)
+				{
+					_knownObjects = new ConcurrentHashMap<>();
+				}
+			}
 		}
 		return _knownObjects;
 	}
