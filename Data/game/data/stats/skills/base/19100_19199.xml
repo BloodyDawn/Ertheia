@@ -394,4 +394,63 @@
             <mul order="0x30" stat="mReuse" val="#mReuse"/>
         </for>
     </skill>
+
+    <skill id="19133" levels="1" name="Тяжелая Броня Дворянина">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="maxMp" val="1.06">
+                <using kind="Heavy"/>
+            </mul>
+            <mul order="0x30" stat="mDef" val="1.03">
+                <using kind="Heavy"/>
+            </mul>
+        </for>
+    </skill>
+
+    <skill id="19134" levels="4" name="Защита Дворянина">
+        <table name="#pDef">1.03 1.05 1.07 1.1</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="#pDef">
+                <using kind="Heavy"/>
+            </mul>
+        </for>
+    </skill>
+
+    <skill id="19135" levels="4" name="Атака Дворянина в Тяжелой Броне">
+        <table name="#pAtk">1.02 1.04 1.06 1.08</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pAtk" val="#pAtk">
+                <using kind="Heavy"/>
+            </mul>
+        </for>
+    </skill>
+
+    <skill id="19136" levels="3" name="Молитва Дворянина">
+        <table name="#hpEff">1.03 1.06 1.09</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="gainHp" val="#hpEff"/>
+        </for>
+    </skill>
+
+    <skill id="19137" levels="1" name="Мужество Дворянина">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pvpPhysDef" val="1.1"/>
+            <mul order="0x30" stat="pvpMagicalDef" val="1.1"/>
+            <mul order="0x30" stat="pvpPhysSkillsDef" val="1.1"/>
+        </for>
+    </skill>
 </list>
