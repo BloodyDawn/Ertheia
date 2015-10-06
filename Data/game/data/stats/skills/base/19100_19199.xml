@@ -315,4 +315,14 @@
             <!--TODO: Активирует скрытое умение.-->
         </for>
     </skill>
+
+    <skill id="19128" levels="2" name="Искусство Смерти Дворянина">
+        <table name="#pCritDamage">1.05 1.1</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="cAtk" val="#pCritDamage"/>
+        </for>
+    </skill>
 </list>
