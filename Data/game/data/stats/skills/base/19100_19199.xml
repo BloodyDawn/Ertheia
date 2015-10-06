@@ -345,4 +345,25 @@
             <mul order="0x30" stat="critDamEvas" val="#pCritDamRcpt"/>
         </for>
     </skill>
+
+    <skill id="19130" levels="2" name="Сила Стихий Дворянина">
+        <table name="#power">20 50</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="fireRes" value="#power"/>
+            <add order="0x40" stat="waterRes" value="#power"/>
+            <add order="0x40" stat="windRes" value="#power"/>
+            <add order="0x40" stat="earthRes" value="#power"/>
+            <add order="0x40" stat="holyRes" value="#power"/>
+            <add order="0x40" stat="darkRes" value="#power"/>
+            <add order="0x40" stat="firePower" value="#power"/>
+            <add order="0x40" stat="waterPower" value="#power"/>
+            <add order="0x40" stat="windPower" value="#power"/>
+            <add order="0x40" stat="earthPower" value="#power"/>
+            <add order="0x40" stat="holyPower" value="#power"/>
+            <add order="0x40" stat="darkPower" value="#power"/>
+        </for>
+    </skill>
 </list>
