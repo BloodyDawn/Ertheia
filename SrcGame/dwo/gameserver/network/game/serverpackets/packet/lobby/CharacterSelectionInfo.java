@@ -24,7 +24,18 @@ import java.util.List;
 
 public class CharacterSelectionInfo extends L2GameServerPacket
 {
-    public static final int[] PAPERDOLL_ORDER = {Inventory.PAPERDOLL_HAIR, Inventory.PAPERDOLL_REAR, Inventory.PAPERDOLL_LEAR, Inventory.PAPERDOLL_NECK, Inventory.PAPERDOLL_RFINGER, Inventory.PAPERDOLL_LFINGER, Inventory.PAPERDOLL_HEAD, Inventory.PAPERDOLL_RHAND, Inventory.PAPERDOLL_LHAND, Inventory.PAPERDOLL_GLOVES, Inventory.PAPERDOLL_CHEST, Inventory.PAPERDOLL_LEGS, Inventory.PAPERDOLL_FEET, Inventory.PAPERDOLL_CLOAK, Inventory.PAPERDOLL_RHAND, Inventory.PAPERDOLL_HAIR, Inventory.PAPERDOLL_HAIR2, Inventory.PAPERDOLL_RBRACELET, Inventory.PAPERDOLL_LBRACELET, Inventory.PAPERDOLL_DECO1, Inventory.PAPERDOLL_DECO2, Inventory.PAPERDOLL_DECO3, Inventory.PAPERDOLL_DECO4, Inventory.PAPERDOLL_DECO5, Inventory.PAPERDOLL_DECO6, Inventory.PAPERDOLL_BELT};
+    private static final int[] PAPERDOLL_ORDER_VISUAL_ID = new int[]
+    {
+            Inventory.PAPERDOLL_RHAND,
+            Inventory.PAPERDOLL_LHAND,
+            Inventory.PAPERDOLL_GLOVES,
+            Inventory.PAPERDOLL_CHEST,
+            Inventory.PAPERDOLL_LEGS,
+            Inventory.PAPERDOLL_FEET,
+            Inventory.PAPERDOLL_HAIR,
+            Inventory.PAPERDOLL_HAIR2,
+    };
+
     private String _loginName;
     private int _sessionId;
     private int _activeId;
@@ -297,11 +308,11 @@ public class CharacterSelectionInfo extends L2GameServerPacket
 
         writeD(size);
 
-        writeD(0x07); // максимальное кол-во персонажей на аккаунте, 7 - предел клиента
-        writeC(0x00); // Ertheia: приходит 0х00
-        writeC(0x01);
-        writeD(0x02);
-        writeC(0x00);
+        writeD(Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT); // максимальное кол-во персонажей на аккаунте, 7 - предел клиента
+        writeC(size == Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT ? 0x01 : 0x00); // Ertheia: приходит 0х00
+        writeC(0x01); // play mode, if 1 can create only 2 char in regular lobby
+        writeD(0x02); // if 1, korean client
+        writeC(0x00); // if 1 suggest premium account
 
         long lastAccess = 0L;
 
@@ -362,34 +373,20 @@ public class CharacterSelectionInfo extends L2GameServerPacket
             writeD(0x00);
             writeD(0x00);
 
-            for(int slot : PAPERDOLL_ORDER)
+            for(int slot : getPaperdollOrder())
             {
                 writeD(charInfoPackage.getPaperdollItemId(slot));
             }
 
-            writeD(charInfoPackage.getPaperdollItemSkinByItemId(Inventory.PAPERDOLL_RHAND));
-            writeD(charInfoPackage.getPaperdollItemSkinByItemId(Inventory.PAPERDOLL_LHAND));
-            writeD(charInfoPackage.getPaperdollItemSkinByItemId(Inventory.PAPERDOLL_GLOVES));
-            writeD(charInfoPackage.getPaperdollItemSkinByItemId(Inventory.PAPERDOLL_CHEST));
-            writeD(charInfoPackage.getPaperdollItemSkinByItemId(Inventory.PAPERDOLL_LEGS));
-            writeD(charInfoPackage.getPaperdollItemSkinByItemId(Inventory.PAPERDOLL_FEET));
-            writeD(charInfoPackage.getPaperdollItemSkinByItemId(Inventory.PAPERDOLL_RHAND));
-            writeD(charInfoPackage.getPaperdollItemSkinByItemId(Inventory.PAPERDOLL_HAIR));
-            writeD(charInfoPackage.getPaperdollItemSkinByItemId(Inventory.PAPERDOLL_HAIR2));
+            for (int slot : getPaperdollOrderVisualId())
+            {
+                writeD(charInfoPackage.getPaperdollItemSkinByItemId(slot));
+            }
 
-            writeD(0x00);
-            writeD(0x00);
-            writeD(0x00);
-            writeD(0x00);
-            writeD(0x00);
-            writeD(0x00);
-            writeD(0x00);
-
-            writeH(0x00);
-            writeH(0x00);
-            writeH(0x00);
-            writeH(0x00);
-            writeH(0x00);
+            writeD(0x00); // ??
+            writeD(0x00); // ??
+            writeD(0x00); // ??
+            writeH(0x00); // ??
 
             writeD(charInfoPackage.getHairStyle());
             writeD(charInfoPackage.getHairColor());
@@ -430,8 +427,14 @@ public class CharacterSelectionInfo extends L2GameServerPacket
             writeD(data.getIntValue(5)); // Glory Days: количество итемов которыми можно повысить уровень виталити.
             writeD(charInfoPackage.getAccessLevel() == -100 ? 0x00 : 0x01); //?
             writeC(0x00); //?
-            writeC(0x00); //?
+            writeC(0x00); //IsHero
             writeC(0x01); //TODO isHairAccessoryEnabled
         }
+    }
+
+    @Override
+    protected int[] getPaperdollOrderVisualId()
+    {
+        return PAPERDOLL_ORDER_VISUAL_ID;
     }
 }
