@@ -453,4 +453,33 @@
             <mul order="0x30" stat="pvpPhysSkillsDef" val="1.1"/>
         </for>
     </skill>
+
+    <skill id="19138" levels="1" name="Безумие Дворянина">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="physicalSkillPower" val="1.1"/>
+        </for>
+    </skill>
+
+    <skill id="19139" levels="4" name="Могущество Дворянина">
+        <table name="#pAtk">1.02 1.04 1.06 1.09</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+        </for>
+    </skill>
+
+    <skill id="19140" levels="2" name="Расход Дворянина">
+        <table name="#mpConsumePhysical">0.95 0.9</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="PhysicalMpConsumeRate" val="#mpConsumePhysical"/>
+        </for>
+    </skill>
 </list>
