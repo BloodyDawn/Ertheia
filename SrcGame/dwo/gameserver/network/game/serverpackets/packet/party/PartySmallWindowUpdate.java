@@ -37,10 +37,8 @@ public class PartySmallWindowUpdate extends L2GameServerPacket
 		writeD(_member.getMaxVisibleHp());
 		writeD((int) _member.getCurrentMp());
 		writeD(_member.getMaxMp());
-		writeD(_member.getLevel());
-		writeD(_member.getClassId().getId());
-		//GoD
+		writeC(_member.getLevel());
+		writeH(_member.getClassId().getId());
 		writeD(_member.getVitalityDataForCurrentClassIndex().getVitalityPoints());     //GOD Vitality
-		writeD(0x00); // Активируется или деактивируется стрелочка на против ника, мб для быстрой смены ПЛа в партии.
 	}
 }
