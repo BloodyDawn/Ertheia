@@ -596,7 +596,6 @@ public class Antharas extends Quest
 	// Do spawn Antharas.
 	private class AntharasSpawn implements Runnable
 	{
-		private final Collection<L2Character> _players = _Zone.getCharactersInside();
 		private int _taskId;
 
 		public AntharasSpawn(int taskId)
@@ -610,6 +609,7 @@ public class Antharas extends Quest
 			int npcId;
 			L2Spawn antharasSpawn = null;
 
+			Collection<L2Character> _players = _Zone.getCharactersInside();
 			switch(_taskId)
 			{
 				case 1: // Spawn.
