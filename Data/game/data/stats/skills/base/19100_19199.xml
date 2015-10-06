@@ -238,4 +238,160 @@
             </effect>
         </for>
     </skill>
+
+    <skill id="19120" levels="4" name="Щит Дворянина">
+        <table name="#pDef">1.02 1.04 1.06 1.08</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+        </for>
+    </skill>
+
+    <skill id="19121" levels="4" name="Магический Барьер Дворянина">
+        <table name="#mDef">1.03 1.05 1.07 1.1</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="mDef" val="#mDef"/>
+        </for>
+    </skill>
+
+    <skill id="19122" levels="4" name="Благословение Тела Дворянина">
+        <table name="#maxHp">1.06 1.1 1.12 1.16</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="maxHp" val="#maxHp"/>
+        </for>
+    </skill>
+
+    <skill id="19123" levels="4" name="Ускорение Дворянина">
+        <table name="#pAtkSpd">1.02 1.04 1.06 1.09</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+        </for>
+    </skill>
+
+    <skill id="19124" levels="2" name="Врожденная Защита Дворянина">
+        <table name="#prof">1.05 1.1</table>
+        <table name="#vuln">5 10</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="paralyzeProf" val="#prof"/>
+            <mul order="0x30" stat="stunProf" val="#prof"/>
+            <sub order="0x40" stat="paralyzeVuln" val="#vuln"/>
+            <sub order="0x40" stat="stunVuln" val="#vuln"/>
+        </for>
+    </skill>
+
+    <skill id="19125" levels="2" name="Искусство Фокусировки Дворянина">
+        <table name="#pCritRate">5 10</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="pCritRate" val="#pCritRate"/>
+        </for>
+    </skill>
+
+    <skill id="19126" levels="2" name="Фокусировка Разума Дворянина">
+        <table name="#regMp">4 10</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="regMp" val="#regMp"/>
+        </for>
+    </skill>
+
+    <skill id="19127" levels="2" name="Наведение Дворянина">
+        <table name="#accuracy">8 16</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="accPhysical" val="#accuracy"/>
+            <add order="0x40" stat="accMagical" val="#accuracy"/>
+            <!--TODO: Физ. Точность слуги.-->
+            <!--TODO: Активирует скрытое умение.-->
+        </for>
+    </skill>
+
+    <skill id="19128" levels="2" name="Искусство Смерти Дворянина">
+        <table name="#pCritDamage">1.05 1.1</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="cAtk" val="#pCritDamage"/>
+        </for>
+    </skill>
+
+    <skill id="19129" levels="2" name="Охранный Щит Дворянина">
+        <table name="#pCritDamRcpt">1.02 1.04</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="critDamEvas" val="#pCritDamRcpt"/>
+        </for>
+    </skill>
+
+    <skill id="19130" levels="2" name="Сила Стихий Дворянина">
+        <table name="#power">20 50</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="fireRes" val="#power"/>
+            <add order="0x40" stat="waterRes" val="#power"/>
+            <add order="0x40" stat="windRes" val="#power"/>
+            <add order="0x40" stat="earthRes" val="#power"/>
+            <add order="0x40" stat="holyRes" val="#power"/>
+            <add order="0x40" stat="darkRes" val="#power"/>
+            <add order="0x40" stat="firePower" val="#power"/>
+            <add order="0x40" stat="waterPower" val="#power"/>
+            <add order="0x40" stat="windPower" val="#power"/>
+            <add order="0x40" stat="earthPower" val="#power"/>
+            <add order="0x40" stat="holyPower" val="#power"/>
+            <add order="0x40" stat="darkPower" val="#power"/>
+        </for>
+    </skill>
+
+    <skill id="19131" levels="2" name="Мастерство Дворянина">
+        <table name="#power">1.03 1.05</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="pAtk" val="#power">
+                <using kind="Pole,Dual Sword,Dual Fist,Big Sword,Big Blunt,Dual Blunt,Dual Dagger,Ancient"/>
+            </mul>
+            <mul order="0x30" stat="pAtkSpd" val="#power">
+                <and>
+                    <using kind="Pole,Dual Sword,Dual Fist,Big Sword,Big Blunt,Dual Blunt,Dual Dagger,Ancient"/>
+                    <using kind="Shield"/>
+                </and>
+            </mul>
+        </for>
+    </skill>
+
+    <skill id="19132" levels="2" name="Контроль Разума Дворянина">
+        <table name="#mReuse">0.97 0.95</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="mReuse" val="#mReuse"/>
+        </for>
+    </skill>
 </list>
