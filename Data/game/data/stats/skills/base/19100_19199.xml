@@ -302,4 +302,17 @@
             <add order="0x40" stat="regMp" val="#regMp"/>
         </for>
     </skill>
+
+    <skill id="19127" levels="2" name="Наведение Дворянина">
+        <table name="#accuracy">8 16</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="accPhysical" val="#accuracy"/>
+            <add order="0x40" stat="accMagical" val="#accuracy"/>
+            <!--TODO: Физ. Точность слуги.-->
+            <!--TODO: Активирует скрытое умение.-->
+        </for>
+    </skill>
 </list>
