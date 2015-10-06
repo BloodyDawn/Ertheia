@@ -6,7 +6,6 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Collection;
 
@@ -40,7 +39,10 @@ public class ScriptsManager
 
       try
       {
-        Method m = cls.getMethod( "main", new Class[] { String[].class } );
+        Method m = cls.getMethod( "main", String[].class);
+        if (m == null)
+          continue;
+
         if( m.getDeclaringClass().equals( cls ) ) // Check for classes like Sagas
         {
           m.invoke( cls, new Object[] { new String[] {} } );
@@ -54,7 +56,7 @@ public class ScriptsManager
 
       try
       {
-        Constructor<?> c = cls.getConstructor( new Class[] {} );
+        Constructor<?> c = cls.getConstructor();
         Quest q = (Quest) c.newInstance();
         q.setAltMethodCall( true );
       }
