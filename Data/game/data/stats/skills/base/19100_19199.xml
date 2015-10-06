@@ -373,15 +373,25 @@
         <set name="target" val="TARGET_SELF"/>
         <set name="skillType" val="BUFF"/>
         <for>
-            <mul order="0x30" stat="pAtk" value="#power">
+            <mul order="0x30" stat="pAtk" val="#power">
                 <using kind="Pole,Dual Sword,Dual Fist,Big Sword,Big Blunt,Dual Blunt,Dual Dagger,Ancient"/>
             </mul>
-            <mul order="0x30" stat="pAtkSpd" value="#power">
+            <mul order="0x30" stat="pAtkSpd" val="#power">
                 <and>
                     <using kind="Pole,Dual Sword,Dual Fist,Big Sword,Big Blunt,Dual Blunt,Dual Dagger,Ancient"/>
                     <using kind="Shield"/>
                 </and>
             </mul>
+        </for>
+    </skill>
+
+    <skill id="19132" levels="2" name="Контроль Разума Дворянина">
+        <table name="#mReuse">0.97 0.95</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul order="0x30" stat="mReuse" val="#mReuse"/>
         </for>
     </skill>
 </list>
