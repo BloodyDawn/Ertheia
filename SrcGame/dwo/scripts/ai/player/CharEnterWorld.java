@@ -47,6 +47,7 @@ import dwo.gameserver.network.game.serverpackets.packet.event.ExLightingCandleEv
 import dwo.gameserver.network.game.serverpackets.packet.ex.*;
 import dwo.gameserver.network.game.serverpackets.packet.friend.L2FriendList;
 import dwo.gameserver.network.game.serverpackets.packet.henna.HennaInfo;
+import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoEquipSlot;
 import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.network.game.serverpackets.packet.mail.ExUnReadMailCount;
 import dwo.gameserver.network.game.serverpackets.packet.party.ExPCCafePointInfo;
@@ -192,6 +193,8 @@ public class CharEnterWorld extends Quest
 
 		player.sendPacket(new MagicAndSkillList(player));
 
+		player.updateEffectIcons();
+
 		// Expand Skill
 		player.sendPacket(new ExStorageMaxCount(player));
 
@@ -223,10 +226,7 @@ public class CharEnterWorld extends Quest
 		}
 
 		// Шлем анонсы
-		Announcements.getInstance().showAnnouncements( player );
-
-		// Шлем информацию о сабкласах персонажа
-		player.sendPacket(new ExSubjobInfo(player));
+		Announcements.getInstance().showAnnouncements(player);
 
 		// Наставничество
 		player.sendPacket(new ExMentorList(player));
@@ -297,10 +297,12 @@ public class CharEnterWorld extends Quest
 		player.onPlayerEnter();
 		player.startRecommendationGiveTask();
 		player.broadcastUserInfo();
-		player.sendPacket( new ExUserInfoInvenWeight( player ) );
-		player.sendPacket( new ExAdenaInvenCount( player ) );
 
-		player.updateEffectIcons();
+		// Шлем информацию о сабкласах персонажа
+		player.sendPacket(new ExSubjobInfo(player));
+		player.sendPacket(new ExUserInfoInvenWeight(player));
+		player.sendPacket(new ExAdenaInvenCount(player));
+		player.sendPacket(new ExUserInfoEquipSlot(player));
 
 		for(L2ItemInstance i : player.getInventory().getItems())
 		{

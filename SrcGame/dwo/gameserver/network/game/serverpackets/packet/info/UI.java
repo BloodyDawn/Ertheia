@@ -68,10 +68,6 @@ public class UI extends AbstractMaskPacket<UserInfoType>
         {
             addComponentType(UserInfoType.values());
         }
-
-        cha.sendPacket(new ExUserInfoEquipSlot(cha, true));
-        cha.sendPacket(new ExUserInfoCubic(cha));
-        cha.sendPacket(new ExUserInfoAbnormalVisualEffect(cha));
     }
 
     @Override

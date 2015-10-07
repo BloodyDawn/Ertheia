@@ -4132,7 +4132,8 @@ public class L2PcInstance extends L2Playable
 	@Override
 	public void updateAbnormalEffect()
 	{
-		broadcastUserInfo();
+		sendPacket(new ExUserInfoAbnormalVisualEffect(this));
+		broadcastPacket(new CI(this));
 	}
 
 	@Override
@@ -6505,6 +6506,7 @@ public class L2PcInstance extends L2Playable
 		transformation.onTransform();
 		sendSkillList();
 		sendPacket(new SkillCoolTime(this));
+		sendPacket(new ExUserInfoAbnormalVisualEffect(this));
 		broadcastUserInfo();
 	}
 
@@ -10434,6 +10436,7 @@ public class L2PcInstance extends L2Playable
 				cubic.stopAction();
 				removeCubic(cubic.getId());
 			}
+			sendPacket(new ExUserInfoCubic(this));
 			broadcastUserInfo();
 		}
 	}
@@ -10458,6 +10461,7 @@ public class L2PcInstance extends L2Playable
 			}
 			if(broadcast)
 			{
+				sendPacket(new ExUserInfoCubic(this));
 				broadcastUserInfo();
 			}
 		}
