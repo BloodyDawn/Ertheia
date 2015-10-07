@@ -19,6 +19,7 @@ import dwo.gameserver.model.items.base.type.L2WeaponType;
 import dwo.gameserver.model.items.itemcontainer.Inventory;
 import dwo.gameserver.model.player.FloodAction;
 import dwo.gameserver.model.player.PlayerPrivateStoreType;
+import dwo.gameserver.model.player.base.Race;
 import dwo.gameserver.model.skills.base.L2Skill;
 import dwo.gameserver.model.skills.base.proptypes.L2SkillType;
 import dwo.gameserver.network.game.components.SystemMessageId;
@@ -157,76 +158,84 @@ public class UseItem extends L2GameClientPacket
 				return;
 			}
 
-			// Equip or unEquip
-			if(!EventManager.onUseItem(activeChar))
-			{
-				return;
-			}
-            if (item.getItem().getBodyPart() == L2Item.SLOT_LR_HAND || item.getItem().getBodyPart() == L2Item.SLOT_L_HAND || item.getItem().getBodyPart() == L2Item.SLOT_R_HAND) {// prevent players to equip weapon while wearing combat flag
-                if (activeChar.getActiveWeaponItem() != null && activeChar.getActiveWeaponItem().getItemId() == 9819) {
-                    activeChar.sendPacket(SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION);
-                    return;
-                }
-                if (activeChar.isMounted()) {
-                    activeChar.sendPacket(SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION);
-                    return;
-                }
-                if (activeChar.isDisarmed()) {
-                    activeChar.sendPacket(SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION);
-                    return;
-                }
+      // Equip or unEquip
+      if( !EventManager.onUseItem( activeChar ) )
+      {
+        return;
+      }
 
-                // Don't allow weapon/shield equipment if a cursed weapon is equiped
-                if (activeChar.isCursedWeaponEquipped()) {
-                    return;
-                }
+      // Don't allow other Race to Wear Kamael exclusive Weapons.
+      if( !activeChar.isAwakened() )
+      {
+        // Ertheia Update - Kamael can use robes and heavy armors.
+        if( (activeChar.getRace() == Race.Kamael) && ((item.getItemType() == L2ArmorType.SIGIL) || (item.getItemType() == L2WeaponType.NONE)) )
+        {
+          activeChar.sendPacket( SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION );
+          return;
+        }
+        // Ertheia Update - Ertheia Wizards cannot equip shields and sigils.
+        if( ((activeChar.getRace() == Race.Ertheia) && (activeChar.isMageClass())) && ((item.getItemType() == L2ArmorType.SIGIL) || (item.getItemType() == L2WeaponType.NONE)) )
+        {
+          activeChar.sendPacket( SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION );
+          return;
+        }
 
-                // Don't allow other Race to Wear Kamael exclusive Weapons.
-                if (!item.isEquipped() && item.getItem() instanceof L2Weapon && !activeChar.isGM()) {
-                    L2Weapon wpn = (L2Weapon) item.getItem();
+        if( (activeChar.getRace() != Race.Kamael) && ((item.getItemType() == L2WeaponType.CROSSBOW) || (item.getItemType() == L2WeaponType.RAPIER) || (item.getItemType() == L2WeaponType.ANCIENTSWORD)) )
+        {
+          activeChar.sendPacket( SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION );
+          return;
+        }
+      }
 
-                    switch (activeChar.getRace()) {
-                        case Kamael:
-                            switch (wpn.getItemType()) {
-                                case NONE:
-                                    activeChar.sendPacket(SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION);
-                                    return;
-                            }
-                            break;
-                        case Human:
-                        case Dwarf:
-                        case Elf:
-                        case DarkElf:
-                        case Orc:
-                        case Ertheia:
-                            switch (wpn.getItemType()) {
-                                case RAPIER:
-                                case CROSSBOW:
-                                case ANCIENTSWORD:
-                                    activeChar.sendPacket(SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION);
-                                    return;
-                            }
-                            break;
-                    }
-                }
+      if( item.getItem().getBodyPart() == L2Item.SLOT_LR_HAND || item.getItem().getBodyPart() == L2Item.SLOT_L_HAND || item.getItem().getBodyPart() == L2Item.SLOT_R_HAND )
+      {
+        // prevent players to equip weapon while wearing combat flag
+        if( activeChar.getActiveWeaponItem() != null && activeChar.getActiveWeaponItem().getItemId() == 9819 )
+        {
+          activeChar.sendPacket( SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION );
+          return;
+        }
+        if( activeChar.isMounted() )
+        {
+          activeChar.sendPacket( SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION );
+          return;
+        }
+        if( activeChar.isDisarmed() )
+        {
+          activeChar.sendPacket( SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION );
+          return;
+        }
 
-            } else if (item.getItem().getBodyPart() == L2Item.SLOT_CHEST || item.getItem().getBodyPart() == L2Item.SLOT_BACK || item.getItem().getBodyPart() == L2Item.SLOT_GLOVES || item.getItem().getBodyPart() == L2Item.SLOT_FEET || item.getItem().getBodyPart() == L2Item.SLOT_HEAD || item.getItem().getBodyPart() == L2Item.SLOT_FULL_ARMOR || item.getItem().getBodyPart() == L2Item.SLOT_LEGS) {
-                if (activeChar.getFirstEffect(462) != null && (item.getItem().getItemType() == L2ArmorType.HEAVY || item.getItem().getItemType() == L2ArmorType.MAGIC)) {
-                    activeChar.sendPacket(SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION);
-                    return;
-                }
-
-            } else if (item.getItem().getBodyPart() == L2Item.SLOT_DECO) {
-                if (!item.isEquipped() && activeChar.getInventory().getMaxTalismanCount() == 0) {
-                    activeChar.sendPacket(SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION);
-                    return;
-                }
-            } else if (item.getItem().getBodyPart() == L2Item.SLOT_BROACH) {
-                if (!item.isEquipped() && activeChar.getInventory().getMaxStoneCount() == 0) {
-                    activeChar.sendPacket(SystemMessageId.getSystemMessageId(4237));
-                    return;
-                }
-            }
+        // Don't allow weapon/shield equipment if a cursed weapon is equiped
+        if( activeChar.isCursedWeaponEquipped() )
+        {
+          return;
+        }
+      }
+      else if( item.getItem().getBodyPart() == L2Item.SLOT_CHEST || item.getItem().getBodyPart() == L2Item.SLOT_BACK || item.getItem().getBodyPart() == L2Item.SLOT_GLOVES || item.getItem().getBodyPart() == L2Item.SLOT_FEET || item.getItem().getBodyPart() == L2Item.SLOT_HEAD || item.getItem().getBodyPart() == L2Item.SLOT_FULL_ARMOR || item.getItem().getBodyPart() == L2Item.SLOT_LEGS )
+      {
+        if( activeChar.getFirstEffect( 462 ) != null && (item.getItem().getItemType() == L2ArmorType.HEAVY || item.getItem().getItemType() == L2ArmorType.MAGIC) )
+        {
+          activeChar.sendPacket( SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION );
+          return;
+        }
+      }
+      else if( item.getItem().getBodyPart() == L2Item.SLOT_DECO )
+      {
+        if( !item.isEquipped() && activeChar.getInventory().getMaxTalismanCount() == 0 )
+        {
+          activeChar.sendPacket( SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION );
+          return;
+        }
+      }
+      else if( item.getItem().getBodyPart() == L2Item.SLOT_BROACH )
+      {
+        if( !item.isEquipped() && activeChar.getInventory().getMaxStoneCount() == 0 )
+        {
+          activeChar.sendPacket( SystemMessageId.getSystemMessageId( 4237 ) );
+          return;
+        }
+      }
 
 			if(activeChar.isCastingNow() || activeChar.isCastingSimultaneouslyNow())
 			{
