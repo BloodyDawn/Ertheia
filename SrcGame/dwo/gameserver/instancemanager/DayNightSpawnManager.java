@@ -249,8 +249,6 @@ public class DayNightSpawnManager
 			_bosses.put(spawnDat, raidboss);
 			return raidboss;
 		}
-		_bosses.put(spawnDat, null);
-
 		return null;
 	}
 
