@@ -358,35 +358,6 @@ public class InstanceManager extends XmlDocumentParser
         return 0;
     }
 
-    public int createInstance()
-    {
-        _dynamic = 1;
-        while(getInstance(_dynamic) != null)
-        {
-            _dynamic++;
-            if(_dynamic == Integer.MAX_VALUE)
-            {
-                _log.log(Level.WARN, "InstanceManager: More then " + (Integer.MAX_VALUE - 300000) + " instances created");
-                _dynamic = 300000;
-            }
-        }
-        Instance instance = new Instance(_dynamic);
-        _instanceList.put(_dynamic, instance);
-        return _dynamic;
-    }
-
-    public boolean createInstance(int id)
-    {
-        if(getInstance(id) != null)
-        {
-            return false;
-        }
-
-        Instance instance = new Instance(id);
-        _instanceList.put(id, instance);
-        return true;
-    }
-
     public boolean createInstanceFromTemplate(int id, String template)
     {
         if(getInstance(id) != null)
@@ -423,18 +394,6 @@ public class InstanceManager extends XmlDocumentParser
             instance.loadInstanceTemplate(template);
         }
         return _dynamic;
-    }
-
-    /**
-     * Checks whether instance of given {@code instanceId} exists.
-     *
-     * @param instanceId
-     *            instance id
-     * @return true if instance exists, otherwise false
-     */
-    public boolean instanceExist(int instanceId)
-    {
-        return _instanceList.get(instanceId) != null;
     }
 
     public static class InstanceWorld
