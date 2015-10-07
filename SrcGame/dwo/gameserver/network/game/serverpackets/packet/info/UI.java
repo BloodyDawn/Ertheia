@@ -2,6 +2,7 @@ package dwo.gameserver.network.game.serverpackets.packet.info;
 
 import dwo.config.Config;
 import dwo.gameserver.datatables.xml.ExperienceTable;
+import dwo.gameserver.instancemanager.CursedWeaponsManager;
 import dwo.gameserver.instancemanager.RaidBossPointsManager;
 import dwo.gameserver.model.actor.L2Character;
 import dwo.gameserver.model.actor.instance.L2PcInstance;
@@ -329,12 +330,10 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask( UserInfoType.INVENTORY_LIMIT))
         {
-            writeH(UserInfoType.INVENTORY_LIMIT.getBlockLength());
+            writeH( UserInfoType.INVENTORY_LIMIT.getBlockLength() );
             writeD( 0x00 );
             writeH( _activeChar.getInventoryLimit() );
-            writeC( 0x00 );
-//            writeC(_activeChar.isTransformed() ? _activeChar.getTransformationId() : 0x00);
-//            writeC(_activeChar.isCursedWeaponEquipped() ? CursedWeaponsManager.getInstance().getLevel(_activeChar.getCursedWeaponEquippedId()) : 0);
+            writeC( _activeChar.isCursedWeaponEquipped() ? CursedWeaponsManager.getInstance().getLevel( _activeChar.getCursedWeaponEquippedId() ) : 0 );
         }
 
         if (containsMask(UserInfoType.UNK_3))
