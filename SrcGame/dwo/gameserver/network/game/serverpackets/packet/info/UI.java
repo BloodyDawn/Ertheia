@@ -263,7 +263,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.CLAN))
         {
-            writeH(32 + _title.length() * 2);
+            writeH(UserInfoType.CLAN.getBlockLength() + _title.length() * 2);
             writeH(_title.length());
             writeNS(_title);
             writeH(_activeChar.getPledgeType());

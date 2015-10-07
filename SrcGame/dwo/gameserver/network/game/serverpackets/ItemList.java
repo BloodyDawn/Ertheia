@@ -39,7 +39,6 @@ public class ItemList extends L2GameServerPacket
     public void runImpl()
     {
         getClient().sendPacket(new ExQuestItemList(questItems, getClient().getActiveChar().getInventory()));
-        getClient().sendPacket(new ExAdenaInvenCount(getClient().getActiveChar()));
     }
 
 	@Override

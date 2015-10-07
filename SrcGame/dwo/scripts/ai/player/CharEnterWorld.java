@@ -151,9 +151,6 @@ public class CharEnterWorld extends Quest
 			player.sendPacket(new ExCastleState(castle));
 		}
 
-		// Шлем инормацию о клане если он есть
-		boolean showClanNotice = sendClanInfo(player);
-
 		// Отправляем информацию о виталити
 		player.sendPacket( new ExVitalityEffectInfo( player ) );
 
@@ -267,24 +264,6 @@ public class CharEnterWorld extends Quest
 			if(obj != null)
 			{
 				obj.getActingPlayer().sendPacket(sm);
-			}
-		}
-
-		if(showClanNotice)
-		{
-			NpcHtmlMessage notice = new NpcHtmlMessage(1);
-			notice.setFile(player.getLang(), "clan_popup.htm");
-			notice.replace("<\\?pledge_name\\?>", player.getClan().getName());
-			notice.replace("<\\?content\\?>", player.getClan().getNotice().replaceAll("\r\n", "<br>"));
-			notice.disableValidation();
-			player.sendPacket(notice);
-		}
-		else if(Config.SERVER_NEWS)
-		{
-			String serverNews = HtmCache.getInstance().getHtm(player.getLang(), "servnews.htm");
-			if(serverNews != null)
-			{
-				player.sendPacket(new NpcHtmlMessage(1, serverNews));
 			}
 		}
 
@@ -424,6 +403,25 @@ public class CharEnterWorld extends Quest
         player.sendPacket(new ExAcquireAPSkillList(player));
         player.sendPacket(new ExWorldChatCnt(player));
 
+				// Шлем инормацию о клане если он есть
+				boolean showClanNotice = sendClanInfo(player);
+				if(showClanNotice)
+				{
+					NpcHtmlMessage notice = new NpcHtmlMessage(1);
+					notice.setFile(player.getLang(), "clan_popup.htm");
+					notice.replace("<\\?pledge_name\\?>", player.getClan().getName());
+					notice.replace("<\\?content\\?>", player.getClan().getNotice().replaceAll("\r\n", "<br>"));
+					notice.disableValidation();
+					player.sendPacket(notice);
+				}
+				else if(Config.SERVER_NEWS)
+				{
+					String serverNews = HtmCache.getInstance().getHtm(player.getLang(), "servnews.htm");
+					if(serverNews != null)
+					{
+						player.sendPacket(new NpcHtmlMessage(1, serverNews));
+					}
+				}
     }
 
 	/**
