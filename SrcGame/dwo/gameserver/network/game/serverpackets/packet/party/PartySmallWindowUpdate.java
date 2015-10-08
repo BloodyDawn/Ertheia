@@ -15,30 +15,76 @@
 package dwo.gameserver.network.game.serverpackets.packet.party;
 
 import dwo.gameserver.model.actor.instance.L2PcInstance;
+import dwo.gameserver.network.game.masktypes.PartySmallWindowUpdateType;
 import dwo.gameserver.network.game.serverpackets.L2GameServerPacket;
 
 public class PartySmallWindowUpdate extends L2GameServerPacket
 {
-	private L2PcInstance _member;
+  private L2PcInstance _member;
+  private int _flags = 0;
 
-	public PartySmallWindowUpdate(L2PcInstance member)
-	{
-		_member = member;
-	}
+  public PartySmallWindowUpdate( L2PcInstance member )
+  {
+    this( member, true );
+  }
 
-	@Override
-	protected void writeImpl()
-	{
-		writeD(_member.getObjectId());
-		writeS(_member.getName());
-		writeD((int) _member.getCurrentCp()); //c4
-		writeD(_member.getMaxCp()); //c4
-		writeD((int) _member.getCurrentHp());
-		writeD(_member.getMaxVisibleHp());
-		writeD((int) _member.getCurrentMp());
-		writeD(_member.getMaxMp());
-		writeC(_member.getLevel());
-		writeH(_member.getClassId().getId());
-		writeD(_member.getVitalityDataForCurrentClassIndex().getVitalityPoints());     //GOD Vitality
-	}
+  public PartySmallWindowUpdate( L2PcInstance member, boolean addAllFlags )
+  {
+    _member = member;
+    if( addAllFlags )
+    {
+      for( PartySmallWindowUpdateType type : PartySmallWindowUpdateType.values() )
+      {
+        addUpdateType( type );
+      }
+    }
+  }
+
+  public void addUpdateType( PartySmallWindowUpdateType type )
+  {
+    _flags |= type.getMask();
+  }
+
+  @Override
+  protected void writeImpl()
+  {
+    writeD(_member.getObjectId());
+    writeH(_flags);
+    if (containsMask(_flags, PartySmallWindowUpdateType.CURRENT_CP))
+    {
+      writeD((int) _member.getCurrentCp()); // c4
+    }
+    if (containsMask(_flags, PartySmallWindowUpdateType.MAX_CP))
+    {
+      writeD(_member.getMaxCp()); // c4
+    }
+    if (containsMask(_flags, PartySmallWindowUpdateType.CURRENT_HP))
+    {
+      writeD((int) _member.getCurrentHp());
+    }
+    if (containsMask(_flags, PartySmallWindowUpdateType.MAX_HP))
+    {
+      writeD(_member.getMaxHp());
+    }
+    if (containsMask(_flags, PartySmallWindowUpdateType.CURRENT_MP))
+    {
+      writeD((int) _member.getCurrentMp());
+    }
+    if (containsMask(_flags, PartySmallWindowUpdateType.MAX_MP))
+    {
+      writeD(_member.getMaxMp());
+    }
+    if (containsMask(_flags, PartySmallWindowUpdateType.LEVEL))
+    {
+      writeC(_member.getLevel());
+    }
+    if (containsMask(_flags, PartySmallWindowUpdateType.CLASS_ID))
+    {
+      writeH(_member.getClassId().getId());
+    }
+    if (containsMask(_flags, PartySmallWindowUpdateType.VITALITY_POINTS))
+    {
+      writeD(_member.getVitalityDataForCurrentClassIndex().getVitalityPoints());
+    }
+  }
 }
