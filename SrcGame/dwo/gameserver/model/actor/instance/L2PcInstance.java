@@ -1054,7 +1054,6 @@ public class L2PcInstance extends L2Playable
 
 			// Reward auto-get skills and all available skills if auto-learn skills is true.
 			player.rewardSkills();
-			player.regiveTemporarySkills();
 
 			// buff and status icons
 			if(Config.STORE_SKILL_COOLTIME)
