@@ -117,7 +117,6 @@ public class L2ClanMember
 
 		if(player != null)
 		{
-			_clan.addSkillEffects(player);
 			if(_clan.getLevel() > 3 && player.isClanLeader())
 			{
 				CastleSiegeManager.getInstance().addSiegeSkills(player);
