@@ -766,7 +766,7 @@
             <mul order="0x30" stat="mAtk" val="#mAtk">
                 <using kind="Magic"/>
             </mul>
-            <add order="0x40" stat="hpEff" val="#hpEff">
+            <add order="0x40" stat="bonusHp" val="#hpEff">
                 <using kind="Magic"/>
             </add>
         </for>
@@ -777,7 +777,7 @@
         <set name="target" val="TARGET_SELF"/>
         <set name="skillType" val="BUFF"/>
         <for>
-            <mul order="0x30" stat="regMp" val="#hpEff"/>
+            <mul order="0x30" stat="regHp" val="#hpEff"/>
         </for>
     </skill>
     <skill id="19168" levels="1" name="Восполнение Дворянина">

@@ -51,16 +51,8 @@ public class AbnormalStatusUpdate extends L2GameServerPacket
 		{
 			writeD(temp._skillId);
 			writeH(temp._level);
-
-			if(temp._duration == -1)
-			{
-				writeD(-1);
-			}
-			else
-			{
-				writeD(temp._duration);
-			}
-            writeH(temp._time);
+			writeD(temp._duration);
+			writeH(temp._time);
 		}
 	}
 
@@ -69,14 +61,14 @@ public class AbnormalStatusUpdate extends L2GameServerPacket
 		protected int _skillId;
 		protected int _level;
 		protected int _duration;
-        protected int _time;
+		protected int _time;
 
 		public Effect(int pSkillId, int pLevel, int pDuration, int time)
 		{
 			_skillId = pSkillId;
 			_level = pLevel;
 			_duration = pDuration;
-            _time = time;
+			_time = time;
 		}
 	}
 }

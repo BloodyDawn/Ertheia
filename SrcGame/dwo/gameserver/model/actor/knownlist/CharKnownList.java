@@ -20,17 +20,16 @@ import dwo.gameserver.model.actor.L2Object;
 import dwo.gameserver.model.actor.L2Summon;
 import dwo.gameserver.model.actor.instance.L2PcInstance;
 import dwo.gameserver.util.Util;
-import dwo.gameserver.util.arrays.L2FastMap;
-import javolution.util.FastList;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 public class CharKnownList extends ObjectKnownList
 {
-	private Map<Integer, L2PcInstance> _knownPlayers;
-	private Map<Integer, L2Summon> _knownSummons;
-	private Map<Integer, Integer> _knownRelations;
+    private volatile Map<Integer, L2PcInstance> _knownPlayers;
+    private volatile Map<Integer, L2Summon> _knownSummons;
+    private volatile Map<Integer, Integer> _knownRelations;
 
 	public CharKnownList(L2Character activeChar)
 	{
@@ -182,85 +181,87 @@ public class CharKnownList extends ObjectKnownList
 		}
 	}
 
-	/**
-	 * @return {@code true} if the L2PcInstance is in _knownPlayer of the L2Character.<BR><BR>
-	 *
-	 * @param player The L2PcInstance to search in _knownPlayer
-	 */
-	public boolean knowsThePlayer(L2PcInstance player)
-	{
-		return getActiveChar().equals(player) || getKnownPlayers().containsKey(player.getObjectId());
-	}
-
-	public L2Character getActiveChar()
+    public L2Character getActiveChar()
 	{
 		return (L2Character) getActiveObject();
 	}
 
-	public Collection<L2Character> getKnownCharacters()
+	public List<L2Character> getKnownCharacters()
 	{
-		FastList<L2Character> result = getKnownObjects().values().stream().filter(obj -> obj instanceof L2Character).map(obj -> (L2Character) obj).collect(Collectors.toCollection(FastList::new));
-
-		return result;
+        return getKnownObjects().values().stream()
+                .filter(obj -> obj instanceof L2Character)
+                .map(obj -> (L2Character) obj)
+                .collect(Collectors.toList());
 	}
 
-	public Collection<L2Character> getKnownCharactersInRadius(long radius)
+	public List<L2Character> getKnownCharactersInRadius(long radius)
 	{
-        List<L2Character> result = new ArrayList<>();
-
-        final Collection<L2Object> objs = getKnownObjects().values();
-        for (L2Object obj : objs)
-        {
-            if (obj instanceof L2Character)
-            {
-                if (Util.checkIfInRange((int) radius, getActiveChar(), obj, true))
-                {
-                    result.add((L2Character) obj);
-                }
-            }
-        }
-
-        return result;
+        return getKnownObjects().values().stream()
+                .filter(obj -> obj instanceof L2Character)
+                .filter(obj -> Util.checkIfInRange((int) radius, getActiveChar(), obj, true))
+                .map(obj -> (L2Character) obj)
+                .collect(Collectors.toList());
 	}
 
-	public Collection<L2Npc> getKnownNpcInRadius(int radius)
-	{
-		FastList<L2Npc> result = getKnownCharactersInRadius(radius).stream().filter(obj -> obj instanceof L2Npc).map(obj -> (L2Npc) obj).collect(Collectors.toCollection(FastList::new));
 
-		return result;
+	public List<L2Npc> getKnownNpcInRadius(int radius)
+	{
+        return getKnownCharactersInRadius(radius).stream()
+                .filter(obj -> obj instanceof L2Npc)
+                .map(obj -> (L2Npc) obj)
+                .collect(Collectors.toList());
 	}
+
+    public Collection<L2PcInstance> getKnownPlayersInRadius(long radius)
+    {
+        return getKnownPlayers().values().stream()
+                .filter(player -> Util.checkIfInRange((int) radius, getActiveChar(), player, true))
+                .collect(Collectors.toList());
+    }
 
 	public Map<Integer, L2PcInstance> getKnownPlayers()
 	{
 		if(_knownPlayers == null)
 		{
-			_knownPlayers = new L2FastMap<>(true);
-		}
-		return _knownPlayers;
-	}
+            synchronized (this)
+            {
+                if (_knownPlayers == null)
+                {
+                    _knownPlayers = new ConcurrentHashMap<>();
+                }
+            }
+        }
+        return _knownPlayers;
+    }
 
 	public Map<Integer, Integer> getKnownRelations()
 	{
 		if(_knownRelations == null)
 		{
-			_knownRelations = new L2FastMap<>(true);
-		}
-		return _knownRelations;
+            synchronized (this)
+            {
+                if (_knownRelations == null)
+                {
+                    _knownRelations = new ConcurrentHashMap<>();
+                }
+            }
+        }
+        return _knownRelations;
 	}
 
 	public Map<Integer, L2Summon> getKnownSummons()
 	{
 		if(_knownSummons == null)
 		{
-			_knownSummons = new L2FastMap<>(true);
-		}
-		return _knownSummons;
+            synchronized (this)
+            {
+                if (_knownSummons == null)
+                {
+                    _knownSummons = new ConcurrentHashMap<>();
+                }
+            }
+        }
+        return _knownSummons;
 	}
 
-	public Collection<L2PcInstance> getKnownPlayersInRadius(long radius)
-	{
-		List<L2PcInstance> result = getKnownPlayers().values().stream().filter(player -> Util.checkIfInRange((int) radius, getActiveChar(), player, true)).collect(Collectors.toList());
-
-		return result;
-	}
 }

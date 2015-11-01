@@ -29,6 +29,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
     private final double _moveMultiplier;
     private String _title;
     private int _enchantLevel = 0;
+    private int _armorEnchant = 0;
 
     private final byte[] _masks = new byte[]
             {
@@ -62,6 +63,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
         _flyWalkSpd = cha.isFlying() ? _walkSpd : 0;
         int _airShipHelm = cha.isInAirShip() && cha.getAirShip().isCaptain(cha) ? cha.getAirShip().getHelmItemId() : 0;
         _enchantLevel = cha.isMounted() || (_airShipHelm != 0) ? 0x00 : cha.getEnchantEffect();
+        _armorEnchant = cha.isMounted() || (_airShipHelm != 0) ? 0x00 : cha.getInventory().getFullArmorEnchant();
 
         if (addAll)
         {
@@ -130,7 +132,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.BASE_STATS))
         {
-            writeH(18);
+            writeH(UserInfoType.BASE_STATS.getBlockLength());
             writeH(_activeChar.getSTR());
             writeH(_activeChar.getDEX());
             writeH(_activeChar.getCON());
@@ -143,7 +145,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.MAX_HPCPMP))
         {
-            writeH(14);
+            writeH(UserInfoType.MAX_HPCPMP.getBlockLength());
             writeD(_activeChar.getMaxHp());
             writeD(_activeChar.getMaxMp());
             writeD(_activeChar.getMaxCp());
@@ -151,7 +153,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.CURRENT_HPMPCP_EXP_SP))
         {
-            writeH(38);
+            writeH(UserInfoType.CURRENT_HPMPCP_EXP_SP.getBlockLength());
             writeD((int) Math.round(_activeChar.getCurrentHp()));
             writeD((int) Math.round(_activeChar.getCurrentMp()));
             writeD((int) Math.round(_activeChar.getCurrentCp()));
@@ -162,14 +164,14 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.ENCHANTLEVEL))
         {
-            writeH(4);
+            writeH(UserInfoType.ENCHANTLEVEL.getBlockLength());
             writeC(_enchantLevel);
-            writeC(0x00);
+            writeC(_armorEnchant);
         }
 
         if (containsMask(UserInfoType.APPAREANCE))
         {
-            writeH(15);
+            writeH(UserInfoType.APPAREANCE.getBlockLength());
             writeD(_activeChar.getAppearance().getHairStyle());
             writeD(_activeChar.getAppearance().getHairColor());
             writeD(_activeChar.getAppearance().getFace());
@@ -178,7 +180,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.STATUS))
         {
-            writeH(6);
+            writeH(UserInfoType.STATUS.getBlockLength());
             writeC(_activeChar.getMountType());
             writeC(_activeChar.getPrivateStoreType().ordinal());
             writeC(_activeChar.hasDwarvenCraft() ? 1 : 0);
@@ -187,7 +189,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.STATS))
         {
-            writeH(56);
+            writeH(UserInfoType.STATS.getBlockLength());
             writeH(_activeChar.getActiveWeaponItem() != null ? 40 : 20);
             writeD(_activeChar.getPAtk(null));
             writeD(_activeChar.getPAtkSpd());
@@ -206,7 +208,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.ELEMENTALS))
         {
-            writeH(14);
+            writeH(UserInfoType.ELEMENTALS.getBlockLength());
             writeH(_activeChar.getDefenseElementValue(Elementals.FIRE));
             writeH(_activeChar.getDefenseElementValue(Elementals.WATER));
             writeH(_activeChar.getDefenseElementValue(Elementals.WIND));
@@ -217,7 +219,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.POSITION))
         {
-            writeH(18);
+            writeH(UserInfoType.POSITION.getBlockLength());
             writeD(_activeChar.getX());
             writeD(_activeChar.getY());
             writeD(_activeChar.getZ());
@@ -226,7 +228,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.SPEED))
         {
-            writeH(18);
+            writeH(UserInfoType.SPEED.getBlockLength());
             writeH(_runSpd);
             writeH(_walkSpd);
             writeH(_swimRunSpd);
@@ -239,21 +241,21 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.MULTIPLIER))
         {
-            writeH(18);
+            writeH(UserInfoType.MULTIPLIER.getBlockLength());
             writeF(_moveMultiplier);
             writeF(_activeChar.getAttackSpeedMultiplier());
         }
 
         if (containsMask(UserInfoType.COL_RADIUS_HEIGHT))
         {
-            writeH(18);
+            writeH(UserInfoType.COL_RADIUS_HEIGHT.getBlockLength());
             writeF(_activeChar.getCollisionRadius());
             writeF(_activeChar.getCollisionHeight());
         }
 
         if (containsMask(UserInfoType.ATK_ELEMENTAL))
         {
-            writeH(5);
+            writeH(UserInfoType.ATK_ELEMENTAL.getBlockLength());
             byte attackAttribute = _activeChar.getAttackElement();
             writeC(attackAttribute);
             writeH(_activeChar.getAttackElementValue(attackAttribute));
@@ -261,7 +263,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.CLAN))
         {
-            writeH(32 + _title.length() * 2);
+            writeH(UserInfoType.CLAN.getBlockLength() + _title.length() * 2);
             writeH(_title.length());
             writeNS(_title);
             writeH(_activeChar.getPledgeType());
@@ -277,7 +279,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.SOCIAL))
         {
-            writeH(22);
+            writeH(UserInfoType.SOCIAL.getBlockLength());
             writeC(_activeChar.getPvPFlagController().getStateValue());
             writeD(_activeChar.getReputation()); // Reputation
             writeC(_activeChar.isNoble() ? 0x01 : 0x00);
@@ -291,7 +293,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.VITA_FAME))
         {
-            writeH(15);
+            writeH(UserInfoType.VITA_FAME.getBlockLength());
             writeD(_activeChar.getVitalityDataForCurrentClassIndex().getVitalityPoints());
             writeC(0x00); // Vita Bonus
             writeD(_activeChar.getFame());
@@ -300,7 +302,7 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.SLOTS))
         {
-            writeH(9);
+            writeH(UserInfoType.SLOTS.getBlockLength());
             writeC(_activeChar.getInventory().getMaxTalismanCount());
             writeC(_activeChar.getInventory().getMaxStoneCount());
             writeC(_activeChar.getTeam());
@@ -309,14 +311,14 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.MOVEMENTS))
         {
-            writeH(4);
+            writeH(UserInfoType.MOVEMENTS.getBlockLength());
             writeC(_activeChar.isInsideZone(L2Character.ZONE_WATER) ? 1 : _activeChar.isFlyingMounted() ? 2 : 0);
             writeC(_activeChar.isRunning() ? 0x01 : 0x00);
         }
 
         if (containsMask(UserInfoType.COLOR))
         {
-            writeH(10);
+            writeH(UserInfoType.COLOR.getBlockLength());
             writeD(_activeChar.getAppearance().getNameColor());
             if (_activeChar.getUseTitlePvpMod()) {
                 writeD(Config.TITLE_PVP_MODE && Config.TITLE_PVP_MODE_FOR_SELF ? Colors.getColor(_activeChar.getPvpKills()) : _activeChar.getAppearance().getTitleColor());
@@ -326,18 +328,17 @@ public class UI extends AbstractMaskPacket<UserInfoType>
             }
         }
 
-        if (containsMask(UserInfoType.INVENTORY_LIMIT))
+        if (containsMask( UserInfoType.INVENTORY_LIMIT))
         {
-            writeH(9);
-            writeD(0x00);
-            writeH(_activeChar.getInventoryLimit());
-            writeC(_activeChar.isTransformed() ? _activeChar.getTransformationId() : 0x00);
-            writeC(_activeChar.isCursedWeaponEquipped() ? CursedWeaponsManager.getInstance().getLevel(_activeChar.getCursedWeaponEquippedId()) : 0);
+            writeH( UserInfoType.INVENTORY_LIMIT.getBlockLength() );
+            writeD( 0x00 );
+            writeH( _activeChar.getInventoryLimit() );
+            writeC( _activeChar.isCursedWeaponEquipped() ? CursedWeaponsManager.getInstance().getLevel( _activeChar.getCursedWeaponEquippedId() ) : 0 );
         }
 
         if (containsMask(UserInfoType.UNK_3))
         {
-            writeH(9);
+            writeH(UserInfoType.UNK_3.getBlockLength());
             writeD(0x01);
             writeH(0x00);
             writeC(0x00);

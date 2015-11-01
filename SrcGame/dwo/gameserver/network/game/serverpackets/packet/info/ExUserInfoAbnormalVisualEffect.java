@@ -26,14 +26,7 @@ public class ExUserInfoAbnormalVisualEffect extends L2GameServerPacket
     {
         writeD(_activeChar.getObjectId());
         writeD(_activeChar.getTransformationId());
-        if(!_abnormals.isEmpty())
-        {
-            writeD(_abnormals.size());
-            _abnormals.forEach(this::writeH);
-        }
-        else
-        {
-            writeD(AbnormalEffect.NULL.getMask());
-        }
+        writeD( _abnormals.size() );
+        _abnormals.forEach( this::writeH );
     }
 }

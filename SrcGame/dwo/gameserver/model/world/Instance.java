@@ -35,6 +35,7 @@ import org.w3c.dom.Node;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -448,7 +449,7 @@ public class Instance
 
 			for(Node n = doc.getFirstChild(); n != null; n = n.getNextSibling())
 			{
-				if("instance".equalsIgnoreCase(n.getNodeName()))
+				if("list".equalsIgnoreCase(n.getNodeName()))
 				{
 					parseInstance(n);
 				}
@@ -464,70 +465,66 @@ public class Instance
 		}
 	}
 
-	private void parseInstance(Node n) throws Exception
+	private void parseInstance(Node rootNode) throws Exception
 	{
-		String name;
-		name = n.getAttributes().getNamedItem("name").getNodeValue();
-		_name = name;
-
-		Node a;
-		Node first = n.getFirstChild();
-		for(n = first; n != null; n = n.getNextSibling())
+		_name = rootNode.getAttributes().getNamedItem("name").getNodeValue();
+		Node attributeNode;
+		for(rootNode = rootNode.getFirstChild(); rootNode != null; rootNode = rootNode.getNextSibling())
 		{
-			if("activityTime".equalsIgnoreCase(n.getNodeName()))
+			if("activityTime".equalsIgnoreCase(rootNode.getNodeName()))
 			{
-				a = n.getAttributes().getNamedItem("val");
-				if(a != null)
+				attributeNode = rootNode.getAttributes().getNamedItem("val");
+				if(attributeNode != null)
 				{
-					_checkTimeUpTask = ThreadPoolManager.getInstance().scheduleGeneral(new CheckTimeUp(Integer.parseInt(a.getNodeValue()) * 60000), 15000);
-					_instanceEndTime = System.currentTimeMillis() + Long.parseLong(a.getNodeValue()) * 60000 + 15000;
+					_checkTimeUpTask = ThreadPoolManager.getInstance().scheduleGeneral(new CheckTimeUp(Integer.parseInt(attributeNode.getNodeValue()) * 60000), 15000);
+					_instanceEndTime = System.currentTimeMillis() + Long.parseLong(attributeNode.getNodeValue()) * 60000 + 15000;
 				}
 			}
-			else if("allowSummon".equalsIgnoreCase(n.getNodeName()))
+			else if("allowSummon".equalsIgnoreCase(rootNode.getNodeName()))
 			{
-				a = n.getAttributes().getNamedItem("val");
-				if(a != null)
+				attributeNode = rootNode.getAttributes().getNamedItem("val");
+				if(attributeNode != null)
 				{
-					_allowSummon = Boolean.parseBoolean(a.getNodeValue());
+					_allowSummon = Boolean.parseBoolean(attributeNode.getNodeValue());
 				}
 			}
-			else if("emptyDestroyTime".equalsIgnoreCase(n.getNodeName()))
+			else if("emptyDestroyTime".equalsIgnoreCase(rootNode.getNodeName()))
 			{
-				a = n.getAttributes().getNamedItem("val");
-				if(a != null)
+				attributeNode = rootNode.getAttributes().getNamedItem("val");
+				if(attributeNode != null)
 				{
-					_emptyDestroyTime = Long.parseLong(a.getNodeValue()) * 1000;
+					_emptyDestroyTime = Long.parseLong(attributeNode.getNodeValue()) * 1000;
 				}
 			}
-			else if("showTimer".equalsIgnoreCase(n.getNodeName()))
+			else if("showTimer".equalsIgnoreCase(rootNode.getNodeName()))
 			{
-				a = n.getAttributes().getNamedItem("val");
-				if(a != null)
+				attributeNode = rootNode.getAttributes().getNamedItem("val");
+				if(attributeNode != null)
 				{
-					_showTimer = Boolean.parseBoolean(a.getNodeValue());
+					_showTimer = Boolean.parseBoolean(attributeNode.getNodeValue());
 				}
-				a = n.getAttributes().getNamedItem("increase");
-				if(a != null)
+				attributeNode = rootNode.getAttributes().getNamedItem("increase");
+				if(attributeNode != null)
 				{
-					_isTimerIncrease = Boolean.parseBoolean(a.getNodeValue());
+					_isTimerIncrease = Boolean.parseBoolean(attributeNode.getNodeValue());
 				}
-				a = n.getAttributes().getNamedItem("text");
-				if(a != null)
+				attributeNode = rootNode.getAttributes().getNamedItem("text");
+				if(attributeNode != null)
 				{
-					_timerText = a.getNodeValue();
+					_timerText = attributeNode.getNodeValue();
 				}
 			}
-			else if("PvPInstance".equalsIgnoreCase(n.getNodeName()))
+			else if("PvPInstance".equalsIgnoreCase(rootNode.getNodeName()))
 			{
-				a = n.getAttributes().getNamedItem("val");
-				if(a != null)
+				attributeNode = rootNode.getAttributes().getNamedItem("val");
+				if(attributeNode != null)
 				{
-					_isPvPInstance = Boolean.parseBoolean(a.getNodeValue());
+					_isPvPInstance = Boolean.parseBoolean(attributeNode.getNodeValue());
 				}
 			}
-			else if("doorlist".equalsIgnoreCase(n.getNodeName()))
+			else if("doorlist".equalsIgnoreCase(rootNode.getNodeName()))
 			{
-				for(Node d = n.getFirstChild(); d != null; d = d.getNextSibling())
+				for(Node d = rootNode.getFirstChild(); d != null; d = d.getNextSibling())
 				{
 					int doorId = 0;
 					boolean doorState = false;
@@ -542,9 +539,9 @@ public class Instance
 					}
 				}
 			}
-			else if("spawnlist".equalsIgnoreCase(n.getNodeName()))
+			else if("spawnlist".equalsIgnoreCase(rootNode.getNodeName()))
 			{
-				for(Node d = n.getFirstChild(); d != null; d = d.getNextSibling())
+				for(Node d = rootNode.getFirstChild(); d != null; d = d.getNextSibling())
 				{
 					if("spawn".equalsIgnoreCase(d.getNodeName()))
 					{
@@ -552,9 +549,9 @@ public class Instance
 					}
 				}
 			}
-			else if("spawngroups".equalsIgnoreCase(n.getNodeName()))
+			else if("spawngroups".equalsIgnoreCase(rootNode.getNodeName()))
 			{
-				for(Node d = n.getFirstChild(); d != null; d = d.getNextSibling())
+				for(Node d = rootNode.getFirstChild(); d != null; d = d.getNextSibling())
 				{
 					if("group".equalsIgnoreCase(d.getNodeName()))
 					{
@@ -581,11 +578,11 @@ public class Instance
 					}
 				}
 			}
-			else if("spawnpoint".equalsIgnoreCase(n.getNodeName()))
+			else if("spawnpoint".equalsIgnoreCase(rootNode.getNodeName()))
 			{
 				try
 				{
-					_spawnLoc = new Location(Integer.parseInt(n.getAttributes().getNamedItem("spawnX").getNodeValue()), Integer.parseInt(n.getAttributes().getNamedItem("spawnY").getNodeValue()), Integer.parseInt(n.getAttributes().getNamedItem("spawnZ").getNodeValue()));
+					_spawnLoc = new Location(Integer.parseInt(rootNode.getAttributes().getNamedItem("spawnX").getNodeValue()), Integer.parseInt(rootNode.getAttributes().getNamedItem("spawnY").getNodeValue()), Integer.parseInt(rootNode.getAttributes().getNamedItem("spawnZ").getNodeValue()));
 				}
 				catch(Exception e)
 				{

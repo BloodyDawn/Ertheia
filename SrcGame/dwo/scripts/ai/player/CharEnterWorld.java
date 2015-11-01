@@ -47,9 +47,8 @@ import dwo.gameserver.network.game.serverpackets.packet.event.ExLightingCandleEv
 import dwo.gameserver.network.game.serverpackets.packet.ex.*;
 import dwo.gameserver.network.game.serverpackets.packet.friend.L2FriendList;
 import dwo.gameserver.network.game.serverpackets.packet.henna.HennaInfo;
-import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoAbnormalVisualEffect;
-import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoCubic;
 import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoEquipSlot;
+import dwo.gameserver.network.game.serverpackets.packet.info.ExUserInfoInvenWeight;
 import dwo.gameserver.network.game.serverpackets.packet.mail.ExUnReadMailCount;
 import dwo.gameserver.network.game.serverpackets.packet.party.ExPCCafePointInfo;
 import dwo.gameserver.network.game.serverpackets.packet.pledge.*;
@@ -152,11 +151,8 @@ public class CharEnterWorld extends Quest
 			player.sendPacket(new ExCastleState(castle));
 		}
 
-		// Шлем инормацию о клане если он есть
-		boolean showClanNotice = sendClanInfo(player);
-
 		// Отправляем информацию о виталити
-		player.sendPacket(new ExVitalityEffectInfo(player));
+		player.sendPacket( new ExVitalityEffectInfo( player ) );
 
 		// Шлем информацию о квестах
 		Quest.playerEnter(player);
@@ -185,7 +181,7 @@ public class CharEnterWorld extends Quest
 		}
 
 		// Сообщения приветствия от сервера
-		player.sendPacket(SystemMessageId.WELCOME_TO_LINEAGE);
+		player.sendPacket( SystemMessageId.WELCOME_TO_LINEAGE );
 
 		player.sendPacket(new EtcStatusUpdate(player));
 
@@ -193,6 +189,8 @@ public class CharEnterWorld extends Quest
 		player.sendPacket(new L2FriendList(player));
 
 		player.sendPacket(new MagicAndSkillList(player));
+
+		player.updateEffectIcons();
 
 		// Expand Skill
 		player.sendPacket(new ExStorageMaxCount(player));
@@ -202,11 +200,6 @@ public class CharEnterWorld extends Quest
 		{
 			player.sendPacket(new ExPledgeWaitingListAlarm());
 		}
-
-		// Показывает кол-во адены и кол-во занятых ячеек в инвенторе
-		player.sendPacket(new ExAdenaInvenCount(player));
-
-        player.sendPacket(new ExUserInfoEquipSlot(player));
 
 		player.sendPacket(new SkillCoolTime(player));
 
@@ -232,9 +225,6 @@ public class CharEnterWorld extends Quest
 		// Шлем анонсы
 		Announcements.getInstance().showAnnouncements(player);
 
-		// Шлем информацию о сабкласах персонажа
-		player.sendPacket(new ExSubjobInfo(player));
-
 		// Наставничество
 		player.sendPacket(new ExMentorList(player));
 
@@ -248,7 +238,7 @@ public class CharEnterWorld extends Quest
 			player.setSpawnProtection(true);
 		}
 
-		player.getLocationController().spawn(player.getX(), player.getY(), player.getZ());
+		player.getLocationController().spawn( player.getX(), player.getY(), player.getZ() );
 
 		player.getInventory().applyItemSkills();
 
@@ -258,7 +248,7 @@ public class CharEnterWorld extends Quest
 		if(Config.ALLOW_WEDDING)
 		{
 			engage(player);
-			notifyPartner(player);
+			notifyPartner( player );
 		}
 
 		if(player.isCursedWeaponEquipped())
@@ -266,10 +256,8 @@ public class CharEnterWorld extends Quest
 			CursedWeaponsManager.getInstance().getCursedWeapon(player.getCursedWeaponEquippedId()).cursedOnLogin();
 		}
 
-		player.updateEffectIcons();
-
 		SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.FRIEND_S1_HAS_LOGGED_IN);
-		sm.addString(player.getName());
+		sm.addString( player.getName() );
 		for(int id : RelationListManager.getInstance().getFriendList(player.getObjectId()))
 		{
 			L2Object obj = WorldManager.getInstance().findObject(id);
@@ -279,37 +267,21 @@ public class CharEnterWorld extends Quest
 			}
 		}
 
-		if(showClanNotice)
-		{
-			NpcHtmlMessage notice = new NpcHtmlMessage(1);
-			notice.setFile(player.getLang(), "clan_popup.htm");
-			notice.replace("<\\?pledge_name\\?>", player.getClan().getName());
-			notice.replace("<\\?content\\?>", player.getClan().getNotice().replaceAll("\r\n", "<br>"));
-			notice.disableValidation();
-			player.sendPacket(notice);
-		}
-		else if(Config.SERVER_NEWS)
-		{
-			String serverNews = HtmCache.getInstance().getHtm(player.getLang(), "servnews.htm");
-			if(serverNews != null)
-			{
-				player.sendPacket(new NpcHtmlMessage(1, serverNews));
-			}
-		}
-
 		if(Config.PETITIONING_ALLOWED)
 		{
-			PetitionManager.getInstance().checkPetitionMessages(player);
+			PetitionManager.getInstance().checkPetitionMessages( player );
 		}
 
+		player.sendActionFailed();
 		player.onPlayerEnter();
 		player.startRecommendationGiveTask();
 		player.broadcastUserInfo();
-        player.sendPacket(new StatusUpdate(player));
 
-        player.sendPacket(new ExUserInfoEquipSlot(player));
-        player.sendPacket(new ExUserInfoCubic(player));
-        player.sendPacket(new ExUserInfoAbnormalVisualEffect(player));
+		// Шлем информацию о сабкласах персонажа
+		player.sendPacket(new ExSubjobInfo(player));
+		player.sendPacket(new ExUserInfoInvenWeight(player));
+		player.sendPacket(new ExAdenaInvenCount(player));
+		player.sendPacket(new ExUserInfoEquipSlot(player));
 
 		for(L2ItemInstance i : player.getInventory().getItems())
 		{
@@ -431,6 +403,25 @@ public class CharEnterWorld extends Quest
         player.sendPacket(new ExAcquireAPSkillList(player));
         player.sendPacket(new ExWorldChatCnt(player));
 
+				// Шлем инормацию о клане если он есть
+				boolean showClanNotice = sendClanInfo(player);
+				if(showClanNotice)
+				{
+					NpcHtmlMessage notice = new NpcHtmlMessage(1);
+					notice.setFile(player.getLang(), "clan_popup.htm");
+					notice.replace("<\\?pledge_name\\?>", player.getClan().getName());
+					notice.replace("<\\?content\\?>", player.getClan().getNotice().replaceAll("\r\n", "<br>"));
+					notice.disableValidation();
+					player.sendPacket(notice);
+				}
+				else if(Config.SERVER_NEWS)
+				{
+					String serverNews = HtmCache.getInstance().getHtm(player.getLang(), "servnews.htm");
+					if(serverNews != null)
+					{
+						player.sendPacket(new NpcHtmlMessage(1, serverNews));
+					}
+				}
     }
 
 	/**
@@ -692,7 +683,7 @@ public class CharEnterWorld extends Quest
 				FortManager.getInstance().getFortByOwner(clan).giveResidentialSkills(player);
 			}
 
-			notifySponsorOrApprentice(player);
+			notifySponsorOrApprentice( player );
 
 			clan.notifyClanEnterWorld(player);
 
@@ -701,7 +692,6 @@ public class CharEnterWorld extends Quest
 			// Шлем клиенту информацию
 			player.sendPacket(new PledgeShowMemberListUpdate(player));
 			player.sendPacket(new PledgeShowMemberListAll(clan, player));
-			player.sendPacket(new PledgeSkillList(clan));
 			player.sendPacket(new ExPledgeCount(clan.getOnlineMembersCount()));
 
 		}
