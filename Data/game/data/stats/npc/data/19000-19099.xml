@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="NpcData.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="../../../xsd/NpcData.xsd">
 	<npc id="19000" name="Мутировавший Подземный Жук" server_name="trajan_treasure" title="">
 		<set name="type" value="L2Monster"/>
 		<set name="sex" value="male"/>
@@ -288,7 +287,7 @@
 		</ai_params>
 	</npc>
 	<npc id="19008" name="Водяная Пушка" server_name="gd_square_stronghold" title="Цитадель на Площади">
-		<set name="type" value="L2Monster"/>
+		<set name="type" value="L2Npc"/>
 		<set name="sex" value="male"/>
 		<set name="level" value="85"/>
 		<set name="org_hp" value="356012"/>
@@ -302,8 +301,8 @@
 		<set name="base_attack_speed" value="253"/>
 		<set name="base_attack_range" value="40"/>
 		<set name="base_critical" value="4"/>
-		<set name="ground_high" value="0"/>
-		<set name="ground_low" value="0"/>
+		<set name="ground_high" value="120"/>
+		<set name="ground_low" value="50"/>
 		<set name="str" value="89"/>
 		<set name="con" value="82"/>
 		<set name="dex" value="55"/>
@@ -319,21 +318,13 @@
 		<set name="baseDivineRes" value="160"/>
 		<set name="baseDarkRes" value="160"/>
 		<ai_params>
-			<set name="ai_type" value="balanced"/>
-			<set name="agro_range" value="900"/>
-			<set name="clan" value="cannon_clan"/>
-			<set name="clan_range" value="300"/>
+			<set name="ai_type" value="fighter"/>
 		</ai_params>
 		<skills>
 			<set id="4416" level="2"/>
 			<set id="4444" level="5"/>
 			<set id="5463" level="1"/>
 		</skills>
-		<minions>
-			<set amount_max="3" amount_min="2" id="23010"/>
-			<set amount_max="3" amount_min="2" id="23011"/>
-			<set amount_max="3" amount_min="1" id="23012"/>
-		</minions>
 	</npc>
 	<npc id="19009" name="Водяная Пушка" server_name="gd_square_skill" title="">
 		<set name="type" value="L2Npc"/>
@@ -1345,7 +1336,7 @@
 		</ai_params>
 	</npc>
 	<npc id="19037" name="Магвен" server_name="istina_marguene" title="Налетчик">
-		<set name="type" value="L2Guard"/>
+		<set name="type" value="L2Monster"/>
 		<set name="sex" value="male"/>
 		<set name="level" value="85"/>
 		<set name="org_hp" value="4234"/>

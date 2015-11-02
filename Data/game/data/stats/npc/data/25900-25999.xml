@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="NpcData.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="../../../xsd/NpcData.xsd">
 	<npc id="25900" name="Сулаконг" server_name="" title="">
 		<set name="type" value="L2Npc"/>
 		<set name="sex" value="male"/>
@@ -31,14 +30,12 @@
 			<set name="ai_type" value="fighter"/>
 		</ai_params>
 	</npc>
-	<npc id="25901" name="Спикула Зеро" server_name="" title="Рейдовый Босс">
-		<set name="type" value="L2RaidBoss"/>
+	<npc id="25901" name="Спикула 0" server_name="" title="Рейдовый Босс">
+		<set name="type" value="L2Monster"/>
 		<set name="sex" value="male"/>
-		<set name="level" value="96"/>
-		<set name="exp" value="2109284352"/>
-		<set name="sp" value="8437137"/>
-		<set name="org_hp" value="2845522"/>
-		<set name="org_mp" value="3341"/>
+		<set name="level" value="99"/>
+		<set name="org_hp" value="1644810"/>
+		<set name="org_mp" value="2205"/>
 		<set name="org_hp_regen" value="1100"/>
 		<set name="org_mp_regen" value="99"/>
 		<set name="base_physical_attack" value="4900"/>
@@ -64,18 +61,16 @@
 		</ai_params>
 		<skills>
 			<set id="4494" level="1"/>
-			<set id="4295" level="1"/>
-			<set id="4282" level="1"/>
 		</skills>
 	</npc>
 	<npc id="25902" name="Гигантский Голем" server_name="" title="Рейдовый Босс">
-		<set name="type" value="L2RaidBoss"/>
+		<set name="type" value="L2Monster"/>
 		<set name="sex" value="male"/>
 		<set name="level" value="99"/>
 		<set name="exp" value="1746210816"/>
-		<set name="sp" value="6984843"/>
-		<set name="org_hp" value="3248143"/>
-		<set name="org_mp" value="34542"/>
+		<set name="sp" value="144570188"/>
+		<set name="org_hp" value="1877539"/>
+		<set name="org_mp" value="22800"/>
 		<set name="org_hp_regen" value="1100"/>
 		<set name="org_mp_regen" value="99"/>
 		<set name="base_physical_attack" value="4900"/>
@@ -101,8 +96,6 @@
 		</ai_params>
 		<skills>
 			<set id="4494" level="1"/>
-			<set id="4295" level="1"/>
-			<set id="4282" level="1"/>
 		</skills>
 	</npc>
 	<npc id="25903" name="Нагрузка Гигантского Голема" server_name="" title="">
@@ -789,158 +782,6 @@
 			<set id="4441" level="5"/>
 			<set id="4439" level="5"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="67.926">
-				<items>
-					<item id="17436" chance="0.04417" min="1" max="1"/>
-					<item id="17437" chance="0.04417" min="1" max="1"/>
-					<item id="17438" chance="0.04417" min="1" max="1"/>
-					<item id="17439" chance="0.04417" min="1" max="1"/>
-					<item id="17440" chance="0.04417" min="1" max="1"/>
-					<item id="17441" chance="0.04417" min="1" max="1"/>
-					<item id="17442" chance="0.04417" min="1" max="1"/>
-					<item id="17443" chance="0.04417" min="1" max="1"/>
-					<item id="17444" chance="0.04417" min="1" max="1"/>
-					<item id="17445" chance="0.04417" min="1" max="1"/>
-					<item id="17446" chance="0.04417" min="1" max="1"/>
-					<item id="17434" chance="0.04417" min="1" max="1"/>
-					<item id="17433" chance="0.04417" min="1" max="1"/>
-					<item id="17430" chance="0.04417" min="1" max="1"/>
-					<item id="17431" chance="0.04417" min="1" max="1"/>
-					<item id="17432" chance="0.04417" min="1" max="1"/>
-					<item id="17435" chance="0.04417" min="1" max="1"/>
-					<item id="35354" chance="4.84203" min="1" max="10"/>
-					<item id="35343" chance="4.84056" min="1" max="10"/>
-					<item id="35347" chance="4.83026" min="1" max="10"/>
-					<item id="35341" chance="4.79934" min="1" max="10"/>
-					<item id="35348" chance="4.7802" min="1" max="10"/>
-					<item id="35350" chance="4.77431" min="1" max="10"/>
-					<item id="35345" chance="4.77431" min="1" max="10"/>
-					<item id="35339" chance="4.75959" min="1" max="10"/>
-					<item id="35338" chance="4.71395" min="1" max="10"/>
-					<item id="35344" chance="4.70954" min="1" max="10"/>
-					<item id="35346" chance="4.70512" min="1" max="10"/>
-					<item id="35342" chance="4.67862" min="1" max="10"/>
-					<item id="35340" chance="4.66979" min="1" max="10"/>
-					<item id="35353" chance="4.66095" min="1" max="10"/>
-					<item id="35349" chance="4.65654" min="1" max="10"/>
-					<item id="35351" chance="4.64329" min="1" max="10"/>
-					<item id="35352" chance="4.64034" min="1" max="10"/>
-					<item id="35478" chance="1.10414" min="1" max="4"/>
-					<item id="35463" chance="1.10414" min="1" max="4"/>
-					<item id="35462" chance="1.10414" min="1" max="4"/>
-					<item id="35464" chance="1.10414" min="1" max="4"/>
-					<item id="35465" chance="1.10414" min="1" max="4"/>
-					<item id="35477" chance="1.10414" min="1" max="4"/>
-					<item id="35476" chance="1.10414" min="1" max="4"/>
-					<item id="35475" chance="1.10414" min="1" max="4"/>
-					<item id="35474" chance="1.10414" min="1" max="4"/>
-					<item id="35473" chance="1.10414" min="1" max="4"/>
-					<item id="35472" chance="1.10414" min="1" max="4"/>
-					<item id="35471" chance="1.10414" min="1" max="4"/>
-					<item id="35470" chance="1.10414" min="1" max="4"/>
-					<item id="35469" chance="1.10414" min="1" max="4"/>
-					<item id="35468" chance="1.10414" min="1" max="4"/>
-					<item id="35467" chance="1.10414" min="1" max="4"/>
-					<item id="35466" chance="1.10414" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="2" chance="12.241">
-				<items>
-					<item id="17447" chance="0.24508" min="1" max="1"/>
-					<item id="17448" chance="0.24508" min="1" max="1"/>
-					<item id="17449" chance="0.24508" min="1" max="1"/>
-					<item id="35357" chance="27.4324" min="1" max="10"/>
-					<item id="35356" chance="26.8197" min="1" max="10"/>
-					<item id="35355" chance="26.63181" min="1" max="10"/>
-					<item id="35481" chance="6.12695" min="1" max="4"/>
-					<item id="35480" chance="6.12695" min="1" max="4"/>
-					<item id="35479" chance="6.12695" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="3" chance="43.715">
-				<items>
-					<item id="17416" chance="0.06863" min="1" max="1"/>
-					<item id="17417" chance="0.06863" min="1" max="1"/>
-					<item id="17418" chance="0.06863" min="1" max="1"/>
-					<item id="17419" chance="0.06863" min="1" max="1"/>
-					<item id="17420" chance="0.06863" min="1" max="1"/>
-					<item id="17421" chance="0.06863" min="1" max="1"/>
-					<item id="17422" chance="0.06863" min="1" max="1"/>
-					<item id="17423" chance="0.06863" min="1" max="1"/>
-					<item id="17424" chance="0.06863" min="1" max="1"/>
-					<item id="17425" chance="0.06863" min="1" max="1"/>
-					<item id="17426" chance="0.06863" min="1" max="1"/>
-					<item id="35327" chance="7.51001" min="1" max="10"/>
-					<item id="35332" chance="7.38648" min="1" max="10"/>
-					<item id="35328" chance="7.35445" min="1" max="10"/>
-					<item id="35337" chance="7.31785" min="1" max="10"/>
-					<item id="35329" chance="7.29727" min="1" max="10"/>
-					<item id="35336" chance="7.28583" min="1" max="10"/>
-					<item id="35330" chance="7.26982" min="1" max="10"/>
-					<item id="35333" chance="7.25609" min="1" max="10"/>
-					<item id="35334" chance="7.25609" min="1" max="10"/>
-					<item id="35331" chance="7.22635" min="1" max="10"/>
-					<item id="35335" chance="7.21263" min="1" max="10"/>
-					<item id="35461" chance="1.71566" min="1" max="4"/>
-					<item id="35460" chance="1.71566" min="1" max="4"/>
-					<item id="35459" chance="1.71566" min="1" max="4"/>
-					<item id="35458" chance="1.71566" min="1" max="4"/>
-					<item id="35457" chance="1.71566" min="1" max="4"/>
-					<item id="35456" chance="1.71566" min="1" max="4"/>
-					<item id="35455" chance="1.71566" min="1" max="4"/>
-					<item id="35454" chance="1.71566" min="1" max="4"/>
-					<item id="35453" chance="1.71566" min="1" max="4"/>
-					<item id="35452" chance="1.71566" min="1" max="4"/>
-					<item id="35451" chance="1.71566" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="4" chance="15.0">
-				<items>
-					<item id="37071" chance="5.0" min="1" max="1"/>
-					<item id="37070" chance="5.0" min="1" max="1"/>
-					<item id="37069" chance="5.0" min="1" max="1"/>
-					<item id="37068" chance="5.0" min="1" max="1"/>
-					<item id="37067" chance="5.0" min="1" max="1"/>
-					<item id="37073" chance="5.0" min="1" max="1"/>
-					<item id="37086" chance="5.0" min="1" max="1"/>
-					<item id="37072" chance="5.0" min="1" max="1"/>
-					<item id="37074" chance="5.0" min="1" max="1"/>
-					<item id="37085" chance="5.0" min="1" max="1"/>
-					<item id="37084" chance="5.0" min="1" max="1"/>
-					<item id="37083" chance="5.0" min="1" max="1"/>
-					<item id="37082" chance="5.0" min="1" max="1"/>
-					<item id="37081" chance="5.0" min="1" max="1"/>
-					<item id="37080" chance="5.0" min="1" max="1"/>
-					<item id="37079" chance="5.0" min="1" max="1"/>
-					<item id="37078" chance="5.0" min="1" max="1"/>
-					<item id="37077" chance="5.0" min="1" max="1"/>
-					<item id="37076" chance="5.0" min="1" max="1"/>
-					<item id="37075" chance="5.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="5" chance="19.959">
-				<items>
-					<item id="35569" chance="50.03257" min="1" max="1"/>
-					<item id="35567" chance="49.96743" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="6" chance="29.86">
-				<items>
-					<item id="36978" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="7" chance="70.81">
-				<items>
-					<item id="36979" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="8" chance="100.0">
-				<items>
-					<item id="36514" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="25923" name="Вождь Нерва Оак Ракан" server_name="" title="Рейдовый Босс">
 		<set name="type" value="L2Monster"/>
@@ -976,12 +817,10 @@
 			<set name="ai_type" value="fighter"/>
 		</ai_params>
 	</npc>
-	<npc id="25924" name="Штурмовик Орков Нерба" server_name="" title="">
+	<npc id="25924" name="Нерва Оак Корсар" server_name="" title="">
 		<set name="type" value="L2Monster"/>
 		<set name="sex" value="etc"/>
 		<set name="level" value="99"/>
-		<set name="exp" value="6555879"/>
-		<set name="sp" value="14465"/>
 		<set name="org_hp" value="316834"/>
 		<set name="org_mp" value="23550"/>
 		<set name="org_hp_regen" value="7.500"/>
@@ -1142,158 +981,6 @@
 			<set id="4441" level="5"/>
 			<set id="4439" level="5"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="67.947">
-				<items>
-					<item id="17436" chance="0.04415" min="1" max="1"/>
-					<item id="17437" chance="0.04415" min="1" max="1"/>
-					<item id="17438" chance="0.04415" min="1" max="1"/>
-					<item id="17439" chance="0.04415" min="1" max="1"/>
-					<item id="17440" chance="0.04415" min="1" max="1"/>
-					<item id="17441" chance="0.04415" min="1" max="1"/>
-					<item id="17442" chance="0.04415" min="1" max="1"/>
-					<item id="17443" chance="0.04415" min="1" max="1"/>
-					<item id="17444" chance="0.04415" min="1" max="1"/>
-					<item id="17445" chance="0.04415" min="1" max="1"/>
-					<item id="17446" chance="0.04415" min="1" max="1"/>
-					<item id="17434" chance="0.04415" min="1" max="1"/>
-					<item id="17433" chance="0.04415" min="1" max="1"/>
-					<item id="17430" chance="0.04415" min="1" max="1"/>
-					<item id="17431" chance="0.04415" min="1" max="1"/>
-					<item id="17432" chance="0.04415" min="1" max="1"/>
-					<item id="17435" chance="0.04415" min="1" max="1"/>
-					<item id="35338" chance="4.83171" min="1" max="10"/>
-					<item id="35344" chance="4.82582" min="1" max="10"/>
-					<item id="35339" chance="4.77872" min="1" max="10"/>
-					<item id="35345" chance="4.77872" min="1" max="10"/>
-					<item id="35354" chance="4.77578" min="1" max="10"/>
-					<item id="35347" chance="4.77284" min="1" max="10"/>
-					<item id="35346" chance="4.75371" min="1" max="10"/>
-					<item id="35340" chance="4.73016" min="1" max="10"/>
-					<item id="35351" chance="4.7228" min="1" max="10"/>
-					<item id="35343" chance="4.71691" min="1" max="10"/>
-					<item id="35353" chance="4.7125" min="1" max="10"/>
-					<item id="35348" chance="4.70219" min="1" max="10"/>
-					<item id="35349" chance="4.69189" min="1" max="10"/>
-					<item id="35350" chance="4.68601" min="1" max="10"/>
-					<item id="35342" chance="4.67129" min="1" max="10"/>
-					<item id="35352" chance="4.66982" min="1" max="10"/>
-					<item id="35341" chance="4.66393" min="1" max="10"/>
-					<item id="35478" chance="1.1038" min="1" max="4"/>
-					<item id="35463" chance="1.1038" min="1" max="4"/>
-					<item id="35462" chance="1.1038" min="1" max="4"/>
-					<item id="35464" chance="1.1038" min="1" max="4"/>
-					<item id="35465" chance="1.1038" min="1" max="4"/>
-					<item id="35477" chance="1.1038" min="1" max="4"/>
-					<item id="35476" chance="1.1038" min="1" max="4"/>
-					<item id="35475" chance="1.1038" min="1" max="4"/>
-					<item id="35474" chance="1.1038" min="1" max="4"/>
-					<item id="35473" chance="1.1038" min="1" max="4"/>
-					<item id="35472" chance="1.1038" min="1" max="4"/>
-					<item id="35471" chance="1.1038" min="1" max="4"/>
-					<item id="35470" chance="1.1038" min="1" max="4"/>
-					<item id="35469" chance="1.1038" min="1" max="4"/>
-					<item id="35468" chance="1.1038" min="1" max="4"/>
-					<item id="35467" chance="1.1038" min="1" max="4"/>
-					<item id="35466" chance="1.1038" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="2" chance="12.067">
-				<items>
-					<item id="17447" chance="0.24861" min="1" max="1"/>
-					<item id="17448" chance="0.24861" min="1" max="1"/>
-					<item id="17449" chance="0.24861" min="1" max="1"/>
-					<item id="35357" chance="27.83625" min="1" max="10"/>
-					<item id="35356" chance="26.49374" min="1" max="10"/>
-					<item id="35355" chance="26.27828" min="1" max="10"/>
-					<item id="35481" chance="6.2153" min="1" max="4"/>
-					<item id="35480" chance="6.2153" min="1" max="4"/>
-					<item id="35479" chance="6.2153" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="3" chance="44.25">
-				<items>
-					<item id="17416" chance="0.0678" min="1" max="1"/>
-					<item id="17417" chance="0.0678" min="1" max="1"/>
-					<item id="17418" chance="0.0678" min="1" max="1"/>
-					<item id="17419" chance="0.0678" min="1" max="1"/>
-					<item id="17420" chance="0.0678" min="1" max="1"/>
-					<item id="17421" chance="0.0678" min="1" max="1"/>
-					<item id="17422" chance="0.0678" min="1" max="1"/>
-					<item id="17423" chance="0.0678" min="1" max="1"/>
-					<item id="17424" chance="0.0678" min="1" max="1"/>
-					<item id="17425" chance="0.0678" min="1" max="1"/>
-					<item id="17426" chance="0.0678" min="1" max="1"/>
-					<item id="35337" chance="7.43277" min="1" max="10"/>
-					<item id="35335" chance="7.43277" min="1" max="10"/>
-					<item id="35329" chance="7.43051" min="1" max="10"/>
-					<item id="35331" chance="7.35593" min="1" max="10"/>
-					<item id="35336" chance="7.35593" min="1" max="10"/>
-					<item id="35328" chance="7.34689" min="1" max="10"/>
-					<item id="35333" chance="7.34463" min="1" max="10"/>
-					<item id="35334" chance="7.27232" min="1" max="10"/>
-					<item id="35332" chance="7.22712" min="1" max="10"/>
-					<item id="35330" chance="7.20904" min="1" max="10"/>
-					<item id="35327" chance="7.20226" min="1" max="10"/>
-					<item id="35461" chance="1.69492" min="1" max="4"/>
-					<item id="35460" chance="1.69492" min="1" max="4"/>
-					<item id="35459" chance="1.69492" min="1" max="4"/>
-					<item id="35458" chance="1.69492" min="1" max="4"/>
-					<item id="35457" chance="1.69492" min="1" max="4"/>
-					<item id="35456" chance="1.69492" min="1" max="4"/>
-					<item id="35455" chance="1.69492" min="1" max="4"/>
-					<item id="35454" chance="1.69492" min="1" max="4"/>
-					<item id="35453" chance="1.69492" min="1" max="4"/>
-					<item id="35452" chance="1.69492" min="1" max="4"/>
-					<item id="35451" chance="1.69492" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="4" chance="15.0">
-				<items>
-					<item id="37082" chance="5.0" min="1" max="1"/>
-					<item id="37069" chance="5.0" min="1" max="1"/>
-					<item id="37068" chance="5.0" min="1" max="1"/>
-					<item id="37067" chance="5.0" min="1" max="1"/>
-					<item id="37073" chance="5.0" min="1" max="1"/>
-					<item id="37084" chance="5.0" min="1" max="1"/>
-					<item id="37085" chance="5.0" min="1" max="1"/>
-					<item id="37086" chance="5.0" min="1" max="1"/>
-					<item id="37070" chance="5.0" min="1" max="1"/>
-					<item id="37071" chance="5.0" min="1" max="1"/>
-					<item id="37081" chance="5.0" min="1" max="1"/>
-					<item id="37080" chance="5.0" min="1" max="1"/>
-					<item id="37079" chance="5.0" min="1" max="1"/>
-					<item id="37078" chance="5.0" min="1" max="1"/>
-					<item id="37077" chance="5.0" min="1" max="1"/>
-					<item id="37076" chance="5.0" min="1" max="1"/>
-					<item id="37075" chance="5.0" min="1" max="1"/>
-					<item id="37074" chance="5.0" min="1" max="1"/>
-					<item id="37083" chance="5.0" min="1" max="1"/>
-					<item id="37072" chance="5.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="5" chance="30.45">
-				<items>
-					<item id="36978" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="6" chance="20.068">
-				<items>
-					<item id="35567" chance="50.15447" min="1" max="1"/>
-					<item id="35569" chance="49.84553" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="7" chance="71.21">
-				<items>
-					<item id="36979" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="8" chance="100.0">
-				<items>
-					<item id="36514" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="25928" name="Тэбот" server_name="" title="Монстр">
 		<set name="type" value="L2RaidBoss"/>
@@ -1337,164 +1024,6 @@
 			<set id="4441" level="5"/>
 			<set id="4439" level="5"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="80.096">
-				<items>
-					<item id="17436" chance="0.03746" min="1" max="1"/>
-					<item id="17437" chance="0.03746" min="1" max="1"/>
-					<item id="17438" chance="0.03746" min="1" max="1"/>
-					<item id="17439" chance="0.03746" min="1" max="1"/>
-					<item id="17440" chance="0.03746" min="1" max="1"/>
-					<item id="17441" chance="0.03746" min="1" max="1"/>
-					<item id="17442" chance="0.03746" min="1" max="1"/>
-					<item id="17443" chance="0.03746" min="1" max="1"/>
-					<item id="17444" chance="0.03746" min="1" max="1"/>
-					<item id="17445" chance="0.03746" min="1" max="1"/>
-					<item id="17446" chance="0.03746" min="1" max="1"/>
-					<item id="17434" chance="0.03746" min="1" max="1"/>
-					<item id="17433" chance="0.03746" min="1" max="1"/>
-					<item id="17430" chance="0.03746" min="1" max="1"/>
-					<item id="17431" chance="0.03746" min="1" max="1"/>
-					<item id="17432" chance="0.03746" min="1" max="1"/>
-					<item id="17435" chance="0.03746" min="1" max="1"/>
-					<item id="35357" chance="4.24491" min="1" max="10"/>
-					<item id="35339" chance="4.09883" min="1" max="10"/>
-					<item id="35347" chance="4.07511" min="1" max="10"/>
-					<item id="35346" chance="4.05139" min="1" max="10"/>
-					<item id="35354" chance="4.04764" min="1" max="10"/>
-					<item id="35341" chance="4.04015" min="1" max="10"/>
-					<item id="35343" chance="4.03516" min="1" max="10"/>
-					<item id="35338" chance="4.03391" min="1" max="10"/>
-					<item id="35345" chance="4.03141" min="1" max="10"/>
-					<item id="35349" chance="4.03016" min="1" max="10"/>
-					<item id="35352" chance="4.03016" min="1" max="10"/>
-					<item id="35340" chance="4.02018" min="1" max="10"/>
-					<item id="35350" chance="4.00395" min="1" max="10"/>
-					<item id="35344" chance="4.00395" min="1" max="10"/>
-					<item id="35351" chance="3.99271" min="1" max="10"/>
-					<item id="35356" chance="3.99146" min="1" max="10"/>
-					<item id="35355" chance="3.98522" min="1" max="10"/>
-					<item id="35342" chance="3.98147" min="1" max="10"/>
-					<item id="35348" chance="3.97273" min="1" max="10"/>
-					<item id="35353" chance="3.96524" min="1" max="10"/>
-					<item id="35481" chance="0.93638" min="1" max="4"/>
-					<item id="35480" chance="0.93638" min="1" max="4"/>
-					<item id="35479" chance="0.93638" min="1" max="4"/>
-					<item id="35478" chance="0.93638" min="1" max="4"/>
-					<item id="35463" chance="0.93638" min="1" max="4"/>
-					<item id="35462" chance="0.93638" min="1" max="4"/>
-					<item id="35464" chance="0.93638" min="1" max="4"/>
-					<item id="35465" chance="0.93638" min="1" max="4"/>
-					<item id="35477" chance="0.93638" min="1" max="4"/>
-					<item id="35476" chance="0.93638" min="1" max="4"/>
-					<item id="35475" chance="0.93638" min="1" max="4"/>
-					<item id="35474" chance="0.93638" min="1" max="4"/>
-					<item id="35473" chance="0.93638" min="1" max="4"/>
-					<item id="35472" chance="0.93638" min="1" max="4"/>
-					<item id="35471" chance="0.93638" min="1" max="4"/>
-					<item id="35470" chance="0.93638" min="1" max="4"/>
-					<item id="35469" chance="0.93638" min="1" max="4"/>
-					<item id="35468" chance="0.93638" min="1" max="4"/>
-					<item id="35467" chance="0.93638" min="1" max="4"/>
-					<item id="35466" chance="0.93638" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="2" chance="12.129">
-				<items>
-					<item id="17447" chance="0.24734" min="1" max="1"/>
-					<item id="17448" chance="0.24734" min="1" max="1"/>
-					<item id="17449" chance="0.24734" min="1" max="1"/>
-					<item id="35357" chance="28.03199" min="1" max="10"/>
-					<item id="35356" chance="26.35831" min="1" max="10"/>
-					<item id="35355" chance="26.31709" min="1" max="10"/>
-					<item id="35481" chance="6.18353" min="1" max="4"/>
-					<item id="35480" chance="6.18353" min="1" max="4"/>
-					<item id="35479" chance="6.18353" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="3" chance="43.578">
-				<items>
-					<item id="17416" chance="0.06884" min="1" max="1"/>
-					<item id="17417" chance="0.06884" min="1" max="1"/>
-					<item id="17418" chance="0.06884" min="1" max="1"/>
-					<item id="17419" chance="0.06884" min="1" max="1"/>
-					<item id="17420" chance="0.06884" min="1" max="1"/>
-					<item id="17421" chance="0.06884" min="1" max="1"/>
-					<item id="17422" chance="0.06884" min="1" max="1"/>
-					<item id="17423" chance="0.06884" min="1" max="1"/>
-					<item id="17424" chance="0.06884" min="1" max="1"/>
-					<item id="17425" chance="0.06884" min="1" max="1"/>
-					<item id="17426" chance="0.06884" min="1" max="1"/>
-					<item id="35334" chance="7.38217" min="1" max="10"/>
-					<item id="35328" chance="7.33857" min="1" max="10"/>
-					<item id="35330" chance="7.3248" min="1" max="10"/>
-					<item id="35335" chance="7.32021" min="1" max="10"/>
-					<item id="35327" chance="7.31562" min="1" max="10"/>
-					<item id="35329" chance="7.30414" min="1" max="10"/>
-					<item id="35331" chance="7.29267" min="1" max="10"/>
-					<item id="35332" chance="7.27431" min="1" max="10"/>
-					<item id="35337" chance="7.26054" min="1" max="10"/>
-					<item id="35336" chance="7.24907" min="1" max="10"/>
-					<item id="35333" chance="7.24907" min="1" max="10"/>
-					<item id="35461" chance="1.72105" min="1" max="4"/>
-					<item id="35460" chance="1.72105" min="1" max="4"/>
-					<item id="35459" chance="1.72105" min="1" max="4"/>
-					<item id="35458" chance="1.72105" min="1" max="4"/>
-					<item id="35457" chance="1.72105" min="1" max="4"/>
-					<item id="35456" chance="1.72105" min="1" max="4"/>
-					<item id="35455" chance="1.72105" min="1" max="4"/>
-					<item id="35454" chance="1.72105" min="1" max="4"/>
-					<item id="35453" chance="1.72105" min="1" max="4"/>
-					<item id="35452" chance="1.72105" min="1" max="4"/>
-					<item id="35451" chance="1.72105" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="4" chance="15.0">
-				<items>
-					<item id="37067" chance="5.0" min="1" max="1"/>
-					<item id="37068" chance="5.0" min="1" max="1"/>
-					<item id="37069" chance="5.0" min="1" max="1"/>
-					<item id="37070" chance="5.0" min="1" max="1"/>
-					<item id="37071" chance="5.0" min="1" max="1"/>
-					<item id="37072" chance="5.0" min="1" max="1"/>
-					<item id="37073" chance="5.0" min="1" max="1"/>
-					<item id="37074" chance="5.0" min="1" max="1"/>
-					<item id="37086" chance="5.0" min="1" max="1"/>
-					<item id="37085" chance="5.0" min="1" max="1"/>
-					<item id="37084" chance="5.0" min="1" max="1"/>
-					<item id="37083" chance="5.0" min="1" max="1"/>
-					<item id="37082" chance="5.0" min="1" max="1"/>
-					<item id="37081" chance="5.0" min="1" max="1"/>
-					<item id="37080" chance="5.0" min="1" max="1"/>
-					<item id="37079" chance="5.0" min="1" max="1"/>
-					<item id="37078" chance="5.0" min="1" max="1"/>
-					<item id="37077" chance="5.0" min="1" max="1"/>
-					<item id="37076" chance="5.0" min="1" max="1"/>
-					<item id="37075" chance="5.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="5" chance="28.5">
-				<items>
-					<item id="36978" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="6" chance="19.947">
-				<items>
-					<item id="35569" chance="50.09275" min="1" max="1"/>
-					<item id="35567" chance="49.90725" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="7" chance="68.31">
-				<items>
-					<item id="36979" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="8" chance="100.0">
-				<items>
-					<item id="36514" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="25929" name="Тэкаф" server_name="" title="Монстр">
 		<set name="type" value="L2RaidBoss"/>
@@ -1538,158 +1067,6 @@
 			<set id="4441" level="5"/>
 			<set id="4439" level="5"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="68.176">
-				<items>
-					<item id="17436" chance="0.044" min="1" max="1"/>
-					<item id="17437" chance="0.044" min="1" max="1"/>
-					<item id="17438" chance="0.044" min="1" max="1"/>
-					<item id="17439" chance="0.044" min="1" max="1"/>
-					<item id="17440" chance="0.044" min="1" max="1"/>
-					<item id="17441" chance="0.044" min="1" max="1"/>
-					<item id="17442" chance="0.044" min="1" max="1"/>
-					<item id="17443" chance="0.044" min="1" max="1"/>
-					<item id="17444" chance="0.044" min="1" max="1"/>
-					<item id="17445" chance="0.044" min="1" max="1"/>
-					<item id="17446" chance="0.044" min="1" max="1"/>
-					<item id="17434" chance="0.044" min="1" max="1"/>
-					<item id="17433" chance="0.044" min="1" max="1"/>
-					<item id="17430" chance="0.044" min="1" max="1"/>
-					<item id="17431" chance="0.044" min="1" max="1"/>
-					<item id="17432" chance="0.044" min="1" max="1"/>
-					<item id="17435" chance="0.044" min="1" max="1"/>
-					<item id="35348" chance="4.82134" min="1" max="10"/>
-					<item id="35346" chance="4.80668" min="1" max="10"/>
-					<item id="35344" chance="4.79348" min="1" max="10"/>
-					<item id="35352" chance="4.78908" min="1" max="10"/>
-					<item id="35351" chance="4.78027" min="1" max="10"/>
-					<item id="35353" chance="4.78027" min="1" max="10"/>
-					<item id="35347" chance="4.75534" min="1" max="10"/>
-					<item id="35342" chance="4.74947" min="1" max="10"/>
-					<item id="35338" chance="4.74654" min="1" max="10"/>
-					<item id="35343" chance="4.72454" min="1" max="10"/>
-					<item id="35339" chance="4.7128" min="1" max="10"/>
-					<item id="35349" chance="4.70547" min="1" max="10"/>
-					<item id="35350" chance="4.70107" min="1" max="10"/>
-					<item id="35341" chance="4.68787" min="1" max="10"/>
-					<item id="35354" chance="4.67613" min="1" max="10"/>
-					<item id="35340" chance="4.6644" min="1" max="10"/>
-					<item id="35345" chance="4.6556" min="1" max="10"/>
-					<item id="35478" chance="1.10009" min="1" max="4"/>
-					<item id="35463" chance="1.10009" min="1" max="4"/>
-					<item id="35462" chance="1.10009" min="1" max="4"/>
-					<item id="35464" chance="1.10009" min="1" max="4"/>
-					<item id="35465" chance="1.10009" min="1" max="4"/>
-					<item id="35477" chance="1.10009" min="1" max="4"/>
-					<item id="35476" chance="1.10009" min="1" max="4"/>
-					<item id="35475" chance="1.10009" min="1" max="4"/>
-					<item id="35474" chance="1.10009" min="1" max="4"/>
-					<item id="35473" chance="1.10009" min="1" max="4"/>
-					<item id="35472" chance="1.10009" min="1" max="4"/>
-					<item id="35471" chance="1.10009" min="1" max="4"/>
-					<item id="35470" chance="1.10009" min="1" max="4"/>
-					<item id="35469" chance="1.10009" min="1" max="4"/>
-					<item id="35468" chance="1.10009" min="1" max="4"/>
-					<item id="35467" chance="1.10009" min="1" max="4"/>
-					<item id="35466" chance="1.10009" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="2" chance="12.233">
-				<items>
-					<item id="17447" chance="0.24524" min="1" max="1"/>
-					<item id="17448" chance="0.24524" min="1" max="1"/>
-					<item id="17449" chance="0.24524" min="1" max="1"/>
-					<item id="35357" chance="28.08796" min="1" max="10"/>
-					<item id="35356" chance="26.6901" min="1" max="10"/>
-					<item id="35355" chance="26.09335" min="1" max="10"/>
-					<item id="35481" chance="6.13096" min="1" max="4"/>
-					<item id="35480" chance="6.13096" min="1" max="4"/>
-					<item id="35479" chance="6.13096" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="3" chance="44.195">
-				<items>
-					<item id="17416" chance="0.06788" min="1" max="1"/>
-					<item id="17417" chance="0.06788" min="1" max="1"/>
-					<item id="17418" chance="0.06788" min="1" max="1"/>
-					<item id="17419" chance="0.06788" min="1" max="1"/>
-					<item id="17420" chance="0.06788" min="1" max="1"/>
-					<item id="17421" chance="0.06788" min="1" max="1"/>
-					<item id="17422" chance="0.06788" min="1" max="1"/>
-					<item id="17423" chance="0.06788" min="1" max="1"/>
-					<item id="17424" chance="0.06788" min="1" max="1"/>
-					<item id="17425" chance="0.06788" min="1" max="1"/>
-					<item id="17426" chance="0.06788" min="1" max="1"/>
-					<item id="35333" chance="7.40582" min="1" max="10"/>
-					<item id="35335" chance="7.39224" min="1" max="10"/>
-					<item id="35327" chance="7.36509" min="1" max="10"/>
-					<item id="35336" chance="7.36056" min="1" max="10"/>
-					<item id="35337" chance="7.34246" min="1" max="10"/>
-					<item id="35334" chance="7.3402" min="1" max="10"/>
-					<item id="35332" chance="7.33341" min="1" max="10"/>
-					<item id="35331" chance="7.31531" min="1" max="10"/>
-					<item id="35329" chance="7.27232" min="1" max="10"/>
-					<item id="35330" chance="7.26327" min="1" max="10"/>
-					<item id="35328" chance="7.19538" min="1" max="10"/>
-					<item id="35461" chance="1.69702" min="1" max="4"/>
-					<item id="35460" chance="1.69702" min="1" max="4"/>
-					<item id="35459" chance="1.69702" min="1" max="4"/>
-					<item id="35458" chance="1.69702" min="1" max="4"/>
-					<item id="35457" chance="1.69702" min="1" max="4"/>
-					<item id="35456" chance="1.69702" min="1" max="4"/>
-					<item id="35455" chance="1.69702" min="1" max="4"/>
-					<item id="35454" chance="1.69702" min="1" max="4"/>
-					<item id="35453" chance="1.69702" min="1" max="4"/>
-					<item id="35452" chance="1.69702" min="1" max="4"/>
-					<item id="35451" chance="1.69702" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="4" chance="15.0">
-				<items>
-					<item id="37070" chance="5.0" min="1" max="1"/>
-					<item id="37069" chance="5.0" min="1" max="1"/>
-					<item id="37068" chance="5.0" min="1" max="1"/>
-					<item id="37067" chance="5.0" min="1" max="1"/>
-					<item id="37073" chance="5.0" min="1" max="1"/>
-					<item id="37085" chance="5.0" min="1" max="1"/>
-					<item id="37071" chance="5.0" min="1" max="1"/>
-					<item id="37072" chance="5.0" min="1" max="1"/>
-					<item id="37086" chance="5.0" min="1" max="1"/>
-					<item id="37084" chance="5.0" min="1" max="1"/>
-					<item id="37083" chance="5.0" min="1" max="1"/>
-					<item id="37082" chance="5.0" min="1" max="1"/>
-					<item id="37081" chance="5.0" min="1" max="1"/>
-					<item id="37080" chance="5.0" min="1" max="1"/>
-					<item id="37079" chance="5.0" min="1" max="1"/>
-					<item id="37078" chance="5.0" min="1" max="1"/>
-					<item id="37077" chance="5.0" min="1" max="1"/>
-					<item id="37076" chance="5.0" min="1" max="1"/>
-					<item id="37075" chance="5.0" min="1" max="1"/>
-					<item id="37074" chance="5.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="5" chance="100.0">
-				<items>
-					<item id="36514" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="6" chance="71.41">
-				<items>
-					<item id="36979" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="7" chance="29.21">
-				<items>
-					<item id="36978" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="8" chance="19.995">
-				<items>
-					<item id="35569" chance="50.31258" min="1" max="1"/>
-					<item id="35567" chance="49.68742" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="25930" name="Тэджакар" server_name="" title="Монстр">
 		<set name="type" value="L2RaidBoss"/>
@@ -1733,158 +1110,6 @@
 			<set id="4441" level="5"/>
 			<set id="4439" level="5"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="68.144">
-				<items>
-					<item id="17436" chance="0.04402" min="1" max="1"/>
-					<item id="17437" chance="0.04402" min="1" max="1"/>
-					<item id="17438" chance="0.04402" min="1" max="1"/>
-					<item id="17439" chance="0.04402" min="1" max="1"/>
-					<item id="17440" chance="0.04402" min="1" max="1"/>
-					<item id="17441" chance="0.04402" min="1" max="1"/>
-					<item id="17442" chance="0.04402" min="1" max="1"/>
-					<item id="17443" chance="0.04402" min="1" max="1"/>
-					<item id="17444" chance="0.04402" min="1" max="1"/>
-					<item id="17445" chance="0.04402" min="1" max="1"/>
-					<item id="17446" chance="0.04402" min="1" max="1"/>
-					<item id="17434" chance="0.04402" min="1" max="1"/>
-					<item id="17433" chance="0.04402" min="1" max="1"/>
-					<item id="17430" chance="0.04402" min="1" max="1"/>
-					<item id="17431" chance="0.04402" min="1" max="1"/>
-					<item id="17432" chance="0.04402" min="1" max="1"/>
-					<item id="17435" chance="0.04402" min="1" max="1"/>
-					<item id="35346" chance="4.81921" min="1" max="10"/>
-					<item id="35352" chance="4.8148" min="1" max="10"/>
-					<item id="35340" chance="4.80306" min="1" max="10"/>
-					<item id="35345" chance="4.79573" min="1" max="10"/>
-					<item id="35353" chance="4.78399" min="1" max="10"/>
-					<item id="35339" chance="4.77078" min="1" max="10"/>
-					<item id="35348" chance="4.76638" min="1" max="10"/>
-					<item id="35347" chance="4.75904" min="1" max="10"/>
-					<item id="35341" chance="4.75464" min="1" max="10"/>
-					<item id="35351" chance="4.74436" min="1" max="10"/>
-					<item id="35344" chance="4.71355" min="1" max="10"/>
-					<item id="35342" chance="4.69887" min="1" max="10"/>
-					<item id="35350" chance="4.69887" min="1" max="10"/>
-					<item id="35354" chance="4.66806" min="1" max="10"/>
-					<item id="35343" chance="4.66072" min="1" max="10"/>
-					<item id="35338" chance="4.65191" min="1" max="10"/>
-					<item id="35349" chance="4.63724" min="1" max="10"/>
-					<item id="35478" chance="1.10061" min="1" max="4"/>
-					<item id="35463" chance="1.10061" min="1" max="4"/>
-					<item id="35462" chance="1.10061" min="1" max="4"/>
-					<item id="35464" chance="1.10061" min="1" max="4"/>
-					<item id="35465" chance="1.10061" min="1" max="4"/>
-					<item id="35477" chance="1.10061" min="1" max="4"/>
-					<item id="35476" chance="1.10061" min="1" max="4"/>
-					<item id="35475" chance="1.10061" min="1" max="4"/>
-					<item id="35474" chance="1.10061" min="1" max="4"/>
-					<item id="35473" chance="1.10061" min="1" max="4"/>
-					<item id="35472" chance="1.10061" min="1" max="4"/>
-					<item id="35471" chance="1.10061" min="1" max="4"/>
-					<item id="35470" chance="1.10061" min="1" max="4"/>
-					<item id="35469" chance="1.10061" min="1" max="4"/>
-					<item id="35468" chance="1.10061" min="1" max="4"/>
-					<item id="35467" chance="1.10061" min="1" max="4"/>
-					<item id="35466" chance="1.10061" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="2" chance="12.223">
-				<items>
-					<item id="17447" chance="0.24544" min="1" max="1"/>
-					<item id="17448" chance="0.24544" min="1" max="1"/>
-					<item id="17449" chance="0.24544" min="1" max="1"/>
-					<item id="35357" chance="28.32365" min="1" max="10"/>
-					<item id="35355" chance="26.55649" min="1" max="10"/>
-					<item id="35356" chance="25.97562" min="1" max="10"/>
-					<item id="35481" chance="6.13597" min="1" max="4"/>
-					<item id="35480" chance="6.13597" min="1" max="4"/>
-					<item id="35479" chance="6.13597" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="3" chance="44.112">
-				<items>
-					<item id="17416" chance="0.06801" min="1" max="1"/>
-					<item id="17417" chance="0.06801" min="1" max="1"/>
-					<item id="17418" chance="0.06801" min="1" max="1"/>
-					<item id="17419" chance="0.06801" min="1" max="1"/>
-					<item id="17420" chance="0.06801" min="1" max="1"/>
-					<item id="17421" chance="0.06801" min="1" max="1"/>
-					<item id="17422" chance="0.06801" min="1" max="1"/>
-					<item id="17423" chance="0.06801" min="1" max="1"/>
-					<item id="17424" chance="0.06801" min="1" max="1"/>
-					<item id="17425" chance="0.06801" min="1" max="1"/>
-					<item id="17426" chance="0.06801" min="1" max="1"/>
-					<item id="35334" chance="7.41295" min="1" max="10"/>
-					<item id="35333" chance="7.40615" min="1" max="10"/>
-					<item id="35332" chance="7.40161" min="1" max="10"/>
-					<item id="35330" chance="7.39028" min="1" max="10"/>
-					<item id="35335" chance="7.34041" min="1" max="10"/>
-					<item id="35329" chance="7.33814" min="1" max="10"/>
-					<item id="35328" chance="7.2996" min="1" max="10"/>
-					<item id="35331" chance="7.29733" min="1" max="10"/>
-					<item id="35327" chance="7.22933" min="1" max="10"/>
-					<item id="35337" chance="7.22252" min="1" max="10"/>
-					<item id="35336" chance="7.21119" min="1" max="10"/>
-					<item id="35461" chance="1.70022" min="1" max="4"/>
-					<item id="35460" chance="1.70022" min="1" max="4"/>
-					<item id="35459" chance="1.70022" min="1" max="4"/>
-					<item id="35458" chance="1.70022" min="1" max="4"/>
-					<item id="35457" chance="1.70022" min="1" max="4"/>
-					<item id="35456" chance="1.70022" min="1" max="4"/>
-					<item id="35455" chance="1.70022" min="1" max="4"/>
-					<item id="35454" chance="1.70022" min="1" max="4"/>
-					<item id="35453" chance="1.70022" min="1" max="4"/>
-					<item id="35452" chance="1.70022" min="1" max="4"/>
-					<item id="35451" chance="1.70022" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="4" chance="15.0">
-				<items>
-					<item id="37082" chance="5.0" min="1" max="1"/>
-					<item id="37069" chance="5.0" min="1" max="1"/>
-					<item id="37068" chance="5.0" min="1" max="1"/>
-					<item id="37067" chance="5.0" min="1" max="1"/>
-					<item id="37073" chance="5.0" min="1" max="1"/>
-					<item id="37084" chance="5.0" min="1" max="1"/>
-					<item id="37085" chance="5.0" min="1" max="1"/>
-					<item id="37086" chance="5.0" min="1" max="1"/>
-					<item id="37070" chance="5.0" min="1" max="1"/>
-					<item id="37071" chance="5.0" min="1" max="1"/>
-					<item id="37081" chance="5.0" min="1" max="1"/>
-					<item id="37080" chance="5.0" min="1" max="1"/>
-					<item id="37079" chance="5.0" min="1" max="1"/>
-					<item id="37078" chance="5.0" min="1" max="1"/>
-					<item id="37077" chance="5.0" min="1" max="1"/>
-					<item id="37076" chance="5.0" min="1" max="1"/>
-					<item id="37075" chance="5.0" min="1" max="1"/>
-					<item id="37074" chance="5.0" min="1" max="1"/>
-					<item id="37083" chance="5.0" min="1" max="1"/>
-					<item id="37072" chance="5.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="5" chance="100.0">
-				<items>
-					<item id="36514" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="6" chance="71.67">
-				<items>
-					<item id="36979" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="7" chance="29.05">
-				<items>
-					<item id="36978" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="8" chance="19.974">
-				<items>
-					<item id="35569" chance="50.22029" min="1" max="1"/>
-					<item id="35567" chance="49.77971" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="25931" name="Тэор" server_name="" title="Монстр">
 		<set name="type" value="L2RaidBoss"/>
@@ -1928,167 +1153,13 @@
 			<set id="4441" level="5"/>
 			<set id="4439" level="5"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="68.16">
-				<items>
-					<item id="17436" chance="0.04401" min="1" max="1"/>
-					<item id="17437" chance="0.04401" min="1" max="1"/>
-					<item id="17438" chance="0.04401" min="1" max="1"/>
-					<item id="17439" chance="0.04401" min="1" max="1"/>
-					<item id="17440" chance="0.04401" min="1" max="1"/>
-					<item id="17441" chance="0.04401" min="1" max="1"/>
-					<item id="17442" chance="0.04401" min="1" max="1"/>
-					<item id="17443" chance="0.04401" min="1" max="1"/>
-					<item id="17444" chance="0.04401" min="1" max="1"/>
-					<item id="17445" chance="0.04401" min="1" max="1"/>
-					<item id="17446" chance="0.04401" min="1" max="1"/>
-					<item id="17434" chance="0.04401" min="1" max="1"/>
-					<item id="17433" chance="0.04401" min="1" max="1"/>
-					<item id="17430" chance="0.04401" min="1" max="1"/>
-					<item id="17431" chance="0.04401" min="1" max="1"/>
-					<item id="17432" chance="0.04401" min="1" max="1"/>
-					<item id="17435" chance="0.04401" min="1" max="1"/>
-					<item id="35341" chance="4.81074" min="1" max="10"/>
-					<item id="35352" chance="4.80927" min="1" max="10"/>
-					<item id="35343" chance="4.80781" min="1" max="10"/>
-					<item id="35338" chance="4.80634" min="1" max="10"/>
-					<item id="35339" chance="4.799" min="1" max="10"/>
-					<item id="35348" chance="4.78727" min="1" max="10"/>
-					<item id="35344" chance="4.7814" min="1" max="10"/>
-					<item id="35349" chance="4.77846" min="1" max="10"/>
-					<item id="35345" chance="4.74472" min="1" max="10"/>
-					<item id="35340" chance="4.73151" min="1" max="10"/>
-					<item id="35350" chance="4.71978" min="1" max="10"/>
-					<item id="35346" chance="4.68603" min="1" max="10"/>
-					<item id="35351" chance="4.66696" min="1" max="10"/>
-					<item id="35354" chance="4.66403" min="1" max="10"/>
-					<item id="35342" chance="4.65522" min="1" max="10"/>
-					<item id="35347" chance="4.64935" min="1" max="10"/>
-					<item id="35353" chance="4.64789" min="1" max="10"/>
-					<item id="35478" chance="1.10035" min="1" max="4"/>
-					<item id="35463" chance="1.10035" min="1" max="4"/>
-					<item id="35462" chance="1.10035" min="1" max="4"/>
-					<item id="35464" chance="1.10035" min="1" max="4"/>
-					<item id="35465" chance="1.10035" min="1" max="4"/>
-					<item id="35477" chance="1.10035" min="1" max="4"/>
-					<item id="35476" chance="1.10035" min="1" max="4"/>
-					<item id="35475" chance="1.10035" min="1" max="4"/>
-					<item id="35474" chance="1.10035" min="1" max="4"/>
-					<item id="35473" chance="1.10035" min="1" max="4"/>
-					<item id="35472" chance="1.10035" min="1" max="4"/>
-					<item id="35471" chance="1.10035" min="1" max="4"/>
-					<item id="35470" chance="1.10035" min="1" max="4"/>
-					<item id="35469" chance="1.10035" min="1" max="4"/>
-					<item id="35468" chance="1.10035" min="1" max="4"/>
-					<item id="35467" chance="1.10035" min="1" max="4"/>
-					<item id="35466" chance="1.10035" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="2" chance="12.283">
-				<items>
-					<item id="17447" chance="0.24424" min="1" max="1"/>
-					<item id="17448" chance="0.24424" min="1" max="1"/>
-					<item id="17449" chance="0.24424" min="1" max="1"/>
-					<item id="35357" chance="28.1853" min="1" max="10"/>
-					<item id="35355" chance="26.73614" min="1" max="10"/>
-					<item id="35356" chance="26.02784" min="1" max="10"/>
-					<item id="35481" chance="6.106" min="1" max="4"/>
-					<item id="35480" chance="6.106" min="1" max="4"/>
-					<item id="35479" chance="6.106" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="3" chance="43.852">
-				<items>
-					<item id="17416" chance="0.06841" min="1" max="1"/>
-					<item id="17417" chance="0.06841" min="1" max="1"/>
-					<item id="17418" chance="0.06841" min="1" max="1"/>
-					<item id="17419" chance="0.06841" min="1" max="1"/>
-					<item id="17420" chance="0.06841" min="1" max="1"/>
-					<item id="17421" chance="0.06841" min="1" max="1"/>
-					<item id="17422" chance="0.06841" min="1" max="1"/>
-					<item id="17423" chance="0.06841" min="1" max="1"/>
-					<item id="17424" chance="0.06841" min="1" max="1"/>
-					<item id="17425" chance="0.06841" min="1" max="1"/>
-					<item id="17426" chance="0.06841" min="1" max="1"/>
-					<item id="35328" chance="7.45918" min="1" max="10"/>
-					<item id="35336" chance="7.44094" min="1" max="10"/>
-					<item id="35333" chance="7.43182" min="1" max="10"/>
-					<item id="35337" chance="7.30183" min="1" max="10"/>
-					<item id="35330" chance="7.28815" min="1" max="10"/>
-					<item id="35331" chance="7.28131" min="1" max="10"/>
-					<item id="35327" chance="7.28131" min="1" max="10"/>
-					<item id="35332" chance="7.26991" min="1" max="10"/>
-					<item id="35335" chance="7.24938" min="1" max="10"/>
-					<item id="35329" chance="7.23798" min="1" max="10"/>
-					<item id="35334" chance="7.19237" min="1" max="10"/>
-					<item id="35461" chance="1.7103" min="1" max="4"/>
-					<item id="35460" chance="1.7103" min="1" max="4"/>
-					<item id="35459" chance="1.7103" min="1" max="4"/>
-					<item id="35458" chance="1.7103" min="1" max="4"/>
-					<item id="35457" chance="1.7103" min="1" max="4"/>
-					<item id="35456" chance="1.7103" min="1" max="4"/>
-					<item id="35455" chance="1.7103" min="1" max="4"/>
-					<item id="35454" chance="1.7103" min="1" max="4"/>
-					<item id="35453" chance="1.7103" min="1" max="4"/>
-					<item id="35452" chance="1.7103" min="1" max="4"/>
-					<item id="35451" chance="1.7103" min="1" max="4"/>
-				</items>
-			</category>
-			<category id="4" chance="15.0">
-				<items>
-					<item id="37067" chance="5.0" min="1" max="1"/>
-					<item id="37068" chance="5.0" min="1" max="1"/>
-					<item id="37069" chance="5.0" min="1" max="1"/>
-					<item id="37070" chance="5.0" min="1" max="1"/>
-					<item id="37071" chance="5.0" min="1" max="1"/>
-					<item id="37072" chance="5.0" min="1" max="1"/>
-					<item id="37073" chance="5.0" min="1" max="1"/>
-					<item id="37074" chance="5.0" min="1" max="1"/>
-					<item id="37086" chance="5.0" min="1" max="1"/>
-					<item id="37085" chance="5.0" min="1" max="1"/>
-					<item id="37084" chance="5.0" min="1" max="1"/>
-					<item id="37083" chance="5.0" min="1" max="1"/>
-					<item id="37082" chance="5.0" min="1" max="1"/>
-					<item id="37081" chance="5.0" min="1" max="1"/>
-					<item id="37080" chance="5.0" min="1" max="1"/>
-					<item id="37079" chance="5.0" min="1" max="1"/>
-					<item id="37078" chance="5.0" min="1" max="1"/>
-					<item id="37077" chance="5.0" min="1" max="1"/>
-					<item id="37076" chance="5.0" min="1" max="1"/>
-					<item id="37075" chance="5.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="5" chance="100.0">
-				<items>
-					<item id="36514" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="6" chance="71.37">
-				<items>
-					<item id="36979" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="7" chance="30.56">
-				<items>
-					<item id="36978" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="8" chance="19.931">
-				<items>
-					<item id="35567" chance="50.13798" min="1" max="1"/>
-					<item id="35569" chance="49.86202" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
-	<npc id="25932" name="Мутант Дартанион" server_name="" title="Рейдовый Босс">
-		<set name="type" value="L2RaidBoss"/>
+	<npc id="25932" name="Дар-Тани" server_name="" title="Рейдовый Босс">
+		<set name="type" value="L2Monster"/>
 		<set name="sex" value="etc"/>
-		<set name="level" value="86"/>
-		<set name="exp" value="3394764000"/>
-		<set name="sp" value="25320"/>
-		<set name="org_hp" value="41235567"/>
-		<set name="org_mp" value="75347"/>
+		<set name="level" value="99"/>
+		<set name="org_hp" value="17318591"/>
+		<set name="org_mp" value="37636"/>
 		<set name="org_hp_regen" value="7.500"/>
 		<set name="org_mp_regen" value="2.700"/>
 		<set name="base_physical_attack" value="500"/>
@@ -2126,126 +1197,18 @@
 			<set id="4439" level="5"/>
 			<set id="15626" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="95.16">
-				<items>
-					<item id="17357" chance="1.94401" min="1" max="1"/>
-					<item id="17329" chance="1.94401" min="1" max="1"/>
-					<item id="17347" chance="1.94401" min="1" max="1"/>
-					<item id="17349" chance="1.94401" min="1" max="1"/>
-					<item id="17324" chance="1.94401" min="1" max="1"/>
-					<item id="17331" chance="1.94401" min="1" max="1"/>
-					<item id="17355" chance="1.94401" min="1" max="1"/>
-					<item id="17350" chance="1.94401" min="1" max="1"/>
-					<item id="17339" chance="1.94401" min="1" max="1"/>
-					<item id="17344" chance="1.94401" min="1" max="1"/>
-					<item id="17332" chance="1.94401" min="1" max="1"/>
-					<item id="17351" chance="1.94401" min="1" max="1"/>
-					<item id="17328" chance="1.94401" min="1" max="1"/>
-					<item id="17346" chance="1.94401" min="1" max="1"/>
-					<item id="17348" chance="1.94401" min="1" max="1"/>
-					<item id="17356" chance="1.94401" min="1" max="1"/>
-					<item id="17330" chance="1.94401" min="1" max="1"/>
-					<item id="17354" chance="1.94401" min="1" max="1"/>
-					<item id="17345" chance="1.94401" min="1" max="1"/>
-					<item id="17334" chance="1.94401" min="1" max="1"/>
-					<item id="17326" chance="1.94401" min="1" max="1"/>
-					<item id="17338" chance="1.94401" min="1" max="1"/>
-					<item id="17341" chance="1.94401" min="1" max="1"/>
-					<item id="17342" chance="1.94401" min="1" max="1"/>
-					<item id="17340" chance="1.94401" min="1" max="1"/>
-					<item id="17343" chance="1.94401" min="1" max="1"/>
-					<item id="17333" chance="1.94401" min="1" max="1"/>
-					<item id="17353" chance="1.94401" min="1" max="1"/>
-					<item id="17352" chance="1.94401" min="1" max="1"/>
-					<item id="17327" chance="1.94401" min="1" max="1"/>
-					<item id="17325" chance="1.94401" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="2" chance="100.0">
-				<items>
-					<item id="36513" chance="24.54401" min="2" max="2"/>
-					<item id="36979" chance="6.94401" min="1" max="1"/>
-					<item id="36793" chance="3.04401" min="1" max="2"/>
-					<item id="36855" chance="3.04401" min="1" max="5"/>
-					<item id="36842" chance="3.04401" min="1" max="5"/>
-					<item id="36850" chance="3.04401" min="1" max="5"/>
-					<item id="36777" chance="3.04401" min="1" max="2"/>
-					<item id="36770" chance="3.04401" min="1" max="2"/>
-					<item id="36834" chance="3.04401" min="1" max="5"/>
-					<item id="36767" chance="3.04401" min="1" max="2"/>
-					<item id="36764" chance="3.04401" min="1" max="2"/>
-					<item id="36826" chance="3.04401" min="1" max="5"/>
-					<item id="36782" chance="3.04401" min="1" max="2"/>
-					<item id="36766" chance="3.04401" min="1" max="2"/>
-					<item id="36785" chance="3.04401" min="1" max="2"/>
-					<item id="36774" chance="3.04401" min="1" max="2"/>
-					<item id="36854" chance="3.04401" min="1" max="5"/>
-					<item id="36844" chance="3.04401" min="1" max="5"/>
-					<item id="36771" chance="3.04401" min="1" max="2"/>
-					<item id="36780" chance="3.04401" min="1" max="2"/>
-					<item id="36840" chance="3.04401" min="1" max="5"/>
-					<item id="36851" chance="3.04401" min="1" max="5"/>
-					<item id="36838" chance="3.04401" min="1" max="5"/>
-					<item id="36775" chance="3.04401" min="1" max="2"/>
-					<item id="36768" chance="3.04401" min="1" max="2"/>
-					<item id="36779" chance="3.04401" min="1" max="2"/>
-					<item id="36786" chance="3.04401" min="1" max="2"/>
-					<item id="36839" chance="3.04401" min="1" max="5"/>
-					<item id="36837" chance="3.04401" min="1" max="5"/>
-					<item id="36769" chance="3.04401" min="1" max="2"/>
-					<item id="36791" chance="3.04401" min="1" max="2"/>
-					<item id="36841" chance="3.04401" min="1" max="5"/>
-					<item id="36831" chance="3.04401" min="1" max="5"/>
-					<item id="36843" chance="3.04401" min="1" max="5"/>
-					<item id="36784" chance="3.04401" min="1" max="2"/>
-					<item id="36845" chance="3.04401" min="1" max="5"/>
-					<item id="36788" chance="3.04401" min="1" max="2"/>
-					<item id="36776" chance="3.04401" min="1" max="2"/>
-					<item id="36853" chance="3.04401" min="1" max="5"/>
-					<item id="36765" chance="3.04401" min="1" max="2"/>
-					<item id="36773" chance="3.04401" min="1" max="2"/>
-					<item id="36833" chance="3.04401" min="1" max="5"/>
-					<item id="36828" chance="3.04401" min="1" max="5"/>
-					<item id="36778" chance="3.04401" min="1" max="2"/>
-					<item id="36781" chance="3.04401" min="1" max="2"/>
-					<item id="36792" chance="3.04401" min="1" max="2"/>
-					<item id="36772" chance="3.04401" min="1" max="2"/>
-					<item id="36832" chance="3.04401" min="1" max="5"/>
-					<item id="36829" chance="3.04401" min="1" max="5"/>
-					<item id="36847" chance="3.04401" min="1" max="5"/>
-					<item id="36830" chance="3.04401" min="1" max="5"/>
-					<item id="36852" chance="3.04401" min="1" max="5"/>
-					<item id="36849" chance="3.04401" min="1" max="5"/>
-					<item id="36789" chance="3.04401" min="1" max="2"/>
-					<item id="36836" chance="3.04401" min="1" max="5"/>
-					<item id="36846" chance="3.04401" min="1" max="5"/>
-					<item id="36827" chance="3.04401" min="1" max="5"/>
-					<item id="36790" chance="3.04401" min="1" max="2"/>
-					<item id="36825" chance="3.04401" min="1" max="5"/>
-					<item id="36763" chance="3.04401" min="1" max="2"/>
-					<item id="36783" chance="3.04401" min="1" max="2"/>
-					<item id="36835" chance="3.04401" min="1" max="5"/>
-					<item id="36848" chance="3.04401" min="1" max="5"/>
-					<item id="36787" chance="3.04401" min="1" max="2"/>
-					<item id="36978" chance="3.04401" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
-	<npc id="25933" name="Главный Воин Сада" server_name="" title="Рейдовый Босс">
-		<set name="type" value="L2RaidBoss"/>
+	<npc id="25933" name="Садовник Тин" server_name="" title="Рейдовый Босс">
+		<set name="type" value="L2Monster"/>
 		<set name="sex" value="etc"/>
-		<set name="level" value="93"/>
-		<set name="exp" value="3969891000"/>
-		<set name="sp" value="15879564"/>
-		<set name="org_hp" value="48998765"/>
-		<set name="org_mp" value="85381"/>
+		<set name="level" value="99"/>
+		<set name="org_hp" value="20579069"/>
+		<set name="org_mp" value="42648"/>
 		<set name="org_hp_regen" value="7.500"/>
 		<set name="org_mp_regen" value="2.700"/>
 		<set name="base_physical_attack" value="500"/>
 		<set name="base_magic_attack" value="500"/>
-		<set name="base_defend" value="3900"/>
+		<set name="base_defend" value="500"/>
 		<set name="base_magic_defend" value="500"/>
 		<set name="base_attack_speed" value="230"/>
 		<set name="base_critical" value="1"/>
@@ -2278,112 +1241,6 @@
 			<set id="4439" level="5"/>
 			<set id="15627" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="95.16">
-				<items>
-					<item id="17382" chance="0.71541" min="1" max="1"/>
-					<item id="17402" chance="0.71541" min="1" max="1"/>
-					<item id="17403" chance="0.71541" min="1" max="1"/>
-					<item id="17404" chance="0.71541" min="1" max="1"/>
-					<item id="17405" chance="0.71541" min="1" max="1"/>
-					<item id="17406" chance="0.71541" min="1" max="1"/>
-					<item id="17407" chance="0.71541" min="1" max="1"/>
-					<item id="17408" chance="0.71541" min="1" max="1"/>
-					<item id="17409" chance="0.71541" min="1" max="1"/>
-					<item id="17410" chance="0.71541" min="1" max="1"/>
-					<item id="17411" chance="0.71541" min="1" max="1"/>
-					<item id="17412" chance="0.71541" min="1" max="1"/>
-					<item id="17413" chance="0.71541" min="1" max="1"/>
-					<item id="17414" chance="0.71541" min="1" max="1"/>
-					<item id="17401" chance="0.71541" min="1" max="1"/>
-					<item id="17400" chance="0.71541" min="1" max="1"/>
-					<item id="17399" chance="0.71541" min="1" max="1"/>
-					<item id="17383" chance="0.71541" min="1" max="1"/>
-					<item id="17384" chance="0.71541" min="1" max="1"/>
-					<item id="17385" chance="0.71541" min="1" max="1"/>
-					<item id="17386" chance="0.71541" min="1" max="1"/>
-					<item id="17387" chance="0.71541" min="1" max="1"/>
-					<item id="17388" chance="0.71541" min="1" max="1"/>
-					<item id="17389" chance="0.71541" min="1" max="1"/>
-					<item id="17390" chance="0.71541" min="1" max="1"/>
-					<item id="17391" chance="0.71541" min="1" max="1"/>
-					<item id="17392" chance="0.71541" min="1" max="1"/>
-					<item id="17396" chance="0.71541" min="1" max="1"/>
-					<item id="17397" chance="0.71541" min="1" max="1"/>
-					<item id="17398" chance="0.71541" min="1" max="1"/>
-					<item id="17415" chance="0.71541" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="2" chance="100.0">
-				<items>
-					<item id="36513" chance="50.74574" min="2" max="2"/>
-					<item id="36979" chance="30.74574" min="1" max="1"/>
-					<item id="36978" chance="15.74574" min="1" max="1"/>
-					<item id="35326" chance="2.74574" min="1" max="1"/>
-					<item id="35296" chance="2.74574" min="1" max="1"/>
-					<item id="35321" chance="2.74574" min="1" max="1"/>
-					<item id="35309" chance="2.74574" min="1" max="1"/>
-					<item id="35304" chance="2.74574" min="1" max="1"/>
-					<item id="35299" chance="2.74574" min="1" max="1"/>
-					<item id="35310" chance="2.74574" min="1" max="1"/>
-					<item id="35300" chance="2.74574" min="1" max="1"/>
-					<item id="35311" chance="2.74574" min="1" max="1"/>
-					<item id="35324" chance="2.74574" min="1" max="1"/>
-					<item id="35322" chance="2.74574" min="1" max="1"/>
-					<item id="35297" chance="2.74574" min="1" max="1"/>
-					<item id="35317" chance="2.74574" min="1" max="1"/>
-					<item id="35320" chance="2.74574" min="1" max="1"/>
-					<item id="35298" chance="2.74574" min="1" max="1"/>
-					<item id="35305" chance="2.74574" min="1" max="1"/>
-					<item id="35306" chance="2.74574" min="1" max="1"/>
-					<item id="35316" chance="2.74574" min="1" max="1"/>
-					<item id="35314" chance="2.74574" min="1" max="1"/>
-					<item id="35303" chance="2.74574" min="1" max="1"/>
-					<item id="35323" chance="2.74574" min="1" max="1"/>
-					<item id="35315" chance="2.74574" min="1" max="1"/>
-					<item id="35301" chance="2.74574" min="1" max="1"/>
-					<item id="35307" chance="2.74574" min="1" max="1"/>
-					<item id="35308" chance="2.74574" min="1" max="1"/>
-					<item id="35325" chance="2.74574" min="1" max="1"/>
-					<item id="35319" chance="2.74574" min="1" max="1"/>
-					<item id="35318" chance="2.74574" min="1" max="1"/>
-					<item id="35312" chance="2.74574" min="1" max="1"/>
-					<item id="35302" chance="2.74574" min="1" max="1"/>
-					<item id="35313" chance="2.74574" min="1" max="1"/>
-					<item id="35450" chance="2.74574" min="1" max="1"/>
-					<item id="35433" chance="2.74574" min="1" max="1"/>
-					<item id="35428" chance="2.74574" min="1" max="1"/>
-					<item id="35429" chance="2.74574" min="1" max="1"/>
-					<item id="35434" chance="2.74574" min="1" max="1"/>
-					<item id="35440" chance="2.74574" min="1" max="1"/>
-					<item id="35420" chance="2.74574" min="1" max="1"/>
-					<item id="35448" chance="2.74574" min="1" max="1"/>
-					<item id="35438" chance="2.74574" min="1" max="1"/>
-					<item id="35443" chance="2.74574" min="1" max="1"/>
-					<item id="35437" chance="2.74574" min="1" max="1"/>
-					<item id="35446" chance="2.74574" min="1" max="1"/>
-					<item id="35447" chance="2.74574" min="1" max="1"/>
-					<item id="35444" chance="2.74574" min="1" max="1"/>
-					<item id="35427" chance="2.74574" min="1" max="1"/>
-					<item id="35424" chance="2.74574" min="1" max="1"/>
-					<item id="35435" chance="2.74574" min="1" max="1"/>
-					<item id="35423" chance="2.74574" min="1" max="1"/>
-					<item id="35431" chance="2.74574" min="1" max="1"/>
-					<item id="35442" chance="2.74574" min="1" max="1"/>
-					<item id="35436" chance="2.74574" min="1" max="1"/>
-					<item id="35421" chance="2.74574" min="1" max="1"/>
-					<item id="35425" chance="2.74574" min="1" max="1"/>
-					<item id="35430" chance="2.74574" min="1" max="1"/>
-					<item id="35441" chance="2.74574" min="1" max="1"/>
-					<item id="35439" chance="2.74574" min="1" max="1"/>
-					<item id="35422" chance="2.74574" min="1" max="1"/>
-					<item id="35449" chance="2.74574" min="1" max="1"/>
-					<item id="35432" chance="2.74574" min="1" max="1"/>
-					<item id="35445" chance="2.74574" min="1" max="1"/>
-					<item id="35426" chance="2.74574" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="25934" name="Поддержка Тина" server_name="" title="Поддержка рейда">
 		<set name="type" value="L2Monster"/>
@@ -2499,14 +1356,12 @@
 			<set id="5465" level="1"/>
 		</skills>
 	</npc>
-	<npc id="25937" name="Спикула Минус" server_name="" title="Рейдовый Босс">
-		<set name="type" value="L2RaidBoss"/>
+	<npc id="25937" name="Темекула" server_name="" title="Рейдовый Босс">
+		<set name="type" value="L2Monster"/>
 		<set name="sex" value="etc"/>
-		<set name="level" value="95"/>
-		<set name="exp" value="4142475000"/>
-		<set name="sp" value="16569900"/>
-		<set name="org_hp" value="54247280"/>
-		<set name="org_mp" value="88320"/>
+		<set name="level" value="99"/>
+		<set name="org_hp" value="22783402"/>
+		<set name="org_mp" value="44116"/>
 		<set name="org_hp_regen" value="7.500"/>
 		<set name="org_mp_regen" value="2.700"/>
 		<set name="base_physical_attack" value="500"/>
