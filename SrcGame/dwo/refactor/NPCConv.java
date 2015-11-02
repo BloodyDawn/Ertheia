@@ -52,6 +52,7 @@ public class NPCConv {
         VALUE_MAPPING.put("Merchant", "L2Npc");
         VALUE_MAPPING.put("Warpgate", "L2Npc");
         VALUE_MAPPING.put("Guard", "L2Guard");
+        VALUE_MAPPING.put("Monster", "L2Monster");
     }
 
     public static void main(String[] args) throws Exception {
