@@ -342,4 +342,14 @@ public class L2SkillLearn
 			return lvl;
 		}
 	}
+
+	@Override
+	public String toString() {
+		return "SkillLearn{" +
+				"skillId=" + _skillId +
+				", skillName='" + _skillName + '\'' +
+				", getLevel=" + _getLevel +
+				", skillLvl=" + _skillLvl +
+				'}';
+	}
 }
