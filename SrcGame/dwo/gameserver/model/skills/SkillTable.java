@@ -94,24 +94,6 @@ public class SkillTable
 		_enchantable.sort();
 	}
 
-    public void loadClient()
-    {
-        int count = 0;
-
-        XmlDocumentSkillClient doc = new XmlDocumentSkillClient(new File(Config.DATAPACK_ROOT, "data/stats/client/ClientSkills.xml"));
-        doc.parse();
-
-        List<L2Skill> s = doc.getSkills();
-
-        for(L2Skill skill : s)
-        {
-            _skills.put(SkillTable.getSkillHashCode(skill), skill);
-            count++;
-        }
-
-        _log.info(getClass().getSimpleName() + ": Loaded " + count + " Client Skill templates from XML files.");
-    }
-
 	public L2Skill getInfo(int hash)
 	{
 		return _skills.get(hash);

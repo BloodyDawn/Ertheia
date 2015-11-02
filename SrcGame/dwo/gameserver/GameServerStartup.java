@@ -105,7 +105,6 @@ public class GameServerStartup
 		printSection( "Skills Engine" );
 		BuffStackGroupData.getInstance();
 		EnchantSkillGroupsTable.getInstance();
-        SkillTable.getInstance().loadClient();
         SkillTable.getInstance().load( false );
 		SkillTreesData.getInstance();
 

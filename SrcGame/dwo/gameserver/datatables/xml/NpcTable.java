@@ -53,7 +53,6 @@ public class NpcTable extends XmlDocumentParser
     public void load() throws JDOMException, IOException {
         _npcs.clear();
         _drop.clear();
-        parseFile( new File( Config.DATAPACK_ROOT, "/data/stats/client/ClientNpc.xml" ) );
         parseDirectory(FilePath.NPC_STATS);
 
         try
