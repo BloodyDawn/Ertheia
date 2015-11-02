@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="NpcData.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="../../../xsd/NpcData.xsd">
 	<npc id="22400" name="Врачеватель Парме" server_name="leader_healer" title="">
 		<set name="type" value="L2Monster"/>
 		<set name="sex" value="female"/>
@@ -54,39 +53,6 @@
 			<set id="4415" level="3"/>
 			<set id="4416" level="7"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1195" max="2447"/>
-				</items>
-			</category>
-			<category id="2" chance="0.1249">
-				<items>
-					<item id="81" chance="0.1131" min="1" max="1"/>
-					<item id="5529" chance="32.1652" min="1" max="1"/>
-					<item id="151" chance="0.1131" min="1" max="1"/>
-					<item id="5546" chance="35.3304" min="1" max="1"/>
-					<item id="2500" chance="0.1131" min="1" max="1"/>
-					<item id="5545" chance="32.1651" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="6.2552">
-				<items>
-					<item id="1895" chance="80.3123" min="1" max="1"/>
-					<item id="4040" chance="5.6219" min="1" max="1"/>
-					<item id="4042" chance="4.6849" min="1" max="1"/>
-					<item id="4043" chance="9.3698" min="1" max="1"/>
-					<item id="959" chance="0.0111" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="4040" chance="3.5693" min="1" max="1"/>
-					<item id="5480" chance="0.8008" min="1" max="1"/>
-					<item id="1808" chance="0.0793" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22401" name="Врачеватель Парме" server_name="private_healer" title="">
 		<set name="type" value="L2Monster"/>
@@ -141,47 +107,6 @@
 			<set id="4415" level="3"/>
 			<set id="4416" level="7"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1195" max="2447"/>
-				</items>
-			</category>
-			<category id="2" chance="0.121">
-				<items>
-					<item id="164" chance="0.0876" min="1" max="1"/>
-					<item id="5533" chance="24.9198" min="1" max="1"/>
-					<item id="213" chance="0.0876" min="1" max="1"/>
-					<item id="5544" chance="24.8952" min="1" max="1"/>
-					<item id="7895" chance="0.0876" min="1" max="1"/>
-					<item id="8342" chance="24.9198" min="1" max="1"/>
-					<item id="7902" chance="0.0876" min="1" max="1"/>
-					<item id="8349" chance="24.9148" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="30.8227">
-				<items>
-					<item id="34992" chance="53.588" min="4" max="4"/>
-					<item id="1873" chance="10.3719" min="1" max="1"/>
-					<item id="34991" chance="3.4573" min="8" max="8"/>
-					<item id="1889" chance="1.7286" min="1" max="1"/>
-					<item id="4044" chance="0.8643" min="1" max="1"/>
-					<item id="960" chance="0.0104" min="1" max="1"/>
-					<item id="14166" chance="0.1253" min="1" max="1"/>
-					<item id="14167" chance="0.0313" min="1" max="1"/>
-					<item id="14168" chance="0.0031" min="1" max="1"/>
-					<item id="14169" chance="6.0E-4" min="1" max="1"/>
-					<item id="1344" chance="32.4121" min="10" max="30"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="5481" chance="0.8008" min="1" max="1"/>
-					<item id="3036" chance="0.0793" min="1" max="1"/>
-					<item id="5487" chance="0.8037" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22402" name="Сумеречный Столб" server_name="road_maker_object" title="">
 		<set name="type" value="L2Monster"/>
@@ -235,35 +160,6 @@
 			<set id="4614" level="9"/>
 			<set id="5417" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1148" max="2352"/>
-				</items>
-			</category>
-			<category id="2" chance="0.1164">
-				<items>
-					<item id="289" chance="0.35" min="1" max="1"/>
-					<item id="5534" chance="99.65" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="5.4036">
-				<items>
-					<item id="1895" chance="89.3358" min="1" max="1"/>
-					<item id="4040" chance="6.2535" min="1" max="1"/>
-					<item id="34990" chance="2.4524" min="10" max="10"/>
-					<item id="9630" chance="1.6457" min="1" max="1"/>
-					<item id="6901" chance="0.3126" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="4040" chance="3.4298" min="1" max="1"/>
-					<item id="1895" chance="48.9975" min="1" max="1"/>
-					<item id="5488" chance="0.7722" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22403" name="Бригадир Литейной" server_name="malignant_overseer_wiz" title="">
 		<set name="type" value="L2Monster"/>
@@ -319,46 +215,6 @@
 			<set id="5328" level="4"/>
 			<set id="5462" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="12417" max="24868"/>
-				</items>
-			</category>
-			<category id="2" chance="1.4832">
-				<items>
-					<item id="81" chance="0.1131" min="1" max="1"/>
-					<item id="5529" chance="32.1652" min="1" max="1"/>
-					<item id="151" chance="0.1131" min="1" max="1"/>
-					<item id="5546" chance="35.3304" min="1" max="1"/>
-					<item id="2500" chance="0.1131" min="1" max="1"/>
-					<item id="5545" chance="32.1651" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="49.9213">
-				<items>
-					<item id="1873" chance="13.9391" min="2" max="6"/>
-					<item id="34992" chance="9.6799" min="1" max="5"/>
-					<item id="34991" chance="34.8476" min="1" max="1"/>
-					<item id="1895" chance="7.1118" min="3" max="9"/>
-					<item id="4042" chance="2.904" min="1" max="1"/>
-					<item id="959" chance="0.0070" min="1" max="1"/>
-					<item id="14166" chance="0.8417" min="1" max="1"/>
-					<item id="14167" chance="0.2102" min="1" max="1"/>
-					<item id="14168" chance="0.021" min="1" max="1"/>
-					<item id="14169" chance="0.0042" min="1" max="1"/>
-					<item id="9551" chance="1.3939" min="1" max="1"/>
-					<item id="1345" chance="29.0396" min="40" max="120"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="6901" chance="2.1189" min="1" max="1"/>
-					<item id="6688" chance="4.5799" min="1" max="1"/>
-					<item id="6901" chance="2.1189" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22404" name="Тайный Начальник Стражи" server_name="circle_warrior_ldr" title="">
 		<set name="type" value="L2Monster"/>
@@ -414,40 +270,6 @@
 			<set id="5329" level="4"/>
 			<set id="5467" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="19126" max="44660"/>
-				</items>
-			</category>
-			<category id="2" chance="18.382">
-				<items>
-					<item id="5320" chance="1.63203" min="1" max="1"/>
-					<item id="5323" chance="1.63203" min="1" max="1"/>
-					<item id="5480" chance="56.84909" min="1" max="3"/>
-					<item id="5481" chance="39.88685" min="1" max="3"/>
-				</items>
-			</category>
-			<category id="3" chance="100.0">
-				<items>
-					<item id="9599" chance="63.50911" min="4" max="12"/>
-					<item id="34990" chance="14.00793" min="2" max="6"/>
-					<item id="4040" chance="13.24652" min="1" max="1"/>
-					<item id="1895" chance="6.51295" min="15" max="45"/>
-					<item id="9630" chance="1.84495" min="1" max="1"/>
-					<item id="6871" chance="0.29285" min="1" max="1"/>
-					<item id="9551" chance="0.29285" min="1" max="1"/>
-					<item id="960" chance="0.29285" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="4040" chance="89.49" min="1" max="5"/>
-					<item id="6689" chance="10.95" min="1" max="1"/>
-					<item id="960" chance="5.636" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22405" name="Поборник Дариона" server_name="favored_darion" title="">
 		<set name="type" value="L2Monster"/>
@@ -504,37 +326,6 @@
 			<set id="5392" level="3"/>
 			<set id="5467" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="2879" max="6722"/>
-				</items>
-			</category>
-			<category id="2" chance="0.0060">
-				<items>
-					<item id="10223" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="41.995">
-				<items>
-					<item id="9599" chance="94.58269" min="1" max="3"/>
-					<item id="36522" chance="4.95297" min="1" max="1"/>
-					<item id="6901" chance="0.17859" min="1" max="1"/>
-					<item id="960" chance="0.07144" min="1" max="1"/>
-					<item id="9551" chance="0.07144" min="1" max="1"/>
-					<item id="36874" chance="0.07144" min="1" max="1"/>
-					<item id="36932" chance="0.07144" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="24.15" min="1" max="1"/>
-					<item id="36533" chance="4.45" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22406" name="Поборник Дариона" server_name="favored_darion_1" title="">
 		<set name="type" value="L2Monster"/>
@@ -592,39 +383,6 @@
 			<set id="5392" level="3"/>
 			<set id="5467" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="5063" max="11822"/>
-				</items>
-			</category>
-			<category id="2" chance="0.03">
-				<items>
-					<item id="10216" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="35.247">
-				<items>
-					<item id="9599" chance="96.54722" min="2" max="6"/>
-					<item id="36523" chance="2.12784" min="1" max="1"/>
-					<item id="14166" chance="0.85114" min="1" max="1"/>
-					<item id="14167" chance="0.21278" min="1" max="1"/>
-					<item id="9551" chance="0.21278" min="1" max="1"/>
-					<item id="14168" chance="0.0156" min="1" max="1"/>
-					<item id="14169" chance="0.00851" min="1" max="1"/>
-					<item id="959" chance="0.0156" min="1" max="1"/>
-					<item id="36939" chance="0.00851" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="40.13" min="1" max="1"/>
-					<item id="36533" chance="7.891" min="1" max="1"/>
-					<item id="36882" chance="0.3" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22407" name="Поборник Дариона" server_name="favored_darion_2" title="">
 		<set name="type" value="L2Monster"/>
@@ -682,37 +440,6 @@
 			<set id="5392" level="3"/>
 			<set id="5467" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="8804" max="20557"/>
-				</items>
-			</category>
-			<category id="2" chance="0.03">
-				<items>
-					<item id="10219" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="76.513">
-				<items>
-					<item id="9599" chance="75.84332" min="2" max="6"/>
-					<item id="36527" chance="22.93728" min="1" max="1"/>
-					<item id="960" chance="0.39209" min="1" max="1"/>
-					<item id="6879" chance="0.39209" min="1" max="1"/>
-					<item id="9551" chance="0.39209" min="1" max="1"/>
-					<item id="36940" chance="0.03921" min="1" max="1"/>
-					<item id="36890" chance="0.00392" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="69.55" min="1" max="1"/>
-					<item id="36533" chance="13.48" min="1" max="1"/>
-					<item id="36882" chance="0.3" min="1" max="1"/>
-					<item id="36881" chance="0.075" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22408" name="Поборник Дариона" server_name="favored_darion_3" title="">
 		<set name="type" value="L2Monster"/>
@@ -770,46 +497,6 @@
 			<set id="5392" level="3"/>
 			<set id="5467" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="8078" max="18861"/>
-				</items>
-			</category>
-			<category id="2" chance="18.719">
-				<items>
-					<item id="15703" chance="0.16026" min="1" max="1"/>
-					<item id="15704" chance="0.16026" min="1" max="1"/>
-					<item id="15705" chance="0.16026" min="1" max="1"/>
-					<item id="15706" chance="0.16026" min="1" max="1"/>
-					<item id="15707" chance="0.16026" min="1" max="1"/>
-					<item id="15708" chance="0.16026" min="1" max="1"/>
-					<item id="15655" chance="16.74769" min="1" max="1"/>
-					<item id="15656" chance="16.60345" min="1" max="1"/>
-					<item id="15658" chance="16.51263" min="1" max="1"/>
-					<item id="15654" chance="16.50195" min="1" max="1"/>
-					<item id="15659" chance="16.50195" min="1" max="1"/>
-					<item id="15657" chance="16.17074" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="80.312">
-				<items>
-					<item id="9599" chance="66.54049" min="2" max="6"/>
-					<item id="36517" chance="26.8453" min="1" max="1"/>
-					<item id="36528" chance="5.86712" min="1" max="1"/>
-					<item id="9551" chance="0.37354" min="1" max="1"/>
-					<item id="6901" chance="0.37354" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="64.67" min="1" max="1"/>
-					<item id="36533" chance="12.63" min="1" max="1"/>
-					<item id="36882" chance="0.3" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22409" name="Поборник Дариона" server_name="favored_darion_4" title="">
 		<set name="type" value="L2Monster"/>
@@ -867,48 +554,6 @@
 			<set id="5392" level="3"/>
 			<set id="5467" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="18221" max="42545"/>
-				</items>
-			</category>
-			<category id="2" chance="16.391">
-				<items>
-					<item id="15694" chance="0.18303" min="1" max="1"/>
-					<item id="15695" chance="0.18303" min="1" max="1"/>
-					<item id="15696" chance="0.18303" min="1" max="1"/>
-					<item id="15709" chance="0.18303" min="1" max="1"/>
-					<item id="15710" chance="0.18303" min="1" max="1"/>
-					<item id="15647" chance="33.63431" min="1" max="1"/>
-					<item id="15693" chance="30.26051" min="1" max="3"/>
-					<item id="15692" chance="20.02928" min="1" max="3"/>
-					<item id="15645" chance="8.76091" min="2" max="6"/>
-					<item id="15646" chance="6.39985" min="2" max="6"/>
-				</items>
-			</category>
-			<category id="3" chance="93.902">
-				<items>
-					<item id="9599" chance="86.07865" min="3" max="9"/>
-					<item id="36537" chance="6.7389" min="1" max="1"/>
-					<item id="36518" chance="5.25332" min="1" max="1"/>
-					<item id="14166" chance="1.22041" min="1" max="1"/>
-					<item id="9551" chance="0.31948" min="1" max="1"/>
-					<item id="14167" chance="0.31948" min="1" max="1"/>
-					<item id="959" chance="0.03195" min="1" max="1"/>
-					<item id="14168" chance="0.03195" min="1" max="1"/>
-					<item id="14169" chance="0.00586" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="71.8" min="1" max="3"/>
-					<item id="36533" chance="27.44" min="1" max="1"/>
-					<item id="36882" chance="0.75" min="1" max="1"/>
-					<item id="36881" chance="0.3" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22410" name="Поборник Дариона" server_name="favored_darion_5" title="">
 		<set name="type" value="L2Monster"/>
@@ -966,41 +611,6 @@
 			<set id="5392" level="3"/>
 			<set id="5467" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="21406" max="49983"/>
-				</items>
-			</category>
-			<category id="2" chance="11.034">
-				<items>
-					<item id="15766" chance="2.71887" min="1" max="1"/>
-					<item id="15767" chance="2.71887" min="1" max="1"/>
-					<item id="15768" chance="0.67972" min="1" max="1"/>
-					<item id="15773" chance="42.64999" min="1" max="3"/>
-					<item id="15772" chance="28.62969" min="4" max="12"/>
-					<item id="15774" chance="22.60286" min="2" max="6"/>
-				</items>
-			</category>
-			<category id="3" chance="95.196">
-				<items>
-					<item id="9599" chance="76.76793" min="4" max="12"/>
-					<item id="36522" chance="19.34955" min="1" max="1"/>
-					<item id="36538" chance="2.46439" min="1" max="1"/>
-					<item id="6863" chance="0.78785" min="1" max="1"/>
-					<item id="9551" chance="0.31514" min="1" max="1"/>
-					<item id="960" chance="0.31514" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="89.16" min="1" max="3"/>
-					<item id="36533" chance="32.19" min="1" max="1"/>
-					<item id="36882" chance="0.75" min="1" max="1"/>
-					<item id="36881" chance="0.3" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22411" name="Прислужник Белефа" server_name="beres_confidant" title="">
 		<set name="type" value="L2Monster"/>
@@ -1058,41 +668,6 @@
 			<set id="5467" level="1"/>
 			<set id="5597" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="12419" max="28998"/>
-				</items>
-			</category>
-			<category id="2" chance="16.418">
-				<items>
-					<item id="5313" chance="1.82726" min="1" max="1"/>
-					<item id="5314" chance="1.82726" min="1" max="1"/>
-					<item id="5318" chance="1.82726" min="1" max="1"/>
-					<item id="5319" chance="1.82726" min="1" max="1"/>
-					<item id="5515" chance="36.03362" min="2" max="6"/>
-					<item id="5503" chance="28.85248" min="2" max="6"/>
-					<item id="6698" chance="12.84566" min="3" max="9"/>
-					<item id="5514" chance="10.39103" min="7" max="21"/>
-					<item id="5502" chance="4.56816" min="12" max="36"/>
-				</items>
-			</category>
-			<category id="3" chance="57.73">
-				<items>
-					<item id="9599" chance="97.4017" min="3" max="9"/>
-					<item id="6901" chance="1.29915" min="1" max="1"/>
-					<item id="9551" chance="1.29915" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="50.42" min="1" max="3"/>
-					<item id="36533" chance="18.63" min="1" max="1"/>
-					<item id="36882" chance="0.3" min="1" max="1"/>
-					<item id="36881" chance="0.075" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22412" name="Боец Белефа" server_name="gladiator_tower_c" title="">
 		<set name="type" value="L2Monster"/>
@@ -1155,41 +730,6 @@
 			<set id="5467" level="1"/>
 			<set id="5597" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="37188" max="86834"/>
-				</items>
-			</category>
-			<category id="2" chance="18.518">
-				<items>
-					<item id="164" chance="0.162" min="1" max="1"/>
-					<item id="213" chance="0.162" min="1" max="1"/>
-					<item id="7895" chance="0.162" min="1" max="1"/>
-					<item id="7902" chance="0.162" min="1" max="1"/>
-					<item id="8342" chance="36.98024" min="1" max="1"/>
-					<item id="8349" chance="36.36462" min="1" max="1"/>
-					<item id="6699" chance="12.19354" min="12" max="36"/>
-					<item id="5533" chance="7.68982" min="2" max="6"/>
-					<item id="5544" chance="6.12377" min="3" max="9"/>
-				</items>
-			</category>
-			<category id="3" chance="78.383">
-				<items>
-					<item id="9599" chance="97.2022" min="6" max="20"/>
-					<item id="9551" chance="2.41506" min="1" max="1"/>
-					<item id="959" chance="0.38274" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="74.02" min="1" max="7"/>
-					<item id="36533" chance="59.11" min="1" max="1"/>
-					<item id="36882" chance="1.176" min="1" max="1"/>
-					<item id="36881" chance="0.3" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22413" name="Приближенный Белефа" server_name="slayer_tower_c" title="">
 		<set name="type" value="L2Monster"/>
@@ -1247,50 +787,6 @@
 			<set id="5467" level="1"/>
 			<set id="5597" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="44568" max="89257"/>
-				</items>
-			</category>
-			<category id="2" chance="43.893">
-				<items>
-					<item id="6326" chance="0.1424" min="1" max="1"/>
-					<item id="6344" chance="20.8518" min="1" max="1"/>
-					<item id="6327" chance="0.1899" min="1" max="1"/>
-					<item id="6342" chance="32.2213" min="1" max="1"/>
-					<item id="6328" chance="0.2848" min="1" max="1"/>
-					<item id="6346" chance="46.3098" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="100.0">
-				<items>
-					<item id="1879" chance="2.17947" min="3" max="9"/>
-					<item id="34990" chance="7.49495" min="29" max="29"/>
-					<item id="9628" chance="0.61538" min="1" max="1"/>
-					<item id="9630" chance="0.41295" min="1" max="1"/>
-					<item id="9629" chance="0.34114" min="1" max="1"/>
-					<item id="960" chance="0.03138" min="1" max="1"/>
-					<item id="14166" chance="0.37904" min="1" max="1"/>
-					<item id="14167" chance="0.09465" min="1" max="1"/>
-					<item id="14168" chance="0.00947" min="1" max="1"/>
-					<item id="14169" chance="0.00189" min="1" max="1"/>
-					<item id="9551" chance="0.62771" min="1" max="1"/>
-					<item id="9599" chance="21.72274" min="2" max="6"/>
-					<item id="34991" chance="29.48558" min="1" max="33"/>
-					<item id="6700" chance="30.00447" min="1" max="1"/>
-					<item id="6901" chance="2.50627" min="1" max="1"/>
-					<item id="1885" chance="4.09292" min="2" max="6"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="1876" chance="0.75" min="1" max="57"/>
-					<item id="6700" chance="0.75" min="1" max="3"/>
-					<item id="6901" chance="0.075" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22414" name="Адепт Белефа" server_name="confidant_privates_war" title="">
 		<set name="type" value="L2Monster"/>
@@ -1347,36 +843,6 @@
 			<set id="5467" level="1"/>
 			<set id="5597" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="34666" max="69427"/>
-				</items>
-			</category>
-			<category id="2" chance="4.0097">
-				<items>
-					<item id="305" chance="0.3504" min="1" max="1"/>
-					<item id="5541" chance="99.6496" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="43.5783">
-				<items>
-					<item id="1895" chance="53.072" min="3" max="9"/>
-					<item id="4040" chance="22.2902" min="1" max="1"/>
-					<item id="34990" chance="8.7413" min="10" max="10"/>
-					<item id="9630" chance="5.8659" min="1" max="1"/>
-					<item id="6901" chance="1.1145" min="1" max="1"/>
-					<item id="9551" chance="8.9161" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="6701" chance="31.4955" min="1" max="1"/>
-					<item id="6901" chance="5.9156" min="1" max="1"/>
-					<item id="6702" chance="40.5431" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22415" name="Приверженец Белефа" server_name="confidant_privates_wiz" title="">
 		<set name="type" value="L2Monster"/>
@@ -1435,37 +901,6 @@
 			<set id="5467" level="1"/>
 			<set id="5597" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="40967" max="82047"/>
-				</items>
-			</category>
-			<category id="2" chance="4.7412">
-				<items>
-					<item id="236" chance="0.3502" min="1" max="1"/>
-					<item id="5537" chance="99.6498" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="36.4577">
-				<items>
-					<item id="1879" chance="37.4842" min="3" max="9"/>
-					<item id="34990" chance="44.5641" min="29" max="31"/>
-					<item id="9628" chance="10.5838" min="1" max="1"/>
-					<item id="9630" chance="7.1023" min="1" max="1"/>
-					<item id="9629" chance="5.8671" min="1" max="1"/>
-					<item id="959" chance="0.054" min="1" max="1"/>
-					<item id="9551" chance="10.7954" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="960" chance="2.7964" min="1" max="1"/>
-					<item id="34990" chance="83.2251" min="1" max="6"/>
-					<item id="13099" chance="48.7477" min="1" max="3"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22416" name="Начальник Стражи Кечи" server_name="fireroad_partyleader04" title="">
 		<set name="type" value="L2Monster"/>
@@ -1523,39 +958,6 @@
 		<minions>
 			<set amount_max="1" amount_min="1" id="22417"/>
 		</minions>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="33245" max="68095"/>
-				</items>
-			</category>
-			<category id="2" chance="5.526">
-				<items>
-					<item id="5320" chance="0.3352" min="1" max="1"/>
-					<item id="5480" chance="49.6648" min="1" max="1"/>
-					<item id="5323" chance="0.3352" min="1" max="1"/>
-					<item id="5481" chance="49.6648" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="42.3415">
-				<items>
-					<item id="1873" chance="10.3165" min="16" max="48"/>
-					<item id="34992" chance="6.1135" min="13" max="40"/>
-					<item id="34991" chance="23.5807" min="3" max="9"/>
-					<item id="1895" chance="39.3011" min="3" max="9"/>
-					<item id="4042" chance="13.7554" min="1" max="1"/>
-					<item id="960" chance="0.3301" min="1" max="1"/>
-					<item id="9547" chance="6.6027" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="5480" chance="22.2823" min="1" max="1"/>
-					<item id="1808" chance="2.207" min="1" max="1"/>
-					<item id="5481" chance="22.2823" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22417" name="Стража Кечи" server_name="fireroad_privates04" title="">
 		<set name="type" value="L2Monster"/>
@@ -1614,43 +1016,6 @@
 			<set id="4593" level="1"/>
 			<set id="5462" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="5334" max="10925"/>
-				</items>
-			</category>
-			<category id="2" chance="0.8895">
-				<items>
-					<item id="5326" chance="0.3341" min="1" max="1"/>
-					<item id="5487" chance="49.6659" min="1" max="1"/>
-					<item id="5329" chance="0.3341" min="1" max="1"/>
-					<item id="5488" chance="49.6659" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="10.1809">
-				<items>
-					<item id="1879" chance="58.4092" min="1" max="1"/>
-					<item id="34990" chance="33.477" min="29" max="29"/>
-					<item id="9628" chance="2.7487" min="1" max="1"/>
-					<item id="9630" chance="1.8445" min="1" max="1"/>
-					<item id="9629" chance="1.5237" min="1" max="1"/>
-					<item id="6901" chance="0.3505" min="1" max="1"/>
-					<item id="10483" chance="2.4337" min="1" max="1"/>
-					<item id="10484" chance="0.6084" min="1" max="1"/>
-					<item id="10485" chance="0.0608" min="1" max="1"/>
-					<item id="10486" chance="0.0122" min="1" max="1"/>
-					<item id="9547" chance="2.8037" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="3036" chance="0.3541" min="1" max="1"/>
-					<item id="5487" chance="3.5877" min="1" max="1"/>
-					<item id="34991" chance="6.928" min="23" max="23"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22418" name="Горящий Ифрит" server_name="fireroad_solotype01" title="">
 		<set name="type" value="L2Monster"/>
@@ -1705,43 +1070,6 @@
 			<set id="4460" level="2"/>
 			<set id="5462" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="3655" max="7487"/>
-				</items>
-			</category>
-			<category id="2" chance="2.2909">
-				<items>
-					<item id="5313" chance="0.2166" min="1" max="1"/>
-					<item id="5514" chance="24.7834" min="1" max="1"/>
-					<item id="5314" chance="0.2166" min="1" max="1"/>
-					<item id="5502" chance="24.7834" min="1" max="1"/>
-					<item id="5318" chance="0.2166" min="1" max="1"/>
-					<item id="5515" chance="24.7834" min="1" max="1"/>
-					<item id="5319" chance="0.2166" min="1" max="1"/>
-					<item id="5503" chance="24.7834" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="36.1675">
-				<items>
-					<item id="34992" chance="42.4912" min="4" max="4"/>
-					<item id="1873" chance="42.4911" min="1" max="1"/>
-					<item id="34991" chance="14.1637" min="8" max="8"/>
-					<item id="1889" chance="7.0819" min="1" max="1"/>
-					<item id="4044" chance="3.5409" min="1" max="1"/>
-					<item id="959" chance="0.0042" min="1" max="1"/>
-					<item id="9547" chance="0.8498" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="34992" chance="36.3965" min="3" max="3"/>
-					<item id="5488" chance="2.4584" min="1" max="1"/>
-					<item id="3957" chance="0.2426" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22419" name="Огненный Ифрит" server_name="fireroad_solotype02" title="">
 		<set name="type" value="L2Monster"/>
@@ -1797,44 +1125,6 @@
 			<set id="4460" level="2"/>
 			<set id="5462" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="3428" max="7022"/>
-				</items>
-			</category>
-			<category id="2" chance="0.3585">
-				<items>
-					<item id="81" chance="0.1131" min="1" max="1"/>
-					<item id="5529" chance="32.1652" min="1" max="1"/>
-					<item id="151" chance="0.1131" min="1" max="1"/>
-					<item id="5546" chance="35.3304" min="1" max="1"/>
-					<item id="2500" chance="0.1131" min="1" max="1"/>
-					<item id="5545" chance="32.1651" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="8.4788">
-				<items>
-					<item id="1895" chance="85.0063" min="1" max="1"/>
-					<item id="4040" chance="5.9504" min="1" max="1"/>
-					<item id="34990" chance="2.3335" min="10" max="10"/>
-					<item id="9630" chance="1.5659" min="1" max="1"/>
-					<item id="960" chance="0.119" min="1" max="1"/>
-					<item id="10483" chance="2.0661" min="1" max="1"/>
-					<item id="10484" chance="0.5165" min="1" max="1"/>
-					<item id="10485" chance="0.0517" min="1" max="1"/>
-					<item id="10486" chance="0.0103" min="1" max="1"/>
-					<item id="9547" chance="2.3803" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="5495" chance="7.7761" min="1" max="1"/>
-					<item id="5157" chance="0.2276" min="1" max="1"/>
-					<item id="5502" chance="8.6487" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22420" name="Серный Ифрит" server_name="fireroad_solotype03" title="">
 		<set name="type" value="L2Monster"/>
@@ -1890,44 +1180,6 @@
 			<set id="4460" level="2"/>
 			<set id="5462" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="3748" max="7678"/>
-				</items>
-			</category>
-			<category id="2" chance="0.3795">
-				<items>
-					<item id="164" chance="0.0876" min="1" max="1"/>
-					<item id="5533" chance="24.9198" min="1" max="1"/>
-					<item id="213" chance="0.0876" min="1" max="1"/>
-					<item id="5544" chance="24.8952" min="1" max="1"/>
-					<item id="7895" chance="0.0876" min="1" max="1"/>
-					<item id="8342" chance="24.9198" min="1" max="1"/>
-					<item id="7902" chance="0.0876" min="1" max="1"/>
-					<item id="8349" chance="24.9148" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="48.6596">
-				<items>
-					<item id="1873" chance="28.341" min="1" max="1"/>
-					<item id="34992" chance="23.6175" min="1" max="1"/>
-					<item id="34991" chance="14.1705" min="1" max="1"/>
-					<item id="1895" chance="20.2436" min="1" max="1"/>
-					<item id="4042" chance="1.1809" min="1" max="1"/>
-					<item id="6901" chance="0.0709" min="1" max="1"/>
-					<item id="9547" chance="0.5668" min="1" max="1"/>
-					<item id="1345" chance="11.8088" min="40" max="120"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="1895" chance="79.9855" min="1" max="3"/>
-					<item id="4042" chance="9.3316" min="1" max="1"/>
-					<item id="5503" chance="9.4561" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22422" name="Страж Файлана" server_name="circle_pylonguard" title="">
 		<set name="type" value="L2Monster"/>
@@ -1983,49 +1235,6 @@
 			<set id="5328" level="4"/>
 			<set id="5467" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="2307" max="5387"/>
-				</items>
-			</category>
-			<category id="2" chance="4.593">
-				<items>
-					<item id="5320" chance="0.65317" min="1" max="1"/>
-					<item id="5323" chance="0.65317" min="1" max="1"/>
-					<item id="5480" chance="46.17897" min="1" max="1"/>
-					<item id="5481" chance="45.98302" min="1" max="1"/>
-					<item id="6689" chance="6.53168" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="63.101">
-				<items>
-					<item id="9599" chance="95.73571" min="1" max="1"/>
-					<item id="36517" chance="2.98253" min="1" max="1"/>
-					<item id="36557" chance="0.47543" min="1" max="1"/>
-					<item id="36528" chance="0.47543" min="1" max="1"/>
-					<item id="36538" chance="0.11886" min="1" max="1"/>
-					<item id="9551" chance="0.04754" min="1" max="1"/>
-					<item id="36563" chance="0.04754" min="1" max="1"/>
-					<item id="36548" chance="0.04754" min="1" max="1"/>
-					<item id="960" chance="0.04754" min="1" max="1"/>
-					<item id="959" chance="0.00475" min="1" max="1"/>
-					<item id="36891" chance="0.00475" min="1" max="1"/>
-					<item id="36916" chance="0.00475" min="1" max="1"/>
-					<item id="36940" chance="0.00475" min="1" max="1"/>
-					<item id="36865" chance="0.00143" min="1" max="1"/>
-					<item id="36890" chance="0.00143" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="18.88" min="1" max="1"/>
-					<item id="36533" chance="3.539" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22423" name="Смотритель Грехов" server_name="sinmaster" title="">
 		<set name="type" value="L2Monster"/>
@@ -2086,36 +1295,6 @@
 		<minions>
 			<set amount_max="1" amount_min="1" id="22430"/>
 		</minions>
-		<drop_list>
-			<category id="1" chance="100.0">
-				<items>
-					<item id="57" chance="50.0" min="7017" max="16384"/>
-				</items>
-			</category>
-			<category id="2" chance="0.06">
-				<items>
-					<item id="10223" chance="50.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="100.0">
-				<items>
-					<item id="9599" chance="45.51105" min="2" max="6"/>
-					<item id="36542" chance="2.75552" min="1" max="1"/>
-					<item id="36523" chance="1.11188" min="1" max="1"/>
-					<item id="960" chance="0.29597" min="1" max="1"/>
-					<item id="9551" chance="0.29597" min="1" max="1"/>
-					<item id="959" chance="0.0296" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="56.5" min="1" max="1"/>
-					<item id="36533" chance="10.67" min="1" max="1"/>
-					<item id="36882" chance="0.3" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22424" name="Раб Жадности" server_name="sinslave_greed" title="">
 		<set name="type" value="L2Monster"/>
@@ -2170,36 +1349,6 @@
 			<set id="5467" level="1"/>
 			<set id="5519" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="2083" max="4865"/>
-				</items>
-			</category>
-			<category id="2" chance="0.0060">
-				<items>
-					<item id="10215" chance="50.0" min="1" max="1"/>
-					<item id="10217" chance="50.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="62.621">
-				<items>
-					<item id="9599" chance="89.65044" min="1" max="1"/>
-					<item id="36527" chance="10.06212" min="1" max="1"/>
-					<item id="6901" chance="0.11977" min="1" max="1"/>
-					<item id="9551" chance="0.11977" min="1" max="1"/>
-					<item id="8698" chance="0.04791" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="16.41" min="1" max="1"/>
-					<item id="36533" chance="3.183" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22425" name="Раб Похоти" server_name="sinslave_lust" title="">
 		<set name="type" value="L2Monster"/>
@@ -2254,40 +1403,6 @@
 			<set id="5467" level="1"/>
 			<set id="5520" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="2083" max="4865"/>
-				</items>
-			</category>
-			<category id="2" chance="0.0030">
-				<items>
-					<item id="10218" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="57.24">
-				<items>
-					<item id="9599" chance="97.99109" min="1" max="1"/>
-					<item id="36528" chance="1.31027" min="1" max="1"/>
-					<item id="14166" chance="0.52411" min="1" max="1"/>
-					<item id="960" chance="0.05241" min="1" max="1"/>
-					<item id="9551" chance="0.05241" min="1" max="1"/>
-					<item id="14167" chance="0.05241" min="1" max="1"/>
-					<item id="6885" chance="0.00524" min="1" max="1"/>
-					<item id="959" chance="0.00524" min="1" max="1"/>
-					<item id="14168" chance="0.00524" min="1" max="1"/>
-					<item id="14169" chance="0.00157" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="16.43" min="1" max="1"/>
-					<item id="36533" chance="3.318" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22426" name="Раб Гнева" server_name="sinslave_fury" title="">
 		<set name="type" value="L2Monster"/>
@@ -2341,42 +1456,6 @@
 			<set id="5467" level="1"/>
 			<set id="5521" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="2083" max="4865"/>
-				</items>
-			</category>
-			<category id="2" chance="7.539">
-				<items>
-					<item id="10220" chance="0.03979" min="1" max="1"/>
-					<item id="15772" chance="48.94548" min="1" max="1"/>
-					<item id="15773" chance="26.95318" min="1" max="1"/>
-					<item id="15774" chance="24.06155" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="58.199">
-				<items>
-					<item id="9599" chance="98.02507" min="1" max="1"/>
-					<item id="36537" chance="1.28867" min="1" max="1"/>
-					<item id="14166" chance="0.51547" min="1" max="1"/>
-					<item id="9551" chance="0.05155" min="1" max="1"/>
-					<item id="960" chance="0.05155" min="1" max="1"/>
-					<item id="14167" chance="0.05155" min="1" max="1"/>
-					<item id="14168" chance="0.00515" min="1" max="1"/>
-					<item id="8704" chance="0.00945" min="1" max="1"/>
-					<item id="14169" chance="0.00155" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="16.04" min="1" max="1"/>
-					<item id="36533" chance="3.198" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22427" name="Раб Лени" server_name="sinslave_sloth" title="">
 		<set name="type" value="L2Monster"/>
@@ -2431,42 +1510,6 @@
 			<set id="5467" level="1"/>
 			<set id="5522" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="2083" max="4865"/>
-				</items>
-			</category>
-			<category id="2" chance="0.0030">
-				<items>
-					<item id="10221" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="57.634">
-				<items>
-					<item id="9599" chance="98.90013" min="1" max="1"/>
-					<item id="36538" chance="0.52053" min="1" max="1"/>
-					<item id="36543" chance="0.13013" min="1" max="1"/>
-					<item id="14166" chance="0.13013" min="1" max="1"/>
-					<item id="14167" chance="0.05205" min="1" max="1"/>
-					<item id="9551" chance="0.05205" min="1" max="1"/>
-					<item id="15812" chance="0.05205" min="1" max="1"/>
-					<item id="15813" chance="0.05205" min="1" max="1"/>
-					<item id="15814" chance="0.05205" min="1" max="1"/>
-					<item id="6901" chance="0.05205" min="1" max="1"/>
-					<item id="14168" chance="0.00521" min="1" max="1"/>
-					<item id="14169" chance="0.00156" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="15.99" min="1" max="1"/>
-					<item id="36533" chance="3.278" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22428" name="Раб Зависти" server_name="sinslave_jealousy" title="">
 		<set name="type" value="L2Monster"/>
@@ -2521,43 +1564,6 @@
 			<set id="5467" level="1"/>
 			<set id="5523" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="2083" max="4865"/>
-				</items>
-			</category>
-			<category id="2" chance="4.734">
-				<items>
-					<item id="15766" chance="0.63365" min="1" max="1"/>
-					<item id="15767" chance="0.63365" min="1" max="1"/>
-					<item id="15768" chance="0.11617" min="1" max="1"/>
-					<item id="15772" chance="45.62256" min="1" max="1"/>
-					<item id="15773" chance="24.28979" min="1" max="1"/>
-					<item id="15774" chance="22.36773" min="1" max="1"/>
-					<item id="15649" chance="6.33647" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="56.568">
-				<items>
-					<item id="9599" chance="97.89987" min="1" max="1"/>
-					<item id="36542" chance="1.32584" min="1" max="1"/>
-					<item id="36547" chance="0.53034" min="1" max="1"/>
-					<item id="6859" chance="0.13258" min="1" max="1"/>
-					<item id="9551" chance="0.05303" min="1" max="1"/>
-					<item id="15779" chance="0.05303" min="1" max="1"/>
-					<item id="959" chance="0.0053" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="17.52" min="1" max="1"/>
-					<item id="36533" chance="3.218" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22429" name="Раб Гордыни" server_name="sinslave_conceit" title="">
 		<set name="type" value="L2Monster"/>
@@ -2612,43 +1618,6 @@
 			<set id="5467" level="1"/>
 			<set id="5524" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="2083" max="4865"/>
-				</items>
-			</category>
-			<category id="2" chance="4.714">
-				<items>
-					<item id="15703" chance="0.11666" min="1" max="1"/>
-					<item id="15704" chance="0.11666" min="1" max="1"/>
-					<item id="15705" chance="0.11666" min="1" max="1"/>
-					<item id="15656" chance="34.38329" min="1" max="1"/>
-					<item id="15654" chance="32.81366" min="1" max="1"/>
-					<item id="15655" chance="32.45307" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="56.771">
-				<items>
-					<item id="9599" chance="99.29278" min="1" max="1"/>
-					<item id="36543" chance="0.52843" min="1" max="1"/>
-					<item id="9551" chance="0.05284" min="1" max="1"/>
-					<item id="960" chance="0.05284" min="1" max="1"/>
-					<item id="36548" chance="0.05284" min="1" max="1"/>
-					<item id="8710" chance="0.00969" min="1" max="1"/>
-					<item id="959" chance="0.00528" min="1" max="1"/>
-					<item id="36891" chance="0.00528" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="16.16" min="1" max="1"/>
-					<item id="36533" chance="3.184" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22430" name="Раб Чревоугодия" server_name="sinslave_gluttony" title="">
 		<set name="type" value="L2Monster"/>
@@ -2703,40 +1672,6 @@
 			<set id="5467" level="1"/>
 			<set id="5525" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="2083" max="4865"/>
-				</items>
-			</category>
-			<category id="2" chance="9.85">
-				<items>
-					<item id="15694" chance="0.05584" min="1" max="1"/>
-					<item id="15695" chance="0.05584" min="1" max="1"/>
-					<item id="6699" chance="47.52284" min="1" max="1"/>
-					<item id="6698" chance="31.94924" min="1" max="1"/>
-					<item id="15645" chance="10.4467" min="1" max="1"/>
-					<item id="15646" chance="9.96954" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="56.985">
-				<items>
-					<item id="9599" chance="98.28902" min="1" max="1"/>
-					<item id="6869" chance="0.52645" min="1" max="1"/>
-					<item id="36547" chance="0.52645" min="1" max="1"/>
-					<item id="36552" chance="0.52645" min="1" max="1"/>
-					<item id="6901" chance="0.13161" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="16.14" min="1" max="1"/>
-					<item id="36533" chance="3.317" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22431" name="Смотритель Грехов" server_name="sinmaster_1" title="">
 		<set name="type" value="L2Monster"/>
@@ -2800,39 +1735,6 @@
 		<minions>
 			<set amount_max="1" amount_min="1" id="22438"/>
 		</minions>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="12031" max="28091"/>
-				</items>
-			</category>
-			<category id="2" chance="11.076">
-				<items>
-					<item id="15698" chance="0.27086" min="1" max="1"/>
-					<item id="15649" chance="59.6515" min="1" max="1"/>
-					<item id="6700" chance="40.07765" min="3" max="9"/>
-				</items>
-			</category>
-			<category id="3" chance="55.005">
-				<items>
-					<item id="9599" chance="97.62749" min="3" max="9"/>
-					<item id="36548" chance="0.5454" min="1" max="1"/>
-					<item id="9551" chance="0.5454" min="1" max="1"/>
-					<item id="6901" chance="0.5454" min="1" max="1"/>
-					<item id="36553" chance="0.5454" min="1" max="1"/>
-					<item id="8708" chance="0.13635" min="1" max="1"/>
-					<item id="959" chance="0.05454" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="47.29" min="1" max="3"/>
-					<item id="36533" chance="18.38" min="1" max="1"/>
-					<item id="36882" chance="0.3" min="1" max="1"/>
-					<item id="36881" chance="0.075" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22432" name="Раб Жадности" server_name="sinslave_greed_1" title="">
 		<set name="type" value="L2Monster"/>
@@ -2886,43 +1788,6 @@
 			<set id="5467" level="1"/>
 			<set id="5519" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1811" max="4229"/>
-				</items>
-			</category>
-			<category id="2" chance="3.238">
-				<items>
-					<item id="15701" chance="0.16983" min="1" max="1"/>
-					<item id="6701" chance="51.01127" min="1" max="1"/>
-					<item id="15652" chance="48.8189" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="48.4">
-				<items>
-					<item id="9599" chance="98.86384" min="1" max="1"/>
-					<item id="36557" chance="0.61984" min="1" max="1"/>
-					<item id="14166" chance="0.15496" min="1" max="1"/>
-					<item id="36552" chance="0.15496" min="1" max="1"/>
-					<item id="14167" chance="0.06198" min="1" max="1"/>
-					<item id="9551" chance="0.06198" min="1" max="1"/>
-					<item id="960" chance="0.06198" min="1" max="1"/>
-					<item id="36857" chance="0.0062" min="1" max="1"/>
-					<item id="14168" chance="0.0062" min="1" max="1"/>
-					<item id="36892" chance="0.0062" min="1" max="1"/>
-					<item id="14169" chance="0.00186" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="15.32" min="1" max="1"/>
-					<item id="36533" chance="2.767" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22433" name="Раб Похоти" server_name="sinslave_lust_1" title="">
 		<set name="type" value="L2Monster"/>
@@ -2976,41 +1841,6 @@
 			<set id="5467" level="1"/>
 			<set id="5520" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1811" max="4229"/>
-				</items>
-			</category>
-			<category id="2" chance="4.52">
-				<items>
-					<item id="15766" chance="0.66364" min="1" max="1"/>
-					<item id="15767" chance="0.66364" min="1" max="1"/>
-					<item id="15768" chance="0.12167" min="1" max="1"/>
-					<item id="15772" chance="48.42385" min="1" max="1"/>
-					<item id="15773" chance="26.78907" min="1" max="1"/>
-					<item id="15774" chance="23.33813" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="47.835">
-				<items>
-					<item id="9599" chance="99.02791" min="1" max="1"/>
-					<item id="36558" chance="0.62716" min="1" max="1"/>
-					<item id="6867" chance="0.15679" min="1" max="1"/>
-					<item id="9551" chance="0.06272" min="1" max="1"/>
-					<item id="6901" chance="0.06272" min="1" max="1"/>
-					<item id="36553" chance="0.06272" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="13.94" min="1" max="1"/>
-					<item id="36533" chance="2.888" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22434" name="Раб Гнева" server_name="sinslave_fury_1" title="">
 		<set name="type" value="L2Monster"/>
@@ -3063,43 +1893,6 @@
 			<set id="5467" level="1"/>
 			<set id="5521" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1811" max="4229"/>
-				</items>
-			</category>
-			<category id="2" chance="4.509">
-				<items>
-					<item id="15706" chance="0.06653" min="1" max="1"/>
-					<item id="15707" chance="0.06653" min="1" max="1"/>
-					<item id="15708" chance="0.06653" min="1" max="1"/>
-					<item id="15659" chance="16.6334" min="1" max="1"/>
-					<item id="15658" chance="16.6334" min="1" max="1"/>
-					<item id="15657" chance="16.6334" min="1" max="1"/>
-					<item id="15656" chance="16.6334" min="1" max="1"/>
-					<item id="15655" chance="16.6334" min="1" max="1"/>
-					<item id="15654" chance="16.6334" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="50.593">
-				<items>
-					<item id="9599" chance="97.85939" min="1" max="1"/>
-					<item id="36557" chance="1.48242" min="1" max="1"/>
-					<item id="36562" chance="0.59297" min="1" max="1"/>
-					<item id="8694" chance="0.0593" min="1" max="1"/>
-					<item id="959" chance="0.00593" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="14.25" min="1" max="1"/>
-					<item id="36533" chance="2.89" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22435" name="Раб Лени" server_name="sinslave_sloth_1" title="">
 		<set name="type" value="L2Monster"/>
@@ -3153,38 +1946,6 @@
 			<set id="5467" level="1"/>
 			<set id="5522" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1811" max="4229"/>
-				</items>
-			</category>
-			<category id="2" chance="1.465">
-				<items>
-					<item id="15699" chance="0.37555" min="1" max="1"/>
-					<item id="15650" chance="99.62445" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="48.581">
-				<items>
-					<item id="9599" chance="99.58728" min="1" max="1"/>
-					<item id="36558" chance="0.15438" min="1" max="1"/>
-					<item id="960" chance="0.06175" min="1" max="1"/>
-					<item id="9551" chance="0.06175" min="1" max="1"/>
-					<item id="15780" chance="0.06175" min="1" max="1"/>
-					<item id="36563" chance="0.06175" min="1" max="1"/>
-					<item id="8696" chance="0.01132" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="13.88" min="1" max="1"/>
-					<item id="36533" chance="2.85" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22436" name="Раб Зависти" server_name="sinslave_jealousy_1" title="">
 		<set name="type" value="L2Monster"/>
@@ -3238,39 +1999,6 @@
 			<set id="5467" level="1"/>
 			<set id="5523" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1811" max="4229"/>
-				</items>
-			</category>
-			<category id="2" chance="1.158">
-				<items>
-					<item id="15697" chance="0.47475" min="1" max="1"/>
-					<item id="15648" chance="99.52525" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="48.684">
-				<items>
-					<item id="9599" chance="99.08718" min="1" max="1"/>
-					<item id="36562" chance="0.61621" min="1" max="1"/>
-					<item id="6875" chance="0.15405" min="1" max="1"/>
-					<item id="9551" chance="0.06162" min="1" max="1"/>
-					<item id="6901" chance="0.06162" min="1" max="1"/>
-					<item id="15778" chance="0.0113" min="1" max="1"/>
-					<item id="36857" chance="0.00616" min="1" max="1"/>
-					<item id="36903" chance="0.00185" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="14.43" min="1" max="1"/>
-					<item id="36533" chance="2.891" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22437" name="Раб Гордыни" server_name="sinslave_conceit_1" title="">
 		<set name="type" value="L2Monster"/>
@@ -3325,37 +2053,6 @@
 			<set id="5467" level="1"/>
 			<set id="5524" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1811" max="4229"/>
-				</items>
-			</category>
-			<category id="2" chance="1.884">
-				<items>
-					<item id="15700" chance="0.29185" min="1" max="1"/>
-					<item id="15651" chance="99.70815" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="49.383">
-				<items>
-					<item id="9599" chance="99.75093" min="1" max="1"/>
-					<item id="9551" chance="0.06075" min="1" max="1"/>
-					<item id="15781" chance="0.06075" min="1" max="1"/>
-					<item id="36563" chance="0.06075" min="1" max="1"/>
-					<item id="36858" chance="0.06075" min="1" max="1"/>
-					<item id="959" chance="0.00607" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="14.98" min="1" max="1"/>
-					<item id="36533" chance="2.782" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22438" name="Раб Чревоугодия" server_name="sinslave_gluttony_1" title="">
 		<set name="type" value="L2Monster"/>
@@ -3410,37 +2107,6 @@
 			<set id="5467" level="1"/>
 			<set id="5525" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1811" max="4229"/>
-				</items>
-			</category>
-			<category id="2" chance="2.376">
-				<items>
-					<item id="15702" chance="1.26263" min="1" max="1"/>
-					<item id="15653" chance="98.73737" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="47.893">
-				<items>
-					<item id="9599" chance="99.74318" min="1" max="1"/>
-					<item id="960" chance="0.06264" min="1" max="1"/>
-					<item id="8706" chance="0.06264" min="1" max="1"/>
-					<item id="9551" chance="0.06264" min="1" max="1"/>
-					<item id="15783" chance="0.06264" min="1" max="1"/>
-					<item id="959" chance="0.00626" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="14.23" min="1" max="1"/>
-					<item id="36533" chance="2.825" min="1" max="1"/>
-					<item id="36882" chance="0.075" min="1" max="1"/>
-					<item id="36881" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22439" name="Ассасин Белефа" server_name="beres_assassin_str" title="">
 		<set name="type" value="L2Monster"/>
@@ -3501,40 +2167,6 @@
 			<set id="5549" level="1"/>
 			<set id="5597" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="19971" max="46631"/>
-				</items>
-			</category>
-			<category id="2" chance="14.181">
-				<items>
-					<item id="289" chance="0.52888" min="1" max="1"/>
-					<item id="5534" chance="79.04943" min="1" max="1"/>
-					<item id="6709" chance="20.42169" min="12" max="36"/>
-				</items>
-			</category>
-			<category id="3" chance="88.782">
-				<items>
-					<item id="9599" chance="96.97857" min="4" max="8"/>
-					<item id="14166" chance="1.62983" min="1" max="1"/>
-					<item id="14167" chance="0.3379" min="1" max="1"/>
-					<item id="9551" chance="0.3379" min="1" max="1"/>
-					<item id="6901" chance="0.3379" min="1" max="1"/>
-					<item id="960" chance="0.3379" min="1" max="1"/>
-					<item id="14168" chance="0.03379" min="1" max="1"/>
-					<item id="14169" chance="0.00619" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="82.69" min="1" max="3"/>
-					<item id="36533" chance="30.28" min="1" max="1"/>
-					<item id="36882" chance="0.75" min="1" max="1"/>
-					<item id="36881" chance="0.3" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22440" name="Ассасин Белефа" server_name="beres_assassin_run" title="">
 		<set name="type" value="L2Monster"/>
@@ -3595,41 +2227,6 @@
 			<set id="5549" level="1"/>
 			<set id="5597" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="20552" max="47988"/>
-				</items>
-			</category>
-			<category id="2" chance="17.876">
-				<items>
-					<item id="164" chance="0.16782" min="1" max="1"/>
-					<item id="213" chance="0.16782" min="1" max="1"/>
-					<item id="7895" chance="0.16782" min="1" max="1"/>
-					<item id="7902" chance="0.16782" min="1" max="1"/>
-					<item id="8349" chance="21.27433" min="1" max="1"/>
-					<item id="8342" chance="21.23518" min="1" max="1"/>
-					<item id="5533" chance="21.02819" min="1" max="1"/>
-					<item id="5544" chance="20.8324" min="1" max="1"/>
-					<item id="6710" chance="14.9586" min="3" max="9"/>
-				</items>
-			</category>
-			<category id="3" chance="71.099">
-				<items>
-					<item id="9599" chance="98.10265" min="4" max="12"/>
-					<item id="9551" chance="1.47541" min="1" max="1"/>
-					<item id="959" chance="0.42195" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="82.37" min="1" max="3"/>
-					<item id="36533" chance="33.53" min="1" max="1"/>
-					<item id="36882" chance="0.75" min="1" max="1"/>
-					<item id="36881" chance="0.3" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22441" name="Миньон Белефа" server_name="beres_follower_str" title="">
 		<set name="type" value="L2Monster"/>
@@ -3688,40 +2285,6 @@
 			<set id="5467" level="1"/>
 			<set id="5597" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="16795" max="39217"/>
-				</items>
-			</category>
-			<category id="2" chance="15.465">
-				<items>
-					<item id="270" chance="0.48497" min="1" max="1"/>
-					<item id="5538" chance="59.83188" min="1" max="1"/>
-					<item id="6711" chance="39.68316" min="1" max="3"/>
-				</items>
-			</category>
-			<category id="3" chance="76.615">
-				<items>
-					<item id="9599" chance="96.76893" min="3" max="9"/>
-					<item id="14166" chance="1.61847" min="1" max="1"/>
-					<item id="14167" chance="0.39157" min="1" max="1"/>
-					<item id="9551" chance="0.39157" min="1" max="1"/>
-					<item id="6901" chance="0.39157" min="1" max="1"/>
-					<item id="960" chance="0.39157" min="1" max="1"/>
-					<item id="14168" chance="0.03916" min="1" max="1"/>
-					<item id="14169" chance="0.00718" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="67.45" min="1" max="3"/>
-					<item id="36533" chance="27.43" min="1" max="1"/>
-					<item id="36882" chance="0.75" min="1" max="1"/>
-					<item id="36881" chance="0.3" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22442" name="Миньон Белефа" server_name="beres_follower_half" title="">
 		<set name="type" value="L2Monster"/>
@@ -3780,36 +2343,6 @@
 			<set id="5467" level="1"/>
 			<set id="5597" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="9883" max="23075"/>
-				</items>
-			</category>
-			<category id="2" chance="11.265">
-				<items>
-					<item id="289" chance="0.26631" min="1" max="1"/>
-					<item id="6712" chance="51.96627" min="3" max="9"/>
-					<item id="5534" chance="47.76742" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="66.83">
-				<items>
-					<item id="9599" chance="99.05731" min="2" max="6"/>
-					<item id="6901" chance="0.4489" min="1" max="1"/>
-					<item id="9551" chance="0.4489" min="1" max="1"/>
-					<item id="959" chance="0.04489" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36532" chance="79.99" min="1" max="1"/>
-					<item id="36533" chance="14.95" min="1" max="1"/>
-					<item id="36882" chance="0.3" min="1" max="1"/>
-					<item id="36881" chance="0.075" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22443" name="Вестник Кертанга" server_name="messenger_of_kerthang_45" title="">
 		<set name="type" value="L2Monster"/>
@@ -3861,38 +2394,6 @@
 			<set id="4579" level="5"/>
 			<set id="4582" level="5"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="505" max="1026"/>
-				</items>
-			</category>
-			<category id="2" chance="0.2382">
-				<items>
-					<item id="226" chance="0.7043" min="1" max="1"/>
-					<item id="2070" chance="49.2957" min="1" max="1"/>
-					<item id="232" chance="0.7043" min="1" max="1"/>
-					<item id="2072" chance="49.2957" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="17.6081">
-				<items>
-					<item id="34992" chance="55.979" min="1" max="1"/>
-					<item id="34991" chance="37.8062" min="24" max="24"/>
-					<item id="34990" chance="2.2392" min="2" max="2"/>
-					<item id="4041" chance="0.4868" min="1" max="1"/>
-					<item id="4040" chance="1.1196" min="1" max="1"/>
-					<item id="2163" chance="2.856" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="34992" chance="62.5677" min="1" max="1"/>
-					<item id="4553" chance="0.5005" min="1" max="1"/>
-					<item id="1908" chance="11.8499" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22444" name="Вестник Кертанга" server_name="messenger_of_kerthang_55" title="">
 		<set name="type" value="L2Monster"/>
@@ -3944,36 +2445,6 @@
 			<set id="4579" level="5"/>
 			<set id="4582" level="6"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="761" max="1550"/>
-				</items>
-			</category>
-			<category id="2" chance="0.1602">
-				<items>
-					<item id="228" chance="0.9226" min="1" max="1"/>
-					<item id="2119" chance="99.0774" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="34.1761">
-				<items>
-					<item id="34990" chance="46.5031" min="3" max="3"/>
-					<item id="34992" chance="45.3107" min="1" max="1"/>
-					<item id="1882" chance="7.5518" min="1" max="1"/>
-					<item id="1894" chance="1.1924" min="1" max="1"/>
-					<item id="4042" chance="0.5664" min="1" max="1"/>
-					<item id="1806" chance="0.068" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="1806" chance="0.3775" min="1" max="1"/>
-					<item id="1918" chance="8.1736" min="1" max="1"/>
-					<item id="3034" chance="0.3775" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22445" name="Вестник Кертанга" server_name="messenger_of_kerthang_65" title="">
 		<set name="type" value="L2Monster"/>
@@ -4025,35 +2496,6 @@
 			<set id="4579" level="6"/>
 			<set id="4606" level="7"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1063" max="2155"/>
-				</items>
-			</category>
-			<category id="2" chance="0.1702">
-				<items>
-					<item id="97" chance="0.4523" min="1" max="1"/>
-					<item id="4115" chance="99.5477" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="5.5269">
-				<items>
-					<item id="1895" chance="80.2962" min="1" max="1"/>
-					<item id="4040" chance="5.6207" min="1" max="1"/>
-					<item id="4042" chance="4.6839" min="1" max="1"/>
-					<item id="4043" chance="9.3679" min="1" max="1"/>
-					<item id="729" chance="0.0313" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="4052" chance="9.3086" min="1" max="1"/>
-					<item id="4040" chance="5.2584" min="1" max="1"/>
-					<item id="4042" chance="4.382" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22446" name="Вестник Кертанга" server_name="messenger_of_kerthang_75" title="">
 		<set name="type" value="L2Monster"/>
@@ -4105,36 +2547,6 @@
 			<set id="4597" level="8"/>
 			<set id="4606" level="8"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1347" max="2748"/>
-				</items>
-			</category>
-			<category id="2" chance="0.1693">
-				<items>
-					<item id="288" chance="0.414" min="1" max="1"/>
-					<item id="5535" chance="99.586" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="4.4123">
-				<items>
-					<item id="1879" chance="62.2126" min="1" max="1"/>
-					<item id="34990" chance="35.6569" min="29" max="29"/>
-					<item id="9628" chance="2.9277" min="1" max="1"/>
-					<item id="9630" chance="1.9646" min="1" max="1"/>
-					<item id="9629" chance="1.6229" min="1" max="1"/>
-					<item id="1808" chance="0.1659" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="5480" chance="1.2009" min="1" max="1"/>
-					<item id="1808" chance="0.1189" min="1" max="1"/>
-					<item id="5481" chance="1.2009" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22447" name="Вестник Кертанга" server_name="messenger_of_kerthang_80" title="">
 		<set name="type" value="L2Monster"/>
@@ -4187,37 +2599,6 @@
 			<set id="4597" level="9"/>
 			<set id="4606" level="9"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1436" max="2932"/>
-				</items>
-			</category>
-			<category id="2" chance="0.2382">
-				<items>
-					<item id="5320" chance="0.3352" min="1" max="1"/>
-					<item id="5480" chance="49.6648" min="1" max="1"/>
-					<item id="5323" chance="0.3352" min="1" max="1"/>
-					<item id="5481" chance="49.6648" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="7.5024">
-				<items>
-					<item id="1895" chance="80.3123" min="1" max="1"/>
-					<item id="4040" chance="5.6219" min="1" max="1"/>
-					<item id="4042" chance="4.6849" min="1" max="1"/>
-					<item id="4043" chance="9.3698" min="1" max="1"/>
-					<item id="959" chance="0.0111" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="3036" chance="0.0951" min="1" max="1"/>
-					<item id="5487" chance="0.9639" min="1" max="1"/>
-					<item id="4043" chance="7.135" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22448" name="Леодас" server_name="reodas" title="Командир Сопротивления">
 		<set name="type" value="L2Monster"/>
@@ -4280,63 +2661,6 @@
 		<minions>
 			<set amount_max="5" amount_min="5" id="22451"/>
 		</minions>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="35816" max="83571"/>
-				</items>
-			</category>
-			<category id="2" chance="9.945">
-				<items>
-					<item id="270" chance="3.01659" min="1" max="1"/>
-					<item id="5538" chance="56.03821" min="3" max="9"/>
-					<item id="6688" chance="40.9452" min="2" max="6"/>
-				</items>
-			</category>
-			<category id="3" chance="100.0">
-				<items>
-					<item id="9599" chance="85.52531" min="6" max="20"/>
-					<item id="36528" chance="4.53657" min="1" max="1"/>
-					<item id="36518" chance="4.15025" min="1" max="1"/>
-					<item id="36523" chance="1.6601" min="1" max="1"/>
-					<item id="36538" chance="1.08111" min="1" max="1"/>
-					<item id="36558" chance="0.72982" min="1" max="1"/>
-					<item id="36543" chance="0.72982" min="1" max="1"/>
-					<item id="36563" chance="0.29193" min="1" max="1"/>
-					<item id="36553" chance="0.29193" min="1" max="1"/>
-					<item id="36548" chance="0.29193" min="1" max="1"/>
-					<item id="6901" chance="0.29193" min="1" max="1"/>
-					<item id="960" chance="0.29193" min="1" max="1"/>
-					<item id="36934" chance="0.02919" min="1" max="1"/>
-					<item id="36860" chance="0.02919" min="1" max="1"/>
-					<item id="36876" chance="0.02919" min="1" max="1"/>
-					<item id="36908" chance="0.00292" min="1" max="1"/>
-					<item id="36918" chance="0.00292" min="1" max="1"/>
-					<item id="36926" chance="0.00292" min="1" max="1"/>
-					<item id="36933" chance="0.00292" min="1" max="1"/>
-					<item id="36907" chance="0.00292" min="1" max="1"/>
-					<item id="36895" chance="0.00292" min="1" max="1"/>
-					<item id="36894" chance="0.00292" min="1" max="1"/>
-					<item id="36859" chance="0.00292" min="1" max="1"/>
-					<item id="36875" chance="0.00292" min="1" max="1"/>
-					<item id="36942" chance="0.00292" min="1" max="1"/>
-					<item id="36868" chance="0.00535" min="1" max="1"/>
-					<item id="36906" chance="8.8E-4" min="1" max="1"/>
-					<item id="36941" chance="8.8E-4" min="1" max="1"/>
-					<item id="36925" chance="8.8E-4" min="1" max="1"/>
-					<item id="36917" chance="8.8E-4" min="1" max="1"/>
-					<item id="36893" chance="8.8E-4" min="1" max="1"/>
-					<item id="36867" chance="8.8E-4" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36533" chance="71.68" min="1" max="1"/>
-					<item id="36884" chance="0.3" min="1" max="1"/>
-					<item id="36883" chance="0.03" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22449" name="Амаскари" server_name="amazkari" title="Мастер Пыток">
 		<set name="type" value="L2Monster"/>
@@ -4402,38 +2726,6 @@
 		<minions>
 			<set amount_max="10" amount_min="10" id="22450"/>
 		</minions>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="5715" max="13335"/>
-				</items>
-			</category>
-			<category id="2" chance="7.88">
-				<items>
-					<item id="270" chance="0.38071" min="1" max="1"/>
-					<item id="5538" chance="50.36802" min="1" max="1"/>
-					<item id="6689" chance="24.89848" min="1" max="1"/>
-					<item id="6690" chance="24.35279" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="66.227">
-				<items>
-					<item id="9599" chance="91.26187" min="2" max="4"/>
-					<item id="36528" chance="6.92618" min="1" max="1"/>
-					<item id="36548" chance="0.45299" min="1" max="1"/>
-					<item id="9551" chance="0.45299" min="1" max="1"/>
-					<item id="6901" chance="0.45299" min="1" max="1"/>
-					<item id="36563" chance="0.45299" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36533" chance="11.16" min="1" max="1"/>
-					<item id="36884" chance="0.03" min="1" max="1"/>
-					<item id="36883" chance="0.0055" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22450" name="Замученный Абориген" server_name="amazkari_prisoner" title="">
 		<set name="type" value="L2Monster"/>
@@ -4488,38 +2780,6 @@
 			<set id="4415" level="3"/>
 			<set id="4416" level="14"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="274" max="638"/>
-				</items>
-			</category>
-			<category id="2" chance="0.303">
-				<items>
-					<item id="289" chance="0.9901" min="1" max="1"/>
-					<item id="5534" chance="99.0099" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="8.956">
-				<items>
-					<item id="9599" chance="95.78625" min="1" max="1"/>
-					<item id="36518" chance="3.34956" min="1" max="1"/>
-					<item id="36538" chance="0.33496" min="1" max="1"/>
-					<item id="36558" chance="0.33496" min="1" max="1"/>
-					<item id="960" chance="0.06141" min="1" max="1"/>
-					<item id="36548" chance="0.06141" min="1" max="1"/>
-					<item id="36553" chance="0.06141" min="1" max="1"/>
-					<item id="959" chance="0.01005" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36533" chance="0.75" min="1" max="1"/>
-					<item id="36884" chance="0.0030" min="1" max="1"/>
-					<item id="36883" chance="9.0E-4" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22451" name="Абориген Элитный Солдат" server_name="reodas_private" title="">
 		<set name="type" value="L2Monster"/>
@@ -4576,63 +2836,6 @@
 			<set id="4435" level="1"/>
 			<set id="4441" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="479" max="1117"/>
-				</items>
-			</category>
-			<category id="2" chance="2.615">
-				<items>
-					<item id="5320" chance="0.21033" min="1" max="1"/>
-					<item id="5323" chance="0.21033" min="1" max="1"/>
-					<item id="6710" chance="42.21797" min="1" max="1"/>
-					<item id="5480" chance="28.68069" min="1" max="1"/>
-					<item id="5481" chance="28.68069" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="0.276">
-				<items>
-					<item id="36528" chance="27.22323" min="1" max="1"/>
-					<item id="36518" chance="27.22323" min="1" max="1"/>
-					<item id="36523" chance="10.88929" min="1" max="1"/>
-					<item id="36538" chance="10.88929" min="1" max="1"/>
-					<item id="36543" chance="10.88929" min="1" max="1"/>
-					<item id="36563" chance="1.08893" min="1" max="1"/>
-					<item id="36558" chance="1.99637" min="1" max="1"/>
-					<item id="36553" chance="1.08893" min="1" max="1"/>
-					<item id="36548" chance="1.08893" min="1" max="1"/>
-					<item id="960" chance="1.08893" min="1" max="1"/>
-					<item id="36908" chance="0.32668" min="1" max="1"/>
-					<item id="36917" chance="0.32668" min="1" max="1"/>
-					<item id="36918" chance="0.32668" min="1" max="1"/>
-					<item id="36925" chance="0.32668" min="1" max="1"/>
-					<item id="36926" chance="0.32668" min="1" max="1"/>
-					<item id="36933" chance="0.32668" min="1" max="1"/>
-					<item id="36934" chance="0.32668" min="1" max="1"/>
-					<item id="36941" chance="0.32668" min="1" max="1"/>
-					<item id="36907" chance="0.32668" min="1" max="1"/>
-					<item id="36906" chance="0.32668" min="1" max="1"/>
-					<item id="36895" chance="0.32668" min="1" max="1"/>
-					<item id="36859" chance="0.32668" min="1" max="1"/>
-					<item id="36860" chance="0.32668" min="1" max="1"/>
-					<item id="36867" chance="0.32668" min="1" max="1"/>
-					<item id="36868" chance="0.32668" min="1" max="1"/>
-					<item id="36875" chance="0.32668" min="1" max="1"/>
-					<item id="36876" chance="0.32668" min="1" max="1"/>
-					<item id="36893" chance="0.32668" min="1" max="1"/>
-					<item id="36894" chance="0.32668" min="1" max="1"/>
-					<item id="36942" chance="0.32668" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="36533" chance="0.75" min="1" max="1"/>
-					<item id="36884" chance="0.0030" min="1" max="1"/>
-					<item id="36883" chance="9.0E-4" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22452" name="Канабион Белый Череп" server_name="rim_25_normal" title="">
 		<set name="type" value="L2Monster"/>
@@ -4687,13 +2890,6 @@
 			<set id="4416" level="1"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.035">
-				<items>
-					<item id="956" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22453" name="Канабион Белый Череп" server_name="rim_25_speciala" title="Допплер">
 		<set name="type" value="L2Monster"/>
@@ -4750,13 +2946,6 @@
 			<set id="4437" level="5"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.061">
-				<items>
-					<item id="956" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22454" name="Канабион Белый Череп" server_name="rim_25_specialb" title="Пустотник">
 		<set name="type" value="L2Monster"/>
@@ -4814,13 +3003,6 @@
 			<set id="4437" level="5"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.079">
-				<items>
-					<item id="956" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22455" name="Скупой Канабион" server_name="rim_30_normal" title="">
 		<set name="type" value="L2Monster"/>
@@ -4875,13 +3057,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.308">
-				<items>
-					<item id="956" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22456" name="Скупой Канабион" server_name="rim_30_speciala" title="Допплер">
 		<set name="type" value="L2Monster"/>
@@ -4936,13 +3111,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.232">
-				<items>
-					<item id="956" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22457" name="Скупой Канабион" server_name="rim_30_specialb" title="Пустотник">
 		<set name="type" value="L2Monster"/>
@@ -4998,13 +3166,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.423">
-				<items>
-					<item id="956" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22458" name="Сгнивший Канабион" server_name="rim_35_normal" title="">
 		<set name="type" value="L2Monster"/>
@@ -5058,13 +3219,6 @@
 			<set id="4416" level="1"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.646">
-				<items>
-					<item id="956" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22459" name="Сгнивший Канабион" server_name="rim_35_speciala" title="Допплер">
 		<set name="type" value="L2Monster"/>
@@ -5118,13 +3272,6 @@
 			<set id="4416" level="1"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.635">
-				<items>
-					<item id="956" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22460" name="Сгнивший Канабион" server_name="rim_35_specialb" title="Пустотник">
 		<set name="type" value="L2Monster"/>
@@ -5179,13 +3326,6 @@
 			<set id="4416" level="1"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.937">
-				<items>
-					<item id="956" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22461" name="Прожорливый Канабион" server_name="rim_40_normal" title="">
 		<set name="type" value="L2Monster"/>
@@ -5240,13 +3380,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="2.27">
-				<items>
-					<item id="956" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22462" name="Прожорливый Канабион" server_name="rim_40_speciala" title="Допплер">
 		<set name="type" value="L2Monster"/>
@@ -5300,13 +3433,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="2.225">
-				<items>
-					<item id="956" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22463" name="Прожорливый Канабион" server_name="rim_40_specialb" title="Пустотник">
 		<set name="type" value="L2Monster"/>
@@ -5362,13 +3488,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="2.364">
-				<items>
-					<item id="956" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22464" name="Толстокожий Канабион" server_name="rim_45_normal" title="">
 		<set name="type" value="L2Monster"/>
@@ -5423,13 +3542,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.125">
-				<items>
-					<item id="952" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22465" name="Толстокожий Канабион" server_name="rim_45_speciala" title="Допплер">
 		<set name="type" value="L2Monster"/>
@@ -5484,13 +3596,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.11">
-				<items>
-					<item id="952" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22466" name="Толстокожий Канабион" server_name="rim_45_specialb" title="Пустотник">
 		<set name="type" value="L2Monster"/>
@@ -5546,13 +3651,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.207">
-				<items>
-					<item id="952" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22467" name="Дикий Канабион" server_name="rim_50_normal" title="">
 		<set name="type" value="L2Monster"/>
@@ -5607,13 +3705,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.425">
-				<items>
-					<item id="952" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22468" name="Дикий Канабион" server_name="rim_50_speciala" title="Допплер">
 		<set name="type" value="L2Monster"/>
@@ -5668,13 +3759,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.439">
-				<items>
-					<item id="952" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22469" name="Дикий Канабион" server_name="rim_50_specialb" title="Пустотник">
 		<set name="type" value="L2Monster"/>
@@ -5730,13 +3814,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.527">
-				<items>
-					<item id="952" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22470" name="Элитный Канабион" server_name="rim_55_normal" title="">
 		<set name="type" value="L2Monster"/>
@@ -5791,13 +3868,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.3">
-				<items>
-					<item id="948" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22471" name="Элитный Канабион" server_name="rim_55_speciala" title="Допплер">
 		<set name="type" value="L2Monster"/>
@@ -5852,13 +3922,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.3">
-				<items>
-					<item id="948" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22472" name="Элитный Канабион" server_name="rim_55_specialb" title="Пустотник">
 		<set name="type" value="L2Monster"/>
@@ -5914,13 +3977,6 @@
 			<set id="4416" level="6"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.3">
-				<items>
-					<item id="948" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22473" name="Тяжелый Канабион" server_name="rim_60_normal" title="">
 		<set name="type" value="L2Monster"/>
@@ -5975,13 +4031,6 @@
 			<set id="4416" level="8"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.3">
-				<items>
-					<item id="948" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22474" name="Тяжелый Канабион" server_name="rim_60_speciala" title="Допплер">
 		<set name="type" value="L2Monster"/>
@@ -6036,13 +4085,6 @@
 			<set id="4416" level="8"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.3">
-				<items>
-					<item id="948" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22475" name="Тяжелый Канабион" server_name="rim_60_specialb" title="Пустотник">
 		<set name="type" value="L2Monster"/>
@@ -6098,13 +4140,6 @@
 			<set id="4416" level="8"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.3">
-				<items>
-					<item id="948" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22476" name="Пылкий Канабион" server_name="rim_65_normal" title="">
 		<set name="type" value="L2Monster"/>
@@ -6159,13 +4194,6 @@
 			<set id="4416" level="9"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.3">
-				<items>
-					<item id="730" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22477" name="Пылкий Канабион" server_name="rim_65_speciala" title="Допплер">
 		<set name="type" value="L2Monster"/>
@@ -6220,13 +4248,6 @@
 			<set id="4416" level="9"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.3">
-				<items>
-					<item id="730" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22478" name="Пылкий Канабион" server_name="rim_65_specialb" title="Пустотник">
 		<set name="type" value="L2Monster"/>
@@ -6282,13 +4303,6 @@
 			<set id="4416" level="9"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.3">
-				<items>
-					<item id="730" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22479" name="Разбитый Канабион" server_name="rim_70_normal" title="">
 		<set name="type" value="L2Monster"/>
@@ -6342,13 +4356,6 @@
 			<set id="4416" level="9"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.3">
-				<items>
-					<item id="730" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22480" name="Разбитый Канабион" server_name="rim_70_speciala" title="Допплер">
 		<set name="type" value="L2Monster"/>
@@ -6402,13 +4409,6 @@
 			<set id="4416" level="9"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.3">
-				<items>
-					<item id="730" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22481" name="Разбитый Канабион" server_name="rim_70_specialb" title="Пустотник">
 		<set name="type" value="L2Monster"/>
@@ -6463,13 +4463,6 @@
 			<set id="4416" level="9"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.3">
-				<items>
-					<item id="730" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22482" name="Канабион Мечник" server_name="rim_75_normal" title="">
 		<set name="type" value="L2Monster"/>
@@ -6523,13 +4516,6 @@
 			<set id="4416" level="9"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.075">
-				<items>
-					<item id="960" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22483" name="Канабион Мечник" server_name="rim_75_speciala" title="Допплер">
 		<set name="type" value="L2Monster"/>
@@ -6583,13 +4569,6 @@
 			<set id="4416" level="9"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.075">
-				<items>
-					<item id="960" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22484" name="Канабион Мечник" server_name="rim_75_specialb" title="Пустотник">
 		<set name="type" value="L2Monster"/>
@@ -6646,13 +4625,6 @@
 			<set id="5479" level="1"/>
 			<set id="5719" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.3">
-				<items>
-					<item id="960" chance="100.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="22485" name="Смотритель Лабиринта" server_name="kamaloka_29_a_true" title="">
 		<set name="type" value="L2Monster"/>

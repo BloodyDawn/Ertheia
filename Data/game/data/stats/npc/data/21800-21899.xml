@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="NpcData.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="../../../xsd/NpcData.xsd">
 	<npc id="21800" name="Призрак Вассал" server_name="guard_undead" title="">
 		<set name="type" value="L2Monster"/>
 		<set name="sex" value="male"/>
@@ -58,46 +57,6 @@
 			<set id="4567" level="8"/>
 			<set id="4789" level="5"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1853" max="3785"/>
-				</items>
-			</category>
-			<category id="2" chance="0.2536">
-				<items>
-					<item id="11946" chance="1.8833" min="1" max="1"/>
-					<item id="5543" chance="23.2872" min="1" max="1"/>
-					<item id="11949" chance="1.8833" min="1" max="1"/>
-					<item id="5532" chance="23.0697" min="1" max="1"/>
-					<item id="11953" chance="1.8833" min="1" max="1"/>
-					<item id="8341" chance="23.0402" min="1" max="1"/>
-					<item id="11958" chance="1.8833" min="1" max="1"/>
-					<item id="8346" chance="23.0697" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="49.0569">
-				<items>
-					<item id="34990" chance="19.8514" min="3" max="3"/>
-					<item id="34992" chance="37.7176" min="1" max="1"/>
-					<item id="1882" chance="6.2863" min="1" max="1"/>
-					<item id="1894" chance="0.9926" min="1" max="1"/>
-					<item id="4042" chance="0.4715" min="1" max="1"/>
-					<item id="5272" chance="0.0126" min="1" max="1"/>
-					<item id="8732" chance="0.2357" min="1" max="1"/>
-					<item id="8742" chance="0.0589" min="1" max="1"/>
-					<item id="8752" chance="0.0059" min="1" max="1"/>
-					<item id="1344" chance="35.3601" min="10" max="30"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="5167" chance="0.167" min="1" max="1"/>
-					<item id="5529" chance="1.0311" min="1" max="1"/>
-					<item id="4042" chance="6.2641" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21801" name="Сундук с Сокровищами" server_name="mimic_21" title="">
 		<set name="type" value="L2Chest"/>
@@ -148,35 +107,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="107" max="191"/>
-				</items>
-			</category>
-			<category id="2" chance="1.3812">
-				<items>
-					<item id="39" chance="7.0524" min="1" max="1"/>
-					<item id="1930" chance="85.8951" min="1" max="1"/>
-					<item id="51" chance="7.0525" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="12.7651">
-				<items>
-					<item id="34992" chance="65.243" min="1" max="1"/>
-					<item id="34990" chance="27.1846" min="1" max="1"/>
-					<item id="1878" chance="10.8738" min="1" max="1"/>
-					<item id="2151" chance="7.5724" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="34992" chance="46.9914" min="1" max="1"/>
-					<item id="34990" chance="23.4957" min="1" max="1"/>
-					<item id="1926" chance="2.3733" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21802" name="Сундук с Сокровищами" server_name="mimic_24" title="">
 		<set name="type" value="L2Chest"/>
@@ -227,34 +157,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="122" max="225"/>
-				</items>
-			</category>
-			<category id="2" chance="0.2781">
-				<items>
-					<item id="625" chance="58.9212" min="1" max="1"/>
-					<item id="1148" chance="41.0788" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="10.728">
-				<items>
-					<item id="34992" chance="37.8052" min="1" max="1"/>
-					<item id="34991" chance="37.8052" min="1" max="1"/>
-					<item id="1879" chance="6.3009" min="1" max="1"/>
-					<item id="2176" chance="18.0887" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="2151" chance="7.6492" min="1" max="1"/>
-					<item id="1928" chance="4.0001" min="1" max="1"/>
-					<item id="2176" chance="13.1391" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21803" name="Сундук с Сокровищами" server_name="mimic_27" title="">
 		<set name="type" value="L2Chest"/>
@@ -305,37 +207,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="137" max="264"/>
-				</items>
-			</category>
-			<category id="2" chance="1.2748">
-				<items>
-					<item id="40" chance="4.3392" min="1" max="1"/>
-					<item id="1931" chance="45.6608" min="1" max="1"/>
-					<item id="604" chance="4.3392" min="1" max="1"/>
-					<item id="1934" chance="45.6608" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="7.0036">
-				<items>
-					<item id="34991" chance="33.9088" min="1" max="1"/>
-					<item id="34992" chance="50.8632" min="1" max="1"/>
-					<item id="5220" chance="2.0345" min="1" max="1"/>
-					<item id="34990" chance="4.2386" min="1" max="1"/>
-					<item id="2152" chance="8.9549" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="1899" chance="4.9588" min="1" max="1"/>
-					<item id="34992" chance="31.7362" min="1" max="1"/>
-					<item id="5220" chance="1.2695" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21804" name="Сундук с Сокровищами" server_name="mimic_30" title="">
 		<set name="type" value="L2Chest"/>
@@ -386,34 +257,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="154" max="308"/>
-				</items>
-			</category>
-			<category id="2" chance="0.1261">
-				<items>
-					<item id="627" chance="58.8055" min="1" max="1"/>
-					<item id="46" chance="41.1945" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="15.6555">
-				<items>
-					<item id="34990" chance="42.4779" min="1" max="1"/>
-					<item id="34992" chance="42.4779" min="1" max="1"/>
-					<item id="1882" chance="7.0796" min="1" max="1"/>
-					<item id="2250" chance="7.9646" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="1061" chance="22.1263" min="1" max="1"/>
-					<item id="1900" chance="3.9943" min="1" max="1"/>
-					<item id="2250" chance="9.1271" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21805" name="Сундук с Сокровищами" server_name="mimic_33" title="">
 		<set name="type" value="L2Chest"/>
@@ -464,40 +307,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="184" max="368"/>
-				</items>
-			</category>
-			<category id="2" chance="0.5952">
-				<items>
-					<item id="553" chance="2.8426" min="1" max="1"/>
-					<item id="1940" chance="82.9444" min="1" max="1"/>
-					<item id="2422" chance="2.8426" min="1" max="1"/>
-					<item id="2423" chance="2.8426" min="1" max="1"/>
-					<item id="63" chance="2.8426" min="1" max="1"/>
-					<item id="2446" chance="2.8426" min="1" max="1"/>
-					<item id="2447" chance="2.8426" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="12.3822">
-				<items>
-					<item id="34992" chance="77.2952" min="4" max="4"/>
-					<item id="1873" chance="14.9604" min="1" max="1"/>
-					<item id="34991" chance="3.7401" min="2" max="2"/>
-					<item id="1889" chance="2.4934" min="1" max="1"/>
-					<item id="2154" chance="4.0043" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="1901" chance="6.0152" min="1" max="1"/>
-					<item id="2154" chance="4.6627" min="1" max="1"/>
-					<item id="1938" chance="2.9277" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21806" name="Сундук с Сокровищами" server_name="mimic_36" title="">
 		<set name="type" value="L2Chest"/>
@@ -548,35 +357,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="216" max="433"/>
-				</items>
-			</category>
-			<category id="2" chance="0.1129">
-				<items>
-					<item id="628" chance="58.8353" min="1" max="1"/>
-					<item id="47" chance="41.1647" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="17.8391">
-				<items>
-					<item id="34990" chance="30.5451" min="1" max="1"/>
-					<item id="34992" chance="61.0902" min="1" max="1"/>
-					<item id="34991" chance="3.4618" min="17" max="17"/>
-					<item id="5550" chance="0.4073" min="1" max="1"/>
-					<item id="2155" chance="4.9029" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="34992" chance="51.2417" min="1" max="1"/>
-					<item id="34991" chance="5.1242" min="2" max="2"/>
-					<item id="1939" chance="4.5008" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21807" name="Сундук с Сокровищами" server_name="mimic_39" title="">
 		<set name="type" value="L2Chest"/>
@@ -627,48 +407,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="253" max="504"/>
-				</items>
-			</category>
-			<category id="2" chance="2.1425">
-				<items>
-					<item id="1124" chance="0.3142" min="1" max="1"/>
-					<item id="1948" chance="12.1858" min="1" max="1"/>
-					<item id="2424" chance="0.3142" min="1" max="1"/>
-					<item id="2923" chance="12.1858" min="1" max="1"/>
-					<item id="2425" chance="0.3142" min="1" max="1"/>
-					<item id="2924" chance="12.1858" min="1" max="1"/>
-					<item id="2426" chance="0.3142" min="1" max="1"/>
-					<item id="2925" chance="12.1858" min="1" max="1"/>
-					<item id="606" chance="0.3142" min="1" max="1"/>
-					<item id="1946" chance="12.1858" min="1" max="1"/>
-					<item id="2448" chance="0.3142" min="1" max="1"/>
-					<item id="2926" chance="12.1858" min="1" max="1"/>
-					<item id="2449" chance="0.3142" min="1" max="1"/>
-					<item id="2927" chance="12.1858" min="1" max="1"/>
-					<item id="2450" chance="0.3142" min="1" max="1"/>
-					<item id="2928" chance="12.1858" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="16.6099">
-				<items>
-					<item id="34991" chance="49.6283" min="4" max="4"/>
-					<item id="34992" chance="46.5265" min="1" max="1"/>
-					<item id="1874" chance="3.1018" min="1" max="1"/>
-					<item id="2157" chance="3.8452" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="2157" chance="4.9421" min="1" max="1"/>
-					<item id="1902" chance="6.0588" min="1" max="1"/>
-					<item id="2158" chance="7.401" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21808" name="Сундук с Сокровищами" server_name="mimic_42" title="">
 		<set name="type" value="L2Chest"/>
@@ -719,38 +457,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="282" max="570"/>
-				</items>
-			</category>
-			<category id="2" chance="1.843">
-				<items>
-					<item id="630" chance="0.8051" min="1" max="1"/>
-					<item id="1956" chance="36.0955" min="1" max="1"/>
-					<item id="2494" chance="0.8051" min="1" max="1"/>
-					<item id="2934" chance="36.0955" min="1" max="1"/>
-					<item id="2412" chance="0.5638" min="1" max="1"/>
-					<item id="2930" chance="25.635" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="15.5718">
-				<items>
-					<item id="34992" chance="56.4594" min="1" max="1"/>
-					<item id="34991" chance="37.6396" min="1" max="1"/>
-					<item id="34990" chance="2.2584" min="2" max="2"/>
-					<item id="2160" chance="3.6426" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="1905" chance="6.8125" min="1" max="1"/>
-					<item id="34992" chance="70.0321" min="1" max="1"/>
-					<item id="34991" chance="46.6881" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21809" name="Сундук с Сокровищами" server_name="mimic_45" title="">
 		<set name="type" value="L2Chest"/>
@@ -801,56 +507,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="320" max="650"/>
-				</items>
-			</category>
-			<category id="2" chance="1.7579">
-				<items>
-					<item id="62" chance="0.2489" min="1" max="1"/>
-					<item id="1958" chance="10.8622" min="1" max="1"/>
-					<item id="2429" chance="0.2489" min="1" max="1"/>
-					<item id="2937" chance="10.8622" min="1" max="1"/>
-					<item id="2430" chance="0.2489" min="1" max="1"/>
-					<item id="2938" chance="10.8622" min="1" max="1"/>
-					<item id="2431" chance="0.2489" min="1" max="1"/>
-					<item id="2939" chance="10.8622" min="1" max="1"/>
-					<item id="2432" chance="0.2489" min="1" max="1"/>
-					<item id="2940" chance="10.8622" min="1" max="1"/>
-					<item id="2433" chance="0.2489" min="1" max="1"/>
-					<item id="2941" chance="10.8622" min="1" max="1"/>
-					<item id="2452" chance="0.2489" min="1" max="1"/>
-					<item id="2942" chance="10.8622" min="1" max="1"/>
-					<item id="2453" chance="0.2489" min="1" max="1"/>
-					<item id="2943" chance="10.8622" min="1" max="1"/>
-					<item id="2454" chance="0.2489" min="1" max="1"/>
-					<item id="2944" chance="10.8623" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="11.3855">
-				<items>
-					<item id="34992" chance="49.257" min="2" max="2"/>
-					<item id="34990" chance="44.7791" min="1" max="1"/>
-					<item id="1881" chance="4.4779" min="1" max="1"/>
-					<item id="1875" chance="2.239" min="1" max="1"/>
-					<item id="34991" chance="0.292" min="23" max="23"/>
-					<item id="2163" chance="1.7135" min="1" max="1"/>
-					<item id="8723" chance="1.3434" min="1" max="1"/>
-					<item id="8733" chance="0.3358" min="1" max="1"/>
-					<item id="8743" chance="0.0336" min="1" max="1"/>
-					<item id="8753" chance="0.0066" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="4553" chance="0.3236" min="1" max="1"/>
-					<item id="1908" chance="7.6616" min="1" max="1"/>
-					<item id="2163" chance="4.1279" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21810" name="Сундук с Сокровищами" server_name="mimic_48" title="">
 		<set name="type" value="L2Chest"/>
@@ -901,44 +557,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="364" max="740"/>
-				</items>
-			</category>
-			<category id="2" chance="1.4747">
-				<items>
-					<item id="2496" chance="0.7677" min="1" max="1"/>
-					<item id="2947" chance="32.9277" min="1" max="1"/>
-					<item id="632" chance="0.7087" min="1" max="1"/>
-					<item id="1972" chance="36.879" min="1" max="1"/>
-					<item id="500" chance="0.4962" min="1" max="1"/>
-					<item id="1971" chance="28.2207" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="12.1512">
-				<items>
-					<item id="1873" chance="13.4276" min="1" max="1"/>
-					<item id="34992" chance="67.1378" min="1" max="1"/>
-					<item id="34991" chance="6.7138" min="1" max="1"/>
-					<item id="1895" chance="9.5911" min="1" max="1"/>
-					<item id="4042" chance="0.5595" min="1" max="1"/>
-					<item id="2166" chance="1.1379" min="1" max="1"/>
-					<item id="8724" chance="1.119" min="1" max="1"/>
-					<item id="8734" chance="0.2797" min="1" max="1"/>
-					<item id="8744" chance="0.028" min="1" max="1"/>
-					<item id="8754" chance="0.0056" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="1966" chance="3.3611" min="1" max="1"/>
-					<item id="2166" chance="3.1207" min="1" max="1"/>
-					<item id="1967" chance="5.0211" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21811" name="Сундук с Сокровищами" server_name="mimic_51" title="">
 		<set name="type" value="L2Chest"/>
@@ -989,42 +607,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="413" max="839"/>
-				</items>
-			</category>
-			<category id="2" chance="1.2913">
-				<items>
-					<item id="64" chance="0.8845" min="1" max="1"/>
-					<item id="2956" chance="49.1155" min="1" max="1"/>
-					<item id="608" chance="0.8845" min="1" max="1"/>
-					<item id="1981" chance="49.1155" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="17.6905">
-				<items>
-					<item id="34992" chance="58.5084" min="1" max="1"/>
-					<item id="34990" chance="25.1911" min="3" max="3"/>
-					<item id="1878" chance="9.7514" min="1" max="1"/>
-					<item id="34991" chance="15.0022" min="1" max="1"/>
-					<item id="4039" chance="0.8126" min="1" max="1"/>
-					<item id="2169" chance="0.4315" min="1" max="1"/>
-					<item id="8725" chance="0.6772" min="1" max="1"/>
-					<item id="8735" chance="0.1693" min="1" max="1"/>
-					<item id="8745" chance="0.0169" min="1" max="1"/>
-					<item id="8755" chance="0.0034" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="34992" chance="41.7148" min="1" max="1"/>
-					<item id="34991" chance="64.1767" min="1" max="1"/>
-					<item id="4601" chance="0.2317" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21812" name="Сундук с Сокровищами" server_name="mimic_54" title="">
 		<set name="type" value="L2Chest"/>
@@ -1075,42 +657,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="464" max="945"/>
-				</items>
-			</category>
-			<category id="2" chance="0.9812">
-				<items>
-					<item id="2497" chance="0.7653" min="1" max="1"/>
-					<item id="2966" chance="60.4723" min="1" max="1"/>
-					<item id="2414" chance="0.5357" min="1" max="1"/>
-					<item id="2959" chance="38.2267" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="9.9738">
-				<items>
-					<item id="34992" chance="43.4884" min="1" max="1"/>
-					<item id="34991" chance="43.4884" min="1" max="1"/>
-					<item id="1879" chance="7.2481" min="1" max="1"/>
-					<item id="1875" chance="2.8992" min="1" max="1"/>
-					<item id="4040" chance="0.8698" min="1" max="1"/>
-					<item id="4126" chance="0.7176" min="1" max="1"/>
-					<item id="8726" chance="1.0067" min="1" max="1"/>
-					<item id="8736" chance="0.2517" min="1" max="1"/>
-					<item id="8746" chance="0.0252" min="1" max="1"/>
-					<item id="8756" chance="0.0049" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="1984" chance="2.5182" min="1" max="1"/>
-					<item id="4126" chance="1.9385" min="1" max="1"/>
-					<item id="1985" chance="4.0508" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21813" name="Сундук с Сокровищами" server_name="mimic_57" title="">
 		<set name="type" value="L2Chest"/>
@@ -1161,46 +707,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="519" max="1060"/>
-				</items>
-			</category>
-			<category id="2" chance="1.1975">
-				<items>
-					<item id="12147" chance="3.8829" min="1" max="1"/>
-					<item id="4097" chance="21.1171" min="1" max="1"/>
-					<item id="12149" chance="3.8829" min="1" max="1"/>
-					<item id="4098" chance="21.1171" min="1" max="1"/>
-					<item id="12146" chance="3.8829" min="1" max="1"/>
-					<item id="4100" chance="21.1171" min="1" max="1"/>
-					<item id="12148" chance="3.8829" min="1" max="1"/>
-					<item id="4073" chance="21.1171" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="7.1337">
-				<items>
-					<item id="34991" chance="36.8021" min="24" max="24"/>
-					<item id="34992" chance="54.4924" min="1" max="1"/>
-					<item id="5220" chance="2.1797" min="1" max="1"/>
-					<item id="34990" chance="4.541" min="1" max="1"/>
-					<item id="4041" chance="0.4738" min="1" max="1"/>
-					<item id="4129" chance="0.5897" min="1" max="1"/>
-					<item id="8727" chance="1.0898" min="1" max="1"/>
-					<item id="8737" chance="0.2725" min="1" max="1"/>
-					<item id="8747" chance="0.0272" min="1" max="1"/>
-					<item id="8757" chance="0.0056" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="4129" chance="1.4243" min="1" max="1"/>
-					<item id="4049" chance="6.9028" min="1" max="1"/>
-					<item id="947" chance="0.0526" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21814" name="Сундук с Сокровищами" server_name="mimic_60" title="">
 		<set name="type" value="L2Chest"/>
@@ -1251,46 +757,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="580" max="1179"/>
-				</items>
-			</category>
-			<category id="2" chance="1.3418">
-				<items>
-					<item id="12159" chance="3.6853" min="1" max="1"/>
-					<item id="4101" chance="23.3935" min="1" max="1"/>
-					<item id="12171" chance="3.6853" min="1" max="1"/>
-					<item id="4439" chance="27.8302" min="1" max="1"/>
-					<item id="12160" chance="2.5785" min="1" max="1"/>
-					<item id="4102" chance="18.1243" min="1" max="1"/>
-					<item id="12170" chance="2.5785" min="1" max="1"/>
-					<item id="4072" chance="18.1244" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="12.9005">
-				<items>
-					<item id="34990" chance="45.9477" min="3" max="3"/>
-					<item id="34992" chance="44.7696" min="1" max="1"/>
-					<item id="1882" chance="7.4616" min="1" max="1"/>
-					<item id="1894" chance="1.1781" min="1" max="1"/>
-					<item id="4042" chance="0.5596" min="1" max="1"/>
-					<item id="4130" chance="0.5451" min="1" max="1"/>
-					<item id="8728" chance="0.5596" min="1" max="1"/>
-					<item id="8738" chance="0.1399" min="1" max="1"/>
-					<item id="8748" chance="0.014" min="1" max="1"/>
-					<item id="8758" chance="0.0029" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="34990" chance="65.1751" min="1" max="1"/>
-					<item id="34992" chance="65.1751" min="1" max="1"/>
-					<item id="4613" chance="0.2023" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21815" name="Сундук с Сокровищами" server_name="mimic_63" title="">
 		<set name="type" value="L2Chest"/>
@@ -1341,46 +807,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="646" max="1308"/>
-				</items>
-			</category>
-			<category id="2" chance="1.2079">
-				<items>
-					<item id="12188" chance="2.6483" min="1" max="1"/>
-					<item id="4099" chance="22.3517" min="1" max="1"/>
-					<item id="12189" chance="2.6483" min="1" max="1"/>
-					<item id="4090" chance="22.3517" min="1" max="1"/>
-					<item id="12187" chance="2.6483" min="1" max="1"/>
-					<item id="4091" chance="22.3517" min="1" max="1"/>
-					<item id="12190" chance="2.6483" min="1" max="1"/>
-					<item id="4096" chance="22.3517" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="12.5979">
-				<items>
-					<item id="34992" chance="78.9286" min="4" max="4"/>
-					<item id="1873" chance="15.2765" min="1" max="1"/>
-					<item id="34991" chance="5.0921" min="8" max="8"/>
-					<item id="1889" chance="2.5461" min="1" max="1"/>
-					<item id="4044" chance="1.273" min="1" max="1"/>
-					<item id="5230" chance="0.0509" min="1" max="1"/>
-					<item id="8729" chance="0.5092" min="1" max="1"/>
-					<item id="8739" chance="0.1273" min="1" max="1"/>
-					<item id="8749" chance="0.0127" min="1" max="1"/>
-					<item id="8759" chance="0.0027" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="4052" chance="5.7668" min="1" max="1"/>
-					<item id="5230" chance="0.2172" min="1" max="1"/>
-					<item id="4053" chance="6.9816" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21816" name="Сундук с Сокровищами" server_name="mimic_66" title="">
 		<set name="type" value="L2Chest"/>
@@ -1431,44 +857,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="714" max="1448"/>
-				</items>
-			</category>
-			<category id="2" chance="1.1779">
-				<items>
-					<item id="12183" chance="3.8238" min="1" max="1"/>
-					<item id="4077" chance="33.8862" min="1" max="1"/>
-					<item id="12202" chance="2.676" min="1" max="1"/>
-					<item id="4088" chance="28.469" min="1" max="1"/>
-					<item id="12185" chance="2.676" min="1" max="1"/>
-					<item id="4089" chance="28.469" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="16.8454">
-				<items>
-					<item id="34990" chance="31.6045" min="1" max="1"/>
-					<item id="34992" chance="63.2091" min="1" max="1"/>
-					<item id="34991" chance="3.5819" min="17" max="17"/>
-					<item id="5550" chance="0.4214" min="1" max="1"/>
-					<item id="4043" chance="1.0535" min="1" max="1"/>
-					<item id="5434" chance="0.0117" min="1" max="1"/>
-					<item id="8729" chance="0.4214" min="1" max="1"/>
-					<item id="8739" chance="0.1053" min="1" max="1"/>
-					<item id="8749" chance="0.0105" min="1" max="1"/>
-					<item id="8759" chance="0.0021" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="5438" chance="0.0985" min="1" max="1"/>
-					<item id="4054" chance="3.5501" min="1" max="1"/>
-					<item id="34991" chance="2.4032" min="15" max="15"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21817" name="Сундук с Сокровищами" server_name="mimic_69" title="">
 		<set name="type" value="L2Chest"/>
@@ -1519,46 +907,6 @@
 			<set id="4415" level="5"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="786" max="1596"/>
-				</items>
-			</category>
-			<category id="2" chance="0.8155">
-				<items>
-					<item id="12224" chance="3.9179" min="1" max="1"/>
-					<item id="5496" chance="21.0821" min="1" max="1"/>
-					<item id="12231" chance="3.9179" min="1" max="1"/>
-					<item id="5497" chance="21.0821" min="1" max="1"/>
-					<item id="12221" chance="3.9179" min="1" max="1"/>
-					<item id="5508" chance="21.0821" min="1" max="1"/>
-					<item id="12229" chance="3.9179" min="1" max="1"/>
-					<item id="5509" chance="21.0821" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="12.5994">
-				<items>
-					<item id="34991" chance="49.6603" min="4" max="4"/>
-					<item id="34992" chance="46.5565" min="1" max="1"/>
-					<item id="1874" chance="3.1038" min="1" max="1"/>
-					<item id="4043" chance="1.5519" min="1" max="1"/>
-					<item id="34990" chance="1.5519" min="2" max="2"/>
-					<item id="5440" chance="0.0172" min="1" max="1"/>
-					<item id="8730" chance="0.5173" min="1" max="1"/>
-					<item id="8740" chance="0.1293" min="1" max="1"/>
-					<item id="8750" chance="0.0129" min="1" max="1"/>
-					<item id="8760" chance="0.0027" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="34991" chance="13.2389" min="3" max="3"/>
-					<item id="5478" chance="1.6699" min="1" max="1"/>
-					<item id="5434" chance="0.0735" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21818" name="Сундук с Сокровищами" server_name="mimic_72" title="">
 		<set name="type" value="L2Chest"/>
@@ -1610,44 +958,6 @@
 			<set id="4416" level="2"/>
 			<set id="4789" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="860" max="1756"/>
-				</items>
-			</category>
-			<category id="2" chance="0.6641">
-				<items>
-					<item id="12225" chance="6.7053" min="1" max="1"/>
-					<item id="5494" chance="33.9386" min="1" max="1"/>
-					<item id="12226" chance="4.6976" min="1" max="1"/>
-					<item id="5525" chance="24.9804" min="1" max="1"/>
-					<item id="12234" chance="4.6976" min="1" max="1"/>
-					<item id="5526" chance="24.9805" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="11.2726">
-				<items>
-					<item id="34992" chance="57.1238" min="1" max="1"/>
-					<item id="34991" chance="38.5792" min="24" max="24"/>
-					<item id="34990" chance="2.285" min="2" max="2"/>
-					<item id="4041" chance="0.4967" min="1" max="1"/>
-					<item id="4040" chance="1.1425" min="1" max="1"/>
-					<item id="6901" chance="0.0571" min="1" max="1"/>
-					<item id="8730" chance="0.6347" min="1" max="1"/>
-					<item id="8740" chance="0.1587" min="1" max="1"/>
-					<item id="8750" chance="0.0159" min="1" max="1"/>
-					<item id="8760" chance="0.0031" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="5479" chance="1.0319" min="1" max="1"/>
-					<item id="5440" chance="0.0646" min="1" max="1"/>
-					<item id="5482" chance="2.3018" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21819" name="Сундук с Сокровищами" server_name="mimic_75" title="">
 		<set name="type" value="L2Chest"/>
@@ -1699,46 +1009,6 @@
 			<set id="4416" level="2"/>
 			<set id="4789" level="4"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="941" max="1920"/>
-				</items>
-			</category>
-			<category id="2" chance="0.9792">
-				<items>
-					<item id="12224" chance="3.9179" min="1" max="1"/>
-					<item id="5496" chance="21.0821" min="1" max="1"/>
-					<item id="12231" chance="3.9179" min="1" max="1"/>
-					<item id="5497" chance="21.0821" min="1" max="1"/>
-					<item id="12221" chance="3.9179" min="1" max="1"/>
-					<item id="5508" chance="21.0821" min="1" max="1"/>
-					<item id="12229" chance="3.9179" min="1" max="1"/>
-					<item id="5509" chance="21.0821" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="20.3394">
-				<items>
-					<item id="34992" chance="50.7909" min="2" max="2"/>
-					<item id="34990" chance="46.1735" min="1" max="1"/>
-					<item id="1881" chance="4.6174" min="1" max="1"/>
-					<item id="1875" chance="2.3087" min="1" max="1"/>
-					<item id="34991" chance="0.3011" min="23" max="23"/>
-					<item id="1808" chance="0.0154" min="1" max="1"/>
-					<item id="8731" chance="0.3206" min="1" max="1"/>
-					<item id="8741" chance="0.0802" min="1" max="1"/>
-					<item id="8751" chance="0.0080" min="1" max="1"/>
-					<item id="8761" chance="0.0016" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="1875" chance="12.7175" min="1" max="1"/>
-					<item id="34991" chance="1.6588" min="23" max="23"/>
-					<item id="5480" chance="0.856" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21820" name="Сундук с Сокровищами" server_name="mimic_78" title="">
 		<set name="type" value="L2Chest"/>
@@ -1790,44 +1060,6 @@
 			<set id="4416" level="2"/>
 			<set id="4789" level="5"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1025" max="2092"/>
-				</items>
-			</category>
-			<category id="2" chance="0.7914">
-				<items>
-					<item id="12225" chance="6.7053" min="1" max="1"/>
-					<item id="5494" chance="33.9386" min="1" max="1"/>
-					<item id="12226" chance="4.6976" min="1" max="1"/>
-					<item id="5525" chance="24.9804" min="1" max="1"/>
-					<item id="12234" chance="4.6976" min="1" max="1"/>
-					<item id="5526" chance="24.9805" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="31.9475">
-				<items>
-					<item id="1873" chance="9.6074" min="1" max="1"/>
-					<item id="34992" chance="48.0371" min="1" max="1"/>
-					<item id="34991" chance="4.8037" min="1" max="1"/>
-					<item id="1895" chance="6.8624" min="1" max="1"/>
-					<item id="4042" chance="0.4003" min="1" max="1"/>
-					<item id="3036" chance="0.0107" min="1" max="1"/>
-					<item id="8732" chance="0.2002" min="1" max="1"/>
-					<item id="8742" chance="0.05" min="1" max="1"/>
-					<item id="8752" chance="0.0050" min="1" max="1"/>
-					<item id="1344" chance="30.0232" min="10" max="30"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="6901" chance="0.2078" min="1" max="1"/>
-					<item id="5481" chance="0.9325" min="1" max="1"/>
-					<item id="1808" chance="0.0924" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21821" name="Сундук с Сокровищами" server_name="mimic_81" title="">
 		<set name="type" value="L2Chest"/>
@@ -1879,44 +1111,6 @@
 			<set id="4416" level="2"/>
 			<set id="4789" level="7"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1110" max="2273"/>
-				</items>
-			</category>
-			<category id="2" chance="0.8168">
-				<items>
-					<item id="12267" chance="3.469" min="1" max="1"/>
-					<item id="5502" chance="21.531" min="1" max="1"/>
-					<item id="12260" chance="3.469" min="1" max="1"/>
-					<item id="5503" chance="21.531" min="1" max="1"/>
-					<item id="12264" chance="3.469" min="1" max="1"/>
-					<item id="5514" chance="21.531" min="1" max="1"/>
-					<item id="12257" chance="3.469" min="1" max="1"/>
-					<item id="5515" chance="21.531" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="1.2611">
-				<items>
-					<item id="34990" chance="56.4926" min="4" max="4"/>
-					<item id="4039" chance="27.522" min="1" max="1"/>
-					<item id="34991" chance="34.7017" min="29" max="29"/>
-					<item id="4044" chance="27.522" min="1" max="1"/>
-					<item id="959" chance="0.033" min="1" max="1"/>
-					<item id="8732" chance="6.8805" min="1" max="1"/>
-					<item id="8742" chance="1.7201" min="1" max="1"/>
-					<item id="8752" chance="0.1721" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="5487" chance="1.0159" min="1" max="1"/>
-					<item id="34990" chance="7.5202" min="2" max="2"/>
-					<item id="34991" chance="1.9618" min="23" max="23"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21822" name="Сундук с Сокровищами" server_name="mimic_84" title="">
 		<set name="type" value="L2Chest"/>
@@ -1968,42 +1162,6 @@
 			<set id="4416" level="2"/>
 			<set id="4789" level="8"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="1200" max="2449"/>
-				</items>
-			</category>
-			<category id="2" chance="0.6788">
-				<items>
-					<item id="12268" chance="5.7237" min="1" max="1"/>
-					<item id="5495" chance="33.5054" min="1" max="1"/>
-					<item id="12269" chance="4.0045" min="1" max="1"/>
-					<item id="5527" chance="26.3809" min="1" max="1"/>
-					<item id="12261" chance="4.0045" min="1" max="1"/>
-					<item id="5528" chance="26.381" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="4.1197">
-				<items>
-					<item id="1895" chance="77.9066" min="1" max="1"/>
-					<item id="4040" chance="5.4535" min="1" max="1"/>
-					<item id="4042" chance="4.5446" min="1" max="1"/>
-					<item id="4043" chance="9.0891" min="1" max="1"/>
-					<item id="960" chance="0.1091" min="1" max="1"/>
-					<item id="8732" chance="2.2723" min="1" max="1"/>
-					<item id="8742" chance="0.5681" min="1" max="1"/>
-					<item id="8752" chance="0.0567" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="6688" chance="0.5261" min="1" max="1"/>
-					<item id="6689" chance="0.5162" min="1" max="1"/>
-					<item id="6690" chance="0.5271" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21823" name="Ритуальный Палач" server_name="sacrifice_executer" title="">
 		<set name="type" value="L2Monster"/>
@@ -2066,38 +1224,6 @@
 			<set id="4613" level="9"/>
 			<set id="4789" level="6"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.0">
-				<items>
-					<item id="57" chance="100.0" min="10189" max="20801"/>
-				</items>
-			</category>
-			<category id="2" chance="1.1154">
-				<items>
-					<item id="11975" chance="6.0817" min="1" max="1"/>
-					<item id="5534" chance="93.9183" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="3" chance="11.5533">
-				<items>
-					<item id="34990" chance="56.4926" min="4" max="4"/>
-					<item id="4039" chance="27.522" min="1" max="1"/>
-					<item id="34991" chance="34.7017" min="29" max="29"/>
-					<item id="4044" chance="27.522" min="1" max="1"/>
-					<item id="959" chance="0.033" min="1" max="1"/>
-					<item id="8732" chance="6.8805" min="1" max="1"/>
-					<item id="8742" chance="1.7201" min="1" max="1"/>
-					<item id="8752" chance="0.1721" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="34990" chance="141.4128" min="4" max="4"/>
-					<item id="4039" chance="68.8934" min="1" max="1"/>
-					<item id="5480" chance="9.2742" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21824" name="Горная Кукабарра" server_name="alpine_kukaburo_4_war_i1" title="">
 		<set name="type" value="L2FeedableBeast"/>
@@ -2155,42 +1281,6 @@
 			<set id="4589" level="6"/>
 			<set id="4600" level="6"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.6835">
-				<items>
-					<item id="171" chance="0.0913" min="1" max="1"/>
-					<item id="4116" chance="20.127" min="1" max="1"/>
-					<item id="175" chance="0.0913" min="1" max="1"/>
-					<item id="4117" chance="20.127" min="1" max="1"/>
-					<item id="210" chance="0.0913" min="1" max="1"/>
-					<item id="4118" chance="19.0692" min="1" max="1"/>
-					<item id="7893" chance="0.0913" min="1" max="1"/>
-					<item id="8340" chance="20.127" min="1" max="1"/>
-					<item id="7901" chance="0.0913" min="1" max="1"/>
-					<item id="8348" chance="20.0933" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="2" chance="4.4655">
-				<items>
-					<item id="34990" chance="53.6098" min="4" max="4"/>
-					<item id="4039" chance="26.1176" min="1" max="1"/>
-					<item id="34991" chance="32.9309" min="29" max="29"/>
-					<item id="4044" chance="26.1176" min="1" max="1"/>
-					<item id="729" chance="0.0871" min="1" max="1"/>
-					<item id="8729" chance="10.447" min="1" max="1"/>
-					<item id="8739" chance="2.6118" min="1" max="1"/>
-					<item id="8749" chance="0.2612" min="1" max="1"/>
-					<item id="8759" chance="0.0522" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="34990" chance="37.405" min="2" max="2"/>
-					<item id="4052" chance="37.7427" min="1" max="1"/>
-					<item id="1807" chance="1.4214" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21825" name="Горная Кукабарра" server_name="alpine_kukaburo_4_wiz_i1" title="">
 		<set name="type" value="L2FeedableBeast"/>
@@ -2250,40 +1340,6 @@
 			<set id="4571" level="6"/>
 			<set id="4657" level="6"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="2.2676">
-				<items>
-					<item id="358" chance="0.1784" min="1" max="1"/>
-					<item id="4078" chance="32.2503" min="1" max="1"/>
-					<item id="2380" chance="0.2854" min="1" max="1"/>
-					<item id="4080" chance="45.4152" min="1" max="1"/>
-					<item id="2381" chance="0.1098" min="1" max="1"/>
-					<item id="4081" chance="21.7609" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="2" chance="29.785">
-				<items>
-					<item id="34990" chance="22.9199" min="1" max="1"/>
-					<item id="34992" chance="18.3359" min="1" max="1"/>
-					<item id="34991" chance="10.3903" min="17" max="17"/>
-					<item id="5550" chance="1.2224" min="1" max="1"/>
-					<item id="4043" chance="3.056" min="1" max="1"/>
-					<item id="730" chance="0.0764" min="1" max="1"/>
-					<item id="8729" chance="1.2224" min="1" max="1"/>
-					<item id="8739" chance="0.3056" min="1" max="1"/>
-					<item id="8749" chance="0.0306" min="1" max="1"/>
-					<item id="8759" chance="0.0061" min="1" max="1"/>
-					<item id="1343" chance="43.6568" min="30" max="90"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="4053" chance="43.5874" min="1" max="1"/>
-					<item id="3035" chance="1.3559" min="1" max="1"/>
-					<item id="4054" chance="20.0294" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21826" name="Горный Буйвол" server_name="alpine_buffalo_4_war_i1" title="">
 		<set name="type" value="L2FeedableBeast"/>
@@ -2341,39 +1397,6 @@
 			<set id="4589" level="6"/>
 			<set id="4600" level="6"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="2.5383">
-				<items>
-					<item id="358" chance="0.1784" min="1" max="1"/>
-					<item id="4078" chance="32.2503" min="1" max="1"/>
-					<item id="2380" chance="0.2854" min="1" max="1"/>
-					<item id="4080" chance="45.4152" min="1" max="1"/>
-					<item id="2381" chance="0.1098" min="1" max="1"/>
-					<item id="4081" chance="21.7609" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="2" chance="33.2393">
-				<items>
-					<item id="34991" chance="57.3212" min="4" max="4"/>
-					<item id="34992" chance="33.7184" min="1" max="1"/>
-					<item id="1874" chance="6.7437" min="1" max="1"/>
-					<item id="4043" chance="3.3718" min="1" max="1"/>
-					<item id="34990" chance="3.3718" min="2" max="2"/>
-					<item id="6339" chance="0.7781" min="1" max="1"/>
-					<item id="8730" chance="1.1239" min="1" max="1"/>
-					<item id="8740" chance="0.281" min="1" max="1"/>
-					<item id="8750" chance="0.0281" min="1" max="1"/>
-					<item id="8760" chance="0.0057" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="34991" chance="75.8857" min="3" max="3"/>
-					<item id="4043" chance="37.9428" min="1" max="1"/>
-					<item id="4077" chance="51.2049" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21827" name="Горный Буйвол" server_name="alpine_buffalo_4_wiz_i1" title="">
 		<set name="type" value="L2FeedableBeast"/>
@@ -2433,40 +1456,6 @@
 			<set id="4571" level="6"/>
 			<set id="4657" level="6"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.7049">
-				<items>
-					<item id="79" chance="0.1503" min="1" max="1"/>
-					<item id="4114" chance="33.2016" min="1" max="1"/>
-					<item id="7883" chance="0.1503" min="1" max="1"/>
-					<item id="8330" chance="33.1458" min="1" max="1"/>
-					<item id="7889" chance="0.1503" min="1" max="1"/>
-					<item id="8336" chance="33.2017" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="2" chance="36.7925">
-				<items>
-					<item id="34992" chance="26.416" min="1" max="1"/>
-					<item id="34991" chance="53.5212" min="24" max="24"/>
-					<item id="34990" chance="3.1699" min="2" max="2"/>
-					<item id="4041" chance="0.6891" min="1" max="1"/>
-					<item id="4040" chance="1.585" min="1" max="1"/>
-					<item id="5456" chance="0.0294" min="1" max="1"/>
-					<item id="8730" chance="0.8805" min="1" max="1"/>
-					<item id="8740" chance="0.2201" min="1" max="1"/>
-					<item id="8750" chance="0.022" min="1" max="1"/>
-					<item id="8760" chance="0.0044" min="1" max="1"/>
-					<item id="1343" chance="14.1515" min="80" max="240"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="3956" chance="1.4477" min="1" max="1"/>
-					<item id="4078" chance="15.8605" min="1" max="1"/>
-					<item id="5156" chance="1.4477" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21828" name="Горный Кугуар" server_name="alpine_cougar_4_war_i1" title="">
 		<set name="type" value="L2FeedableBeast"/>
@@ -2524,41 +1513,6 @@
 			<set id="4589" level="6"/>
 			<set id="4600" level="6"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="0.6086">
-				<items>
-					<item id="212" chance="0.1045" min="1" max="1"/>
-					<item id="5543" chance="25.0791" min="1" max="1"/>
-					<item id="2504" chance="0.1045" min="1" max="1"/>
-					<item id="5532" chance="24.8449" min="1" max="1"/>
-					<item id="7894" chance="0.1045" min="1" max="1"/>
-					<item id="8341" chance="24.8131" min="1" max="1"/>
-					<item id="7899" chance="0.1045" min="1" max="1"/>
-					<item id="8346" chance="24.8449" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="2" chance="39.4936">
-				<items>
-					<item id="34992" chance="45.4026" min="1" max="1"/>
-					<item id="34991" chance="30.2684" min="1" max="1"/>
-					<item id="1879" chance="15.1342" min="1" max="1"/>
-					<item id="1875" chance="6.0537" min="1" max="1"/>
-					<item id="4040" chance="1.8161" min="1" max="1"/>
-					<item id="5450" chance="0.0336" min="1" max="1"/>
-					<item id="8730" chance="1.0089" min="1" max="1"/>
-					<item id="8740" chance="0.2522" min="1" max="1"/>
-					<item id="8750" chance="0.0252" min="1" max="1"/>
-					<item id="8760" chance="0.0051" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="5478" chance="10.2093" min="1" max="1"/>
-					<item id="729" chance="0.1349" min="1" max="1"/>
-					<item id="1875" chance="80.9392" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="21829" name="Горный Кугуар" server_name="alpine_cougar_4_wiz_i1" title="">
 		<set name="type" value="L2FeedableBeast"/>
@@ -2618,39 +1572,5 @@
 			<set id="4571" level="6"/>
 			<set id="4657" level="6"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="1.5829">
-				<items>
-					<item id="5304" chance="0.2697" min="1" max="1"/>
-					<item id="5485" chance="30.2857" min="1" max="1"/>
-					<item id="5305" chance="0.4313" min="1" max="1"/>
-					<item id="5489" chance="47.5362" min="1" max="1"/>
-					<item id="5308" chance="0.1659" min="1" max="1"/>
-					<item id="5486" chance="21.3112" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="2" chance="33.8186">
-				<items>
-					<item id="34990" chance="22.9896" min="1" max="1"/>
-					<item id="34992" chance="18.3917" min="1" max="1"/>
-					<item id="34991" chance="10.4219" min="17" max="17"/>
-					<item id="5550" chance="1.2261" min="1" max="1"/>
-					<item id="4043" chance="3.0653" min="1" max="1"/>
-					<item id="5448" chance="0.0341" min="1" max="1"/>
-					<item id="8730" chance="1.0218" min="1" max="1"/>
-					<item id="8740" chance="0.2554" min="1" max="1"/>
-					<item id="8750" chance="0.0255" min="1" max="1"/>
-					<item id="8760" chance="0.0051" min="1" max="1"/>
-					<item id="1343" chance="43.7896" min="30" max="90"/>
-				</items>
-			</category>
-			<category id="-1" chance="100.0">
-				<items>
-					<item id="4053" chance="49.6406" min="1" max="1"/>
-					<item id="3035" chance="1.5442" min="1" max="1"/>
-					<item id="4054" chance="22.811" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 </list>

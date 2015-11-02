@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="NpcData.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="../../../xsd/NpcData.xsd">
 	<npc id="35800" name="Капитан Поддержки" server_name="oren_fort_wizard_n" title="Крепость Слоновой Кости">
 		<set name="type" value="L2Npc"/>
 		<set name="sex" value="female"/>
@@ -196,19 +195,6 @@
 			<set id="4415" level="3"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="11.346">
-				<items>
-					<item id="9590" chance="45.454" min="1" max="1"/>
-					<item id="3936" chance="54.545" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="2" chance="100.0">
-				<items>
-					<item id="9912" chance="100.0" min="200" max="400"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35804" name="Управляющий Лагеря" server_name="oren_fort_campkeeper" title="Крепость Слоновой Кости">
 		<set name="type" value="L2Npc"/>
@@ -479,19 +465,6 @@
 			<set id="4415" level="3"/>
 			<set id="4416" level="16"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="13.78">
-				<items>
-					<item id="9581" chance="66.0508" min="1" max="1"/>
-					<item id="9591" chance="33.9492" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="2" chance="90.0">
-				<items>
-					<item id="9912" chance="100.0" min="40" max="200"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35809" name="Ратник Повстанец" server_name="oren_fort_rebel_z" title="Крепость Слоновой Кости">
 		<set name="type" value="L2Defender"/>
@@ -542,13 +515,6 @@
 			<set id="4416" level="9"/>
 			<set id="5065" level="7"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="78.165">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35810" name="Солдат Повстанец" server_name="oren_fort_rebel_zz" title="Крепость Слоновой Кости">
 		<set name="type" value="L2Defender"/>
@@ -599,13 +565,6 @@
 			<set id="4415" level="11"/>
 			<set id="4416" level="14"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="71.857">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="12"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35811" name="Гвардеец" server_name="oren_fort_guard" title="Крепость Слоновой Кости">
 		<set name="type" value="L2Defender"/>
@@ -657,13 +616,6 @@
 			<set id="4416" level="22"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="66.28">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="12"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35812" name="Охранник" server_name="oren_fort_guard_e" title="Крепость Слоновой Кости">
 		<set name="type" value="L2Defender"/>
@@ -716,13 +668,6 @@
 			<set id="4416" level="22"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="67.211">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="12"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35813" name="Управление Энергией" server_name="oren_fort_pcntrler" title="Комната Управления">
 		<set name="type" value="L2Npc"/>
@@ -825,13 +770,6 @@
 			<set id="5461" level="6"/>
 			<set id="5468" level="6"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="61.737">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="12"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35815" name="Начальник Гарнизона" server_name="oren_fort_garrison" title="Гарнизон">
 		<set name="type" value="L2FortCommander"/>
@@ -891,13 +829,6 @@
 			<set id="5432" level="1"/>
 			<set id="5457" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="84.137">
-				<items>
-					<item id="9912" chance="100.0" min="140" max="300"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35816" name="Караульный" server_name="oren_fort_garrison_a" title="Гарнизон">
 		<set name="type" value="L2Defender"/>
@@ -1002,13 +933,6 @@
 			<set id="5045" level="6"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="73.01">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35818" name="Капитан Поддержки" server_name="oren_fort_wizard" title="Поддержка">
 		<set name="type" value="L2FortCommander"/>
@@ -1065,13 +989,6 @@
 			<set id="5432" level="1"/>
 			<set id="5457" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="84.1571">
-				<items>
-					<item id="9912" chance="100.0" min="140" max="300"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35819" name="Чародей" server_name="oren_fort_witch" title="Поддержка">
 		<set name="type" value="L2Defender"/>
@@ -1126,13 +1043,6 @@
 			<set id="5396" level="1"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="77.574">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35820" name="Целитель" server_name="oren_fort_healer" title="Поддержка">
 		<set name="type" value="L2Defender"/>
@@ -1186,13 +1096,6 @@
 			<set id="5114" level="6"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="82.382">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35821" name="Капитан Лучников" server_name="oren_fort_archer" title="Подразделение Лучников">
 		<set name="type" value="L2FortCommander"/>
@@ -1249,13 +1152,6 @@
 			<set id="5432" level="1"/>
 			<set id="5457" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="84.2235">
-				<items>
-					<item id="9912" chance="100.0" min="140" max="300"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35822" name="Лучник" server_name="oren_fort_archer_z" title="Подразделение Лучников">
 		<set name="type" value="L2Defender"/>
@@ -1309,13 +1205,6 @@
 			<set id="5046" level="6"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="71.0">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35823" name="Баллиста" server_name="oren_fort_ballista" title="Крепость Слоновой Кости">
 		<set name="type" value="L2Npc"/>
@@ -1915,19 +1804,6 @@
 			<set id="4415" level="3"/>
 			<set id="4416" level="2"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="13.636">
-				<items>
-					<item id="9590" chance="45.454" min="1" max="1"/>
-					<item id="3936" chance="54.545" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="2" chance="100.0">
-				<items>
-					<item id="9912" chance="100.0" min="240" max="480"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35835" name="Управляющий Лагеря" server_name="aden_fort_a_campkeeper" title="Крепость Нарсилл">
 		<set name="type" value="L2Npc"/>
@@ -2198,19 +2074,6 @@
 			<set id="4415" level="3"/>
 			<set id="4416" level="16"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="13.78">
-				<items>
-					<item id="9581" chance="66.0508" min="1" max="1"/>
-					<item id="9591" chance="33.9492" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="2" chance="90.0">
-				<items>
-					<item id="9912" chance="100.0" min="40" max="200"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35840" name="Ратник Повстанец" server_name="aden_fort_a_rebel_z" title="Крепость Нарсилл">
 		<set name="type" value="L2Defender"/>
@@ -2261,13 +2124,6 @@
 			<set id="4416" level="9"/>
 			<set id="5065" level="7"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="78.165">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35841" name="Солдат Повстанец" server_name="aden_fort_a_rebel_zz" title="Крепость Нарсилл">
 		<set name="type" value="L2Defender"/>
@@ -2318,13 +2174,6 @@
 			<set id="4415" level="11"/>
 			<set id="4416" level="14"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="71.857">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="12"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35842" name="Гвардеец" server_name="aden_fort_a_guard" title="Крепость Нарсилл">
 		<set name="type" value="L2Defender"/>
@@ -2376,13 +2225,6 @@
 			<set id="4416" level="22"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="66.28">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="12"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35843" name="Охранник" server_name="aden_fort_a_guard_e" title="Крепость Нарсилл">
 		<set name="type" value="L2Defender"/>
@@ -2435,13 +2277,6 @@
 			<set id="4416" level="22"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="67.211">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="12"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35844" name="Управление Энергией" server_name="aden_fort_a_pcntrler" title="Комната Управления">
 		<set name="type" value="L2Npc"/>
@@ -2544,13 +2379,6 @@
 			<set id="5461" level="6"/>
 			<set id="5468" level="6"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="61.737">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="12"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35846" name="Начальник Гарнизона" server_name="aden_fort_a_garrison" title="Гарнизон">
 		<set name="type" value="L2FortCommander"/>
@@ -2610,13 +2438,6 @@
 			<set id="5432" level="1"/>
 			<set id="5457" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="84.137">
-				<items>
-					<item id="9912" chance="100.0" min="140" max="300"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35847" name="Караульный" server_name="aden_fort_a_garrison_a" title="Гарнизон">
 		<set name="type" value="L2Defender"/>
@@ -2721,13 +2542,6 @@
 			<set id="5045" level="6"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="73.01">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35849" name="Капитан Поддержки" server_name="aden_fort_a_wizard" title="Поддержка">
 		<set name="type" value="L2FortCommander"/>
@@ -2784,13 +2598,6 @@
 			<set id="5432" level="1"/>
 			<set id="5457" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="84.1571">
-				<items>
-					<item id="9912" chance="100.0" min="140" max="300"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35850" name="Чародей" server_name="aden_fort_a_witch" title="Поддержка">
 		<set name="type" value="L2Defender"/>
@@ -2845,13 +2652,6 @@
 			<set id="5396" level="1"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="77.574">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35851" name="Целитель" server_name="aden_fort_a_healer" title="Поддержка">
 		<set name="type" value="L2Defender"/>
@@ -2905,13 +2705,6 @@
 			<set id="5114" level="6"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="82.382">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35852" name="Капитан Лучников" server_name="aden_fort_a_archer" title="Подразделение Лучников">
 		<set name="type" value="L2FortCommander"/>
@@ -2968,13 +2761,6 @@
 			<set id="5432" level="1"/>
 			<set id="5457" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="84.2235">
-				<items>
-					<item id="9912" chance="100.0" min="140" max="300"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35853" name="Лучник" server_name="aden_fort_a_archer_z" title="Подразделение Лучников">
 		<set name="type" value="L2Defender"/>
@@ -3028,13 +2814,6 @@
 			<set id="5046" level="6"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="71.0">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35854" name="Баллиста" server_name="aden_fort_a_ballista" title="Крепость Нарсилл">
 		<set name="type" value="L2Npc"/>
@@ -3955,19 +3734,6 @@
 			<set id="4415" level="3"/>
 			<set id="4416" level="16"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="13.78">
-				<items>
-					<item id="9581" chance="66.0508" min="1" max="1"/>
-					<item id="9591" chance="33.9492" min="1" max="1"/>
-				</items>
-			</category>
-			<category id="2" chance="90.0">
-				<items>
-					<item id="9912" chance="100.0" min="40" max="200"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35872" name="Ратник Повстанец" server_name="aden_fort_b_rebel_z" title="Крепость Гигантов">
 		<set name="type" value="L2Defender"/>
@@ -4018,13 +3784,6 @@
 			<set id="4416" level="9"/>
 			<set id="5065" level="7"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="78.005">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35873" name="Солдат Повстанец" server_name="aden_fort_b_rebel_zz" title="Крепость Гигантов">
 		<set name="type" value="L2Defender"/>
@@ -4075,13 +3834,6 @@
 			<set id="4415" level="11"/>
 			<set id="4416" level="14"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="71.957">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="12"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35874" name="Гвардеец" server_name="aden_fort_b_guard" title="Крепость Гигантов">
 		<set name="type" value="L2Defender"/>
@@ -4133,13 +3885,6 @@
 			<set id="4416" level="22"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="66.28">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="12"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35875" name="Охранник" server_name="aden_fort_b_guard_e" title="Крепость Гигантов">
 		<set name="type" value="L2Defender"/>
@@ -4192,13 +3937,6 @@
 			<set id="4416" level="22"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="66.211">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="12"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35876" name="Главный Механизм" server_name="aden_fort_b_machine" title="Комната Управления">
 		<set name="type" value="L2Npc"/>
@@ -4458,14 +4196,6 @@
 			<set id="5461" level="6"/>
 			<set id="5468" level="6"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="48.2776">
-				<items>
-					<item id="9912" chance="4.0" min="24" max="72"/>
-					<item id="10014" chance="96.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35881" name="Голем Разведчик" server_name="aden_fort_b_golem" title="Комната Управления">
 		<set name="type" value="L2Defender"/>
@@ -4515,13 +4245,6 @@
 			<set id="4415" level="3"/>
 			<set id="4416" level="22"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="46.0">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="6"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35882" name="Начальник Гарнизона" server_name="aden_fort_b_garrison" title="Гарнизон">
 		<set name="type" value="L2FortCommander"/>
@@ -4581,13 +4304,6 @@
 			<set id="5432" level="1"/>
 			<set id="5457" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="84.1571">
-				<items>
-					<item id="9912" chance="100.0" min="140" max="300"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35883" name="Караульный" server_name="aden_fort_b_garrison_a" title="Гарнизон">
 		<set name="type" value="L2Defender"/>
@@ -4692,13 +4408,6 @@
 			<set id="5045" level="6"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="73.01">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35885" name="Капитан Поддержки" server_name="aden_fort_b_wizard" title="Поддержка">
 		<set name="type" value="L2FortCommander"/>
@@ -4755,13 +4464,6 @@
 			<set id="5432" level="1"/>
 			<set id="5457" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="84.1571">
-				<items>
-					<item id="9912" chance="100.0" min="140" max="300"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35886" name="Чародей" server_name="aden_fort_b_witch" title="Поддержка">
 		<set name="type" value="L2Defender"/>
@@ -4816,13 +4518,6 @@
 			<set id="5396" level="1"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="77.574">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35887" name="Целитель" server_name="aden_fort_b_healer" title="Поддержка">
 		<set name="type" value="L2Defender"/>
@@ -4876,13 +4571,6 @@
 			<set id="5114" level="6"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="82.382">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35888" name="Капитан Лучников" server_name="aden_fort_b_archer" title="Подразделение Лучников">
 		<set name="type" value="L2FortCommander"/>
@@ -4939,13 +4627,6 @@
 			<set id="5432" level="1"/>
 			<set id="5457" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="84.2235">
-				<items>
-					<item id="9912" chance="100.0" min="140" max="300"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35889" name="Лучник" server_name="aden_fort_b_archer_z" title="Подразделение Лучников">
 		<set name="type" value="L2Defender"/>
@@ -4999,13 +4680,6 @@
 			<set id="5046" level="6"/>
 			<set id="5432" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="71.0">
-				<items>
-					<item id="9912" chance="100.0" min="4" max="16"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35890" name="Генерал" server_name="aden_fort_b_officer_de" title="Офицерские Казармы">
 		<set name="type" value="L2FortCommander"/>
@@ -5061,13 +4735,6 @@
 			<set id="5432" level="1"/>
 			<set id="5457" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.4766">
-				<items>
-					<item id="9912" chance="100.0" min="40" max="154"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35891" name="Министр" server_name="aden_fort_b_officer_or" title="Офицерские Казармы">
 		<set name="type" value="L2Defender"/>
@@ -5121,13 +4788,6 @@
 			<set id="5432" level="1"/>
 			<set id="5457" level="1"/>
 		</skills>
-		<drop_list>
-			<category id="1" chance="70.4766">
-				<items>
-					<item id="9912" chance="100.0" min="40" max="154"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="35892" name="Баллиста" server_name="aden_fort_b_ballista" title="Крепость Гигантов">
 		<set name="type" value="L2Npc"/>
