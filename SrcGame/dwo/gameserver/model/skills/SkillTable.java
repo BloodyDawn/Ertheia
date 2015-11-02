@@ -8,6 +8,8 @@ import dwo.gameserver.model.holders.SkillHolder;
 import dwo.gameserver.model.skills.base.L2Skill;
 import gnu.trove.list.array.TIntArrayList;
 import gnu.trove.map.hash.TIntIntHashMap;
+
+import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -114,15 +116,7 @@ public class SkillTable
 		{
 			return _skills.get(getSkillHashCode(skillId, maxLvl));
 		}
-        //      Уже не имеет смысла, т.к. болванки создаются на все скилы )
-		//_log.log(Level.WARN, "No skill info found for skill id " + skillId + " and skill level " + level + '.');
-		//for(StackTraceElement elem : Thread.currentThread().getStackTrace())
-		//{
-		//	if(elem != null)
-		//	{
-		//		_log.log(Level.WARN, "Class " + elem.getClassName() + ", line " + elem.getLineNumber() + ", method" + elem.getMethodName() + ", file " + elem.getFileName());
-		//	}
-		//}
+		_log.log(Level.WARN, "No skill info found for skill id " + skillId + " and skill level " + level + '.');
 		return null;
 	}
 
