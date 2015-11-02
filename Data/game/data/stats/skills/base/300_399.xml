@@ -2110,14 +2110,16 @@
             </effect>
         </enchant1for>
     </skill>
-    <skill enchantGroup1="5" enchantGroup2="5" id="367" levels="1" name="Танец Медузы">
+    <skill enchantGroup1="5" enchantGroup2="5" id="367" levels="8" name="Танец Медузы">
         <table name="#enchantMagicLvl">81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
         <table name="#ench1Power">42 45 48 50 53 56 58 61 64 66 69 72 74 77 80</table>
         <table name="#ench2Power">41 42 43 44 45 46 47 48 49 50 51 52 53 54 55</table>
         <table name="#ench2Time">11 12 13 14 15 16 17 18 19 20 21 22 23 24 25</table>
+        <table name="#hitTime">2200 2099 2000 1899 1799 1700 1600 1500</table>
+        <table name="#mpConsume">43 50 75 90 126 139 153 166</table>
         <set name="element" val="3"/>
         <set name="magicLvl" val="77"/>
-        <set name="mpConsume" val="53"/>
+        <set name="mpConsume" val="#mpConsume"/>
         <set name="power" val="40"/>
         <set name="skillRadius" val="150"/>
         <set name="target" val="TARGET_AURA"/>
@@ -2126,8 +2128,8 @@
         <set name="isDebuff" val="true"/>
         <set name="lvlDepend" val="1"/>
         <set name="operateType" val="OP_ACTIVE"/>
-        <set name="hitTime" val="2000"/>
-        <set name="reuseDelay" val="30000"/>
+        <set name="hitTime" val="#hitTime"/>
+        <set name="reuseDelay" val="120000"/>
         <enchant1 name="magicLvl" val="#enchantMagicLvl"/>
         <enchant1 name="power" val="#ench1Power"/>
         <enchant2 name="magicLvl" val="#enchantMagicLvl"/>
