@@ -370,7 +370,10 @@ public class NpcTable extends XmlDocumentParser
 
     public L2NpcTemplate getTemplate(int id)
     {
-        return _npcs.get(id);
+        L2NpcTemplate template = _npcs.get(id);
+        if (template == null)
+            _log.error("NPC template not found for npcId " + id);
+        return template;
     }
 
     public L2NpcTemplate getTemplateByName(String name)
