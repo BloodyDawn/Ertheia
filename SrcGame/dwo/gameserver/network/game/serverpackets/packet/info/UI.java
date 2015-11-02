@@ -7,8 +7,7 @@ import dwo.gameserver.instancemanager.RaidBossPointsManager;
 import dwo.gameserver.model.actor.L2Character;
 import dwo.gameserver.model.actor.instance.L2PcInstance;
 import dwo.gameserver.model.items.Elementals;
-import dwo.gameserver.model.player.formation.clan.L2Clan;
-import dwo.gameserver.model.player.formation.group.L2Party;
+import dwo.gameserver.model.player.PlayerSiegeSide;
 import dwo.gameserver.network.game.masktypes.UserInfoType;
 import dwo.gameserver.network.game.serverpackets.AbstractMaskPacket;
 import dwo.gameserver.util.Colors;
@@ -115,7 +114,8 @@ public class UI extends AbstractMaskPacket<UserInfoType>
 
         if (containsMask(UserInfoType.RELATION))
         {
-            writeD(_relation);
+            writeH(UserInfoType.RELATION.getBlockLength());
+            writeH(_relation);
         }
 
         if (containsMask(UserInfoType.BASIC_INFO))
@@ -345,35 +345,14 @@ public class UI extends AbstractMaskPacket<UserInfoType>
         }
     }
 
-    private int calculateRelation(L2PcInstance activeChar)
-    {
-        int relation = 0;
-        final L2Party party = activeChar.getParty();
-        final L2Clan clan = activeChar.getClan();
-
-        if (party != null)
-        {
-            relation |= 0x08; // Party member
-            if (party.getLeader() == _activeChar)
-            {
-                relation |= 0x10; // Party leader
-            }
+    private int calculateRelation(L2PcInstance activeChar) {
+        int relation = activeChar.isClanLeader() ? 0x40 : 0;
+        if (activeChar.getSiegeSide() == PlayerSiegeSide.ATTACKER) {
+            relation |= 0x180;
         }
-
-        if (clan != null)
-        {
-            relation |= 0x20; // Clan member
-            if (clan.getLeaderId() == activeChar.getObjectId())
-            {
-                relation |= 0x40; // Clan leader
-            }
+        if (activeChar.getSiegeSide() == PlayerSiegeSide.DEFENDER) {
+            relation |= 0x80;
         }
-
-        if (activeChar.isInSiege())
-        {
-            relation |= 0x80; // In siege
-        }
-
         return relation;
     }
 }
