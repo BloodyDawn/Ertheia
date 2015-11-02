@@ -53,7 +53,6 @@ public class NpcTable extends XmlDocumentParser
     public void load() throws JDOMException, IOException {
         _npcs.clear();
         _drop.clear();
-        parseFile( new File( Config.DATAPACK_ROOT, "/data/stats/client/ClientNpc.xml" ) );
         parseDirectory(FilePath.NPC_STATS);
 
         try
@@ -371,7 +370,10 @@ public class NpcTable extends XmlDocumentParser
 
     public L2NpcTemplate getTemplate(int id)
     {
-        return _npcs.get(id);
+        L2NpcTemplate template = _npcs.get(id);
+        if (template == null)
+            _log.error("NPC template not found for npcId " + id);
+        return template;
     }
 
     public L2NpcTemplate getTemplateByName(String name)

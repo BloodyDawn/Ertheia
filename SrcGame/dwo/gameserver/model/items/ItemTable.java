@@ -171,18 +171,6 @@ public class ItemTable
 
         List<L2Item> items = new ArrayList<>();
 
-        XmlDocumentItemClient doc = new XmlDocumentItemClient(new File(Config.DATAPACK_ROOT, "data/stats/client/ClientWeapons.xml"));
-        doc.parse();
-        items.addAll(doc.getItems());
-
-        doc = new XmlDocumentItemClient(new File(Config.DATAPACK_ROOT, "data/stats/client/ClientArmors.xml"));
-        doc.parse();
-        items.addAll(doc.getItems());
-
-        doc = new XmlDocumentItemClient(new File(Config.DATAPACK_ROOT, "data/stats/client/ClientEtcItems.xml"));
-        doc.parse();
-        items.addAll(doc.getItems());
-
         int lastItemId = 0;
 
         for(L2Item item : items)

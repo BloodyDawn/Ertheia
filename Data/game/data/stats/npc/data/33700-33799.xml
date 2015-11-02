@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="NpcData.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="../../../xsd/NpcData.xsd">
 	<npc id="33700" name="Сундук с Сокровищами Пространства" server_name="" title="">
 		<set name="type" value="L2Npc"/>
 		<set name="sex" value="male"/>
@@ -1190,61 +1189,40 @@
 		</ai_params>
 	</npc>
 	<npc id="33733" name="Голубой Снеговик" server_name="" title="">
-		<set name="type" value="L2Monster"/>
+		<set name="type" value="L2Npc"/>
 		<set name="sex" value="male"/>
-		<set name="level" value="95"/>
-		<set name="exp" value="2259525"/>
-		<set name="sp" value="43749"/>
-		<set name="org_hp" value="13256"/>
-		<set name="org_mp" value="1881"/>
+		<set name="level" value="99"/>
+		<set name="org_hp" value="500"/>
+		<set name="org_mp" value="1"/>
 		<set name="org_hp_regen" value="8.5"/>
 		<set name="org_mp_regen" value="3"/>
-		<set name="base_physical_attack" value="971"/>
-		<set name="base_magic_attack" value="663"/>
-		<set name="base_defend" value="341"/>
-		<set name="base_magic_defend" value="250"/>
+		<set name="base_physical_attack" value="4900"/>
+		<set name="base_magic_attack" value="2550"/>
+		<set name="base_defend" value="3840"/>
+		<set name="base_magic_defend" value="825"/>
 		<set name="base_attack_speed" value="253"/>
 		<set name="base_attack_range" value="40"/>
 		<set name="base_critical" value="4"/>
 		<set name="ground_high" value="120"/>
-		<set name="ground_low" value="40"/>
-		<set name="str" value="89"/>
-		<set name="con" value="75"/>
-		<set name="dex" value="42"/>
-		<set name="int" value="79"/>
-		<set name="wit" value="66"/>
-		<set name="men" value="10"/>
-		<set name="collision_radius" value="28"/>
-		<set name="collision_height" value="46.15"/>
-		<set name="baseFireRes" value="160"/>
-		<set name="baseWaterRes" value="160"/>
-		<set name="baseWindRes" value="160"/>
-		<set name="baseEarthRes" value="160"/>
-		<set name="baseDivineRes" value="160"/>
-		<set name="baseDarkRes" value="160"/>
+		<set name="ground_low" value="30"/>
+		<set name="str" value="109"/>
+		<set name="con" value="96"/>
+		<set name="dex" value="98"/>
+		<set name="int" value="59"/>
+		<set name="wit" value="128"/>
+		<set name="men" value="78"/>
+		<set name="collision_radius" value="20"/>
+		<set name="collision_height" value="30"/>
+		<set name="drop_herb_group" value="1"/>
+		<set name="baseFireRes" value="300"/>
+		<set name="baseWaterRes" value="300"/>
+		<set name="baseWindRes" value="300"/>
+		<set name="baseEarthRes" value="300"/>
+		<set name="baseDivineRes" value="300"/>
+		<set name="baseDarkRes" value="300"/>
 		<ai_params>
 			<set name="ai_type" value="fighter"/>
 		</ai_params>
-		<skills>
-			<set id="4410" level="15"/>
-			<set id="4416" level="6"/>
-			<set id="5463" level="1"/>
-		</skills>
-		<drop_list>
-			<category id="1" chance="100.0">
-				<items>
-					<item id="4355" chance="15.0" min="1" max="2"/>
-				</items>
-			</category>
-			<category id="2" chance="100.0">
-				<items>
-					<item id="22421" chance="8.0" min="1" max="1"/>
-					<item id="22422" chance="5.0" min="1" max="1"/>
-					<item id="22423" chance="10.0" min="1" max="1"/>
-					<item id="22424" chance="5.0" min="1" max="1"/>
-				</items>
-			</category>
-		</drop_list>
 	</npc>
 	<npc id="33734" name="Снегурочка" server_name="" title="Веселого Рождества">
 		<set name="type" value="L2Npc"/>
