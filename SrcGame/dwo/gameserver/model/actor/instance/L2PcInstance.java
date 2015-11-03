@@ -3232,6 +3232,7 @@ public class L2PcInstance extends L2Playable
 				if(sk.getLevel() < s.getSkillLevel())
 				{
 					_log.warn("Player trying to learn lower-level skill (ID " + s.getSkillId() + "). Seems skill level X pasted into skill tree, but skill only have (X - 1) levels!");
+					unLearnable++;
 					break;
 				}
 
